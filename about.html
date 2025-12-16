@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — MiCAR Tracker</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles/tailwind.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    body {
+      font-family: "Twemoji Country Flags", 'Inter', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+      background: linear-gradient(90deg, #58c1ba, #004aad);
+      min-height: 100vh;
+    }
+
+    .main-bg {
+      background: linear-gradient(90deg, #58c1ba, #004aad);
+    }
+
+    .header-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(90deg, rgba(88, 193, 186, 0.95), rgba(0, 74, 173, 0.95));
+      transition: all 0.3s ease-in-out;
+    }
+
+    .logo-container {
+      max-height: 80px;
+      width: auto;
+      margin-right: 20px;
+      cursor: pointer;
+      border-radius: 0.75rem;
+    }
+
+    .tab-button {
+      transition: all 0.3s ease;
+    }
+
+    .tab-active {
+      background: white;
+      color: #1e40af;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .tab-inactive {
+      background: rgba(59, 130, 246, 0.3);
+      color: white;
+    }
+
+    .tab-inactive:hover {
+      background: rgba(59, 130, 246, 0.5);
+    }
+
+    .nav-buttons {
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: flex-end;
+    }
+
+    .nav-buttons .tab-button {
+      flex: 1 1 auto;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.25rem;
+      }
+
+      .nav-buttons {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-buttons .tab-button {
+        flex: 1 1 calc(50% - 0.75rem);
+      }
+    }
+
+    @media (max-width: 400px) {
+      .nav-buttons .tab-button {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="main-bg text-gray-900">
+  <div class="header-sticky shadow-2xl">
+    <div class="max-w-7xl mx-auto px-6 py-6">
+      <div class="flex items-center justify-between flex-wrap header-content">
+        <div class="flex items-center space-x-6 mb-4 md:mb-0">
+          <a href="index.html" class="inline-flex items-center" aria-label="Return to the dashboard">
+            <img src="DEA%20logo%20white.png" alt="DEA Logo" class="logo-container">
+          </a>
+          <div class="flex items-center">
+            <h1 class="text-[1.8rem] md:text-[2.2rem] font-bold text-white mb-0 leading-tight">
+              <span class="text-sky-100">MiCAR</span>
+              <span class="text-sky-50">Tracker</span>
+            </h1>
+          </div>
+        </div>
+        <div class="flex items-center nav-buttons">
+          <a href="index.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+            <i class="fas fa-chart-pie mr-2"></i>Overview
+          </a>
+          <a href="index.html#details" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+            <i class="fas fa-table mr-2"></i>EMTs
+          </a>
+          <a href="index.html#casps" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+            <i class="fas fa-building-columns mr-2"></i>CASPs
+          </a>
+          <a href="index.html#non-compliant" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+            <i class="fas fa-exclamation-triangle mr-2"></i>Non-Compliant
+          </a>
+          <a href="about.html" class="tab-button tab-active px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+            <i class="fas fa-circle-info mr-2"></i>About
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="max-w-4xl mx-auto my-10 px-6">
+    <div class="bg-white shadow-md rounded-lg p-8">
+      <h1 class="text-3xl font-semibold mb-4 text-gray-900">About the MiCAR Tracker</h1>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-900">What this tracker is</h2>
+        <p class="text-base leading-7 text-gray-700">
+          The MiCAR Tracker is a lightweight open project that gathers and digests public
+          information about crypto asset service providers. Its goal is to give the community
+          and industry stakeholders more transparency into market behaviors and compliance-related
+          metrics. We present the data in an easy-to-scan scorecard style so readers can compare
+          providers at a glance.
+        </p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-900">What data we pull</h2>
+        <p class="text-base leading-7 text-gray-700">
+          We aggregate publicly available information including (but not limited to):
+        </p>
+        <ul class="list-disc ml-5 mt-3 space-y-2 text-gray-700">
+          <li>Publicly posted fees and cost components</li>
+          <li>Compliance flags and regulatory disclosures</li>
+          <li>Service availability and supported assets</li>
+          <li>Public statements and policy documentation</li>
+        </ul>
+        <p class="text-sm text-gray-600 mt-3">Note: data is sourced from public websites, filings, and provider disclosures. We do not pull private or user-specific data.</p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-900">Why we built it</h2>
+        <p class="text-base leading-7 text-gray-700">
+          Our aim is to digest raw public data into concise, comparable summaries so people
+          — both in the community and the industry — can better understand market dynamics,
+          costs, and compliance posture. Think of the tracker like a simple compass: not a
+          replacement for an audit, but a navigation tool to find areas worth looking into.
+        </p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-900">About the Digital Euro Association (DEA)</h2>
+        <p class="text-base leading-7 text-gray-700">
+          This project is led by the Digital Euro Association (DEA). The MiCAR Tracker is a
+          DEA initiative to improve transparency in the digital-money ecosystem.
+        </p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-900">DEA mission &amp; core pillars</h2>
+        <p class="text-base leading-7 text-gray-700">
+          The Digital Euro Association is an independent voice of society committed to advancing
+          values such as freedom, privacy, and transparent governance in digital money.
+        </p>
+        <div class="mt-4 space-y-3 text-gray-700">
+          <div>
+            <h3 class="font-semibold text-gray-900">What we do</h3>
+            <p>We target new and innovative topics such as CBDCs and stablecoins, including emerging and novel forms of digital money and payment infrastructures.</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-900">Who we are</h3>
+            <p>
+              The Digital Euro Association (DEA) is a think tank specializing in central bank digital currencies (CBDCs),
+              stablecoins and other forms of digital fiat currencies. In particular, we focus on the private and the public digital euro.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-900">Mission</h3>
+            <p>
+              The Digital Euro Association (DEA) is committed to independence in aggregating
+              and amplifying the views of society and the furtherance of the public good through
+              knowledge exchange, encouraging new ideas, and forward-thinking in the field of digital money.
+              Partnerships and collaborations are in no way an endorsement of member ideologies, products and services, nor political regimes.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-900">DEA’s Core Pillars</h3>
+            <ul class="list-disc ml-5 mt-2 space-y-1">
+              <li><strong>Education:</strong> Publications, conferences, courses, working groups and more.</li>
+              <li><strong>Community &amp; Collaboration:</strong> Building multidisciplinary communities and cross-institutional knowledge exchange.</li>
+              <li><strong>Public Affairs:</strong> Engaging with European bodies, advising on CBDC/stablecoin policy.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-900">Contact &amp; transparency</h2>
+        <p class="text-base leading-7 text-gray-700">
+          If you have corrections, suggestions, or questions about the MiCAR Tracker, please open an issue in the repository or contact the Digital Euro Association. We strive to be transparent about sources and methodology — if you’d like further detail on any data points, we’ll provide the sources behind them.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
