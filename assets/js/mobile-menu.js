@@ -8,17 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeIcon = document.getElementById('close-icon');
 
   if (!btn || !menu || !menuPanel || !overlay) return;
-  const transitionMs = 220;
-  const isMenuOpen = () => btn.getAttribute('aria-expanded') === 'true';
-
-  function safeFocus(element) {
-    if (!element || typeof element.focus !== 'function') return;
-    try {
-      element.focus({ preventScroll: true });
-    } catch (_err) {
-      element.focus();
-    }
-  }
 
   function openMenu() {
     btn.setAttribute('aria-expanded', 'true');
@@ -26,32 +15,37 @@ document.addEventListener('DOMContentLoaded', function () {
     menu.classList.remove('hidden');
 
     requestAnimationFrame(() => {
-      overlay.classList.add('menu-open');
-      menu.classList.add('menu-open');
+      menuPanel.classList.remove('opacity-0', 'translate-y-6');
+      menuPanel.classList.add('opacity-100', 'translate-y-0');
       hamburger?.classList.add('hidden');
       closeIcon?.classList.remove('hidden');
     });
 
+    document.documentElement.classList.add('overflow-hidden');
+    document.body.classList.add('overflow-hidden');
+
     const first = menuPanel.querySelector('[role="menuitem"]');
-    safeFocus(first);
+    if (first) first.focus();
   }
 
-  function closeMenu(options = {}) {
-    const focusButton = options.focusButton !== false;
+  function closeMenu() {
     btn.setAttribute('aria-expanded', 'false');
 
-    overlay.classList.remove('menu-open');
-    menu.classList.remove('menu-open');
+    menuPanel.classList.remove('opacity-100', 'translate-y-0');
+    menuPanel.classList.add('opacity-0', 'translate-y-6');
 
     hamburger?.classList.remove('hidden');
     closeIcon?.classList.add('hidden');
 
+    document.documentElement.classList.remove('overflow-hidden');
+    document.body.classList.remove('overflow-hidden');
+
     setTimeout(() => {
       menu.classList.add('hidden');
       overlay.classList.add('hidden');
-    }, transitionMs);
+    }, 220);
 
-    if (focusButton) safeFocus(btn);
+    btn.focus();
   }
 
   btn.addEventListener('click', function () {
@@ -60,18 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     else openMenu();
   });
 
-  document.addEventListener(
-    'click',
-    function (event) {
-      if (!isMenuOpen()) return;
-      const target = event.target;
-      if (menuPanel.contains(target) || btn.contains(target)) return;
-      event.preventDefault();
-      event.stopPropagation();
-      closeMenu({ focusButton: false });
-    },
-    true
-  );
+  overlay.addEventListener('click', closeMenu);
 
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {

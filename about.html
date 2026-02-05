@@ -241,10 +241,10 @@
     </header>
   </div>
 
-  <div id="mobile-menu-overlay" class="mobile-menu-overlay fixed inset-0 hidden" aria-hidden="true"></div>
+  <div id="mobile-menu-overlay" class="fixed inset-0 z-40 hidden" aria-hidden="true"></div>
 
-  <div id="mobile-menu" class="mobile-menu-container hidden">
-    <div class="mobile-menu-panel p-4"
+  <div id="mobile-menu" class="fixed left-4 right-4 bottom-4 z-50 hidden">
+    <div class="mx-auto max-w-md mobile-menu-panel p-4 transition-transform duration-200 ease-out transform opacity-0 translate-y-6"
          role="menu"
          aria-labelledby="mobile-menu-button">
       <nav class="flex flex-col mobile-menu-list" role="none">
