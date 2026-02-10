@@ -4108,12 +4108,26 @@
     }
 
     // Dynamic calculation functions
+    function getCurrencyFields(items) {
+        const standardFields = ['id', 'issuer', 'state', 'authority', 'tokens', 'count'];
+        const fields = new Set();
+
+        items.forEach(item => {
+            Object.keys(item || {}).forEach(key => {
+                if (!standardFields.includes(key)) {
+                    fields.add(key);
+                }
+            });
+        });
+
+        return Array.from(fields);
+    }
+
     function calculateCurrencyTotals() {
         const currencies = {};
 
         // Get all currency columns from data (excluding standard fields)
-        const standardFields = ['id', 'issuer', 'state', 'authority', 'tokens', 'count'];
-        const currencyFields = Object.keys(data[0] || {}).filter(key => !standardFields.includes(key));
+        const currencyFields = getCurrencyFields(data);
 
         currencyFields.forEach(currency => {
             const total = data.reduce((sum, item) => sum + (item[currency] || 0), 0);
@@ -4423,8 +4437,7 @@
         noResults.classList.add('hidden');
         tbody.innerHTML = dataToShow.map((item, index) => {
             // Get all currency columns dynamically
-            const standardFields = ['id', 'issuer', 'state', 'authority', 'tokens', 'count'];
-            const currencyFields = Object.keys(item).filter(key => !standardFields.includes(key));
+            const currencyFields = getCurrencyFields(dataToShow);
 
             const currencyBadges = currencyFields
                 .filter(currency => item[currency] > 0)
@@ -4433,7 +4446,8 @@
                     const colorClass = currencyCode === 'EUR' ? 'orange' : 
                                      currencyCode === 'USD' ? 'pink' : 
                                      currencyCode === 'GBP' ? 'blue' : 
-                                     currencyCode === 'CZK' ? 'purple' : 'green';
+                                     currencyCode === 'CZK' ? 'purple' : 
+                                     currencyCode === 'CHF' ? 'red' : 'green';
                     return `<span class="px-2 py-1 bg-${colorClass}-100 text-${colorClass}-700 rounded text-xs font-semibold">${currencyCode}</span>`;
                 }).join(' ');
 
