@@ -13,7 +13,7 @@ const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
 
 const SHEET_CONFIG = {
     snapshot: { label: 'Snapshot dates', range: 'snapshot!A1:B3' },
-    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:K50', requireNumericId: true },
+    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:L50', requireNumericId: true },
     casps: { label: 'CASPs register', range: 'CASPs!A1:F150' },
     nonCompliant: { label: 'Non-compliant register', range: 'Non Compliant!A1:E150' }
 };
@@ -434,7 +434,8 @@ function convertToJsData(csvData) {
                 usd: parseNumber(row['USD']),
                 czk: parseNumber(row['CZK']),
                 gbp: parseNumber(row['GBP']),
-                chf: parseNumber(row['CHF'])
+                chf: parseNumber(row['CHF']),
+                pln: parseNumber(row['PLN'])
             };
             data.push(item);
             console.log('✅ Added:', item.issuer, 'with', item.count, 'tokens');
@@ -648,6 +649,7 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     const gbpTokens = newData.reduce((sum, item) => sum + item.gbp, 0);
     const czkTokens = newData.reduce((sum, item) => sum + item.czk, 0);
     const chfTokens = newData.reduce((sum, item) => sum + item.chf, 0);
+    const plnTokens = newData.reduce((sum, item) => sum + item.pln, 0);
 
     console.log('📈 Summary Statistics:');
     console.log(`   Total Issuers: ${newData.length}`);
@@ -657,6 +659,7 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     console.log(`   GBP Tokens: ${gbpTokens}`);
     console.log(`   CZK Tokens: ${czkTokens}`);
     console.log(`   CHF Tokens: ${chfTokens}`);
+    console.log(`   PLN Tokens: ${plnTokens}`);
     if (Array.isArray(nonCompliantEntries)) {
         console.log(`   Non-compliant entities: ${nonCompliantEntries.length}`);
     }
