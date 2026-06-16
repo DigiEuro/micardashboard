@@ -13,7 +13,7 @@ const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
 
 const SHEET_CONFIG = {
     snapshot: { label: 'Snapshot dates', range: 'snapshot!A1:B3' },
-    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:L50', requireNumericId: true },
+    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:N50', requireNumericId: true },
     casps: { label: 'CASPs register', range: 'CASPs!A1:F150' },
     nonCompliant: { label: 'Non-compliant register', range: 'Non Compliant!A1:E150' }
 };
@@ -435,7 +435,9 @@ function convertToJsData(csvData) {
                 czk: parseNumber(row['CZK']),
                 gbp: parseNumber(row['GBP']),
                 chf: parseNumber(row['CHF']),
-                pln: parseNumber(row['PLN'])
+                pln: parseNumber(row['PLN']),
+                sek: parseNumber(row['SEK']),
+                ron: parseNumber(row['RON'])
             };
             data.push(item);
             console.log('✅ Added:', item.issuer, 'with', item.count, 'tokens');
@@ -650,6 +652,8 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     const czkTokens = newData.reduce((sum, item) => sum + item.czk, 0);
     const chfTokens = newData.reduce((sum, item) => sum + item.chf, 0);
     const plnTokens = newData.reduce((sum, item) => sum + item.pln, 0);
+    const sekTokens = newData.reduce((sum, item) => sum + item.sek, 0);
+    const ronTokens = newData.reduce((sum, item) => sum + item.ron, 0);
 
     console.log('📈 Summary Statistics:');
     console.log(`   Total Issuers: ${newData.length}`);
@@ -660,6 +664,8 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     console.log(`   CZK Tokens: ${czkTokens}`);
     console.log(`   CHF Tokens: ${chfTokens}`);
     console.log(`   PLN Tokens: ${plnTokens}`);
+    console.log(`   SEK Tokens: ${sekTokens}`);
+    console.log(`   RON Tokens: ${ronTokens}`);
     if (Array.isArray(nonCompliantEntries)) {
         console.log(`   Non-compliant entities: ${nonCompliantEntries.length}`);
     }
