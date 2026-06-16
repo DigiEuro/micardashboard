@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write  # Explicitly grant write permissions
+  pages: write     # Allow this workflow to request a GitHub Pages rebuild
 
 jobs:
   update-dashboard:
@@ -62,6 +63,17 @@ jobs:
           exit 1
         }
         echo "🚀 Changes pushed successfully"
+
+    - name: Trigger GitHub Pages build
+      if: steps.verify-changed-files.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        echo "🚀 Requesting GitHub Pages build..."
+        gh api \
+          --method POST \
+          "repos/${{ github.repository }}/pages/builds"
+        echo "✅ GitHub Pages build requested"
 
     - name: Summary
       run: |
