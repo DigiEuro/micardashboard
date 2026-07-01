@@ -416,8 +416,13 @@ const EMT_STANDARD_HEADERS = new Set([
     'Tokens'
 ]);
 
+const CURRENCY_HEADER_KEY_ALIASES = {
+    euro: 'eur'
+};
+
 function currencyHeaderToKey(header) {
-    return header.trim().toLowerCase();
+    const normalizedHeader = header.trim().toLowerCase();
+    return CURRENCY_HEADER_KEY_ALIASES[normalizedHeader] || normalizedHeader;
 }
 
 function getEmtCurrencyHeaders(rows) {

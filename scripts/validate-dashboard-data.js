@@ -29,6 +29,24 @@ function extractDashboardData(html) {
   return JSON.parse(match[1]);
 }
 
+function extractCurrencyInfoCodes(html) {
+  const currencyInfoMatch = html.match(/const currencyInfo = \{([\s\S]*?)\n    \};/);
+
+  if (!currencyInfoMatch) {
+    return new Set();
+  }
+
+  const codes = new Set();
+  const codePattern = /'([A-Z]{3})'\s*:/g;
+  let match;
+
+  while ((match = codePattern.exec(currencyInfoMatch[1])) !== null) {
+    codes.add(match[1]);
+  }
+
+  return codes;
+}
+
 function getCurrencyFields(items) {
   const fields = new Set();
 
@@ -48,10 +66,11 @@ function toNumber(value) {
   return Number.isFinite(number) ? number : 0;
 }
 
-function validateItems(items) {
+function validateItems(items, knownCurrencyCodes) {
   const errors = [];
   const currencyFields = getCurrencyFields(items);
   const totals = Object.fromEntries(currencyFields.map(currency => [currency, 0]));
+  const metadataWarnings = [];
   let totalTokens = 0;
 
   items.forEach(item => {
@@ -69,17 +88,25 @@ function validateItems(items) {
     }
   });
 
-  return { currencyFields, errors, totalTokens, totals };
+  currencyFields.forEach(currency => {
+    const currencyCode = currency.toUpperCase();
+    if (!knownCurrencyCodes.has(currencyCode) && totals[currency] > 0) {
+      metadataWarnings.push(`${currencyCode} has token data but no currencyInfo metadata in index.html`);
+    }
+  });
+
+  return { currencyFields, errors, metadataWarnings, totalTokens, totals };
 }
 
 try {
   const html = fs.readFileSync(indexPath, 'utf8');
   const items = extractDashboardData(html);
+  const knownCurrencyCodes = extractCurrencyInfoCodes(html);
 
   if (!Array.isArray(items) || items.length === 0) {
     fail('No EMT data entries found in index.html.');
   } else {
-    const { currencyFields, errors, totalTokens, totals } = validateItems(items);
+    const { currencyFields, errors, metadataWarnings, totalTokens, totals } = validateItems(items, knownCurrencyCodes);
 
     if (currencyFields.length === 0) {
       fail('No currency fields found in EMT dashboard data.');
@@ -88,6 +115,8 @@ try {
     if (errors.length > 0) {
       fail('EMT token counts do not match per-currency totals.', errors);
     }
+
+    metadataWarnings.forEach(warning => console.warn(`⚠️ ${warning}`));
 
     if (process.exitCode !== 1) {
       const visibleTotals = Object.entries(totals)
