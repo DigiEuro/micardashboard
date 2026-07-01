@@ -92,7 +92,9 @@
 
 
     .data-table-scroll {
-    overflow-x: auto;
+    max-height: 70vh;
+    overflow: auto;
+    position: relative;
     }
 
     .data-table {
@@ -109,7 +111,7 @@
 
     .sticky-table-header th {
     position: sticky;
-    top: 6.5rem;
+    top: 0;
     z-index: 20;
     box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35), 0 8px 16px -16px rgba(15, 23, 42, 0.55);
     }
@@ -141,8 +143,8 @@
     }
 
     @media (max-width: 768px) {
-    .sticky-table-header th {
-        top: 5rem;
+    .data-table-scroll {
+        max-height: 65vh;
     }
 
     .data-table {
