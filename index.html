@@ -90,6 +90,66 @@
     backdrop-filter: blur(10px);
     }
 
+
+    .data-table-scroll {
+    overflow-x: auto;
+    }
+
+    .data-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    min-width: 1100px;
+    }
+
+    .data-table th,
+    .data-table td {
+    vertical-align: top;
+    }
+
+    .sticky-table-header th {
+    position: sticky;
+    top: 6.5rem;
+    z-index: 20;
+    box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35), 0 8px 16px -16px rgba(15, 23, 42, 0.55);
+    }
+
+    .sticky-table-header.teal th {
+    background: #f0fdfa;
+    }
+
+    .sticky-table-header.red th {
+    background: #fff7ed;
+    }
+
+    .services-cell {
+    min-width: 300px;
+    }
+
+    .service-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem;
+    max-width: 34rem;
+    }
+
+    .service-badge {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+    .sticky-table-header th {
+        top: 5rem;
+    }
+
+    .data-table {
+        min-width: 980px;
+    }
+    }
+
     .logo-container {
     max-height: 80px;
     width: auto;
@@ -401,9 +461,17 @@
     </button>
     </div>
     </div>
-    <div class="overflow-x-auto">
-    <table class="w-full">
-    <thead>
+    <div class="data-table-scroll">
+    <table class="data-table w-full">
+    <colgroup>
+    <col style="width: 5%;">
+    <col style="width: 20%;">
+    <col style="width: 12%;">
+    <col style="width: 13%;">
+    <col style="width: 30%;">
+    <col style="width: 20%;">
+    </colgroup>
+    <thead class="sticky-table-header teal">
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
     <th class="text-left p-4 font-semibold text-gray-700">Issuer</th>
     <th class="text-left p-4 font-semibold text-gray-700">Country</th>
@@ -444,15 +512,23 @@
     </div>
     </div>
 
-    <div class="overflow-x-auto">
-    <table class="w-full">
-    <thead>
+    <div class="data-table-scroll">
+    <table class="data-table w-full">
+    <colgroup>
+    <col style="width: 5%;">
+    <col style="width: 20%;">
+    <col style="width: 12%;">
+    <col style="width: 13%;">
+    <col style="width: 30%;">
+    <col style="width: 20%;">
+    </colgroup>
+    <thead class="sticky-table-header teal">
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
     <th class="text-left p-4 font-semibold text-gray-700">#</th>
     <th class="text-left p-4 font-semibold text-gray-700">CASP</th>
     <th class="text-left p-4 font-semibold text-gray-700">Country</th>
     <th class="text-left p-4 font-semibold text-gray-700">Competent Authority</th>
-    <th class="text-left p-4 font-semibold text-gray-700">Services</th>
+    <th class="text-left p-4 font-semibold text-gray-700 services-cell">Services</th>
     <th class="text-left p-4 font-semibold text-gray-700">Websites</th>
     </tr>
     </thead>
@@ -491,9 +567,17 @@
     </div>
     <p id="nonCompliantNewSummary" class="text-sm text-gray-600 mb-4"></p>
 
-    <div class="overflow-x-auto">
-    <table class="w-full">
-    <thead>
+    <div class="data-table-scroll">
+    <table class="data-table w-full">
+    <colgroup>
+    <col style="width: 5%;">
+    <col style="width: 25%;">
+    <col style="width: 14%;">
+    <col style="width: 20%;">
+    <col style="width: 26%;">
+    <col style="width: 10%;">
+    </colgroup>
+    <thead class="sticky-table-header red">
     <tr class="bg-gradient-to-r from-red-50 to-orange-50">
     <th class="text-left p-4 font-semibold text-gray-700">#</th>
     <th class="text-left p-4 font-semibold text-gray-700">Entity Name</th>
@@ -6609,7 +6693,7 @@
 
         tbody.innerHTML = dataToShow.map((item, index) => {
             const servicesBadges = (item.services || []).map(service => `
-                <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${service}</span>
+                <span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${service}</span>
             `).join(' ');
 
             const websiteBadges = (item.websites && item.websites.length > 0)
@@ -6630,8 +6714,8 @@
                         </span>
                     </td>
                     <td class="p-4 text-gray-600 text-sm">${item.authority || '—'}</td>
-                    <td class="p-4">
-                        <div class="flex flex-wrap gap-2">${servicesBadges || '<span class="text-xs text-gray-500">Not specified</span>'}</div>
+                    <td class="p-4 services-cell">
+                        <div class="service-badges">${servicesBadges || '<span class="text-xs text-gray-500">Not specified</span>'}</div>
                     </td>
                     <td class="p-4">
                         <div class="space-y-1">${websiteBadges}</div>
