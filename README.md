@@ -12,6 +12,10 @@ The script parses the CSV, converts each row into a JavaScript object and then r
 
 The script reads CSV locations from the `CSV_URL` and `DATE_URL` environment variables. If they are not set, default URLs pointing to the public Google Sheet are used.
 
+## Validation
+
+Run `npm run validate:data` after updating the generated dashboard to confirm each EMT row's total token count matches the sum of its currency columns. This catches missing currency columns before the static page is deployed.
+
 ## Google Sheets API & caching
 
 - Set `GOOGLE_API_KEY` (and optionally `GOOGLE_SHEET_ID`) to allow `update-data.js` to read the registers via the Sheets API before falling back to CSV exports. The default sheet ID already targets the shared tracker.

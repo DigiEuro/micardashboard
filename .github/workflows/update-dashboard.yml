@@ -36,6 +36,9 @@ jobs:
         echo "🔄 Starting dashboard update..."
         node update-data.js
 
+    - name: Validate dashboard data
+      run: npm run validate:data
+
     - name: Check for changes
       id: verify-changed-files
       run: |
