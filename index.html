@@ -448,6 +448,7 @@
     <table class="w-full">
     <thead>
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
+    <th class="text-left p-4 font-semibold text-gray-700">#</th>
     <th class="text-left p-4 font-semibold text-gray-700">CASP</th>
     <th class="text-left p-4 font-semibold text-gray-700">Country</th>
     <th class="text-left p-4 font-semibold text-gray-700">Competent Authority</th>
@@ -474,22 +475,27 @@
     <h3 class="text-xl font-bold text-gray-800 mb-4 md:mb-0">
     <i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>Non-Compliant Entities
     </h3>
-    <div class="flex items-center space-x-4">
+    <div class="flex flex-col md:flex-row md:items-center gap-3">
     <div class="relative">
     <input type="text" id="nonCompliantSearchInput" placeholder="Search entities, authorities, websites..." 
     class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent w-64">
     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
     </div>
+    <button id="toggleNewNonCompliant" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors font-semibold" aria-pressed="false">
+    <i class="fas fa-star mr-1"></i>New only
+    </button>
     <button id="clearNonCompliantSearch" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
     <i class="fas fa-times mr-1"></i>Clear
     </button>
     </div>
     </div>
+    <p id="nonCompliantNewSummary" class="text-sm text-gray-600 mb-4"></p>
 
     <div class="overflow-x-auto">
     <table class="w-full">
     <thead>
     <tr class="bg-gradient-to-r from-red-50 to-orange-50">
+    <th class="text-left p-4 font-semibold text-gray-700">#</th>
     <th class="text-left p-4 font-semibold text-gray-700">Entity Name</th>
     <th class="text-left p-4 font-semibold text-gray-700">Country</th>
     <th class="text-left p-4 font-semibold text-gray-700">Regulatory Authority</th>
@@ -6143,6 +6149,7 @@
     let filteredData = [...data];
     let filteredCaspsData = [...caspsData];
     let filteredNonCompliantData = [...nonCompliantData];
+    let showNewNonCompliantOnly = false;
 
     const sectionTitleEl = document.getElementById('sectionTitle');
     const sectionDescriptionEl = document.getElementById('sectionDescription');
@@ -6600,7 +6607,7 @@
             noResults.classList.add('hidden');
         }
 
-        tbody.innerHTML = dataToShow.map(item => {
+        tbody.innerHTML = dataToShow.map((item, index) => {
             const servicesBadges = (item.services || []).map(service => `
                 <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${service}</span>
             `).join(' ');
@@ -6613,6 +6620,7 @@
 
             return `
                 <tr class="border-b hover:bg-gradient-to-r hover:from-teal-50 hover:to-blue-50 transition-all duration-200">
+                    <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
                     <td class="p-4">
                         <p class="text-gray-900 font-semibold">${item.name || 'N/A'}</p>
                     </td>
@@ -6633,9 +6641,31 @@
         }).join('');
     }
 
+    function updateNonCompliantNewSummary(dataToShow = filteredNonCompliantData) {
+        const summary = document.getElementById('nonCompliantNewSummary');
+        const toggle = document.getElementById('toggleNewNonCompliant');
+        const totalNew = nonCompliantData.filter(item => item.isNew).length;
+        const visibleNew = dataToShow.filter(item => item.isNew).length;
+
+        if (summary) {
+            summary.textContent = totalNew > 0
+                ? `${visibleNew} new flagged ${visibleNew === 1 ? 'entity is' : 'entities are'} visible (${totalNew} total marked new).`
+                : 'No entities are currently marked new in the latest dataset.';
+        }
+
+        if (toggle) {
+            toggle.setAttribute('aria-pressed', showNewNonCompliantOnly ? 'true' : 'false');
+            toggle.className = showNewNonCompliantOnly
+                ? 'px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold'
+                : 'px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors font-semibold';
+        }
+    }
+
     function populateNonCompliantTable(dataToShow = filteredNonCompliantData) {
         const tbody = document.getElementById('nonCompliantTable');
         const noResults = document.getElementById('noNonCompliantResults');
+
+        updateNonCompliantNewSummary(dataToShow);
 
         if (dataToShow.length === 0) {
             tbody.innerHTML = '';
@@ -6644,8 +6674,12 @@
         }
 
         noResults.classList.add('hidden');
-        tbody.innerHTML = dataToShow.map((item, index) => `
-            <tr class="border-b hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 transition-all duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}">
+        tbody.innerHTML = dataToShow.map((item, index) => {
+            const rowBackground = item.isNew ? 'bg-blue-50' : (index % 2 === 0 ? 'bg-gray-50' : 'bg-white');
+
+            return `
+            <tr class="border-b hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 transition-all duration-200 ${rowBackground}">
+                <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
                 <td class="p-4">
                     <div class="font-semibold text-gray-800 flex items-center">
                         <span>${item.entity}</span>
@@ -6678,7 +6712,8 @@
                     </span>
                 </td>
             </tr>
-        `).join('');
+        `;
+        }).join('');
     }
 
     // Search functionality
@@ -6718,17 +6753,18 @@
     }
 
     function filterNonCompliantData(searchTerm) {
-        if (!searchTerm.trim()) {
-            filteredNonCompliantData = [...nonCompliantData];
-        } else {
-            const term = searchTerm.toLowerCase();
-            filteredNonCompliantData = nonCompliantData.filter(item => 
+        const term = searchTerm.trim().toLowerCase();
+        filteredNonCompliantData = nonCompliantData.filter(item => {
+            const matchesSearch = !term ||
                 item.entity.toLowerCase().includes(term) ||
                 item.country.toLowerCase().includes(term) ||
                 item.authority.toLowerCase().includes(term) ||
-                item.websites.some(website => website.toLowerCase().includes(term))
-            );
-        }
+                item.websites.some(website => website.toLowerCase().includes(term));
+            const matchesNewFilter = !showNewNonCompliantOnly || item.isNew;
+
+            return matchesSearch && matchesNewFilter;
+        });
+
         populateNonCompliantTable(filteredNonCompliantData);
     }
 
@@ -6814,6 +6850,7 @@
             nonCompliantSearchInput.value = '';
         }
         filteredNonCompliantData = [...nonCompliantData];
+        showNewNonCompliantOnly = false;
         populateNonCompliantTable(filteredNonCompliantData);
     }
 
@@ -6860,8 +6897,14 @@
         filterNonCompliantData(e.target.value);
     });
 
+    document.getElementById('toggleNewNonCompliant').addEventListener('click', () => {
+        showNewNonCompliantOnly = !showNewNonCompliantOnly;
+        filterNonCompliantData(document.getElementById('nonCompliantSearchInput').value);
+    });
+
     document.getElementById('clearNonCompliantSearch').addEventListener('click', () => {
         document.getElementById('nonCompliantSearchInput').value = '';
+        showNewNonCompliantOnly = false;
         filterNonCompliantData('');
     });
 
