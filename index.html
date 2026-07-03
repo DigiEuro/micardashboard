@@ -145,6 +145,26 @@
     white-space: nowrap;
     }
 
+    .casps-data-table {
+    table-layout: fixed;
+    }
+
+    .casps-data-table th,
+    .casps-data-table td {
+    overflow-wrap: normal;
+    word-break: normal;
+    }
+
+    .casps-country-badge,
+    .casps-authority-cell {
+    white-space: nowrap;
+    }
+
+    .casps-website-link {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    }
+
     @media (max-width: 768px) {
     .data-table-scroll {
         max-height: 70vh;
@@ -520,14 +540,14 @@
     </div>
 
     <div class="data-table-scroll">
-    <table class="data-table w-full">
+    <table class="data-table casps-data-table w-full">
     <colgroup>
-    <col style="width: 5%;">
-    <col style="width: 20%;">
+    <col style="width: 4%;">
+    <col style="width: 24%;">
+    <col style="width: 16%;">
+    <col style="width: 16%;">
+    <col style="width: 28%;">
     <col style="width: 12%;">
-    <col style="width: 13%;">
-    <col style="width: 30%;">
-    <col style="width: 20%;">
     </colgroup>
     <thead class="sticky-table-header teal">
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
@@ -7364,7 +7384,7 @@
 
             const websiteBadges = (item.websites && item.websites.length > 0)
                 ? item.websites.map(site => `
-                    <a href="${site}" target="_blank" rel="noopener" class="block text-sm text-blue-600 underline break-words">${site}</a>
+                    <a href="${site}" target="_blank" rel="noopener" class="casps-website-link block text-sm text-blue-600 underline">${site}</a>
                 `).join('')
                 : '<span class="text-xs text-gray-500">Not provided</span>';
 
@@ -7375,11 +7395,11 @@
                         <p class="text-gray-900 font-semibold">${item.name || 'N/A'}</p>
                     </td>
                     <td class="p-4">
-                        <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">
+                        <span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">
                             ${countryFlags[item.memberState] || '🏳️'} ${item.memberState || 'Unknown'}
                         </span>
                     </td>
-                    <td class="p-4 text-gray-600 text-sm">${item.authority || '—'}</td>
+                    <td class="p-4 text-gray-600 text-sm casps-authority-cell">${item.authority || '—'}</td>
                     <td class="p-4 services-cell">
                         <div class="service-badges">${servicesBadges || '<span class="text-xs text-gray-500">Not specified</span>'}</div>
                     </td>
