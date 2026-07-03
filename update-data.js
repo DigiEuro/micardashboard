@@ -13,7 +13,7 @@ const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
 
 const SHEET_CONFIG = {
     snapshot: { label: 'Snapshot dates', range: 'snapshot!A1:B3' },
-    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:L50', requireNumericId: true },
+    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:Z100', requireNumericId: true },
     casps: { label: 'CASPs register', range: 'CASPs!A1:F150' },
     nonCompliant: { label: 'Non-compliant register', range: 'Non Compliant!A1:E150' }
 };
@@ -407,19 +407,51 @@ function formatDate(dateStr) {
     };
 }
 
+const EMT_STANDARD_HEADERS = new Set([
+    '#',
+    'Issuer (HQ)',
+    'Home State',
+    'Competent Authority',
+    'Authorised EMT(s)',
+    'Tokens'
+]);
+
+const CURRENCY_HEADER_KEY_ALIASES = {
+    euro: 'eur'
+};
+
+function currencyHeaderToKey(header) {
+    const normalizedHeader = header.trim().toLowerCase();
+    return CURRENCY_HEADER_KEY_ALIASES[normalizedHeader] || normalizedHeader;
+}
+
+function getEmtCurrencyHeaders(rows) {
+    const headers = new Set();
+
+    rows.forEach(row => {
+        Object.keys(row || {}).forEach(header => {
+            if (header && !EMT_STANDARD_HEADERS.has(header)) {
+                headers.add(header);
+            }
+        });
+    });
+
+    return Array.from(headers);
+}
+
 function convertToJsData(csvData) {
     const data = [];
+    const currencyHeaders = getEmtCurrencyHeaders(csvData);
 
     console.log('📋 CSV Headers:', Object.keys(csvData[0] || {}));
+    console.log('💱 Currency Headers:', currencyHeaders);
     console.log('📊 Processing', csvData.length, 'rows');
 
     csvData.forEach((row, index) => {
         console.log(`Row ${index + 1}:`, {
             id: row['#'],
             issuer: row['Issuer (HQ)'],
-            tokens: row['Tokens'],
-            euro: row['Euro'],
-            usd: row['USD']
+            tokens: row['Tokens']
         });
 
         if (row['#'] && row['Issuer (HQ)'] && row['Issuer (HQ)'] !== 'nan') {
@@ -429,14 +461,13 @@ function convertToJsData(csvData) {
                 state: row['Home State'] || '',
                 authority: row['Competent Authority'] || '',
                 tokens: row['Authorised EMT(s)'] || '',
-                count: parseNumber(row['Tokens']),
-                euro: parseNumber(row['Euro']),
-                usd: parseNumber(row['USD']),
-                czk: parseNumber(row['CZK']),
-                gbp: parseNumber(row['GBP']),
-                chf: parseNumber(row['CHF']),
-                pln: parseNumber(row['PLN'])
+                count: parseNumber(row['Tokens'])
             };
+
+            currencyHeaders.forEach(header => {
+                item[currencyHeaderToKey(header)] = parseNumber(row[header]);
+            });
+
             data.push(item);
             console.log('✅ Added:', item.issuer, 'with', item.count, 'tokens');
         }
@@ -507,6 +538,28 @@ function mapMemberState(code) {
     if (!code) return '';
     const trimmed = code.trim();
     return memberStateMap[trimmed.toUpperCase()] || trimmed;
+}
+
+function getCurrencyFieldsFromItems(items) {
+    const standardFields = new Set(['id', 'issuer', 'state', 'authority', 'tokens', 'count']);
+    const fields = new Set();
+
+    items.forEach(item => {
+        Object.keys(item || {}).forEach(key => {
+            if (!standardFields.has(key)) {
+                fields.add(key);
+            }
+        });
+    });
+
+    return Array.from(fields);
+}
+
+function calculateCurrencyTotals(items, currencyFields) {
+    return Object.fromEntries(currencyFields.map(currency => [
+        currency,
+        items.reduce((sum, item) => sum + (item[currency] || 0), 0)
+    ]));
 }
 
 function convertToNonCompliantData(csvData) {
@@ -644,22 +697,15 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
 
     // Log summary statistics
     const totalTokens = newData.reduce((sum, item) => sum + item.count, 0);
-    const euroTokens = newData.reduce((sum, item) => sum + item.euro, 0);
-    const usdTokens = newData.reduce((sum, item) => sum + item.usd, 0);
-    const gbpTokens = newData.reduce((sum, item) => sum + item.gbp, 0);
-    const czkTokens = newData.reduce((sum, item) => sum + item.czk, 0);
-    const chfTokens = newData.reduce((sum, item) => sum + item.chf, 0);
-    const plnTokens = newData.reduce((sum, item) => sum + item.pln, 0);
+    const currencyFields = getCurrencyFieldsFromItems(newData);
+    const currencyTotals = calculateCurrencyTotals(newData, currencyFields);
 
     console.log('📈 Summary Statistics:');
     console.log(`   Total Issuers: ${newData.length}`);
     console.log(`   Total Tokens: ${totalTokens}`);
-    console.log(`   EUR Tokens: ${euroTokens}`);
-    console.log(`   USD Tokens: ${usdTokens}`);
-    console.log(`   GBP Tokens: ${gbpTokens}`);
-    console.log(`   CZK Tokens: ${czkTokens}`);
-    console.log(`   CHF Tokens: ${chfTokens}`);
-    console.log(`   PLN Tokens: ${plnTokens}`);
+    Object.entries(currencyTotals).forEach(([currency, total]) => {
+        console.log(`   ${currency.toUpperCase()} Tokens: ${total}`);
+    });
     if (Array.isArray(nonCompliantEntries)) {
         console.log(`   Non-compliant entities: ${nonCompliantEntries.length}`);
     }
