@@ -90,6 +90,93 @@
     backdrop-filter: blur(10px);
     }
 
+
+    .data-table-scroll {
+    max-height: 78vh;
+    overflow: auto;
+    position: relative;
+    }
+
+    .data-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    min-width: 1100px;
+    }
+
+    .emt-table-scroll {
+    overflow-x: hidden;
+    }
+
+    .emt-table {
+    min-width: 0;
+    }
+
+    .teal-row-hover:hover {
+    background: linear-gradient(90deg, #ccfbf1 0%, #dbeafe 100%) !important;
+    }
+
+    .data-table th,
+    .data-table td {
+    vertical-align: top;
+    }
+
+    .sticky-table-header th {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35), 0 8px 16px -16px rgba(15, 23, 42, 0.55);
+    }
+
+    .sticky-table-header.teal th {
+    background: #f0fdfa;
+    }
+
+    .sticky-table-header.red th {
+    background: #fff7ed;
+    }
+
+    .services-cell {
+    min-width: 300px;
+    }
+
+    .service-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5rem;
+    max-width: 34rem;
+    }
+
+    .service-badge {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    }
+
+    .new-only-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 7.5rem;
+    white-space: nowrap;
+    margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+    .data-table-scroll {
+        max-height: 70vh;
+    }
+
+    .data-table {
+        min-width: 980px;
+    }
+
+    .emt-table {
+        min-width: 0;
+    }
+    }
+
     .logo-container {
     max-height: 80px;
     width: auto;
@@ -401,9 +488,17 @@
     </button>
     </div>
     </div>
-    <div class="overflow-x-auto">
-    <table class="w-full">
-    <thead>
+    <div class="data-table-scroll emt-table-scroll">
+    <table class="data-table emt-table w-full">
+    <colgroup>
+    <col style="width: 26%;">
+    <col style="width: 20%;">
+    <col style="width: 18%;">
+    <col style="width: 18%;">
+    <col style="width: 8%;">
+    <col style="width: 10%;">
+    </colgroup>
+    <thead class="sticky-table-header teal">
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
     <th class="text-left p-4 font-semibold text-gray-700">Issuer</th>
     <th class="text-left p-4 font-semibold text-gray-700">Country</th>
@@ -444,14 +539,23 @@
     </div>
     </div>
 
-    <div class="overflow-x-auto">
-    <table class="w-full">
-    <thead>
+    <div class="data-table-scroll">
+    <table class="data-table w-full">
+    <colgroup>
+    <col style="width: 5%;">
+    <col style="width: 20%;">
+    <col style="width: 12%;">
+    <col style="width: 13%;">
+    <col style="width: 30%;">
+    <col style="width: 20%;">
+    </colgroup>
+    <thead class="sticky-table-header teal">
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
+    <th class="text-left p-4 font-semibold text-gray-700">#</th>
     <th class="text-left p-4 font-semibold text-gray-700">CASP</th>
     <th class="text-left p-4 font-semibold text-gray-700">Country</th>
     <th class="text-left p-4 font-semibold text-gray-700">Competent Authority</th>
-    <th class="text-left p-4 font-semibold text-gray-700">Services</th>
+    <th class="text-left p-4 font-semibold text-gray-700 services-cell">Services</th>
     <th class="text-left p-4 font-semibold text-gray-700">Websites</th>
     </tr>
     </thead>
@@ -474,22 +578,35 @@
     <h3 class="text-xl font-bold text-gray-800 mb-4 md:mb-0">
     <i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>Non-Compliant Entities
     </h3>
-    <div class="flex items-center space-x-4">
+    <div class="flex flex-col md:flex-row md:items-center gap-3">
     <div class="relative">
     <input type="text" id="nonCompliantSearchInput" placeholder="Search entities, authorities, websites..." 
     class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent w-64">
     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
     </div>
+    <button id="toggleNewNonCompliant" class="new-only-toggle px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors font-semibold" aria-pressed="false">
+    <i class="fas fa-star mr-1"></i>New only
+    </button>
     <button id="clearNonCompliantSearch" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
     <i class="fas fa-times mr-1"></i>Clear
     </button>
     </div>
     </div>
+    <p id="nonCompliantNewSummary" class="text-sm text-gray-600 mb-4"></p>
 
-    <div class="overflow-x-auto">
-    <table class="w-full">
-    <thead>
+    <div class="data-table-scroll">
+    <table class="data-table w-full">
+    <colgroup>
+    <col style="width: 5%;">
+    <col style="width: 25%;">
+    <col style="width: 14%;">
+    <col style="width: 20%;">
+    <col style="width: 26%;">
+    <col style="width: 10%;">
+    </colgroup>
+    <thead class="sticky-table-header red">
     <tr class="bg-gradient-to-r from-red-50 to-orange-50">
+    <th class="text-left p-4 font-semibold text-gray-700">#</th>
     <th class="text-left p-4 font-semibold text-gray-700">Entity Name</th>
     <th class="text-left p-4 font-semibold text-gray-700">Country</th>
     <th class="text-left p-4 font-semibold text-gray-700">Regulatory Authority</th>
@@ -520,8 +637,8 @@
             Digital Euro Association (DEA) MiCAR Tracker – Overview
           </p>
           <p class="text-gray-400 text-sm mt-2" id="currentDate">
-            Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT Register</a> - Data as of 4 June 2026</p>
-          <p class="text-gray-400 text-sm" id="caspsDate">Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA CASPs Register</a> - Data as of 4 June 2026</p>
+            Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT Register</a> - Data as of 3 July 2026</p>
+          <p class="text-gray-400 text-sm" id="caspsDate">Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA CASPs Register</a> - Data as of 3 July 2026</p>
         </div>
 
         <!-- ── Nav links + social icons ── -->
@@ -662,6 +779,22 @@
         'RON': { symbol: '🇷🇴', name: 'Romanian Leu', color: 'yellow' }
     };
 
+    const currencyBadgeStyles = {
+        orange: 'background-color: #ffedd5; color: #c2410c;',
+        coral: 'background-color: #ffe4e6; color: #be123c;',
+        purple: 'background-color: #f3e8ff; color: #7e22ce;',
+        blue: 'background-color: #dbeafe; color: #1d4ed8;',
+        green: 'background-color: #dcfce7; color: #15803d;',
+        red: 'background-color: #fee2e2; color: #b91c1c;',
+        yellow: 'background-color: #fef9c3; color: #a16207;',
+        teal: 'background-color: #ccfbf1; color: #0f766e;'
+    };
+
+    function getCurrencyBadgeStyle(currencyCode) {
+        const color = currencyInfo[currencyCode]?.color || 'green';
+        return currencyBadgeStyles[color] || currencyBadgeStyles.green;
+    }
+
     // KPI card color classes
     const kpiColors = ['kpi-teal', 'kpi-blue', 'kpi-orange', 'kpi-coral', 'kpi-purple', 'kpi-red', 'kpi-green', 'kpi-yellow'];
 
@@ -674,12 +807,14 @@
         "authority": "ACPR",
         "tokens": "EURC, USDC",
         "count": 2,
-        "euro": 1,
+        "eur": 1,
         "usd": 1,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
         "id": 2,
@@ -688,12 +823,14 @@
         "authority": "ACPR",
         "tokens": "EURCV, USDCV",
         "count": 2,
-        "euro": 1,
+        "eur": 1,
         "usd": 1,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
         "id": 3,
@@ -702,12 +839,14 @@
         "authority": "ACPR",
         "tokens": "EURØP",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
         "id": 4,
@@ -716,12 +855,14 @@
         "authority": "ACPR",
         "tokens": "EUROD",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
         "id": 5,
@@ -730,244 +871,276 @@
         "authority": "ACPR",
         "tokens": "HEURO",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
         "id": 6,
+        "issuer": "CACEIS BANK SA",
+        "state": "France",
+        "authority": "ACPR",
+        "tokens": "EURXT",
+        "count": 1,
+        "eur": 1,
+        "usd": 0,
+        "czk": 0,
+        "gbp": 0,
+        "chf": 0,
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
+    },
+    {
+        "id": 7,
         "issuer": "Paxos",
         "state": "Finland",
         "authority": "FIN-FSA",
         "tokens": "EUROe, eUSD, USDG",
         "count": 3,
-        "euro": 1,
+        "eur": 1,
         "usd": 2,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 7,
+        "id": 8,
         "issuer": "Eurodollar ApS",
         "state": "Denmark",
         "authority": "Finanstilsynet",
         "tokens": "",
         "count": 0,
-        "euro": 0,
+        "eur": 0,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 8,
+        "id": 9,
         "issuer": "SIA GR8 PAY",
         "state": "Latvia",
         "authority": "Latvijas Banka",
         "tokens": "EURpa, USDpa",
         "count": 2,
-        "euro": 1,
+        "eur": 1,
         "usd": 1,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 9,
+        "id": 10,
         "issuer": "Banking Circle S.A.",
         "state": "Luxembourg",
         "authority": "CSSF",
         "tokens": "EURI",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 10,
+        "id": 11,
         "issuer": "AIEU Services Limited S.A.",
         "state": "Luxembourg",
         "authority": "CSSF",
         "tokens": "BREUR",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 11,
+        "id": 12,
         "issuer": "Quantoz Payments B.V.",
         "state": "Netherlands",
         "authority": "Dutch National Bank",
         "tokens": "EURQ, USDQ, EURD, PLNQ, GBPQ, RONQ",
         "count": 6,
-        "euro": 2,
+        "eur": 2,
         "usd": 1,
         "czk": 0,
         "gbp": 1,
         "chf": 0,
-        "pln": 1
+        "pln": 1,
+        "sek": 0,
+        "ron": 1
     },
     {
-        "id": 12,
+        "id": 13,
         "issuer": "StablR Ltd",
         "state": "Malta",
         "authority": "MFSA",
         "tokens": "USDR, EURR",
         "count": 2,
-        "euro": 1,
+        "eur": 1,
         "usd": 1,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 13,
+        "id": 14,
         "issuer": "Stable mint Ltd",
         "state": "Malta",
         "authority": "MFSA",
         "tokens": "EURsm, USDsm",
         "count": 2,
-        "euro": 1,
+        "eur": 1,
         "usd": 1,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 14,
+        "id": 15,
         "issuer": "Newrails, UAB (ex-Ambr)",
         "state": "Lithuania",
         "authority": "Bank of Lithuania",
         "tokens": "EURW",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 15,
+        "id": 16,
         "issuer": "UAB Blue EMI LT",
         "state": "Lithuania",
         "authority": "Bank of Lithuania",
         "tokens": "BLUEUR",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 16,
+        "id": 17,
         "issuer": "Stable Labs",
         "state": "Czech Republic",
         "authority": "Czech National Bank",
         "tokens": "CZKI",
         "count": 1,
-        "euro": 0,
+        "eur": 0,
         "usd": 0,
         "czk": 1,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 17,
+        "id": 18,
         "issuer": "Fiat Republic Netherlands B.V.",
         "state": "Netherlands",
         "authority": "Dutch National Bank",
         "tokens": "ENEUR, ENGBP, ENUSD",
         "count": 3,
-        "euro": 1,
+        "eur": 1,
         "usd": 1,
         "czk": 0,
         "gbp": 1,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 18,
+        "id": 19,
         "issuer": "AllUnity GmbH",
         "state": "Germany",
         "authority": "BaFin",
         "tokens": "EURAU, CHFAU, SEKAU",
         "count": 3,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 1,
-        "pln": 0
+        "pln": 0,
+        "sek": 1,
+        "ron": 0
     },
     {
-        "id": 19,
+        "id": 20,
         "issuer": "StaBillon sp. z o.o.",
         "state": "Poland",
         "authority": "KNF",
         "tokens": "",
         "count": 0,
-        "euro": 0,
+        "eur": 0,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     },
     {
-        "id": 20,
+        "id": 21,
         "issuer": "Monerium ehf",
         "state": "Iceland",
         "authority": "Central Bank of Iceland",
         "tokens": "EURe",
         "count": 1,
-        "euro": 1,
+        "eur": 1,
         "usd": 0,
         "czk": 0,
         "gbp": 0,
         "chf": 0,
-        "pln": 0
+        "pln": 0,
+        "sek": 0,
+        "ron": 0
     }
 ];
 
     const caspsData = [
     {
         "id": 1,
-        "name": "Bybit EU GmbH",
-        "authority": "FMA",
-        "memberState": "Austria",
-        "services": [
-            "custody",
-            "exchange funds",
-            "exchange crypto",
-            "placing",
-            "transfer"
-        ],
-        "websites": [
-            "https://www.bybit.eu"
-        ]
-    },
-    {
-        "id": 2,
         "name": "Bitpanda GmbH",
         "authority": "FMA",
         "memberState": "Austria",
@@ -982,6 +1155,22 @@
         ],
         "websites": [
             "https://www.bitpanda.com"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Bybit EU GmbH",
+        "authority": "FMA",
+        "memberState": "Austria",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "placing",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.bybit.eu"
         ]
     },
     {
@@ -1054,7 +1243,7 @@
             "execution"
         ],
         "websites": [
-            "https://www.dad.at/"
+            "https://www.dad.at"
         ]
     },
     {
@@ -1070,7 +1259,7 @@
             "transfer"
         ],
         "websites": [
-            "https://coinfinity.co/"
+            "https://coinfinity.co"
         ]
     },
     {
@@ -1087,6 +1276,22 @@
     },
     {
         "id": 10,
+        "name": "WB-Shields Innovations GmbH",
+        "authority": "FMA",
+        "memberState": "Austria",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "placing",
+            "transfer"
+        ],
+        "websites": [
+            "https://whitebit.eu"
+        ]
+    },
+    {
+        "id": 11,
         "name": "KBC Bank NV",
         "authority": "NBB",
         "memberState": "Belgium",
@@ -1100,7 +1305,7 @@
         ]
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "Alaric Securities OOD",
         "authority": "FSC",
         "memberState": "Bulgaria",
@@ -1120,7 +1325,7 @@
         ]
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "Belayer ООD",
         "authority": "FSC",
         "memberState": "Bulgaria",
@@ -1134,53 +1339,7 @@
         ]
     },
     {
-        "id": 13,
-        "name": "ELECTROCOIN Ltd for services",
-        "authority": "HANFA",
-        "memberState": "Croatia",
-        "services": [
-            "custody",
-            "exchange funds",
-            "exchange crypto"
-        ],
-        "websites": [
-            "https://electrocoin.eu/hr"
-        ]
-    },
-    {
         "id": 14,
-        "name": "WHITE TECH Limited liability company for services",
-        "authority": "HANFA",
-        "memberState": "Croatia",
-        "services": [
-            "custody",
-            "exchange funds",
-            "exchange crypto",
-            "transfer"
-        ],
-        "websites": [
-            "https://whitely.hr/hr"
-        ]
-    },
-    {
-        "id": 15,
-        "name": "DIGITAL ASSETS Limited liability company for intermediation and services",
-        "authority": "HANFA",
-        "memberState": "Croatia",
-        "services": [
-            "custody",
-            "exchange funds",
-            "exchange crypto",
-            "placing",
-            "RTO",
-            "transfer"
-        ],
-        "websites": [
-            "https://www.bitstore.net/"
-        ]
-    },
-    {
-        "id": 16,
         "name": "eToro (Europe) Ltd",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1198,7 +1357,7 @@
         ]
     },
     {
-        "id": 17,
+        "id": 15,
         "name": "COLLECT & EXCHANGE CY LTD",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1213,7 +1372,7 @@
         ]
     },
     {
-        "id": 18,
+        "id": 16,
         "name": "Trading 212 Markets Ltd",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1228,7 +1387,7 @@
         ]
     },
     {
-        "id": 19,
+        "id": 17,
         "name": "Stratos Europe Ltd",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1242,7 +1401,7 @@
         ]
     },
     {
-        "id": 20,
+        "id": 18,
         "name": "Revolut Digital Assets (Europe) Ltd",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1255,11 +1414,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.revolut.com/"
+            "https://www.revolut.com/en-CY/crypto/"
         ]
     },
     {
-        "id": 21,
+        "id": 19,
         "name": "TEROXX DIGITAL ASSET LTD",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1267,6 +1426,7 @@
             "custody",
             "exchange funds",
             "exchange crypto",
+            "execution",
             "placing",
             "advice",
             "portfolio mgmt",
@@ -1277,7 +1437,7 @@
         ]
     },
     {
-        "id": 22,
+        "id": 20,
         "name": "CAPITAL VAULT LTD",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1292,7 +1452,7 @@
         ]
     },
     {
-        "id": 23,
+        "id": 21,
         "name": "PELICAN EXCHANGE EUROPE (CY) LTD",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1307,7 +1467,7 @@
         ]
     },
     {
-        "id": 24,
+        "id": 22,
         "name": "XTB Limited",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1321,7 +1481,7 @@
         ]
     },
     {
-        "id": 25,
+        "id": 23,
         "name": "Noemon Finance Ltd",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1339,7 +1499,7 @@
         ]
     },
     {
-        "id": 26,
+        "id": 24,
         "name": "Trading.com Markets EU Ltd",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1356,7 +1516,7 @@
         ]
     },
     {
-        "id": 27,
+        "id": 25,
         "name": "J2TX Ltd",
         "authority": "CySEC",
         "memberState": "Cyprus",
@@ -1375,7 +1535,24 @@
         ]
     },
     {
-        "id": 28,
+        "id": 26,
+        "name": "S.K. DASK KRYPTO LTD",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.daskcapital.io"
+        ]
+    },
+    {
+        "id": 27,
         "name": "Invity Finance s.r.o.",
         "authority": "CNB",
         "memberState": "Czechia",
@@ -1389,6 +1566,25 @@
         ],
         "websites": [
             "https://www.invity.io"
+        ]
+    },
+    {
+        "id": 28,
+        "name": "NAGA X",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "RTO",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.nagax.com/eu/"
         ]
     },
     {
@@ -1487,93 +1683,6 @@
     },
     {
         "id": 35,
-        "name": "Penning Financial Services ApS",
-        "authority": "DFSA",
-        "memberState": "Denmark",
-        "services": [
-            "custody",
-            "exchange funds",
-            "exchange crypto",
-            "execution",
-            "RTO",
-            "portfolio mgmt",
-            "transfer"
-        ],
-        "websites": [
-            "https://www.penning.io"
-        ]
-    },
-    {
-        "id": 36,
-        "name": "Lunar Block A/S",
-        "authority": "DFSA",
-        "memberState": "Denmark",
-        "services": [
-            "custody",
-            "execution"
-        ],
-        "websites": [
-            "https://www.lunar.app/dk/privat/krypto"
-        ]
-    },
-    {
-        "id": 37,
-        "name": "GC Exchange A/S",
-        "authority": "DFSA",
-        "memberState": "Denmark",
-        "services": [
-            "exchange funds",
-            "exchange crypto",
-            "execution",
-            "transfer"
-        ],
-        "websites": [
-            "https://gc.exchange/"
-        ]
-    },
-    {
-        "id": 38,
-        "name": "Northstake ApS",
-        "authority": "DFSA",
-        "memberState": "Denmark",
-        "services": [
-            "custody",
-            "execution",
-            "transfer"
-        ],
-        "websites": [
-            "https://www.northstake.dk"
-        ]
-    },
-    {
-        "id": 39,
-        "name": "Lightyear Europe AS",
-        "authority": "EFSA",
-        "memberState": "Estonia",
-        "services": [
-            "custody",
-            "execution",
-            "RTO"
-        ],
-        "websites": [
-            "https://lightyear.com/"
-        ]
-    },
-    {
-        "id": 40,
-        "name": "AS LHV Pank",
-        "authority": "EFSA",
-        "memberState": "Estonia",
-        "services": [
-            "custody",
-            "RTO"
-        ],
-        "websites": [
-            "https://www.lhv.ee"
-        ]
-    },
-    {
-        "id": 41,
         "name": "Boerse Stuttgart Digital Custody GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1586,7 +1695,7 @@
         ]
     },
     {
-        "id": 42,
+        "id": 36,
         "name": "Bitpanda Asset Management GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1601,7 +1710,7 @@
         ]
     },
     {
-        "id": 43,
+        "id": 37,
         "name": "Tradias GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1617,11 +1726,13 @@
         ]
     },
     {
-        "id": 44,
+        "id": 38,
         "name": "EUWAX AG",
         "authority": "BaFin",
         "memberState": "Germany",
         "services": [
+            "exchange funds",
+            "exchange crypto",
             "execution"
         ],
         "websites": [
@@ -1629,7 +1740,7 @@
         ]
     },
     {
-        "id": 45,
+        "id": 39,
         "name": "flatexDEGIRO Bank AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1637,11 +1748,11 @@
             "execution"
         ],
         "websites": [
-            "https://www.flatexdegiro.com/"
+            "https://www.flatexdegiro.com/de/flatexdegiro-bank/login"
         ]
     },
     {
-        "id": 46,
+        "id": 40,
         "name": "360 Treasury Systems AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1653,7 +1764,7 @@
         ]
     },
     {
-        "id": 47,
+        "id": 41,
         "name": "Trade Republic Bank GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1668,7 +1779,7 @@
         ]
     },
     {
-        "id": 48,
+        "id": 42,
         "name": "BitGo Europe GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1681,11 +1792,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.bitgo.de/entities/"
+            "https://www.bitgo.de/entities/bitgoeuropegmbh/"
         ]
     },
     {
-        "id": 49,
+        "id": 43,
         "name": "N26 Bank SE",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1693,11 +1804,12 @@
             "RTO"
         ],
         "websites": [
-            "https://n26.com"
+            "N26 – Die erste Onlinebank",
+            "die du lieben wirst"
         ]
     },
     {
-        "id": 50,
+        "id": 44,
         "name": "Baader Bank Aktiengesellschaft",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1709,7 +1821,7 @@
         ]
     },
     {
-        "id": 51,
+        "id": 45,
         "name": "Commerzbank Aktiengesellschaft",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1718,11 +1830,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.commerzbank.de"
+            "Commerzbank AG – Investor Relations"
         ]
     },
     {
-        "id": 52,
+        "id": 46,
         "name": "Baden-Württembergische Wertpapierbörse GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1734,7 +1846,7 @@
         ]
     },
     {
-        "id": 53,
+        "id": 47,
         "name": "Crypto Finance (Deutschland) GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1746,11 +1858,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.crypto-finance.com/"
+            "https://www.crypto-finance.com/germany/de/"
         ]
     },
     {
-        "id": 54,
+        "id": 48,
         "name": "Traders Place GmbH & Co. KGaA",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1758,11 +1870,11 @@
             "RTO"
         ],
         "websites": [
-            "https://tradersplace.de/"
+            "https://tradersplace.de/angebot/uebersicht/kryptowaehrungen"
         ]
     },
     {
-        "id": 55,
+        "id": 49,
         "name": "Tangany GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1775,7 +1887,7 @@
         ]
     },
     {
-        "id": 56,
+        "id": 50,
         "name": "Smartbroker AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1783,11 +1895,11 @@
             "RTO"
         ],
         "websites": [
-            "https://www.smartbrokerplus.de/"
+            "https://www.smartbrokerplus.de/de-de/"
         ]
     },
     {
-        "id": 57,
+        "id": 51,
         "name": "Dietrich & Richter Private Asset Management AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1800,7 +1912,7 @@
         ]
     },
     {
-        "id": 58,
+        "id": 52,
         "name": "Bullish Europe GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1816,7 +1928,7 @@
         ]
     },
     {
-        "id": 59,
+        "id": 53,
         "name": "V-Bank AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1830,17 +1942,17 @@
         ]
     },
     {
-        "id": 60,
+        "id": 54,
         "name": "Bankhaus Scheich Wertpapierspezialist AG",
         "authority": "BaFin",
         "memberState": "Germany",
         "services": [
             "exchange funds",
-            "exchange crypto",
             "execution",
             "placing",
             "RTO",
             "advice",
+            "exchange crypto",
             "portfolio mgmt"
         ],
         "websites": [
@@ -1848,7 +1960,7 @@
         ]
     },
     {
-        "id": 61,
+        "id": 55,
         "name": "Lang & Schwarz TradeCenter AG & Co. KG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1861,7 +1973,7 @@
         ]
     },
     {
-        "id": 62,
+        "id": 56,
         "name": "DonauCapital Wertpapier GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1873,7 +1985,7 @@
         ]
     },
     {
-        "id": 63,
+        "id": 57,
         "name": "Volksbank Raiffeisenbank Bayern Mitte eG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1886,7 +1998,7 @@
         ]
     },
     {
-        "id": 64,
+        "id": 58,
         "name": "Huddlestock GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1898,7 +2010,7 @@
         ]
     },
     {
-        "id": 65,
+        "id": 59,
         "name": "sino Aktiengesellschaft",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1910,7 +2022,7 @@
         ]
     },
     {
-        "id": 66,
+        "id": 60,
         "name": "Hyphe Markets GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1922,7 +2034,7 @@
         ]
     },
     {
-        "id": 67,
+        "id": 61,
         "name": "Deutsche WertpapierService Bank AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1934,7 +2046,7 @@
         ]
     },
     {
-        "id": 68,
+        "id": 62,
         "name": "DekaBank Deutsche Girozentrale",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1948,7 +2060,7 @@
         ]
     },
     {
-        "id": 69,
+        "id": 63,
         "name": "Hauck Aufhäuser Digital Custody GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1957,11 +2069,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.hal-privatbank.com/"
+            "https://www.hal-privatbank.com/asset-servicing/digitale-assets/regulierte-kryptoverwahrung"
         ]
     },
     {
-        "id": 70,
+        "id": 64,
         "name": "Fels wealth GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1976,7 +2088,7 @@
         ]
     },
     {
-        "id": 71,
+        "id": 65,
         "name": "Westerwald Bank eG Volks- und Raiffeisenbank",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -1988,7 +2100,7 @@
         ]
     },
     {
-        "id": 72,
+        "id": 66,
         "name": "Hannoversche Volksbank eG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2000,7 +2112,7 @@
         ]
     },
     {
-        "id": 73,
+        "id": 67,
         "name": "VR TeilhaberBank Metropolregion Nürnberg eG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2012,7 +2124,7 @@
         ]
     },
     {
-        "id": 74,
+        "id": 68,
         "name": "Volksbank Mittlerer Schwarzwald eG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2024,7 +2136,7 @@
         ]
     },
     {
-        "id": 75,
+        "id": 69,
         "name": "IG Europe GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2039,7 +2151,7 @@
         ]
     },
     {
-        "id": 76,
+        "id": 70,
         "name": "Volksbank Raiffeisenbank Würzburg eG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2051,7 +2163,7 @@
         ]
     },
     {
-        "id": 77,
+        "id": 71,
         "name": "VR-Bank Rottal-Inn eG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2063,7 +2175,7 @@
         ]
     },
     {
-        "id": 78,
+        "id": 72,
         "name": "VR Bank Südpfalz eG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2075,7 +2187,7 @@
         ]
     },
     {
-        "id": 79,
+        "id": 73,
         "name": "Sutor Bank GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2087,7 +2199,7 @@
         ]
     },
     {
-        "id": 80,
+        "id": 74,
         "name": "wSw PortfolioManagement AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2099,7 +2211,7 @@
         ]
     },
     {
-        "id": 81,
+        "id": 75,
         "name": "FIDUS Finanz AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2114,7 +2226,7 @@
         ]
     },
     {
-        "id": 82,
+        "id": 76,
         "name": "DZ BANK AG Deutsche Zentral-Genossenschaftsbank",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2128,7 +2240,7 @@
         ]
     },
     {
-        "id": 83,
+        "id": 77,
         "name": "Tradevest Digital Assets GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2141,7 +2253,7 @@
         ]
     },
     {
-        "id": 84,
+        "id": 78,
         "name": "ISF Institut Deutsch-Schweizer Finanzdienstleistungen GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2153,7 +2265,7 @@
         ]
     },
     {
-        "id": 85,
+        "id": 79,
         "name": "Plutos Vermögensverwaltung AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2165,7 +2277,7 @@
         ]
     },
     {
-        "id": 86,
+        "id": 80,
         "name": "Scalable Capital Bank GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2177,7 +2289,7 @@
         ]
     },
     {
-        "id": 87,
+        "id": 81,
         "name": "AnCeKa Vermögensbetreuungs Aktiengesellschaft",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2191,7 +2303,7 @@
         ]
     },
     {
-        "id": 88,
+        "id": 82,
         "name": "Joh. Berenberg, Gossler & Co. KG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2208,7 +2320,7 @@
         ]
     },
     {
-        "id": 89,
+        "id": 83,
         "name": "MLP Banking AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2220,7 +2332,7 @@
         ]
     },
     {
-        "id": 90,
+        "id": 84,
         "name": "BV & P Vermögen AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2233,7 +2345,7 @@
         ]
     },
     {
-        "id": 91,
+        "id": 85,
         "name": "CONCEDUS GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2246,7 +2358,7 @@
         ]
     },
     {
-        "id": 92,
+        "id": 86,
         "name": "DLT Securities GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2264,7 +2376,7 @@
         ]
     },
     {
-        "id": 93,
+        "id": 87,
         "name": "Tradevest Markets AG",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2281,7 +2393,7 @@
         ]
     },
     {
-        "id": 94,
+        "id": 88,
         "name": "Vermögensbutler GmbH",
         "authority": "BaFin",
         "memberState": "Germany",
@@ -2294,23 +2406,133 @@
         ]
     },
     {
-        "id": 95,
-        "name": "CHECKSIG S.R.L. SOCIETÀ BENEFIT",
-        "authority": "CONSOB",
-        "memberState": "Italy",
+        "id": 89,
+        "name": "Volksbank Heiden eG",
+        "authority": "BaFin",
+        "memberState": "Germany",
+        "services": [
+            "execution"
+        ],
+        "websites": [
+            "https://www.vbheiden.de"
+        ]
+    },
+    {
+        "id": 90,
+        "name": "Raiffeisenbank Kreis Kelheim eG",
+        "authority": "BaFin",
+        "memberState": "Germany",
+        "services": [
+            "execution"
+        ],
+        "websites": [
+            "https://www.rbkk.de"
+        ]
+    },
+    {
+        "id": 91,
+        "name": "Penning Financial Services ApS",
+        "authority": "DFSA",
+        "memberState": "Denmark",
         "services": [
             "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "RTO",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.penning.io"
+        ]
+    },
+    {
+        "id": 92,
+        "name": "Lunar Block A/S",
+        "authority": "DFSA",
+        "memberState": "Denmark",
+        "services": [
+            "custody",
+            "execution"
+        ],
+        "websites": [
+            "https://www.lunar.app/dk/privat/krypto"
+        ]
+    },
+    {
+        "id": 93,
+        "name": "GC Exchange A/S",
+        "authority": "DFSA",
+        "memberState": "Denmark",
+        "services": [
             "exchange funds",
             "exchange crypto",
             "execution",
             "transfer"
         ],
         "websites": [
-            "https://WWW.CHECKSIG.COM"
+            "https://gc.exchange/"
+        ]
+    },
+    {
+        "id": 94,
+        "name": "Northstake ApS",
+        "authority": "DFSA",
+        "memberState": "Denmark",
+        "services": [
+            "custody",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.northstake.dk"
+        ]
+    },
+    {
+        "id": 95,
+        "name": "Lightyear Europe AS",
+        "authority": "EFSA",
+        "memberState": "Estonia",
+        "services": [
+            "custody",
+            "execution",
+            "RTO"
+        ],
+        "websites": [
+            "https://lightyear.com/"
         ]
     },
     {
         "id": 96,
+        "name": "AS LHV Pank",
+        "authority": "EFSA",
+        "memberState": "Estonia",
+        "services": [
+            "custody",
+            "RTO"
+        ],
+        "websites": [
+            "https://www.lhv.ee"
+        ]
+    },
+    {
+        "id": 97,
+        "name": "Lightspark Payments Europe AS",
+        "authority": "EFSA",
+        "memberState": "Estonia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://eu.lightspark.com/"
+        ]
+    },
+    {
+        "id": 98,
         "name": "Banco Bilbao Vizcaya Argentaria S.A.",
         "authority": "CNMV",
         "memberState": "Spain",
@@ -2324,7 +2546,20 @@
         ]
     },
     {
-        "id": 97,
+        "id": 99,
+        "name": "OPEN BANK S.A.",
+        "authority": "CNMV",
+        "memberState": "Spain",
+        "services": [
+            "custody",
+            "execution"
+        ],
+        "websites": [
+            "https://www.openbank.es"
+        ]
+    },
+    {
+        "id": 100,
         "name": "CECABANK S.A.",
         "authority": "CNMV",
         "memberState": "Spain",
@@ -2338,7 +2573,7 @@
         ]
     },
     {
-        "id": 98,
+        "id": 101,
         "name": "Bitcoinforme S.L.",
         "authority": "CNMV",
         "memberState": "Spain",
@@ -2356,7 +2591,7 @@
         ]
     },
     {
-        "id": 99,
+        "id": 102,
         "name": "RENTA 4 BANCO S.A.",
         "authority": "CNMV",
         "memberState": "Spain",
@@ -2370,7 +2605,21 @@
         ]
     },
     {
-        "id": 100,
+        "id": 103,
+        "name": "KUTXABANK S.A.",
+        "authority": "CNMV",
+        "memberState": "Spain",
+        "services": [
+            "custody",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "https://portal.kutxabank.es/cs/ Satellite/kb/es/particulares"
+        ]
+    },
+    {
+        "id": 104,
         "name": "CAIXABANK S.A.",
         "authority": "CNMV",
         "memberState": "Spain",
@@ -2385,34 +2634,20 @@
         ]
     },
     {
-        "id": 101,
-        "name": "KUTXABANK S.A.",
+        "id": 105,
+        "name": "DUE NETWORK S.L.",
         "authority": "CNMV",
         "memberState": "Spain",
         "services": [
-            "custody",
-            "RTO",
-            "transfer"
+            "exchange funds",
+            "exchange crypto"
         ],
         "websites": [
-            "https://portal.kutxabank.es"
+            "http://www.opendue.com/"
         ]
     },
     {
-        "id": 102,
-        "name": "OPEN BANK S.A.",
-        "authority": "CNMV",
-        "memberState": "Spain",
-        "services": [
-            "custody",
-            "execution"
-        ],
-        "websites": [
-            "https://www.openbank.es"
-        ]
-    },
-    {
-        "id": 103,
+        "id": 106,
         "name": "Coinmotion Oy",
         "authority": "FIN-FSA",
         "memberState": "Finland",
@@ -2427,7 +2662,7 @@
         ]
     },
     {
-        "id": 104,
+        "id": 107,
         "name": "Tesseract Investment Oy",
         "authority": "FIN-FSA",
         "memberState": "Finland",
@@ -2443,7 +2678,7 @@
         ]
     },
     {
-        "id": 105,
+        "id": 108,
         "name": "Bittimaatti Oy",
         "authority": "FIN-FSA",
         "memberState": "Finland",
@@ -2455,7 +2690,7 @@
         ]
     },
     {
-        "id": 106,
+        "id": 109,
         "name": "NorthCrypto Oy",
         "authority": "FIN-FSA",
         "memberState": "Finland",
@@ -2470,7 +2705,7 @@
         ]
     },
     {
-        "id": 107,
+        "id": 110,
         "name": "Kvarn Capital Oy",
         "authority": "FIN-FSA",
         "memberState": "Finland",
@@ -2485,7 +2720,7 @@
         ]
     },
     {
-        "id": 108,
+        "id": 111,
         "name": "CACEIS BANK",
         "authority": "AMF",
         "memberState": "France",
@@ -2499,7 +2734,7 @@
         ]
     },
     {
-        "id": 109,
+        "id": 112,
         "name": "COINSHARES ASSET MANAGEMENT",
         "authority": "AMF",
         "memberState": "France",
@@ -2512,7 +2747,7 @@
         ]
     },
     {
-        "id": 110,
+        "id": 113,
         "name": "BITSTACK DIGITAL ASSETS SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2528,7 +2763,7 @@
         ]
     },
     {
-        "id": 111,
+        "id": 114,
         "name": "METAL GEAR SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2543,7 +2778,7 @@
         ]
     },
     {
-        "id": 112,
+        "id": 115,
         "name": "DEBLOCK SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2557,7 +2792,7 @@
         ]
     },
     {
-        "id": 113,
+        "id": 116,
         "name": "GOin SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2575,7 +2810,7 @@
         ]
     },
     {
-        "id": 114,
+        "id": 117,
         "name": "FINCTEK UE SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2592,7 +2827,7 @@
         ]
     },
     {
-        "id": 115,
+        "id": 118,
         "name": "RELAI EU SASU",
         "authority": "AMF",
         "memberState": "France",
@@ -2600,11 +2835,11 @@
             "exchange funds"
         ],
         "websites": [
-            "https://relai.app/"
+            "75012 Paris"
         ]
     },
     {
-        "id": 116,
+        "id": 119,
         "name": "SOCIETE GENERALE - FORGE",
         "authority": "AMF",
         "memberState": "France",
@@ -2613,11 +2848,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.sgforge.com/"
+            "92800 PUTEAUX"
         ]
     },
     {
-        "id": 117,
+        "id": 120,
         "name": "BANQUE DELUBAC ET CIE",
         "authority": "AMF",
         "memberState": "France",
@@ -2631,11 +2866,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.delubac.com/"
+            "07160 LE CHEYLARD"
         ]
     },
     {
-        "id": 118,
+        "id": 121,
         "name": "COMETH SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2649,7 +2884,7 @@
         ]
     },
     {
-        "id": 119,
+        "id": 122,
         "name": "FIPTO PI SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2665,7 +2900,7 @@
         ]
     },
     {
-        "id": 120,
+        "id": 123,
         "name": "HEXARQ SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2681,7 +2916,7 @@
         ]
     },
     {
-        "id": 121,
+        "id": 124,
         "name": "BLOCKNODES SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2698,7 +2933,7 @@
         ]
     },
     {
-        "id": 122,
+        "id": 125,
         "name": "CIRCLE INTERNET FINANCIAL EUROPE SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2711,7 +2946,7 @@
         ]
     },
     {
-        "id": 123,
+        "id": 126,
         "name": "DESKOIN SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2728,7 +2963,7 @@
         ]
     },
     {
-        "id": 124,
+        "id": 127,
         "name": "COINHOUSE SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2746,7 +2981,7 @@
         ]
     },
     {
-        "id": 125,
+        "id": 128,
         "name": "QWARKS SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2763,7 +2998,7 @@
         ]
     },
     {
-        "id": 126,
+        "id": 129,
         "name": "PAYTOP SAS",
         "authority": "AMF",
         "memberState": "France",
@@ -2777,7 +3012,180 @@
         ]
     },
     {
-        "id": 127,
+        "id": 130,
+        "name": "RUFIJI CAPITAL SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "custody",
+            "execution",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.rufiji.capital/"
+        ]
+    },
+    {
+        "id": 131,
+        "name": "KEYROCK FR SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://keyrock.com/"
+        ]
+    },
+    {
+        "id": 132,
+        "name": "Bpifrance Investissement",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "advice"
+        ],
+        "websites": [
+            "https://www.bpifrance.fr/"
+        ]
+    },
+    {
+        "id": 133,
+        "name": "RCUBE ASSET MANAGEMENT",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "advice",
+            "portfolio mgmt"
+        ],
+        "websites": [
+            "https://rcube.com/"
+        ]
+    },
+    {
+        "id": 134,
+        "name": "PAYMIUM SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "custody",
+            "trading platform",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.paymium.com/"
+        ]
+    },
+    {
+        "id": 135,
+        "name": "LEONOD SARL",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "exchange funds"
+        ],
+        "websites": [
+            "https://app.bullbitcoin.com/"
+        ]
+    },
+    {
+        "id": 136,
+        "name": "MERIA SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "custody",
+            "exchange funds",
+            "execution",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.meria.com/"
+        ]
+    },
+    {
+        "id": 137,
+        "name": "ELECTROCOIN Ltd for services",
+        "authority": "HANFA",
+        "memberState": "Croatia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto"
+        ],
+        "websites": [
+            "https://electrocoin.eu/hr"
+        ]
+    },
+    {
+        "id": 138,
+        "name": "WHITE TECH Limited liability company for services",
+        "authority": "HANFA",
+        "memberState": "Croatia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://whitely.hr/hr"
+        ]
+    },
+    {
+        "id": 139,
+        "name": "DIGITAL ASSETS Limited liability company for intermediation and services",
+        "authority": "HANFA",
+        "memberState": "Croatia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "placing",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.bitstore.net/"
+        ]
+    },
+    {
+        "id": 140,
+        "name": "Bitblock Ltd. for Services",
+        "authority": "HANFA",
+        "memberState": "Croatia",
+        "services": [
+            "exchange funds"
+        ],
+        "websites": [
+            "https://kriptomat.hr/"
+        ]
+    },
+    {
+        "id": 141,
+        "name": "IN KAPITAL limited liability company for trade and services",
+        "authority": "HANFA",
+        "memberState": "Croatia",
+        "services": [
+            "exchange funds"
+        ],
+        "websites": [
+            "https://www.inkapital.hr/"
+        ]
+    },
+    {
+        "id": 142,
         "name": "Payward Global Solutions Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2789,7 +3197,7 @@
         ]
     },
     {
-        "id": 128,
+        "id": 143,
         "name": "Payward Europe Solutions Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2808,7 +3216,7 @@
         ]
     },
     {
-        "id": 129,
+        "id": 144,
         "name": "Legend Financial Ireland Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2821,7 +3229,7 @@
         ]
     },
     {
-        "id": 130,
+        "id": 145,
         "name": "Push Virtual Assets Ireland Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2834,7 +3242,7 @@
         ]
     },
     {
-        "id": 131,
+        "id": 146,
         "name": "Ramp Swaps (Ireland) Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2846,7 +3254,7 @@
         ]
     },
     {
-        "id": 132,
+        "id": 147,
         "name": "Paysafe Payment Solutions Limited.",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2857,11 +3265,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.skrill.com"
+            "www.skrill.com"
         ]
     },
     {
-        "id": 133,
+        "id": 148,
         "name": "CoinJar Europe Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2876,7 +3284,7 @@
         ]
     },
     {
-        "id": 134,
+        "id": 149,
         "name": "Confirmo Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2890,7 +3298,7 @@
         ]
     },
     {
-        "id": 135,
+        "id": 150,
         "name": "Pionew Ireland Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2905,7 +3313,7 @@
         ]
     },
     {
-        "id": 136,
+        "id": 151,
         "name": "StoneX Digital International Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2922,7 +3330,7 @@
         ]
     },
     {
-        "id": 137,
+        "id": 152,
         "name": "Interactive Brokers Ireland Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2934,7 +3342,7 @@
         ]
     },
     {
-        "id": 138,
+        "id": 153,
         "name": "Virtu Financial Ireland Limited",
         "authority": "CBI",
         "memberState": "Ireland",
@@ -2947,7 +3355,81 @@
         ]
     },
     {
-        "id": 139,
+        "id": 154,
+        "name": "Myntkaup ehf.",
+        "authority": "Central Bank of Iceland",
+        "memberState": "Iceland",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://myntkaup.is/"
+        ]
+    },
+    {
+        "id": 155,
+        "name": "CHECKSIG S.R.L. SOCIETÀ BENEFIT",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://WWW.CHECKSIG.COM"
+        ]
+    },
+    {
+        "id": 156,
+        "name": "OLLIV ITALIA S.R.L.",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "exchange funds"
+        ],
+        "websites": [
+            "https://coinflip.tech/it-IT"
+        ]
+    },
+    {
+        "id": 157,
+        "name": "RIV-DIGITAL S.R.L.",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "exchange funds",
+            "exchange crypto",
+            "placing"
+        ],
+        "websites": [
+            "https://riv-digital.it"
+        ]
+    },
+    {
+        "id": 158,
+        "name": "CONIO S.R.L.",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "placing",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.conio.com"
+        ]
+    },
+    {
+        "id": 159,
         "name": "ZEUS Anstalt für Vermögensverwaltung",
         "authority": "FMA-LI",
         "memberState": "Liechtenstein",
@@ -2959,7 +3441,7 @@
         ]
     },
     {
-        "id": 140,
+        "id": 160,
         "name": "LGT Bank AG",
         "authority": "FMA-LI",
         "memberState": "Liechtenstein",
@@ -2974,7 +3456,7 @@
         ]
     },
     {
-        "id": 141,
+        "id": 161,
         "name": "Bank Frick AG",
         "authority": "FMA-LI",
         "memberState": "Liechtenstein",
@@ -2988,9 +3470,9 @@
         ]
     },
     {
-        "id": 142,
+        "id": 162,
         "name": "Wyden Capital AG",
-        "authority": "FMA",
+        "authority": "FMA-LI",
         "memberState": "Liechtenstein",
         "services": [
             "portfolio mgmt"
@@ -3000,9 +3482,9 @@
         ]
     },
     {
-        "id": 143,
+        "id": 163,
         "name": "Celsion Bank AG",
-        "authority": "FMA",
+        "authority": "FMA-LI",
         "memberState": "Liechtenstein",
         "services": [
             "custody",
@@ -3015,9 +3497,9 @@
         ]
     },
     {
-        "id": 144,
+        "id": 164,
         "name": "RULEMATCH Europe AG",
-        "authority": "FMA",
+        "authority": "FMA-LI",
         "memberState": "Liechtenstein",
         "services": [
             "custody",
@@ -3029,7 +3511,40 @@
         ]
     },
     {
-        "id": 145,
+        "id": 165,
+        "name": "Floin AG",
+        "authority": "FMA-LI",
+        "memberState": "Liechtenstein",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "placing",
+            "transfer"
+        ],
+        "websites": [
+            "https://floin.com/"
+        ]
+    },
+    {
+        "id": 166,
+        "name": "Bitcoin Suisse (Europe) AG",
+        "authority": "FMA-LI",
+        "memberState": "Liechtenstein",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.bitcoinsuisse.com"
+        ]
+    },
+    {
+        "id": 167,
         "name": "Robinhood Europe UAB",
         "authority": "LSC",
         "memberState": "Lithuania",
@@ -3044,7 +3559,7 @@
         ]
     },
     {
-        "id": 146,
+        "id": 168,
         "name": "UAB Decentralized",
         "authority": "LSC",
         "memberState": "Lithuania",
@@ -3059,7 +3574,7 @@
         ]
     },
     {
-        "id": 147,
+        "id": 169,
         "name": "Nuvei Liquidity UAB",
         "authority": "LSC",
         "memberState": "Lithuania",
@@ -3074,7 +3589,7 @@
         ]
     },
     {
-        "id": 148,
+        "id": 170,
         "name": "UAB Micar assets",
         "authority": "LSC",
         "memberState": "Lithuania",
@@ -3091,7 +3606,7 @@
         ]
     },
     {
-        "id": 149,
+        "id": 171,
         "name": "Newrails, UAB",
         "authority": "LSC",
         "memberState": "Lithuania",
@@ -3104,7 +3619,7 @@
         ]
     },
     {
-        "id": 150,
+        "id": 172,
         "name": "UAB BLUE EMI LT",
         "authority": "LSC",
         "memberState": "Lithuania",
@@ -3116,7 +3631,19 @@
         ]
     },
     {
-        "id": 151,
+        "id": 173,
+        "name": "Clearstream Banking S.A.",
+        "authority": "CSSF",
+        "memberState": "Luxembourg",
+        "services": [
+            "custody"
+        ],
+        "websites": [
+            "https://www.clearstream.com/clearstream-en/"
+        ]
+    },
+    {
+        "id": 174,
         "name": "Bitstamp Europe S.A.",
         "authority": "CSSF",
         "memberState": "Luxembourg",
@@ -3134,19 +3661,7 @@
         ]
     },
     {
-        "id": 152,
-        "name": "Clearstream Banking S.A.",
-        "authority": "CSSF",
-        "memberState": "Luxembourg",
-        "services": [
-            "custody"
-        ],
-        "websites": [
-            "https://www.clearstream.com/"
-        ]
-    },
-    {
-        "id": 153,
+        "id": 175,
         "name": "Coinbase Luxembourg S.A.",
         "authority": "CSSF",
         "memberState": "Luxembourg",
@@ -3160,11 +3675,11 @@
             "transfer"
         ],
         "websites": [
-            "https://www.coinbase.com"
+            "https://https.//coinbase.com"
         ]
     },
     {
-        "id": 154,
+        "id": 176,
         "name": "Zodia Custody (Europe) S.A.",
         "authority": "CSSF",
         "memberState": "Luxembourg",
@@ -3177,7 +3692,7 @@
         ]
     },
     {
-        "id": 155,
+        "id": 177,
         "name": "Banking Circle S.A.",
         "authority": "CSSF",
         "memberState": "Luxembourg",
@@ -3191,7 +3706,7 @@
         ]
     },
     {
-        "id": 156,
+        "id": 178,
         "name": "Swissquote Bank Europe SA",
         "authority": "CSSF",
         "memberState": "Luxembourg",
@@ -3205,7 +3720,7 @@
         ]
     },
     {
-        "id": 157,
+        "id": 179,
         "name": "B2C2 Europe Sarl",
         "authority": "CSSF",
         "memberState": "Luxembourg",
@@ -3219,7 +3734,20 @@
         ]
     },
     {
-        "id": 158,
+        "id": 180,
+        "name": "STOKR S.A.",
+        "authority": "CSSF",
+        "memberState": "Luxembourg",
+        "services": [
+            "custody",
+            "transfer"
+        ],
+        "websites": [
+            "https://stokr.io/"
+        ]
+    },
+    {
+        "id": 181,
         "name": "BlockBen SIA",
         "authority": "LB",
         "memberState": "Latvia",
@@ -3235,7 +3763,7 @@
         ]
     },
     {
-        "id": 159,
+        "id": 182,
         "name": "Nexdesk SIA",
         "authority": "LB",
         "memberState": "Latvia",
@@ -3249,7 +3777,7 @@
         ]
     },
     {
-        "id": 160,
+        "id": 183,
         "name": "SIA Paybis Europe",
         "authority": "LB",
         "memberState": "Latvia",
@@ -3266,7 +3794,7 @@
         ]
     },
     {
-        "id": 161,
+        "id": 184,
         "name": "Neverless SIA",
         "authority": "LB",
         "memberState": "Latvia",
@@ -3282,7 +3810,38 @@
         ]
     },
     {
-        "id": 162,
+        "id": 185,
+        "name": "Trek Technologies SIA",
+        "authority": "LB",
+        "memberState": "Latvia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://eu.backpack.exchange/"
+        ]
+    },
+    {
+        "id": 186,
+        "name": "AS TWINO Investments",
+        "authority": "LB",
+        "memberState": "Latvia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution"
+        ],
+        "websites": [
+            "https://www.twino.eu/en"
+        ]
+    },
+    {
+        "id": 187,
         "name": "OKX Europe Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3302,7 +3861,7 @@
         ]
     },
     {
-        "id": 163,
+        "id": 188,
         "name": "BP23 CA Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3319,7 +3878,7 @@
         ]
     },
     {
-        "id": 164,
+        "id": 189,
         "name": "Foris DAX MT Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3336,7 +3895,7 @@
         ]
     },
     {
-        "id": 165,
+        "id": 190,
         "name": "Zillion Bits Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3355,7 +3914,7 @@
         ]
     },
     {
-        "id": 166,
+        "id": 191,
         "name": "Altarius Asset Management Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3368,7 +3927,7 @@
         ]
     },
     {
-        "id": 167,
+        "id": 192,
         "name": "Gemini Intergalactic EU Ltd",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3386,7 +3945,7 @@
         ]
     },
     {
-        "id": 168,
+        "id": 193,
         "name": "Socios Europe Services Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3402,7 +3961,7 @@
         ]
     },
     {
-        "id": 169,
+        "id": 194,
         "name": "Gate Technology Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3419,7 +3978,7 @@
         ]
     },
     {
-        "id": 170,
+        "id": 195,
         "name": "Blue Cube (Malta) Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3435,7 +3994,7 @@
         ]
     },
     {
-        "id": 171,
+        "id": 196,
         "name": "Payhound Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3451,7 +4010,7 @@
         ]
     },
     {
-        "id": 172,
+        "id": 197,
         "name": "Damex Digital LTD",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3467,7 +4026,7 @@
         ]
     },
     {
-        "id": 173,
+        "id": 198,
         "name": "System Pay Services (Malta) Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3483,7 +4042,7 @@
         ]
     },
     {
-        "id": 174,
+        "id": 199,
         "name": "Calamatta Cuschieri Investment Services Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3496,7 +4055,7 @@
         ]
     },
     {
-        "id": 175,
+        "id": 200,
         "name": "Olmipay Limited",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3508,11 +4067,12 @@
             "transfer"
         ],
         "websites": [
-            "Olmipay.com (upcoming)"
+            "Olmipay.com",
+            "(upcoming)"
         ]
     },
     {
-        "id": 176,
+        "id": 201,
         "name": "Stable Mint Ltd.",
         "authority": "MFSA",
         "memberState": "Malta",
@@ -3525,7 +4085,38 @@
         ]
     },
     {
-        "id": 177,
+        "id": 202,
+        "name": "OP Digital Services Limited",
+        "authority": "MFSA",
+        "memberState": "Malta",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.openpayd.com/"
+        ]
+    },
+    {
+        "id": 203,
+        "name": "Zap (Strike) Europe Limited",
+        "authority": "MFSA",
+        "memberState": "Malta",
+        "services": [
+            "custody",
+            "exchange funds",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://strike.me/en-GB/"
+        ]
+    },
+    {
+        "id": 204,
         "name": "MoonPay Europe B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3539,7 +4130,7 @@
         ]
     },
     {
-        "id": 178,
+        "id": 205,
         "name": "BitStaete B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3551,7 +4142,7 @@
         ]
     },
     {
-        "id": 179,
+        "id": 206,
         "name": "Zebedee Europe B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3565,7 +4156,7 @@
         ]
     },
     {
-        "id": 180,
+        "id": 207,
         "name": "Hidden Road Partners CIV NL B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3579,7 +4170,7 @@
         ]
     },
     {
-        "id": 181,
+        "id": 208,
         "name": "AvianLabs Netherlands B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3593,7 +4184,7 @@
         ]
     },
     {
-        "id": 182,
+        "id": 209,
         "name": "Vivid Money B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3606,7 +4197,7 @@
         ]
     },
     {
-        "id": 183,
+        "id": 210,
         "name": "One Trading Exchange B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3619,7 +4210,7 @@
         ]
     },
     {
-        "id": 184,
+        "id": 211,
         "name": "Acheron Europe B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3635,7 +4226,7 @@
         ]
     },
     {
-        "id": 185,
+        "id": 212,
         "name": "BTC Direct Europe B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3649,7 +4240,7 @@
         ]
     },
     {
-        "id": 186,
+        "id": 213,
         "name": "Bitvavo B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3663,7 +4254,7 @@
         ]
     },
     {
-        "id": 187,
+        "id": 214,
         "name": "Amdax B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3678,7 +4269,7 @@
         ]
     },
     {
-        "id": 188,
+        "id": 215,
         "name": "Finst B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3693,7 +4284,7 @@
         ]
     },
     {
-        "id": 189,
+        "id": 216,
         "name": "Decubate B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3707,7 +4298,7 @@
         ]
     },
     {
-        "id": 190,
+        "id": 217,
         "name": "Fiat Republic Netherlands B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3720,7 +4311,7 @@
         ]
     },
     {
-        "id": 191,
+        "id": 218,
         "name": "BLOX B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3734,7 +4325,7 @@
         ]
     },
     {
-        "id": 192,
+        "id": 219,
         "name": "EU Internet Ventures B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3748,7 +4339,7 @@
         ]
     },
     {
-        "id": 193,
+        "id": 220,
         "name": "zerohash europe B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3760,11 +4351,11 @@
             "transfer"
         ],
         "websites": [
-            "https://zerohash.com"
+            "https://zerohash.com/eu"
         ]
     },
     {
-        "id": 194,
+        "id": 221,
         "name": "Coinmerce B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3779,7 +4370,7 @@
         ]
     },
     {
-        "id": 195,
+        "id": 222,
         "name": "Bitmymoney B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3794,7 +4385,7 @@
         ]
     },
     {
-        "id": 196,
+        "id": 223,
         "name": "Bitonic B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3809,7 +4400,7 @@
         ]
     },
     {
-        "id": 197,
+        "id": 224,
         "name": "Blockrise Capital B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3824,7 +4415,7 @@
         ]
     },
     {
-        "id": 198,
+        "id": 225,
         "name": "Monflo B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3838,7 +4429,7 @@
         ]
     },
     {
-        "id": 199,
+        "id": 226,
         "name": "WEB3 Technology B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3853,7 +4444,7 @@
         ]
     },
     {
-        "id": 200,
+        "id": 227,
         "name": "D2X Group N.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3865,7 +4456,7 @@
         ]
     },
     {
-        "id": 201,
+        "id": 228,
         "name": "ClearBank Europe N.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3879,7 +4470,7 @@
         ]
     },
     {
-        "id": 202,
+        "id": 229,
         "name": "Change Securities B.V.",
         "authority": "AFM",
         "memberState": "Netherlands",
@@ -3893,7 +4484,66 @@
         ]
     },
     {
-        "id": 203,
+        "id": 230,
+        "name": "AK JENSEN NORWAY AS",
+        "authority": "NFSA",
+        "memberState": "Norway",
+        "services": [
+            "RTO",
+            "portfolio mgmt"
+        ],
+        "websites": [
+            "https://www.akj.com/"
+        ]
+    },
+    {
+        "id": 231,
+        "name": "TÝR MARKETS AS",
+        "authority": "NFSA",
+        "memberState": "Norway",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.tyrmarkets.net/no"
+        ]
+    },
+    {
+        "id": 232,
+        "name": "FIRI AS",
+        "authority": "NFSA",
+        "memberState": "Norway",
+        "services": [
+            "custody",
+            "trading platform",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://firi.com/no"
+        ]
+    },
+    {
+        "id": 233,
+        "name": "K33 MARKETS as",
+        "authority": "NFSA",
+        "memberState": "Norway",
+        "services": [
+            "custody",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.k33.com"
+        ]
+    },
+    {
+        "id": 234,
         "name": "ILIRIKA borzno posredniška hiša d.d.",
         "authority": "ATVP",
         "memberState": "Slovenia",
@@ -3908,8 +4558,8 @@
         ]
     },
     {
-        "id": 204,
-        "name": "INCREMENTUM poslovne storitve d.o.o.",
+        "id": 235,
+        "name": "INCREMENTUM družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o.",
         "authority": "ATVP",
         "memberState": "Slovenia",
         "services": [
@@ -3922,7 +4572,7 @@
         ]
     },
     {
-        "id": 205,
+        "id": 236,
         "name": "Orcabay finančne storitve d.o.o.",
         "authority": "ATVP",
         "memberState": "Slovenia",
@@ -3935,7 +4585,7 @@
         ]
     },
     {
-        "id": 206,
+        "id": 237,
         "name": "Safello AB",
         "authority": "FI",
         "memberState": "Sweden",
@@ -3952,7 +4602,7 @@
         ]
     },
     {
-        "id": 207,
+        "id": 238,
         "name": "Fintegence, s.r.o.",
         "authority": "NBS",
         "memberState": "Slovakia",
@@ -3966,7 +4616,7 @@
         ]
     },
     {
-        "id": 208,
+        "id": 239,
         "name": "FINTECH SK s. r. o.",
         "authority": "NBS",
         "memberState": "Slovakia",
@@ -3982,8 +4632,8 @@
         ]
     },
     {
-        "id": 209,
-        "name": "FUMBI, s. r. o.",
+        "id": 240,
+        "name": "FUMBI, s.r.o.",
         "authority": "NBS",
         "memberState": "Slovakia",
         "services": [
@@ -3999,7 +4649,7 @@
         ]
     },
     {
-        "id": 210,
+        "id": 241,
         "name": "Madison Six j. s. a.",
         "authority": "NBS",
         "memberState": "Slovakia",
@@ -4016,7 +4666,7 @@
         ]
     },
     {
-        "id": 211,
+        "id": 242,
         "name": "Firefish Europe s.r.o",
         "authority": "NBS",
         "memberState": "Slovakia",
@@ -4031,7 +4681,7 @@
         ]
     },
     {
-        "id": 212,
+        "id": 243,
         "name": "Okazio s.r.o.",
         "authority": "NBS",
         "memberState": "Slovakia",
@@ -4044,6 +4694,554 @@
         ],
         "websites": [
             "https://okazio.sk/"
+        ]
+    },
+    {
+        "id": 244,
+        "name": "Ronin EM Ltd",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "execution",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "https://em.ron.in/"
+        ]
+    },
+    {
+        "id": 245,
+        "name": "Krypto Knight Ltd",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "www.krypto-knight.com"
+        ]
+    },
+    {
+        "id": 246,
+        "name": "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd)",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://triabridge.com/"
+        ]
+    },
+    {
+        "id": 247,
+        "name": "NOEMON TECH LTD",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "placing",
+            "RTO",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "www.noemon.tech"
+        ]
+    },
+    {
+        "id": 248,
+        "name": "Unlimit Crypto Ltd",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "placing",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "www.crypto.unlimit.com"
+        ]
+    },
+    {
+        "id": 249,
+        "name": "COMPLYCRYPTO DEPOSITORY EU LIMITED",
+        "authority": "CySEC",
+        "memberState": "Cyprus",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "www.complycrypto.eu"
+        ]
+    },
+    {
+        "id": 250,
+        "name": "IP wBTCb solutions, s.r.o.",
+        "authority": "CNB",
+        "memberState": "Czechia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://bit.plus"
+        ]
+    },
+    {
+        "id": 251,
+        "name": "Simple Coin s.r.o.",
+        "authority": "CNB",
+        "memberState": "Czechia",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.simplecoin.eu"
+        ]
+    },
+    {
+        "id": 252,
+        "name": "wBTCb.cz, s.r.o.",
+        "authority": "CNB",
+        "memberState": "Czechia",
+        "services": [
+            "exchange funds"
+        ],
+        "websites": [
+            "https://bit.plus"
+        ]
+    },
+    {
+        "id": 253,
+        "name": "Altlift s.r.o.",
+        "authority": "CNB",
+        "memberState": "Czechia",
+        "services": [
+            "execution",
+            "RTO",
+            "advice"
+        ],
+        "websites": [
+            "ttps://www.altlift.cz/"
+        ]
+    },
+    {
+        "id": 254,
+        "name": "Donau-Iller-Bank eG",
+        "authority": "BaFin",
+        "memberState": "Germany",
+        "services": [
+            "execution"
+        ],
+        "websites": [
+            "www.donau-iller-bank.de"
+        ]
+    },
+    {
+        "id": 255,
+        "name": "CROSSMINT EUROPE S.L.",
+        "authority": "CNMV",
+        "memberState": "Spain",
+        "services": [
+            "custody",
+            "exchange funds",
+            "transfer"
+        ],
+        "websites": [
+            "www.crossmint.com"
+        ]
+    },
+    {
+        "id": 256,
+        "name": "CRIPTAN TRADE, S.L.",
+        "authority": "CNMV",
+        "memberState": "Spain",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "www.criptan.com"
+        ]
+    },
+    {
+        "id": 257,
+        "name": "MINOS GLOBAL, S.L.",
+        "authority": "CNMV",
+        "memberState": "Spain",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "placing",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "ttps://minos.global"
+        ]
+    },
+    {
+        "id": 258,
+        "name": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES",
+        "authority": "CNMV",
+        "memberState": "Spain",
+        "services": [
+            "custody",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "www.prosegurcrypto.com"
+        ]
+    },
+    {
+        "id": 259,
+        "name": "ALPHACAP DIGITAL ASSETS SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "custody",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://alphacap.fr/"
+        ]
+    },
+    {
+        "id": 260,
+        "name": "FLOWDESK EUROPE SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.flowdesk.co/"
+        ]
+    },
+    {
+        "id": 261,
+        "name": "ICEBLOCK SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "custody",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.iceblockinvestments.com/"
+        ]
+    },
+    {
+        "id": 262,
+        "name": "MEREAU FINANCE SAS",
+        "authority": "AMF",
+        "memberState": "France",
+        "services": [
+            "advice",
+            "portfolio mgmt"
+        ],
+        "websites": [
+            "https://crypto-assets-management.com/"
+        ]
+    },
+    {
+        "id": 263,
+        "name": "BANCA SELLA",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "custody",
+            "transfer"
+        ],
+        "websites": [
+            "www.sella.it"
+        ]
+    },
+    {
+        "id": 264,
+        "name": "CRYPTOSMART S.P.A.",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "placing",
+            "transfer"
+        ],
+        "websites": [
+            "https://cryptosmart.it/"
+        ]
+    },
+    {
+        "id": 265,
+        "name": "YOUNG PLATFORM S.P.A.",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "placing",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
+        ],
+        "websites": [
+            "https://youngplatform.com"
+        ]
+    },
+    {
+        "id": 266,
+        "name": "HODLIE S.R.L.",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "custody",
+            "portfolio mgmt"
+        ],
+        "websites": [
+            "https://hodli.com"
+        ]
+    },
+    {
+        "id": 267,
+        "name": "HERCLE S.R.L.",
+        "authority": "CONSOB",
+        "memberState": "Italy",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.hercle.financial"
+        ]
+    },
+    {
+        "id": 268,
+        "name": "Sygnum Europe AG",
+        "authority": "FMA-LI",
+        "memberState": "Liechtenstein",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.sygnum.com/eu"
+        ]
+    },
+    {
+        "id": 269,
+        "name": "Standard Chartered Luxembourg S.A.",
+        "authority": "CSSF",
+        "memberState": "Luxembourg",
+        "services": [
+            "custody",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.sc.com/"
+        ]
+    },
+    {
+        "id": 270,
+        "name": "bitFlyer EUROPE S.A.",
+        "authority": "CSSF",
+        "memberState": "Luxembourg",
+        "services": [
+            "custody",
+            "exchange funds",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://bitflyer.com/en-eu/"
+        ]
+    },
+    {
+        "id": 271,
+        "name": "Bridge Building S.A.",
+        "authority": "CSSF",
+        "memberState": "Luxembourg",
+        "services": [
+            "custody",
+            "exchange funds",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "www.bridge.xyz"
+        ]
+    },
+    {
+        "id": 272,
+        "name": "SIA AlphaRoute",
+        "authority": "LB",
+        "memberState": "Latvia",
+        "services": [
+            "custody",
+            "trading platform",
+            "exchange funds",
+            "exchange crypto",
+            "placing",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.kangaexchange.eu/"
+        ]
+    },
+    {
+        "id": 273,
+        "name": "Legion Malta Limited",
+        "authority": "MFSA",
+        "memberState": "Malta",
+        "services": [
+            "custody",
+            "placing",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "https://legion.cc/"
+        ]
+    },
+    {
+        "id": 274,
+        "name": "FalconX Limited",
+        "authority": "MFSA",
+        "memberState": "Malta",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "execution",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.falconx.io/"
+        ]
+    },
+    {
+        "id": 275,
+        "name": "CF Technologies Ltd",
+        "authority": "MFSA",
+        "memberState": "Malta",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://xcoins.com/en"
+        ]
+    },
+    {
+        "id": 276,
+        "name": "Everest Network Limited",
+        "authority": "MFSA",
+        "memberState": "Malta",
+        "services": [
+            "custody",
+            "execution",
+            "placing",
+            "RTO",
+            "transfer"
+        ],
+        "websites": [
+            "https://www.everest.org/"
+        ]
+    },
+    {
+        "id": 277,
+        "name": "Bequant Pro Limited",
+        "authority": "MFSA",
+        "memberState": "Malta",
+        "services": [
+            "custody",
+            "exchange funds",
+            "exchange crypto",
+            "transfer"
+        ],
+        "websites": [
+            "https://bequant.pro/"
+        ]
+    },
+    {
+        "id": 278,
+        "name": "Digital Currency Services B.V.",
+        "authority": "AFM",
+        "memberState": "Netherlands",
+        "services": [
+            "custody",
+            "exchange funds",
+            "transfer"
+        ],
+        "websites": [
+            "https://happycoins.com/"
+        ]
+    },
+    {
+        "id": 279,
+        "name": "Webull Securities (Europe) B.V.",
+        "authority": "AFM",
+        "memberState": "Netherlands",
+        "services": [
+            "custody",
+            "RTO"
+        ],
+        "websites": [
+            "https://www.webull.eu/"
         ]
     }
 ];
@@ -5055,7 +6253,7 @@
         "id": 98,
         "entity": "Lucrumiagroup",
         "country": "Italy",
-        "authority": "Commissione Nazionale per le Societa e la Borsa  (CONSOB)",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
         "websites": [
             "lucrumiaofficial.co",
             "lucrumiamode.co",
@@ -5340,7 +6538,7 @@
         "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
         "websites": [
             "frame-2u-avapro.com",
-            "https:/frame-2u-avapro.org"
+            "frame-2u-avapro.org"
         ],
         "isNew": false
     },
@@ -5568,7 +6766,137 @@
     },
     {
         "id": 146,
-        "entity": "MEXC Global",
+        "entity": "RER885",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "rer885.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 147,
+        "entity": "TRUT88",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "trut88.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 148,
+        "entity": "REG775",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "reg775.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 149,
+        "entity": "SDTG99",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "sdtg99.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 150,
+        "entity": "XZD316",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "xzd316.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 151,
+        "entity": "RSD996",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "rsd996.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 152,
+        "entity": "FHF326",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "fhf326.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 153,
+        "entity": "TYT827",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "tyt827.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 154,
+        "entity": "EWTD55",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "ewtd55.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 155,
+        "entity": "DXGE85",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "dxge85.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 156,
+        "entity": "3VK1O5",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "3vk1o5.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 157,
+        "entity": "SDS323",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "sds323.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 158,
+        "entity": "KSDF12",
+        "country": "Italy",
+        "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+        "websites": [
+            "ksdf12.it"
+        ],
+        "isNew": false
+    },
+    {
+        "id": 159,
+        "entity": "MEXC",
         "country": "Netherlands",
         "authority": "Netherlands Authority for the Financial Markets (AFM)",
         "websites": [
@@ -5577,7 +6905,7 @@
         "isNew": false
     },
     {
-        "id": 147,
+        "id": 160,
         "entity": "LWEX",
         "country": "Slovakia",
         "authority": "National Bank of Slovakia (NBS)",
@@ -5591,6 +6919,7 @@
     let filteredData = [...data];
     let filteredCaspsData = [...caspsData];
     let filteredNonCompliantData = [...nonCompliantData];
+    let showNewNonCompliantOnly = false;
 
     const sectionTitleEl = document.getElementById('sectionTitle');
     const sectionDescriptionEl = document.getElementById('sectionDescription');
@@ -5990,16 +7319,11 @@
                 .filter(currency => item[currency] > 0)
                 .map(currency => {
                     const currencyCode = currency.toUpperCase();
-                    const colorClass = currencyCode === 'EUR' ? 'orange' : 
-                                     currencyCode === 'USD' ? 'pink' : 
-                                     currencyCode === 'GBP' ? 'blue' : 
-                                     currencyCode === 'CZK' ? 'purple' : 
-                                     currencyCode === 'CHF' ? 'red' : 'green';
-                    return `<span class="px-2 py-1 bg-${colorClass}-100 text-${colorClass}-700 rounded text-xs font-semibold">${currencyCode}</span>`;
+                    return `<span class="px-2 py-1 rounded text-xs font-semibold" style="${getCurrencyBadgeStyle(currencyCode)}">${currencyCode}</span>`;
                 }).join(' ');
 
             return `
-                <tr class="border-b hover:bg-gradient-to-r hover:from-teal-50 hover:to-blue-50 transition-all duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}">
+                <tr class="border-b teal-row-hover transition-all duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}">
                     <td class="p-4">
                         <div class="font-semibold text-gray-800">${item.issuer}</div>
                     </td>
@@ -6053,9 +7377,9 @@
             noResults.classList.add('hidden');
         }
 
-        tbody.innerHTML = dataToShow.map(item => {
+        tbody.innerHTML = dataToShow.map((item, index) => {
             const servicesBadges = (item.services || []).map(service => `
-                <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${service}</span>
+                <span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${service}</span>
             `).join(' ');
 
             const websiteBadges = (item.websites && item.websites.length > 0)
@@ -6065,7 +7389,8 @@
                 : '<span class="text-xs text-gray-500">Not provided</span>';
 
             return `
-                <tr class="border-b hover:bg-gradient-to-r hover:from-teal-50 hover:to-blue-50 transition-all duration-200">
+                <tr class="border-b teal-row-hover transition-all duration-200">
+                    <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
                     <td class="p-4">
                         <p class="text-gray-900 font-semibold">${item.name || 'N/A'}</p>
                     </td>
@@ -6075,8 +7400,8 @@
                         </span>
                     </td>
                     <td class="p-4 text-gray-600 text-sm">${item.authority || '—'}</td>
-                    <td class="p-4">
-                        <div class="flex flex-wrap gap-2">${servicesBadges || '<span class="text-xs text-gray-500">Not specified</span>'}</div>
+                    <td class="p-4 services-cell">
+                        <div class="service-badges">${servicesBadges || '<span class="text-xs text-gray-500">Not specified</span>'}</div>
                     </td>
                     <td class="p-4">
                         <div class="space-y-1">${websiteBadges}</div>
@@ -6086,9 +7411,31 @@
         }).join('');
     }
 
+    function updateNonCompliantNewSummary(dataToShow = filteredNonCompliantData) {
+        const summary = document.getElementById('nonCompliantNewSummary');
+        const toggle = document.getElementById('toggleNewNonCompliant');
+        const totalNew = nonCompliantData.filter(item => item.isNew).length;
+        const visibleNew = dataToShow.filter(item => item.isNew).length;
+
+        if (summary) {
+            summary.textContent = totalNew > 0
+                ? `${visibleNew} new flagged ${visibleNew === 1 ? 'entity is' : 'entities are'} visible (${totalNew} total marked new).`
+                : 'No entities are currently marked new in the latest dataset.';
+        }
+
+        if (toggle) {
+            toggle.setAttribute('aria-pressed', showNewNonCompliantOnly ? 'true' : 'false');
+            toggle.className = showNewNonCompliantOnly
+                ? 'new-only-toggle px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold'
+                : 'new-only-toggle px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors font-semibold';
+        }
+    }
+
     function populateNonCompliantTable(dataToShow = filteredNonCompliantData) {
         const tbody = document.getElementById('nonCompliantTable');
         const noResults = document.getElementById('noNonCompliantResults');
+
+        updateNonCompliantNewSummary(dataToShow);
 
         if (dataToShow.length === 0) {
             tbody.innerHTML = '';
@@ -6097,8 +7444,12 @@
         }
 
         noResults.classList.add('hidden');
-        tbody.innerHTML = dataToShow.map((item, index) => `
-            <tr class="border-b hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 transition-all duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}">
+        tbody.innerHTML = dataToShow.map((item, index) => {
+            const rowBackground = item.isNew ? 'bg-blue-50' : (index % 2 === 0 ? 'bg-gray-50' : 'bg-white');
+
+            return `
+            <tr class="border-b hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 transition-all duration-200 ${rowBackground}">
+                <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
                 <td class="p-4">
                     <div class="font-semibold text-gray-800 flex items-center">
                         <span>${item.entity}</span>
@@ -6131,7 +7482,8 @@
                     </span>
                 </td>
             </tr>
-        `).join('');
+        `;
+        }).join('');
     }
 
     // Search functionality
@@ -6171,17 +7523,18 @@
     }
 
     function filterNonCompliantData(searchTerm) {
-        if (!searchTerm.trim()) {
-            filteredNonCompliantData = [...nonCompliantData];
-        } else {
-            const term = searchTerm.toLowerCase();
-            filteredNonCompliantData = nonCompliantData.filter(item => 
+        const term = searchTerm.trim().toLowerCase();
+        filteredNonCompliantData = nonCompliantData.filter(item => {
+            const matchesSearch = !term ||
                 item.entity.toLowerCase().includes(term) ||
                 item.country.toLowerCase().includes(term) ||
                 item.authority.toLowerCase().includes(term) ||
-                item.websites.some(website => website.toLowerCase().includes(term))
-            );
-        }
+                item.websites.some(website => website.toLowerCase().includes(term));
+            const matchesNewFilter = !showNewNonCompliantOnly || item.isNew;
+
+            return matchesSearch && matchesNewFilter;
+        });
+
         populateNonCompliantTable(filteredNonCompliantData);
     }
 
@@ -6267,6 +7620,7 @@
             nonCompliantSearchInput.value = '';
         }
         filteredNonCompliantData = [...nonCompliantData];
+        showNewNonCompliantOnly = false;
         populateNonCompliantTable(filteredNonCompliantData);
     }
 
@@ -6313,8 +7667,14 @@
         filterNonCompliantData(e.target.value);
     });
 
+    document.getElementById('toggleNewNonCompliant').addEventListener('click', () => {
+        showNewNonCompliantOnly = !showNewNonCompliantOnly;
+        filterNonCompliantData(document.getElementById('nonCompliantSearchInput').value);
+    });
+
     document.getElementById('clearNonCompliantSearch').addEventListener('click', () => {
         document.getElementById('nonCompliantSearchInput').value = '';
+        showNewNonCompliantOnly = false;
         filterNonCompliantData('');
     });
 
