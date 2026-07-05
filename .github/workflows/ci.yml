@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [dev]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    - name: Syntax-check scripts
+      run: |
+        node --check update-data.js
+        node --check config.js
+        node --check scripts/validate-dashboard-data.js
+        node --check assets/js/mobile-menu.js
+
+    - name: Check updater markers in index.html
+      # update-data.js locates these literal markers to rewrite the data
+      # blocks; a manual edit that breaks them silently disables updates
+      run: |
+        grep -q 'const data = \[' index.html
+        grep -q 'const caspsData = \[' index.html
+        grep -q 'const nonCompliantData = \[' index.html
+        grep -q 'Data as of ' index.html
+
+    - name: Validate dashboard data
+      run: npm run validate:data
