@@ -11,35 +11,22 @@ const EMT_DATA_FILE = path.join(DATA_DIR, 'emts.json');
 const CASPS_DATA_FILE = path.join(DATA_DIR, 'casps.json');
 const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
 
+// Ranges are open-ended on purpose: fixed row caps (e.g. A1:F150) silently
+// truncate once the register outgrows them - CASPs already exceed 150 rows.
 const SHEET_CONFIG = {
     snapshot: { label: 'Snapshot dates', range: 'snapshot!A1:B3' },
-    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:Z100', requireNumericId: true },
-    casps: { label: 'CASPs register', range: 'CASPs!A1:F150' },
-    nonCompliant: { label: 'Non-compliant register', range: 'Non Compliant!A1:E150' }
+    emt: { label: 'EMTs register', range: 'Jurisdiction!A:Z', requireNumericId: true },
+    casps: { label: 'CASPs register', range: 'CASPs!A:F' },
+    nonCompliant: { label: 'Non-compliant register', range: "'Non Compliant'!A:E" }
 };
 
 const RETRYABLE_STATUSES = new Set([429, 500, 502, 503, 504]);
 
-function csvToArray(str, delimiter = ',') {
-    const lines = str.split('\n');
-    const headers = parseCSVLine(lines[0]);
-    const result = [];
-
-    for (let i = 1; i < lines.length; i++) {
-        if (lines[i].trim()) {
-            const values = parseCSVLine(lines[i]);
-            const obj = {};
-            headers.forEach((header, index) => {
-                obj[header.trim()] = values[index] ? values[index].trim() : '';
-            });
-            result.push(obj);
-        }
-    }
-
-    return result.filter(row => row['#'] && row['#'] !== '' && row['#'] !== 'nan' && !isNaN(parseInt(row['#'])));
+function hasNumericId(row) {
+    return Boolean(row['#']) && row['#'] !== 'nan' && !isNaN(parseInt(row['#']));
 }
 
-function csvToArrayGeneric(str) {
+function csvToArray(str, { requireNumericId = false } = {}) {
     const lines = str.split('\n');
     const headers = parseCSVLine(lines[0]);
     const result = [];
@@ -55,7 +42,7 @@ function csvToArrayGeneric(str) {
         }
     }
 
-    return result;
+    return requireNumericId ? result.filter(hasNumericId) : result;
 }
 
 function parseCSVLine(line) {
@@ -216,11 +203,7 @@ function valuesToObjectArray(values, { requireNumericId = false } = {}) {
         rows.push(rowObject);
     }
 
-    if (requireNumericId) {
-        return rows.filter(row => row['#'] && row['#'] !== '' && row['#'] !== 'nan' && !isNaN(parseInt(row['#'])));
-    }
-
-    return rows;
+    return requireNumericId ? rows.filter(hasNumericId) : rows;
 }
 
 function valuesToDateMap(values) {
@@ -293,7 +276,7 @@ async function fetchEmtEntries() {
 
     const csvText = await fetchCsv(csvUrl, 'issuer feed');
     ensureCsvResponseValid(csvText, 'issuer feed');
-    const rows = csvToArray(csvText);
+    const rows = csvToArray(csvText, { requireNumericId: true });
     return { entries: convertToJsData(rows), source: 'csv' };
 }
 
@@ -314,7 +297,7 @@ async function fetchNonCompliantEntries() {
 
     const csvText = await fetchCsv(nonCompliantUrl, 'non-compliant feed');
     ensureCsvResponseValid(csvText, 'non-compliant feed');
-    const rows = csvToArrayGeneric(csvText);
+    const rows = csvToArray(csvText);
     return { entries: convertToNonCompliantData(rows), source: 'csv' };
 }
 
@@ -335,7 +318,7 @@ async function fetchCaspsEntries() {
 
     const csvText = await fetchCsv(caspsUrl, 'CASPs feed');
     ensureCsvResponseValid(csvText, 'CASPs feed');
-    const rows = csvToArrayGeneric(csvText);
+    const rows = csvToArray(csvText);
     return { entries: convertToCaspsData(rows), source: 'csv' };
 }
 
@@ -448,12 +431,6 @@ function convertToJsData(csvData) {
     console.log('📊 Processing', csvData.length, 'rows');
 
     csvData.forEach((row, index) => {
-        console.log(`Row ${index + 1}:`, {
-            id: row['#'],
-            issuer: row['Issuer (HQ)'],
-            tokens: row['Tokens']
-        });
-
         if (row['#'] && row['Issuer (HQ)'] && row['Issuer (HQ)'] !== 'nan') {
             const item = {
                 id: parseInt(row['#']) || index + 1,
@@ -469,9 +446,10 @@ function convertToJsData(csvData) {
             });
 
             data.push(item);
-            console.log('✅ Added:', item.issuer, 'with', item.count, 'tokens');
         }
     });
+
+    console.log(`📗 Converted ${data.length} EMT issuer rows`);
 
     return data;
 }
@@ -601,17 +579,26 @@ function convertToNonCompliantData(csvData) {
             websites,
             isNew
         });
-
-        console.log('🚨 Non-compliant entity added:', {
-            entity,
-            country: memberState,
-            authority,
-            websites,
-            isNew
-        });
     });
 
+    console.log(`🚨 Converted ${entries.length} non-compliant entities`);
     return entries;
+}
+
+function serializeForInlineScript(value) {
+    // JSON.stringify does not escape "<", so a sheet cell containing
+    // "</script>" would terminate the inline script block it is embedded in.
+    return JSON.stringify(value, null, 4).replace(/</g, '\\u003c');
+}
+
+function warnOnShrunkenDataset(label, filePath, newEntries) {
+    const previous = readJsonFile(filePath, null);
+    if (!Array.isArray(previous) || previous.length === 0 || !Array.isArray(newEntries)) {
+        return;
+    }
+    if (newEntries.length < previous.length * 0.7) {
+        console.warn(`⚠️ ${label} shrank from ${previous.length} to ${newEntries.length} rows - check the source sheet before trusting this update.`);
+    }
 }
 
 function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntries, caspsLastUpdated) {
@@ -658,7 +645,7 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     }
 
     // Replace the data array
-    const newDataString = `${dataPattern}${JSON.stringify(newData, null, 4)};`;
+    const newDataString = `${dataPattern}${serializeForInlineScript(newData)};`;
     const updatedHtml = htmlContent.substring(0, dataStart) + newDataString + htmlContent.substring(dataEnd);
 
     const nonCompliantStart = updatedHtml.indexOf('const nonCompliantData = [');
@@ -666,7 +653,7 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
 
     if (nonCompliantStart !== -1) {
         const nonCompliantEnd = updatedHtml.indexOf('];', nonCompliantStart) + 2;
-        const nonCompliantString = `const nonCompliantData = ${JSON.stringify(nonCompliantEntries || [], null, 4)};`;
+        const nonCompliantString = `const nonCompliantData = ${serializeForInlineScript(nonCompliantEntries || [])};`;
         finalHtml = updatedHtml.substring(0, nonCompliantStart) + nonCompliantString + updatedHtml.substring(nonCompliantEnd);
     } else {
         console.error('❌ Could not find nonCompliantData array in HTML file');
@@ -675,7 +662,7 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     const caspsStart = finalHtml.indexOf('const caspsData = [');
     if (caspsStart !== -1) {
         const caspsEnd = finalHtml.indexOf('];', caspsStart) + 2;
-        const caspsString = `const caspsData = ${JSON.stringify(caspsEntries || [], null, 4)};`;
+        const caspsString = `const caspsData = ${serializeForInlineScript(caspsEntries || [])};`;
         finalHtml = finalHtml.substring(0, caspsStart) + caspsString + finalHtml.substring(caspsEnd);
     } else {
         console.error('❌ Could not find caspsData array in HTML file');
@@ -773,6 +760,10 @@ async function main() {
             nonCompliantEntries = nonCompliantResult.entries;
             caspsEntries = caspsResult.entries;
             dataSource = 'remote';
+
+            warnOnShrunkenDataset('EMT register', EMT_DATA_FILE, jsData);
+            warnOnShrunkenDataset('Non-compliant register', NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
+            warnOnShrunkenDataset('CASPs register', CASPS_DATA_FILE, caspsEntries);
 
             writeJsonFile(EMT_DATA_FILE, jsData);
             writeJsonFile(NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
