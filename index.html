@@ -119,6 +119,27 @@
     box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35), 0 8px 16px -16px rgba(15, 23, 42, 0.55);
     }
 
+    .sort-button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    }
+
+    .sort-button:hover,
+    .sort-button:focus-visible {
+    text-decoration: underline;
+    }
+
+    .sort-indicator {
+    font-size: 0.7em;
+    }
+
     .sticky-table-header.teal th {
     background: #f0fdfa;
     }
@@ -459,6 +480,10 @@
     <button id="clearSearch" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
     <i class="fas fa-times mr-1" aria-hidden="true"></i>Clear
     </button>
+    <button id="exportEmtCsv" class="px-3 py-2 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors whitespace-nowrap">
+    <i class="fas fa-download mr-1" aria-hidden="true"></i>CSV
+    </button>
+    <a href="data/emts.json" download="micar-emts.json" class="px-3 py-2 text-sm bg-teal-100 text-teal-800 rounded-lg hover:bg-teal-200 transition-colors whitespace-nowrap font-semibold">JSON</a>
     </div>
     </div>
     <div class="data-table-scroll">
@@ -474,11 +499,11 @@
     </colgroup>
     <thead class="sticky-table-header teal">
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Issuer</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Country</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Authority</th>
+    <th scope="col" aria-sort="none" data-sort-key="issuer" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Issuer<span class="sort-indicator" aria-hidden="true"></span></button></th>
+    <th scope="col" aria-sort="none" data-sort-key="state" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Country<span class="sort-indicator" aria-hidden="true"></span></button></th>
+    <th scope="col" aria-sort="none" data-sort-key="authority" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Authority<span class="sort-indicator" aria-hidden="true"></span></button></th>
     <th scope="col" class="text-left p-4 font-semibold text-gray-700">Tokens</th>
-    <th scope="col" class="text-center p-4 font-semibold text-gray-700">Count</th>
+    <th scope="col" aria-sort="none" data-sort-key="count" class="text-center p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Count<span class="sort-indicator" aria-hidden="true"></span></button></th>
     <th scope="col" class="text-center p-4 font-semibold text-gray-700">Currencies</th>
     </tr>
     </thead>
@@ -511,6 +536,10 @@
     <button id="clearCaspsSearch" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
     <i class="fas fa-times mr-1" aria-hidden="true"></i>Clear
     </button>
+    <button id="exportCaspsCsv" class="px-3 py-2 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors whitespace-nowrap">
+    <i class="fas fa-download mr-1" aria-hidden="true"></i>CSV
+    </button>
+    <a href="data/casps.json" download="micar-casps.json" class="px-3 py-2 text-sm bg-teal-100 text-teal-800 rounded-lg hover:bg-teal-200 transition-colors whitespace-nowrap font-semibold">JSON</a>
     </div>
     </div>
 
@@ -528,9 +557,9 @@
     <thead class="sticky-table-header teal">
     <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
     <th scope="col" class="text-left p-4 font-semibold text-gray-700">#</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">CASP</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Country</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Competent Authority</th>
+    <th scope="col" aria-sort="none" data-sort-key="name" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">CASP<span class="sort-indicator" aria-hidden="true"></span></button></th>
+    <th scope="col" aria-sort="none" data-sort-key="memberState" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Country<span class="sort-indicator" aria-hidden="true"></span></button></th>
+    <th scope="col" aria-sort="none" data-sort-key="authority" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Competent Authority<span class="sort-indicator" aria-hidden="true"></span></button></th>
     <th scope="col" class="text-left p-4 font-semibold text-gray-700 services-cell">Services</th>
     <th scope="col" class="text-left p-4 font-semibold text-gray-700">Websites</th>
     </tr>
@@ -567,6 +596,10 @@
     <button id="clearNonCompliantSearch" class="px-3 py-2 text-sm bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors whitespace-nowrap">
     <i class="fas fa-times mr-1" aria-hidden="true"></i>Clear
     </button>
+    <button id="exportNonCompliantCsv" class="px-3 py-2 text-sm bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors whitespace-nowrap">
+    <i class="fas fa-download mr-1" aria-hidden="true"></i>CSV
+    </button>
+    <a href="data/non-compliant.json" download="micar-non-compliant.json" class="px-3 py-2 text-sm bg-red-100 text-red-800 rounded-lg hover:bg-red-200 transition-colors whitespace-nowrap font-semibold">JSON</a>
     </div>
     </div>
     <p id="nonCompliantNewSummary" class="text-sm text-gray-600 mb-4"></p>
@@ -585,11 +618,11 @@
     <thead class="sticky-table-header red">
     <tr class="bg-gradient-to-r from-red-50 to-orange-50">
     <th scope="col" class="text-left p-4 font-semibold text-gray-700">#</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Entity Name</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Country</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Regulatory Authority</th>
+    <th scope="col" aria-sort="none" data-sort-key="entity" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Entity Name<span class="sort-indicator" aria-hidden="true"></span></button></th>
+    <th scope="col" aria-sort="none" data-sort-key="country" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Country<span class="sort-indicator" aria-hidden="true"></span></button></th>
+    <th scope="col" aria-sort="none" data-sort-key="authority" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Regulatory Authority<span class="sort-indicator" aria-hidden="true"></span></button></th>
     <th scope="col" class="text-left p-4 font-semibold text-gray-700">Websites</th>
-    <th scope="col" class="text-center p-4 font-semibold text-gray-700">Status</th>
+    <th scope="col" aria-sort="none" data-sort-key="isNew" class="text-center p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Status<span class="sort-indicator" aria-hidden="true"></span></button></th>
     </tr>
     </thead>
     <tbody id="nonCompliantTable">
@@ -1060,6 +1093,83 @@
         caspsAuthorityData = countBy(caspsData, item => item.authority || 'Unknown');
     }
 
+    // Column sorting (per-table state; null key = original sheet order)
+    const sortStates = {
+        emt: { key: null, dir: 1 },
+        casps: { key: null, dir: 1 },
+        nonCompliant: { key: null, dir: 1 }
+    };
+
+    function sortRows(rows, state) {
+        if (!state.key) {
+            return rows;
+        }
+        return [...rows].sort((a, b) => {
+            const va = a[state.key];
+            const vb = b[state.key];
+            if (typeof va === 'number' || typeof vb === 'number' || typeof va === 'boolean' || typeof vb === 'boolean') {
+                return (Number(va || 0) - Number(vb || 0)) * state.dir;
+            }
+            return String(va || '').localeCompare(String(vb || ''), 'en', { sensitivity: 'base' }) * state.dir;
+        });
+    }
+
+    function initSortableHeaders(tbodyId, state, rerender) {
+        const tbody = document.getElementById(tbodyId);
+        if (!tbody) {
+            return;
+        }
+        const headers = tbody.closest('table').querySelectorAll('th[data-sort-key]');
+        headers.forEach(th => {
+            const button = th.querySelector('.sort-button');
+            if (!button) {
+                return;
+            }
+            button.addEventListener('click', () => {
+                const key = th.dataset.sortKey;
+                if (state.key === key) {
+                    state.dir = -state.dir;
+                } else {
+                    state.key = key;
+                    state.dir = 1;
+                }
+                headers.forEach(header => {
+                    const active = header === th;
+                    header.setAttribute('aria-sort', active ? (state.dir === 1 ? 'ascending' : 'descending') : 'none');
+                    const indicator = header.querySelector('.sort-indicator');
+                    if (indicator) {
+                        indicator.textContent = active ? (state.dir === 1 ? '▲' : '▼') : '';
+                    }
+                });
+                rerender();
+            });
+        });
+    }
+
+    // CSV export of the currently visible (filtered + sorted) view
+    function csvEscape(value) {
+        const str = String(value ?? '');
+        return /[",\n]/.test(str) ? '"' + str.replace(/"/g, '""') + '"' : str;
+    }
+
+    function downloadCsv(filename, columns, rows) {
+        if (rows.length === 0) {
+            return;
+        }
+        const header = columns.map(col => csvEscape(col.label)).join(',');
+        const lines = rows.map(row => columns.map(col => csvEscape(col.value(row))).join(','));
+        // BOM so Excel detects UTF-8
+        const blob = new Blob(['\uFEFF' + [header, ...lines].join('\r\n')], { type: 'text/csv;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+    }
+
     // === Shrink header on scroll ===
     window.addEventListener('scroll', () => {
       const header = document.querySelector('.header-sticky');
@@ -1193,6 +1303,8 @@
         const tbody = document.getElementById('detailsTable');
         const noResults = document.getElementById('noResults');
 
+        dataToShow = sortRows(dataToShow, sortStates.emt);
+
         if (dataToShow.length === 0) {
             tbody.innerHTML = '';
             noResults.classList.remove('hidden');
@@ -1248,6 +1360,7 @@
         const tbody = document.getElementById('caspsTable');
         const noResults = document.getElementById('noCaspsResults');
 
+        dataToShow = sortRows(dataToShow, sortStates.casps);
         updateCaspsKpis(dataToShow);
 
         if (!tbody) {
@@ -1328,6 +1441,7 @@
         const tbody = document.getElementById('nonCompliantTable');
         const noResults = document.getElementById('noNonCompliantResults');
 
+        dataToShow = sortRows(dataToShow, sortStates.nonCompliant);
         updateNonCompliantNewSummary(dataToShow);
 
         if (dataToShow.length === 0) {
@@ -1553,6 +1667,45 @@
     document.getElementById('detailsBtn').addEventListener('click', () => switchTab('details'));
     document.getElementById('caspsBtn').addEventListener('click', () => switchTab('casps'));
     document.getElementById('nonCompliantBtn').addEventListener('click', () => switchTab('nonCompliant'));
+
+    initSortableHeaders('detailsTable', sortStates.emt, () => populateDetailsTable(filteredData));
+    initSortableHeaders('caspsTable', sortStates.casps, () => populateCaspsTable(filteredCaspsData));
+    initSortableHeaders('nonCompliantTable', sortStates.nonCompliant, () => populateNonCompliantTable(filteredNonCompliantData));
+
+    document.getElementById('exportEmtCsv').addEventListener('click', () => {
+        const currencyColumns = getCurrencyFields(data).map(currency => ({
+            label: currency.toUpperCase(),
+            value: row => row[currency] || 0
+        }));
+        downloadCsv('micar-emts.csv', [
+            { label: 'Issuer', value: row => row.issuer },
+            { label: 'Country', value: row => row.state },
+            { label: 'Authority', value: row => row.authority },
+            { label: 'Tokens', value: row => row.tokens },
+            { label: 'Count', value: row => row.count },
+            ...currencyColumns
+        ], sortRows(filteredData, sortStates.emt));
+    });
+
+    document.getElementById('exportCaspsCsv').addEventListener('click', () => {
+        downloadCsv('micar-casps.csv', [
+            { label: 'CASP', value: row => row.name },
+            { label: 'Country', value: row => row.memberState },
+            { label: 'Competent Authority', value: row => row.authority },
+            { label: 'Services', value: row => (row.services || []).join('; ') },
+            { label: 'Websites', value: row => (row.websites || []).join('; ') }
+        ], sortRows(filteredCaspsData, sortStates.casps));
+    });
+
+    document.getElementById('exportNonCompliantCsv').addEventListener('click', () => {
+        downloadCsv('micar-non-compliant.csv', [
+            { label: 'Entity', value: row => row.entity },
+            { label: 'Country', value: row => row.country },
+            { label: 'Regulatory Authority', value: row => row.authority },
+            { label: 'Websites', value: row => (row.websites || []).join('; ') },
+            { label: 'New', value: row => (row.isNew ? 'yes' : 'no') }
+        ], sortRows(filteredNonCompliantData, sortStates.nonCompliant));
+    });
 
     // Arrow-key navigation between tabs (WAI-ARIA tabs pattern)
     const dashboardTablist = document.getElementById('dashboardTablist');
