@@ -7503,6 +7503,13 @@
     }
 
     // Tab switching functionality
+    const tabHashes = {
+        overview: '#overview',
+        details: '#details',
+        casps: '#casps',
+        nonCompliant: '#non-compliant'
+    };
+
     function switchTab(tab) {
         const overviewBtn = document.getElementById('overviewBtn');
         const detailsBtn = document.getElementById('detailsBtn');
@@ -7538,6 +7545,13 @@
         } else if (tab === 'nonCompliant') {
             nonCompliantBtn.className = 'tab-button tab-active px-5 py-3 rounded-xl font-semibold';
             nonCompliantSection.classList.remove('hidden');
+        }
+
+        // Keep the URL shareable: reflect the active tab in the hash.
+        // replaceState avoids a hashchange event and history spam.
+        const targetHash = tabHashes[tab];
+        if (targetHash && window.location.hash !== targetHash) {
+            history.replaceState(null, '', targetHash);
         }
 
         window.scrollTo({ top: 0, behavior: 'auto' });
