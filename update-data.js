@@ -10,6 +10,12 @@ const SNAPSHOT_FILE = path.join(DATA_DIR, 'snapshot.json');
 const EMT_DATA_FILE = path.join(DATA_DIR, 'emts.json');
 const CASPS_DATA_FILE = path.join(DATA_DIR, 'casps.json');
 const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
+const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
+const FEED_FILE = path.join(__dirname, 'feed.xml');
+
+const SITE_URL = 'https://micatracker.digital-euro-association.de';
+const CHANGELOG_MAX_ENTRIES = 50;
+const FEED_MAX_ITEMS = 20;
 
 // Ranges are open-ended on purpose: fixed row caps (e.g. A1:F150) silently
 // truncate once the register outgrows them - CASPs already exceed 150 rows.
@@ -595,6 +601,132 @@ function warnOnShrunkenDataset(label, filePath, newEntries) {
     }
 }
 
+function diffRegister(previous, current, keyFn, nameFn) {
+    if (!Array.isArray(previous) || !Array.isArray(current)) {
+        return null;
+    }
+
+    const prevByKey = new Map(previous.map(item => [keyFn(item), item]));
+    const currByKey = new Map(current.map(item => [keyFn(item), item]));
+
+    const added = [...currByKey.entries()]
+        .filter(([key]) => !prevByKey.has(key))
+        .map(([, item]) => nameFn(item));
+    const removed = [...prevByKey.entries()]
+        .filter(([key]) => !currByKey.has(key))
+        .map(([, item]) => nameFn(item));
+
+    return { added, removed };
+}
+
+function xmlEscape(value) {
+    return String(value ?? '').replace(/[<>&'"]/g, ch => ({
+        '<': '&lt;',
+        '>': '&gt;',
+        '&': '&amp;',
+        "'": '&apos;',
+        '"': '&quot;'
+    }[ch]));
+}
+
+const CHANGELOG_REGISTER_LABELS = {
+    emt: 'EMT issuers',
+    casps: 'CASPs',
+    nonCompliant: 'Non-compliant entities'
+};
+
+function describeChanges(changes) {
+    const lines = [];
+    for (const [register, change] of Object.entries(changes)) {
+        const label = CHANGELOG_REGISTER_LABELS[register] || register;
+        if (change.added.length) {
+            lines.push(`${label} added: ${change.added.join(', ')}`);
+        }
+        if (change.removed.length) {
+            lines.push(`${label} removed: ${change.removed.join(', ')}`);
+        }
+    }
+    return lines;
+}
+
+function writeFeed(changelog) {
+    const items = changelog.slice(0, FEED_MAX_ITEMS).map(entry => {
+        const description = describeChanges(entry.changes || {}).join('\n');
+        return [
+            '    <item>',
+            `      <title>MiCAR register update - ${xmlEscape(entry.date)}</title>`,
+            `      <link>${SITE_URL}/</link>`,
+            `      <guid isPermaLink="false">${xmlEscape(entry.timestamp || entry.date)}</guid>`,
+            `      <pubDate>${new Date(entry.timestamp || entry.date).toUTCString()}</pubDate>`,
+            `      <description>${xmlEscape(description)}</description>`,
+            '    </item>'
+        ].join('\n');
+    });
+
+    const xml = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0">',
+        '  <channel>',
+        '    <title>DEA MiCAR Tracker - register updates</title>',
+        `    <link>${SITE_URL}/</link>`,
+        '    <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>',
+        `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
+        ...items,
+        '  </channel>',
+        '</rss>',
+        ''
+    ].join('\n');
+
+    fs.writeFileSync(FEED_FILE, xml);
+}
+
+function updateChangelog(previousDatasets, newDatasets) {
+    const changes = {};
+
+    const diffs = {
+        emt: diffRegister(
+            previousDatasets.emts, newDatasets.emts,
+            item => (item.issuer || '').toLowerCase(),
+            item => item.issuer
+        ),
+        casps: diffRegister(
+            previousDatasets.casps, newDatasets.casps,
+            item => `${item.name || ''}::${item.memberState || ''}`.toLowerCase(),
+            item => `${item.name} (${item.memberState || 'unknown'})`
+        ),
+        nonCompliant: diffRegister(
+            previousDatasets.nonCompliant, newDatasets.nonCompliant,
+            item => `${item.entity || ''}::${item.country || ''}`.toLowerCase(),
+            item => `${item.entity} (${item.country || 'unknown'})`
+        )
+    };
+
+    for (const [register, diff] of Object.entries(diffs)) {
+        if (diff && (diff.added.length || diff.removed.length)) {
+            changes[register] = diff;
+        }
+    }
+
+    const changelog = readJsonFile(CHANGELOG_FILE, []);
+    const entries = Array.isArray(changelog) ? changelog : [];
+
+    if (Object.keys(changes).length > 0) {
+        const now = new Date();
+        entries.unshift({
+            date: now.toISOString().slice(0, 10),
+            timestamp: now.toISOString(),
+            changes
+        });
+        describeChanges(changes).forEach(line => console.log(`📝 ${line}`));
+    } else {
+        console.log('📝 No register additions or removals detected.');
+    }
+
+    const capped = entries.slice(0, CHANGELOG_MAX_ENTRIES);
+    writeJsonFile(CHANGELOG_FILE, capped);
+    writeFeed(capped);
+}
+
 // The page loads register data from data/*.json at runtime; index.html only
 // carries the human-readable "Data as of" footer dates, patched here.
 function updateFooterDates(emtLastUpdated, caspsLastUpdated) {
@@ -709,6 +841,12 @@ async function main() {
         }
 
         if (!jsData || !nonCompliantEntries || !caspsEntries) {
+            const previousDatasets = {
+                emts: readJsonFile(EMT_DATA_FILE, null),
+                casps: readJsonFile(CASPS_DATA_FILE, null),
+                nonCompliant: readJsonFile(NON_COMPLIANT_DATA_FILE, null)
+            };
+
             const [emtResult, nonCompliantResult, caspsResult] = await Promise.all([
                 fetchEmtEntries(),
                 fetchNonCompliantEntries(),
@@ -723,6 +861,12 @@ async function main() {
             warnOnShrunkenDataset('EMT register', EMT_DATA_FILE, jsData);
             warnOnShrunkenDataset('Non-compliant register', NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
             warnOnShrunkenDataset('CASPs register', CASPS_DATA_FILE, caspsEntries);
+
+            updateChangelog(previousDatasets, {
+                emts: jsData,
+                casps: caspsEntries,
+                nonCompliant: nonCompliantEntries
+            });
 
             writeJsonFile(EMT_DATA_FILE, jsData);
             writeJsonFile(NON_COMPLIANT_DATA_FILE, nonCompliantEntries);

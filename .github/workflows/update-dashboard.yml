@@ -59,7 +59,7 @@ jobs:
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action Bot"
-        git add index.html data/
+        git add index.html data/ feed.xml
         git status
         git commit -m "🤖 Auto-update dashboard data - $(date '+%Y-%m-%d %H:%M:%S UTC')" || {
           echo "No changes to commit"
