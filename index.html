@@ -7458,6 +7458,14 @@
     }
 
     // Search functionality
+    function debounce(fn, wait = 150) {
+        let timer = null;
+        return (...args) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => fn(...args), wait);
+        };
+    }
+
     function filterData(searchTerm) {
         if (!searchTerm.trim()) {
             filteredData = [...data];
@@ -7671,8 +7679,10 @@
         });
     }
 
+    // Debounced: each keystroke otherwise rebuilds the whole table
+    const debouncedFilterData = debounce(filterData);
     document.getElementById('searchInput').addEventListener('input', (e) => {
-        filterData(e.target.value);
+        debouncedFilterData(e.target.value);
     });
 
     document.getElementById('clearSearch').addEventListener('click', () => {
@@ -7680,8 +7690,9 @@
         filterData('');
     });
 
+    const debouncedFilterCaspsData = debounce(filterCaspsData);
     document.getElementById('caspsSearchInput').addEventListener('input', (e) => {
-        filterCaspsData(e.target.value);
+        debouncedFilterCaspsData(e.target.value);
     });
 
     document.getElementById('clearCaspsSearch').addEventListener('click', () => {
@@ -7689,8 +7700,9 @@
         filterCaspsData('');
     });
 
+    const debouncedFilterNonCompliantData = debounce(filterNonCompliantData);
     document.getElementById('nonCompliantSearchInput').addEventListener('input', (e) => {
-        filterNonCompliantData(e.target.value);
+        debouncedFilterNonCompliantData(e.target.value);
     });
 
     document.getElementById('toggleNewNonCompliant').addEventListener('click', () => {
