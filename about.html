@@ -86,12 +86,6 @@
   }
 }
 
-      .nav-buttons {
-        justify-content: center;
-        width: 100%;
-      }
-    }
-
     @media (max-width: 640px) {
       .nav-buttons .tab-button {
         flex: 1 1 calc(50% - 0.75rem);
@@ -244,28 +238,26 @@
   <div id="mobile-menu-overlay" class="mobile-menu-overlay fixed inset-0 hidden" aria-hidden="true"></div>
 
   <div id="mobile-menu" class="mobile-menu-container hidden">
-    <div class="mobile-menu-panel p-4"
-         role="menu"
-         aria-labelledby="mobile-menu-button">
-      <nav class="flex flex-col mobile-menu-list" role="none">
-        <a role="menuitem" href="index.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
-          <span class="mobile-menu-icon"><i class="fas fa-chart-pie"></i></span>
+    <div class="mobile-menu-panel p-4">
+      <nav class="flex flex-col mobile-menu-list" aria-label="Mobile navigation">
+        <a href="index.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+          <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
           <span class="mobile-menu-text">Overview</span>
         </a>
-        <a role="menuitem" href="index.html#details" class="mobile-menu-link mobile-menu-item text-base font-medium">
-          <span class="mobile-menu-icon"><i class="fas fa-table"></i></span>
+        <a href="index.html#details" class="mobile-menu-link mobile-menu-item text-base font-medium">
+          <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-table"></i></span>
           <span class="mobile-menu-text">EMTs</span>
         </a>
-        <a role="menuitem" href="index.html#casps" class="mobile-menu-link mobile-menu-item text-base font-medium">
-          <span class="mobile-menu-icon"><i class="fas fa-building-columns"></i></span>
+        <a href="index.html#casps" class="mobile-menu-link mobile-menu-item text-base font-medium">
+          <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-building-columns"></i></span>
           <span class="mobile-menu-text">CASPs</span>
         </a>
-        <a role="menuitem" href="index.html#non-compliant" class="mobile-menu-link mobile-menu-item text-base font-medium">
-          <span class="mobile-menu-icon"><i class="fas fa-exclamation-triangle"></i></span>
+        <a href="index.html#non-compliant" class="mobile-menu-link mobile-menu-item text-base font-medium">
+          <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></span>
           <span class="mobile-menu-text">Non-Compliant</span>
         </a>
-        <a role="menuitem" href="about.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
-          <span class="mobile-menu-icon"><i class="fas fa-circle-info"></i></span>
+        <a href="about.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+          <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></span>
           <span class="mobile-menu-text">About</span>
         </a>
       </nav>
@@ -457,9 +449,8 @@
         <p class="text-gray-300">
           Digital Euro Association (DEA) MiCAR Tracker – Overview
         </p>
-        <p class="text-gray-400 text-sm mt-2" id="currentDate">
-          Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT Register</a> - Data as of 23 January 2026</p>
-        <p class="text-gray-400 text-sm" id="caspsDate">Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA CASPs Register</a> - Data as of 23 January 2026</p>
+        <p class="text-gray-400 text-sm mt-2">
+          Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT and CASPs Registers</a> &ndash; see the <a href="index.html" class="text-blue-300 underline hover:text-blue-200">dashboard</a> for the current snapshot date</p>
       </div>
 
       <div class="flex flex-col md:flex-row md:justify-between gap-8">
@@ -474,10 +465,10 @@
         </nav>
 
         <div class="flex items-center gap-6 text-xl">
-          <a href="https://x.com/DigiEuro" target="_blank" aria-label="Twitter"  class="hover:text-white"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:info@digital-euro-association.de" target="_blank" aria-label="Email" class="hover:text-white"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/company/digital-euro-association/" target="_blank" aria-label="LinkedIn" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/DigiEuro/micardashboard" target="_blank" aria-label="GitHub" class="hover:text-white"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/DigiEuro" target="_blank" rel="noopener" aria-label="Twitter"  class="hover:text-white"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="mailto:info@digital-euro-association.de" aria-label="Email" class="hover:text-white"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/digital-euro-association/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-white"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/DigiEuro/micardashboard" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-white"><i class="fab fa-github" aria-hidden="true"></i></a>
         </div>
       </div>
 
