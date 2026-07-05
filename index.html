@@ -249,15 +249,6 @@
         }
     }
 
-    /* Dynamic currency cards */
-    .currency-card {
-    transition: all 0.3s ease;
-    }
-
-    .currency-card:hover {
-    transform: scale(1.05);
-    }
-
     /* === Sticky header shrink on scroll === */
     .header-sticky {
         transition: all 0.3s ease-in-out;
@@ -285,23 +276,6 @@
         font-size: 0.875rem;   /* Tailwind 'text-sm' */
     }
     </style>
-    <style>
-    /* hide the "xx.x% of total" under each card */
-    #eurPercentage,
-    #usdPercentage,
-    #gbpPercentage,
-    #czkPercentage {
-    display: none;
-    }
-    </style>
-
-    <style>
-  /* hide the entire "Currency Distribution Analysis" card */
-  .card-hover:has(.fa-coins) {
-    display: none !important;
-  }
-</style>
-    
 </head>
 <body class="main-bg">
     <!-- Sticky Header -->
@@ -456,16 +430,6 @@
     <div class="space-y-4" id="caspsAuthorityChart">
     <!-- Will be populated by JavaScript -->
     </div>
-    </div>
-    </div>
-
-    <!-- Currency Distribution -->
-    <div class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6 card-hover">
-    <h3 class="text-xl font-bold text-gray-800 mb-4">
-    <i class="fas fa-coins text-orange-600 mr-2"></i>Currency Distribution Analysis
-    </h3>
-    <div id="currencyDistribution" class="grid grid-cols-1 md:grid-cols-4 gap-6">
-    <!-- Will be populated dynamically by JavaScript -->
     </div>
     </div>
     </div>
@@ -7128,26 +7092,6 @@
         }
     }
 
-    function generateCurrencyDistribution() {
-        const container = document.getElementById('currencyDistribution');
-        const currencies = calculateCurrencyTotals();
-        const totalTokens = Object.values(currencies).reduce((sum, count) => sum + count, 0);
-
-        container.innerHTML = Object.entries(currencies).map(([currency, count]) => {
-            const info = currencyInfo[currency] || { symbol: '💶', name: currency };
-            const percentage = ((count / totalTokens) * 100).toFixed(1);
-
-            return `
-                <div class="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl currency-card">
-                    <div class="text-4xl mb-3">${info.symbol}</div>
-                    <div class="text-2xl font-bold text-teal-600">${count}</div>
-                    <div class="text-gray-600">${currency} Tokens</div>
-                    <div class="text-sm text-gray-500 mt-2">${percentage}% of total</div>
-                </div>
-            `;
-        }).join('');
-    }
-
     // Calculate aggregated data
     const totalIssuers = data.length;
     const totalTokens = data.reduce((sum, item) => sum + item.count, 0);
@@ -7190,7 +7134,6 @@
         updateSectionIntro('overview');
         // Generate dynamic components
         generateKPICards();
-        generateCurrencyDistribution();
 
         // Populate charts and tables
         populateCountryChart();
