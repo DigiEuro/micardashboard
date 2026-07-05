@@ -21,6 +21,42 @@
     <meta name="twitter:image" content="https://micatracker.digital-euro-association.de/cover.png">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="alternate" type="application/rss+xml" title="MiCAR Tracker register updates" href="feed.xml">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "DEA MiCAR Tracker - EMT, CASP and non-compliant registers",
+      "description": "Weekly-updated registers of Electronic Money Token issuers, Crypto-Asset Service Providers, and entities flagged as non-compliant under the EU Markets in Crypto-Assets Regulation (MiCAR), derived from the ESMA interim MiCA register.",
+      "url": "https://micatracker.digital-euro-association.de/",
+      "keywords": ["MiCA", "MiCAR", "EMT", "CASP", "stablecoin", "ESMA", "crypto-asset regulation"],
+      "creator": {
+        "@type": "Organization",
+        "name": "Digital Euro Association",
+        "url": "https://digital-euro-association.de"
+      },
+      "isBasedOn": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "EMT issuers",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://micatracker.digital-euro-association.de/data/emts.json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Crypto-Asset Service Providers",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://micatracker.digital-euro-association.de/data/casps.json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Non-compliant entities",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://micatracker.digital-euro-association.de/data/non-compliant.json"
+        }
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="styles/tailwind.css">
     <link rel="stylesheet" href="styles/site.css">
     <link rel="stylesheet" href="assets/vendor/inter/inter.css">
@@ -391,6 +427,7 @@
     <div id="sectionIntro" class="mb-6 text-white space-y-4 md:space-y-6">
     <h2 id="sectionTitle" class="text-2xl font-semibold">EMT Issuer Insights</h2>
     <p id="sectionDescription" class="text-blue-100">Key indicators and distributions for licensed Electronic Money Token issuers.</p>
+    <p id="dataFreshness" class="text-sm text-blue-100"></p>
     <div id="caspsIntroKpiContainer" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
     <!-- CASPs KPI cards duplicated for section intro -->
     </div>
@@ -883,6 +920,66 @@
         casps: 'CASPs',
         nonCompliant: 'Non-compliant entities'
     };
+
+    function formatSnapshotDate(value) {
+        if (!value) {
+            return '';
+        }
+        const parts = String(value).split(/[\/\-.]/);
+        if (parts.length === 3) {
+            let day;
+            let month;
+            let year;
+            if (parts[0].length === 4) {
+                [year, month, day] = parts;
+            } else {
+                [day, month, year] = parts;
+            }
+            const parsed = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
+            if (!Number.isNaN(parsed.getTime())) {
+                return parsed.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+            }
+        }
+        return String(value);
+    }
+
+    // Non-fatal: freshness info is a trust signal, not a dependency
+    async function loadSnapshotInfo() {
+        const el = document.getElementById('dataFreshness');
+        if (!el) {
+            return;
+        }
+
+        try {
+            const snapshot = await fetchJson('data/snapshot.json');
+            const pieces = [];
+
+            const snapshotDate = formatSnapshotDate(snapshot.emtSnapshotDate || snapshot.caspsSnapshotDate);
+            if (snapshotDate) {
+                pieces.push(`Register snapshot: ${snapshotDate}`);
+            }
+
+            let stale = false;
+            if (snapshot.lastUpdated) {
+                const updated = new Date(snapshot.lastUpdated);
+                if (!Number.isNaN(updated.getTime())) {
+                    pieces.push(`last checked ${updated.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`);
+                    // ESMA republishes weekly; older than two weeks means updates stopped
+                    stale = (Date.now() - updated.getTime()) / 86400000 > 14;
+                }
+            }
+
+            if (pieces.length === 0) {
+                return;
+            }
+
+            el.innerHTML = esc(pieces.join(' · ')) + (stale
+                ? ' <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">Data may be out of date</span>'
+                : '');
+        } catch (error) {
+            // Leave the line empty
+        }
+    }
 
     // Non-fatal: the dashboard works without change history
     async function loadChangelog() {
@@ -1871,6 +1968,7 @@
         initDashboard();
         applyHashRouting();
         loadChangelog();
+        loadSnapshotInfo();
     }
 
     document.addEventListener('DOMContentLoaded', bootDashboard);

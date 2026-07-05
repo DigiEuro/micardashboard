@@ -1,24 +1,48 @@
 # Digital Euro Association (DEA) MiCAR Tracker
 
-This project tracks issuers of Electronic Money Tokens (EMTs) and Crypto-Asset Service Providers (CASPs) under the MiCAR framework. The dashboard is a simple static site that reads data from a public Google Sheets document and visualises it using HTML and Tailwind CSS.
+This project tracks issuers of Electronic Money Tokens (EMTs), Crypto-Asset Service Providers (CASPs), and non-compliant entities under the MiCAR framework. The dashboard is a static site (HTML + Tailwind CSS + vanilla JS) served via GitHub Pages that loads its register data from JSON files at runtime.
 
-## Data source
+## Architecture
 
-`update-data.js` downloads a CSV export of the ESMA registers from Google Sheets, ensuring the dashboard reflects the latest EMT and CASP information published by the regulator.
+- **`data/*.json`** — the registers themselves. `emts.json`, `casps.json`, and `non-compliant.json` are the single source of truth; the page fetches them on load. `snapshot.json` records the sheet snapshot dates and the last refresh time, and `changelog.json` records dated additions/removals.
+- **`update-data.js`** — the scheduled updater. It reads the source Google Sheet (Sheets API when `GOOGLE_API_KEY` is set, public CSV export otherwise), converts the rows, diffs them against the previous data to extend the changelog and `feed.xml` (RSS), writes the JSON files, and patches the human-readable "Data as of" dates in `index.html`'s footer.
+- **`.github/workflows/update-dashboard.yml`** — runs the updater every 6 hours and commits `index.html`, `data/`, and `feed.xml` when anything changed.
+- **`.github/workflows/ci.yml`** — runs on pull requests and pushes to `dev`: script syntax checks, updater-marker checks, and data validation.
 
-The script parses the CSV, converts each row into a JavaScript object and then rewrites `index.html` with the new data and a human‑friendly source date.
+## Data API
+
+The JSON files are stable, publicly served endpoints — feel free to consume them directly:
+
+| Register | URL |
+| --- | --- |
+| EMT issuers | `https://micatracker.digital-euro-association.de/data/emts.json` |
+| CASPs | `https://micatracker.digital-euro-association.de/data/casps.json` |
+| Non-compliant entities | `https://micatracker.digital-euro-association.de/data/non-compliant.json` |
+| Change history | `https://micatracker.digital-euro-association.de/data/changelog.json` |
+| Snapshot metadata | `https://micatracker.digital-euro-association.de/data/snapshot.json` |
+| RSS feed of register changes | `https://micatracker.digital-euro-association.de/feed.xml` |
+
+Each table on the dashboard also offers CSV export of the currently filtered view.
 
 ## Configuration
 
-The script reads CSV locations from the `CSV_URL` and `DATE_URL` environment variables. If they are not set, default URLs pointing to the public Google Sheet are used.
+The updater reads feed locations from the `CSV_URL`, `DATE_URL`, `NON_COMPLIANT_URL`, and `CASPS_URL` environment variables, defaulting to the public Google Sheet exports in `config.js`. Set `GOOGLE_API_KEY` (and optionally `GOOGLE_SHEET_ID`) to use the Sheets API instead of CSV exports; the API path falls back to CSV automatically on errors.
+
+## Caching
+
+The updater first fetches the snapshot dates. If neither the EMT nor CASPs snapshot date changed since the last run, the cached JSON under `data/` is reused and no full refetch happens. When the snapshot changes, all registers are refetched, diffed for the changelog, and persisted.
 
 ## Validation
 
-Run `npm run validate:data` after updating the generated dashboard to confirm each EMT row's total token count matches the sum of its currency columns. This catches missing currency columns before the static page is deployed.
+`npm run validate:data` validates the JSON registers (EMT token counts vs. per-currency totals, required fields on CASPs and non-compliant entries) and cross-checks currency metadata against `index.html`. CI runs this on every pull request; the update workflow runs it before committing.
 
-## Google Sheets API & caching
+## Building the CSS
 
-- Set `GOOGLE_API_KEY` (and optionally `GOOGLE_SHEET_ID`) to allow `update-data.js` to read the registers via the Sheets API before falling back to CSV exports. The default sheet ID already targets the shared tracker.
-- The script first queries the `snapshot!A1:B3` range (gid `353293525`). If neither the EMT nor CASPs snapshot date changed since the last run, cached JSON payloads from the `data/` directory (`emts.json`, `casps.json`, `non-compliant.json`) are reused to avoid unnecessary API calls.
-- When the snapshot date changes—or when cached data is missing—the EMT (`Jurisdiction!A1:Z100`, gid `0`), CASPs (`CASPs!A1:F150`, gid `1275732000`), and non-compliant (`Non Compliant!A1:E150`, gid `409089345`) ranges are fetched, converted, written back to `index.html`, and persisted under `data/` for GitHub Actions or local debugging.
-- All API requests include exponential backoff and structured error logging; if the API returns an error or the key is not available, the previous CSV download logic is used as a fallback automatically.
+Tailwind output is committed at `styles/tailwind.css`. After changing markup or `tailwind.config.js`, rebuild with:
+
+```
+npm install
+npm run build:css
+```
+
+Fonts (Inter), icons (Font Awesome), and the flag-emoji polyfill are vendored under `assets/vendor/` — the site makes no third-party requests except Umami analytics.
