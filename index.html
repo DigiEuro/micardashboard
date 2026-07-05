@@ -128,11 +128,10 @@
     }
 
 
-    .data-table-scroll {
-    max-height: 78vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: relative;
+    .data-table-container {
+    /* clip (not hidden/auto) does not create a scroll container, so the
+       sticky column headers stick to the viewport instead of this box */
+    overflow-x: clip;
     }
 
     .data-table {
@@ -151,7 +150,8 @@
 
     .sticky-table-header th {
     position: sticky;
-    top: 0;
+    /* pin just below the site header, whose height changes on scroll */
+    top: var(--site-header-height, 0px);
     z-index: 20;
     box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35), 0 8px 16px -16px rgba(15, 23, 42, 0.55);
     }
@@ -224,10 +224,6 @@
     }
 
     @media (max-width: 768px) {
-    .data-table-scroll {
-        max-height: 70vh;
-    }
-
     .data-table th,
     .data-table td {
         padding-left: 0.75rem;
@@ -537,7 +533,7 @@
     <a href="data/emts.json" download="micar-emts.json" class="px-3 py-2 text-sm bg-teal-100 text-teal-800 rounded-lg hover:bg-teal-200 transition-colors whitespace-nowrap font-semibold">JSON</a>
     </div>
     </div>
-    <div class="data-table-scroll">
+    <div class="data-table-container">
     <table class="data-table w-full">
     <caption class="sr-only">Electronic Money Token issuers authorised under MiCAR</caption>
     <colgroup>
@@ -594,7 +590,7 @@
     </div>
     </div>
 
-    <div class="data-table-scroll">
+    <div class="data-table-container">
     <table class="data-table casps-data-table w-full">
     <caption class="sr-only">Crypto-Asset Service Providers registered under MiCAR</caption>
     <colgroup>
@@ -655,7 +651,7 @@
     </div>
     <p id="nonCompliantNewSummary" class="text-sm text-gray-600 mb-4"></p>
 
-    <div class="data-table-scroll">
+    <div class="data-table-container">
     <table class="data-table w-full">
     <caption class="sr-only">Entities flagged as non-compliant by European regulators</caption>
     <colgroup>
@@ -1337,6 +1333,17 @@
         header.classList.remove('shrink');
       }
     });
+
+    // Track the site header height (it shrinks on scroll and changes on
+    // resize) so the sticky table headers pin just below it
+    const siteHeaderEl = document.querySelector('.header-sticky');
+    if (siteHeaderEl && 'ResizeObserver' in window) {
+        const setSiteHeaderHeight = () => {
+            document.documentElement.style.setProperty('--site-header-height', `${siteHeaderEl.offsetHeight}px`);
+        };
+        setSiteHeaderHeight();
+        new ResizeObserver(setSiteHeaderHeight).observe(siteHeaderEl, { box: 'border-box' });
+    }
     // Initialize dashboard
     function initDashboard() {
         updateSectionIntro('overview');
