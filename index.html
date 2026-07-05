@@ -759,6 +759,23 @@
         return currencyBadgeStyles[color] || currencyBadgeStyles.green;
     }
 
+    // All register values originate in an external sheet, so treat them as
+    // untrusted before interpolating into innerHTML templates.
+    function esc(value) {
+        return String(value ?? '').replace(/[&<>"']/g, ch => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;'
+        }[ch]));
+    }
+
+    function safeHttpUrl(value) {
+        const url = String(value || '').trim();
+        return /^https?:\/\//i.test(url) ? url : '';
+    }
+
     // KPI card color classes
     const kpiColors = ['kpi-teal', 'kpi-blue', 'kpi-orange', 'kpi-coral', 'kpi-purple', 'kpi-red', 'kpi-green', 'kpi-yellow'];
 
@@ -7023,11 +7040,11 @@
             <div class="kpi-card ${kpi.color} p-6 rounded-2xl shadow-lg text-white card-hover">
                 <div class="flex items-center justify-between">
                     <div>
-                        <p class="text-sm opacity-90 font-medium">${kpi.title}</p>
-                        <p class="text-3xl font-bold mt-2">${kpi.value}</p>
-                        <p class="text-sm opacity-80 mt-1">${kpi.subtitle}</p>
+                        <p class="text-sm opacity-90 font-medium">${esc(kpi.title)}</p>
+                        <p class="text-3xl font-bold mt-2">${esc(kpi.value)}</p>
+                        <p class="text-sm opacity-80 mt-1">${esc(kpi.subtitle)}</p>
                     </div>
-                    <div class="text-4xl opacity-80">${kpi.icon}</div>
+                    <div class="text-4xl opacity-80" aria-hidden="true">${kpi.icon}</div>
                 </div>
             </div>
         `).join('');
@@ -7152,8 +7169,8 @@
         container.innerHTML = countryData.map(([country, count]) => `
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <span class="text-xl">${countryFlags[country] || '🏳️'}</span>
-                    <span class="text-gray-700 font-medium">${country}</span>
+                    <span class="text-xl" aria-hidden="true">${countryFlags[country] || '🏳️'}</span>
+                    <span class="text-gray-700 font-medium">${esc(country)}</span>
                 </div>
                 <div class="flex items-center space-x-3">
                     <div class="w-32 bg-gray-200 rounded-full h-3">
@@ -7172,7 +7189,7 @@
 
         container.innerHTML = authorityData.map(([authority, count]) => `
             <div class="flex items-center justify-between">
-                <span class="text-gray-700 font-medium text-sm">${authority}</span>
+                <span class="text-gray-700 font-medium text-sm">${esc(authority)}</span>
                 <div class="flex items-center space-x-3">
                     <div class="w-32 bg-gray-200 rounded-full h-3">
                         <div class="bg-gradient-to-r from-teal-500 to-blue-600 h-3 rounded-full progress-bar"
@@ -7201,8 +7218,8 @@
         container.innerHTML = caspsCountryData.map(([country, count]) => `
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-2">
-                    <span class="text-xl">${countryFlags[country] || '🏳️'}</span>
-                    <span class="text-gray-700 font-medium">${country}</span>
+                    <span class="text-xl" aria-hidden="true">${countryFlags[country] || '🏳️'}</span>
+                    <span class="text-gray-700 font-medium">${esc(country)}</span>
                 </div>
                 <div class="flex items-center space-x-3">
                     <div class="w-32 bg-gray-200 rounded-full h-3">
@@ -7231,7 +7248,7 @@
 
         container.innerHTML = caspsAuthorityData.map(([authority, count]) => `
             <div class="flex items-center justify-between">
-                <span class="text-gray-700 font-medium text-sm">${authority}</span>
+                <span class="text-gray-700 font-medium text-sm">${esc(authority)}</span>
                 <div class="flex items-center space-x-3">
                     <div class="w-32 bg-gray-200 rounded-full h-3">
                         <div class="bg-gradient-to-r from-teal-500 to-blue-600 h-3 rounded-full progress-bar"
@@ -7254,30 +7271,30 @@
         }
 
         noResults.classList.add('hidden');
-        tbody.innerHTML = dataToShow.map((item, index) => {
-            // Get all currency columns dynamically
-            const currencyFields = getCurrencyFields(dataToShow);
+        // Get all currency columns dynamically (once, not per row)
+        const currencyFields = getCurrencyFields(dataToShow);
 
+        tbody.innerHTML = dataToShow.map((item, index) => {
             const currencyBadges = currencyFields
                 .filter(currency => item[currency] > 0)
                 .map(currency => {
                     const currencyCode = currency.toUpperCase();
-                    return `<span class="px-2 py-1 rounded text-xs font-semibold" style="${getCurrencyBadgeStyle(currencyCode)}">${currencyCode}</span>`;
+                    return `<span class="px-2 py-1 rounded text-xs font-semibold" style="${getCurrencyBadgeStyle(currencyCode)}">${esc(currencyCode)}</span>`;
                 }).join(' ');
 
             return `
                 <tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}">
                     <td class="p-4">
-                        <div class="font-semibold text-gray-800">${item.issuer}</div>
+                        <div class="font-semibold text-gray-800">${esc(item.issuer)}</div>
                     </td>
                     <td class="p-4">
                         <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">
-                            ${countryFlags[item.state] || '🏳️'} ${item.state}
+                            <span aria-hidden="true">${countryFlags[item.state] || '🏳️'}</span> ${esc(item.state)}
                         </span>
                     </td>
-                    <td class="p-4 text-gray-600 text-sm">${item.authority}</td>
+                    <td class="p-4 text-gray-600 text-sm">${esc(item.authority)}</td>
                     <td class="p-4">
-                        <div class="text-sm text-gray-800 font-mono">${item.tokens || 'N/A'}</div>
+                        <div class="text-sm text-gray-800 font-mono">${esc(item.tokens || 'N/A')}</div>
                     </td>
                     <td class="p-4 text-center">
                         <span class="px-3 py-1 rounded-full text-sm font-bold ${
@@ -7322,27 +7339,31 @@
 
         tbody.innerHTML = dataToShow.map((item, index) => {
             const servicesBadges = (item.services || []).map(service => `
-                <span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${service}</span>
+                <span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${esc(service)}</span>
             `).join(' ');
 
             const websiteBadges = (item.websites && item.websites.length > 0)
-                ? item.websites.map(site => `
-                    <a href="${site}" target="_blank" rel="noopener" class="casps-website-link block text-sm text-blue-600 underline">${site}</a>
-                `).join('')
+                ? item.websites.map(site => {
+                    // Only link out to http(s) URLs; render anything else as text
+                    const url = safeHttpUrl(site);
+                    return url
+                        ? `<a href="${esc(url)}" target="_blank" rel="noopener" class="casps-website-link block text-sm text-blue-600 underline">${esc(site)}</a>`
+                        : `<span class="casps-website-link block text-sm text-gray-600">${esc(site)}</span>`;
+                }).join('')
                 : '<span class="text-xs text-gray-500">Not provided</span>';
 
             return `
                 <tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200">
                     <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
                     <td class="p-4">
-                        <p class="text-gray-900 font-semibold">${item.name || 'N/A'}</p>
+                        <p class="text-gray-900 font-semibold">${esc(item.name || 'N/A')}</p>
                     </td>
                     <td class="p-4">
                         <span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">
-                            ${countryFlags[item.memberState] || '🏳️'} ${item.memberState || 'Unknown'}
+                            <span aria-hidden="true">${countryFlags[item.memberState] || '🏳️'}</span> ${esc(item.memberState || 'Unknown')}
                         </span>
                     </td>
-                    <td class="p-4 text-gray-600 text-sm casps-authority-cell">${item.authority || '—'}</td>
+                    <td class="p-4 text-gray-600 text-sm casps-authority-cell">${esc(item.authority || '—')}</td>
                     <td class="p-4 services-cell">
                         <div class="service-badges">${servicesBadges || '<span class="text-xs text-gray-500">Not specified</span>'}</div>
                     </td>
@@ -7395,32 +7416,32 @@
                 <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
                 <td class="p-4">
                     <div class="font-semibold text-gray-800 flex items-center">
-                        <span>${item.entity}</span>
+                        <span>${esc(item.entity)}</span>
                         ${item.isNew ? `
                             <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold text-blue-700 bg-blue-100">
-                                <i class="fas fa-star text-blue-500 mr-1"></i>New
+                                <i class="fas fa-star text-blue-500 mr-1" aria-hidden="true"></i>New
                             </span>
                         ` : ''}
                     </div>
                 </td>
                 <td class="p-4">
                     <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
-                        ${countryFlags[item.country] || '🏳️'} ${item.country}
+                        <span aria-hidden="true">${countryFlags[item.country] || '🏳️'}</span> ${esc(item.country)}
                     </span>
                 </td>
-                <td class="p-4 text-gray-600 text-sm">${item.authority}</td>
+                <td class="p-4 text-gray-600 text-sm">${esc(item.authority)}</td>
                 <td class="p-4">
                     <div class="space-y-1">
                         ${item.websites.map(website => `
                             <div class="text-xs text-blue-600 font-mono bg-blue-50 px-2 py-1 rounded">
-                                ${website}
+                                ${esc(website)}
                             </div>
                         `).join('')}
                     </div>
                 </td>
                 <td class="p-4 text-center">
                     <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-bold" title="Flagged">
-                        <i class="fas fa-exclamation-triangle"></i>
+                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
                         <span class="sr-only">Flagged</span>
                     </span>
                 </td>
