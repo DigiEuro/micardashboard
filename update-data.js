@@ -10,36 +10,29 @@ const SNAPSHOT_FILE = path.join(DATA_DIR, 'snapshot.json');
 const EMT_DATA_FILE = path.join(DATA_DIR, 'emts.json');
 const CASPS_DATA_FILE = path.join(DATA_DIR, 'casps.json');
 const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
+const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
+const FEED_FILE = path.join(__dirname, 'feed.xml');
 
+const SITE_URL = 'https://micatracker.digital-euro-association.de';
+const CHANGELOG_MAX_ENTRIES = 50;
+const FEED_MAX_ITEMS = 20;
+
+// Ranges are open-ended on purpose: fixed row caps (e.g. A1:F150) silently
+// truncate once the register outgrows them - CASPs already exceed 150 rows.
 const SHEET_CONFIG = {
     snapshot: { label: 'Snapshot dates', range: 'snapshot!A1:B3' },
-    emt: { label: 'EMTs register', range: 'Jurisdiction!A1:Z100', requireNumericId: true },
-    casps: { label: 'CASPs register', range: 'CASPs!A1:F150' },
-    nonCompliant: { label: 'Non-compliant register', range: 'Non Compliant!A1:E150' }
+    emt: { label: 'EMTs register', range: 'Jurisdiction!A:Z', requireNumericId: true },
+    casps: { label: 'CASPs register', range: 'CASPs!A:F' },
+    nonCompliant: { label: 'Non-compliant register', range: "'Non Compliant'!A:E" }
 };
 
 const RETRYABLE_STATUSES = new Set([429, 500, 502, 503, 504]);
 
-function csvToArray(str, delimiter = ',') {
-    const lines = str.split('\n');
-    const headers = parseCSVLine(lines[0]);
-    const result = [];
-
-    for (let i = 1; i < lines.length; i++) {
-        if (lines[i].trim()) {
-            const values = parseCSVLine(lines[i]);
-            const obj = {};
-            headers.forEach((header, index) => {
-                obj[header.trim()] = values[index] ? values[index].trim() : '';
-            });
-            result.push(obj);
-        }
-    }
-
-    return result.filter(row => row['#'] && row['#'] !== '' && row['#'] !== 'nan' && !isNaN(parseInt(row['#'])));
+function hasNumericId(row) {
+    return Boolean(row['#']) && row['#'] !== 'nan' && !isNaN(parseInt(row['#']));
 }
 
-function csvToArrayGeneric(str) {
+function csvToArray(str, { requireNumericId = false } = {}) {
     const lines = str.split('\n');
     const headers = parseCSVLine(lines[0]);
     const result = [];
@@ -55,7 +48,7 @@ function csvToArrayGeneric(str) {
         }
     }
 
-    return result;
+    return requireNumericId ? result.filter(hasNumericId) : result;
 }
 
 function parseCSVLine(line) {
@@ -216,11 +209,7 @@ function valuesToObjectArray(values, { requireNumericId = false } = {}) {
         rows.push(rowObject);
     }
 
-    if (requireNumericId) {
-        return rows.filter(row => row['#'] && row['#'] !== '' && row['#'] !== 'nan' && !isNaN(parseInt(row['#'])));
-    }
-
-    return rows;
+    return requireNumericId ? rows.filter(hasNumericId) : rows;
 }
 
 function valuesToDateMap(values) {
@@ -293,7 +282,7 @@ async function fetchEmtEntries() {
 
     const csvText = await fetchCsv(csvUrl, 'issuer feed');
     ensureCsvResponseValid(csvText, 'issuer feed');
-    const rows = csvToArray(csvText);
+    const rows = csvToArray(csvText, { requireNumericId: true });
     return { entries: convertToJsData(rows), source: 'csv' };
 }
 
@@ -314,7 +303,7 @@ async function fetchNonCompliantEntries() {
 
     const csvText = await fetchCsv(nonCompliantUrl, 'non-compliant feed');
     ensureCsvResponseValid(csvText, 'non-compliant feed');
-    const rows = csvToArrayGeneric(csvText);
+    const rows = csvToArray(csvText);
     return { entries: convertToNonCompliantData(rows), source: 'csv' };
 }
 
@@ -335,7 +324,7 @@ async function fetchCaspsEntries() {
 
     const csvText = await fetchCsv(caspsUrl, 'CASPs feed');
     ensureCsvResponseValid(csvText, 'CASPs feed');
-    const rows = csvToArrayGeneric(csvText);
+    const rows = csvToArray(csvText);
     return { entries: convertToCaspsData(rows), source: 'csv' };
 }
 
@@ -448,12 +437,6 @@ function convertToJsData(csvData) {
     console.log('📊 Processing', csvData.length, 'rows');
 
     csvData.forEach((row, index) => {
-        console.log(`Row ${index + 1}:`, {
-            id: row['#'],
-            issuer: row['Issuer (HQ)'],
-            tokens: row['Tokens']
-        });
-
         if (row['#'] && row['Issuer (HQ)'] && row['Issuer (HQ)'] !== 'nan') {
             const item = {
                 id: parseInt(row['#']) || index + 1,
@@ -469,9 +452,10 @@ function convertToJsData(csvData) {
             });
 
             data.push(item);
-            console.log('✅ Added:', item.issuer, 'with', item.count, 'tokens');
         }
     });
+
+    console.log(`📗 Converted ${data.length} EMT issuer rows`);
 
     return data;
 }
@@ -601,101 +585,192 @@ function convertToNonCompliantData(csvData) {
             websites,
             isNew
         });
-
-        console.log('🚨 Non-compliant entity added:', {
-            entity,
-            country: memberState,
-            authority,
-            websites,
-            isNew
-        });
     });
 
+    console.log(`🚨 Converted ${entries.length} non-compliant entities`);
     return entries;
 }
 
-function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntries, caspsLastUpdated) {
+function warnOnShrunkenDataset(label, filePath, newEntries) {
+    const previous = readJsonFile(filePath, null);
+    if (!Array.isArray(previous) || previous.length === 0 || !Array.isArray(newEntries)) {
+        return;
+    }
+    if (newEntries.length < previous.length * 0.7) {
+        console.warn(`⚠️ ${label} shrank from ${previous.length} to ${newEntries.length} rows - check the source sheet before trusting this update.`);
+    }
+}
+
+function diffRegister(previous, current, keyFn, nameFn) {
+    if (!Array.isArray(previous) || !Array.isArray(current)) {
+        return null;
+    }
+
+    const prevByKey = new Map(previous.map(item => [keyFn(item), item]));
+    const currByKey = new Map(current.map(item => [keyFn(item), item]));
+
+    const added = [...currByKey.entries()]
+        .filter(([key]) => !prevByKey.has(key))
+        .map(([, item]) => nameFn(item));
+    const removed = [...prevByKey.entries()]
+        .filter(([key]) => !currByKey.has(key))
+        .map(([, item]) => nameFn(item));
+
+    return { added, removed };
+}
+
+function xmlEscape(value) {
+    return String(value ?? '').replace(/[<>&'"]/g, ch => ({
+        '<': '&lt;',
+        '>': '&gt;',
+        '&': '&amp;',
+        "'": '&apos;',
+        '"': '&quot;'
+    }[ch]));
+}
+
+const CHANGELOG_REGISTER_LABELS = {
+    emt: 'EMT issuers',
+    casps: 'CASPs',
+    nonCompliant: 'Non-compliant entities'
+};
+
+function describeChanges(changes) {
+    const lines = [];
+    for (const [register, change] of Object.entries(changes)) {
+        const label = CHANGELOG_REGISTER_LABELS[register] || register;
+        if (change.added.length) {
+            lines.push(`${label} added: ${change.added.join(', ')}`);
+        }
+        if (change.removed.length) {
+            lines.push(`${label} removed: ${change.removed.join(', ')}`);
+        }
+    }
+    return lines;
+}
+
+function writeFeed(changelog) {
+    const items = changelog.slice(0, FEED_MAX_ITEMS).map(entry => {
+        const description = describeChanges(entry.changes || {}).join('\n');
+        return [
+            '    <item>',
+            `      <title>MiCAR register update - ${xmlEscape(entry.date)}</title>`,
+            `      <link>${SITE_URL}/</link>`,
+            `      <guid isPermaLink="false">${xmlEscape(entry.timestamp || entry.date)}</guid>`,
+            `      <pubDate>${new Date(entry.timestamp || entry.date).toUTCString()}</pubDate>`,
+            `      <description>${xmlEscape(description)}</description>`,
+            '    </item>'
+        ].join('\n');
+    });
+
+    const xml = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0">',
+        '  <channel>',
+        '    <title>DEA MiCAR Tracker - register updates</title>',
+        `    <link>${SITE_URL}/</link>`,
+        '    <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>',
+        `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
+        ...items,
+        '  </channel>',
+        '</rss>',
+        ''
+    ].join('\n');
+
+    fs.writeFileSync(FEED_FILE, xml);
+}
+
+function updateChangelog(previousDatasets, newDatasets) {
+    const changes = {};
+
+    const diffs = {
+        emt: diffRegister(
+            previousDatasets.emts, newDatasets.emts,
+            item => (item.issuer || '').toLowerCase(),
+            item => item.issuer
+        ),
+        casps: diffRegister(
+            previousDatasets.casps, newDatasets.casps,
+            item => `${item.name || ''}::${item.memberState || ''}`.toLowerCase(),
+            item => `${item.name} (${item.memberState || 'unknown'})`
+        ),
+        nonCompliant: diffRegister(
+            previousDatasets.nonCompliant, newDatasets.nonCompliant,
+            item => `${item.entity || ''}::${item.country || ''}`.toLowerCase(),
+            item => `${item.entity} (${item.country || 'unknown'})`
+        )
+    };
+
+    for (const [register, diff] of Object.entries(diffs)) {
+        if (diff && (diff.added.length || diff.removed.length)) {
+            changes[register] = diff;
+        }
+    }
+
+    const changelog = readJsonFile(CHANGELOG_FILE, []);
+    const entries = Array.isArray(changelog) ? changelog : [];
+
+    if (Object.keys(changes).length > 0) {
+        const now = new Date();
+        entries.unshift({
+            date: now.toISOString().slice(0, 10),
+            timestamp: now.toISOString(),
+            changes
+        });
+        describeChanges(changes).forEach(line => console.log(`📝 ${line}`));
+    } else {
+        console.log('📝 No register additions or removals detected.');
+    }
+
+    const capped = entries.slice(0, CHANGELOG_MAX_ENTRIES);
+    writeJsonFile(CHANGELOG_FILE, capped);
+    writeFeed(capped);
+}
+
+// The page loads register data from data/*.json at runtime; index.html only
+// carries the human-readable "Data as of" footer dates, patched here.
+function updateFooterDates(emtLastUpdated, caspsLastUpdated) {
     const htmlFile = 'index.html';
 
     if (!fs.existsSync(htmlFile)) {
         console.error('❌ HTML file not found:', htmlFile);
-        return;
+        process.exit(1);
     }
 
-    let htmlContent = fs.readFileSync(htmlFile, 'utf8');
-
-    // Find the data array in the JavaScript section - try multiple patterns
-    let dataStart = htmlContent.indexOf('const data = [');
-    let dataEnd = htmlContent.indexOf('];', dataStart) + 2;
-    let dataPattern = 'const data = ';
-
-    if (dataStart === -1) {
-        dataStart = htmlContent.indexOf('data = [');
-        dataEnd = htmlContent.indexOf('];', dataStart) + 2;
-        dataPattern = 'data = ';
-    }
-
-    if (dataStart === -1) {
-        dataStart = htmlContent.indexOf('let data = [');
-        dataEnd = htmlContent.indexOf('];', dataStart) + 2;
-        dataPattern = 'let data = ';
-    }
-
-    if (dataStart === -1 || dataEnd === -1) {
-        console.error('❌ Could not find data array in HTML file');
-        console.log('🔍 Searching for data patterns...');
-
-        // Show what patterns exist
-        const patterns = ['const data', 'let data', 'var data', 'data ='];
-        patterns.forEach(pattern => {
-            const index = htmlContent.indexOf(pattern);
-            if (index !== -1) {
-                console.log(`Found "${pattern}" at position ${index}`);
-                console.log('Context:', htmlContent.substring(index, index + 100));
-            }
-        });
-        return;
-    }
-
-    // Replace the data array
-    const newDataString = `${dataPattern}${JSON.stringify(newData, null, 4)};`;
-    const updatedHtml = htmlContent.substring(0, dataStart) + newDataString + htmlContent.substring(dataEnd);
-
-    const nonCompliantStart = updatedHtml.indexOf('const nonCompliantData = [');
-    let finalHtml = updatedHtml;
-
-    if (nonCompliantStart !== -1) {
-        const nonCompliantEnd = updatedHtml.indexOf('];', nonCompliantStart) + 2;
-        const nonCompliantString = `const nonCompliantData = ${JSON.stringify(nonCompliantEntries || [], null, 4)};`;
-        finalHtml = updatedHtml.substring(0, nonCompliantStart) + nonCompliantString + updatedHtml.substring(nonCompliantEnd);
-    } else {
-        console.error('❌ Could not find nonCompliantData array in HTML file');
-    }
-
-    const caspsStart = finalHtml.indexOf('const caspsData = [');
-    if (caspsStart !== -1) {
-        const caspsEnd = finalHtml.indexOf('];', caspsStart) + 2;
-        const caspsString = `const caspsData = ${JSON.stringify(caspsEntries || [], null, 4)};`;
-        finalHtml = finalHtml.substring(0, caspsStart) + caspsString + finalHtml.substring(caspsEnd);
-    } else {
-        console.error('❌ Could not find caspsData array in HTML file');
-    }
-
+    const htmlContent = fs.readFileSync(htmlFile, 'utf8');
     const { longDate: emtLongDate } = formatDate(emtLastUpdated);
     const { longDate: caspsLongDate } = formatDate(caspsLastUpdated);
-    
-    const dashClass = '[\\uFFFD–-]'; // optional helper; inline if you prefer
-    const updatedHtmlWithDate = finalHtml
-    .replace(new RegExp(`Source:\\s*<a[^>]*>ESMA EMT Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
-        `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT Register</a> - Data as of ${emtLongDate}`)
-    .replace(new RegExp(`Source:\\s*<a[^>]*>ESMA CASPs Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
-        `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA CASPs Register</a> - Data as of ${caspsLongDate}`);
 
-    fs.writeFileSync(htmlFile, updatedHtmlWithDate);
-    console.log('✅ Dashboard updated successfully!');
-    console.log(`📊 Updated with ${newData.length} issuers`);
+    const dashClass = '[\\uFFFD–-]';
+    const replacements = [
+        {
+            label: 'EMT footer date',
+            pattern: new RegExp(`Source:\\s*<a[^>]*>ESMA EMT Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
+            value: `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT Register</a> - Data as of ${emtLongDate}`
+        },
+        {
+            label: 'CASPs footer date',
+            pattern: new RegExp(`Source:\\s*<a[^>]*>ESMA CASPs Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
+            value: `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA CASPs Register</a> - Data as of ${caspsLongDate}`
+        }
+    ];
 
-    // Log summary statistics
+    let updatedHtml = htmlContent;
+    for (const { label, pattern, value } of replacements) {
+        if (!pattern.test(updatedHtml)) {
+            console.error(`❌ Could not find the ${label} marker in index.html - aborting so the page is not left inconsistent.`);
+            process.exit(1);
+        }
+        updatedHtml = updatedHtml.replace(pattern, value);
+    }
+
+    if (updatedHtml !== htmlContent) {
+        fs.writeFileSync(htmlFile, updatedHtml);
+    }
+    console.log(`📅 Footer dates set to EMT: ${emtLongDate}, CASPs: ${caspsLongDate}`);
+}
+
+function logSummary(newData, nonCompliantEntries, caspsEntries) {
     const totalTokens = newData.reduce((sum, item) => sum + item.count, 0);
     const currencyFields = getCurrencyFieldsFromItems(newData);
     const currencyTotals = calculateCurrencyTotals(newData, currencyFields);
@@ -706,6 +781,9 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     Object.entries(currencyTotals).forEach(([currency, total]) => {
         console.log(`   ${currency.toUpperCase()} Tokens: ${total}`);
     });
+    if (Array.isArray(caspsEntries)) {
+        console.log(`   CASPs: ${caspsEntries.length}`);
+    }
     if (Array.isArray(nonCompliantEntries)) {
         console.log(`   Non-compliant entities: ${nonCompliantEntries.length}`);
     }
@@ -763,6 +841,12 @@ async function main() {
         }
 
         if (!jsData || !nonCompliantEntries || !caspsEntries) {
+            const previousDatasets = {
+                emts: readJsonFile(EMT_DATA_FILE, null),
+                casps: readJsonFile(CASPS_DATA_FILE, null),
+                nonCompliant: readJsonFile(NON_COMPLIANT_DATA_FILE, null)
+            };
+
             const [emtResult, nonCompliantResult, caspsResult] = await Promise.all([
                 fetchEmtEntries(),
                 fetchNonCompliantEntries(),
@@ -773,6 +857,16 @@ async function main() {
             nonCompliantEntries = nonCompliantResult.entries;
             caspsEntries = caspsResult.entries;
             dataSource = 'remote';
+
+            warnOnShrunkenDataset('EMT register', EMT_DATA_FILE, jsData);
+            warnOnShrunkenDataset('Non-compliant register', NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
+            warnOnShrunkenDataset('CASPs register', CASPS_DATA_FILE, caspsEntries);
+
+            updateChangelog(previousDatasets, {
+                emts: jsData,
+                casps: caspsEntries,
+                nonCompliant: nonCompliantEntries
+            });
 
             writeJsonFile(EMT_DATA_FILE, jsData);
             writeJsonFile(NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
@@ -788,7 +882,8 @@ async function main() {
             process.exit(1);
         }
 
-        updateHtmlFile(jsData, emtSheetDate, nonCompliantEntries || [], caspsEntries || [], caspsSheetDate);
+        updateFooterDates(emtSheetDate, caspsSheetDate);
+        logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);
     } catch (error) {
         console.error('❌ Error updating data:', error);

@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  menuPanel.querySelectorAll('[role="menuitem"]').forEach((item) => {
+  menuPanel.querySelectorAll('.mobile-menu-link').forEach((item) => {
     item.addEventListener('click', (event) => {
       const tabTarget = item.getAttribute('data-tab-target');
       if (tabTarget && typeof window.switchTab === 'function') {

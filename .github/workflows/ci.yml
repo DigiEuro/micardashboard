@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [dev]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    - name: Syntax-check scripts
+      run: |
+        node --check update-data.js
+        node --check config.js
+        node --check scripts/validate-dashboard-data.js
+        node --check assets/js/mobile-menu.js
+
+    - name: Check updater markers and data files
+      # update-data.js patches the footer "Data as of" lines in index.html;
+      # the page itself loads register data from data/*.json at runtime
+      run: |
+        grep -q 'ESMA EMT Register</a> - Data as of ' index.html
+        grep -q 'ESMA CASPs Register</a> - Data as of ' index.html
+        node -e "
+          const fs = require('fs');
+          for (const f of ['data/emts.json', 'data/casps.json', 'data/non-compliant.json']) {
+            const parsed = JSON.parse(fs.readFileSync(f, 'utf8'));
+            if (!Array.isArray(parsed)) throw new Error(f + ' is not an array');
+          }
+          console.log('data files OK');
+        "
+
+    - name: Validate dashboard data
+      run: npm run validate:data
