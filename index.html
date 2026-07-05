@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="CGGJidmg9parYMdFHNi4jklzZ7ul8ciafDiIBtup_nY" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
     <title>DEA MiCAR Tracker - Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe</title>
     <!-- Open Graph metadata -->
     <meta property="og:type" content="website">
@@ -22,11 +23,10 @@
     <link rel="alternate" type="application/rss+xml" title="MiCAR Tracker register updates" href="feed.xml">
     <link rel="stylesheet" href="styles/tailwind.css">
     <link rel="stylesheet" href="styles/site.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/inter/inter.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="dbd82f5d-689a-452f-9fff-fba85b9de507"></script>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
     body {
     font-family: "Twemoji Country Flags", 'Inter', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
     background: linear-gradient(90deg, #58c1ba, #004aad);
@@ -1938,10 +1938,10 @@
       });
     </script>
     <script src="assets/js/mobile-menu.js" defer></script>
-    <!-- Polyfill to render flag emojis correctly on Windows-based browsers -->
+    <!-- Polyfill to render flag emojis correctly on Windows-based browsers (vendored) -->
     <script type="module" defer>
-      import { polyfillCountryFlagEmojis } from 'https://cdn.skypack.dev/country-flag-emoji-polyfill';
-      polyfillCountryFlagEmojis();
+      import { polyfillCountryFlagEmojis } from './assets/vendor/flags/country-flag-emoji-polyfill.mjs';
+      polyfillCountryFlagEmojis('Twemoji Country Flags', 'assets/vendor/flags/TwemojiCountryFlags.woff2');
     </script>
 </body>
 </html>
