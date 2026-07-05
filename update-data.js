@@ -585,12 +585,6 @@ function convertToNonCompliantData(csvData) {
     return entries;
 }
 
-function serializeForInlineScript(value) {
-    // JSON.stringify does not escape "<", so a sheet cell containing
-    // "</script>" would terminate the inline script block it is embedded in.
-    return JSON.stringify(value, null, 4).replace(/</g, '\\u003c');
-}
-
 function warnOnShrunkenDataset(label, filePath, newEntries) {
     const previous = readJsonFile(filePath, null);
     if (!Array.isArray(previous) || previous.length === 0 || !Array.isArray(newEntries)) {
@@ -601,88 +595,50 @@ function warnOnShrunkenDataset(label, filePath, newEntries) {
     }
 }
 
-function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntries, caspsLastUpdated) {
+// The page loads register data from data/*.json at runtime; index.html only
+// carries the human-readable "Data as of" footer dates, patched here.
+function updateFooterDates(emtLastUpdated, caspsLastUpdated) {
     const htmlFile = 'index.html';
 
     if (!fs.existsSync(htmlFile)) {
         console.error('❌ HTML file not found:', htmlFile);
-        return;
+        process.exit(1);
     }
 
-    let htmlContent = fs.readFileSync(htmlFile, 'utf8');
-
-    // Find the data array in the JavaScript section - try multiple patterns
-    let dataStart = htmlContent.indexOf('const data = [');
-    let dataEnd = htmlContent.indexOf('];', dataStart) + 2;
-    let dataPattern = 'const data = ';
-
-    if (dataStart === -1) {
-        dataStart = htmlContent.indexOf('data = [');
-        dataEnd = htmlContent.indexOf('];', dataStart) + 2;
-        dataPattern = 'data = ';
-    }
-
-    if (dataStart === -1) {
-        dataStart = htmlContent.indexOf('let data = [');
-        dataEnd = htmlContent.indexOf('];', dataStart) + 2;
-        dataPattern = 'let data = ';
-    }
-
-    if (dataStart === -1 || dataEnd === -1) {
-        console.error('❌ Could not find data array in HTML file');
-        console.log('🔍 Searching for data patterns...');
-
-        // Show what patterns exist
-        const patterns = ['const data', 'let data', 'var data', 'data ='];
-        patterns.forEach(pattern => {
-            const index = htmlContent.indexOf(pattern);
-            if (index !== -1) {
-                console.log(`Found "${pattern}" at position ${index}`);
-                console.log('Context:', htmlContent.substring(index, index + 100));
-            }
-        });
-        return;
-    }
-
-    // Replace the data array
-    const newDataString = `${dataPattern}${serializeForInlineScript(newData)};`;
-    const updatedHtml = htmlContent.substring(0, dataStart) + newDataString + htmlContent.substring(dataEnd);
-
-    const nonCompliantStart = updatedHtml.indexOf('const nonCompliantData = [');
-    let finalHtml = updatedHtml;
-
-    if (nonCompliantStart !== -1) {
-        const nonCompliantEnd = updatedHtml.indexOf('];', nonCompliantStart) + 2;
-        const nonCompliantString = `const nonCompliantData = ${serializeForInlineScript(nonCompliantEntries || [])};`;
-        finalHtml = updatedHtml.substring(0, nonCompliantStart) + nonCompliantString + updatedHtml.substring(nonCompliantEnd);
-    } else {
-        console.error('❌ Could not find nonCompliantData array in HTML file');
-    }
-
-    const caspsStart = finalHtml.indexOf('const caspsData = [');
-    if (caspsStart !== -1) {
-        const caspsEnd = finalHtml.indexOf('];', caspsStart) + 2;
-        const caspsString = `const caspsData = ${serializeForInlineScript(caspsEntries || [])};`;
-        finalHtml = finalHtml.substring(0, caspsStart) + caspsString + finalHtml.substring(caspsEnd);
-    } else {
-        console.error('❌ Could not find caspsData array in HTML file');
-    }
-
+    const htmlContent = fs.readFileSync(htmlFile, 'utf8');
     const { longDate: emtLongDate } = formatDate(emtLastUpdated);
     const { longDate: caspsLongDate } = formatDate(caspsLastUpdated);
-    
-    const dashClass = '[\\uFFFD–-]'; // optional helper; inline if you prefer
-    const updatedHtmlWithDate = finalHtml
-    .replace(new RegExp(`Source:\\s*<a[^>]*>ESMA EMT Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
-        `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT Register</a> - Data as of ${emtLongDate}`)
-    .replace(new RegExp(`Source:\\s*<a[^>]*>ESMA CASPs Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
-        `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA CASPs Register</a> - Data as of ${caspsLongDate}`);
 
-    fs.writeFileSync(htmlFile, updatedHtmlWithDate);
-    console.log('✅ Dashboard updated successfully!');
-    console.log(`📊 Updated with ${newData.length} issuers`);
+    const dashClass = '[\\uFFFD–-]';
+    const replacements = [
+        {
+            label: 'EMT footer date',
+            pattern: new RegExp(`Source:\\s*<a[^>]*>ESMA EMT Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
+            value: `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA EMT Register</a> - Data as of ${emtLongDate}`
+        },
+        {
+            label: 'CASPs footer date',
+            pattern: new RegExp(`Source:\\s*<a[^>]*>ESMA CASPs Register<\\/a>\\s*${dashClass}\\s*Data as of [^<]+`),
+            value: `Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA CASPs Register</a> - Data as of ${caspsLongDate}`
+        }
+    ];
 
-    // Log summary statistics
+    let updatedHtml = htmlContent;
+    for (const { label, pattern, value } of replacements) {
+        if (!pattern.test(updatedHtml)) {
+            console.error(`❌ Could not find the ${label} marker in index.html - aborting so the page is not left inconsistent.`);
+            process.exit(1);
+        }
+        updatedHtml = updatedHtml.replace(pattern, value);
+    }
+
+    if (updatedHtml !== htmlContent) {
+        fs.writeFileSync(htmlFile, updatedHtml);
+    }
+    console.log(`📅 Footer dates set to EMT: ${emtLongDate}, CASPs: ${caspsLongDate}`);
+}
+
+function logSummary(newData, nonCompliantEntries, caspsEntries) {
     const totalTokens = newData.reduce((sum, item) => sum + item.count, 0);
     const currencyFields = getCurrencyFieldsFromItems(newData);
     const currencyTotals = calculateCurrencyTotals(newData, currencyFields);
@@ -693,6 +649,9 @@ function updateHtmlFile(newData, emtLastUpdated, nonCompliantEntries, caspsEntri
     Object.entries(currencyTotals).forEach(([currency, total]) => {
         console.log(`   ${currency.toUpperCase()} Tokens: ${total}`);
     });
+    if (Array.isArray(caspsEntries)) {
+        console.log(`   CASPs: ${caspsEntries.length}`);
+    }
     if (Array.isArray(nonCompliantEntries)) {
         console.log(`   Non-compliant entities: ${nonCompliantEntries.length}`);
     }
@@ -779,7 +738,8 @@ async function main() {
             process.exit(1);
         }
 
-        updateHtmlFile(jsData, emtSheetDate, nonCompliantEntries || [], caspsEntries || [], caspsSheetDate);
+        updateFooterDates(emtSheetDate, caspsSheetDate);
+        logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);
     } catch (error) {
         console.error('❌ Error updating data:', error);

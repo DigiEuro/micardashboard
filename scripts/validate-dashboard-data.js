@@ -3,6 +3,7 @@ const path = require('path');
 
 const repoRoot = path.join(__dirname, '..');
 const indexPath = path.join(repoRoot, 'index.html');
+const dataDir = path.join(repoRoot, 'data');
 const standardFields = new Set(['id', 'issuer', 'state', 'authority', 'tokens', 'count']);
 
 function fail(message, details = []) {
@@ -11,22 +12,17 @@ function fail(message, details = []) {
   process.exitCode = 1;
 }
 
-function extractDashboardData(html) {
-  const start = html.indexOf('const data = [');
-  const end = html.indexOf('const caspsData = [', start);
+function readJsonArray(filename, { allowEmpty = false } = {}) {
+  const filePath = path.join(dataDir, filename);
+  const parsed = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-  if (start === -1 || end === -1) {
-    throw new Error('Could not locate the EMT data block in index.html.');
+  if (!Array.isArray(parsed)) {
+    throw new Error(`${filename} is not a JSON array.`);
   }
-
-  const block = html.slice(start, end);
-  const match = block.match(/const data = (\[[\s\S]*?\]);\s*$/);
-
-  if (!match) {
-    throw new Error('Could not parse the EMT data array from index.html.');
+  if (!allowEmpty && parsed.length === 0) {
+    throw new Error(`${filename} is empty.`);
   }
-
-  return JSON.parse(match[1]);
+  return parsed;
 }
 
 function extractCurrencyInfoCodes(html) {
@@ -100,34 +96,43 @@ function validateItems(items, knownCurrencyCodes) {
 
 try {
   const html = fs.readFileSync(indexPath, 'utf8');
-  const items = extractDashboardData(html);
   const knownCurrencyCodes = extractCurrencyInfoCodes(html);
 
-  if (!Array.isArray(items) || items.length === 0) {
-    fail('No EMT data entries found in index.html.');
-  } else {
-    const { currencyFields, errors, metadataWarnings, totalTokens, totals } = validateItems(items, knownCurrencyCodes);
+  const items = readJsonArray('emts.json');
+  const casps = readJsonArray('casps.json');
+  const nonCompliant = readJsonArray('non-compliant.json', { allowEmpty: true });
 
-    if (currencyFields.length === 0) {
-      fail('No currency fields found in EMT dashboard data.');
-    }
+  const { currencyFields, errors, metadataWarnings, totalTokens, totals } = validateItems(items, knownCurrencyCodes);
 
-    if (errors.length > 0) {
-      fail('EMT token counts do not match per-currency totals.', errors);
-    }
+  if (currencyFields.length === 0) {
+    fail('No currency fields found in EMT dashboard data.');
+  }
 
-    metadataWarnings.forEach(warning => console.warn(`⚠️ ${warning}`));
+  if (errors.length > 0) {
+    fail('EMT token counts do not match per-currency totals.', errors);
+  }
 
-    if (process.exitCode !== 1) {
-      const visibleTotals = Object.entries(totals)
-        .filter(([, value]) => value > 0)
-        .map(([currency, value]) => `${currency.toUpperCase()}=${value}`)
-        .join(', ');
+  const badCasps = casps.filter(item => !item.name || typeof item.name !== 'string');
+  if (badCasps.length > 0) {
+    fail(`${badCasps.length} CASP entries are missing a name.`);
+  }
 
-      console.log(`✅ Validated ${items.length} EMT rows.`);
-      console.log(`✅ Total tokens: ${totalTokens}`);
-      console.log(`✅ Currency totals: ${visibleTotals}`);
-    }
+  const badNonCompliant = nonCompliant.filter(item => !item.entity || typeof item.entity !== 'string');
+  if (badNonCompliant.length > 0) {
+    fail(`${badNonCompliant.length} non-compliant entries are missing an entity name.`);
+  }
+
+  metadataWarnings.forEach(warning => console.warn(`⚠️ ${warning}`));
+
+  if (process.exitCode !== 1) {
+    const visibleTotals = Object.entries(totals)
+      .filter(([, value]) => value > 0)
+      .map(([currency, value]) => `${currency.toUpperCase()}=${value}`)
+      .join(', ');
+
+    console.log(`✅ Validated ${items.length} EMT rows, ${casps.length} CASPs, ${nonCompliant.length} non-compliant entities.`);
+    console.log(`✅ Total tokens: ${totalTokens}`);
+    console.log(`✅ Currency totals: ${visibleTotals}`);
   }
 } catch (error) {
   fail(error.message);

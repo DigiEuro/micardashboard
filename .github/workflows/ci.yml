@@ -28,14 +28,20 @@ jobs:
         node --check scripts/validate-dashboard-data.js
         node --check assets/js/mobile-menu.js
 
-    - name: Check updater markers in index.html
-      # update-data.js locates these literal markers to rewrite the data
-      # blocks; a manual edit that breaks them silently disables updates
+    - name: Check updater markers and data files
+      # update-data.js patches the footer "Data as of" lines in index.html;
+      # the page itself loads register data from data/*.json at runtime
       run: |
-        grep -q 'const data = \[' index.html
-        grep -q 'const caspsData = \[' index.html
-        grep -q 'const nonCompliantData = \[' index.html
-        grep -q 'Data as of ' index.html
+        grep -q 'ESMA EMT Register</a> - Data as of ' index.html
+        grep -q 'ESMA CASPs Register</a> - Data as of ' index.html
+        node -e "
+          const fs = require('fs');
+          for (const f of ['data/emts.json', 'data/casps.json', 'data/non-compliant.json']) {
+            const parsed = JSON.parse(fs.readFileSync(f, 'utf8'));
+            if (!Array.isArray(parsed)) throw new Error(f + ' is not an array');
+          }
+          console.log('data files OK');
+        "
 
     - name: Validate dashboard data
       run: npm run validate:data
