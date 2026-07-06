@@ -573,7 +573,15 @@
     <h3 class="text-xl font-bold text-gray-800 mb-4 md:mb-0">
     <i class="fas fa-building text-teal-600 mr-2" aria-hidden="true"></i>Crypto-Asset Service Providers (CASPs)
     </h3>
-    <div class="flex items-center space-x-4">
+    <div class="flex flex-wrap items-center gap-3">
+    <select id="caspsCountryFilter" aria-label="Filter CASPs by country"
+    class="search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+    <option value="">All countries</option>
+    </select>
+    <select id="caspsServiceFilter" aria-label="Filter CASPs by service"
+    class="search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+    <option value="">All services</option>
+    </select>
     <div class="relative">
     <input type="text" id="caspsSearchInput" placeholder="Search CASPs, countries, services..."
     aria-label="Search CASPs by name, country, authority, service, or website"
@@ -1355,6 +1363,7 @@
         populateAuthorityChart();
         populateCaspsCountryChart();
         populateCaspsAuthorityChart();
+        populateCaspFilters();
         populateDetailsTable();
         populateCaspsTable();
         populateNonCompliantTable();
@@ -1682,23 +1691,48 @@
         populateDetailsTable(filteredData);
     }
 
-    function filterCaspsData(searchTerm) {
-        if (!searchTerm.trim()) {
-            filteredCaspsData = [...caspsData];
-        } else {
-            const term = searchTerm.toLowerCase();
-            filteredCaspsData = caspsData.filter(item => {
-                const services = (item.services || []).join(' ').toLowerCase();
-                const websites = (item.websites || []).join(' ').toLowerCase();
-                return (
-                    (item.name || '').toLowerCase().includes(term) ||
-                    (item.memberState || '').toLowerCase().includes(term) ||
-                    (item.authority || '').toLowerCase().includes(term) ||
-                    services.includes(term) ||
-                    websites.includes(term)
-                );
-            });
+    // Fill the country/service dropdowns from the loaded CASP data
+    function populateCaspFilters() {
+        const countrySelect = document.getElementById('caspsCountryFilter');
+        const serviceSelect = document.getElementById('caspsServiceFilter');
+
+        if (countrySelect) {
+            const countries = [...new Set(caspsData.map(item => (item.memberState || '').trim()).filter(Boolean))]
+                .sort((a, b) => a.localeCompare(b, 'en'));
+            countrySelect.innerHTML = '<option value="">All countries</option>' +
+                countries.map(country => `<option value="${esc(country)}">${esc(country)}</option>`).join('');
         }
+
+        if (serviceSelect) {
+            const services = [...new Set((caspsData.flatMap(item => item.services || [])).map(service => service.trim()).filter(Boolean))]
+                .sort((a, b) => a.localeCompare(b, 'en'));
+            serviceSelect.innerHTML = '<option value="">All services</option>' +
+                services.map(service => `<option value="${esc(service)}">${esc(service)}</option>`).join('');
+        }
+    }
+
+    function filterCaspsData(searchTerm) {
+        const term = (searchTerm || '').trim().toLowerCase();
+        const countryFilter = document.getElementById('caspsCountryFilter')?.value || '';
+        const serviceFilter = document.getElementById('caspsServiceFilter')?.value || '';
+
+        filteredCaspsData = caspsData.filter(item => {
+            const services = item.services || [];
+            const websites = (item.websites || []).join(' ').toLowerCase();
+
+            const matchesSearch = !term ||
+                (item.name || '').toLowerCase().includes(term) ||
+                (item.memberState || '').toLowerCase().includes(term) ||
+                (item.authority || '').toLowerCase().includes(term) ||
+                services.join(' ').toLowerCase().includes(term) ||
+                websites.includes(term);
+
+            const matchesCountry = !countryFilter || (item.memberState || '') === countryFilter;
+            const matchesService = !serviceFilter || services.includes(serviceFilter);
+
+            return matchesSearch && matchesCountry && matchesService;
+        });
+
         populateCaspsTable(filteredCaspsData);
     }
 
@@ -1814,6 +1848,14 @@
         const caspsSearchInput = document.getElementById('caspsSearchInput');
         if (caspsSearchInput) {
             caspsSearchInput.value = '';
+        }
+        const caspsCountryFilter = document.getElementById('caspsCountryFilter');
+        if (caspsCountryFilter) {
+            caspsCountryFilter.value = '';
+        }
+        const caspsServiceFilter = document.getElementById('caspsServiceFilter');
+        if (caspsServiceFilter) {
+            caspsServiceFilter.value = '';
         }
         filteredCaspsData = [...caspsData];
         populateCaspsTable(filteredCaspsData);
@@ -1935,8 +1977,15 @@
         debouncedFilterCaspsData(e.target.value);
     });
 
+    // Dropdowns apply immediately, combined with the current search term
+    const reapplyCaspsFilters = () => filterCaspsData(document.getElementById('caspsSearchInput').value);
+    document.getElementById('caspsCountryFilter').addEventListener('change', reapplyCaspsFilters);
+    document.getElementById('caspsServiceFilter').addEventListener('change', reapplyCaspsFilters);
+
     document.getElementById('clearCaspsSearch').addEventListener('click', () => {
         document.getElementById('caspsSearchInput').value = '';
+        document.getElementById('caspsCountryFilter').value = '';
+        document.getElementById('caspsServiceFilter').value = '';
         filterCaspsData('');
     });
 
