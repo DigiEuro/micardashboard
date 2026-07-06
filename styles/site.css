@@ -319,3 +319,125 @@
     display: inline-flex;
   }
 }
+
+/* ============================================================
+   Shared header / nav / body chrome
+   Extracted from the inline <style> blocks that index.html and
+   about.html each duplicated. Appended at the end of this file so
+   the source order relative to the header rules above (and to each
+   page's remaining page-specific inline styles, which load after
+   this file) is unchanged.
+   ============================================================ */
+body {
+  font-family: "Twemoji Country Flags", 'Inter', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+  background: linear-gradient(90deg, #58c1ba, #004aad);
+  min-height: 100vh;
+}
+
+.main-bg {
+  background: linear-gradient(90deg, #58c1ba, #004aad);
+}
+
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(90deg, rgba(88, 193, 186, 0.95), rgba(0, 74, 173, 0.95));
+  transition: all 0.3s ease-in-out;
+}
+
+.logo-container {
+  max-height: 80px;
+  width: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 0.75rem; /* Tailwind rounded-xl */
+}
+
+.tab-button {
+  transition: all 0.3s ease;
+}
+
+.tab-active {
+  background: white;
+  color: #1e40af;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tab-inactive {
+  background: rgba(59, 130, 246, 0.3);
+  color: white;
+}
+
+.tab-inactive:hover {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+.nav-buttons {
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.nav-buttons .tab-button {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .nav-buttons {
+    justify-content: flex-end;
+    width: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-buttons .tab-button {
+    flex: 1 1 calc(50% - 0.75rem);
+  }
+
+  .header-sticky.shrink .nav-buttons .tab-button {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-buttons .tab-button {
+    flex-basis: 100%;
+  }
+}
+
+/* Sticky header shrink on scroll */
+.header-sticky.shrink {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.header-sticky.shrink .logo-container {
+  max-height: 40px;
+}
+
+.header-sticky.shrink h1 {
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+}
+
+.header-sticky.shrink .additional-info {
+  display: none;
+}
+
+.header-sticky.shrink .tab-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
