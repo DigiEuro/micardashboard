@@ -1,0 +1,5 @@
+# Security policy for the DEA MiCAR Tracker
+Contact: mailto:info@digital-euro-association.de
+Expires: 2027-07-06T00:00:00.000Z
+Preferred-Languages: en, de
+Canonical: https://micatracker.digital-euro-association.de/.well-known/security.txt
