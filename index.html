@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="CGGJidmg9parYMdFHNi4jklzZ7ul8ciafDiIBtup_nY" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <title>DEA MiCAR Tracker - Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe</title>
+    <title>MiCAR Tracker — ESMA MiCA Register for CASPs, EMTs & Non-Compliant Entities</title>
+    <meta name="description" content="Search the ESMA interim MiCA register in one place: MiCA-authorised CASPs, e-money token (EMT) issuers and non-compliant entities by country, authority and service. Updated weekly by the Digital Euro Association. Free CSV/JSON download.">
+    <link rel="canonical" href="https://micatracker.digital-euro-association.de/">
     <!-- Open Graph metadata -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://micatracker.digital-euro-association.de/">
-    <meta property="og:title" content="DEA MiCAR Tracker - Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe">
-    <meta property="og:description" content="Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe.">
+    <meta property="og:title" content="MiCAR Tracker — ESMA MiCA Register for CASPs, EMTs & Non-Compliant Entities">
+    <meta property="og:description" content="Search the ESMA interim MiCA register: MiCA-authorised CASPs, EMT issuers and non-compliant entities by country, authority and service. Updated weekly.">
     <meta property="og:image" content="https://micatracker.digital-euro-association.de/cover.png">
 
     <!-- Twitter Card metadata -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://micatracker.digital-euro-association.de/">
-    <meta name="twitter:title" content="DEA MiCAR Tracker - Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe">
-    <meta name="twitter:description" content="Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe.">
+    <meta name="twitter:title" content="MiCAR Tracker — ESMA MiCA Register for CASPs, EMTs & Non-Compliant Entities">
+    <meta name="twitter:description" content="Search the ESMA interim MiCA register: MiCA-authorised CASPs, EMT issuers and non-compliant entities by country, authority and service. Updated weekly.">
     <meta name="twitter:image" content="https://micatracker.digital-euro-association.de/cover.png">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="alternate" type="application/rss+xml" title="MiCAR Tracker register updates" href="feed.xml">
@@ -304,6 +306,23 @@
     </div>
 
     <main id="main" class="max-w-7xl mx-auto px-6 py-8">
+    <!-- Static, crawlable intro: keyword-rich text + links to the intent pages -->
+    <section class="mb-8 text-white">
+    <h2 class="text-2xl md:text-3xl font-bold mb-3">Search the ESMA MiCA register</h2>
+    <p class="text-blue-100 max-w-3xl leading-relaxed">
+    The DEA MiCAR Tracker presents the EU's <strong>Markets in Crypto-Assets (MiCA / MiCAR)</strong> registers in one searchable place, based on public data from the ESMA interim MiCA register. Browse MiCA-authorised
+    <a href="casp-tracker.html" class="underline hover:text-white">Crypto-Asset Service Providers (CASPs)</a>,
+    <a href="emt-tracker.html" class="underline hover:text-white">e-money token (EMT) issuers</a>, and
+    <a href="non-compliant-casps.html" class="underline hover:text-white">entities flagged as non-compliant</a>
+    by country, competent authority, services and token. Updated weekly; download any register as CSV or JSON.
+    </p>
+    <ul class="mt-4 flex flex-wrap gap-3 text-sm font-semibold">
+    <li><a href="casp-tracker.html" class="inline-block bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 transition-colors">CASP Tracker</a></li>
+    <li><a href="emt-tracker.html" class="inline-block bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 transition-colors">EMT Tracker</a></li>
+    <li><a href="non-compliant-casps.html" class="inline-block bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 transition-colors">Non-Compliant CASPs</a></li>
+    </ul>
+    </section>
+
     <div id="sectionIntro" class="mb-6 text-white space-y-4 md:space-y-6">
     <h2 id="sectionTitle" class="text-2xl font-semibold">EMT Issuer Insights</h2>
     <p id="sectionDescription" class="text-blue-100">Key indicators and distributions for licensed Electronic Money Token issuers.</p>
@@ -596,9 +615,20 @@
 
         <!-- ── Nav links + social icons ── -->
         <div class="flex flex-col md:flex-row md:justify-between gap-8">
+          <!-- Registers -->
+          <nav aria-label="Registers">
+            <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Registers</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="casp-tracker.html" class="hover:text-white font-semibold">CASP Tracker</a></li>
+              <li><a href="emt-tracker.html" class="hover:text-white font-semibold">EMT Tracker</a></li>
+              <li><a href="non-compliant-casps.html" class="hover:text-white font-semibold">Non-Compliant CASPs</a></li>
+              <li><a href="about.html" class="hover:text-white font-semibold">About &amp; methodology</a></li>
+            </ul>
+          </nav>
           <!-- Nav -->
-          <nav>
-            <ul class="space-y-2 md:space-y-0 md:flex md:gap-6 text-sm">
+          <nav aria-label="Legal">
+            <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Digital Euro Association</p>
+            <ul class="space-y-2 text-sm">
               <li><a href="https://home.digital-euro-association.de/legal-notice?hsLang=en"  target="_blank" rel="noopener" class="hover:text-white font-semibold">Legal Notice</a></li>
               <li><a href="https://home.digital-euro-association.de/privacy-policy-0?hsLang=en" target="_blank" rel="noopener" class="hover:text-white font-semibold">Privacy</a></li>
               <li><a href="https://home.digital-euro-association.de/code-of-conduct?hsLang=en"  target="_blank" rel="noopener" class="hover:text-white font-semibold">Code of Conduct</a></li>
