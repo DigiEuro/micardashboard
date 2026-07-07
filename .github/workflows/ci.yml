@@ -27,6 +27,14 @@ jobs:
         node --check config.js
         node --check scripts/validate-dashboard-data.js
         node --check assets/js/mobile-menu.js
+        node --check assets/js/register-view.js
+
+    - name: Check sitemap lists the intent pages
+      run: |
+        for page in casp-tracker.html emt-tracker.html non-compliant-casps.html; do
+          grep -q "$page" sitemap.xml || { echo "sitemap missing $page"; exit 1; }
+          test -f "$page" || { echo "missing page $page"; exit 1; }
+        done
 
     - name: Check updater markers and data files
       # update-data.js patches the footer "Data as of" lines in index.html;
