@@ -75,10 +75,56 @@
         <a href="non-compliant-casps.html" class="tab-button tab-active px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center"><i class="fas fa-exclamation-triangle mr-2" aria-hidden="true"></i>Non-Compliant</a>
         <a href="about.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center"><i class="fas fa-circle-info mr-2" aria-hidden="true"></i>About</a>
       </nav>
+      <div class="md:hidden flex items-center hamburger-only">
+        <button id="mobile-menu-button"
+                type="button"
+                class="hamburger-button text-white hover:text-sky-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                aria-label="Open main menu">
+          <svg id="hamburger-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </div>
     </div>
     </div>
     </header>
+
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay fixed inset-0 hidden" aria-hidden="true"></div>
+
+    <div id="mobile-menu" class="mobile-menu-container hidden">
+      <div class="mobile-menu-panel p-4">
+        <nav class="flex flex-col mobile-menu-list" aria-label="Mobile navigation">
+          <a href="index.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
+            <span class="mobile-menu-text">Overview</span>
+          </a>
+          <a href="emt-tracker.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-table"></i></span>
+            <span class="mobile-menu-text">EMTs</span>
+          </a>
+          <a href="casp-tracker.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-building-columns"></i></span>
+            <span class="mobile-menu-text">CASPs</span>
+          </a>
+          <a href="non-compliant-casps.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></span>
+            <span class="mobile-menu-text">Non-Compliant</span>
+          </a>
+          <a href="about.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></span>
+            <span class="mobile-menu-text">About</span>
+          </a>
+        </nav>
+      </div>
+    </div>
 
     <main id="main" class="max-w-7xl mx-auto px-6 py-8">
     <section class="mb-8 text-white">
@@ -148,6 +194,15 @@
     </footer>
     <!-- ==== DEA FOOTER END ==== -->
 
+    <script>
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('.header-sticky');
+        if (!header) return;
+        if (window.scrollY > 20) header.classList.add('shrink');
+        else header.classList.remove('shrink');
+      });
+    </script>
+    <script src="assets/js/mobile-menu.js" defer></script>
     <script src="assets/js/register-view.js" defer></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {

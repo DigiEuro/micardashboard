@@ -455,5 +455,16 @@
       .catch(function () {});
   }
 
+  // Track the site header height (it shrinks on scroll) so the sticky
+  // column headers pin just below it - same mechanism as index.html.
+  const siteHeaderEl = document.querySelector('.header-sticky');
+  if (siteHeaderEl && 'ResizeObserver' in window) {
+    const setSiteHeaderHeight = function () {
+      document.documentElement.style.setProperty('--site-header-height', siteHeaderEl.offsetHeight + 'px');
+    };
+    setSiteHeaderHeight();
+    new ResizeObserver(setSiteHeaderHeight).observe(siteHeaderEl, { box: 'border-box' });
+  }
+
   boot();
 })();
