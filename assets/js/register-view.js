@@ -305,7 +305,7 @@
   function summaryHtml(cards) {
     if (!cards || !cards.length) return '';
     const cols = Math.min(cards.length, 4);
-    return '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-' + cols + ' gap-6 mb-8 fade-in">' +
+    return '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-' + cols + ' gap-6 mb-8">' +
       cards.map(function (c) {
         return '<div class="kpi-card ' + c.color + ' p-6 rounded-2xl shadow-lg text-white card-hover">' +
           '<div class="flex items-center justify-between"><div>' +
@@ -322,6 +322,9 @@
   // ---- state ------------------------------------------------------------
   let all = [];
   let filtered = [];
+  // Cross-dataset values that stay constant as the register is filtered
+  // (e.g. the non-compliant count shown on the CASP summary).
+  let extraSummary = null;
   const sortState = { key: null, dir: 1 };
 
   function sortRows(rows) {
@@ -349,7 +352,16 @@
     renderRows();
   }
 
+  // Summary cards reflect the current filtered view (Total Providers /
+  // Countries track the filter); cross-dataset values come from extraSummary.
+  function renderSummary() {
+    const mount = document.getElementById('rvSummary');
+    if (!mount || !SUMMARIES[register]) return;
+    mount.innerHTML = summaryHtml(SUMMARIES[register](filtered, extraSummary));
+  }
+
   function renderRows() {
+    renderSummary();
     const rows = sortRows(filtered);
     const tbody = document.getElementById('rvTbody');
     const noResults = document.getElementById('rvNoResults');
@@ -499,22 +511,20 @@
     // The CASP summary shows the non-compliant count, which lives in a
     // separate file. Fetch it first (non-fatal) so the card renders with
     // the real number; if it fails the card falls back to an em dash.
-    let extra = null;
     if (register === 'casps') {
       try {
         const ncRes = await fetch('data/non-compliant.json', { cache: 'no-cache' });
         if (ncRes.ok) {
           const nc = await ncRes.json();
-          if (Array.isArray(nc)) extra = { nonCompliantCount: nc.length };
+          if (Array.isArray(nc)) extraSummary = { nonCompliantCount: nc.length };
         }
       } catch (e) { /* non-fatal */ }
     }
 
-    const cards = SUMMARIES[register] ? SUMMARIES[register](all, extra) : null;
-    root.innerHTML = summaryHtml(cards) + shellHtml();
+    root.innerHTML = '<div id="rvSummary"></div>' + shellHtml();
     if (cfg.filters) populateFilters();
     wire();
-    renderRows();
+    renderRows(); // also renders the summary from the (initially full) view
     // Freshness (non-fatal)
     fetch('data/snapshot.json', { cache: 'no-cache' })
       .then(function (r) { return r.ok ? r.json() : null; })
