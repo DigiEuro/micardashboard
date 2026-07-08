@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="CGGJidmg9parYMdFHNi4jklzZ7ul8ciafDiIBtup_nY" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <title>DEA MiCAR Tracker - Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe</title>
+    <title>MiCAR Tracker — ESMA MiCA Register for CASPs, EMTs & Non-Compliant Entities</title>
+    <meta name="description" content="Search the ESMA interim MiCA register in one place: MiCA-authorised CASPs, e-money token (EMT) issuers and non-compliant entities by country, authority and service. Updated weekly by the Digital Euro Association. Free CSV/JSON download.">
+    <link rel="canonical" href="https://micatracker.digital-euro-association.de/">
     <!-- Open Graph metadata -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://micatracker.digital-euro-association.de/">
-    <meta property="og:title" content="DEA MiCAR Tracker - Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe">
-    <meta property="og:description" content="Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe.">
+    <meta property="og:title" content="MiCAR Tracker — ESMA MiCA Register for CASPs, EMTs & Non-Compliant Entities">
+    <meta property="og:description" content="Search the ESMA interim MiCA register: MiCA-authorised CASPs, EMT issuers and non-compliant entities by country, authority and service. Updated weekly.">
     <meta property="og:image" content="https://micatracker.digital-euro-association.de/cover.png">
 
     <!-- Twitter Card metadata -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://micatracker.digital-euro-association.de/">
-    <meta name="twitter:title" content="DEA MiCAR Tracker - Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe">
-    <meta name="twitter:description" content="Track Electronic Money Token (EMT) issuers and Crypto Asset Service Providers (CASPs) across Europe.">
+    <meta name="twitter:title" content="MiCAR Tracker — ESMA MiCA Register for CASPs, EMTs & Non-Compliant Entities">
+    <meta name="twitter:description" content="Search the ESMA interim MiCA register: MiCA-authorised CASPs, EMT issuers and non-compliant entities by country, authority and service. Updated weekly.">
     <meta name="twitter:image" content="https://micatracker.digital-euro-association.de/cover.png">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="alternate" type="application/rss+xml" title="MiCAR Tracker register updates" href="feed.xml">
@@ -63,155 +65,17 @@
     <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="dbd82f5d-689a-452f-9fff-fba85b9de507"></script>
     <style>
-    /* Shared header / nav / body chrome now lives in styles/site.css */
-    .card-hover {
-    transition: all 0.3s ease;
-    }
-
-    .card-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    }
-
+    /* Shared header / nav / body chrome, KPI summary cards, card-hover /
+       fade-in animations, and register table styles all live in
+       styles/site.css - shared with the casp-tracker / emt-tracker /
+       non-compliant-casps intent pages. */
     .progress-bar {
     transition: width 0.8s ease-in-out;
-    }
-
-    .fade-in {
-    animation: fadeIn 0.6s ease-in;
-    }
-
-    @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-    }
-
-    .kpi-card {
-    background: linear-gradient(135deg, var(--start-color), var(--end-color));
-    }
-
-    /* Complementary colors to the teal-blue gradient */
-    .kpi-teal { --start-color: #14b8a6; --end-color: #0f766e; }
-    .kpi-blue { --start-color: #0ea5e9; --end-color: #0369a1; }
-    .kpi-orange { --start-color: #f97316; --end-color: #ea580c; }
-    .kpi-coral { --start-color: #f43f5e; --end-color: #e11d48; }
-    .kpi-purple { --start-color: #8b5cf6; --end-color: #7c3aed; }
-    .kpi-red { --start-color: #dc2626; --end-color: #b91c1c; }
-    .kpi-green { --start-color: #10b981; --end-color: #059669; }
-    .kpi-yellow { --start-color: #f59e0b; --end-color: #d97706; }
-
-    .search-input {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
     }
 
     .content-bg {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    }
-
-
-    .data-table-container {
-    /* clip (not hidden/auto) does not create a scroll container, so the
-       sticky column headers stick to the viewport instead of this box */
-    overflow-x: clip;
-    }
-
-    .data-table {
-    border-collapse: separate;
-    border-spacing: 0;
-    table-layout: auto;
-    min-width: 0;
-    width: 100%;
-    }
-
-    .data-table th,
-    .data-table td {
-    vertical-align: top;
-    overflow-wrap: anywhere;
-    }
-
-    .sticky-table-header th {
-    position: sticky;
-    /* pin just below the site header, whose height changes on scroll */
-    top: var(--site-header-height, 0px);
-    z-index: 20;
-    box-shadow: 0 1px 0 rgba(148, 163, 184, 0.35), 0 8px 16px -16px rgba(15, 23, 42, 0.55);
-    }
-
-    .sort-button {
-    font: inherit;
-    color: inherit;
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    }
-
-    .sort-button:hover,
-    .sort-button:focus-visible {
-    text-decoration: underline;
-    }
-
-    .sort-indicator {
-    font-size: 0.7em;
-    }
-
-    .sticky-table-header.teal th {
-    background: #f0fdfa;
-    }
-
-    .sticky-table-header.red th {
-    background: #fff7ed;
-    }
-
-    .services-cell {
-    min-width: 300px;
-    }
-
-    .service-badges {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 0.5rem;
-    max-width: 34rem;
-    }
-
-    .service-badge {
-    display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
-    }
-
-    .casps-data-table {
-    table-layout: fixed;
-    }
-
-    .casps-data-table th,
-    .casps-data-table td {
-    overflow-wrap: normal;
-    word-break: normal;
-    }
-
-    .casps-country-badge,
-    .casps-authority-cell {
-    white-space: nowrap;
-    }
-
-    .casps-website-link {
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    }
-
-    @media (max-width: 768px) {
-    .data-table th,
-    .data-table td {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-    }
     }
     </style>
 </head>
@@ -222,9 +86,9 @@
     <div class="max-w-7xl mx-auto px-6 py-6">
     <div class="flex items-center justify-between flex-wrap header-content">
     <div class="flex items-center space-x-6 mb-4 md:mb-0">
-        <img src="DEA%20logo%20white.png"
-             alt="DEA Logo" id="homeLogo" class="logo-container" role="button" tabindex="0"
-             aria-label="Return to the default dashboard view">
+        <a href="index.html" class="inline-flex items-center" aria-label="Return to the dashboard">
+        <img src="DEA%20logo%20white.png" alt="DEA Logo" class="logo-container">
+        </a>
         <div class="flex items-center">
             <h1 class="text-[1.8rem] md:text-[2.2rem] font-bold text-white mb-0 leading-tight">
                 <span class="text-sky-100">MiCAR</span>
@@ -234,20 +98,18 @@
     </div>
     <div class="flex items-center gap-3 header-actions">
       <nav class="hidden md:flex items-center nav-buttons" aria-label="Main navigation">
-        <div id="dashboardTablist" role="tablist" aria-label="Dashboard sections" class="contents">
-        <button id="overviewBtn" role="tab" aria-selected="true" aria-controls="overviewSection" class="tab-button tab-active px-5 py-3 rounded-xl font-semibold">
-        <i class="fas fa-chart-pie mr-2" aria-hidden="true"></i>Overview
-        </button>
-        <button id="detailsBtn" role="tab" aria-selected="false" aria-controls="detailsSection" tabindex="-1" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold">
-        <i class="fas fa-table mr-2" aria-hidden="true"></i>EMTs
-        </button>
-        <button id="caspsBtn" role="tab" aria-selected="false" aria-controls="caspsSection" tabindex="-1" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold">
-        <i class="fas fa-building-columns mr-2" aria-hidden="true"></i>CASPs
-        </button>
-        <button id="nonCompliantBtn" role="tab" aria-selected="false" aria-controls="nonCompliantSection" tabindex="-1" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold">
-        <i class="fas fa-exclamation-triangle mr-2" aria-hidden="true"></i>Non-Compliant
-        </button>
-        </div>
+        <a href="index.html" aria-current="page" class="tab-button tab-active px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+          <i class="fas fa-chart-pie mr-2" aria-hidden="true"></i>Overview
+        </a>
+        <a href="emt-tracker.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+          <i class="fas fa-table mr-2" aria-hidden="true"></i>EMTs
+        </a>
+        <a href="casp-tracker.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+          <i class="fas fa-building-columns mr-2" aria-hidden="true"></i>CASPs
+        </a>
+        <a href="non-compliant-casps.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
+          <i class="fas fa-exclamation-triangle mr-2" aria-hidden="true"></i>Non-Compliant
+        </a>
         <a href="about.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center">
           <i class="fas fa-circle-info mr-2" aria-hidden="true"></i>About
         </a>
@@ -279,22 +141,22 @@
     <div id="mobile-menu" class="mobile-menu-container hidden">
       <div class="mobile-menu-panel p-4">
         <nav class="flex flex-col mobile-menu-list" aria-label="Mobile navigation">
-          <button type="button" data-tab-target="overview" class="mobile-menu-link mobile-menu-item text-base font-medium text-left">
+          <a href="index.html" aria-current="page" class="mobile-menu-link mobile-menu-item text-base font-medium">
             <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
             <span class="mobile-menu-text">Overview</span>
-          </button>
-          <button type="button" data-tab-target="details" class="mobile-menu-link mobile-menu-item text-base font-medium text-left">
+          </a>
+          <a href="emt-tracker.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
             <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-table"></i></span>
             <span class="mobile-menu-text">EMTs</span>
-          </button>
-          <button type="button" data-tab-target="casps" class="mobile-menu-link mobile-menu-item text-base font-medium text-left">
+          </a>
+          <a href="casp-tracker.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
             <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-building-columns"></i></span>
             <span class="mobile-menu-text">CASPs</span>
-          </button>
-          <button type="button" data-tab-target="nonCompliant" class="mobile-menu-link mobile-menu-item text-base font-medium text-left">
+          </a>
+          <a href="non-compliant-casps.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
             <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></span>
             <span class="mobile-menu-text">Non-Compliant</span>
-          </button>
+          </a>
           <a href="about.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
             <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></span>
             <span class="mobile-menu-text">About</span>
@@ -304,13 +166,22 @@
     </div>
 
     <main id="main" class="max-w-7xl mx-auto px-6 py-8">
-    <div id="sectionIntro" class="mb-6 text-white space-y-4 md:space-y-6">
-    <h2 id="sectionTitle" class="text-2xl font-semibold">EMT Issuer Insights</h2>
-    <p id="sectionDescription" class="text-blue-100">Key indicators and distributions for licensed Electronic Money Token issuers.</p>
-    <p id="dataFreshness" class="text-sm text-blue-100"></p>
-    <div id="caspsIntroKpiContainer" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in">
-    <!-- CASPs KPI cards duplicated for section intro -->
-    </div>
+    <!-- Static, crawlable intro: keyword-rich text + links to the intent pages -->
+    <section class="mb-6 text-white">
+    <h2 class="text-2xl md:text-3xl font-bold mb-2">Search the ESMA MiCA register</h2>
+    <p class="text-blue-100 text-sm md:text-base">
+    The DEA MiCAR Tracker presents the EU's <strong>Markets in Crypto-Assets (MiCA / MiCAR)</strong> registers in one searchable place, based on public data from the ESMA interim MiCA register. Browse MiCA-authorised
+    <a href="casp-tracker.html" class="underline hover:text-white">Crypto-Asset Service Providers (CASPs)</a>,
+    <a href="emt-tracker.html" class="underline hover:text-white">e-money token (EMT) issuers</a>, and
+    <a href="non-compliant-casps.html" class="underline hover:text-white">entities flagged as non-compliant</a>
+    by country, competent authority, services and token. Updated weekly; download any register as CSV or JSON.
+    </p>
+    <p id="dataFreshness" class="text-sm text-blue-100 mt-3"></p>
+    </section>
+
+    <div class="mb-4 text-white">
+    <h2 class="text-2xl font-semibold">EMT Issuer Insights</h2>
+    <p class="text-blue-100">Key indicators and distributions for licensed Electronic Money Token issuers.</p>
     </div>
 
     <div id="dataLoadingNotice" class="mb-6 rounded-2xl bg-white bg-opacity-90 p-4 text-gray-700 text-sm">
@@ -325,8 +196,7 @@
     <!-- Will be populated dynamically by JavaScript -->
     </div>
 
-    <!-- Overview Section -->
-    <div id="overviewSection" role="tabpanel" aria-labelledby="overviewBtn" class="fade-in">
+    <div class="fade-in">
     <!-- Charts Row -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
     <div class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6 card-hover">
@@ -350,8 +220,8 @@
 
     <div class="h-px bg-white/30 my-10"></div>
 
-    <div class="mb-6 text-white">
-    <h2 id="caspsSectionTitle" class="text-2xl font-semibold">CASPs Insights</h2>
+    <div class="mb-4 text-white">
+    <h2 class="text-2xl font-semibold">CASPs Insights</h2>
     <p class="text-blue-100">Overview of registered Crypto-Asset Service Providers by country and authority.</p>
     </div>
 
@@ -393,191 +263,6 @@
     </div>
     </div>
     </div>
-
-    <!-- Details Section -->
-    <div id="detailsSection" role="tabpanel" aria-labelledby="detailsBtn" class="hidden fade-in">
-    <div class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6 card-hover">
-    <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
-    <h3 class="text-xl font-bold text-gray-800 mb-4 md:mb-0">
-    <i class="fas fa-list-alt text-teal-600 mr-2" aria-hidden="true"></i>Detailed Issuer Information
-    </h3>
-    <div class="flex items-center space-x-4">
-    <div class="relative">
-    <input type="text" id="searchInput" placeholder="Search issuers, countries, tokens..."
-    aria-label="Search EMT issuers by name, country, authority, or token"
-    class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent w-64">
-    <i class="fas fa-search absolute left-3 top-3 text-gray-400" aria-hidden="true"></i>
-    </div>
-    <button id="clearSearch" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
-    <i class="fas fa-times mr-1" aria-hidden="true"></i>Clear
-    </button>
-    <button id="exportEmtCsv" class="px-3 py-2 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors whitespace-nowrap">
-    <i class="fas fa-download mr-1" aria-hidden="true"></i>CSV
-    </button>
-    <a href="data/emts.json" download="micar-emts.json" class="px-3 py-2 text-sm bg-teal-100 text-teal-800 rounded-lg hover:bg-teal-200 transition-colors whitespace-nowrap font-semibold">JSON</a>
-    </div>
-    </div>
-    <div class="data-table-container">
-    <table class="data-table w-full">
-    <caption class="sr-only">Electronic Money Token issuers authorised under MiCAR</caption>
-    <colgroup>
-    <col style="width: 26%;">
-    <col style="width: 20%;">
-    <col style="width: 18%;">
-    <col style="width: 18%;">
-    <col style="width: 8%;">
-    <col style="width: 10%;">
-    </colgroup>
-    <thead class="sticky-table-header teal">
-    <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
-    <th scope="col" aria-sort="none" data-sort-key="issuer" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Issuer<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" aria-sort="none" data-sort-key="state" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Country<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" aria-sort="none" data-sort-key="authority" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Authority<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Tokens</th>
-    <th scope="col" aria-sort="none" data-sort-key="count" class="text-center p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Count<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" class="text-center p-4 font-semibold text-gray-700">Currencies</th>
-    </tr>
-    </thead>
-    <tbody id="detailsTable">
-    <!-- Will be populated by JavaScript -->
-    </tbody>
-    </table>
-    </div>
-    <div id="noResults" class="hidden text-center py-8 text-gray-500">
-    <i class="fas fa-search text-4xl mb-4" aria-hidden="true"></i>
-    <p class="text-lg">No results found for your search.</p>
-    </div>
-    </div>
-    </div>
-
-    <!-- CASPs Section -->
-    <div id="caspsSection" role="tabpanel" aria-labelledby="caspsBtn" class="hidden fade-in">
-    <div class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6 card-hover">
-    <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
-    <h3 class="text-xl font-bold text-gray-800 mb-4 md:mb-0">
-    <i class="fas fa-building text-teal-600 mr-2" aria-hidden="true"></i>Crypto-Asset Service Providers (CASPs)
-    </h3>
-    <div class="flex flex-wrap items-center gap-3">
-    <select id="caspsCountryFilter" aria-label="Filter CASPs by country"
-    class="search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent">
-    <option value="">All countries</option>
-    </select>
-    <select id="caspsServiceFilter" aria-label="Filter CASPs by service"
-    class="search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent">
-    <option value="">All services</option>
-    </select>
-    <div class="relative">
-    <input type="text" id="caspsSearchInput" placeholder="Search CASPs, countries, services..."
-    aria-label="Search CASPs by name, country, authority, service, or website"
-    class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent w-64">
-    <i class="fas fa-search absolute left-3 top-3 text-gray-400" aria-hidden="true"></i>
-    </div>
-    <button id="clearCaspsSearch" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
-    <i class="fas fa-times mr-1" aria-hidden="true"></i>Clear
-    </button>
-    <div class="flex items-center gap-3">
-    <span class="text-sm text-gray-500">Download:</span>
-    <button id="exportCaspsCsv" class="px-3 py-2 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors whitespace-nowrap">
-    <i class="fas fa-download mr-1" aria-hidden="true"></i>CSV
-    </button>
-    <a href="data/casps.json" download="micar-casps.json" class="px-3 py-2 text-sm bg-teal-100 text-teal-800 rounded-lg hover:bg-teal-200 transition-colors whitespace-nowrap font-semibold">JSON</a>
-    </div>
-    </div>
-    </div>
-
-    <div class="data-table-container">
-    <table class="data-table casps-data-table w-full">
-    <caption class="sr-only">Crypto-Asset Service Providers registered under MiCAR</caption>
-    <colgroup>
-    <col style="width: 4%;">
-    <col style="width: 24%;">
-    <col style="width: 16%;">
-    <col style="width: 10%;">
-    <col style="width: 28%;">
-    <col style="width: 18%;">
-    </colgroup>
-    <thead class="sticky-table-header teal">
-    <tr class="bg-gradient-to-r from-teal-50 to-blue-50">
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">#</th>
-    <th scope="col" aria-sort="none" data-sort-key="name" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">CASP<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" aria-sort="none" data-sort-key="memberState" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Country<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" aria-sort="none" data-sort-key="authority" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Competent Authority<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700 services-cell">Services</th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Websites</th>
-    </tr>
-    </thead>
-    <tbody id="caspsTable">
-    <!-- Will be populated by JavaScript -->
-    </tbody>
-    </table>
-    </div>
-    <div id="noCaspsResults" class="hidden text-center py-8 text-gray-500">
-    <i class="fas fa-search text-4xl mb-4" aria-hidden="true"></i>
-    <p class="text-lg">No CASPs match your search.</p>
-    </div>
-    </div>
-    </div>
-
-    <!-- Non-Compliant Section -->
-    <div id="nonCompliantSection" role="tabpanel" aria-labelledby="nonCompliantBtn" class="hidden fade-in">
-    <div class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6 card-hover">
-    <div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
-    <h3 class="text-xl font-bold text-gray-800 mb-4 md:mb-0">
-    <i class="fas fa-exclamation-triangle text-red-600 mr-2" aria-hidden="true"></i>Non-Compliant Entities
-    </h3>
-    <div class="flex flex-col md:flex-row md:items-center gap-3">
-    <div class="relative">
-    <input type="text" id="nonCompliantSearchInput" placeholder="Search entities, authorities, websites..."
-    aria-label="Search non-compliant entities by name, country, authority, or website"
-    class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-500 focus:border-transparent w-64">
-    <i class="fas fa-search absolute left-3 top-3 text-gray-400" aria-hidden="true"></i>
-    </div>
-    <button id="toggleNewNonCompliant" class="px-3 py-2 text-sm bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors font-semibold whitespace-nowrap" aria-pressed="false">
-    <i class="fas fa-star mr-1" aria-hidden="true"></i>New only
-    </button>
-    <button id="clearNonCompliantSearch" class="px-3 py-2 text-sm bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors whitespace-nowrap">
-    <i class="fas fa-times mr-1" aria-hidden="true"></i>Clear
-    </button>
-    <button id="exportNonCompliantCsv" class="px-3 py-2 text-sm bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors whitespace-nowrap">
-    <i class="fas fa-download mr-1" aria-hidden="true"></i>CSV
-    </button>
-    <a href="data/non-compliant.json" download="micar-non-compliant.json" class="px-3 py-2 text-sm bg-red-100 text-red-800 rounded-lg hover:bg-red-200 transition-colors whitespace-nowrap font-semibold">JSON</a>
-    </div>
-    </div>
-    <p id="nonCompliantNewSummary" class="text-sm text-gray-600 mb-4"></p>
-
-    <div class="data-table-container">
-    <table class="data-table w-full">
-    <caption class="sr-only">Entities flagged as non-compliant by European regulators</caption>
-    <colgroup>
-    <col style="width: 5%;">
-    <col style="width: 25%;">
-    <col style="width: 14%;">
-    <col style="width: 20%;">
-    <col style="width: 26%;">
-    <col style="width: 10%;">
-    </colgroup>
-    <thead class="sticky-table-header red">
-    <tr class="bg-gradient-to-r from-red-50 to-orange-50">
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">#</th>
-    <th scope="col" aria-sort="none" data-sort-key="entity" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Entity Name<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" aria-sort="none" data-sort-key="country" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Country<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" aria-sort="none" data-sort-key="authority" class="text-left p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Regulatory Authority<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    <th scope="col" class="text-left p-4 font-semibold text-gray-700">Websites</th>
-    <th scope="col" aria-sort="none" data-sort-key="isNew" class="text-center p-4 font-semibold text-gray-700"><button type="button" class="sort-button">Status<span class="sort-indicator" aria-hidden="true"></span></button></th>
-    </tr>
-    </thead>
-    <tbody id="nonCompliantTable">
-    <!-- Will be populated by JavaScript -->
-    </tbody>
-    </table>
-    </div>
-    <div id="noNonCompliantResults" class="hidden text-center py-8 text-gray-500">
-    <i class="fas fa-search text-4xl mb-4" aria-hidden="true"></i>
-    <p class="text-lg">No results found for your search.</p>
-    </div>
-    </div>
-    </div>
     </main>
 
     <!-- ==== DEA FOOTER START ==== -->
@@ -596,9 +281,20 @@
 
         <!-- ── Nav links + social icons ── -->
         <div class="flex flex-col md:flex-row md:justify-between gap-8">
+          <!-- Registers -->
+          <nav aria-label="Registers">
+            <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Registers</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="casp-tracker.html" class="hover:text-white font-semibold">CASP Tracker</a></li>
+              <li><a href="emt-tracker.html" class="hover:text-white font-semibold">EMT Tracker</a></li>
+              <li><a href="non-compliant-casps.html" class="hover:text-white font-semibold">Non-Compliant CASPs</a></li>
+              <li><a href="about.html" class="hover:text-white font-semibold">About &amp; methodology</a></li>
+            </ul>
+          </nav>
           <!-- Nav -->
-          <nav>
-            <ul class="space-y-2 md:space-y-0 md:flex md:gap-6 text-sm">
+          <nav aria-label="Legal">
+            <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Digital Euro Association</p>
+            <ul class="space-y-2 text-sm">
               <li><a href="https://home.digital-euro-association.de/legal-notice?hsLang=en"  target="_blank" rel="noopener" class="hover:text-white font-semibold">Legal Notice</a></li>
               <li><a href="https://home.digital-euro-association.de/privacy-policy-0?hsLang=en" target="_blank" rel="noopener" class="hover:text-white font-semibold">Privacy</a></li>
               <li><a href="https://home.digital-euro-association.de/code-of-conduct?hsLang=en"  target="_blank" rel="noopener" class="hover:text-white font-semibold">Code of Conduct</a></li>
@@ -774,11 +470,6 @@
     let caspsData = [];
     let nonCompliantData = [];
 
-    let filteredData = [];
-    let filteredCaspsData = [];
-    let filteredNonCompliantData = [];
-    let showNewNonCompliantOnly = false;
-
     async function fetchJson(url) {
         const response = await fetch(url, { cache: 'no-cache' });
         if (!response.ok) {
@@ -801,9 +492,6 @@
         data = emts;
         caspsData = casps;
         nonCompliantData = nonCompliant;
-        filteredData = [...data];
-        filteredCaspsData = [...caspsData];
-        filteredNonCompliantData = [...nonCompliantData];
     }
 
     const changelogRegisterLabels = {
@@ -913,68 +601,6 @@
         }
     }
 
-    const sectionTitleEl = document.getElementById('sectionTitle');
-    const sectionDescriptionEl = document.getElementById('sectionDescription');
-    const kpiContainerEl = document.getElementById('kpiContainer');
-    const caspsIntroKpiContainerEl = document.getElementById('caspsIntroKpiContainer');
-
-    const sectionIntroConfig = {
-        overview: {
-            title: 'EMT Issuer Insights',
-            description: 'Key indicators and distributions for licensed Electronic Money Token issuers.',
-            showKpis: true
-        },
-        details: {
-            title: 'EMT Issuer Details',
-            description: 'Explore detailed records for each Electronic Money Token issuer authorised under MiCAR.',
-            showKpis: true
-        },
-        casps: {
-            title: 'CASPs Overview',
-            description: 'Discover authorised Crypto-Asset Service Providers and the services they offer across Europe.',
-            showKpis: false
-        },
-        nonCompliant: {
-            title: 'Non-Compliant Entities',
-            description: 'Monitor CASPs and related entities flagged by European regulators for non-compliant activity. Please refrain from visiting the listed websites, as many are suspected of hosting phishing or other malicious content.',
-            showKpis: false
-        }
-    };
-
-    function updateSectionIntro(tab) {
-        const config = sectionIntroConfig[tab] || sectionIntroConfig.overview;
-
-        if (sectionTitleEl) {
-            sectionTitleEl.textContent = config.title;
-        }
-
-        if (sectionDescriptionEl) {
-            if (config.description) {
-                sectionDescriptionEl.textContent = config.description;
-                sectionDescriptionEl.classList.remove('hidden');
-            } else {
-                sectionDescriptionEl.textContent = '';
-                sectionDescriptionEl.classList.add('hidden');
-            }
-        }
-
-        if (kpiContainerEl) {
-            if (config.showKpis) {
-                kpiContainerEl.classList.remove('hidden');
-            } else {
-                kpiContainerEl.classList.add('hidden');
-            }
-        }
-
-        if (caspsIntroKpiContainerEl) {
-            if (tab === 'casps') {
-                caspsIntroKpiContainerEl.classList.remove('hidden');
-            } else {
-                caspsIntroKpiContainerEl.classList.add('hidden');
-            }
-        }
-    }
-
     // Dynamic calculation functions
     function getCurrencyFields(items) {
         const standardFields = ['id', 'issuer', 'state', 'authority', 'tokens', 'count'];
@@ -1069,7 +695,7 @@
         });
         const uniqueCountries = new Set(normalizedCountries.map(country => country.toLowerCase()));
         const totalCountries = normalizedCountries.length > 0 ? uniqueCountries.size : 0;
-        const nonCompliantCaspsCount = filteredNonCompliantData.length;
+        const nonCompliantCaspsCount = nonCompliantData.length;
 
         return `
             <div class="kpi-card kpi-teal p-6 rounded-2xl shadow-lg text-white card-hover">
@@ -1105,18 +731,10 @@
         `;
     }
 
-    function updateCaspsKpis(dataToShow = filteredCaspsData) {
+    function updateCaspsKpis() {
         const container = document.getElementById('caspsKpiContainer');
-        const introContainer = document.getElementById('caspsIntroKpiContainer');
-
-        const cardsHtml = buildCaspsKpiCards(dataToShow);
-
         if (container) {
-            container.innerHTML = cardsHtml;
-        }
-
-        if (introContainer) {
-            introContainer.innerHTML = cardsHtml;
+            container.innerHTML = buildCaspsKpiCards(caspsData);
         }
     }
 
@@ -1142,83 +760,6 @@
         caspsAuthorityData = countBy(caspsData, item => item.authority || 'Unknown');
     }
 
-    // Column sorting (per-table state; null key = original sheet order)
-    const sortStates = {
-        emt: { key: null, dir: 1 },
-        casps: { key: null, dir: 1 },
-        nonCompliant: { key: null, dir: 1 }
-    };
-
-    function sortRows(rows, state) {
-        if (!state.key) {
-            return rows;
-        }
-        return [...rows].sort((a, b) => {
-            const va = a[state.key];
-            const vb = b[state.key];
-            if (typeof va === 'number' || typeof vb === 'number' || typeof va === 'boolean' || typeof vb === 'boolean') {
-                return (Number(va || 0) - Number(vb || 0)) * state.dir;
-            }
-            return String(va || '').localeCompare(String(vb || ''), 'en', { sensitivity: 'base' }) * state.dir;
-        });
-    }
-
-    function initSortableHeaders(tbodyId, state, rerender) {
-        const tbody = document.getElementById(tbodyId);
-        if (!tbody) {
-            return;
-        }
-        const headers = tbody.closest('table').querySelectorAll('th[data-sort-key]');
-        headers.forEach(th => {
-            const button = th.querySelector('.sort-button');
-            if (!button) {
-                return;
-            }
-            button.addEventListener('click', () => {
-                const key = th.dataset.sortKey;
-                if (state.key === key) {
-                    state.dir = -state.dir;
-                } else {
-                    state.key = key;
-                    state.dir = 1;
-                }
-                headers.forEach(header => {
-                    const active = header === th;
-                    header.setAttribute('aria-sort', active ? (state.dir === 1 ? 'ascending' : 'descending') : 'none');
-                    const indicator = header.querySelector('.sort-indicator');
-                    if (indicator) {
-                        indicator.textContent = active ? (state.dir === 1 ? '▲' : '▼') : '';
-                    }
-                });
-                rerender();
-            });
-        });
-    }
-
-    // CSV export of the currently visible (filtered + sorted) view
-    function csvEscape(value) {
-        const str = String(value ?? '');
-        return /[",\n]/.test(str) ? '"' + str.replace(/"/g, '""') + '"' : str;
-    }
-
-    function downloadCsv(filename, columns, rows) {
-        if (rows.length === 0) {
-            return;
-        }
-        const header = columns.map(col => csvEscape(col.label)).join(',');
-        const lines = rows.map(row => columns.map(col => csvEscape(col.value(row))).join(','));
-        // BOM so Excel detects UTF-8
-        const blob = new Blob(['\uFEFF' + [header, ...lines].join('\r\n')], { type: 'text/csv;charset=utf-8' });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = filename;
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
-        URL.revokeObjectURL(url);
-    }
-
     // === Shrink header on scroll ===
     window.addEventListener('scroll', () => {
       const header = document.querySelector('.header-sticky');
@@ -1241,19 +782,12 @@
     }
     // Initialize dashboard
     function initDashboard() {
-        updateSectionIntro('overview');
-        // Generate dynamic components
         generateKPICards();
-
-        // Populate charts and tables
+        updateCaspsKpis();
         populateCountryChart();
         populateAuthorityChart();
         populateCaspsCountryChart();
         populateCaspsAuthorityChart();
-        populateCaspFilters();
-        populateDetailsTable();
-        populateCaspsTable();
-        populateNonCompliantTable();
     }
 
     function populateCountryChart() {
@@ -1360,537 +894,20 @@
         `).join('');
     }
 
-    function populateDetailsTable(dataToShow = filteredData) {
-        const tbody = document.getElementById('detailsTable');
-        const noResults = document.getElementById('noResults');
-
-        dataToShow = sortRows(dataToShow, sortStates.emt);
-
-        if (dataToShow.length === 0) {
-            tbody.innerHTML = '';
-            noResults.classList.remove('hidden');
-            return;
-        }
-
-        noResults.classList.add('hidden');
-        // Get all currency columns dynamically (once, not per row)
-        const currencyFields = getCurrencyFields(dataToShow);
-
-        tbody.innerHTML = dataToShow.map((item, index) => {
-            const currencyBadges = currencyFields
-                .filter(currency => item[currency] > 0)
-                .map(currency => {
-                    const currencyCode = currency.toUpperCase();
-                    return `<span class="px-2 py-1 rounded text-xs font-semibold" style="${getCurrencyBadgeStyle(currencyCode)}">${esc(currencyCode)}</span>`;
-                }).join(' ');
-
-            return `
-                <tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}">
-                    <td class="p-4">
-                        <div class="font-semibold text-gray-800">${esc(item.issuer)}</div>
-                    </td>
-                    <td class="p-4">
-                        <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">
-                            <span aria-hidden="true">${countryFlags[item.state] || '🏳️'}</span> ${esc(item.state)}
-                        </span>
-                    </td>
-                    <td class="p-4 text-gray-600 text-sm">${esc(item.authority)}</td>
-                    <td class="p-4">
-                        <div class="text-sm text-gray-800 font-mono">${esc(item.tokens || 'N/A')}</div>
-                    </td>
-                    <td class="p-4 text-center">
-                        <span class="px-3 py-1 rounded-full text-sm font-bold ${
-                            item.count > 1 ? 'bg-green-100 text-green-800' : 
-                            item.count === 1 ? 'bg-yellow-100 text-yellow-800' : 
-                            'bg-gray-100 text-gray-600'
-                        }">
-                            ${item.count}
-                        </span>
-                    </td>
-                    <td class="p-4 text-center">
-                        <div class="flex justify-center space-x-1">
-                            ${currencyBadges}
-                        </div>
-                    </td>
-                </tr>
-            `;
-        }).join('');
-    }
-
-    function populateCaspsTable(dataToShow = filteredCaspsData) {
-        const tbody = document.getElementById('caspsTable');
-        const noResults = document.getElementById('noCaspsResults');
-
-        dataToShow = sortRows(dataToShow, sortStates.casps);
-        updateCaspsKpis(dataToShow);
-
-        if (!tbody) {
-            return;
-        }
-
-        if (dataToShow.length === 0) {
-            tbody.innerHTML = '';
-            if (noResults) {
-                noResults.classList.remove('hidden');
-            }
-            return;
-        }
-
-        if (noResults) {
-            noResults.classList.add('hidden');
-        }
-
-        tbody.innerHTML = dataToShow.map((item, index) => {
-            const servicesBadges = (item.services || []).map(service => `
-                <span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">${esc(service)}</span>
-            `).join(' ');
-
-            const websiteBadges = (item.websites && item.websites.length > 0)
-                ? item.websites.map(site => {
-                    // Only link out to http(s) URLs; render anything else as text
-                    const url = safeHttpUrl(site);
-                    return url
-                        ? `<a href="${esc(url)}" target="_blank" rel="noopener" class="casps-website-link block text-sm text-blue-600 underline">${esc(site)}</a>`
-                        : `<span class="casps-website-link block text-sm text-gray-600">${esc(site)}</span>`;
-                }).join('')
-                : '<span class="text-xs text-gray-500">Not provided</span>';
-
-            return `
-                <tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200">
-                    <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
-                    <td class="p-4">
-                        <p class="text-gray-900 font-semibold">${esc(item.name || 'N/A')}</p>
-                    </td>
-                    <td class="p-4">
-                        <span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">
-                            <span aria-hidden="true">${countryFlags[item.memberState] || '🏳️'}</span> ${esc(item.memberState || 'Unknown')}
-                        </span>
-                    </td>
-                    <td class="p-4 text-gray-600 text-sm casps-authority-cell">${esc(item.authority || '—')}</td>
-                    <td class="p-4 services-cell">
-                        <div class="service-badges">${servicesBadges || '<span class="text-xs text-gray-500">Not specified</span>'}</div>
-                    </td>
-                    <td class="p-4">
-                        <div class="space-y-1">${websiteBadges}</div>
-                    </td>
-                </tr>
-            `;
-        }).join('');
-    }
-
-    function updateNonCompliantNewSummary(dataToShow = filteredNonCompliantData) {
-        const summary = document.getElementById('nonCompliantNewSummary');
-        const toggle = document.getElementById('toggleNewNonCompliant');
-        const totalNew = nonCompliantData.filter(item => item.isNew).length;
-        const visibleNew = dataToShow.filter(item => item.isNew).length;
-
-        if (summary) {
-            summary.textContent = totalNew > 0
-                ? `${visibleNew} new flagged ${visibleNew === 1 ? 'entity is' : 'entities are'} visible (${totalNew} total marked new).`
-                : 'No entities are currently marked new in the latest dataset.';
-        }
-
-        if (toggle) {
-            toggle.setAttribute('aria-pressed', showNewNonCompliantOnly ? 'true' : 'false');
-            toggle.className = showNewNonCompliantOnly
-                ? 'px-3 py-2 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold whitespace-nowrap'
-                : 'px-3 py-2 text-sm bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors font-semibold whitespace-nowrap';
-        }
-    }
-
-    function populateNonCompliantTable(dataToShow = filteredNonCompliantData) {
-        const tbody = document.getElementById('nonCompliantTable');
-        const noResults = document.getElementById('noNonCompliantResults');
-
-        dataToShow = sortRows(dataToShow, sortStates.nonCompliant);
-        updateNonCompliantNewSummary(dataToShow);
-
-        if (dataToShow.length === 0) {
-            tbody.innerHTML = '';
-            noResults.classList.remove('hidden');
-            return;
-        }
-
-        noResults.classList.add('hidden');
-        tbody.innerHTML = dataToShow.map((item, index) => {
-            const rowBackground = item.isNew ? 'bg-blue-50' : (index % 2 === 0 ? 'bg-gray-50' : 'bg-white');
-
-            return `
-            <tr class="border-b hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 transition-all duration-200 ${rowBackground}">
-                <td class="p-4 text-sm font-semibold text-gray-500">${index + 1}</td>
-                <td class="p-4">
-                    <div class="font-semibold text-gray-800 flex items-center">
-                        <span>${esc(item.entity)}</span>
-                        ${item.isNew ? `
-                            <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold text-blue-700 bg-blue-100">
-                                <i class="fas fa-star text-blue-500 mr-1" aria-hidden="true"></i>New
-                            </span>
-                        ` : ''}
-                    </div>
-                </td>
-                <td class="p-4">
-                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
-                        <span aria-hidden="true">${countryFlags[item.country] || '🏳️'}</span> ${esc(item.country)}
-                    </span>
-                </td>
-                <td class="p-4 text-gray-600 text-sm">${esc(item.authority)}</td>
-                <td class="p-4">
-                    <div class="space-y-1">
-                        ${item.websites.map(website => `
-                            <div class="text-xs text-blue-600 font-mono bg-blue-50 px-2 py-1 rounded">
-                                ${esc(website)}
-                            </div>
-                        `).join('')}
-                    </div>
-                </td>
-                <td class="p-4 text-center">
-                    <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-bold" title="Flagged">
-                        <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
-                        <span class="sr-only">Flagged</span>
-                    </span>
-                </td>
-            </tr>
-        `;
-        }).join('');
-    }
-
-    // Search functionality
-    function debounce(fn, wait = 150) {
-        let timer = null;
-        return (...args) => {
-            clearTimeout(timer);
-            timer = setTimeout(() => fn(...args), wait);
-        };
-    }
-
-    function filterData(searchTerm) {
-        if (!searchTerm.trim()) {
-            filteredData = [...data];
-        } else {
-            const term = searchTerm.toLowerCase();
-            filteredData = data.filter(item =>
-                item.issuer.toLowerCase().includes(term) ||
-                item.state.toLowerCase().includes(term) ||
-                item.authority.toLowerCase().includes(term) ||
-                item.tokens.toLowerCase().includes(term)
-            );
-        }
-        populateDetailsTable(filteredData);
-    }
-
-    // Fill the country/service dropdowns from the loaded CASP data
-    function populateCaspFilters() {
-        const countrySelect = document.getElementById('caspsCountryFilter');
-        const serviceSelect = document.getElementById('caspsServiceFilter');
-
-        if (countrySelect) {
-            const countries = [...new Set(caspsData.map(item => (item.memberState || '').trim()).filter(Boolean))]
-                .sort((a, b) => a.localeCompare(b, 'en'));
-            countrySelect.innerHTML = '<option value="">All countries</option>' +
-                countries.map(country => `<option value="${esc(country)}">${esc(country)}</option>`).join('');
-        }
-
-        if (serviceSelect) {
-            const services = [...new Set((caspsData.flatMap(item => item.services || [])).map(service => service.trim()).filter(Boolean))]
-                .sort((a, b) => a.localeCompare(b, 'en'));
-            serviceSelect.innerHTML = '<option value="">All services</option>' +
-                services.map(service => `<option value="${esc(service)}">${esc(service)}</option>`).join('');
-        }
-    }
-
-    function filterCaspsData(searchTerm) {
-        const term = (searchTerm || '').trim().toLowerCase();
-        const countryFilter = document.getElementById('caspsCountryFilter')?.value || '';
-        const serviceFilter = document.getElementById('caspsServiceFilter')?.value || '';
-
-        filteredCaspsData = caspsData.filter(item => {
-            const services = item.services || [];
-            const websites = (item.websites || []).join(' ').toLowerCase();
-
-            const matchesSearch = !term ||
-                (item.name || '').toLowerCase().includes(term) ||
-                (item.memberState || '').toLowerCase().includes(term) ||
-                (item.authority || '').toLowerCase().includes(term) ||
-                services.join(' ').toLowerCase().includes(term) ||
-                websites.includes(term);
-
-            const matchesCountry = !countryFilter || (item.memberState || '') === countryFilter;
-            const matchesService = !serviceFilter || services.includes(serviceFilter);
-
-            return matchesSearch && matchesCountry && matchesService;
-        });
-
-        populateCaspsTable(filteredCaspsData);
-    }
-
-    function filterNonCompliantData(searchTerm) {
-        const term = searchTerm.trim().toLowerCase();
-        filteredNonCompliantData = nonCompliantData.filter(item => {
-            const matchesSearch = !term ||
-                item.entity.toLowerCase().includes(term) ||
-                item.country.toLowerCase().includes(term) ||
-                item.authority.toLowerCase().includes(term) ||
-                item.websites.some(website => website.toLowerCase().includes(term));
-            const matchesNewFilter = !showNewNonCompliantOnly || item.isNew;
-
-            return matchesSearch && matchesNewFilter;
-        });
-
-        populateNonCompliantTable(filteredNonCompliantData);
-    }
-
-    // Tab switching functionality
-    const tabHashes = {
-        overview: '#overview',
-        details: '#details',
-        casps: '#casps',
-        nonCompliant: '#non-compliant'
+    // Legacy #tab bookmarks (pre-refactor the registers were tabs inside
+    // this page). Forward them to the standalone intent pages so any old
+    // shared link still lands on the right register.
+    const legacyHashRedirects = {
+        '#details': 'emt-tracker.html',
+        '#emts': 'emt-tracker.html',
+        '#casps': 'casp-tracker.html',
+        '#non-compliant': 'non-compliant-casps.html',
+        '#noncompliant': 'non-compliant-casps.html'
     };
-
-    function switchTab(tab) {
-        const overviewBtn = document.getElementById('overviewBtn');
-        const detailsBtn = document.getElementById('detailsBtn');
-        const nonCompliantBtn = document.getElementById('nonCompliantBtn');
-        const caspsBtn = document.getElementById('caspsBtn');
-        const overviewSection = document.getElementById('overviewSection');
-        const detailsSection = document.getElementById('detailsSection');
-        const caspsSection = document.getElementById('caspsSection');
-        const nonCompliantSection = document.getElementById('nonCompliantSection');
-
-        // Reset all buttons
-        [overviewBtn, detailsBtn, nonCompliantBtn, caspsBtn].forEach(btn => {
-            btn.className = 'tab-button tab-inactive px-5 py-3 rounded-xl font-semibold';
-            btn.setAttribute('aria-selected', 'false');
-            btn.setAttribute('tabindex', '-1');
-        });
-
-        // Hide all sections
-        [overviewSection, detailsSection, caspsSection, nonCompliantSection].forEach(section => {
-            section.classList.add('hidden');
-        });
-
-        updateSectionIntro(tab);
-
-        // Show selected tab
-        let activeBtn = null;
-        if (tab === 'overview') {
-            activeBtn = overviewBtn;
-            overviewSection.classList.remove('hidden');
-        } else if (tab === 'details') {
-            activeBtn = detailsBtn;
-            detailsSection.classList.remove('hidden');
-        } else if (tab === 'casps') {
-            activeBtn = caspsBtn;
-            caspsSection.classList.remove('hidden');
-        } else if (tab === 'nonCompliant') {
-            activeBtn = nonCompliantBtn;
-            nonCompliantSection.classList.remove('hidden');
-        }
-
-        if (activeBtn) {
-            activeBtn.className = 'tab-button tab-active px-5 py-3 rounded-xl font-semibold';
-            activeBtn.setAttribute('aria-selected', 'true');
-            activeBtn.setAttribute('tabindex', '0');
-        }
-
-        // Keep the URL shareable: reflect the active tab in the hash.
-        // replaceState avoids a hashchange event and history spam.
-        const targetHash = tabHashes[tab];
-        if (targetHash && window.location.hash !== targetHash) {
-            history.replaceState(null, '', targetHash);
-        }
-
-        window.scrollTo({ top: 0, behavior: 'auto' });
+    const legacyTarget = legacyHashRedirects[window.location.hash.toLowerCase()];
+    if (legacyTarget) {
+        window.location.replace(legacyTarget);
     }
-
-
-
-    function applyHashRouting() {
-        const hash = window.location.hash.replace('#', '').toLowerCase();
-        const map = {
-            'overview': 'overview',
-            'details': 'details',
-            'casps': 'casps',
-            'non-compliant': 'nonCompliant',
-            'noncompliant': 'nonCompliant'
-        };
-        const tab = map[hash];
-        if (!tab) {
-            return;
-        }
-        switchTab(tab);
-        window.scrollTo({ top: 0, behavior: 'auto' });
-    }
-
-    function resetDashboard() {
-        switchTab('overview');
-
-        const searchInput = document.getElementById('searchInput');
-        if (searchInput) {
-            searchInput.value = '';
-        }
-        filteredData = [...data];
-        populateDetailsTable(filteredData);
-
-        const caspsSearchInput = document.getElementById('caspsSearchInput');
-        if (caspsSearchInput) {
-            caspsSearchInput.value = '';
-        }
-        const caspsCountryFilter = document.getElementById('caspsCountryFilter');
-        if (caspsCountryFilter) {
-            caspsCountryFilter.value = '';
-        }
-        const caspsServiceFilter = document.getElementById('caspsServiceFilter');
-        if (caspsServiceFilter) {
-            caspsServiceFilter.value = '';
-        }
-        filteredCaspsData = [...caspsData];
-        populateCaspsTable(filteredCaspsData);
-
-        const nonCompliantSearchInput = document.getElementById('nonCompliantSearchInput');
-        if (nonCompliantSearchInput) {
-            nonCompliantSearchInput.value = '';
-        }
-        filteredNonCompliantData = [...nonCompliantData];
-        showNewNonCompliantOnly = false;
-        populateNonCompliantTable(filteredNonCompliantData);
-    }
-
-    // Event listeners
-    document.getElementById('overviewBtn').addEventListener('click', () => switchTab('overview'));
-    document.getElementById('detailsBtn').addEventListener('click', () => switchTab('details'));
-    document.getElementById('caspsBtn').addEventListener('click', () => switchTab('casps'));
-    document.getElementById('nonCompliantBtn').addEventListener('click', () => switchTab('nonCompliant'));
-
-    initSortableHeaders('detailsTable', sortStates.emt, () => populateDetailsTable(filteredData));
-    initSortableHeaders('caspsTable', sortStates.casps, () => populateCaspsTable(filteredCaspsData));
-    initSortableHeaders('nonCompliantTable', sortStates.nonCompliant, () => populateNonCompliantTable(filteredNonCompliantData));
-
-    document.getElementById('exportEmtCsv').addEventListener('click', () => {
-        const currencyColumns = getCurrencyFields(data).map(currency => ({
-            label: currency.toUpperCase(),
-            value: row => row[currency] || 0
-        }));
-        downloadCsv('micar-emts.csv', [
-            { label: 'Issuer', value: row => row.issuer },
-            { label: 'Country', value: row => row.state },
-            { label: 'Authority', value: row => row.authority },
-            { label: 'Tokens', value: row => row.tokens },
-            { label: 'Count', value: row => row.count },
-            ...currencyColumns
-        ], sortRows(filteredData, sortStates.emt));
-    });
-
-    document.getElementById('exportCaspsCsv').addEventListener('click', () => {
-        downloadCsv('micar-casps.csv', [
-            { label: 'CASP', value: row => row.name },
-            { label: 'Country', value: row => row.memberState },
-            { label: 'Competent Authority', value: row => row.authority },
-            { label: 'Services', value: row => (row.services || []).join('; ') },
-            { label: 'Websites', value: row => (row.websites || []).join('; ') }
-        ], sortRows(filteredCaspsData, sortStates.casps));
-    });
-
-    document.getElementById('exportNonCompliantCsv').addEventListener('click', () => {
-        downloadCsv('micar-non-compliant.csv', [
-            { label: 'Entity', value: row => row.entity },
-            { label: 'Country', value: row => row.country },
-            { label: 'Regulatory Authority', value: row => row.authority },
-            { label: 'Websites', value: row => (row.websites || []).join('; ') },
-            { label: 'New', value: row => (row.isNew ? 'yes' : 'no') }
-        ], sortRows(filteredNonCompliantData, sortStates.nonCompliant));
-    });
-
-    // Arrow-key navigation between tabs (WAI-ARIA tabs pattern)
-    const dashboardTablist = document.getElementById('dashboardTablist');
-    if (dashboardTablist) {
-        const tabOrder = ['overview', 'details', 'casps', 'nonCompliant'];
-        const tabButtons = ['overviewBtn', 'detailsBtn', 'caspsBtn', 'nonCompliantBtn']
-            .map(id => document.getElementById(id));
-
-        dashboardTablist.addEventListener('keydown', (event) => {
-            const currentIndex = tabButtons.indexOf(document.activeElement);
-            if (currentIndex === -1) {
-                return;
-            }
-
-            let nextIndex = null;
-            if (event.key === 'ArrowRight') {
-                nextIndex = (currentIndex + 1) % tabButtons.length;
-            } else if (event.key === 'ArrowLeft') {
-                nextIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
-            } else if (event.key === 'Home') {
-                nextIndex = 0;
-            } else if (event.key === 'End') {
-                nextIndex = tabButtons.length - 1;
-            }
-
-            if (nextIndex !== null) {
-                event.preventDefault();
-                switchTab(tabOrder[nextIndex]);
-                tabButtons[nextIndex].focus();
-            }
-        });
-    }
-
-    const homeLogo = document.getElementById('homeLogo');
-    if (homeLogo) {
-        const handleDashboardReset = (event) => {
-            event.preventDefault();
-            resetDashboard();
-        };
-
-        homeLogo.addEventListener('click', handleDashboardReset);
-        homeLogo.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-                handleDashboardReset(event);
-            }
-        });
-    }
-
-    // Debounced: each keystroke otherwise rebuilds the whole table
-    const debouncedFilterData = debounce(filterData);
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-        debouncedFilterData(e.target.value);
-    });
-
-    document.getElementById('clearSearch').addEventListener('click', () => {
-        document.getElementById('searchInput').value = '';
-        filterData('');
-    });
-
-    const debouncedFilterCaspsData = debounce(filterCaspsData);
-    document.getElementById('caspsSearchInput').addEventListener('input', (e) => {
-        debouncedFilterCaspsData(e.target.value);
-    });
-
-    // Dropdowns apply immediately, combined with the current search term
-    const reapplyCaspsFilters = () => filterCaspsData(document.getElementById('caspsSearchInput').value);
-    document.getElementById('caspsCountryFilter').addEventListener('change', reapplyCaspsFilters);
-    document.getElementById('caspsServiceFilter').addEventListener('change', reapplyCaspsFilters);
-
-    document.getElementById('clearCaspsSearch').addEventListener('click', () => {
-        document.getElementById('caspsSearchInput').value = '';
-        document.getElementById('caspsCountryFilter').value = '';
-        document.getElementById('caspsServiceFilter').value = '';
-        filterCaspsData('');
-    });
-
-    const debouncedFilterNonCompliantData = debounce(filterNonCompliantData);
-    document.getElementById('nonCompliantSearchInput').addEventListener('input', (e) => {
-        debouncedFilterNonCompliantData(e.target.value);
-    });
-
-    document.getElementById('toggleNewNonCompliant').addEventListener('click', () => {
-        showNewNonCompliantOnly = !showNewNonCompliantOnly;
-        filterNonCompliantData(document.getElementById('nonCompliantSearchInput').value);
-    });
-
-    document.getElementById('clearNonCompliantSearch').addEventListener('click', () => {
-        document.getElementById('nonCompliantSearchInput').value = '';
-        showNewNonCompliantOnly = false;
-        filterNonCompliantData('');
-    });
 
     // Initialize on page load
     async function bootDashboard() {
@@ -1909,13 +926,11 @@
         if (loadingNotice) loadingNotice.classList.add('hidden');
         computeAggregates();
         initDashboard();
-        applyHashRouting();
         loadChangelog();
         loadSnapshotInfo();
     }
 
     document.addEventListener('DOMContentLoaded', bootDashboard);
-    window.addEventListener('hashchange', applyHashRouting);
     </script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {

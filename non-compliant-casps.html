@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <title>Non-Compliant CASPs — Entities Flagged Under MiCA (ESMA Register)</title>
+    <meta name="description" content="View entities flagged as non-compliant under MiCA using ESMA register data. Search non-compliant crypto providers by entity name, country and regulatory authority. Updated weekly by the Digital Euro Association.">
+    <link rel="canonical" href="https://micatracker.digital-euro-association.de/non-compliant-casps.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://micatracker.digital-euro-association.de/non-compliant-casps.html">
+    <meta property="og:title" content="Non-Compliant CASPs — Entities Flagged Under MiCA (ESMA Register)">
+    <meta property="og:description" content="Entities flagged as non-compliant under MiCA, from ESMA register data. Search by entity name, country and regulatory authority. Updated weekly.">
+    <meta property="og:image" content="https://micatracker.digital-euro-association.de/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Non-Compliant CASPs — Entities Flagged Under MiCA (ESMA Register)">
+    <meta name="twitter:description" content="Entities flagged as non-compliant under MiCA, from ESMA register data. Search by entity name, country and regulatory authority. Updated weekly.">
+    <meta name="twitter:image" content="https://micatracker.digital-euro-association.de/cover.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="alternate" type="application/rss+xml" title="MiCAR Tracker register updates" href="feed.xml">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Entities flagged as non-compliant under MiCA",
+      "description": "Entities flagged by European regulators as providing crypto-asset services in non-compliance with the EU Markets in Crypto-Assets Regulation (MiCAR), derived from the ESMA interim MiCA register. Includes entity name, country and regulatory authority.",
+      "url": "https://micatracker.digital-euro-association.de/casp-tracker.html",
+      "keywords": ["non-compliant", "MiCA", "MiCAR", "crypto scam", "ESMA", "warning list"],
+      "creator": { "@type": "Organization", "name": "Digital Euro Association", "url": "https://digital-euro-association.de" },
+      "isBasedOn": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister",
+      "distribution": [
+        { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://micatracker.digital-euro-association.de/data/non-compliant.json" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What does non-compliant mean under MiCAR?", "acceptedAnswer": { "@type": "Answer", "text": "These are entities flagged by EU national competent authorities or ESMA as providing crypto-asset services without the authorisation required under the EU Markets in Crypto-Assets Regulation." } },
+        { "@type": "Question", "name": "Where does this data come from?", "acceptedAnswer": { "@type": "Answer", "text": "It uses public ESMA interim MiCA register data on non-compliant entities, presented in a clearer, searchable format." } },
+        { "@type": "Question", "name": "How often is this updated?", "acceptedAnswer": { "@type": "Answer", "text": "It is updated weekly based on the latest processed ESMA register data." } },
+        { "@type": "Question", "name": "Should I visit the listed websites?", "acceptedAnswer": { "@type": "Answer", "text": "No. Many listed sites are suspected of hosting phishing or other malicious content. Websites are shown as plain text and are not clickable. Verify status against ESMA or the relevant national authority." } }
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="styles/tailwind.css">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="assets/vendor/inter/inter.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="dbd82f5d-689a-452f-9fff-fba85b9de507"></script>
+</head>
+<body class="main-bg">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-blue-900 focus:font-semibold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg">Skip to main content</a>
+    <header class="header-sticky shadow-2xl">
+    <div class="max-w-7xl mx-auto px-6 py-6">
+    <div class="flex items-center justify-between flex-wrap header-content">
+    <div class="flex items-center space-x-6 mb-4 md:mb-0">
+        <a href="index.html" class="inline-flex items-center" aria-label="Return to the dashboard">
+        <img src="DEA%20logo%20white.png" alt="DEA Logo" class="logo-container">
+        </a>
+        <div class="flex items-center">
+            <h1 class="text-[1.8rem] md:text-[2.2rem] font-bold text-white mb-0 leading-tight">
+                <span class="text-sky-100">MiCAR</span>
+                <span class="text-sky-50">Tracker</span>
+            </h1>
+        </div>
+    </div>
+    <div class="flex items-center gap-3 header-actions">
+      <nav class="hidden md:flex items-center nav-buttons" aria-label="Main navigation">
+        <a href="index.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center"><i class="fas fa-chart-pie mr-2" aria-hidden="true"></i>Overview</a>
+        <a href="emt-tracker.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center"><i class="fas fa-table mr-2" aria-hidden="true"></i>EMTs</a>
+        <a href="casp-tracker.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center"><i class="fas fa-building-columns mr-2" aria-hidden="true"></i>CASPs</a>
+        <a href="non-compliant-casps.html" class="tab-button tab-active px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center"><i class="fas fa-exclamation-triangle mr-2" aria-hidden="true"></i>Non-Compliant</a>
+        <a href="about.html" class="tab-button tab-inactive px-5 py-3 rounded-xl font-semibold inline-flex items-center justify-center"><i class="fas fa-circle-info mr-2" aria-hidden="true"></i>About</a>
+      </nav>
+      <div class="md:hidden flex items-center hamburger-only">
+        <button id="mobile-menu-button"
+                type="button"
+                class="hamburger-button text-white hover:text-sky-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+                aria-label="Open main menu">
+          <svg id="hamburger-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="close-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+    </header>
+
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay fixed inset-0 hidden" aria-hidden="true"></div>
+
+    <div id="mobile-menu" class="mobile-menu-container hidden">
+      <div class="mobile-menu-panel p-4">
+        <nav class="flex flex-col mobile-menu-list" aria-label="Mobile navigation">
+          <a href="index.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-chart-pie"></i></span>
+            <span class="mobile-menu-text">Overview</span>
+          </a>
+          <a href="emt-tracker.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-table"></i></span>
+            <span class="mobile-menu-text">EMTs</span>
+          </a>
+          <a href="casp-tracker.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-building-columns"></i></span>
+            <span class="mobile-menu-text">CASPs</span>
+          </a>
+          <a href="non-compliant-casps.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></span>
+            <span class="mobile-menu-text">Non-Compliant</span>
+          </a>
+          <a href="about.html" class="mobile-menu-link mobile-menu-item text-base font-medium">
+            <span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></span>
+            <span class="mobile-menu-text">About</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <main id="main" class="max-w-7xl mx-auto px-6 py-8">
+    <section class="mb-8 text-white">
+    <h2 class="text-2xl md:text-3xl font-bold mb-3">Non-Compliant CASPs</h2>
+    <p class="text-blue-100 leading-relaxed">
+    View <strong>entities flagged as non-compliant</strong> by European regulators under the EU's Markets in Crypto-Assets Regulation (MiCA / MiCAR), using public data from the ESMA interim MiCA register. Search by entity name, country and regulatory authority. Please do not visit the listed websites — many are suspected of hosting phishing or other malicious content, so they are shown as plain text and are not clickable. Updated weekly by the Digital Euro Association.
+    </p>
+    <p id="rvFreshness" class="text-sm text-blue-100 mt-3"></p>
+    </section>
+
+    <div id="registerRoot" data-register="nonCompliant">
+    <div class="rounded-2xl bg-white bg-opacity-90 p-4 text-gray-700 text-sm">Loading non-compliant register&hellip;</div>
+    </div>
+
+    <section class="mt-10 bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6 md:p-8 text-gray-700">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Non-Compliant CASPs FAQ</h2>
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">What does non-compliant mean under MiCAR?</h3>
+    <p class="mt-1 leading-relaxed">These are entities flagged by EU national competent authorities or ESMA as providing crypto-asset services without the authorisation required under the EU Markets in Crypto-Assets Regulation. Inclusion is based on public regulator data.</p>
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">Where does the CASP Tracker data come from?</h3>
+    <p class="mt-1 leading-relaxed">It uses public data from the <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-600 underline">ESMA interim MiCA register</a>, presented in a clearer, searchable format. See the <a href="about.html" class="text-blue-600 underline">methodology</a> for details.</p>
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">Should I visit the listed websites?</h3>
+    <p class="mt-1 leading-relaxed">No. Many listed sites are suspected of hosting phishing or other malicious content. For your safety the websites are shown as plain text and are deliberately not clickable.</p>
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">How often is it updated?</h3>
+    <p class="mt-1 leading-relaxed">Weekly, based on the latest processed ESMA register data. The snapshot date is shown above the table.</p>
+    <h3 class="text-lg font-semibold text-gray-800 mt-4">Can I use this instead of the official ESMA register?</h3>
+    <p class="mt-1 leading-relaxed">No. The tracker is a first-look tool. Always verify an entity's status against ESMA or the relevant national competent authority. If you believe a listing is in error, contact the DEA using the details in the footer.</p>
+    </section>
+    </main>
+
+    <!-- ==== DEA FOOTER START ==== -->
+    <footer class="bg-gray-900 text-gray-200 mt-12">
+      <div class="max-w-7xl mx-auto px-4 py-10 space-y-10">
+        <div class="text-center">
+          <p class="text-gray-300">Digital Euro Association (DEA) MiCAR Tracker</p>
+          <p class="text-gray-400 text-sm mt-2">Source: <a href="https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister" target="_blank" rel="noopener" class="text-blue-300 underline hover:text-blue-200">ESMA interim MiCA register</a></p>
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-between gap-8">
+          <nav aria-label="Registers">
+            <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Registers</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="casp-tracker.html" class="hover:text-white font-semibold">CASP Tracker</a></li>
+              <li><a href="emt-tracker.html" class="hover:text-white font-semibold">EMT Tracker</a></li>
+              <li><a href="non-compliant-casps.html" class="hover:text-white font-semibold">Non-Compliant CASPs</a></li>
+              <li><a href="index.html" class="hover:text-white font-semibold">Full dashboard</a></li>
+            </ul>
+          </nav>
+          <nav aria-label="Legal">
+            <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Digital Euro Association</p>
+            <ul class="space-y-2 text-sm">
+              <li><a href="https://home.digital-euro-association.de/legal-notice?hsLang=en"  target="_blank" rel="noopener" class="hover:text-white font-semibold">Legal Notice</a></li>
+              <li><a href="https://home.digital-euro-association.de/privacy-policy-0?hsLang=en" target="_blank" rel="noopener" class="hover:text-white font-semibold">Privacy</a></li>
+              <li><a href="https://home.digital-euro-association.de/impressum?hsLang=en"      target="_blank" rel="noopener" class="hover:text-white font-semibold">Impressum</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-start gap-6 text-xl">
+            <a href="https://x.com/DigiEuro" target="_blank" rel="noopener" aria-label="Twitter" class="hover:text-white"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="mailto:info@digital-euro-association.de" aria-label="Email" class="hover:text-white"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/digital-euro-association/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-white"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/DigiEuro/micardashboard" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-white"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+          <p class="text-xs">&copy; <span id="year"></span> Digital Euro Association e.V.</p>
+          <a href="https://digital-euro-association.de" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-lg shadow transition">Learn more about DEA</a>
+        </div>
+      </div>
+    </footer>
+    <!-- ==== DEA FOOTER END ==== -->
+
+    <script>
+      window.addEventListener('scroll', function () {
+        var header = document.querySelector('.header-sticky');
+        if (!header) return;
+        if (window.scrollY > 20) header.classList.add('shrink');
+        else header.classList.remove('shrink');
+      });
+    </script>
+    <script src="assets/js/mobile-menu.js" defer></script>
+    <script src="assets/js/register-view.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var y = document.getElementById('year');
+        if (y) y.textContent = new Date().getFullYear();
+      });
+    </script>
+    <script type="module" defer>
+      import { polyfillCountryFlagEmojis } from './assets/vendor/flags/country-flag-emoji-polyfill.mjs';
+      polyfillCountryFlagEmojis('Twemoji Country Flags', 'assets/vendor/flags/TwemojiCountryFlags.woff2');
+    </script>
+</body>
+</html>

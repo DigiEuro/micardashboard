@@ -12,6 +12,17 @@ const CASPS_DATA_FILE = path.join(DATA_DIR, 'casps.json');
 const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
 const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
 const FEED_FILE = path.join(__dirname, 'feed.xml');
+const SITEMAP_FILE = path.join(__dirname, 'sitemap.xml');
+
+// Static, crawlable pages served by GitHub Pages. Entity pages are generated
+// separately; keep this list in sync when adding intent pages.
+const SITEMAP_PAGES = [
+    { loc: '/', priority: '1.0', changefreq: 'weekly' },
+    { loc: '/casp-tracker.html', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/emt-tracker.html', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/non-compliant-casps.html', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/about.html', priority: '0.5', changefreq: 'monthly' }
+];
 
 const SITE_URL = 'https://micatracker.digital-euro-association.de';
 const CHANGELOG_MAX_ENTRIES = 50;
@@ -680,6 +691,33 @@ function writeFeed(changelog) {
     fs.writeFileSync(FEED_FILE, xml);
 }
 
+function writeSitemap(lastmodDate) {
+    // lastmodDate: a YYYY-MM-DD string; fall back to today if unavailable
+    const lastmod = /^\d{4}-\d{2}-\d{2}$/.test(lastmodDate || '')
+        ? lastmodDate
+        : new Date().toISOString().slice(0, 10);
+
+    const urls = SITEMAP_PAGES.map(page => [
+        '  <url>',
+        `    <loc>${SITE_URL}${page.loc}</loc>`,
+        `    <lastmod>${lastmod}</lastmod>`,
+        `    <changefreq>${page.changefreq}</changefreq>`,
+        `    <priority>${page.priority}</priority>`,
+        '  </url>'
+    ].join('\n'));
+
+    const xml = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        ...urls,
+        '</urlset>',
+        ''
+    ].join('\n');
+
+    fs.writeFileSync(SITEMAP_FILE, xml);
+    console.log(`🗺️  Sitemap written with ${SITEMAP_PAGES.length} pages (lastmod ${lastmod})`);
+}
+
 function updateChangelog(previousDatasets, newDatasets) {
     const changes = {};
 
@@ -883,6 +921,7 @@ async function main() {
         }
 
         updateFooterDates(emtSheetDate, caspsSheetDate);
+        writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
         logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);
     } catch (error) {

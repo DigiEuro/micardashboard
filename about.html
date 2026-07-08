@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — DEA MiCAR Tracker</title>
+  <title>How the MiCAR Tracker works — data sources &amp; methodology | DEA</title>
+  <meta name="description" content="How the DEA MiCAR Tracker collects, filters and enriches ESMA interim MiCA register data for CASPs, EMT issuers and non-compliant entities, and how often it is updated.">
+  <link rel="canonical" href="https://micatracker.digital-euro-association.de/about.html">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles/tailwind.css">
@@ -338,8 +340,18 @@
       </div>
 
       <div class="flex flex-col md:flex-row md:justify-between gap-8">
-        <nav>
-          <ul class="space-y-2 md:space-y-0 md:flex md:gap-6 text-sm">
+        <nav aria-label="Registers">
+          <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Registers</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="casp-tracker.html" class="hover:text-white font-semibold">CASP Tracker</a></li>
+            <li><a href="emt-tracker.html" class="hover:text-white font-semibold">EMT Tracker</a></li>
+            <li><a href="non-compliant-casps.html" class="hover:text-white font-semibold">Non-Compliant CASPs</a></li>
+            <li><a href="index.html" class="hover:text-white font-semibold">Full dashboard</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <p class="text-gray-400 text-xs uppercase tracking-wide mb-2">Digital Euro Association</p>
+          <ul class="space-y-2 text-sm">
             <li><a href="https://home.digital-euro-association.de/legal-notice?hsLang=en"  target="_blank" rel="noopener" class="hover:text-white font-semibold">Legal Notice</a></li>
             <li><a href="https://home.digital-euro-association.de/privacy-policy-0?hsLang=en" target="_blank" rel="noopener" class="hover:text-white font-semibold">Privacy</a></li>
             <li><a href="https://home.digital-euro-association.de/code-of-conduct?hsLang=en"  target="_blank" rel="noopener" class="hover:text-white font-semibold">Code of Conduct</a></li>
