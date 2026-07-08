@@ -555,3 +555,39 @@ body {
     padding-right: 0.75rem;
   }
 }
+
+/* ============================================================
+   KPI summary cards + card animations (dashboard + intent pages)
+   Moved from index.html's inline styles so the register intent
+   pages can render the same summary cards above their tables.
+   ============================================================ */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kpi-card {
+  background: linear-gradient(135deg, var(--start-color), var(--end-color));
+}
+
+.kpi-teal { --start-color: #14b8a6; --end-color: #0f766e; }
+.kpi-blue { --start-color: #0ea5e9; --end-color: #0369a1; }
+.kpi-orange { --start-color: #f97316; --end-color: #ea580c; }
+.kpi-coral { --start-color: #f43f5e; --end-color: #e11d48; }
+.kpi-purple { --start-color: #8b5cf6; --end-color: #7c3aed; }
+.kpi-red { --start-color: #dc2626; --end-color: #b91c1c; }
+.kpi-green { --start-color: #10b981; --end-color: #059669; }
+.kpi-yellow { --start-color: #f59e0b; --end-color: #d97706; }

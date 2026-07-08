@@ -65,51 +65,18 @@
     <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="dbd82f5d-689a-452f-9fff-fba85b9de507"></script>
     <style>
-    /* Shared header / nav / body chrome now lives in styles/site.css */
-    .card-hover {
-    transition: all 0.3s ease;
-    }
-
-    .card-hover:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    }
-
+    /* Shared header / nav / body chrome, KPI summary cards, card-hover /
+       fade-in animations, and register table styles all live in
+       styles/site.css - shared with the casp-tracker / emt-tracker /
+       non-compliant-casps intent pages. */
     .progress-bar {
     transition: width 0.8s ease-in-out;
     }
-
-    .fade-in {
-    animation: fadeIn 0.6s ease-in;
-    }
-
-    @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-    }
-
-    .kpi-card {
-    background: linear-gradient(135deg, var(--start-color), var(--end-color));
-    }
-
-    /* Complementary colors to the teal-blue gradient */
-    .kpi-teal { --start-color: #14b8a6; --end-color: #0f766e; }
-    .kpi-blue { --start-color: #0ea5e9; --end-color: #0369a1; }
-    .kpi-orange { --start-color: #f97316; --end-color: #ea580c; }
-    .kpi-coral { --start-color: #f43f5e; --end-color: #e11d48; }
-    .kpi-purple { --start-color: #8b5cf6; --end-color: #7c3aed; }
-    .kpi-red { --start-color: #dc2626; --end-color: #b91c1c; }
-    .kpi-green { --start-color: #10b981; --end-color: #059669; }
-    .kpi-yellow { --start-color: #f59e0b; --end-color: #d97706; }
 
     .content-bg {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     }
-
-    /* Register table styles (data-table, sticky headers, sort buttons,
-       search-input, badges) live in styles/site.css - shared with the
-       casp-tracker / emt-tracker / non-compliant-casps pages */
     </style>
 </head>
 <body class="main-bg">
@@ -209,17 +176,12 @@
     <a href="non-compliant-casps.html" class="underline hover:text-white">entities flagged as non-compliant</a>
     by country, competent authority, services and token. Updated weekly; download any register as CSV or JSON.
     </p>
-    <ul class="mt-3 flex flex-wrap gap-3 text-sm font-semibold">
-    <li><a href="casp-tracker.html" class="inline-block bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 transition-colors">CASP Tracker</a></li>
-    <li><a href="emt-tracker.html" class="inline-block bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 transition-colors">EMT Tracker</a></li>
-    <li><a href="non-compliant-casps.html" class="inline-block bg-white/15 hover:bg-white/25 rounded-lg px-4 py-2 transition-colors">Non-Compliant CASPs</a></li>
-    </ul>
+    <p id="dataFreshness" class="text-sm text-blue-100 mt-3"></p>
     </section>
 
-    <div class="mb-6 text-white space-y-2">
+    <div class="mb-4 text-white">
     <h2 class="text-2xl font-semibold">EMT Issuer Insights</h2>
     <p class="text-blue-100">Key indicators and distributions for licensed Electronic Money Token issuers.</p>
-    <p id="dataFreshness" class="text-sm text-blue-100"></p>
     </div>
 
     <div id="dataLoadingNotice" class="mb-6 rounded-2xl bg-white bg-opacity-90 p-4 text-gray-700 text-sm">
@@ -258,8 +220,8 @@
 
     <div class="h-px bg-white/30 my-10"></div>
 
-    <div class="mb-6 text-white">
-    <h2 id="caspsSectionTitle" class="text-2xl font-semibold">CASPs Insights</h2>
+    <div class="mb-4 text-white">
+    <h2 class="text-2xl font-semibold">CASPs Insights</h2>
     <p class="text-blue-100">Overview of registered Crypto-Asset Service Providers by country and authority.</p>
     </div>
 

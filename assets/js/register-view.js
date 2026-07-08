@@ -265,6 +265,57 @@
     }
   };
 
+  // ---- per-register summary cards --------------------------------------
+  // Rendered above the table. `extra` carries values that need a second
+  // dataset (e.g. the non-compliant count shown on the CASP page).
+  function uniqueCount(items, getKey) {
+    const seen = {};
+    items.forEach(function (i) {
+      const k = (getKey(i) || '').trim().toLowerCase();
+      if (k) seen[k] = 1;
+    });
+    return Object.keys(seen).length;
+  }
+
+  const SUMMARIES = {
+    casps: function (items, extra) {
+      return [
+        { title: 'Total Providers', value: items.length, subtitle: 'Registered CASP providers', icon: '🏢', color: 'kpi-teal' },
+        { title: 'Total Countries', value: uniqueCount(items, function (i) { return i.memberState; }), subtitle: 'Countries represented', icon: '🌍', color: 'kpi-blue' },
+        { title: 'Non-Compliant CASPs', value: (extra && extra.nonCompliantCount != null) ? extra.nonCompliantCount : '—', subtitle: 'Flagged providers', icon: '⚠️', color: 'kpi-red' }
+      ];
+    },
+    emt: function (items) {
+      const totalTokens = items.reduce(function (s, i) { return s + (Number(i.count) || 0); }, 0);
+      return [
+        { title: 'Total Issuers', value: items.length, subtitle: 'Active EMT providers', icon: '🏢', color: 'kpi-teal' },
+        { title: 'Total Tokens', value: totalTokens, subtitle: 'Authorised EMTs', icon: '🪙', color: 'kpi-blue' },
+        { title: 'Countries', value: uniqueCount(items, function (i) { return i.state; }), subtitle: 'Countries represented', icon: '🌍', color: 'kpi-orange' }
+      ];
+    },
+    nonCompliant: function (items) {
+      return [
+        { title: 'Flagged Entities', value: items.length, subtitle: 'Total non-compliant', icon: '⚠️', color: 'kpi-red' },
+        { title: 'New This Update', value: items.filter(function (i) { return i.isNew; }).length, subtitle: 'Recently added', icon: '⭐', color: 'kpi-blue' },
+        { title: 'Countries', value: uniqueCount(items, function (i) { return i.country; }), subtitle: 'Countries represented', icon: '🌍', color: 'kpi-orange' }
+      ];
+    }
+  };
+
+  function summaryHtml(cards) {
+    if (!cards || !cards.length) return '';
+    const cols = Math.min(cards.length, 4);
+    return '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-' + cols + ' gap-6 mb-8 fade-in">' +
+      cards.map(function (c) {
+        return '<div class="kpi-card ' + c.color + ' p-6 rounded-2xl shadow-lg text-white card-hover">' +
+          '<div class="flex items-center justify-between"><div>' +
+          '<p class="text-sm opacity-90 font-medium">' + esc(c.title) + '</p>' +
+          '<p class="text-3xl font-bold mt-2">' + esc(c.value) + '</p>' +
+          '<p class="text-sm opacity-80 mt-1">' + esc(c.subtitle) + '</p>' +
+          '</div><div class="text-4xl opacity-80" aria-hidden="true">' + c.icon + '</div></div></div>';
+      }).join('') + '</div>';
+  }
+
   const cfg = CONFIGS[register];
   if (!cfg) { root.innerHTML = '<p class="text-red-700">Unknown register.</p>'; return; }
 
@@ -444,7 +495,23 @@
       return;
     }
     filtered = all.slice();
-    root.innerHTML = shellHtml();
+
+    // The CASP summary shows the non-compliant count, which lives in a
+    // separate file. Fetch it first (non-fatal) so the card renders with
+    // the real number; if it fails the card falls back to an em dash.
+    let extra = null;
+    if (register === 'casps') {
+      try {
+        const ncRes = await fetch('data/non-compliant.json', { cache: 'no-cache' });
+        if (ncRes.ok) {
+          const nc = await ncRes.json();
+          if (Array.isArray(nc)) extra = { nonCompliantCount: nc.length };
+        }
+      } catch (e) { /* non-fatal */ }
+    }
+
+    const cards = SUMMARIES[register] ? SUMMARIES[register](all, extra) : null;
+    root.innerHTML = summaryHtml(cards) + shellHtml();
     if (cfg.filters) populateFilters();
     wire();
     renderRows();
