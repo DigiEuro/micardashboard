@@ -152,12 +152,12 @@
           }).join('')
           : '<span class="text-xs text-gray-500">Not provided</span>';
         return '<tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200">' +
-          '<td class="p-4 text-sm font-semibold text-gray-500">' + (i + 1) + '</td>' +
-          '<td class="p-4"><p class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</p></td>' +
-          '<td class="p-4"><span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.memberState) + '</span> ' + esc(item.memberState || 'Unknown') + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm casps-authority-cell">' + esc(item.authority || '—') + '</td>' +
-          '<td class="p-4 services-cell"><div class="service-badges">' + (services || '<span class="text-xs text-gray-500">Not specified</span>') + '</div></td>' +
-          '<td class="p-4"><div class="space-y-1">' + sites + '</div></td></tr>';
+          '<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">' + (i + 1) + '</td>' +
+          '<td class="p-4 rv-title" data-label="CASP"><p class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</p></td>' +
+          '<td class="p-4" data-label="Country"><span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.memberState) + '</span> ' + esc(item.memberState || 'Unknown') + '</span></td>' +
+          '<td class="p-4 text-gray-600 text-sm casps-authority-cell" data-label="Authority">' + esc(item.authority || '—') + '</td>' +
+          '<td class="p-4 services-cell" data-label="Services"><div class="service-badges">' + (services || '<span class="text-xs text-gray-500">Not specified</span>') + '</div></td>' +
+          '<td class="p-4" data-label="Websites"><div class="space-y-1">' + sites + '</div></td></tr>';
       },
       csv: [
         { label: 'CASP', value: function (r) { return r.name; } },
@@ -197,12 +197,12 @@
         }).join(' ');
         const countCls = item.count > 1 ? 'bg-green-100 text-green-800' : (item.count === 1 ? 'bg-yellow-100 text-yellow-800' : 'bg-gray-100 text-gray-600');
         return '<tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200 ' + (i % 2 === 0 ? 'bg-gray-50' : 'bg-white') + '">' +
-          '<td class="p-4"><div class="font-semibold text-gray-800">' + esc(item.issuer) + '</div></td>' +
-          '<td class="p-4"><span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.state) + '</span> ' + esc(item.state) + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm">' + esc(item.authority) + '</td>' +
-          '<td class="p-4"><div class="text-sm text-gray-800 font-mono">' + esc(item.tokens || 'N/A') + '</div></td>' +
-          '<td class="p-4 text-center"><span class="px-3 py-1 rounded-full text-sm font-bold ' + countCls + '">' + esc(item.count) + '</span></td>' +
-          '<td class="p-4 text-center"><div class="flex justify-center space-x-1">' + badges + '</div></td></tr>';
+          '<td class="p-4 rv-title" data-label="Issuer"><div class="font-semibold text-gray-800">' + esc(item.issuer) + '</div></td>' +
+          '<td class="p-4" data-label="Country"><span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.state) + '</span> ' + esc(item.state) + '</span></td>' +
+          '<td class="p-4 text-gray-600 text-sm" data-label="Authority">' + esc(item.authority) + '</td>' +
+          '<td class="p-4" data-label="Tokens"><div class="text-sm text-gray-800 font-mono">' + esc(item.tokens || 'N/A') + '</div></td>' +
+          '<td class="p-4 text-center" data-label="Count"><span class="px-3 py-1 rounded-full text-sm font-bold ' + countCls + '">' + esc(item.count) + '</span></td>' +
+          '<td class="p-4 text-center" data-label="Currencies"><div class="flex justify-center space-x-1">' + badges + '</div></td></tr>';
       },
       csvColumns: function (all) {
         const base = [
@@ -248,12 +248,12 @@
         }).join('');
         const newBadge = item.isNew ? '<span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold text-blue-700 bg-blue-100"><i class="fas fa-star text-blue-500 mr-1" aria-hidden="true"></i>New</span>' : '';
         return '<tr class="border-b hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 transition-all duration-200 ' + bg + '">' +
-          '<td class="p-4 text-sm font-semibold text-gray-500">' + (i + 1) + '</td>' +
-          '<td class="p-4"><div class="font-semibold text-gray-800 flex items-center"><span>' + esc(item.entity) + '</span>' + newBadge + '</div></td>' +
-          '<td class="p-4"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.country) + '</span> ' + esc(item.country) + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm">' + esc(item.authority) + '</td>' +
-          '<td class="p-4"><div class="space-y-1">' + sites + '</div></td>' +
-          '<td class="p-4 text-center"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-bold" title="Flagged"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="sr-only">Flagged</span></span></td></tr>';
+          '<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">' + (i + 1) + '</td>' +
+          '<td class="p-4 rv-title" data-label="Entity"><div class="font-semibold text-gray-800 flex items-center"><span>' + esc(item.entity) + '</span>' + newBadge + '</div></td>' +
+          '<td class="p-4" data-label="Country"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.country) + '</span> ' + esc(item.country) + '</span></td>' +
+          '<td class="p-4 text-gray-600 text-sm" data-label="Authority">' + esc(item.authority) + '</td>' +
+          '<td class="p-4" data-label="Websites"><div class="space-y-1">' + sites + '</div></td>' +
+          '<td class="p-4 text-center" data-label="Status"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-bold" title="Flagged"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="sr-only">Flagged</span></span></td></tr>';
       },
       csv: [
         { label: 'Entity', value: function (r) { return r.entity; } },
@@ -383,23 +383,26 @@
   // ---- markup -----------------------------------------------------------
   function controlsHtml() {
     const filterSelects = cfg.filters
-      ? '<select id="rvCountry" aria-label="Filter by country" class="search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent"><option value="">All countries</option></select>' +
-        '<select id="rvService" aria-label="Filter by service" class="search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent"><option value="">All services</option></select>'
+      ? '<select id="rvCountry" aria-label="Filter by country" class="rv-filter search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent"><option value="">All countries</option></select>' +
+        '<select id="rvService" aria-label="Filter by service" class="rv-filter search-input px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent"><option value="">All services</option></select>'
       : '';
     const dlBtnColor = cfg.theme === 'red' ? 'bg-red-600 hover:bg-red-700' : 'bg-teal-600 hover:bg-teal-700';
     const jsonColor = cfg.theme === 'red' ? 'bg-red-100 text-red-800 hover:bg-red-200' : 'bg-teal-100 text-teal-800 hover:bg-teal-200';
     const ring = cfg.theme === 'red' ? 'focus:ring-red-500' : 'focus:ring-teal-500';
-    return '<div class="flex flex-wrap items-center gap-3 mb-6">' +
+    // Clear / CSV / JSON share one group so they stay on a single line
+    // (they wrap together as a unit on narrow screens). The responsive
+    // widths are handled in site.css via the rv-* marker classes rather
+    // than Tailwind sm:* utilities (which aren't in the prebuilt CSS).
+    return '<div class="rv-controls flex flex-wrap items-center gap-3 mb-6">' +
       filterSelects +
-      '<div class="relative">' +
+      '<div class="rv-search relative">' +
       '<input type="text" id="rvSearch" placeholder="' + esc(cfg.searchPlaceholder) + '" aria-label="' + esc(cfg.searchLabel) + '" class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 ' + ring + ' focus:border-transparent w-64">' +
       '<i class="fas fa-search absolute left-3 top-3 text-gray-400" aria-hidden="true"></i>' +
       '</div>' +
-      '<button id="rvClear" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"><i class="fas fa-times mr-1" aria-hidden="true"></i>Clear</button>' +
-      '<div class="flex items-center gap-3">' +
-      '<span class="text-sm text-gray-500">Download:</span>' +
+      '<div class="rv-actions flex items-center gap-3">' +
+      '<button id="rvClear" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors whitespace-nowrap"><i class="fas fa-times mr-1" aria-hidden="true"></i>Clear</button>' +
       '<button id="rvCsv" class="px-3 py-2 text-sm text-white rounded-lg transition-colors whitespace-nowrap ' + dlBtnColor + '"><i class="fas fa-download mr-1" aria-hidden="true"></i>CSV</button>' +
-      '<a href="' + cfg.jsonHref + '" download="' + cfg.jsonName + '" class="px-3 py-2 text-sm rounded-lg transition-colors whitespace-nowrap font-semibold ' + jsonColor + '">JSON</a>' +
+      '<a href="' + cfg.jsonHref + '" download="' + cfg.jsonName + '" class="px-3 py-2 text-sm rounded-lg transition-colors whitespace-nowrap font-semibold ' + jsonColor + '"><i class="fas fa-download mr-1" aria-hidden="true"></i>JSON</a>' +
       '</div></div>';
   }
 

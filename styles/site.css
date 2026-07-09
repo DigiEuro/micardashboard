@@ -556,6 +556,148 @@ body {
   }
 }
 
+/* ------------------------------------------------------------
+   Mobile: stacked-card layout for the register tables.
+   Below 640px a 6-column table can't fit, so each row becomes a
+   labelled card (column header shown via the td's data-label).
+   ------------------------------------------------------------ */
+@media (max-width: 640px) {
+  /* Controls: full-width search, filters share a row, and the
+     Clear / CSV / JSON group stays together on one line. */
+  .rv-controls .rv-search {
+    width: 100%;
+  }
+
+  .rv-controls .rv-search input {
+    width: 100%;
+  }
+
+  .rv-controls .rv-filter {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+
+  .data-table-container {
+    overflow-x: visible;
+  }
+
+  /* Hide the column header row and column sizing; rows stack */
+  .data-table colgroup,
+  .data-table thead {
+    display: none;
+  }
+
+  .data-table,
+  .data-table tbody,
+  .data-table tr,
+  .data-table td {
+    display: block;
+    width: 100%;
+  }
+
+  /* casps table is normally fixed-layout; not relevant once stacked */
+  .casps-data-table {
+    table-layout: auto;
+  }
+
+  .data-table tr {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    border-radius: 0.85rem;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 10px 20px -18px rgba(15, 23, 42, 0.5);
+  }
+
+  /* Row hover gradient doesn't make sense on a stacked card */
+  .data-table tbody tr:hover {
+    background: #ffffff !important;
+    background-image: none !important;
+  }
+
+  .data-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    text-align: right;
+    padding: 0.6rem 0.9rem !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    overflow-wrap: anywhere;
+  }
+
+  .data-table td:last-child {
+    border-bottom: none;
+  }
+
+  /* Label from the column header, shown on the left of each cell */
+  .data-table td::before {
+    content: attr(data-label);
+    flex: 0 0 8rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #475569;
+    white-space: nowrap;
+  }
+
+  /* Row-number cell isn't useful in the card view */
+  .data-table td.rv-index {
+    display: none;
+  }
+
+  /* Primary cell (name/entity/issuer) becomes the card header */
+  .data-table td.rv-title {
+    display: block;
+    text-align: left;
+    background: rgba(241, 245, 249, 0.75);
+    padding: 0.75rem 0.9rem !important;
+  }
+
+  .data-table td.rv-title::before {
+    content: none;
+  }
+
+  .data-table td.rv-title .font-semibold,
+  .data-table td.rv-title p {
+    font-size: 1rem;
+  }
+
+  /* Value side: let badges/links wrap to the right, not squash a column */
+  .services-cell {
+    min-width: 0;
+  }
+
+  .data-table td .service-badges {
+    justify-content: flex-end;
+    max-width: none;
+  }
+
+  .data-table td .space-y-1,
+  .data-table td > div {
+    min-width: 0;
+  }
+
+  .casps-website-link,
+  .casps-authority-cell {
+    white-space: normal;
+  }
+
+  /* Websites: give the value the full card width (label on its own line)
+     so URLs fit on a single line where they can, instead of wrapping in
+     the narrow right-hand column. Long URLs still break as a fallback. */
+  .data-table td[data-label="Websites"] {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    gap: 0.4rem;
+  }
+
+  .data-table td[data-label="Websites"]::before {
+    flex: none;
+  }
+}
+
 /* ============================================================
    KPI summary cards + card animations (dashboard + intent pages)
    Moved from index.html's inline styles so the register intent
