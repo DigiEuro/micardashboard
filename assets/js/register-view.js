@@ -152,12 +152,12 @@
           }).join('')
           : '<span class="text-xs text-gray-500">Not provided</span>';
         return '<tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200">' +
-          '<td class="p-4 text-sm font-semibold text-gray-500">' + (i + 1) + '</td>' +
-          '<td class="p-4"><p class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</p></td>' +
-          '<td class="p-4"><span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.memberState) + '</span> ' + esc(item.memberState || 'Unknown') + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm casps-authority-cell">' + esc(item.authority || '—') + '</td>' +
-          '<td class="p-4 services-cell"><div class="service-badges">' + (services || '<span class="text-xs text-gray-500">Not specified</span>') + '</div></td>' +
-          '<td class="p-4"><div class="space-y-1">' + sites + '</div></td></tr>';
+          '<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">' + (i + 1) + '</td>' +
+          '<td class="p-4 rv-title" data-label="CASP"><p class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</p></td>' +
+          '<td class="p-4" data-label="Country"><span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.memberState) + '</span> ' + esc(item.memberState || 'Unknown') + '</span></td>' +
+          '<td class="p-4 text-gray-600 text-sm casps-authority-cell" data-label="Authority">' + esc(item.authority || '—') + '</td>' +
+          '<td class="p-4 services-cell" data-label="Services"><div class="service-badges">' + (services || '<span class="text-xs text-gray-500">Not specified</span>') + '</div></td>' +
+          '<td class="p-4" data-label="Websites"><div class="space-y-1">' + sites + '</div></td></tr>';
       },
       csv: [
         { label: 'CASP', value: function (r) { return r.name; } },
@@ -197,12 +197,12 @@
         }).join(' ');
         const countCls = item.count > 1 ? 'bg-green-100 text-green-800' : (item.count === 1 ? 'bg-yellow-100 text-yellow-800' : 'bg-gray-100 text-gray-600');
         return '<tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200 ' + (i % 2 === 0 ? 'bg-gray-50' : 'bg-white') + '">' +
-          '<td class="p-4"><div class="font-semibold text-gray-800">' + esc(item.issuer) + '</div></td>' +
-          '<td class="p-4"><span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.state) + '</span> ' + esc(item.state) + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm">' + esc(item.authority) + '</td>' +
-          '<td class="p-4"><div class="text-sm text-gray-800 font-mono">' + esc(item.tokens || 'N/A') + '</div></td>' +
-          '<td class="p-4 text-center"><span class="px-3 py-1 rounded-full text-sm font-bold ' + countCls + '">' + esc(item.count) + '</span></td>' +
-          '<td class="p-4 text-center"><div class="flex justify-center space-x-1">' + badges + '</div></td></tr>';
+          '<td class="p-4 rv-title" data-label="Issuer"><div class="font-semibold text-gray-800">' + esc(item.issuer) + '</div></td>' +
+          '<td class="p-4" data-label="Country"><span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.state) + '</span> ' + esc(item.state) + '</span></td>' +
+          '<td class="p-4 text-gray-600 text-sm" data-label="Authority">' + esc(item.authority) + '</td>' +
+          '<td class="p-4" data-label="Tokens"><div class="text-sm text-gray-800 font-mono">' + esc(item.tokens || 'N/A') + '</div></td>' +
+          '<td class="p-4 text-center" data-label="Count"><span class="px-3 py-1 rounded-full text-sm font-bold ' + countCls + '">' + esc(item.count) + '</span></td>' +
+          '<td class="p-4 text-center" data-label="Currencies"><div class="flex justify-center space-x-1">' + badges + '</div></td></tr>';
       },
       csvColumns: function (all) {
         const base = [
@@ -248,12 +248,12 @@
         }).join('');
         const newBadge = item.isNew ? '<span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold text-blue-700 bg-blue-100"><i class="fas fa-star text-blue-500 mr-1" aria-hidden="true"></i>New</span>' : '';
         return '<tr class="border-b hover:bg-gradient-to-r hover:from-red-50 hover:to-orange-50 transition-all duration-200 ' + bg + '">' +
-          '<td class="p-4 text-sm font-semibold text-gray-500">' + (i + 1) + '</td>' +
-          '<td class="p-4"><div class="font-semibold text-gray-800 flex items-center"><span>' + esc(item.entity) + '</span>' + newBadge + '</div></td>' +
-          '<td class="p-4"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.country) + '</span> ' + esc(item.country) + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm">' + esc(item.authority) + '</td>' +
-          '<td class="p-4"><div class="space-y-1">' + sites + '</div></td>' +
-          '<td class="p-4 text-center"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-bold" title="Flagged"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="sr-only">Flagged</span></span></td></tr>';
+          '<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">' + (i + 1) + '</td>' +
+          '<td class="p-4 rv-title" data-label="Entity"><div class="font-semibold text-gray-800 flex items-center"><span>' + esc(item.entity) + '</span>' + newBadge + '</div></td>' +
+          '<td class="p-4" data-label="Country"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.country) + '</span> ' + esc(item.country) + '</span></td>' +
+          '<td class="p-4 text-gray-600 text-sm" data-label="Authority">' + esc(item.authority) + '</td>' +
+          '<td class="p-4" data-label="Websites"><div class="space-y-1">' + sites + '</div></td>' +
+          '<td class="p-4 text-center" data-label="Status"><span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-bold" title="Flagged"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="sr-only">Flagged</span></span></td></tr>';
       },
       csv: [
         { label: 'Entity', value: function (r) { return r.entity; } },
