@@ -399,10 +399,10 @@
       '<input type="text" id="rvSearch" placeholder="' + esc(cfg.searchPlaceholder) + '" aria-label="' + esc(cfg.searchLabel) + '" class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 ' + ring + ' focus:border-transparent w-64">' +
       '<i class="fas fa-search absolute left-3 top-3 text-gray-400" aria-hidden="true"></i>' +
       '</div>' +
-      '<div class="rv-actions flex items-center gap-2">' +
+      '<div class="rv-actions flex items-center gap-3">' +
       '<button id="rvClear" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors whitespace-nowrap"><i class="fas fa-times mr-1" aria-hidden="true"></i>Clear</button>' +
       '<button id="rvCsv" class="px-3 py-2 text-sm text-white rounded-lg transition-colors whitespace-nowrap ' + dlBtnColor + '"><i class="fas fa-download mr-1" aria-hidden="true"></i>CSV</button>' +
-      '<a href="' + cfg.jsonHref + '" download="' + cfg.jsonName + '" class="px-3 py-2 text-sm rounded-lg transition-colors whitespace-nowrap font-semibold ' + jsonColor + '">JSON</a>' +
+      '<a href="' + cfg.jsonHref + '" download="' + cfg.jsonName + '" class="px-3 py-2 text-sm rounded-lg transition-colors whitespace-nowrap font-semibold ' + jsonColor + '"><i class="fas fa-download mr-1" aria-hidden="true"></i>JSON</a>' +
       '</div></div>';
   }
 
