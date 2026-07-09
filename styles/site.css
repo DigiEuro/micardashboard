@@ -562,6 +562,21 @@ body {
    labelled card (column header shown via the td's data-label).
    ------------------------------------------------------------ */
 @media (max-width: 640px) {
+  /* Controls: full-width search, filters share a row, and the
+     Clear / CSV / JSON group stays together on one line. */
+  .rv-controls .rv-search {
+    width: 100%;
+  }
+
+  .rv-controls .rv-search input {
+    width: 100%;
+  }
+
+  .rv-controls .rv-filter {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+
   .data-table-container {
     overflow-x: visible;
   }
@@ -666,6 +681,20 @@ body {
   .casps-website-link,
   .casps-authority-cell {
     white-space: normal;
+  }
+
+  /* Websites: give the value the full card width (label on its own line)
+     so URLs fit on a single line where they can, instead of wrapping in
+     the narrow right-hand column. Long URLs still break as a fallback. */
+  .data-table td[data-label="Websites"] {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    gap: 0.4rem;
+  }
+
+  .data-table td[data-label="Websites"]::before {
+    flex: none;
   }
 }
 
