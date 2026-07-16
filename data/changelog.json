@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "date": "2026-07-16",
+    "timestamp": "2026-07-16T10:05:10.468Z",
+    "changes": {
+      "emt": {
+        "added": [
+          "Circle Internet Financial Europe SAS",
+          "Société Générale - Forge",
+          "SALVUS",
+          "Oddo BHF SCA",
+          "Newrails, UAB",
+          "Fiat Republic Netherlands"
+        ],
+        "removed": [
+          "Circle Internet Financial EU SAS",
+          "Société Générale – Forge",
+          "Schuman Financial SAS",
+          "Oddo BHF",
+          "Newrails, UAB (ex-Ambr)",
+          "Fiat Republic Netherlands B.V."
+        ]
+      },
+      "casps": {
+        "added": [
+          "OSL EU GmbH (Austria)",
+          "Brilliantscope Trading Limited (Cyprus)",
+          "Volksbank Schwarzwald-Donau-Neckar eG (Germany)",
+          "Raiffeisebank Auerbach-Freihung eG (Germany)",
+          "IQANA TECHNOLOGIES S.L. (Spain)",
+          "APLO SAS (France)",
+          "SMART VALOR AG (Liechtenstein)",
+          "Kaiser Partner Privatbank AG (Liechtenstein)",
+          "CPS Europe S.A. (Luxembourg)",
+          "Ripple Payments Europe S.A. (Luxembourg)",
+          "Hodleris SIA (Latvia)",
+          "BARE BITCOIN AS (Norway)",
+          "NORWEGIAN BLOCK EXCHANGE AS (Norway)",
+          "Bison Bank, S.A. (Portugal)"
+        ],
+        "removed": []
+      }
+    }
+  }
+]

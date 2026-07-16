@@ -912,6 +912,7 @@
     "memberState": "Germany",
     "services": [
       "custody",
+      "exchange funds",
       "execution",
       "transfer"
     ],
@@ -1695,7 +1696,7 @@
       "exchange funds"
     ],
     "websites": [
-      "75012 Paris"
+      "https://relai.app/"
     ]
   },
   {
@@ -1708,7 +1709,7 @@
       "transfer"
     ],
     "websites": [
-      "92800 PUTEAUX"
+      "https://www.sgforge.com/"
     ]
   },
   {
@@ -1726,7 +1727,7 @@
       "transfer"
     ],
     "websites": [
-      "07160 LE CHEYLARD"
+      "https://www.delubac.com/"
     ]
   },
   {
@@ -4102,6 +4103,217 @@
     ],
     "websites": [
       "https://www.webull.eu/"
+    ]
+  },
+  {
+    "id": 280,
+    "name": "OSL EU GmbH",
+    "authority": "FMA",
+    "memberState": "Austria",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.osl.com/eu"
+    ]
+  },
+  {
+    "id": 281,
+    "name": "Brilliantscope Trading Limited",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://tothemoon.com"
+    ]
+  },
+  {
+    "id": 282,
+    "name": "Volksbank Schwarzwald-Donau-Neckar eG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "websites": [
+      "www.vbsdn.de"
+    ]
+  },
+  {
+    "id": 283,
+    "name": "Raiffeisebank Auerbach-Freihung eG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "websites": [
+      "www.rb-af.de"
+    ]
+  },
+  {
+    "id": 284,
+    "name": "IQANA TECHNOLOGIES S.L.",
+    "authority": "CNMV",
+    "memberState": "Spain",
+    "services": [
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "https://iqana.io/"
+    ]
+  },
+  {
+    "id": 285,
+    "name": "APLO SAS",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "exchange funds",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.aplo.io/"
+    ]
+  },
+  {
+    "id": 286,
+    "name": "SMART VALOR AG",
+    "authority": "FMA-LI",
+    "memberState": "Liechtenstein",
+    "services": [
+      "custody",
+      "trading platform",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://smartvalor.com/en/"
+    ]
+  },
+  {
+    "id": 287,
+    "name": "Kaiser Partner Privatbank AG",
+    "authority": "FMA-LI",
+    "memberState": "Liechtenstein",
+    "services": [
+      "custody",
+      "RTO",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "https://kaiserpartner.bank"
+    ]
+  },
+  {
+    "id": 288,
+    "name": "CPS Europe S.A.",
+    "authority": "CSSF",
+    "memberState": "Luxembourg",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.enum8.com/"
+    ]
+  },
+  {
+    "id": 289,
+    "name": "Ripple Payments Europe S.A.",
+    "authority": "CSSF",
+    "memberState": "Luxembourg",
+    "services": [
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://ripple.com/"
+    ]
+  },
+  {
+    "id": 290,
+    "name": "Hodleris SIA",
+    "authority": "LB",
+    "memberState": "Latvia",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://hfinance.eu/"
+    ]
+  },
+  {
+    "id": 291,
+    "name": "BARE BITCOIN AS",
+    "authority": "NFSA",
+    "memberState": "Norway",
+    "services": [
+      "custody",
+      "exchange funds",
+      "transfer"
+    ],
+    "websites": [
+      "https://barebitcoin.no/"
+    ]
+  },
+  {
+    "id": 292,
+    "name": "NORWEGIAN BLOCK EXCHANGE AS",
+    "authority": "NFSA",
+    "memberState": "Norway",
+    "services": [
+      "custody",
+      "trading platform",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://nbx.com"
+    ]
+  },
+  {
+    "id": 293,
+    "name": "Bison Bank, S.A.",
+    "authority": "Banco de Portugal",
+    "memberState": "Portugal",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "advice",
+      "transfer"
+    ],
+    "websites": [
+      "https://bisonbank.com/"
     ]
   }
 ]

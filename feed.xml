@@ -4,6 +4,15 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 10:05:10 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-07-16</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-07-16T10:05:10.468Z</guid>
+      <pubDate>Thu, 16 Jul 2026 10:05:10 GMT</pubDate>
+      <description>EMT issuers added: Circle Internet Financial Europe SAS, Société Générale - Forge, SALVUS, Oddo BHF SCA, Newrails, UAB, Fiat Republic Netherlands
+EMT issuers removed: Circle Internet Financial EU SAS, Société Générale – Forge, Schuman Financial SAS, Oddo BHF, Newrails, UAB (ex-Ambr), Fiat Republic Netherlands B.V.
+CASPs added: OSL EU GmbH (Austria), Brilliantscope Trading Limited (Cyprus), Volksbank Schwarzwald-Donau-Neckar eG (Germany), Raiffeisebank Auerbach-Freihung eG (Germany), IQANA TECHNOLOGIES S.L. (Spain), APLO SAS (France), SMART VALOR AG (Liechtenstein), Kaiser Partner Privatbank AG (Liechtenstein), CPS Europe S.A. (Luxembourg), Ripple Payments Europe S.A. (Luxembourg), Hodleris SIA (Latvia), BARE BITCOIN AS (Norway), NORWEGIAN BLOCK EXCHANGE AS (Norway), Bison Bank, S.A. (Portugal)</description>
+    </item>
   </channel>
 </rss>
