@@ -718,6 +718,151 @@ function writeSitemap(lastmodDate) {
     console.log(`🗺️  Sitemap written with ${SITEMAP_PAGES.length} pages (lastmod ${lastmod})`);
 }
 
+// ---- Static register snapshots (SEO) ---------------------------------------
+// The intent pages load their table from data/*.json at runtime, which left
+// the crawlable HTML thin (intro + FAQ + "Loading…"). Google parked the pages
+// as "crawled - currently not indexed". We bake a static table of the current
+// register between markers so crawlers and no-JS visitors get the real rows;
+// register-view.js overwrites #registerRoot on load, so JS users are unchanged.
+const SNAPSHOT_START = '<!-- register-snapshot:start -->';
+const SNAPSHOT_END = '<!-- register-snapshot:end -->';
+
+function htmlEscape(value) {
+    return String(value ?? '').replace(/[&<>"']/g, ch => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    }[ch]));
+}
+
+function uniqueCount(items, key) {
+    const seen = new Set();
+    items.forEach(item => {
+        const value = (item[key] || '').trim().toLowerCase();
+        if (value) seen.add(value);
+    });
+    return seen.size;
+}
+
+function snapshotTable(caption, theme, headers, bodyRows) {
+    const gradient = theme === 'red' ? 'from-red-50 to-orange-50' : 'from-teal-50 to-blue-50';
+    const ths = headers.map(h => `<th scope="col" class="text-left p-4 font-semibold text-gray-700">${htmlEscape(h)}</th>`).join('');
+    return '<div class="data-table-container"><table class="data-table w-full">' +
+        `<caption class="sr-only">${htmlEscape(caption)}</caption>` +
+        `<thead class="sticky-table-header ${theme}"><tr class="bg-gradient-to-r ${gradient}">${ths}</tr></thead>` +
+        `<tbody>${bodyRows}</tbody></table></div>`;
+}
+
+// All register values originate in an external sheet, so escape before
+// interpolation. Websites are rendered as plain text for every register
+// (non-compliant sites must never be links; the JS view links CASP/EMT ones).
+function websitesText(list) {
+    const sites = Array.isArray(list) ? list.filter(Boolean) : [];
+    return sites.length ? sites.map(htmlEscape).join('<br>') : '&mdash;';
+}
+
+function buildSnapshot(register, entries, dateLong) {
+    const dateSuffix = dateLong ? ` as of ${dateLong}` : '';
+    let summary, caption, theme, headers, rows;
+
+    if (register === 'casps') {
+        const countries = uniqueCount(entries, 'memberState');
+        summary = `${entries.length} Crypto-Asset Service Providers (CASPs) authorised under the EU Markets in Crypto-Assets Regulation (MiCA) across ${countries} ${countries === 1 ? 'country' : 'countries'}${dateSuffix}.`;
+        caption = 'Crypto-Asset Service Providers registered under MiCAR';
+        theme = 'teal';
+        headers = ['#', 'CASP', 'Country', 'Competent Authority', 'Services', 'Websites'];
+        rows = entries.map((it, i) =>
+            '<tr class="border-b">' +
+            `<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">${i + 1}</td>` +
+            `<td class="p-4 rv-title" data-label="CASP"><span class="font-semibold text-gray-900">${htmlEscape(it.name || 'N/A')}</span></td>` +
+            `<td class="p-4 text-gray-700 text-sm" data-label="Country">${htmlEscape(it.memberState || 'Unknown')}</td>` +
+            `<td class="p-4 text-gray-600 text-sm" data-label="Authority">${htmlEscape(it.authority || '—')}</td>` +
+            `<td class="p-4 text-gray-700 text-sm" data-label="Services">${htmlEscape((it.services || []).join(', ') || 'Not specified')}</td>` +
+            `<td class="p-4 text-gray-600 text-sm" data-label="Websites">${websitesText(it.websites)}</td>` +
+            '</tr>'
+        ).join('\n');
+    } else if (register === 'emt') {
+        const countries = uniqueCount(entries, 'state');
+        summary = `${entries.length} e-money token (EMT) issuers authorised under MiCA across ${countries} ${countries === 1 ? 'country' : 'countries'}${dateSuffix}.`;
+        caption = 'Electronic Money Token issuers authorised under MiCAR';
+        theme = 'teal';
+        headers = ['Issuer', 'Country', 'Authority', 'Tokens', 'Count'];
+        rows = entries.map(it =>
+            '<tr class="border-b">' +
+            `<td class="p-4 rv-title" data-label="Issuer"><span class="font-semibold text-gray-800">${htmlEscape(it.issuer || '')}</span></td>` +
+            `<td class="p-4 text-gray-700 text-sm" data-label="Country">${htmlEscape(it.state || '')}</td>` +
+            `<td class="p-4 text-gray-600 text-sm" data-label="Authority">${htmlEscape(it.authority || '')}</td>` +
+            `<td class="p-4 text-gray-700 text-sm font-mono" data-label="Tokens">${htmlEscape(it.tokens || 'N/A')}</td>` +
+            `<td class="p-4 text-gray-700 text-sm" data-label="Count">${Number(it.count) || 0}</td>` +
+            '</tr>'
+        ).join('\n');
+    } else {
+        const countries = uniqueCount(entries, 'country');
+        summary = `${entries.length} entities flagged as non-compliant by European regulators across ${countries} ${countries === 1 ? 'country' : 'countries'}${dateSuffix}. Their websites are listed as plain text and are deliberately not linked.`;
+        caption = 'Entities flagged as non-compliant by European regulators';
+        theme = 'red';
+        headers = ['#', 'Entity Name', 'Country', 'Regulatory Authority', 'Websites'];
+        rows = entries.map((it, i) =>
+            '<tr class="border-b">' +
+            `<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">${i + 1}</td>` +
+            `<td class="p-4 rv-title" data-label="Entity"><span class="font-semibold text-gray-800">${htmlEscape(it.entity || '')}${it.isNew ? ' (new)' : ''}</span></td>` +
+            `<td class="p-4 text-gray-700 text-sm" data-label="Country">${htmlEscape(it.country || '')}</td>` +
+            `<td class="p-4 text-gray-600 text-sm" data-label="Authority">${htmlEscape(it.authority || '')}</td>` +
+            `<td class="p-4 text-gray-600 text-sm" data-label="Websites">${websitesText(it.websites)}</td>` +
+            '</tr>'
+        ).join('\n');
+    }
+
+    return '\n<div class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6">' +
+        `<p class="text-sm text-gray-600 mb-4">${htmlEscape(summary)}</p>` +
+        snapshotTable(caption, theme, headers, rows) +
+        '</div>\n';
+}
+
+function injectRegisterSnapshot(pageFile, register, entries, dateLong) {
+    if (!fs.existsSync(pageFile)) {
+        console.warn(`⚠️ ${pageFile} not found; skipping ${register} snapshot.`);
+        return;
+    }
+    if (!Array.isArray(entries) || entries.length === 0) {
+        console.warn(`⚠️ No ${register} entries available; leaving ${pageFile} snapshot unchanged.`);
+        return;
+    }
+
+    const html = fs.readFileSync(pageFile, 'utf8');
+    const start = html.indexOf(SNAPSHOT_START);
+    const end = html.indexOf(SNAPSHOT_END);
+    if (start === -1 || end === -1 || end < start) {
+        console.error(`❌ Snapshot markers missing in ${pageFile}; aborting so the page is not left inconsistent.`);
+        process.exit(1);
+    }
+
+    const updated = html.slice(0, start + SNAPSHOT_START.length) +
+        buildSnapshot(register, entries, dateLong) +
+        html.slice(end);
+
+    if (updated !== html) {
+        fs.writeFileSync(pageFile, updated);
+        console.log(`🧾 Baked ${entries.length}-row static snapshot into ${pageFile}`);
+    } else {
+        console.log(`🧾 ${pageFile} snapshot already current.`);
+    }
+}
+
+// Reads the current data/*.json (written earlier in this run, or cached) and
+// refreshes the static snapshot on each intent page.
+function generateAllSnapshots() {
+    const snap = readJsonFile(SNAPSHOT_FILE, {}) || {};
+    const emtDateLong = snap.emtSnapshotDate ? formatDate(snap.emtSnapshotDate).longDate : '';
+    const caspsDateLong = snap.caspsSnapshotDate ? formatDate(snap.caspsSnapshotDate).longDate : '';
+
+    injectRegisterSnapshot('casp-tracker.html', 'casps', readJsonFile(CASPS_DATA_FILE, []), caspsDateLong);
+    injectRegisterSnapshot('emt-tracker.html', 'emt', readJsonFile(EMT_DATA_FILE, []), emtDateLong);
+    injectRegisterSnapshot('non-compliant-casps.html', 'nonCompliant', readJsonFile(NON_COMPLIANT_DATA_FILE, []), caspsDateLong);
+}
+
 function updateChangelog(previousDatasets, newDatasets) {
     const changes = {};
 
@@ -922,6 +1067,7 @@ async function main() {
 
         updateFooterDates(emtSheetDate, caspsSheetDate);
         writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
+        generateAllSnapshots();
         logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);
     } catch (error) {
@@ -938,4 +1084,9 @@ function ensureCsvResponseValid(csvText, label) {
     }
 }
 
-main();
+if (require.main === module) {
+    main();
+}
+
+// Exported so the snapshot generation can be exercised without a live fetch.
+module.exports = { buildSnapshot, injectRegisterSnapshot, generateAllSnapshots };
