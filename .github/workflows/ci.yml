@@ -36,6 +36,33 @@ jobs:
           test -f "$page" || { echo "missing page $page"; exit 1; }
         done
 
+    - name: Check intent pages carry a static register snapshot
+      # The updater bakes a crawlable <table> between these markers so the
+      # pages have real content for search engines (not just a JS-loaded table).
+      run: |
+        for page in casp-tracker.html emt-tracker.html non-compliant-casps.html; do
+          grep -q '<!-- register-snapshot:start -->' "$page" || { echo "$page missing snapshot start marker"; exit 1; }
+          grep -q '<!-- register-snapshot:end -->' "$page" || { echo "$page missing snapshot end marker"; exit 1; }
+          node -e "
+            const fs = require('fs');
+            const h = fs.readFileSync('$page','utf8');
+            const s = h.indexOf('<!-- register-snapshot:start -->');
+            const e = h.indexOf('<!-- register-snapshot:end -->');
+            const snap = h.slice(s, e);
+            if (!/<table/.test(snap)) throw new Error('$page snapshot has no table');
+            if (snap.split('<tr').length < 5) throw new Error('$page snapshot has too few rows');
+          "
+        done
+        # Non-compliant snapshot must never contain links (websites are plain text)
+        node -e "
+          const fs = require('fs');
+          const h = fs.readFileSync('non-compliant-casps.html','utf8');
+          const s = h.indexOf('<!-- register-snapshot:start -->');
+          const e = h.indexOf('<!-- register-snapshot:end -->');
+          if (/<a\b/.test(h.slice(s, e))) throw new Error('non-compliant snapshot must not contain links');
+          console.log('snapshots OK');
+        "
+
     - name: Check updater markers and data files
       # update-data.js patches the footer "Data as of" lines in index.html;
       # the page itself loads register data from data/*.json at runtime

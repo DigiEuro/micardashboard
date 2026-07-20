@@ -26,7 +26,13 @@
   `non-compliant-casps.html`.
 - `assets/js/register-view.js` is the single renderer for all three register
   tables (search, sort, filter, CSV/JSON export, summary cards, freshness).
-  It reads `#registerRoot[data-register]`.
+  It reads `#registerRoot[data-register]` and overwrites its contents on load.
+- For SEO, `update-data.js` bakes a **static crawlable table** into each intent
+  page between `<!-- register-snapshot:start/end -->` markers (inside
+  `#registerRoot`). Crawlers/no-JS visitors see real rows; `register-view.js`
+  replaces them with the interactive table for JS users. The scheduled Action
+  regenerates and commits these snapshots, so never hand-edit between the
+  markers.
 - Security invariants: `esc()` on all `innerHTML` interpolation;
   `safeHttpUrl()` for links; non-compliant entity websites are rendered as
   plain text, never links. CSP allows only self + Umami.
