@@ -602,6 +602,15 @@ function convertToNonCompliantData(csvData) {
     return entries;
 }
 
+// True when any register's freshly-fetched content differs from the cached
+// copy. Both sides are produced by the same converters, so field order is
+// stable and a JSON string compare is a reliable change signal (it catches
+// added, removed, edited, and reordered rows).
+function registersDiffer(previous, current) {
+    const keys = ['emts', 'casps', 'nonCompliant'];
+    return keys.some(key => JSON.stringify(previous[key]) !== JSON.stringify(current[key]));
+}
+
 function warnOnShrunkenDataset(label, filePath, newEntries) {
     const previous = readJsonFile(filePath, null);
     if (!Array.isArray(previous) || previous.length === 0 || !Array.isArray(newEntries)) {
@@ -987,70 +996,95 @@ async function main() {
     console.log('🌐 CASPs URL:', caspsUrl);
 
     try {
-        const snapshotResult = await fetchSnapshotDates();
-        const dateMap = snapshotResult.dateMap || {};
-        const emtSheetDate = dateMap['snapshot_date'] || dateMap['emt_snapshot_date'] || '';
-        const caspsSheetDate = dateMap['casps_snapshot_date'] || '';
+        const previousSnapshot = getStoredSnapshot();
+
+        // Snapshot dates are metadata (the "Data as of" label). If the fetch
+        // fails, fall back to the stored dates rather than aborting the run.
+        let emtSheetDate;
+        let caspsSheetDate;
+        let snapshotSource;
+        try {
+            const snapshotResult = await fetchSnapshotDates();
+            const dateMap = snapshotResult.dateMap || {};
+            emtSheetDate = dateMap['snapshot_date'] || dateMap['emt_snapshot_date'] || '';
+            caspsSheetDate = dateMap['casps_snapshot_date'] || '';
+            snapshotSource = snapshotResult.source;
+        } catch (error) {
+            console.warn(`⚠️ Snapshot date fetch failed (${error.message}); using stored dates.`);
+            emtSheetDate = (previousSnapshot && previousSnapshot.emtSnapshotDate) || '';
+            caspsSheetDate = (previousSnapshot && previousSnapshot.caspsSnapshotDate) || '';
+            snapshotSource = 'cache';
+        }
+
         const currentSnapshot = {
             emtSnapshotDate: emtSheetDate,
             caspsSnapshotDate: caspsSheetDate
         };
 
-        console.log(`📅 EMT sheet date: ${emtSheetDate || 'n/a'} (source: ${snapshotResult.source})`);
-        console.log(`📅 CASPs sheet date: ${caspsSheetDate || 'n/a'} (source: ${snapshotResult.source})`);
+        console.log(`📅 EMT sheet date: ${emtSheetDate || 'n/a'} (source: ${snapshotSource})`);
+        console.log(`📅 CASPs sheet date: ${caspsSheetDate || 'n/a'} (source: ${snapshotSource})`);
 
-        const previousSnapshot = getStoredSnapshot();
         const snapshotChanged = hasSnapshotChanged(previousSnapshot, currentSnapshot);
-        console.log(snapshotChanged ? '🔁 Snapshot changed, refreshing datasets.' : '💾 Snapshot unchanged, trying cached JSON files.');
 
+        // Cached datasets, used both as a fallback and to detect real changes.
+        const previousDatasets = {
+            emts: readJsonFile(EMT_DATA_FILE, null),
+            casps: readJsonFile(CASPS_DATA_FILE, null),
+            nonCompliant: readJsonFile(NON_COMPLIANT_DATA_FILE, null)
+        };
+
+        // Always fetch the registers. The snapshot-date cell in the sheet is
+        // not reliably bumped when rows are added, so gating refreshes on that
+        // date alone left the tracker serving stale data. We fetch every run
+        // and decide whether to persist by comparing the actual content.
         let jsData = null;
         let nonCompliantEntries = null;
         let caspsEntries = null;
-        let dataSource = 'cache';
+        let dataSource = 'remote';
 
-        if (!snapshotChanged) {
-            jsData = readJsonFile(EMT_DATA_FILE, null);
-            nonCompliantEntries = readJsonFile(NON_COMPLIANT_DATA_FILE, null);
-            caspsEntries = readJsonFile(CASPS_DATA_FILE, null);
-
-            if (!Array.isArray(jsData) || !Array.isArray(nonCompliantEntries) || !Array.isArray(caspsEntries)) {
-                console.warn('⚠️ Cached data missing or invalid; falling back to live fetch.');
-                jsData = null;
-                nonCompliantEntries = null;
-                caspsEntries = null;
-            } else {
-                console.log('💾 Loaded cached datasets from data/ directory.');
-            }
-        }
-
-        if (!jsData || !nonCompliantEntries || !caspsEntries) {
-            const previousDatasets = {
-                emts: readJsonFile(EMT_DATA_FILE, null),
-                casps: readJsonFile(CASPS_DATA_FILE, null),
-                nonCompliant: readJsonFile(NON_COMPLIANT_DATA_FILE, null)
-            };
-
+        try {
             const [emtResult, nonCompliantResult, caspsResult] = await Promise.all([
                 fetchEmtEntries(),
                 fetchNonCompliantEntries(),
                 fetchCaspsEntries()
             ]);
-
             jsData = emtResult.entries;
             nonCompliantEntries = nonCompliantResult.entries;
             caspsEntries = caspsResult.entries;
-            dataSource = 'remote';
+        } catch (error) {
+            console.warn(`⚠️ Live fetch failed (${error.message}); falling back to cached datasets.`);
+            jsData = previousDatasets.emts;
+            nonCompliantEntries = previousDatasets.nonCompliant;
+            caspsEntries = previousDatasets.casps;
+            dataSource = 'cache';
+        }
 
-            warnOnShrunkenDataset('EMT register', EMT_DATA_FILE, jsData);
-            warnOnShrunkenDataset('Non-compliant register', NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
-            warnOnShrunkenDataset('CASPs register', CASPS_DATA_FILE, caspsEntries);
+        if (!Array.isArray(jsData) || jsData.length === 0 || !Array.isArray(caspsEntries) || !Array.isArray(nonCompliantEntries)) {
+            console.error('❌ No usable register data (live fetch failed and no valid cache).');
+            process.exit(1);
+        }
 
+        warnOnShrunkenDataset('EMT register', EMT_DATA_FILE, jsData);
+        warnOnShrunkenDataset('Non-compliant register', NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
+        warnOnShrunkenDataset('CASPs register', CASPS_DATA_FILE, caspsEntries);
+
+        const registersChanged = registersDiffer(previousDatasets, {
+            emts: jsData,
+            casps: caspsEntries,
+            nonCompliant: nonCompliantEntries
+        });
+
+        // Only persist on a real change from a successful fetch (a cache
+        // fallback must not rewrite files or bump the "last updated" time).
+        const changed = dataSource === 'remote' && (snapshotChanged || registersChanged);
+
+        if (changed) {
+            console.log(`🔁 Persisting update (content ${registersChanged ? 'changed' : 'unchanged'}, snapshot date ${snapshotChanged ? 'changed' : 'unchanged'}).`);
             updateChangelog(previousDatasets, {
                 emts: jsData,
                 casps: caspsEntries,
                 nonCompliant: nonCompliantEntries
             });
-
             writeJsonFile(EMT_DATA_FILE, jsData);
             writeJsonFile(NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
             writeJsonFile(CASPS_DATA_FILE, caspsEntries);
@@ -1058,11 +1092,8 @@ async function main() {
                 ...currentSnapshot,
                 lastUpdated: new Date().toISOString()
             });
-        }
-
-        if (!Array.isArray(jsData) || jsData.length === 0) {
-            console.error('❌ No EMT data available to update dashboard.');
-            process.exit(1);
+        } else {
+            console.log('💾 No register changes detected; datasets left untouched.');
         }
 
         updateFooterDates(emtSheetDate, caspsSheetDate);
@@ -1088,5 +1119,6 @@ if (require.main === module) {
     main();
 }
 
-// Exported so the snapshot generation can be exercised without a live fetch.
-module.exports = { buildSnapshot, injectRegisterSnapshot, generateAllSnapshots };
+// Exported so the snapshot generation and change detection can be exercised
+// without a live fetch.
+module.exports = { buildSnapshot, injectRegisterSnapshot, generateAllSnapshots, registersDiffer };
