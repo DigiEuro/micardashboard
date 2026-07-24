@@ -65,16 +65,20 @@ jobs:
           echo "No changes to commit"
           exit 0
         }
+        # Push to whatever branch this run is on (scheduled runs are on main;
+        # manual test runs on another branch must not try to push to main).
+        BRANCH="${GITHUB_REF_NAME}"
+        echo "📌 Pushing auto-update to branch: ${BRANCH}"
         for delay in 2 4 8 16; do
-          if git push origin main; then
+          if git push origin "HEAD:${BRANCH}"; then
             echo "🚀 Changes pushed successfully"
             exit 0
           fi
-          echo "⚠️ Push failed, rebasing onto latest main and retrying in ${delay}s..."
+          echo "⚠️ Push failed, rebasing onto latest ${BRANCH} and retrying in ${delay}s..."
           sleep "$delay"
-          git pull --rebase origin main
+          git pull --rebase origin "${BRANCH}"
         done
-        git push origin main || {
+        git push origin "HEAD:${BRANCH}" || {
           echo "❌ Failed to push changes after retries"
           exit 1
         }
