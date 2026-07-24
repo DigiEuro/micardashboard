@@ -1,5 +1,44 @@
 [
   {
+    "date": "2026-07-24",
+    "timestamp": "2026-07-24T14:27:21.453Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "BNY SA/NV (Belgium)",
+          "Altcoins BG EООD (Bulgaria)",
+          "Digital Assist OOD (Bulgaria)",
+          "SG Digital Assets Limited (Cyprus)",
+          "JT Technologies GmbH (Germany)",
+          "Spar- und Kreditbank Rheinstetten eG (Germany)",
+          "VR-Bank Augsburg-Ostallgäu eG (Germany)",
+          "Raiffeisenbank Falkenstein-Wörth (Germany)",
+          "Coinify ApS (Denmark)",
+          "Januar ApS (Denmark)",
+          "SafeLynx Technologies ApS (Denmark)",
+          "CRIPTAN TRADE S.L. (Spain)",
+          "DIGITAL ASSETS Limited liability company for intermediation and services (Croatia)",
+          "Hrvatska poštanska banka d.d. (Croatia)",
+          "Damoon Technology (Europe) AG (Liechtenstein)",
+          "Bleap SIA (Latvia)",
+          "Nodu Digital, SIA (Latvia)",
+          "BitPay B.V. (Netherlands)"
+        ],
+        "removed": [
+          "DIGITAL ASSETS Limited liability company for intermediation and services (Croatia)",
+          "CRIPTAN TRADE, S.L. (Spain)"
+        ]
+      },
+      "nonCompliant": {
+        "added": [
+          "Reversal Investment Group (Italy)",
+          "Kortex (Italy)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-07-16",
     "timestamp": "2026-07-16T10:05:10.468Z",
     "changes": {

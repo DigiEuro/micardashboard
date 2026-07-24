@@ -28,7 +28,7 @@
     "country": "Italy",
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "spaziofinanziario.com"
+      "www.spaziofinanziario.com"
     ],
     "isNew": false
   },
@@ -279,7 +279,7 @@
     "country": "Italy",
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "syk755.it"
+      "www.syk755.it"
     ],
     "isNew": false
   },
@@ -649,7 +649,7 @@
     "country": "Italy",
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "spaziofinanziario.pro",
+      "www.spaziofinanziario.pro",
       "clients.spaziofinanziario.pro"
     ],
     "isNew": false
@@ -660,7 +660,7 @@
     "country": "Italy",
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "ynln.com"
+      "www.ynln.com"
     ],
     "isNew": false
   },
@@ -701,11 +701,11 @@
     "country": "Italy",
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "jzmor.com",
-      "jzmor-it57659.com",
-      "jzmor-it33583.com",
-      "jzmor-it99518.com",
-      "jzmor-it52337.com"
+      "www.jzmor.com",
+      "www.jzmor-it57659.com",
+      "www.jzmor-it33583.com",
+      "www.jzmor-it99518.com",
+      "www.jzmor-it52337.com"
     ],
     "isNew": false
   },
@@ -725,12 +725,12 @@
     "country": "Italy",
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "ofuyc.com",
-      "ofuyc-32516it.com",
-      "ofuyc-55337it.com",
-      "ofuyc-23166it.com",
-      "ofuyc-33111it.com",
-      "ofuyc-83255it.com"
+      "www.ofuyc.com",
+      "www.ofuyc-32516it.com",
+      "www.ofuyc-55337it.com",
+      "www.ofuyc-23166it.com",
+      "www.ofuyc-33111it.com",
+      "www.ofuyc-83255it.com"
     ],
     "isNew": false
   },
@@ -862,7 +862,7 @@
     "country": "Italy",
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "niufo.co"
+      "www.niufo.co"
     ],
     "isNew": false
   },
@@ -1004,10 +1004,10 @@
     "id": 98,
     "entity": "Lucrumiagroup",
     "country": "Italy",
-    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "authority": "Commissione Nazionale per le Societa e la Borsa  (CONSOB)",
     "websites": [
-      "lucrumiaofficial.co",
-      "lucrumiamode.co",
+      "www.lucrumiaofficial.co",
+      "www.lucrumiamode.co",
       "wap.lucrumiaofficial.co",
       "wap.lucrumiamode.co"
     ],
@@ -1289,7 +1289,7 @@
     "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
       "frame-2u-avapro.com",
-      "frame-2u-avapro.org"
+      "https:/frame-2u-avapro.org"
     ],
     "isNew": false
   },
@@ -1647,16 +1647,36 @@
   },
   {
     "id": 159,
-    "entity": "MEXC",
-    "country": "Netherlands",
-    "authority": "Netherlands Authority for the Financial Markets (AFM)",
+    "entity": "Reversal Investment Group",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
     "websites": [
-      "mexc.com"
+      "www.reversalsimgroup.com"
     ],
     "isNew": false
   },
   {
     "id": 160,
+    "entity": "Kortex",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "kortexbit.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 161,
+    "entity": "MEXC",
+    "country": "Netherlands",
+    "authority": "Netherlands Authority for the Financial Markets (AFM)",
+    "websites": [
+      "www.mexc.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 162,
     "entity": "LWEX",
     "country": "Slovakia",
     "authority": "National Bank of Slovakia (NBS)",

@@ -4,7 +4,16 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Thu, 16 Jul 2026 10:05:10 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 14:27:21 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-07-24</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-07-24T14:27:21.453Z</guid>
+      <pubDate>Fri, 24 Jul 2026 14:27:21 GMT</pubDate>
+      <description>CASPs added: BNY SA/NV (Belgium), Altcoins BG EООD (Bulgaria), Digital Assist OOD (Bulgaria), SG Digital Assets Limited (Cyprus), JT Technologies GmbH (Germany), Spar- und Kreditbank Rheinstetten eG (Germany), VR-Bank Augsburg-Ostallgäu eG (Germany), Raiffeisenbank Falkenstein-Wörth (Germany), Coinify ApS (Denmark), Januar ApS (Denmark), SafeLynx Technologies ApS (Denmark), CRIPTAN TRADE S.L. (Spain), DIGITAL ASSETS Limited liability company for intermediation and services (Croatia), Hrvatska poštanska banka d.d. (Croatia), Damoon Technology (Europe) AG (Liechtenstein), Bleap SIA (Latvia), Nodu Digital, SIA (Latvia), BitPay B.V. (Netherlands)
+CASPs removed: DIGITAL ASSETS Limited liability company for intermediation and services (Croatia), CRIPTAN TRADE, S.L. (Spain)
+Non-compliant entities added: Reversal Investment Group (Italy), Kortex (Italy)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-07-16</title>
       <link>https://micatracker.digital-euro-association.de/</link>
