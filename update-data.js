@@ -28,13 +28,15 @@ const SITE_URL = 'https://micatracker.digital-euro-association.de';
 const CHANGELOG_MAX_ENTRIES = 50;
 const FEED_MAX_ITEMS = 20;
 
-// Ranges are open-ended on purpose: fixed row caps (e.g. A1:F150) silently
-// truncate once the register outgrows them - CASPs already exceed 150 rows.
+// Ranges are open-ended on BOTH axes on purpose. Fixed row caps (e.g.
+// A1:F150) silently truncate once a register outgrows them, and fixed column
+// caps do the same sideways: 'CASPs!A:F' hid the LEI column in G for months.
+// Empty trailing columns are ignored by valuesToObjectArray, so A:Z is safe.
 const SHEET_CONFIG = {
     snapshot: { label: 'Snapshot dates', range: 'snapshot!A1:B3' },
     emt: { label: 'EMTs register', range: 'Jurisdiction!A:Z', requireNumericId: true },
-    casps: { label: 'CASPs register', range: 'CASPs!A:F' },
-    nonCompliant: { label: 'Non-compliant register', range: "'Non Compliant'!A:E" }
+    casps: { label: 'CASPs register', range: 'CASPs!A:Z' },
+    nonCompliant: { label: 'Non-compliant register', range: "'Non Compliant'!A:Z" }
 };
 
 const RETRYABLE_STATUSES = new Set([429, 500, 502, 503, 504]);
@@ -482,17 +484,70 @@ function parseMultiValueField(value) {
         .filter(entry => entry.length > 0);
 }
 
+// ISO 17442: 18 alphanumerics + 2 check digits.
+const LEI_PATTERN = /^[A-Z0-9]{18}[0-9]{2}$/;
+
+// The LEI code lives in a column whose exact header we don't hard-code, so
+// match any LEI-ish header. 'ae_lei_name' is deliberately excluded: it holds
+// the entity NAME on the LEI record, not the code - mistaking the two is what
+// made the register look like it had no LEIs at all.
+function extractLei(row) {
+    for (const [header, value] of Object.entries(row || {})) {
+        const key = String(header || '').trim().toLowerCase();
+        if (!key.includes('lei') || key === 'ae_lei_name') {
+            continue;
+        }
+        const candidate = String(value || '').trim().toUpperCase();
+        if (candidate) {
+            return candidate;
+        }
+    }
+    return '';
+}
+
 function convertToCaspsData(csvData) {
-    return csvData
+    const invalidLeis = [];
+    let leiCount = 0;
+
+    const entries = csvData
         .filter(row => (row['ae_lei_name'] || '').trim())
-        .map((row, index) => ({
-            id: index + 1,
-            name: row['ae_lei_name'] ? row['ae_lei_name'].trim() : '',
-            authority: row['ae_competentAuthority'] ? row['ae_competentAuthority'].trim() : '',
-            memberState: row['ae_homeMemberState'] ? row['ae_homeMemberState'].trim() : '',
-            services: parseMultiValueField(row['ac_serviceCode']),
-            websites: parseMultiValueField(row['ae_website'])
-        }));
+        .map((row, index) => {
+            const name = row['ae_lei_name'] ? row['ae_lei_name'].trim() : '';
+            const lei = extractLei(row);
+
+            // Keep malformed values out of the published field but never drop
+            // them silently - they are reported for the data-quality review.
+            let validLei = '';
+            if (lei) {
+                if (LEI_PATTERN.test(lei)) {
+                    validLei = lei;
+                    leiCount += 1;
+                } else {
+                    invalidLeis.push(`${name}: ${lei}`);
+                }
+            }
+
+            return {
+                id: index + 1,
+                name,
+                lei: validLei,
+                authority: row['ae_competentAuthority'] ? row['ae_competentAuthority'].trim() : '',
+                memberState: row['ae_homeMemberState'] ? row['ae_homeMemberState'].trim() : '',
+                services: parseMultiValueField(row['ac_serviceCode']),
+                websites: parseMultiValueField(row['ae_website'])
+            };
+        });
+
+    console.log(`🔑 CASP LEIs captured: ${leiCount}/${entries.length}`);
+    if (invalidLeis.length) {
+        console.warn(`⚠️ ${invalidLeis.length} CASP row(s) had a malformed LEI (not ISO 17442):`);
+        invalidLeis.slice(0, 10).forEach(entry => console.warn(`   ${entry}`));
+    }
+    if (leiCount === 0 && entries.length > 0) {
+        console.warn('⚠️ No LEI column detected in the CASPs sheet - check the header name and that the range covers it.');
+    }
+
+    return entries;
 }
 
 const memberStateMap = {
@@ -1119,6 +1174,14 @@ if (require.main === module) {
     main();
 }
 
-// Exported so the snapshot generation and change detection can be exercised
-// without a live fetch.
-module.exports = { buildSnapshot, injectRegisterSnapshot, generateAllSnapshots, registersDiffer };
+// Exported so snapshot generation, change detection and field extraction can
+// be exercised without a live fetch.
+module.exports = {
+    buildSnapshot,
+    injectRegisterSnapshot,
+    generateAllSnapshots,
+    registersDiffer,
+    convertToCaspsData,
+    extractLei,
+    LEI_PATTERN
+};
