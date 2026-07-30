@@ -1,0 +1,58 @@
+{
+  "generated": "2026-07-30T14:46:40.907Z",
+  "earliest": "2025-11-20",
+  "latest": "2026-07-30",
+  "count": 5,
+  "snapshots": [
+    {
+      "date": "2025-11-20",
+      "esmaSnapshotDate": null,
+      "backfilled": true,
+      "counts": {
+        "casps": 86,
+        "emts": 17,
+        "non-compliant": 85
+      }
+    },
+    {
+      "date": "2026-07-05",
+      "esmaSnapshotDate": null,
+      "backfilled": true,
+      "counts": {
+        "casps": 279,
+        "emts": 21,
+        "non-compliant": 160
+      }
+    },
+    {
+      "date": "2026-07-16",
+      "esmaSnapshotDate": null,
+      "backfilled": true,
+      "counts": {
+        "casps": 293,
+        "emts": 21,
+        "non-compliant": 160
+      }
+    },
+    {
+      "date": "2026-07-24",
+      "esmaSnapshotDate": null,
+      "backfilled": true,
+      "counts": {
+        "casps": 312,
+        "emts": 21,
+        "non-compliant": 162
+      }
+    },
+    {
+      "date": "2026-07-30",
+      "esmaSnapshotDate": "2026-07-24",
+      "backfilled": false,
+      "counts": {
+        "casps": 312,
+        "emts": 21,
+        "non-compliant": 162
+      }
+    }
+  ]
+}

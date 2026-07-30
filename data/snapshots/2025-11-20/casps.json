@@ -1,0 +1,1257 @@
+[
+  {
+    "id": 1,
+    "name": "Bybit EU GmbH",
+    "authority": "FMA",
+    "memberState": "Austria",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "placing",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.bybit.eu"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bitpanda GmbH",
+    "authority": "FMA",
+    "memberState": "Austria",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.bitpanda.com"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Cryptonow GmbH",
+    "authority": "FMA",
+    "memberState": "Austria",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.cryptonow.at"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "AMINA (Austria) GmbH",
+    "authority": "FMA",
+    "memberState": "Austria",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "http://www.amina.eu/"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "eToro (Europe) Ltd",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "exchange funds",
+      "execution",
+      "RTO",
+      "advice",
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "www.etoro.com"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "COLLECT & EXCHANGE CY LTD",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://collectnexchange.cy/"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Trading 212 Markets Ltd",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "exchange funds",
+      "execution",
+      "RTO"
+    ],
+    "websites": [
+      "www.trading212.com"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Stratos Europe Ltd",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto"
+    ],
+    "websites": [
+      "https://www.tradu.com/eu/"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Revolut Digital Assets (Europe) Ltd",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "placing",
+      "exchange funds",
+      "exchange crypto",
+      "trading platform",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.revolut.com/en-CY/crypto/"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "TEROXX DIGITAL ASSET LTD",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "advice",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "www.teroxx.com"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Crypto Finance (Deutschland) GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "www.crypto-finance.com/germany/de"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Bitpanda Asset Management GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "www.bitpanda.com"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "360 Treasury Systems AG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "trading platform"
+    ],
+    "websites": [
+      "www.360t.com"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Commerzbank Aktiengesellschaft",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.commerzbank.de"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Baden-Württembergische Wertpapierbörse GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "trading platform"
+    ],
+    "websites": [
+      "https://www.bsdex.de/de"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Smartbroker AG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "RTO"
+    ],
+    "websites": [
+      "https://www.smartbrokerplus.de/de-de"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Tangany GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "transfer"
+    ],
+    "websites": [
+      "www.tangany.com"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Boerse Stuttgart Digital Custody GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "transfer"
+    ],
+    "websites": [
+      "www.bsdigital.com"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Bullish Europe GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "https://bullish.com/home-de"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "EUWAX AG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "exchange funds",
+      "exchange crypto"
+    ],
+    "websites": [
+      "www.euwax-ag.de"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "flatexDEGIRO Bank AG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "websites": [
+      "https://flatexdegiro.com/de"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Baader Bank Aktiengesellschaft",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "websites": [
+      "https://www.baaderbank.de"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Trade Republic Bank GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://traderepublic.com"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "BitGo Europe GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.bitgo.de/entities/bitgoeuropegmbh"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Traders Place GmbH & Co. KGaA",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "RTO"
+    ],
+    "websites": [
+      "https://tradersplace.de"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Tradias GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "transfer"
+    ],
+    "websites": [
+      "www.tradias.de"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Dietrich & Richter Private Asset Management AG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "advice",
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "https://www.drpam.de"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "N26 Bank SE",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "RTO"
+    ],
+    "websites": [
+      "https://n26.com"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "V-Bank AG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "custody",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.v-bank.com/"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Bankhaus Scheich Wertpapierspezialist AG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "exchange funds"
+    ],
+    "websites": [
+      "www.bankhaus-scheich.de"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Lang & Schwarz TradeCenter AG & Co. KG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "exchange funds"
+    ],
+    "websites": [
+      "https://www.ls-tc.de/de/"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "DonauCapital Wertpapier GmbH",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "RTO"
+    ],
+    "websites": [
+      "https://www.donaucapital.de"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Volksbank Raiffeisenbank Bayern Mitte eG",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution",
+      "RTO"
+    ],
+    "websites": [
+      "www.vr-bayernmitte.de"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "OPEN BANK S.A.",
+    "authority": "CNMV",
+    "memberState": "Spain",
+    "services": [
+      "custody",
+      "execution"
+    ],
+    "websites": [
+      "www.openbank.es"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Banco Bilbao Vizcaya Argentaria S.A.",
+    "authority": "CNMV",
+    "memberState": "Spain",
+    "services": [
+      "custody",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "www.bbva.es"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "CECABANK S.A.",
+    "authority": "CNMV",
+    "memberState": "Spain",
+    "services": [
+      "custody",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "www.cecabank.es"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Bitcoinforme S.L.",
+    "authority": "CNMV",
+    "memberState": "Spain",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "bit2me.com"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Coinmotion Oy",
+    "authority": "FIN-FSA",
+    "memberState": "Finland",
+    "services": [
+      "custody",
+      "exchange funds",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "https://coinmotion.com"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Tesseract Investment Oy",
+    "authority": "FIN-FSA",
+    "memberState": "Finland",
+    "services": [
+      "custody",
+      "trading platform",
+      "advice",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "https://tesseract.fi"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Bittimaatti Oy",
+    "authority": "FIN-FSA",
+    "memberState": "Finland",
+    "services": [
+      "exchange funds"
+    ],
+    "websites": [
+      "https://bittimaatti.fi"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "CACEIS BANK",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.caceis.com/"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "COINSHARES ASSET MANAGEMENT",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "advice",
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "https://coinshares.com"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "BITSTACK SAS",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "https://bitstack-app.com"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "METAL GEAR SAS",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "exchange funds",
+      "execution",
+      "transfer"
+    ],
+    "websites": [
+      "https://metalgear.xyz"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "DEBLOCK SAS",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "exchange funds",
+      "exchange crypto",
+      "execution"
+    ],
+    "websites": [
+      "https://deblock.com"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "GOin SAS",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "advice",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "https://goin-invest.com"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "FINCTEK UE SAS",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "transfer"
+    ],
+    "websites": [
+      "https://finctek.com"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "RELAI EU SASU",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "exchange funds"
+    ],
+    "websites": [
+      "https://relai.app/"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "SOCIETE GENERALE - FORGE",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.sgforge.com/"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "BANQUE DELUBAC ET CIE",
+    "authority": "AMF",
+    "memberState": "France",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "e. execution of orders for crypto-assets on behalf of clients",
+      "advice",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.delubac.com/"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Payward Global Solutions Limited",
+    "authority": "CBI",
+    "memberState": "Ireland",
+    "services": [
+      "trading platform"
+    ],
+    "websites": [
+      "https://www.kraken.com"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Payward Europe Solutions Limited",
+    "authority": "CBI",
+    "memberState": "Ireland",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.kraken.com"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Legend Financial Ireland Limited",
+    "authority": "CBI",
+    "memberState": "Ireland",
+    "services": [
+      "exchange funds",
+      "exchange crypto"
+    ],
+    "websites": [
+      "www.legendtrading.com"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Robinhood Europe UAB",
+    "authority": "LSC",
+    "memberState": "Lithuania",
+    "services": [
+      "custody",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.robinhood.com"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Bitstamp Europe S.A.",
+    "authority": "CSSF",
+    "memberState": "Luxembourg",
+    "services": [
+      "custody",
+      "trading platform",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.bitstamp.net"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Clearstream Banking S.A.",
+    "authority": "CSSF",
+    "memberState": "Luxembourg",
+    "services": [
+      "custody"
+    ],
+    "websites": [
+      "https://www.clearstream.com/clearstream-en"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Coinbase Luxembourg S.A.",
+    "authority": "CSSF",
+    "memberState": "Luxembourg",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.coinbase.com"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Altarius Asset Management Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "RTO",
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "www.altariusgroup.com"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Gemini Intergalactic EU Ltd",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "www.gemini.com"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Foris DAX MT Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "crypto.com"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Zillion Bits Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "trading platform",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "www.zbx.com"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "BP23 CA Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "www.bitpanda.com"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "OKCoin Europe Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "trading platform",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "placing",
+      "RTO",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "www.okx.com"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Socios Europe Services Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "www.socios.com"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Gate Technology Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "www.gate.mt"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Blue Cube (Malta) Limited",
+    "authority": "MFSA",
+    "memberState": "Malta",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "Blockchain.com"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Amdax B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "execution",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.amdax.com/nl"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "BTC Direct Europe B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "exchange funds",
+      "transfer"
+    ],
+    "websites": [
+      "https://my.btcdirect.eu"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Finst B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "websites": [
+      "https://finst.com/"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "BitStaete B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "https://bitstaete.nl"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Decubate B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "execution",
+      "placing"
+    ],
+    "websites": [
+      "https://www.decubate.com"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Hidden Road Partners CIV NL B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "exchange funds",
+      "exchange crypto",
+      "execution"
+    ],
+    "websites": [
+      "https://hiddenroad.com"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "MoonPay Europe B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.moonpay.com"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Zebedee Europe B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "exchange funds",
+      "transfer"
+    ],
+    "websites": [
+      "https://zbd.gg"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Fiat Republic Netherlands B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "transfer"
+    ],
+    "websites": [
+      "https://fiatrepublic.com"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Vivid Money B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "RTO"
+    ],
+    "websites": [
+      "https://vivid.money"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "AvianLabs Netherlands B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://sling.money"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Bitvavo B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "trading platform",
+      "transfer"
+    ],
+    "websites": [
+      "https://bitvavo.com/nl"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Acheron Europe B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "execution",
+      "advice",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "websites": [
+      "https://www.acherontrading.com"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "One Trading Exchange B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "trading platform"
+    ],
+    "websites": [
+      "https://www.onetrading.com"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "BLOX B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "exchange funds",
+      "transfer"
+    ],
+    "websites": [
+      "https://weareblox.com/"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "EU Internet Ventures B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://banxa.com"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "zerohash europe B.V.",
+    "authority": "AFM",
+    "memberState": "Netherlands",
+    "services": [
+      "custody",
+      "trading platform",
+      "exchange funds",
+      "exchange crypto",
+      "transfer"
+    ],
+    "websites": [
+      "https://zerohash.com"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Ilirika",
+    "authority": "ATVP",
+    "memberState": "Slovenia",
+    "services": [
+      "custody",
+      "execution",
+      "RTO",
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "https://www.ilirika.si/"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "INCREMENTUM poslovne storitve d.o.o.",
+    "authority": "ATVP",
+    "memberState": "Slovenia",
+    "services": [
+      "custody",
+      "advice",
+      "portfolio mgmt"
+    ],
+    "websites": [
+      "https://incrementum.si/"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Orcabay finančne storitve d.o.o.",
+    "authority": "ATVP",
+    "memberState": "Slovenia",
+    "services": [
+      "execution",
+      "advice"
+    ],
+    "websites": [
+      "https://orcabay.io/"
+    ]
+  }
+]
