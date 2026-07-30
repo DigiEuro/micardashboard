@@ -33,6 +33,16 @@
   replaces them with the interactive table for JS users. The scheduled Action
   regenerates and commits these snapshots, so never hand-edit between the
   markers.
+- `data/snapshots/<YYYY-MM-DD>/` is a dated archive of each register, written
+  by `update-data.js` on every run and indexed in `data/snapshots/index.json`.
+  Folders are keyed by the **observation date** (when we captured it), not the
+  ESMA snapshot date — register content changes while that date stays put, so
+  keying on it would let one observation overwrite another. The ESMA date is
+  stored in each folder's `meta.json`. A new folder is only created when the
+  content differs from the latest snapshot, and existing snapshots are never
+  rewritten (citations must stay stable). `scripts/backfill-snapshots.js`
+  reconstructs historic snapshots from git history; it is a one-off and safe
+  to re-run.
 - Security invariants: `esc()` on all `innerHTML` interpolation;
   `safeHttpUrl()` for links; non-compliant entity websites are rendered as
   plain text, never links. CSP allows only self + Umami.

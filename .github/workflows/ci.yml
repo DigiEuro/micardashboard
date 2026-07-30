@@ -78,5 +78,36 @@ jobs:
           console.log('data files OK');
         "
 
+    - name: Check the snapshot archive is intact
+      # The archive is the basis for change history and citable "as at" views,
+      # so a silently broken index or an emptied snapshot must fail the build.
+      run: |
+        node -e "
+          const fs = require('fs');
+          const idx = JSON.parse(fs.readFileSync('data/snapshots/index.json', 'utf8'));
+          if (!Array.isArray(idx.snapshots) || idx.snapshots.length === 0) {
+            throw new Error('snapshot index is empty');
+          }
+          if (idx.count !== idx.snapshots.length) {
+            throw new Error('snapshot index count does not match its entries');
+          }
+          for (const snap of idx.snapshots) {
+            if (!/^\d{4}-\d{2}-\d{2}\$/.test(snap.date)) {
+              throw new Error('bad snapshot date: ' + snap.date);
+            }
+            const dir = 'data/snapshots/' + snap.date;
+            if (!fs.existsSync(dir)) {
+              throw new Error('index lists a missing snapshot: ' + snap.date);
+            }
+            for (const [name, count] of Object.entries(snap.counts)) {
+              const rows = JSON.parse(fs.readFileSync(dir + '/' + name + '.json', 'utf8'));
+              if (!Array.isArray(rows) || rows.length !== count) {
+                throw new Error('snapshot ' + snap.date + '/' + name + ' does not match its indexed count');
+              }
+            }
+          }
+          console.log('snapshot archive OK: ' + idx.count + ' dates (' + idx.earliest + ' -> ' + idx.latest + ')');
+        "
+
     - name: Validate dashboard data
       run: npm run validate:data

@@ -46,8 +46,13 @@ jobs:
     - name: Check for changes
       id: verify-changed-files
       run: |
-        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+        # Must use `git status --porcelain`, not `git diff`: a newly created
+        # snapshot directory under data/snapshots/ is UNTRACKED, and git diff
+        # only reports tracked files. Using git diff here meant a run whose
+        # only change was a new snapshot looked clean, skipped the commit, and
+        # lost the snapshot when the runner was torn down.
         if [ -n "$(git status --porcelain)" ]; then
+          echo "changed=true" >> $GITHUB_OUTPUT
           echo "📝 Changes detected in working directory"
           git status --porcelain
         else

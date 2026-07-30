@@ -1,0 +1,879 @@
+[
+  {
+    "id": 1,
+    "entity": "Dobibo",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dobibo.com",
+      "https://dobibo1.com",
+      "https://dobibo2.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 2,
+    "entity": "Fameexn",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://fameexn.top",
+      "https://fameexn.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 3,
+    "entity": "Spazio Finanziario",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "www.spaziofinanziario.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 4,
+    "entity": "HTXcoin-az",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://m.htxcoin-az.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 5,
+    "entity": "Stock Credit Wallet",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://stockcreditwallet.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 6,
+    "entity": "Paycraftv.top - Paycraftn.top",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://paycraftv.top",
+      "https://paycraftn.top"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 7,
+    "entity": "CoinBank Exchange",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://coinbankexchange.icu"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 8,
+    "entity": "AKQ",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://akqa715.it",
+      "https://AKQ1181.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 9,
+    "entity": "Fameexn",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://fameexe.top",
+      "https://fameexj.top"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 10,
+    "entity": "ArgonInternational",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://argonintgroup.com",
+      "https://cfd.argonintgroup.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 11,
+    "entity": "Deroka UAB",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dtcoin.tech",
+      "https://dtwallet.io",
+      "https://forcedmarketcap.tech"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 12,
+    "entity": "DTSocialize Holding PLC",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dtsmoney.com",
+      "https://portal.dtsmoney.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 13,
+    "entity": "Caa871",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://caa871.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 14,
+    "entity": "Sdf837",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://sdf837.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 15,
+    "entity": "SYBZ",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://sybzgroup.co"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 16,
+    "entity": "Egplus.vip",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://egplus.vip"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 17,
+    "entity": "Egalite.bond",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://egalite.bond"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 18,
+    "entity": "Arbismart UAB",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://arbismart.com",
+      "https://dashboard.arbismart.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 19,
+    "entity": "Blockbyteq",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://blockbyteq.top"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 20,
+    "entity": "Bvoxed",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://bvoxed.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 21,
+    "entity": "BeratCoin",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://btc6688.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 22,
+    "entity": "Interersos-Interesosf",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://interersosf.org",
+      "https://interersos.org"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 23,
+    "entity": "Cfw896",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://cfw896.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 24,
+    "entity": "Lumex",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://stratoslumex.com",
+      "https://stratoslumex.net"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 25,
+    "entity": "Tmxa",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://60yg.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 26,
+    "entity": "Uyr968|Fwq367",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://uyr968.it",
+      "https://fwq367.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 27,
+    "entity": "Syk755",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "www.syk755.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 28,
+    "entity": "Pxm266",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://pxm266.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 29,
+    "entity": "Hct685",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://hct685.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 30,
+    "entity": "Sdh878",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://sdh878.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 31,
+    "entity": "Skillnexp",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://skillnexp.top"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 32,
+    "entity": "Ymg686",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://ymg686.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 33,
+    "entity": "Coingridr.top",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://coingridr.top"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 34,
+    "entity": "Gigtaskr",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://gigtaskr.top"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 35,
+    "entity": "Sxr922",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://sxr922.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 36,
+    "entity": "09pqws",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://09pqws.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 37,
+    "entity": "DSS776",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dss776.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 38,
+    "entity": "ERY357",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://ery357.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 39,
+    "entity": "TNT882",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://tnt882.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 40,
+    "entity": "ZeroTrillionWorld",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://zerotrillionworld.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 41,
+    "entity": "ZGV796",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://zgv796.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 42,
+    "entity": "78DEF",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://78def.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 43,
+    "entity": "Atomic Wallet",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://atomicwallet.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 44,
+    "entity": "Cexrqw.com",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://cexrqw.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 45,
+    "entity": "Interersos.it",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://interersos.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 46,
+    "entity": "YUI236",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://yui236.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 47,
+    "entity": "DRST78",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://drst78.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 48,
+    "entity": "GDY733",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://gdy733.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 49,
+    "entity": "XUR652",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://xur652.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 50,
+    "entity": "YZA335",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://yza335.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 51,
+    "entity": "BHP536",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://bhp536.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 52,
+    "entity": "MJU567",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://mju567.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 53,
+    "entity": "TNT788",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://tnt788.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 54,
+    "entity": "YTT975",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://ytt975.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 55,
+    "entity": "YQZ585",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://yqz585.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 56,
+    "entity": "EWQ778",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://ewq778.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 57,
+    "entity": "AWE818",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://awe818.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 58,
+    "entity": "GRT325",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://grt325.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 59,
+    "entity": "TUT551",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://tut551.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 60,
+    "entity": "SFS854",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://sfs854.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 61,
+    "entity": "12DEF",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://12def.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 62,
+    "entity": "YTH937",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://yth937.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 63,
+    "entity": "C7VIZ",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://c7viz.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 64,
+    "entity": "Spazio Finanziario",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "www.spaziofinanziario.pro",
+      "https://clients.spaziofinanziario.pro"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 65,
+    "entity": "Ynln.com",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "www.ynln.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 66,
+    "entity": "NETWORK CAPITAL LTD",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://network-capital-partners.com",
+      "https://web.networkcapital-partnersltd.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 67,
+    "entity": "Lucrumiagroup.co",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://lucrumiagroup.co"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 68,
+    "entity": "Dobibo",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dbbddrb.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 69,
+    "entity": "Jzmor",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "www.jzmor.com",
+      "www.jzmor-it57659.com",
+      "www.jzmor-it33583.com",
+      "www.jzmor-it99518.com",
+      "www.jzmor-it52337.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 70,
+    "entity": "ZZCoin",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://zzcoingy.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 71,
+    "entity": "Ofuyc",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "www.ofuyc.com",
+      "www.ofuyc-32516it.com",
+      "www.ofuyc-55337it.com",
+      "www.ofuyc-23166it.com",
+      "www.ofuyc-33111it.com",
+      "www.ofuyc-83255it.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 72,
+    "entity": "Veltrixmax-invest.com - Ayquozeber.com",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://veltrixmax-invest.com",
+      "https://ayquozeber.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 73,
+    "entity": "Orolonix-invest.com - Cyberirfy.icu",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://orolonix-invest.com",
+      "https://cyberirfy.icu"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 74,
+    "entity": "RYR888",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://ryr888.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 75,
+    "entity": "DFH258",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dfh258.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 76,
+    "entity": "DXZ175",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dxz175.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 77,
+    "entity": "JMY999",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://jmy999.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 78,
+    "entity": "DSG158",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dsg158.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 79,
+    "entity": "WES218",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://wes218.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 80,
+    "entity": "GJG258",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://gjg258.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 81,
+    "entity": "CFSD123",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://cfsd123.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 82,
+    "entity": "R4MOX",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://r4mox.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 83,
+    "entity": "DFG789",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "https://dfg789.it"
+    ],
+    "isNew": true
+  },
+  {
+    "id": 84,
+    "entity": "MEXC Global",
+    "country": "Netherlands",
+    "authority": "Netherlands Authority for the Financial Markets (AFM)",
+    "websites": [
+      "https://www.mexc.com/"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 85,
+    "entity": "LWEX",
+    "country": "Slovakia",
+    "authority": "National Bank of Slovakia (NBS)",
+    "websites": [
+      "https://lwex.com/"
+    ],
+    "isNew": false
+  }
+]

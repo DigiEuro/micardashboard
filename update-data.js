@@ -782,6 +782,151 @@ function writeSitemap(lastmodDate) {
     console.log(`🗺️  Sitemap written with ${SITEMAP_PAGES.length} pages (lastmod ${lastmod})`);
 }
 
+// ---- Dated snapshot archive -------------------------------------------------
+// Every run stores a dated copy of each register under data/snapshots/<date>/
+// so the archive builds a real time series. This is what later powers per-entity
+// change history and citable "as at" views. The date used is the register's own
+// snapshot date where known (not the run date), so a re-run on a later day does
+// not create a misleading second entry for unchanged data.
+const SNAPSHOTS_DIR = path.join(DATA_DIR, 'snapshots');
+const SNAPSHOTS_INDEX_FILE = path.join(SNAPSHOTS_DIR, 'index.json');
+
+const SNAPSHOT_REGISTERS = [
+    { file: 'casps.json', source: CASPS_DATA_FILE },
+    { file: 'emts.json', source: EMT_DATA_FILE },
+    { file: 'non-compliant.json', source: NON_COMPLIANT_DATA_FILE }
+];
+
+function toIsoDate(value) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(value || ''))) {
+        return value;
+    }
+    const parts = String(value || '').split(/[/\-.]/);
+    if (parts.length === 3) {
+        let day, month, year;
+        if (parts[0].length === 4) { [year, month, day] = parts; } else { [day, month, year] = parts; }
+        const parsed = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
+        if (!isNaN(parsed.getTime())) {
+            return parsed.toISOString().slice(0, 10);
+        }
+    }
+    return '';
+}
+
+// Rebuilt from the directory listing rather than appended to, so the index can
+// never drift from what is actually on disk (including backfilled dates).
+function writeSnapshotsIndex() {
+    if (!fs.existsSync(SNAPSHOTS_DIR)) {
+        return [];
+    }
+
+    const dates = fs.readdirSync(SNAPSHOTS_DIR, { withFileTypes: true })
+        .filter(entry => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(entry.name))
+        .map(entry => entry.name)
+        .sort();
+
+    const snapshots = dates.map(date => {
+        const counts = {};
+        SNAPSHOT_REGISTERS.forEach(({ file }) => {
+            const rows = readJsonFile(path.join(SNAPSHOTS_DIR, date, file), null);
+            if (Array.isArray(rows)) {
+                counts[file.replace('.json', '')] = rows.length;
+            }
+        });
+        // Backfilled snapshots predate meta.json; their observation date is
+        // the commit date, which is the best record we have.
+        const meta = readJsonFile(path.join(SNAPSHOTS_DIR, date, 'meta.json'), null);
+        return {
+            date,
+            esmaSnapshotDate: (meta && meta.esmaSnapshotDate) || null,
+            backfilled: !meta,
+            counts
+        };
+    });
+
+    writeJsonFile(SNAPSHOTS_INDEX_FILE, {
+        generated: new Date().toISOString(),
+        earliest: dates[0] || null,
+        latest: dates[dates.length - 1] || null,
+        count: dates.length,
+        snapshots
+    });
+
+    console.log(`🗂️  Snapshot index: ${dates.length} date(s)${dates.length ? ` (${dates[0]} → ${dates[dates.length - 1]})` : ''}`);
+    return dates;
+}
+
+function listSnapshotDates() {
+    if (!fs.existsSync(SNAPSHOTS_DIR)) return [];
+    return fs.readdirSync(SNAPSHOTS_DIR, { withFileTypes: true })
+        .filter(entry => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(entry.name))
+        .map(entry => entry.name)
+        .sort();
+}
+
+function readSnapshotRegisters(date) {
+    const payload = {};
+    SNAPSHOT_REGISTERS.forEach(({ file }) => {
+        const rows = readJsonFile(path.join(SNAPSHOTS_DIR, date, file), null);
+        if (Array.isArray(rows)) payload[file] = rows;
+    });
+    return payload;
+}
+
+// Archived under the OBSERVATION date (when we captured it), not the ESMA
+// snapshot date. The register content demonstrably changes while the ESMA date
+// stays put, so keying on that date would let one observation overwrite another
+// and lose the very changes this archive exists to record. The ESMA date is
+// kept as metadata instead.
+//
+// A new folder is only created when the content actually differs from the most
+// recent snapshot, so unchanged weeks cost nothing and each folder marks a real
+// change. Existing snapshots are never rewritten — citations must stay stable.
+function archiveSnapshot(esmaSnapshotDate) {
+    const today = new Date().toISOString().slice(0, 10);
+
+    const current = {};
+    SNAPSHOT_REGISTERS.forEach(({ file, source }) => {
+        const rows = readJsonFile(source, null);
+        if (Array.isArray(rows)) current[file] = rows;
+    });
+    if (Object.keys(current).length === 0) {
+        console.warn('⚠️ No register data available to archive.');
+        return null;
+    }
+
+    const existingDates = listSnapshotDates();
+    const latest = existingDates[existingDates.length - 1];
+
+    if (latest && latest !== today) {
+        const previous = readSnapshotRegisters(latest);
+        const unchanged = Object.keys(current).every(file =>
+            JSON.stringify(previous[file]) === JSON.stringify(current[file]));
+        if (unchanged) {
+            console.log(`🗃️  Registers unchanged since ${latest}; no new snapshot.`);
+            writeSnapshotsIndex();
+            return latest;
+        }
+    }
+
+    const dir = path.join(SNAPSHOTS_DIR, today);
+    const isNew = !fs.existsSync(dir);
+    fs.mkdirSync(dir, { recursive: true });
+
+    Object.entries(current).forEach(([file, rows]) => {
+        fs.writeFileSync(path.join(dir, file), JSON.stringify(rows, null, 2));
+    });
+    fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({
+        observed: today,
+        esmaSnapshotDate: toIsoDate(esmaSnapshotDate) || null,
+        counts: Object.fromEntries(Object.entries(current).map(([f, r]) => [f.replace('.json', ''), r.length]))
+    }, null, 2));
+
+    console.log(`🗃️  ${isNew ? 'Archived new' : 'Updated today\'s'} snapshot ${today}`);
+    writeSnapshotsIndex();
+    return today;
+}
+
 // ---- Static register snapshots (SEO) ---------------------------------------
 // The intent pages load their table from data/*.json at runtime, which left
 // the crawlable HTML thin (intro + FAQ + "Loading…"). Google parked the pages
@@ -1153,6 +1298,7 @@ async function main() {
 
         updateFooterDates(emtSheetDate, caspsSheetDate);
         writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
+        archiveSnapshot(caspsSheetDate || emtSheetDate);
         generateAllSnapshots();
         logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);
