@@ -782,6 +782,62 @@ function writeSitemap(lastmodDate) {
     console.log(`🗺️  Sitemap written with ${SITEMAP_PAGES.length} pages (lastmod ${lastmod})`);
 }
 
+// ---- Entity resolution ------------------------------------------------------
+// Resolves authorisation RECORDS into legal ENTITIES (LEI where present, else a
+// normalised name+country hash) and reports every data-quality issue found.
+// Nothing is ever dropped: source rows all survive as authorisation records,
+// and unusable values are preserved verbatim alongside a typed anomaly.
+const ENTITIES_FILE = path.join(DATA_DIR, 'entities.json');
+const ANOMALIES_FILE = path.join(DATA_DIR, 'anomalies.json');
+
+function loadSnapshotSeries() {
+    if (!fs.existsSync(SNAPSHOTS_DIR)) return [];
+    return fs.readdirSync(SNAPSHOTS_DIR, { withFileTypes: true })
+        .filter(entry => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/.test(entry.name))
+        .map(entry => entry.name)
+        .sort()
+        .map(date => ({ date, casps: readJsonFile(path.join(SNAPSHOTS_DIR, date, 'casps.json'), []) }));
+}
+
+function buildEntityFiles() {
+    const { buildEntities } = require('./scripts/normalise');
+    const casps = readJsonFile(CASPS_DATA_FILE, []);
+    if (!Array.isArray(casps) || casps.length === 0) {
+        console.warn('⚠️ No CASP data available; skipping entity resolution.');
+        return;
+    }
+
+    const { entities, anomalies } = buildEntities(casps, { snapshots: loadSnapshotSeries() });
+
+    // Reconciliation is the contract: if this ever fails, the pipeline has
+    // silently lost a source row and must not publish.
+    const authorisationCount = entities.reduce((sum, entity) => sum + entity.authorisations.length, 0);
+    if (authorisationCount !== casps.length) {
+        console.error(`❌ Entity reconciliation failed: ${casps.length} source rows but ${authorisationCount} authorisation records.`);
+        process.exit(1);
+    }
+
+    const byType = {};
+    anomalies.forEach(item => { byType[item.type] = (byType[item.type] || 0) + 1; });
+
+    writeJsonFile(ENTITIES_FILE, {
+        generated: new Date().toISOString(),
+        sourceRows: casps.length,
+        entityCount: entities.length,
+        keyedByLei: entities.filter(e => e.keySource === 'lei').length,
+        entities
+    });
+    writeJsonFile(ANOMALIES_FILE, {
+        generated: new Date().toISOString(),
+        total: anomalies.length,
+        byType,
+        anomalies
+    });
+
+    console.log(`🧬 Entities: ${entities.length} from ${casps.length} authorisation records (${entities.filter(e => e.keySource === 'lei').length} keyed by LEI)`);
+    console.log(`🔬 Anomalies: ${anomalies.length}` + (anomalies.length ? ` (${Object.entries(byType).map(([t, n]) => `${t}=${n}`).join(', ')})` : ''));
+}
+
 // ---- Dated snapshot archive -------------------------------------------------
 // Every run stores a dated copy of each register under data/snapshots/<date>/
 // so the archive builds a real time series. This is what later powers per-entity
@@ -1299,6 +1355,7 @@ async function main() {
         updateFooterDates(emtSheetDate, caspsSheetDate);
         writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
         archiveSnapshot(caspsSheetDate || emtSheetDate);
+        buildEntityFiles();
         generateAllSnapshots();
         logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);

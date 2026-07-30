@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./styles/tailwind.css",
-    "validate:data": "node scripts/validate-dashboard-data.js"
+    "validate:data": "node scripts/validate-dashboard-data.js",
+    "test:normalise": "node scripts/test-normalise.js"
   },
   "keywords": [],
   "author": "",

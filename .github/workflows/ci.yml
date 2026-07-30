@@ -78,6 +78,32 @@ jobs:
           console.log('data files OK');
         "
 
+    - name: Test entity resolution and normalisation
+      run: npm run test:normalise
+
+    - name: Check entities reconcile against the source register
+      # The hard rule: no source row may be silently dropped. If the
+      # authorisation count ever diverges from the CASP row count, the
+      # pipeline has lost data and must not publish.
+      run: |
+        node -e "
+          const fs = require('fs');
+          const casps = JSON.parse(fs.readFileSync('data/casps.json', 'utf8'));
+          const ent = JSON.parse(fs.readFileSync('data/entities.json', 'utf8'));
+          const total = ent.entities.reduce((n, e) => n + e.authorisations.length, 0);
+          if (total !== casps.length) {
+            throw new Error('reconciliation failed: ' + casps.length + ' source rows vs ' + total + ' authorisation records');
+          }
+          if (ent.sourceRows !== casps.length) {
+            throw new Error('entities.json sourceRows is stale');
+          }
+          const slugs = ent.entities.map(e => e.slug);
+          if (new Set(slugs).size !== slugs.length) throw new Error('duplicate entity slugs');
+          const keys = ent.entities.map(e => e.entityKey);
+          if (new Set(keys).size !== keys.length) throw new Error('duplicate entity keys');
+          console.log('entities OK: ' + ent.entities.length + ' entities from ' + casps.length + ' records');
+        "
+
     - name: Check the snapshot archive is intact
       # The archive is the basis for change history and citable "as at" views,
       # so a silently broken index or an emptied snapshot must fail the build.
