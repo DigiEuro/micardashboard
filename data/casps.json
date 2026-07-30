@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Bitpanda GmbH",
+    "lei": "5493007WZ7IFULIL8G21",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -20,6 +21,7 @@
   {
     "id": 2,
     "name": "Bybit EU GmbH",
+    "lei": "5299005V5GBSN2A4C303",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -36,6 +38,7 @@
   {
     "id": 3,
     "name": "Cryptonow GmbH",
+    "lei": "529900LZM6X3GBFNLG10",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -51,6 +54,7 @@
   {
     "id": 4,
     "name": "AMINA (Austria) AG",
+    "lei": "5299005I4LYIFW7GKB54",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -67,6 +71,7 @@
   {
     "id": 5,
     "name": "FIOR Digital GmbH",
+    "lei": "529900HMYYJR2NHVZ124",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -81,6 +86,7 @@
   {
     "id": 6,
     "name": "KuCoin EU Exchange GmbH",
+    "lei": "529900B4G0EGK7Z9KT45",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -97,6 +103,7 @@
   {
     "id": 7,
     "name": "DADAT Krypto GmbH",
+    "lei": "529900KTP3Y86BZKY754",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -109,6 +116,7 @@
   {
     "id": 8,
     "name": "Coinfinity GmbH",
+    "lei": "529900BSNR4XPZ6WBK17",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -125,6 +133,7 @@
   {
     "id": 9,
     "name": "Validvent Technology GmbH",
+    "lei": "9845002BEC2C588CC678",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -137,6 +146,7 @@
   {
     "id": 10,
     "name": "WB-Shields Innovations GmbH",
+    "lei": "254900ERDZ4CZ5IF7P56",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -153,6 +163,7 @@
   {
     "id": 11,
     "name": "OSL EU GmbH",
+    "lei": "8945001TKX2A5OJMNR45",
     "authority": "FMA",
     "memberState": "Austria",
     "services": [
@@ -168,6 +179,7 @@
   {
     "id": 12,
     "name": "KBC Bank NV",
+    "lei": "6B2PBRV1FCJDMR45RZ53",
     "authority": "NBB",
     "memberState": "Belgium",
     "services": [
@@ -182,6 +194,7 @@
   {
     "id": 13,
     "name": "BNY SA/NV",
+    "lei": "MMYX0N4ZEZ13Z4XCG897",
     "authority": "NBB",
     "memberState": "Belgium",
     "services": [
@@ -195,6 +208,7 @@
   {
     "id": 14,
     "name": "Alaric Securities OOD",
+    "lei": "549300I48OJHSE9OZS95",
     "authority": "FSC",
     "memberState": "Bulgaria",
     "services": [
@@ -215,6 +229,7 @@
   {
     "id": 15,
     "name": "Belayer ООD",
+    "lei": "64882N0ABXS71817AI18",
     "authority": "FSC",
     "memberState": "Bulgaria",
     "services": [
@@ -229,6 +244,7 @@
   {
     "id": 16,
     "name": "Altcoins BG EООD",
+    "lei": "984500FBAE2EDEF1C317",
     "authority": "FSC",
     "memberState": "Bulgaria",
     "services": [
@@ -244,6 +260,7 @@
   {
     "id": 17,
     "name": "Digital Assist OOD",
+    "lei": "8755007GZKOS1VJ6BZ82",
     "authority": "FSC",
     "memberState": "Bulgaria",
     "services": [
@@ -256,6 +273,7 @@
   {
     "id": 18,
     "name": "eToro (Europe) Ltd",
+    "lei": "213800GIFQMSV7HROS23",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -274,6 +292,7 @@
   {
     "id": 19,
     "name": "COLLECT & EXCHANGE CY LTD",
+    "lei": "2138005C815T9EZU4C75",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -289,6 +308,7 @@
   {
     "id": 20,
     "name": "Trading 212 Markets Ltd",
+    "lei": "21380045KC28948FNE32",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -304,6 +324,7 @@
   {
     "id": 21,
     "name": "Stratos Europe Ltd",
+    "lei": "549300LZMQXXYV4JJ603",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -318,6 +339,7 @@
   {
     "id": 22,
     "name": "Revolut Digital Assets (Europe) Ltd",
+    "lei": "549300ET4IUR6RCZOL84",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -335,6 +357,7 @@
   {
     "id": 23,
     "name": "TEROXX DIGITAL ASSET LTD",
+    "lei": "636700PBO692C1R9V561",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -354,6 +377,7 @@
   {
     "id": 24,
     "name": "CAPITAL VAULT LTD",
+    "lei": "984500C46B3B7B69Y904",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -369,6 +393,7 @@
   {
     "id": 25,
     "name": "PELICAN EXCHANGE EUROPE (CY) LTD",
+    "lei": "984500EBL33F46CBF732",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -384,6 +409,7 @@
   {
     "id": 26,
     "name": "XTB Limited",
+    "lei": "259400HM2TR4U3LF5D43",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -398,6 +424,7 @@
   {
     "id": 27,
     "name": "Noemon Finance Ltd",
+    "lei": "25490004TC93R20KW073",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -416,6 +443,7 @@
   {
     "id": 28,
     "name": "Trading.com Markets EU Ltd",
+    "lei": "213800QT8WZK738XGX35",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -433,6 +461,7 @@
   {
     "id": 29,
     "name": "J2TX Ltd",
+    "lei": "213800186TP6OZSHUV17",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -452,6 +481,7 @@
   {
     "id": 30,
     "name": "S.K. DASK KRYPTO LTD",
+    "lei": "254900K8AF5VMJFMZN69",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -469,6 +499,7 @@
   {
     "id": 31,
     "name": "NAGA X",
+    "lei": "984500DCB2AF415E5Y71",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -488,6 +519,7 @@
   {
     "id": 32,
     "name": "Ronin EM Ltd",
+    "lei": "213800V83W83UL8WR118",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -505,6 +537,7 @@
   {
     "id": 33,
     "name": "Krypto Knight Ltd",
+    "lei": "984500I2EA955E934537",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -522,6 +555,7 @@
   {
     "id": 34,
     "name": "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd)",
+    "lei": "9845007E2C96JA7B8653",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -540,6 +574,7 @@
   {
     "id": 35,
     "name": "NOEMON TECH LTD",
+    "lei": "254900JFRZG8P67ZHI74",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -560,6 +595,7 @@
   {
     "id": 36,
     "name": "Unlimit Crypto Ltd",
+    "lei": "894500FFZOA2AVGYOA88",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -578,6 +614,7 @@
   {
     "id": 37,
     "name": "COMPLYCRYPTO DEPOSITORY EU LIMITED",
+    "lei": "254900J8O1555O3B2T92",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -595,6 +632,7 @@
   {
     "id": 38,
     "name": "Brilliantscope Trading Limited",
+    "lei": "9845009846V10FGD4840",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -613,6 +651,7 @@
   {
     "id": 39,
     "name": "SG Digital Assets Limited",
+    "lei": "254900YI6BJ1QQQZIY62",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -630,6 +669,7 @@
   {
     "id": 40,
     "name": "Invity Finance s.r.o.",
+    "lei": "64880741U1SN9TUWJ897",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -647,6 +687,7 @@
   {
     "id": 41,
     "name": "NAGA X",
+    "lei": "984500DCB2AF415E5Y71",
     "authority": "CySEC",
     "memberState": "Cyprus",
     "services": [
@@ -666,6 +707,7 @@
   {
     "id": 42,
     "name": "MP Developers s.r.o.",
+    "lei": "64889KAWPMO81X649843",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -682,6 +724,7 @@
   {
     "id": 43,
     "name": "ILAVO GROUP a.s.",
+    "lei": "315700DWN9FHXPPTHD55",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -699,6 +742,7 @@
   {
     "id": 44,
     "name": "Pluso a.s.",
+    "lei": "315700GXG7KIZFLV9R66",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -714,6 +758,7 @@
   {
     "id": 45,
     "name": "COINMATE a.s.",
+    "lei": "3157005QCM6Y91CUV844",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -730,6 +775,7 @@
   {
     "id": 46,
     "name": "MipSoftware s.r.o.",
+    "lei": "9845006074DB79BFA392",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -744,6 +790,7 @@
   {
     "id": 47,
     "name": "GG Digital, a.s.",
+    "lei": "984500C0OE94NDA81B62",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -760,6 +807,7 @@
   {
     "id": 48,
     "name": "IP wBTCb solutions, s.r.o.",
+    "lei": "315700I7V6W7BLAI9Z32",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -775,6 +823,7 @@
   {
     "id": 49,
     "name": "Simple Coin s.r.o.",
+    "lei": "3157008PWKP5LP7AR251",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -790,6 +839,7 @@
   {
     "id": 50,
     "name": "wBTCb.cz, s.r.o.",
+    "lei": "3157009R9J4OHLL5NY32",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -802,6 +852,7 @@
   {
     "id": 51,
     "name": "Altlift s.r.o.",
+    "lei": "8945004PZEJSSPTTVB16",
     "authority": "CNB",
     "memberState": "Czechia",
     "services": [
@@ -816,6 +867,7 @@
   {
     "id": 52,
     "name": "Boerse Stuttgart Digital Custody GmbH",
+    "lei": "529900RC04FR9EHUT228",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -829,6 +881,7 @@
   {
     "id": 53,
     "name": "Bitpanda Asset Management GmbH",
+    "lei": "9845005X9B7N610K0093",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -844,6 +897,7 @@
   {
     "id": 54,
     "name": "Tradias GmbH",
+    "lei": "529900FYBTAGIOS54M10",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -860,6 +914,7 @@
   {
     "id": 55,
     "name": "EUWAX AG",
+    "lei": "529900032TYR45XIEW79",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -873,6 +928,7 @@
   {
     "id": 56,
     "name": "flatexDEGIRO Bank AG",
+    "lei": "529900MKYC1FZ83V3121",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -885,6 +941,7 @@
   {
     "id": 57,
     "name": "360 Treasury Systems AG",
+    "lei": "529900P0204W9HA8JP36",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -897,6 +954,7 @@
   {
     "id": 58,
     "name": "Trade Republic Bank GmbH",
+    "lei": "5299009IFX1XTKDY4568",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -912,6 +970,7 @@
   {
     "id": 59,
     "name": "BitGo Europe GmbH",
+    "lei": "391200IJ3B1IP7993O16",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -929,6 +988,7 @@
   {
     "id": 60,
     "name": "N26 Bank SE",
+    "lei": "529900JB9XYZ8E87N345",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -942,6 +1002,7 @@
   {
     "id": 61,
     "name": "Baader Bank Aktiengesellschaft",
+    "lei": "529900JFOPPEDUR61H13",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -954,6 +1015,7 @@
   {
     "id": 62,
     "name": "Commerzbank Aktiengesellschaft",
+    "lei": "851WYGNLUQLFZBSYGB56",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -967,6 +1029,7 @@
   {
     "id": 63,
     "name": "Baden-Württembergische Wertpapierbörse GmbH",
+    "lei": "529900A0WHA0NVXY0G45",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -979,6 +1042,7 @@
   {
     "id": 64,
     "name": "Crypto Finance (Deutschland) GmbH",
+    "lei": "3912009ZGE8258OMPE28",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -995,6 +1059,7 @@
   {
     "id": 65,
     "name": "Traders Place GmbH & Co. KGaA",
+    "lei": "5299005Y5T6LXFAXDQ78",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1007,6 +1072,7 @@
   {
     "id": 66,
     "name": "Tangany GmbH",
+    "lei": "529900WKXS5ZPJY9W498",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1020,6 +1086,7 @@
   {
     "id": 67,
     "name": "Smartbroker AG",
+    "lei": "391200N0BYCZF2F43264",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1032,6 +1099,7 @@
   {
     "id": 68,
     "name": "Dietrich & Richter Private Asset Management AG",
+    "lei": "98450068F88BDF3E8D32",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1045,6 +1113,7 @@
   {
     "id": 69,
     "name": "Bullish Europe GmbH",
+    "lei": "2549008CBASK5Q680X12",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1061,6 +1130,7 @@
   {
     "id": 70,
     "name": "V-Bank AG",
+    "lei": "529900FB29C36LKTAW50",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1075,6 +1145,7 @@
   {
     "id": 71,
     "name": "Bankhaus Scheich Wertpapierspezialist AG",
+    "lei": "54930079HJ1JTMKTW637",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1093,6 +1164,7 @@
   {
     "id": 72,
     "name": "Lang & Schwarz TradeCenter AG & Co. KG",
+    "lei": "5299000TZ4OSOOGU1120",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1106,6 +1178,7 @@
   {
     "id": 73,
     "name": "DonauCapital Wertpapier GmbH",
+    "lei": "894500C1QM5XBU31PT95",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1118,6 +1191,7 @@
   {
     "id": 74,
     "name": "Volksbank Raiffeisenbank Bayern Mitte eG",
+    "lei": "529900ZW3QH424NY3959",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1130,6 +1204,7 @@
   {
     "id": 75,
     "name": "Huddlestock GmbH",
+    "lei": "549300Y6TSD1DUCXD871",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1142,6 +1217,7 @@
   {
     "id": 76,
     "name": "sino Aktiengesellschaft",
+    "lei": "5299008GFCQY16M45R85",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1154,6 +1230,7 @@
   {
     "id": 77,
     "name": "Hyphe Markets GmbH",
+    "lei": "3912000K5NAA00M4HH04",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1166,6 +1243,7 @@
   {
     "id": 78,
     "name": "Deutsche WertpapierService Bank AG",
+    "lei": "529900EXG2PM316ISO63",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1178,6 +1256,7 @@
   {
     "id": 79,
     "name": "DekaBank Deutsche Girozentrale",
+    "lei": "0W2PZJM8XOY22M4GG883",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1192,6 +1271,7 @@
   {
     "id": 80,
     "name": "EUWAX AG",
+    "lei": "529900032TYR45XIEW79",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1204,6 +1284,7 @@
   {
     "id": 81,
     "name": "Hauck Aufhäuser Digital Custody GmbH",
+    "lei": "391200LACJ601I2ONV49",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1217,6 +1298,7 @@
   {
     "id": 82,
     "name": "Fels wealth GmbH",
+    "lei": "391200LUYJY880GPSY38",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1232,6 +1314,7 @@
   {
     "id": 83,
     "name": "Westerwald Bank eG Volks- und Raiffeisenbank",
+    "lei": "52990071YX99SH321F74",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1244,6 +1327,7 @@
   {
     "id": 84,
     "name": "Hannoversche Volksbank eG",
+    "lei": "529900MQJIQGD8N3YV53",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1256,6 +1340,7 @@
   {
     "id": 85,
     "name": "VR TeilhaberBank Metropolregion Nürnberg eG",
+    "lei": "529900ZMDTSQYEYCKL45",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1268,6 +1353,7 @@
   {
     "id": 86,
     "name": "Volksbank Mittlerer Schwarzwald eG",
+    "lei": "5299009A1SAL2URXG283",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1280,6 +1366,7 @@
   {
     "id": 87,
     "name": "IG Europe GmbH",
+    "lei": "213800HFC5G4V293BN91",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1295,6 +1382,7 @@
   {
     "id": 88,
     "name": "Volksbank Raiffeisenbank Würzburg eG",
+    "lei": "529900YT5VCRYQ5WI821",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1307,6 +1395,7 @@
   {
     "id": 89,
     "name": "VR-Bank Rottal-Inn eG",
+    "lei": "529900APX10RF2PBTB22",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1319,6 +1408,7 @@
   {
     "id": 90,
     "name": "VR Bank Südpfalz eG",
+    "lei": "529900MBFU46N7U7MF46",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1331,6 +1421,7 @@
   {
     "id": 91,
     "name": "Sutor Bank GmbH",
+    "lei": "529900BQBP4JMDPM6Q19",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1343,6 +1434,7 @@
   {
     "id": 92,
     "name": "wSw PortfolioManagement AG",
+    "lei": "3912005CEQV0XYGFEO78",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1355,6 +1447,7 @@
   {
     "id": 93,
     "name": "FIDUS Finanz AG",
+    "lei": "529900XCSUEUBT5TX310",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1370,6 +1463,7 @@
   {
     "id": 94,
     "name": "DZ BANK AG Deutsche Zentral-Genossenschaftsbank",
+    "lei": "529900HNOAA1KXQJUQ27",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1384,6 +1478,7 @@
   {
     "id": 95,
     "name": "Tradevest Digital Assets GmbH",
+    "lei": "529900SUZQE32VSCS310",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1397,6 +1492,7 @@
   {
     "id": 96,
     "name": "ISF Institut Deutsch-Schweizer Finanzdienstleistungen GmbH",
+    "lei": "529900N0VN8J4S4SCG77",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1409,6 +1505,7 @@
   {
     "id": 97,
     "name": "Plutos Vermögensverwaltung AG",
+    "lei": "391200PNJ2SKONA02N07",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1421,6 +1518,7 @@
   {
     "id": 98,
     "name": "Scalable Capital Bank GmbH",
+    "lei": "391200Y3EUNL4LTXRP94",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1433,6 +1531,7 @@
   {
     "id": 99,
     "name": "AnCeKa Vermögensbetreuungs Aktiengesellschaft",
+    "lei": "529900FNJE1H184JV164",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1447,6 +1546,7 @@
   {
     "id": 100,
     "name": "Joh. Berenberg, Gossler & Co. KG",
+    "lei": "529900UC2OD7II24Z667",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1464,6 +1564,7 @@
   {
     "id": 101,
     "name": "MLP Banking AG",
+    "lei": "529900YOBXEE8ZYM4V56",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1476,6 +1577,7 @@
   {
     "id": 102,
     "name": "BV & P Vermögen AG",
+    "lei": "529900R4Q9UCQ25IAA05",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1489,6 +1591,7 @@
   {
     "id": 103,
     "name": "CONCEDUS GmbH",
+    "lei": "529900114Q5XQ6KLYR24",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1502,6 +1605,7 @@
   {
     "id": 104,
     "name": "DLT Securities GmbH",
+    "lei": "391200EYHDBM1YQI7A32",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1517,6 +1621,7 @@
   {
     "id": 105,
     "name": "Tradevest Markets AG",
+    "lei": "391200KFWD74ZYNEEA30",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1531,6 +1636,7 @@
   {
     "id": 106,
     "name": "Vermögensbutler GmbH",
+    "lei": "529900ADW3Q5TWADIL41",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1544,6 +1650,7 @@
   {
     "id": 107,
     "name": "Volksbank Heiden eG",
+    "lei": "391200CC11KVFA4HGG45",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1556,6 +1663,7 @@
   {
     "id": 108,
     "name": "Raiffeisenbank Kreis Kelheim eG",
+    "lei": "529900UYTAE51VW2TG15",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1568,6 +1676,7 @@
   {
     "id": 109,
     "name": "DekaBank Deutsche Girozentrale",
+    "lei": "0W2PZJM8XOY22M4GG883",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1580,6 +1689,7 @@
   {
     "id": 110,
     "name": "Donau-Iller-Bank eG",
+    "lei": "529900P8OKWO25XE4251",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1592,6 +1702,7 @@
   {
     "id": 111,
     "name": "Volksbank Schwarzwald-Donau-Neckar eG",
+    "lei": "5299009ADJ9XFQVUKZ50",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1604,6 +1715,7 @@
   {
     "id": 112,
     "name": "Raiffeisebank Auerbach-Freihung eG",
+    "lei": "529900R1A7TN1LM06875",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1616,6 +1728,7 @@
   {
     "id": 113,
     "name": "JT Technologies GmbH",
+    "lei": "529900YERL5TV5YJCR45",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1629,6 +1742,7 @@
   {
     "id": 114,
     "name": "Spar- und Kreditbank Rheinstetten eG",
+    "lei": "529900793U3P5C6YYC70",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1641,6 +1755,7 @@
   {
     "id": 115,
     "name": "VR-Bank Augsburg-Ostallgäu eG",
+    "lei": "529900CG5HHEUT0AHK10",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1653,6 +1768,7 @@
   {
     "id": 116,
     "name": "Raiffeisenbank Falkenstein-Wörth",
+    "lei": "391200236O6D9SGBE882",
     "authority": "BaFin",
     "memberState": "Germany",
     "services": [
@@ -1665,6 +1781,7 @@
   {
     "id": 117,
     "name": "Penning Financial Services ApS",
+    "lei": "9845000E4A7414709361",
     "authority": "Finanstilsynet",
     "memberState": "Denmark",
     "services": [
@@ -1683,6 +1800,7 @@
   {
     "id": 118,
     "name": "Lunar Block A/S",
+    "lei": "984500DD714F66B77454",
     "authority": "Finanstilsynet",
     "memberState": "Denmark",
     "services": [
@@ -1696,6 +1814,7 @@
   {
     "id": 119,
     "name": "GC Exchange A/S",
+    "lei": "254900TM3KOYH0SY8V19",
     "authority": "Finanstilsynet",
     "memberState": "Denmark",
     "services": [
@@ -1711,6 +1830,7 @@
   {
     "id": 120,
     "name": "Northstake ApS",
+    "lei": "98450010C0CB6A4E8A79",
     "authority": "Finanstilsynet",
     "memberState": "Denmark",
     "services": [
@@ -1725,6 +1845,7 @@
   {
     "id": 121,
     "name": "Coinify ApS",
+    "lei": "9845009Q9DDAE03FDE38",
     "authority": "Finanstilsynet",
     "memberState": "Denmark",
     "services": [
@@ -1740,6 +1861,7 @@
   {
     "id": 122,
     "name": "Januar ApS",
+    "lei": "984500A43E7FFC73CR76",
     "authority": "Finanstilsynet",
     "memberState": "Denmark",
     "services": [
@@ -1754,6 +1876,7 @@
   {
     "id": 123,
     "name": "SafeLynx Technologies ApS",
+    "lei": "9845003F777K7DFF4E96",
     "authority": "Finanstilsynet",
     "memberState": "Denmark",
     "services": [
@@ -1766,6 +1889,7 @@
   {
     "id": 124,
     "name": "Lightyear Europe AS",
+    "lei": "254900BBBJZF2IE8EN54",
     "authority": "EFSA",
     "memberState": "Estonia",
     "services": [
@@ -1780,6 +1904,7 @@
   {
     "id": 125,
     "name": "AS LHV Pank",
+    "lei": "529900GJOSVHI055QR67",
     "authority": "EFSA",
     "memberState": "Estonia",
     "services": [
@@ -1793,6 +1918,7 @@
   {
     "id": 126,
     "name": "Lightspark Payments Europe AS",
+    "lei": "6488O0OC79779MZX1E44",
     "authority": "EFSA",
     "memberState": "Estonia",
     "services": [
@@ -1808,6 +1934,7 @@
   {
     "id": 127,
     "name": "Banco Bilbao Vizcaya Argentaria S.A.",
+    "lei": "K8MS7FD7N5Z2WQ51AZ71",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1822,6 +1949,7 @@
   {
     "id": 128,
     "name": "OPEN BANK S.A.",
+    "lei": "5493000LM0MZ4JPMGM90",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1835,6 +1963,7 @@
   {
     "id": 129,
     "name": "CECABANK S.A.",
+    "lei": "549300CQ9NLEHMRCU505",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1849,6 +1978,7 @@
   {
     "id": 130,
     "name": "Bitcoinforme S.L.",
+    "lei": "9598007R5LSUJLGLS853",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1867,6 +1997,7 @@
   {
     "id": 131,
     "name": "RENTA 4 BANCO S.A.",
+    "lei": "213800IMKAUV5KW28586",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1881,6 +2012,7 @@
   {
     "id": 132,
     "name": "KUTXABANK S.A.",
+    "lei": "549300U4LIZV0REEQQ46",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1895,6 +2027,7 @@
   {
     "id": 133,
     "name": "CAIXABANK S.A.",
+    "lei": "7CUNS533WID6K7DGFI87",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1910,6 +2043,7 @@
   {
     "id": 134,
     "name": "DUE NETWORK S.L.",
+    "lei": "89450026TTLUZJV1XM36",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1923,6 +2057,7 @@
   {
     "id": 135,
     "name": "CROSSMINT EUROPE S.L.",
+    "lei": "959800B6XCG14MKLTJ51",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1936,6 +2071,7 @@
   {
     "id": 136,
     "name": "CRIPTAN TRADE S.L.",
+    "lei": "959800AZN23P7F30C189",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1951,6 +2087,7 @@
   {
     "id": 137,
     "name": "MINOS GLOBAL, S.L.",
+    "lei": "959800U0R44NN5DJC930",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1968,6 +2105,7 @@
   {
     "id": 138,
     "name": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES",
+    "lei": "",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1981,6 +2119,7 @@
   {
     "id": 139,
     "name": "IQANA TECHNOLOGIES S.L.",
+    "lei": "959800AZT2DVBLZQY241",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -1993,6 +2132,7 @@
   {
     "id": 140,
     "name": "Coinmotion Oy",
+    "lei": "743700PZG5RRF7SA4Q58",
     "authority": "FIN-FSA",
     "memberState": "Finland",
     "services": [
@@ -2005,6 +2145,7 @@
   {
     "id": 141,
     "name": "Tesseract Investment Oy",
+    "lei": "743700GULNWPBLJ7A022",
     "authority": "FIN-FSA",
     "memberState": "Finland",
     "services": [
@@ -2017,6 +2158,7 @@
   {
     "id": 142,
     "name": "Bittimaatti Oy",
+    "lei": "7437009FHK501IOCWZ66",
     "authority": "FIN-FSA",
     "memberState": "Finland",
     "services": [
@@ -2029,6 +2171,7 @@
   {
     "id": 143,
     "name": "NorthCrypto Oy",
+    "lei": "743700CHRVVP342JOA67",
     "authority": "FIN-FSA",
     "memberState": "Finland",
     "services": [
@@ -2041,6 +2184,7 @@
   {
     "id": 144,
     "name": "Kvarn Capital Oy",
+    "lei": "9845009F15A5B9FD7F45",
     "authority": "FIN-FSA",
     "memberState": "Finland",
     "services": [
@@ -2053,6 +2197,7 @@
   {
     "id": 145,
     "name": "CACEIS BANK",
+    "lei": "96950023SCR9X9F3L662",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2067,6 +2212,7 @@
   {
     "id": 146,
     "name": "COINSHARES ASSET MANAGEMENT",
+    "lei": "969500DBF3ZL9U0KUA51",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2080,6 +2226,7 @@
   {
     "id": 147,
     "name": "BITSTACK DIGITAL ASSETS SAS",
+    "lei": "894500RKZ3TVTPIF7V84",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2096,6 +2243,7 @@
   {
     "id": 148,
     "name": "METAL GEAR SAS",
+    "lei": "969500PQYLQG3CSJ5041",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2111,6 +2259,7 @@
   {
     "id": 149,
     "name": "DEBLOCK SAS",
+    "lei": "254900XTUI35BGIBXP21",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2125,6 +2274,7 @@
   {
     "id": 150,
     "name": "GOin SAS",
+    "lei": "894500LM6DICD790FQ34",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2143,6 +2293,7 @@
   {
     "id": 151,
     "name": "FINCTEK UE SAS",
+    "lei": "969500PTJJZTCE0I3B60",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2160,6 +2311,7 @@
   {
     "id": 152,
     "name": "RELAI EU SASU",
+    "lei": "9695003EKRFOMYXJQL11",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2172,6 +2324,7 @@
   {
     "id": 153,
     "name": "SOCIETE GENERALE - FORGE",
+    "lei": "969500FX8K40ZDW4F377",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2185,6 +2338,7 @@
   {
     "id": 154,
     "name": "BANQUE DELUBAC ET CIE",
+    "lei": "969500A4IPKVUBH3CA90",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2203,6 +2357,7 @@
   {
     "id": 155,
     "name": "COMETH SAS",
+    "lei": "894500R5KSX3ZKIHSA46",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2217,6 +2372,7 @@
   {
     "id": 156,
     "name": "FIPTO PI SAS",
+    "lei": "969500A0DYUNF5NX9R84",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2233,6 +2389,7 @@
   {
     "id": 157,
     "name": "HEXARQ SAS",
+    "lei": "969500TD4VXAOPXPVW02",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2249,6 +2406,7 @@
   {
     "id": 158,
     "name": "BLOCKNODES SAS",
+    "lei": "969500PZJWT3TD1SUI59",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2266,6 +2424,7 @@
   {
     "id": 159,
     "name": "CIRCLE INTERNET FINANCIAL EUROPE SAS",
+    "lei": "969500OYUDADGZKCR583",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2279,6 +2438,7 @@
   {
     "id": 160,
     "name": "DESKOIN SAS",
+    "lei": "969500QH6WD4FO79B261",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2296,6 +2456,7 @@
   {
     "id": 161,
     "name": "COINHOUSE SAS",
+    "lei": "969500E5GFHK2RKF8251",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2314,6 +2475,7 @@
   {
     "id": 162,
     "name": "QWARKS SAS",
+    "lei": "969500CMLNBIVUUD9A09",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2331,6 +2493,7 @@
   {
     "id": 163,
     "name": "PAYTOP SAS",
+    "lei": "969500VA4A8CRCS2N988",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2345,6 +2508,7 @@
   {
     "id": 164,
     "name": "RUFIJI CAPITAL SAS",
+    "lei": "969500FUWSKQEO5J7H72",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2361,6 +2525,7 @@
   {
     "id": 165,
     "name": "KEYROCK FR SAS",
+    "lei": "9845001BAFC53ODN8C90",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2377,6 +2542,7 @@
   {
     "id": 166,
     "name": "Bpifrance Investissement",
+    "lei": "96950082Z6KUVA6TW686",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2389,6 +2555,7 @@
   {
     "id": 167,
     "name": "RCUBE ASSET MANAGEMENT",
+    "lei": "529900X4PRL0DZNPT990",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2402,6 +2569,7 @@
   {
     "id": 168,
     "name": "PAYMIUM SAS",
+    "lei": "969500D241WXU9J7MI33",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2419,6 +2587,7 @@
   {
     "id": 169,
     "name": "LEONOD SARL",
+    "lei": "969500O878F3MGJCYV50",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2431,6 +2600,7 @@
   {
     "id": 170,
     "name": "MERIA SAS",
+    "lei": "969500UJSWU20FEXQ504",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2448,6 +2618,7 @@
   {
     "id": 171,
     "name": "ALPHACAP DIGITAL ASSETS SAS",
+    "lei": "969500ULPB59U51BG334",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2463,6 +2634,7 @@
   {
     "id": 172,
     "name": "FLOWDESK EUROPE SAS",
+    "lei": "984500AB011S3AEF6706",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2479,6 +2651,7 @@
   {
     "id": 173,
     "name": "APLO SAS",
+    "lei": "984500AB011S3AEF6706",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2495,6 +2668,7 @@
   {
     "id": 174,
     "name": "ICEBLOCK SAS",
+    "lei": "9695005CVRZDK63ZST85",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2509,6 +2683,7 @@
   {
     "id": 175,
     "name": "MEREAU FINANCE SAS",
+    "lei": "969500USEY22T9ZZRQ98",
     "authority": "AMF",
     "memberState": "France",
     "services": [
@@ -2522,6 +2697,7 @@
   {
     "id": 176,
     "name": "ELECTROCOIN Ltd for services",
+    "lei": "747800R015JVW1T4WZ71",
     "authority": "HANFA",
     "memberState": "Croatia",
     "services": [
@@ -2536,6 +2712,7 @@
   {
     "id": 177,
     "name": "WHITE TECH Limited liability company for services",
+    "lei": "254900S52YR70F0BK713",
     "authority": "HANFA",
     "memberState": "Croatia",
     "services": [
@@ -2551,6 +2728,7 @@
   {
     "id": 178,
     "name": "DIGITAL ASSETS Limited liability company for intermediation and services",
+    "lei": "984500NB7D12BC5B4A79",
     "authority": "HANFA",
     "memberState": "Croatia",
     "services": [
@@ -2568,6 +2746,7 @@
   {
     "id": 179,
     "name": "Bitblock Ltd. for Services",
+    "lei": "9845006A6CAABE4C0347",
     "authority": "HANFA",
     "memberState": "Croatia",
     "services": [
@@ -2580,6 +2759,7 @@
   {
     "id": 180,
     "name": "IN KAPITAL limited liability company for trade and services",
+    "lei": "747800O0P6DFI8RSKT10",
     "authority": "HANFA",
     "memberState": "Croatia",
     "services": [
@@ -2592,6 +2772,7 @@
   {
     "id": 181,
     "name": "Hrvatska poštanska banka d.d.",
+    "lei": "529900D5G4V6THXC5P79",
     "authority": "Croatian National Bank",
     "memberState": "Croatia",
     "services": [
@@ -2604,6 +2785,7 @@
   {
     "id": 182,
     "name": "Payward Global Solutions Limited",
+    "lei": "9845003D98SCC2851458",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2616,6 +2798,7 @@
   {
     "id": 183,
     "name": "Payward Europe Solutions Limited",
+    "lei": "254900641D8KNHUZYX24",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2635,6 +2818,7 @@
   {
     "id": 184,
     "name": "Legend Financial Ireland Limited",
+    "lei": "9845007FA1A8E1DE3989",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2648,6 +2832,7 @@
   {
     "id": 185,
     "name": "Push Virtual Assets Ireland Limited",
+    "lei": "635400NEDOJDEJEQZQ77",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2661,6 +2846,7 @@
   {
     "id": 186,
     "name": "Ramp Swaps (Ireland) Limited",
+    "lei": "",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2673,6 +2859,7 @@
   {
     "id": 187,
     "name": "Paysafe Payment Solutions Limited.",
+    "lei": "",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2688,6 +2875,7 @@
   {
     "id": 188,
     "name": "CoinJar Europe Limited",
+    "lei": "98450066Q3A1G1A4T786",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2703,6 +2891,7 @@
   {
     "id": 189,
     "name": "Confirmo Limited",
+    "lei": "984500F75CJ82D8B7D76",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2717,6 +2906,7 @@
   {
     "id": 190,
     "name": "Pionew Ireland Limited",
+    "lei": "984500FD0NZ8949F4363",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2732,6 +2922,7 @@
   {
     "id": 191,
     "name": "StoneX Digital International Limited",
+    "lei": "98450043FB90T6REA408",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2749,6 +2940,7 @@
   {
     "id": 192,
     "name": "Interactive Brokers Ireland Limited",
+    "lei": "5493001B9LDFCQUY9273",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2761,6 +2953,7 @@
   {
     "id": 193,
     "name": "Virtu Financial Ireland Limited",
+    "lei": "549300XG5LFGN1IGYC71",
     "authority": "CBI",
     "memberState": "Ireland",
     "services": [
@@ -2774,6 +2967,7 @@
   {
     "id": 194,
     "name": "Myntkaup ehf.",
+    "lei": "636700BAJ82J2GWSP231",
     "authority": "Central Bank of Iceland",
     "memberState": "Iceland",
     "services": [
@@ -2789,6 +2983,7 @@
   {
     "id": 195,
     "name": "CHECKSIG S.R.L. SOCIETÀ BENEFIT",
+    "lei": "8156006C715AAACC5D19",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2805,6 +3000,7 @@
   {
     "id": 196,
     "name": "OLLIV ITALIA S.R.L.",
+    "lei": "81560042B094A85D8F89",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2817,6 +3013,7 @@
   {
     "id": 197,
     "name": "RIV-DIGITAL S.R.L.",
+    "lei": "815600DCB0E8882D2314",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2831,6 +3028,7 @@
   {
     "id": 198,
     "name": "CONIO S.R.L.",
+    "lei": "8945000EH59XYZHK0B92",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2848,6 +3046,7 @@
   {
     "id": 199,
     "name": "BANCA SELLA",
+    "lei": "549300I7OIUB41P86L19",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2861,6 +3060,7 @@
   {
     "id": 200,
     "name": "CRYPTOSMART S.P.A.",
+    "lei": "815600C7E86B02BBE483",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2878,6 +3078,7 @@
   {
     "id": 201,
     "name": "YOUNG PLATFORM S.P.A.",
+    "lei": "815600F1E30AAB016171",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2897,6 +3098,7 @@
   {
     "id": 202,
     "name": "HODLIE S.R.L.",
+    "lei": "9845006D4F5D2E5F8554",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2910,6 +3112,7 @@
   {
     "id": 203,
     "name": "HERCLE S.R.L.",
+    "lei": "984500AEBA8A0HQ44988",
     "authority": "CONSOB",
     "memberState": "Italy",
     "services": [
@@ -2925,6 +3128,7 @@
   {
     "id": 204,
     "name": "ZEUS Anstalt für Vermögensverwaltung",
+    "lei": "529900QH6TWSXWH0XM44",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -2937,6 +3141,7 @@
   {
     "id": 205,
     "name": "LGT Bank AG",
+    "lei": "7KDSOB6Z0X4S67TMX170",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -2952,6 +3157,7 @@
   {
     "id": 206,
     "name": "Bank Frick AG",
+    "lei": "529900RQOBT3ZJMDRK43",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -2966,6 +3172,7 @@
   {
     "id": 207,
     "name": "Wyden Capital AG",
+    "lei": "391200DN4V2D0IBP3S36",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -2978,6 +3185,7 @@
   {
     "id": 208,
     "name": "Celsion Bank AG",
+    "lei": "529900QHHMJYY9QSAC33",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -2993,6 +3201,7 @@
   {
     "id": 209,
     "name": "RULEMATCH Europe AG",
+    "lei": "529900PEBGKH34UTD845",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -3007,6 +3216,7 @@
   {
     "id": 210,
     "name": "Floin AG",
+    "lei": "391200Z1YA45VPMIGP98",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -3023,6 +3233,7 @@
   {
     "id": 211,
     "name": "Bitcoin Suisse (Europe) AG",
+    "lei": "5067009TZLDD94Q3W662",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -3040,6 +3251,7 @@
   {
     "id": 212,
     "name": "Sygnum Europe AG",
+    "lei": "506700NPCDRP5LN89R92",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -3055,6 +3267,7 @@
   {
     "id": 213,
     "name": "SMART VALOR AG",
+    "lei": "254900S56908SP1E8O53",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -3071,6 +3284,7 @@
   {
     "id": 214,
     "name": "Kaiser Partner Privatbank AG",
+    "lei": "529900DPOQPLDSF3R482",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -3086,6 +3300,7 @@
   {
     "id": 215,
     "name": "Damoon Technology (Europe) AG",
+    "lei": "529900AAZRC5LYVR7134",
     "authority": "FMA",
     "memberState": "Liechtenstein",
     "services": [
@@ -3099,6 +3314,7 @@
   {
     "id": 216,
     "name": "Robinhood Europe UAB",
+    "lei": "254900GTP4UXQO1UMI36",
     "authority": "LSC",
     "memberState": "Lithuania",
     "services": [
@@ -3114,6 +3330,7 @@
   {
     "id": 217,
     "name": "UAB Decentralized",
+    "lei": "6488907MV9XAA08E4E40",
     "authority": "LSC",
     "memberState": "Lithuania",
     "services": [
@@ -3129,6 +3346,7 @@
   {
     "id": 218,
     "name": "Nuvei Liquidity UAB",
+    "lei": "894500IY99QLL9M0SR28",
     "authority": "LSC",
     "memberState": "Lithuania",
     "services": [
@@ -3144,6 +3362,7 @@
   {
     "id": 219,
     "name": "UAB Micar assets",
+    "lei": "894500R6HJP62BZX4M89",
     "authority": "LSC",
     "memberState": "Lithuania",
     "services": [
@@ -3161,6 +3380,7 @@
   {
     "id": 220,
     "name": "Newrails, UAB",
+    "lei": "875500ONK4E5XGIP7O24",
     "authority": "LSC",
     "memberState": "Lithuania",
     "services": [
@@ -3174,6 +3394,7 @@
   {
     "id": 221,
     "name": "UAB BLUE EMI LT",
+    "lei": "254900XFMACGD0L7AI73",
     "authority": "LSC",
     "memberState": "Lithuania",
     "services": [
@@ -3186,6 +3407,7 @@
   {
     "id": 222,
     "name": "Clearstream Banking S.A.",
+    "lei": "549300OL514RA0SXJJ44",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3198,6 +3420,7 @@
   {
     "id": 223,
     "name": "Bitstamp Europe S.A.",
+    "lei": "549300XIBGTJ0PLIEO72",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3216,6 +3439,7 @@
   {
     "id": 224,
     "name": "Coinbase Luxembourg S.A.",
+    "lei": "984500F14CA4571AAC11",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3234,6 +3458,7 @@
   {
     "id": 225,
     "name": "Zodia Custody (Europe) S.A.",
+    "lei": "213800K35A9YPYDQKB81",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3247,6 +3472,7 @@
   {
     "id": 226,
     "name": "Banking Circle S.A.",
+    "lei": "213800W1NGBLERUS6M39",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3261,6 +3487,7 @@
   {
     "id": 227,
     "name": "Swissquote Bank Europe SA",
+    "lei": "549300M2IHOB9P5WE714",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3275,6 +3502,7 @@
   {
     "id": 228,
     "name": "B2C2 Europe Sarl",
+    "lei": "969500OA6NVZB5BXAB29",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3289,6 +3517,7 @@
   {
     "id": 229,
     "name": "STOKR S.A.",
+    "lei": "984500BA521C5EMR1D63",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3302,6 +3531,7 @@
   {
     "id": 230,
     "name": "Standard Chartered Luxembourg S.A.",
+    "lei": "213800HAR45C9K18O294",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3315,6 +3545,7 @@
   {
     "id": 231,
     "name": "bitFlyer EUROPE S.A.",
+    "lei": "984500D4465EFA89EF38",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3331,6 +3562,7 @@
   {
     "id": 232,
     "name": "Bridge Building S.A.",
+    "lei": "254900MVWQXMF77YZP65",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3347,6 +3579,7 @@
   {
     "id": 233,
     "name": "CPS Europe S.A.",
+    "lei": "984500CFB88366E9B834",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3363,6 +3596,7 @@
   {
     "id": 234,
     "name": "Ripple Payments Europe S.A.",
+    "lei": "2549000KEHDV2LWRRZ45",
     "authority": "CSSF",
     "memberState": "Luxembourg",
     "services": [
@@ -3378,6 +3612,7 @@
   {
     "id": 235,
     "name": "BlockBen SIA",
+    "lei": "254900BBV7FA7LUG5913",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3394,6 +3629,7 @@
   {
     "id": 236,
     "name": "Nexdesk SIA",
+    "lei": "894500ISUYBQF9I7BE66",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3408,6 +3644,7 @@
   {
     "id": 237,
     "name": "SIA Paybis Europe",
+    "lei": "259400LUESNGU5XM2J49",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3425,6 +3662,7 @@
   {
     "id": 238,
     "name": "Neverless SIA",
+    "lei": "9845008O5EQ5A4B63R72",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3441,6 +3679,7 @@
   {
     "id": 239,
     "name": "Trek Technologies SIA",
+    "lei": "6488C2PNI17093U2YA18",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3457,6 +3696,7 @@
   {
     "id": 240,
     "name": "AS TWINO Investments",
+    "lei": "984500856AF4DF5FAT57",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3472,6 +3712,7 @@
   {
     "id": 241,
     "name": "SIA AlphaRoute",
+    "lei": "259400JCJJ78A4ZCXP93",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3489,6 +3730,7 @@
   {
     "id": 242,
     "name": "Hodleris SIA",
+    "lei": "648812ZREA1B126B8G06",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3504,6 +3746,7 @@
   {
     "id": 243,
     "name": "Bleap SIA",
+    "lei": "2549005P20R5UTQWNB80",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3517,6 +3760,7 @@
   {
     "id": 244,
     "name": "Nodu Digital, SIA",
+    "lei": "98450065E59FDCD93R40",
     "authority": "Latvijas Banka",
     "memberState": "Latvia",
     "services": [
@@ -3528,6 +3772,7 @@
   {
     "id": 245,
     "name": "OKX Europe Limited",
+    "lei": "54930069NLWEIGLHXU42",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3548,6 +3793,7 @@
   {
     "id": 246,
     "name": "BP23 CA Limited",
+    "lei": "984500DEID7B03J77118",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3565,6 +3811,7 @@
   {
     "id": 247,
     "name": "Foris DAX MT Limited",
+    "lei": "2549005CVR5HH70FDO07",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3582,6 +3829,7 @@
   {
     "id": 248,
     "name": "Zillion Bits Limited",
+    "lei": "254900FESD7AF56FOQ37",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3601,6 +3849,7 @@
   {
     "id": 249,
     "name": "Altarius Asset Management Limited",
+    "lei": "5299000X84JRI8MS7D35",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3614,6 +3863,7 @@
   {
     "id": 250,
     "name": "Gemini Intergalactic EU Ltd",
+    "lei": "2138002QAMX8PPKSO715",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3632,6 +3882,7 @@
   {
     "id": 251,
     "name": "Socios Europe Services Limited",
+    "lei": "984500EBA2E9980CDD80",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3648,6 +3899,7 @@
   {
     "id": 252,
     "name": "Gate Technology Limited",
+    "lei": "984500D6A0F945BB5A15",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3665,6 +3917,7 @@
   {
     "id": 253,
     "name": "Blue Cube (Malta) Limited",
+    "lei": "254900GDCT8070R2VV26",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3681,6 +3934,7 @@
   {
     "id": 254,
     "name": "Payhound Limited",
+    "lei": "9845001DD90AF543DC90",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3697,6 +3951,7 @@
   {
     "id": 255,
     "name": "Damex Digital LTD",
+    "lei": "9845008E8QA4CCFE5F68",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3713,6 +3968,7 @@
   {
     "id": 256,
     "name": "System Pay Services (Malta) Limited",
+    "lei": "984500640Z8ADE893D04",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3729,6 +3985,7 @@
   {
     "id": 257,
     "name": "Calamatta Cuschieri Investment Services Limited",
+    "lei": "391200EKTIW0OR813R66",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3742,6 +3999,7 @@
   {
     "id": 258,
     "name": "Olmipay Limited",
+    "lei": "984500F9M4XF7C5E5E25",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3759,6 +4017,7 @@
   {
     "id": 259,
     "name": "Stable Mint Ltd.",
+    "lei": "984500A64C0EA64BC554",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3772,6 +4031,7 @@
   {
     "id": 260,
     "name": "OP Digital Services Limited",
+    "lei": "213800ZWEHNKOCS3AC78",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3788,6 +4048,7 @@
   {
     "id": 261,
     "name": "Zap (Strike) Europe Limited",
+    "lei": "984500457TABOA3BZ224",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3803,6 +4064,7 @@
   {
     "id": 262,
     "name": "Legion Malta Limited",
+    "lei": "254900OPT54E6SDS6P25",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3818,6 +4080,7 @@
   {
     "id": 263,
     "name": "FalconX Limited",
+    "lei": "984500F6A0762F9LA923",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3834,6 +4097,7 @@
   {
     "id": 264,
     "name": "CF Technologies Ltd",
+    "lei": "98450091A6D61FB36406",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3849,6 +4113,7 @@
   {
     "id": 265,
     "name": "Everest Network Limited",
+    "lei": "984500C3A855AC77FE74",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3865,6 +4130,7 @@
   {
     "id": 266,
     "name": "Bequant Pro Limited",
+    "lei": "213800Y834JOMU87Z285",
     "authority": "MFSA",
     "memberState": "Malta",
     "services": [
@@ -3880,6 +4146,7 @@
   {
     "id": 267,
     "name": "MoonPay Europe B.V.",
+    "lei": "254900KXWAZ3B1340G26",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3894,6 +4161,7 @@
   {
     "id": 268,
     "name": "BitStaete B.V.",
+    "lei": "7245009PN18D4I1TKJ50",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3907,6 +4175,7 @@
   {
     "id": 269,
     "name": "Zebedee Europe B.V.",
+    "lei": "724500B2I1LR33CAWG54",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3921,6 +4190,7 @@
   {
     "id": 270,
     "name": "Hidden Road Partners CIV NL B.V.",
+    "lei": "549300OOZDNZ3F2XJW21",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3935,6 +4205,7 @@
   {
     "id": 271,
     "name": "AvianLabs Netherlands B.V.",
+    "lei": "894500KQLQQYOD1PPX55",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3949,6 +4220,7 @@
   {
     "id": 272,
     "name": "Vivid Money B.V.",
+    "lei": "7245009PWS7YLG3JPF78",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3962,6 +4234,7 @@
   {
     "id": 273,
     "name": "One Trading Exchange B.V.",
+    "lei": "984500AA963ED2BA8460",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3975,6 +4248,7 @@
   {
     "id": 274,
     "name": "Acheron Europe B.V.",
+    "lei": "699400TPXCI7R4A0NG65",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -3991,6 +4265,7 @@
   {
     "id": 275,
     "name": "BTC Direct Europe B.V.",
+    "lei": "724500C4D3LQAKCEZ198",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4005,6 +4280,7 @@
   {
     "id": 276,
     "name": "Bitvavo B.V.",
+    "lei": "724500MX2WBKDJP9HE56",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4019,6 +4295,7 @@
   {
     "id": 277,
     "name": "Amdax B.V.",
+    "lei": "724500T7PFN30PF3ZQ87",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4035,6 +4312,7 @@
   {
     "id": 278,
     "name": "Finst B.V.",
+    "lei": "724500UI8UD7HKGVJX65",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4050,6 +4328,7 @@
   {
     "id": 279,
     "name": "Decubate B.V.",
+    "lei": "894500ZVOL3A9LO8LN34",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4065,6 +4344,7 @@
   {
     "id": 280,
     "name": "Fiat Republic Netherlands B.V.",
+    "lei": "724500GVWT7QULV8CR59",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4078,6 +4358,7 @@
   {
     "id": 281,
     "name": "BLOX B.V.",
+    "lei": "724500Z8JCXSX3351I94",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4092,6 +4373,7 @@
   {
     "id": 282,
     "name": "EU Internet Ventures B.V.",
+    "lei": "",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4106,6 +4388,7 @@
   {
     "id": 283,
     "name": "zerohash europe B.V.",
+    "lei": "724500G7QSOMFR1GQA47",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4122,6 +4405,7 @@
   {
     "id": 284,
     "name": "Coinmerce B.V.",
+    "lei": "724500DMUDFJZNYNEF35",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4137,6 +4421,7 @@
   {
     "id": 285,
     "name": "Bitmymoney B.V.",
+    "lei": "724500H1WRSMD7CAS549",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4152,6 +4437,7 @@
   {
     "id": 286,
     "name": "Bitonic B.V.",
+    "lei": "7245001BEJ6U6AUU1S58",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4167,6 +4453,7 @@
   {
     "id": 287,
     "name": "Blockrise Capital B.V.",
+    "lei": "724500J6RZI9SE1AAP41",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4182,6 +4469,7 @@
   {
     "id": 288,
     "name": "Monflo B.V.",
+    "lei": "724500BUG93MDFGYQG03",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4196,6 +4484,7 @@
   {
     "id": 289,
     "name": "WEB3 Technology B.V.",
+    "lei": "",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4211,6 +4500,7 @@
   {
     "id": 290,
     "name": "D2X Group N.V.",
+    "lei": "7245002DD3GNFXPGPP93",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4223,6 +4513,7 @@
   {
     "id": 291,
     "name": "ClearBank Europe N.V.",
+    "lei": "724500EAW1MTCM9M1X68",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4237,6 +4528,7 @@
   {
     "id": 292,
     "name": "Change Securities B.V.",
+    "lei": "7245009PUAT6U71IXZ51",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4251,6 +4543,7 @@
   {
     "id": 293,
     "name": "Digital Currency Services B.V.",
+    "lei": "724500QZRWKCU8D2L569",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4265,6 +4558,7 @@
   {
     "id": 294,
     "name": "Webull Securities (Europe) B.V.",
+    "lei": "894500CUU8Y0ZBG8DX95",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4278,6 +4572,7 @@
   {
     "id": 295,
     "name": "BitPay B.V.",
+    "lei": "724500F2THLY5MHEIM78",
     "authority": "AFM",
     "memberState": "Netherlands",
     "services": [
@@ -4290,6 +4585,7 @@
   {
     "id": 296,
     "name": "AK JENSEN NORWAY AS",
+    "lei": "213800P6PW4AOVYZ8K05",
     "authority": "Finanstilsynet",
     "memberState": "Norway",
     "services": [
@@ -4303,6 +4599,7 @@
   {
     "id": 297,
     "name": "TÝR MARKETS AS",
+    "lei": "984500678DAPX7H3BC86",
     "authority": "Finanstilsynet",
     "memberState": "Norway",
     "services": [
@@ -4318,6 +4615,7 @@
   {
     "id": 298,
     "name": "FIRI AS",
+    "lei": "9845003B8462B18FHE35",
     "authority": "Finanstilsynet",
     "memberState": "Norway",
     "services": [
@@ -4335,6 +4633,7 @@
   {
     "id": 299,
     "name": "K33 MARKETS as",
+    "lei": "6367008S3JL8VVP6T689",
     "authority": "Finanstilsynet",
     "memberState": "Norway",
     "services": [
@@ -4349,6 +4648,7 @@
   {
     "id": 300,
     "name": "BARE BITCOIN AS",
+    "lei": "636700PFX3CY9R033H73",
     "authority": "Finanstilsynet",
     "memberState": "Norway",
     "services": [
@@ -4363,6 +4663,7 @@
   {
     "id": 301,
     "name": "NORWEGIAN BLOCK EXCHANGE AS",
+    "lei": "5493004WNVZP9EMYI834",
     "authority": "Finanstilsynet",
     "memberState": "Norway",
     "services": [
@@ -4381,6 +4682,7 @@
   {
     "id": 302,
     "name": "Bison Bank, S.A.",
+    "lei": "549300V4H4USWZUCE073",
     "authority": "Banco de Portugal",
     "memberState": "Portugal",
     "services": [
@@ -4400,6 +4702,7 @@
   {
     "id": 303,
     "name": "ILIRIKA borzno posredniška hiša d.d.",
+    "lei": "529900OSVFQK3XISEQ85",
     "authority": "ATVP",
     "memberState": "Slovenia",
     "services": [
@@ -4415,6 +4718,7 @@
   {
     "id": 304,
     "name": "INCREMENTUM družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o.",
+    "lei": "485100UM87L7ILR4L484",
     "authority": "ATVP",
     "memberState": "Slovenia",
     "services": [
@@ -4429,6 +4733,7 @@
   {
     "id": 305,
     "name": "Orcabay finančne storitve d.o.o.",
+    "lei": "485100OLL2HA92JDWC71",
     "authority": "ATVP",
     "memberState": "Slovenia",
     "services": [
@@ -4442,6 +4747,7 @@
   {
     "id": 306,
     "name": "Safello AB",
+    "lei": "894500QKMN1PCG2V7U40",
     "authority": "Finansinspektionen",
     "memberState": "Sweden",
     "services": [
@@ -4459,6 +4765,7 @@
   {
     "id": 307,
     "name": "Fintegence, s.r.o.",
+    "lei": "097900CAKA0000272448",
     "authority": "NBS",
     "memberState": "Slovakia",
     "services": [
@@ -4474,6 +4781,7 @@
   {
     "id": 308,
     "name": "FINTECH SK s. r. o.",
+    "lei": "31570000GC0U68O6PA08",
     "authority": "NBS",
     "memberState": "Slovakia",
     "services": [
@@ -4490,6 +4798,7 @@
   {
     "id": 309,
     "name": "FUMBI, s.r.o.",
+    "lei": "097900CAKA0000269926",
     "authority": "NBS",
     "memberState": "Slovakia",
     "services": [
@@ -4507,6 +4816,7 @@
   {
     "id": 310,
     "name": "Madison Six j. s. a.",
+    "lei": "097900CAKA0000249459",
     "authority": "NBS",
     "memberState": "Slovakia",
     "services": [
@@ -4525,6 +4835,7 @@
   {
     "id": 311,
     "name": "Firefish Europe s.r.o",
+    "lei": "9845004E55FCFA069549",
     "authority": "NBS",
     "memberState": "Slovakia",
     "services": [
@@ -4540,6 +4851,7 @@
   {
     "id": 312,
     "name": "Okazio s.r.o.",
+    "lei": "097900CAKA0000233454",
     "authority": "NBS",
     "memberState": "Slovakia",
     "services": [
