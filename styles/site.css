@@ -733,3 +733,65 @@ body {
 .kpi-red { --start-color: #dc2626; --end-color: #b91c1c; }
 .kpi-green { --start-color: #10b981; --end-color: #059669; }
 .kpi-yellow { --start-color: #f59e0b; --end-color: #d97706; }
+
+/* ============================================================
+   Grouped register view (Group by country)
+   A header row introduces each country group with its count.
+   ============================================================ */
+.rv-group-cell {
+  /* must remain a table cell: display:flex here would cancel colspan */
+  padding: 0.6rem 1rem;
+  background: #f1f5f9;
+  border-top: 1px solid rgba(148, 163, 184, 0.45);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.rv-group-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.rv-group-name {
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #334155;
+}
+
+.rv-group-count {
+  font-size: 0.8rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+/* The red-themed register gets a warm group header to match its table */
+.sticky-table-header.red ~ tbody .rv-group-cell,
+.data-table .rv-group-row.red .rv-group-cell {
+  background: #fff7ed;
+}
+
+@media (max-width: 640px) {
+  /* Rows become cards on mobile; the group header must stay a full-width
+     band rather than turning into another labelled card row. */
+  .data-table .rv-group-row {
+    display: block;
+    margin: 1.25rem 0 0.5rem;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .data-table .rv-group-row .rv-group-cell {
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .data-table .rv-group-row .rv-group-cell::before {
+    content: none;
+  }
+}

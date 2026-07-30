@@ -124,6 +124,8 @@
       searchLabel: 'Search CASPs by name, country, authority, service, or website',
       caption: 'Crypto-Asset Service Providers registered under MiCAR',
       filters: true,
+      countryKey: 'memberState',
+      unit: ['provider', 'providers'],
       columns: [
         { label: '#', width: '4%' },
         { label: 'CASP', width: '24%', sort: 'name' },
@@ -175,6 +177,8 @@
       searchLabel: 'Search EMT issuers by name, country, authority, or token',
       caption: 'Electronic Money Token issuers authorised under MiCAR',
       filters: false,
+      countryKey: 'state',
+      unit: ['issuer', 'issuers'],
       columns: [
         { label: 'Issuer', width: '26%', sort: 'issuer' },
         { label: 'Country', width: '20%', sort: 'state' },
@@ -226,6 +230,8 @@
       searchLabel: 'Search non-compliant entities by name, country, authority, or website',
       caption: 'Entities flagged as non-compliant by European regulators',
       filters: false,
+      countryKey: 'country',
+      unit: ['entity', 'entities'],
       columns: [
         { label: '#', width: '5%' },
         { label: 'Entity Name', width: '25%', sort: 'entity' },
@@ -326,6 +332,13 @@
   // (e.g. the non-compliant count shown on the CASP summary).
   let extraSummary = null;
   const sortState = { key: null, dir: 1 };
+  // Grouped view is reflected in the URL (?group=country) so a specific
+  // arrangement can be linked to and shared, not just screenshotted.
+  let groupByCountry = (function () {
+    try {
+      return new URLSearchParams(window.location.search).get('group') === 'country';
+    } catch (e) { return false; }
+  })();
 
   function sortRows(rows) {
     if (!sortState.key) return rows;
@@ -373,7 +386,37 @@
       return;
     }
     noResults.classList.add('hidden');
-    tbody.innerHTML = rows.map(function (item, i) { return cfg.row(item, i, all); }).join('');
+    tbody.innerHTML = groupByCountry ? groupedRowsHtml(rows) : rows.map(function (item, i) {
+      return cfg.row(item, i, all);
+    }).join('');
+  }
+
+  // Groups the current view by country, largest group first, with a labelled
+  // header row per country. Same data, arranged for scanning rather than
+  // filtering one country at a time.
+  function groupedRowsHtml(rows) {
+    const key = cfg.countryKey;
+    const groups = {};
+    rows.forEach(function (item) {
+      const country = (item[key] || '').trim() || 'Unknown';
+      (groups[country] = groups[country] || []).push(item);
+    });
+
+    const singular = (cfg.unit && cfg.unit[0]) || 'entry';
+    const plural = (cfg.unit && cfg.unit[1]) || 'entries';
+    const span = cfg.columns.length;
+
+    return Object.keys(groups).sort(function (a, b) {
+      return groups[b].length - groups[a].length || a.localeCompare(b, 'en');
+    }).map(function (country) {
+      const items = groups[country];
+      const header = '<tr class="rv-group-row"><td class="rv-group-cell" colspan="' + span + '">' +
+        '<div class="rv-group-inner">' +
+        '<span class="rv-group-name"><span aria-hidden="true">' + flag(country) + '</span> ' + esc(country) + '</span>' +
+        '<span class="rv-group-count">' + items.length + ' ' + (items.length === 1 ? singular : plural) + '</span>' +
+        '</div></td></tr>';
+      return header + items.map(function (item, i) { return cfg.row(item, i, all); }).join('');
+    }).join('');
   }
 
   function csvColumns() {
@@ -389,6 +432,7 @@
     const dlBtnColor = cfg.theme === 'red' ? 'bg-red-600 hover:bg-red-700' : 'bg-teal-600 hover:bg-teal-700';
     const jsonColor = cfg.theme === 'red' ? 'bg-red-100 text-red-800 hover:bg-red-200' : 'bg-teal-100 text-teal-800 hover:bg-teal-200';
     const ring = cfg.theme === 'red' ? 'focus:ring-red-500' : 'focus:ring-teal-500';
+    const groupOnColor = cfg.theme === 'red' ? 'bg-red-600 text-white hover:bg-red-700' : 'bg-teal-600 text-white hover:bg-teal-700';
     // Clear / CSV / JSON share one group so they stay on a single line
     // (they wrap together as a unit on narrow screens). The responsive
     // widths are handled in site.css via the rv-* marker classes rather
@@ -399,6 +443,7 @@
       '<input type="text" id="rvSearch" placeholder="' + esc(cfg.searchPlaceholder) + '" aria-label="' + esc(cfg.searchLabel) + '" class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 ' + ring + ' focus:border-transparent w-64">' +
       '<i class="fas fa-search absolute left-3 top-3 text-gray-400" aria-hidden="true"></i>' +
       '</div>' +
+      '<button id="rvGroup" type="button" aria-pressed="' + (groupByCountry ? 'true' : 'false') + '" class="px-4 py-2 rounded-lg transition-colors whitespace-nowrap ' + (groupByCountry ? groupOnColor : 'bg-gray-100 text-gray-700 hover:bg-gray-200') + '"><i class="fas fa-layer-group mr-1" aria-hidden="true"></i>Group by country</button>' +
       '<div class="rv-actions flex items-center gap-3">' +
       '<button id="rvClear" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors whitespace-nowrap"><i class="fas fa-times mr-1" aria-hidden="true"></i>Clear</button>' +
       '<button id="rvCsv" class="px-3 py-2 text-sm text-white rounded-lg transition-colors whitespace-nowrap ' + dlBtnColor + '"><i class="fas fa-download mr-1" aria-hidden="true"></i>CSV</button>' +
@@ -479,6 +524,25 @@
       document.getElementById('rvCountry').addEventListener('change', applyFilters);
       document.getElementById('rvService').addEventListener('change', applyFilters);
     }
+    const groupBtn = document.getElementById('rvGroup');
+    if (groupBtn) {
+      groupBtn.addEventListener('click', function () {
+        groupByCountry = !groupByCountry;
+        groupBtn.setAttribute('aria-pressed', groupByCountry ? 'true' : 'false');
+        const on = cfg.theme === 'red' ? 'bg-red-600 text-white hover:bg-red-700' : 'bg-teal-600 text-white hover:bg-teal-700';
+        groupBtn.className = 'px-4 py-2 rounded-lg transition-colors whitespace-nowrap ' +
+          (groupByCountry ? on : 'bg-gray-100 text-gray-700 hover:bg-gray-200');
+        // Keep the URL shareable without adding a history entry per toggle.
+        try {
+          const url = new URL(window.location.href);
+          if (groupByCountry) url.searchParams.set('group', 'country');
+          else url.searchParams.delete('group');
+          history.replaceState(null, '', url);
+        } catch (e) { /* non-fatal */ }
+        renderRows();
+      });
+    }
+
     document.getElementById('rvCsv').addEventListener('click', function () {
       downloadCsv(cfg.csvName, csvColumns(), sortRows(filtered));
     });
