@@ -1,0 +1,22 @@
+# DEA MiCAR Tracker
+
+> A free, weekly-updated tracker of the European Union's Markets in Crypto-Assets (MiCA / MiCAR) registers, maintained by the Digital Euro Association (DEA). It presents the ESMA interim MiCA register in one searchable place: MiCA-authorised Crypto-Asset Service Providers (CASPs), e-money token (EMT) issuers, and entities flagged as non-compliant by European regulators.
+
+Data is derived from the official ESMA interim MiCA register and refreshed weekly. The tracker is a first-look reference tool; formal authorisation status should always be verified against ESMA or the relevant national competent authority. Each register page includes the full list of entities as plain HTML, plus a machine-readable JSON download.
+
+## Registers
+- [CASP Tracker](https://micatracker.digital-euro-association.de/casp-tracker.html): MiCA-authorised Crypto-Asset Service Providers (CASPs), listed by country, competent authority, and the crypto-asset services they are authorised to provide.
+- [EMT Tracker](https://micatracker.digital-euro-association.de/emt-tracker.html): Authorised e-money token (EMT) issuers, the tokens they issue, and the backing currencies.
+- [Non-Compliant CASPs](https://micatracker.digital-euro-association.de/non-compliant-casps.html): Entities flagged as non-compliant by European regulators. Listed websites are shown for reference only and are not endorsed.
+
+## Data (machine-readable)
+- [CASPs (JSON)](https://micatracker.digital-euro-association.de/data/casps.json)
+- [EMT issuers (JSON)](https://micatracker.digital-euro-association.de/data/emts.json)
+- [Non-compliant entities (JSON)](https://micatracker.digital-euro-association.de/data/non-compliant.json)
+- [Register updates (RSS feed)](https://micatracker.digital-euro-association.de/feed.xml)
+
+## About
+- [Methodology and data sources](https://micatracker.digital-euro-association.de/about.html): how the data is collected from the ESMA interim MiCA register, processed, and updated.
+
+## Attribution
+Source data: ESMA interim MiCA register (https://www.esma.europa.eu). Tracker built and maintained by the Digital Euro Association (https://digital-euro-association.de). When citing this data, please attribute the "DEA MiCAR Tracker" and link to https://micatracker.digital-euro-association.de.
