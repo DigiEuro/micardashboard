@@ -821,14 +821,12 @@ function buildEntityFiles() {
     anomalies.forEach(item => { byType[item.type] = (byType[item.type] || 0) + 1; });
 
     writeJsonFile(ENTITIES_FILE, {
-        generated: new Date().toISOString(),
         sourceRows: casps.length,
         entityCount: entities.length,
         keyedByLei: entities.filter(e => e.keySource === 'lei').length,
         entities
     });
     writeJsonFile(ANOMALIES_FILE, {
-        generated: new Date().toISOString(),
         total: anomalies.length,
         byType,
         anomalies
@@ -900,8 +898,11 @@ function writeSnapshotsIndex() {
         };
     });
 
+    // No wall-clock "generated" field: it changed on every run even when the
+    // data did not, which rewrote the file each cycle (churn) and guaranteed a
+    // merge conflict between any two branches. Freshness lives in
+    // data/snapshot.json (lastUpdated); these files describe content only.
     writeJsonFile(SNAPSHOTS_INDEX_FILE, {
-        generated: new Date().toISOString(),
         earliest: dates[0] || null,
         latest: dates[dates.length - 1] || null,
         count: dates.length,
