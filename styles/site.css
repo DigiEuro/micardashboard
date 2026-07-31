@@ -746,11 +746,48 @@ body {
   border-bottom: 1px solid rgba(148, 163, 184, 0.45);
 }
 
-.rv-group-inner {
+.rv-group-inner,
+.rv-group-toggle {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
+  width: 100%;
+}
+
+/* The group header is a real button so it is keyboard operable */
+.rv-group-toggle {
+  font: inherit;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rv-group-toggle:hover .rv-group-name,
+.rv-group-toggle:focus-visible .rv-group-name {
+  text-decoration: underline;
+}
+
+.rv-group-chevron {
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: transform 0.15s ease;
+  color: #64748b;
+}
+
+.rv-group-closed .rv-group-chevron {
+  transform: rotate(0deg);
+}
+
+/* Collapsed rows: hidden without re-rendering the table */
+.data-table tr.rv-row-hidden {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv-group-chevron { transition: none; }
 }
 
 .rv-group-name {
@@ -794,4 +831,12 @@ body {
   .data-table .rv-group-row .rv-group-cell::before {
     content: none;
   }
+}
+
+/* Note shown when a grouping places one row in several groups */
+.rv-group-note {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  background: #f8fafc;
 }
