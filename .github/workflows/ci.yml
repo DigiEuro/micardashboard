@@ -20,6 +20,27 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '22'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Check the committed Tailwind CSS is up to date
+      # styles/tailwind.css is committed and served as-is. If it is stale, any
+      # utility class used in the markup but absent from the build silently
+      # does nothing - no error, the page just renders subtly wrong. That has
+      # caused three visual bugs (gap-2 twice, sm:* once), so the build is now
+      # verified rather than trusted.
+      run: |
+        cp styles/tailwind.css /tmp/tailwind.committed.css
+        npm run build:css
+        if ! diff -q /tmp/tailwind.committed.css styles/tailwind.css > /dev/null; then
+          echo "::error::styles/tailwind.css is out of date. Run 'npm run build:css' and commit the result."
+          echo "--- classes a fresh build would add or remove ---"
+          diff /tmp/tailwind.committed.css styles/tailwind.css | grep -E '^[<>] \.' | sort -u | head -40
+          exit 1
+        fi
+        echo "Tailwind CSS is up to date."
 
     - name: Syntax-check scripts
       run: |
