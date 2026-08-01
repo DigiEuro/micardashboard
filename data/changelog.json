@@ -1,5 +1,36 @@
 [
   {
+    "date": "2026-08-01",
+    "timestamp": "2026-08-01T16:11:38.876Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "PM MTF LTD (Cyprus)",
+          "Aquilla Nummus Ltd (Cyprus)",
+          "Cloverum Finance (CY) Limited (Cyprus)",
+          "Volksbank Raiffeisenbank Oberbayern Südost eG (Germany)",
+          "VR Bank Schleswig-Holstein Mitte eG (Germany)",
+          "VR-Bank Landau-Mengkofen eG (Germany)",
+          "BASQUE PAY, S.L. (Spain)",
+          "FINTECH PAYMENTS PSC, S.L. (Spain)",
+          "FINARY SAS (France)",
+          "WOORTON SAS (France)",
+          "BLOCKCHAIN PROCESS SECURITY (B.P.S.) SAS (France)",
+          "SHARES FINANCIAL ASSETS SAS (France)"
+        ],
+        "removed": []
+      },
+      "nonCompliant": {
+        "added": [
+          "Cervo Rendisco (Italy)",
+          "Flandenzo (Italy)",
+          "Corona Fondenza (Italy)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-07-24",
     "timestamp": "2026-07-24T14:27:21.453Z",
     "changes": {

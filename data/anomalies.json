@@ -1,12 +1,11 @@
 {
   "total": 106,
   "byType": {
-    "malformed_url": 89,
-    "exact_duplicate": 1,
+    "malformed_url": 91,
     "encoding_artefact": 3,
     "non_url_in_website_field": 7,
     "repeated_service_code": 2,
-    "multi_authorisation": 4
+    "multi_authorisation": 3
   },
   "anomalies": [
     {
@@ -171,33 +170,22 @@
     },
     {
       "type": "malformed_url",
+      "entityKey": "213800IWLH982X74LO71",
+      "name": "Cloverum Finance (CY) Limited",
+      "country": "Cyprus",
+      "detail": "Website value \"www.cloverum.com\" was repaired to \"https://www.cloverum.com\".",
+      "values": [
+        "www.cloverum.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
       "entityKey": "64880741U1SN9TUWJ897",
       "name": "Invity Finance s.r.o.",
       "country": "Czechia",
       "detail": "Website value \"www.invity.io\" was repaired to \"https://www.invity.io\".",
       "values": [
         "www.invity.io"
-      ]
-    },
-    {
-      "type": "malformed_url",
-      "entityKey": "984500DCB2AF415E5Y71",
-      "name": "NAGA X",
-      "country": "Cyprus",
-      "detail": "Website value \"www.nagax.com/eu/\" was repaired to \"https://www.nagax.com/eu/\".",
-      "values": [
-        "www.nagax.com/eu/"
-      ]
-    },
-    {
-      "type": "exact_duplicate",
-      "entityKey": "984500DCB2AF415E5Y71",
-      "name": "NAGA X",
-      "country": "Cyprus",
-      "detail": "Identical to source row #31. Both rows are retained.",
-      "values": [
-        "41",
-        "31"
       ]
     },
     {
@@ -599,6 +587,26 @@
       "detail": "Website value \"www.rbfalkenstein-woerth.de\" was repaired to \"https://www.rbfalkenstein-woerth.de\".",
       "values": [
         "www.rbfalkenstein-woerth.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "5299005O2LPWV9IP2Z21",
+      "name": "Volksbank Raiffeisenbank Oberbayern Südost eG",
+      "country": "Germany",
+      "detail": "Website value \"www-vrbank-obb-so.de\" was repaired to \"https://www-vrbank-obb-so.de\".",
+      "values": [
+        "www-vrbank-obb-so.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900E9AS5RG8YBF660",
+      "name": "VR-Bank Landau-Mengkofen eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vrbanklm.de\" was repaired to \"https://www.vrbanklm.de\".",
+      "values": [
+        "www.vrbanklm.de"
       ]
     },
     {
@@ -1029,16 +1037,6 @@
       "detail": "Website value \"www.safello.com\" was repaired to \"https://www.safello.com\".",
       "values": [
         "www.safello.com"
-      ]
-    },
-    {
-      "type": "multi_authorisation",
-      "entityKey": "984500DCB2AF415E5Y71",
-      "name": "NAGA X",
-      "country": "Cyprus",
-      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
-      "values": [
-        "NAGA X"
       ]
     },
     {
