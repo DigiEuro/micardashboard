@@ -43,6 +43,22 @@
   rewritten (citations must stay stable). `scripts/backfill-snapshots.js`
   reconstructs historic snapshots from git history; it is a one-off and safe
   to re-run.
+- `scripts/normalise.js` resolves authorisation **records** into legal
+  **entities** and emits `data/entities.json` + `data/anomalies.json`.
+  Entity key: LEI where present (~98% of CASPs), else a hash of normalised
+  name + country, with a unique slug alongside. **Hard rule: nothing is ever
+  deleted** — every source row survives as an authorisation record, and values
+  that fail validation are preserved verbatim (`websitesRaw`, `servicesRaw`)
+  next to a typed anomaly. Reconciliation (source rows == authorisation
+  records) is enforced in the updater and in CI; a mismatch fails the build.
+  Tests: `npm run test:normalise`.
+- `styles/tailwind.css` is **committed and served as-is**, so it must be
+  rebuilt whenever a Tailwind utility class is added to any scanned file
+  (`./*.html`, `assets/js/**`, `scripts/**`). A class the build does not
+  contain silently does nothing — no error, the page just renders wrong.
+  Run `npm run build:css` and commit the result; `npm run check:css`
+  verifies it locally and CI fails on a stale file. Prefer hand-authored
+  rules in `styles/site.css` for anything structural.
 - Security invariants: `esc()` on all `innerHTML` interpolation;
   `safeHttpUrl()` for links; non-compliant entity websites are rendered as
   plain text, never links. CSP allows only self + Umami.

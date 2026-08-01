@@ -124,6 +124,10 @@
       searchLabel: 'Search CASPs by name, country, authority, service, or website',
       caption: 'Crypto-Asset Service Providers registered under MiCAR',
       filters: true,
+      unit: ['provider', 'providers'],
+      groupOptions: [
+        { key: 'country', label: 'Country', values: function (r) { return [(r.memberState || '').trim() || 'Unknown']; } }
+      ],
       columns: [
         { label: '#', width: '4%' },
         { label: 'CASP', width: '24%', sort: 'name' },
@@ -175,6 +179,23 @@
       searchLabel: 'Search EMT issuers by name, country, authority, or token',
       caption: 'Electronic Money Token issuers authorised under MiCAR',
       filters: false,
+      unit: ['issuer', 'issuers'],
+      groupOptions: [
+        { key: 'country', label: 'Country', values: function (r) { return [(r.state || '').trim() || 'Unknown']; } },
+        {
+          key: 'currency',
+          label: 'Backing currency',
+          // An issuer may back several currencies, so it appears under each.
+          multi: true,
+          values: function (r) {
+            const standard = { id: 1, issuer: 1, state: 1, authority: 1, tokens: 1, count: 1 };
+            const found = Object.keys(r || {})
+              .filter(function (k) { return !standard[k] && Number(r[k]) > 0; })
+              .map(function (k) { return k.toUpperCase(); });
+            return found.length ? found : ['Not specified'];
+          }
+        }
+      ],
       columns: [
         { label: 'Issuer', width: '26%', sort: 'issuer' },
         { label: 'Country', width: '20%', sort: 'state' },
@@ -226,6 +247,10 @@
       searchLabel: 'Search non-compliant entities by name, country, authority, or website',
       caption: 'Entities flagged as non-compliant by European regulators',
       filters: false,
+      unit: ['entity', 'entities'],
+      groupOptions: [
+        { key: 'country', label: 'Country', values: function (r) { return [(r.country || '').trim() || 'Unknown']; } }
+      ],
       columns: [
         { label: '#', width: '5%' },
         { label: 'Entity Name', width: '25%', sort: 'entity' },
@@ -326,6 +351,34 @@
   // (e.g. the non-compliant count shown on the CASP summary).
   let extraSummary = null;
   const sortState = { key: null, dir: 1 };
+  // Grouped view is reflected in the URL (?group=country) so a specific
+  // arrangement can be linked to and shared, not just screenshotted.
+  const groupOptions = cfg.groupOptions || [];
+  let groupBy = (function () {
+    try {
+      const requested = new URLSearchParams(window.location.search).get('group');
+      return groupOptions.some(function (o) { return o.key === requested; }) ? requested : '';
+    } catch (e) { return ''; }
+  })();
+
+  // Collapsed group labels. Long registers start collapsed so the grouped view
+  // opens as a scannable index (26 countries) rather than 300+ rows; short ones
+  // stay open because there is nothing to scroll past.
+  const COLLAPSE_THRESHOLD = 40;
+  let collapsed = new Set();
+  let collapseInitialised = false;
+
+  function currentGroupOption() {
+    for (let i = 0; i < groupOptions.length; i++) {
+      if (groupOptions[i].key === groupBy) return groupOptions[i];
+    }
+    return null;
+  }
+
+  // Stable DOM id fragment for a group label (labels contain spaces/accents).
+  function groupId(label) {
+    return String(label).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'group';
+  }
 
   function sortRows(rows) {
     if (!sortState.key) return rows;
@@ -373,7 +426,96 @@
       return;
     }
     noResults.classList.add('hidden');
-    tbody.innerHTML = rows.map(function (item, i) { return cfg.row(item, i, all); }).join('');
+    if (groupBy && currentGroupOption()) {
+      tbody.innerHTML = groupedRowsHtml(rows);
+      applyCollapsedState();
+    } else {
+      tbody.innerHTML = rows.map(function (item, i) { return cfg.row(item, i, all); }).join('');
+    }
+    const expandBtn = document.getElementById('rvExpandAll');
+    if (expandBtn) expandBtn.classList.toggle('hidden', !groupBy);
+  }
+
+  // Groups the current view using the selected dimension. An option may be
+  // `multi` (a row belongs to several groups, e.g. an issuer backing both EUR
+  // and USD); such rows deliberately appear under each, which is stated in the
+  // UI so the totals are not read as duplicates.
+  function buildGroups(rows) {
+    const option = currentGroupOption();
+    const groups = {};
+    rows.forEach(function (item) {
+      (option.values(item) || []).forEach(function (label) {
+        const key = String(label || '').trim() || 'Unknown';
+        (groups[key] = groups[key] || []).push(item);
+      });
+    });
+    return groups;
+  }
+
+  function groupedRowsHtml(rows) {
+    const option = currentGroupOption();
+    const groups = buildGroups(rows);
+    const labels = Object.keys(groups).sort(function (a, b) {
+      return groups[b].length - groups[a].length || a.localeCompare(b, 'en');
+    });
+
+    // First render after a grouping change decides the default open/closed
+    // state; user choices after that are preserved.
+    if (!collapseInitialised) {
+      collapsed = new Set(rows.length > COLLAPSE_THRESHOLD ? labels : []);
+      collapseInitialised = true;
+    }
+
+    const singular = (cfg.unit && cfg.unit[0]) || 'entry';
+    const plural = (cfg.unit && cfg.unit[1]) || 'entries';
+    const span = cfg.columns.length;
+    const showFlag = option.key === 'country';
+
+    const multiNote = option.multi
+      ? '<tr class="rv-group-note-row"><td colspan="' + span + '" class="rv-group-note">' +
+        esc('Some ' + plural + ' appear in more than one group, so the group counts add up to more than the ' +
+            rows.length + ' ' + (rows.length === 1 ? singular : plural) + ' shown.') +
+        '</td></tr>'
+      : '';
+
+    return multiNote + labels.map(function (label) {
+      const items = groups[label];
+      const id = groupId(label);
+      const isOpen = !collapsed.has(label);
+      const icon = showFlag ? '<span aria-hidden="true">' + flag(label) + '</span> ' : '';
+
+      const header = '<tr class="rv-group-row"><td class="rv-group-cell" colspan="' + span + '">' +
+        '<button type="button" class="rv-group-toggle" data-group="' + esc(label) + '"' +
+        ' aria-expanded="' + (isOpen ? 'true' : 'false') + '" aria-controls="rvg-' + id + '">' +
+        '<span class="rv-group-name"><span class="rv-group-chevron" aria-hidden="true">▸</span> ' + icon + esc(label) + '</span>' +
+        '<span class="rv-group-count">' + items.length + ' ' + (items.length === 1 ? singular : plural) + '</span>' +
+        '</button></td></tr>';
+
+      const body = items.map(function (item, i) {
+        return cfg.row(item, i, all)
+          .replace('<tr ', '<tr data-group-body="' + esc(label) + '" ');
+      }).join('');
+
+      return header + body;
+    }).join('');
+  }
+
+  // Hide/show rows without re-rendering the table.
+  function applyCollapsedState() {
+    root.querySelectorAll('[data-group-body]').forEach(function (tr) {
+      tr.classList.toggle('rv-row-hidden', collapsed.has(tr.getAttribute('data-group-body')));
+    });
+    root.querySelectorAll('.rv-group-toggle').forEach(function (btn) {
+      const open = !collapsed.has(btn.getAttribute('data-group'));
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.closest('tr').classList.toggle('rv-group-closed', !open);
+    });
+    const expandBtn = document.getElementById('rvExpandAll');
+    if (expandBtn) {
+      const anyClosed = collapsed.size > 0;
+      expandBtn.textContent = anyClosed ? 'Expand all' : 'Collapse all';
+      expandBtn.dataset.action = anyClosed ? 'expand' : 'collapse';
+    }
   }
 
   function csvColumns() {
@@ -399,11 +541,26 @@
       '<input type="text" id="rvSearch" placeholder="' + esc(cfg.searchPlaceholder) + '" aria-label="' + esc(cfg.searchLabel) + '" class="search-input pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-2 ' + ring + ' focus:border-transparent w-64">' +
       '<i class="fas fa-search absolute left-3 top-3 text-gray-400" aria-hidden="true"></i>' +
       '</div>' +
+      groupControlsHtml() +
       '<div class="rv-actions flex items-center gap-3">' +
       '<button id="rvClear" class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors whitespace-nowrap"><i class="fas fa-times mr-1" aria-hidden="true"></i>Clear</button>' +
       '<button id="rvCsv" class="px-3 py-2 text-sm text-white rounded-lg transition-colors whitespace-nowrap ' + dlBtnColor + '"><i class="fas fa-download mr-1" aria-hidden="true"></i>CSV</button>' +
       '<a href="' + cfg.jsonHref + '" download="' + cfg.jsonName + '" class="px-3 py-2 text-sm rounded-lg transition-colors whitespace-nowrap font-semibold ' + jsonColor + '"><i class="fas fa-download mr-1" aria-hidden="true"></i>JSON</a>' +
       '</div></div>';
+  }
+
+  function groupControlsHtml() {
+    if (!groupOptions.length) return '';
+    const opts = ['<option value="">No grouping</option>'].concat(groupOptions.map(function (o) {
+      return '<option value="' + esc(o.key) + '"' + (o.key === groupBy ? ' selected' : '') + '>' + esc(o.label) + '</option>';
+    })).join('');
+    const expandBtn = '<button id="rvExpandAll" type="button" data-action="expand" class="' +
+      (groupBy ? '' : 'hidden ') +
+      'px-3 py-2 text-sm bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors whitespace-nowrap">Expand all</button>';
+    return '<label class="rv-group-control inline-flex items-center gap-2 text-sm text-gray-600">' +
+      '<span class="whitespace-nowrap">Group by</span>' +
+      '<select id="rvGroup" aria-label="Group the register by" class="search-input px-3 py-2 rounded-lg border border-gray-300">' + opts + '</select>' +
+      '</label>' + expandBtn;
   }
 
   function tableHtml() {
@@ -479,6 +636,48 @@
       document.getElementById('rvCountry').addEventListener('change', applyFilters);
       document.getElementById('rvService').addEventListener('change', applyFilters);
     }
+    const groupSelect = document.getElementById('rvGroup');
+    if (groupSelect) {
+      groupSelect.addEventListener('change', function () {
+        groupBy = groupSelect.value;
+        collapseInitialised = false; // re-decide the default for the new grouping
+        collapsed = new Set();
+        // Keep the URL shareable without adding a history entry per change.
+        try {
+          const url = new URL(window.location.href);
+          if (groupBy) url.searchParams.set('group', groupBy);
+          else url.searchParams.delete('group');
+          history.replaceState(null, '', url);
+        } catch (e) { /* non-fatal */ }
+        renderRows();
+      });
+    }
+
+    // Delegated so it survives re-renders of the table body.
+    const tbodyEl = document.getElementById('rvTbody');
+    if (tbodyEl) {
+      tbodyEl.addEventListener('click', function (event) {
+        const btn = event.target.closest('.rv-group-toggle');
+        if (!btn) return;
+        const label = btn.getAttribute('data-group');
+        if (collapsed.has(label)) collapsed.delete(label);
+        else collapsed.add(label);
+        applyCollapsedState();
+      });
+    }
+
+    const expandAll = document.getElementById('rvExpandAll');
+    if (expandAll) {
+      expandAll.addEventListener('click', function () {
+        if (expandAll.dataset.action === 'expand') {
+          collapsed = new Set();
+        } else {
+          collapsed = new Set(Object.keys(buildGroups(sortRows(filtered))));
+        }
+        applyCollapsedState();
+      });
+    }
+
     document.getElementById('rvCsv').addEventListener('click', function () {
       downloadCsv(cfg.csvName, csvColumns(), sortRows(filtered));
     });

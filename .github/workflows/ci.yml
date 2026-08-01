@@ -20,6 +20,27 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '22'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Check the committed Tailwind CSS is up to date
+      # styles/tailwind.css is committed and served as-is. If it is stale, any
+      # utility class used in the markup but absent from the build silently
+      # does nothing - no error, the page just renders subtly wrong. That has
+      # caused three visual bugs (gap-2 twice, sm:* once), so the build is now
+      # verified rather than trusted.
+      run: |
+        cp styles/tailwind.css /tmp/tailwind.committed.css
+        npm run build:css
+        if ! diff -q /tmp/tailwind.committed.css styles/tailwind.css > /dev/null; then
+          echo "::error::styles/tailwind.css is out of date. Run 'npm run build:css' and commit the result."
+          echo "--- classes a fresh build would add or remove ---"
+          diff /tmp/tailwind.committed.css styles/tailwind.css | grep -E '^[<>] \.' | sort -u | head -40
+          exit 1
+        fi
+        echo "Tailwind CSS is up to date."
 
     - name: Syntax-check scripts
       run: |
@@ -76,6 +97,32 @@ jobs:
             if (!Array.isArray(parsed)) throw new Error(f + ' is not an array');
           }
           console.log('data files OK');
+        "
+
+    - name: Test entity resolution and normalisation
+      run: npm run test:normalise
+
+    - name: Check entities reconcile against the source register
+      # The hard rule: no source row may be silently dropped. If the
+      # authorisation count ever diverges from the CASP row count, the
+      # pipeline has lost data and must not publish.
+      run: |
+        node -e "
+          const fs = require('fs');
+          const casps = JSON.parse(fs.readFileSync('data/casps.json', 'utf8'));
+          const ent = JSON.parse(fs.readFileSync('data/entities.json', 'utf8'));
+          const total = ent.entities.reduce((n, e) => n + e.authorisations.length, 0);
+          if (total !== casps.length) {
+            throw new Error('reconciliation failed: ' + casps.length + ' source rows vs ' + total + ' authorisation records');
+          }
+          if (ent.sourceRows !== casps.length) {
+            throw new Error('entities.json sourceRows is stale');
+          }
+          const slugs = ent.entities.map(e => e.slug);
+          if (new Set(slugs).size !== slugs.length) throw new Error('duplicate entity slugs');
+          const keys = ent.entities.map(e => e.entityKey);
+          if (new Set(keys).size !== keys.length) throw new Error('duplicate entity keys');
+          console.log('entities OK: ' + ent.entities.length + ' entities from ' + casps.length + ' records');
         "
 
     - name: Check the snapshot archive is intact

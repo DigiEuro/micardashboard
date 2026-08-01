@@ -733,3 +733,138 @@ body {
 .kpi-red { --start-color: #dc2626; --end-color: #b91c1c; }
 .kpi-green { --start-color: #10b981; --end-color: #059669; }
 .kpi-yellow { --start-color: #f59e0b; --end-color: #d97706; }
+
+/* ============================================================
+   Grouped register view (Group by country)
+   A header row introduces each country group with its count.
+   ============================================================ */
+.rv-group-cell {
+  /* must remain a table cell: display:flex here would cancel colspan */
+  padding: 0.6rem 1rem;
+  background: #f1f5f9;
+  border-top: 1px solid rgba(148, 163, 184, 0.45);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.rv-group-inner,
+.rv-group-toggle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* The group header is a real button so it is keyboard operable */
+.rv-group-toggle {
+  font: inherit;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.rv-group-toggle:hover .rv-group-name,
+.rv-group-toggle:focus-visible .rv-group-name {
+  text-decoration: underline;
+}
+
+.rv-group-chevron {
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: transform 0.15s ease;
+  color: #64748b;
+}
+
+.rv-group-closed .rv-group-chevron {
+  transform: rotate(0deg);
+}
+
+/* Collapsed rows: hidden without re-rendering the table */
+.data-table tr.rv-row-hidden {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv-group-chevron { transition: none; }
+}
+
+.rv-group-name {
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #334155;
+}
+
+.rv-group-count {
+  font-size: 0.8rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+/* The red-themed register gets a warm group header to match its table */
+.sticky-table-header.red ~ tbody .rv-group-cell,
+.data-table .rv-group-row.red .rv-group-cell {
+  background: #fff7ed;
+}
+
+@media (max-width: 640px) {
+  /* Rows become cards on mobile; the group header must stay a full-width
+     band rather than turning into another labelled card row. */
+  .data-table .rv-group-row {
+    display: block;
+    margin: 1.25rem 0 0.5rem;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .data-table .rv-group-row .rv-group-cell {
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(148, 163, 184, 0.45);
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .data-table .rv-group-row .rv-group-cell::before {
+    content: none;
+  }
+}
+
+/* Note shown when a grouping places one row in several groups */
+.rv-group-note {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  background: #f8fafc;
+}
+
+/* ============================================================
+   Register control refinements
+   Spacing is set here rather than with Tailwind gap-* utilities:
+   the committed tailwind.css is not rebuilt in CI, so a class it
+   does not already contain silently does nothing.
+   ============================================================ */
+.rv-group-control {
+  gap: 0.5rem;
+}
+
+/* Custom select chevron. The native arrow sits hard against the right
+   edge of the box; drawing it ourselves lets it sit inside the padding
+   and match the rest of the controls. */
+select.search-input {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 6.5l4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 0.85rem;
+  padding-right: 2.25rem;
+}
+
+/* Keep the arrow legible where the select sits on a tinted backdrop */
+select.search-input:hover {
+  background-color: rgba(255, 255, 255, 0.98);
+}

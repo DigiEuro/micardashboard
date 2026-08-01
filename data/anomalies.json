@@ -1,0 +1,1076 @@
+{
+  "total": 106,
+  "byType": {
+    "malformed_url": 89,
+    "exact_duplicate": 1,
+    "encoding_artefact": 3,
+    "non_url_in_website_field": 7,
+    "repeated_service_code": 2,
+    "multi_authorisation": 4
+  },
+  "anomalies": [
+    {
+      "type": "malformed_url",
+      "entityKey": "6B2PBRV1FCJDMR45RZ53",
+      "name": "KBC Bank NV",
+      "country": "Belgium",
+      "detail": "Website value \"www.kbc.com\" was repaired to \"https://www.kbc.com\".",
+      "values": [
+        "www.kbc.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "MMYX0N4ZEZ13Z4XCG897",
+      "name": "BNY SA/NV",
+      "country": "Belgium",
+      "detail": "Website value \"www.bny.com\" was repaired to \"https://www.bny.com\".",
+      "values": [
+        "www.bny.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "213800GIFQMSV7HROS23",
+      "name": "eToro (Europe) Ltd",
+      "country": "Cyprus",
+      "detail": "Website value \"www.etoro.com\" was repaired to \"https://www.etoro.com\".",
+      "values": [
+        "www.etoro.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "21380045KC28948FNE32",
+      "name": "Trading 212 Markets Ltd",
+      "country": "Cyprus",
+      "detail": "Website value \"www.trading212.com\" was repaired to \"https://www.trading212.com\".",
+      "values": [
+        "www.trading212.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "636700PBO692C1R9V561",
+      "name": "TEROXX DIGITAL ASSET LTD",
+      "country": "Cyprus",
+      "detail": "Website value \"www.teroxx.com\" was repaired to \"https://www.teroxx.com\".",
+      "values": [
+        "www.teroxx.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500C46B3B7B69Y904",
+      "name": "CAPITAL VAULT LTD",
+      "country": "Cyprus",
+      "detail": "Website value \"www.capital.com\" was repaired to \"https://www.capital.com\".",
+      "values": [
+        "www.capital.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500EBL33F46CBF732",
+      "name": "PELICAN EXCHANGE EUROPE (CY) LTD",
+      "country": "Cyprus",
+      "detail": "Website value \"www.pelicaneu.com\" was repaired to \"https://www.pelicaneu.com\".",
+      "values": [
+        "www.pelicaneu.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "25490004TC93R20KW073",
+      "name": "Noemon Finance Ltd",
+      "country": "Cyprus",
+      "detail": "Website value \"www.noemon.finance\" was repaired to \"https://www.noemon.finance\".",
+      "values": [
+        "www.noemon.finance"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "213800QT8WZK738XGX35",
+      "name": "Trading.com Markets EU Ltd",
+      "country": "Cyprus",
+      "detail": "Website value \"www.trading.com/eu\" was repaired to \"https://www.trading.com/eu\".",
+      "values": [
+        "www.trading.com/eu"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "213800186TP6OZSHUV17",
+      "name": "J2TX Ltd",
+      "country": "Cyprus",
+      "detail": "Website value \"www.j2tx.com\" was repaired to \"https://www.j2tx.com\".",
+      "values": [
+        "www.j2tx.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "254900K8AF5VMJFMZN69",
+      "name": "S.K. DASK KRYPTO LTD",
+      "country": "Cyprus",
+      "detail": "Website value \"www.daskkrypto.eu\" was repaired to \"https://www.daskkrypto.eu\".",
+      "values": [
+        "www.daskkrypto.eu"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500DCB2AF415E5Y71",
+      "name": "NAGA X",
+      "country": "Cyprus",
+      "detail": "Website value \"www.nagax.com/eu/\" was repaired to \"https://www.nagax.com/eu/\".",
+      "values": [
+        "www.nagax.com/eu/"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500I2EA955E934537",
+      "name": "Krypto Knight Ltd",
+      "country": "Cyprus",
+      "detail": "Website value \"www.krypto-knight.com\" was repaired to \"https://www.krypto-knight.com\".",
+      "values": [
+        "www.krypto-knight.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "254900JFRZG8P67ZHI74",
+      "name": "NOEMON TECH LTD",
+      "country": "Cyprus",
+      "detail": "Website value \"www.noemon.tech\" was repaired to \"https://www.noemon.tech\".",
+      "values": [
+        "www.noemon.tech"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "894500FFZOA2AVGYOA88",
+      "name": "Unlimit Crypto Ltd",
+      "country": "Cyprus",
+      "detail": "Website value \"www.crypto.unlimit.com\" was repaired to \"https://www.crypto.unlimit.com\".",
+      "values": [
+        "www.crypto.unlimit.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "254900J8O1555O3B2T92",
+      "name": "COMPLYCRYPTO DEPOSITORY EU LIMITED",
+      "country": "Cyprus",
+      "detail": "Website value \"www.complycrypto.eu\" was repaired to \"https://www.complycrypto.eu\".",
+      "values": [
+        "www.complycrypto.eu"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "64880741U1SN9TUWJ897",
+      "name": "Invity Finance s.r.o.",
+      "country": "Czechia",
+      "detail": "Website value \"www.invity.io\" was repaired to \"https://www.invity.io\".",
+      "values": [
+        "www.invity.io"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500DCB2AF415E5Y71",
+      "name": "NAGA X",
+      "country": "Cyprus",
+      "detail": "Website value \"www.nagax.com/eu/\" was repaired to \"https://www.nagax.com/eu/\".",
+      "values": [
+        "www.nagax.com/eu/"
+      ]
+    },
+    {
+      "type": "exact_duplicate",
+      "entityKey": "984500DCB2AF415E5Y71",
+      "name": "NAGA X",
+      "country": "Cyprus",
+      "detail": "Identical to source row #31. Both rows are retained.",
+      "values": [
+        "41",
+        "31"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "64889KAWPMO81X649843",
+      "name": "MP Developers s.r.o.",
+      "country": "Czechia",
+      "detail": "Website value \"www.anycoin.cz\" was repaired to \"https://www.anycoin.cz\".",
+      "values": [
+        "www.anycoin.cz"
+      ]
+    },
+    {
+      "type": "encoding_artefact",
+      "entityKey": "8945004PZEJSSPTTVB16",
+      "name": "Altlift s.r.o.",
+      "country": "Czechia",
+      "detail": "Website value \"ttps://www.altlift.cz/\" was repaired to \"https://www.altlift.cz/\".",
+      "values": [
+        "ttps://www.altlift.cz/"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900RC04FR9EHUT228",
+      "name": "Boerse Stuttgart Digital Custody GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.bsdigital.com\" was repaired to \"https://www.bsdigital.com\".",
+      "values": [
+        "www.bsdigital.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "9845005X9B7N610K0093",
+      "name": "Bitpanda Asset Management GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.bitpanda.com\" was repaired to \"https://www.bitpanda.com\".",
+      "values": [
+        "www.bitpanda.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900FYBTAGIOS54M10",
+      "name": "Tradias GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.tradias.de\" was repaired to \"https://www.tradias.de\".",
+      "values": [
+        "www.tradias.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900032TYR45XIEW79",
+      "name": "EUWAX AG",
+      "country": "Germany",
+      "detail": "Website value \"www.euwax-ag.de\" was repaired to \"https://www.euwax-ag.de\".",
+      "values": [
+        "www.euwax-ag.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900MKYC1FZ83V3121",
+      "name": "flatexDEGIRO Bank AG",
+      "country": "Germany",
+      "detail": "Website value \"www.flatexdegiro.com/de/flatexdegiro-bank/login\" was repaired to \"https://www.flatexdegiro.com/de/flatexdegiro-bank/login\".",
+      "values": [
+        "www.flatexdegiro.com/de/flatexdegiro-bank/login"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900P0204W9HA8JP36",
+      "name": "360 Treasury Systems AG",
+      "country": "Germany",
+      "detail": "Website value \"www.360t.com\" was repaired to \"https://www.360t.com\".",
+      "values": [
+        "www.360t.com"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "529900JB9XYZ8E87N345",
+      "name": "N26 Bank SE",
+      "country": "Germany",
+      "detail": "Website field contains \"N26 – Die erste Onlinebank\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "N26 – Die erste Onlinebank"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "529900JB9XYZ8E87N345",
+      "name": "N26 Bank SE",
+      "country": "Germany",
+      "detail": "Website field contains \"die du lieben wirst\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "die du lieben wirst"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "851WYGNLUQLFZBSYGB56",
+      "name": "Commerzbank Aktiengesellschaft",
+      "country": "Germany",
+      "detail": "Website field contains \"Commerzbank AG – Investor Relations\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "Commerzbank AG – Investor Relations"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900WKXS5ZPJY9W498",
+      "name": "Tangany GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.tangany.com\" was repaired to \"https://www.tangany.com\".",
+      "values": [
+        "www.tangany.com"
+      ]
+    },
+    {
+      "type": "repeated_service_code",
+      "entityKey": "54930079HJ1JTMKTW637",
+      "name": "Bankhaus Scheich Wertpapierspezialist AG",
+      "country": "Germany",
+      "detail": "Service code(s) listed more than once in a single record: exchange funds, execution",
+      "values": [
+        "exchange funds",
+        "execution"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "54930079HJ1JTMKTW637",
+      "name": "Bankhaus Scheich Wertpapierspezialist AG",
+      "country": "Germany",
+      "detail": "Website value \"www.bankhaus-scheich.de\" was repaired to \"https://www.bankhaus-scheich.de\".",
+      "values": [
+        "www.bankhaus-scheich.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900ZW3QH424NY3959",
+      "name": "Volksbank Raiffeisenbank Bayern Mitte eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vr-bayernmitte.de\" was repaired to \"https://www.vr-bayernmitte.de\".",
+      "values": [
+        "www.vr-bayernmitte.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "549300Y6TSD1DUCXD871",
+      "name": "Huddlestock GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.huddlestock.com\" was repaired to \"https://www.huddlestock.com\".",
+      "values": [
+        "www.huddlestock.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900032TYR45XIEW79",
+      "name": "EUWAX AG",
+      "country": "Germany",
+      "detail": "Website value \"www.euwax-ag.de\" was repaired to \"https://www.euwax-ag.de\".",
+      "values": [
+        "www.euwax-ag.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "52990071YX99SH321F74",
+      "name": "Westerwald Bank eG Volks- und Raiffeisenbank",
+      "country": "Germany",
+      "detail": "Website value \"www.westerwaldbank.de\" was repaired to \"https://www.westerwaldbank.de\".",
+      "values": [
+        "www.westerwaldbank.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900ZMDTSQYEYCKL45",
+      "name": "VR TeilhaberBank Metropolregion Nürnberg eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vr-teilhaberbank.de\" was repaired to \"https://www.vr-teilhaberbank.de\".",
+      "values": [
+        "www.vr-teilhaberbank.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900APX10RF2PBTB22",
+      "name": "VR-Bank Rottal-Inn eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vrbk.de\" was repaired to \"https://www.vrbk.de\".",
+      "values": [
+        "www.vrbk.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900MBFU46N7U7MF46",
+      "name": "VR Bank Südpfalz eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vrbank-suedpfalz.de\" was repaired to \"https://www.vrbank-suedpfalz.de\".",
+      "values": [
+        "www.vrbank-suedpfalz.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "3912005CEQV0XYGFEO78",
+      "name": "wSw PortfolioManagement AG",
+      "country": "Germany",
+      "detail": "Website value \"www.wsw-pm.de\" was repaired to \"https://www.wsw-pm.de\".",
+      "values": [
+        "www.wsw-pm.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900SUZQE32VSCS310",
+      "name": "Tradevest Digital Assets GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.tradevest.ai\" was repaired to \"https://www.tradevest.ai\".",
+      "values": [
+        "www.tradevest.ai"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900N0VN8J4S4SCG77",
+      "name": "ISF Institut Deutsch-Schweizer Finanzdienstleistungen GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.isf-institut.de\" was repaired to \"https://www.isf-institut.de\".",
+      "values": [
+        "www.isf-institut.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "391200PNJ2SKONA02N07",
+      "name": "Plutos Vermögensverwaltung AG",
+      "country": "Germany",
+      "detail": "Website value \"www.plutos.de\" was repaired to \"https://www.plutos.de\".",
+      "values": [
+        "www.plutos.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "391200Y3EUNL4LTXRP94",
+      "name": "Scalable Capital Bank GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.scalable.capital\" was repaired to \"https://www.scalable.capital\".",
+      "values": [
+        "www.scalable.capital"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900FNJE1H184JV164",
+      "name": "AnCeKa Vermögensbetreuungs Aktiengesellschaft",
+      "country": "Germany",
+      "detail": "Website value \"www.anceka.de\" was repaired to \"https://www.anceka.de\".",
+      "values": [
+        "www.anceka.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900UC2OD7II24Z667",
+      "name": "Joh. Berenberg, Gossler & Co. KG",
+      "country": "Germany",
+      "detail": "Website value \"www.berenberg.de\" was repaired to \"https://www.berenberg.de\".",
+      "values": [
+        "www.berenberg.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900YOBXEE8ZYM4V56",
+      "name": "MLP Banking AG",
+      "country": "Germany",
+      "detail": "Website value \"www.mlp.de\" was repaired to \"https://www.mlp.de\".",
+      "values": [
+        "www.mlp.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900R4Q9UCQ25IAA05",
+      "name": "BV & P Vermögen AG",
+      "country": "Germany",
+      "detail": "Website value \"www.bvp-vermoegen.de\" was repaired to \"https://www.bvp-vermoegen.de\".",
+      "values": [
+        "www.bvp-vermoegen.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "391200EYHDBM1YQI7A32",
+      "name": "DLT Securities GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.dlt-finance.com\" was repaired to \"https://www.dlt-finance.com\".",
+      "values": [
+        "www.dlt-finance.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900ADW3Q5TWADIL41",
+      "name": "Vermögensbutler GmbH",
+      "country": "Germany",
+      "detail": "Website value \"www.vermoegensbutler.de\" was repaired to \"https://www.vermoegensbutler.de\".",
+      "values": [
+        "www.vermoegensbutler.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "391200CC11KVFA4HGG45",
+      "name": "Volksbank Heiden eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vbheiden.de\" was repaired to \"https://www.vbheiden.de\".",
+      "values": [
+        "www.vbheiden.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900UYTAE51VW2TG15",
+      "name": "Raiffeisenbank Kreis Kelheim eG",
+      "country": "Germany",
+      "detail": "Website value \"www.rbkk.de\" was repaired to \"https://www.rbkk.de\".",
+      "values": [
+        "www.rbkk.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900P8OKWO25XE4251",
+      "name": "Donau-Iller-Bank eG",
+      "country": "Germany",
+      "detail": "Website value \"www.donau-iller-bank.de\" was repaired to \"https://www.donau-iller-bank.de\".",
+      "values": [
+        "www.donau-iller-bank.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "5299009ADJ9XFQVUKZ50",
+      "name": "Volksbank Schwarzwald-Donau-Neckar eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vbsdn.de\" was repaired to \"https://www.vbsdn.de\".",
+      "values": [
+        "www.vbsdn.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900R1A7TN1LM06875",
+      "name": "Raiffeisebank Auerbach-Freihung eG",
+      "country": "Germany",
+      "detail": "Website value \"www.rb-af.de\" was repaired to \"https://www.rb-af.de\".",
+      "values": [
+        "www.rb-af.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900793U3P5C6YYC70",
+      "name": "Spar- und Kreditbank Rheinstetten eG",
+      "country": "Germany",
+      "detail": "Website value \"www.skb-rheinstetten.de\" was repaired to \"https://www.skb-rheinstetten.de\".",
+      "values": [
+        "www.skb-rheinstetten.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900CG5HHEUT0AHK10",
+      "name": "VR-Bank Augsburg-Ostallgäu eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vrbank-augsburg-ostallgaeu.de\" was repaired to \"https://www.vrbank-augsburg-ostallgaeu.de\".",
+      "values": [
+        "www.vrbank-augsburg-ostallgaeu.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "391200236O6D9SGBE882",
+      "name": "Raiffeisenbank Falkenstein-Wörth",
+      "country": "Germany",
+      "detail": "Website value \"www.rbfalkenstein-woerth.de\" was repaired to \"https://www.rbfalkenstein-woerth.de\".",
+      "values": [
+        "www.rbfalkenstein-woerth.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "9845000E4A7414709361",
+      "name": "Penning Financial Services ApS",
+      "country": "Denmark",
+      "detail": "Website value \"www.penning.io\" was repaired to \"https://www.penning.io\".",
+      "values": [
+        "www.penning.io"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "98450010C0CB6A4E8A79",
+      "name": "Northstake ApS",
+      "country": "Denmark",
+      "detail": "Website value \"www.northstake.dk\" was repaired to \"https://www.northstake.dk\".",
+      "values": [
+        "www.northstake.dk"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "K8MS7FD7N5Z2WQ51AZ71",
+      "name": "Banco Bilbao Vizcaya Argentaria S.A.",
+      "country": "Spain",
+      "detail": "Website value \"www.bbva.es\" was repaired to \"https://www.bbva.es\".",
+      "values": [
+        "www.bbva.es"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "5493000LM0MZ4JPMGM90",
+      "name": "OPEN BANK S.A.",
+      "country": "Spain",
+      "detail": "Website value \"www.openbank.es\" was repaired to \"https://www.openbank.es\".",
+      "values": [
+        "www.openbank.es"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "549300CQ9NLEHMRCU505",
+      "name": "CECABANK S.A.",
+      "country": "Spain",
+      "detail": "Website value \"www.cecabank.es\" was repaired to \"https://www.cecabank.es\".",
+      "values": [
+        "www.cecabank.es"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "9598007R5LSUJLGLS853",
+      "name": "Bitcoinforme S.L.",
+      "country": "Spain",
+      "detail": "Website value \"bit2me.com\" was repaired to \"https://bit2me.com\".",
+      "values": [
+        "bit2me.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "213800IMKAUV5KW28586",
+      "name": "RENTA 4 BANCO S.A.",
+      "country": "Spain",
+      "detail": "Website value \"www.r4.com\" was repaired to \"https://www.r4.com\".",
+      "values": [
+        "www.r4.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "959800B6XCG14MKLTJ51",
+      "name": "CROSSMINT EUROPE S.L.",
+      "country": "Spain",
+      "detail": "Website value \"www.crossmint.com\" was repaired to \"https://www.crossmint.com\".",
+      "values": [
+        "www.crossmint.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "959800AZN23P7F30C189",
+      "name": "CRIPTAN TRADE S.L.",
+      "country": "Spain",
+      "detail": "Website value \"www.criptan.com\" was repaired to \"https://www.criptan.com\".",
+      "values": [
+        "www.criptan.com"
+      ]
+    },
+    {
+      "type": "encoding_artefact",
+      "entityKey": "959800U0R44NN5DJC930",
+      "name": "MINOS GLOBAL, S.L.",
+      "country": "Spain",
+      "detail": "Website value \"ttps://minos.global\" was repaired to \"https://minos.global\".",
+      "values": [
+        "ttps://minos.global"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "nc:5f6d7b39f63e",
+      "name": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES",
+      "country": "Spain",
+      "detail": "Website value \"www.prosegurcrypto.com\" was repaired to \"https://www.prosegurcrypto.com\".",
+      "values": [
+        "www.prosegurcrypto.com"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "9695003EKRFOMYXJQL11",
+      "name": "RELAI EU SASU",
+      "country": "France",
+      "detail": "Website field contains \"75012 Paris\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "75012 Paris"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "969500FX8K40ZDW4F377",
+      "name": "SOCIETE GENERALE - FORGE",
+      "country": "France",
+      "detail": "Website field contains \"92800 PUTEAUX\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "92800 PUTEAUX"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "969500A4IPKVUBH3CA90",
+      "name": "BANQUE DELUBAC ET CIE",
+      "country": "France",
+      "detail": "Website field contains \"07160 LE CHEYLARD\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "07160 LE CHEYLARD"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "9845007FA1A8E1DE3989",
+      "name": "Legend Financial Ireland Limited",
+      "country": "Ireland",
+      "detail": "Website value \"www.legendtrading.com\" was repaired to \"https://www.legendtrading.com\".",
+      "values": [
+        "www.legendtrading.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "635400NEDOJDEJEQZQ77",
+      "name": "Push Virtual Assets Ireland Limited",
+      "country": "Ireland",
+      "detail": "Website value \"push.co\" was repaired to \"https://push.co\".",
+      "values": [
+        "push.co"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "nc:086c5a3d0a9f",
+      "name": "Ramp Swaps (Ireland) Limited",
+      "country": "Ireland",
+      "detail": "Website value \"rampnetwork.com\" was repaired to \"https://rampnetwork.com\".",
+      "values": [
+        "rampnetwork.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "nc:4f6654a74358",
+      "name": "Paysafe Payment Solutions Limited.",
+      "country": "Ireland",
+      "detail": "Website value \"www.skrill.com\" was repaired to \"https://www.skrill.com\".",
+      "values": [
+        "www.skrill.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500F75CJ82D8B7D76",
+      "name": "Confirmo Limited",
+      "country": "Ireland",
+      "detail": "Website value \"confirmo.eu\" was repaired to \"https://confirmo.eu\".",
+      "values": [
+        "confirmo.eu"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500FD0NZ8949F4363",
+      "name": "Pionew Ireland Limited",
+      "country": "Ireland",
+      "detail": "Website value \"www.webot.com/eu\" was repaired to \"https://www.webot.com/eu\".",
+      "values": [
+        "www.webot.com/eu"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "98450043FB90T6REA408",
+      "name": "StoneX Digital International Limited",
+      "country": "Ireland",
+      "detail": "Website value \"www.stonex.com\" was repaired to \"https://www.stonex.com\".",
+      "values": [
+        "www.stonex.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "8156006C715AAACC5D19",
+      "name": "CHECKSIG S.R.L. SOCIETÀ BENEFIT",
+      "country": "Italy",
+      "detail": "Website value \"WWW.CHECKSIG.COM\" was repaired to \"https://WWW.CHECKSIG.COM\".",
+      "values": [
+        "WWW.CHECKSIG.COM"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "8945000EH59XYZHK0B92",
+      "name": "CONIO S.R.L.",
+      "country": "Italy",
+      "detail": "Website value \"www.conio.com\" was repaired to \"https://www.conio.com\".",
+      "values": [
+        "www.conio.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "549300I7OIUB41P86L19",
+      "name": "BANCA SELLA",
+      "country": "Italy",
+      "detail": "Website value \"www.sella.it\" was repaired to \"https://www.sella.it\".",
+      "values": [
+        "www.sella.it"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900QHHMJYY9QSAC33",
+      "name": "Celsion Bank AG",
+      "country": "Liechtenstein",
+      "detail": "Website value \"www.celsion-finance.com\" was repaired to \"https://www.celsion-finance.com\".",
+      "values": [
+        "www.celsion-finance.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900AAZRC5LYVR7134",
+      "name": "Damoon Technology (Europe) AG",
+      "country": "Liechtenstein",
+      "detail": "Website value \"www.paymonade.tech\" was repaired to \"https://www.paymonade.tech\".",
+      "values": [
+        "www.paymonade.tech"
+      ]
+    },
+    {
+      "type": "encoding_artefact",
+      "entityKey": "984500F14CA4571AAC11",
+      "name": "Coinbase Luxembourg S.A.",
+      "country": "Luxembourg",
+      "detail": "Website value \"https.//coinbase.com\" was repaired to \"https://coinbase.com\".",
+      "values": [
+        "https.//coinbase.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "254900MVWQXMF77YZP65",
+      "name": "Bridge Building S.A.",
+      "country": "Luxembourg",
+      "detail": "Website value \"www.bridge.xyz\" was repaired to \"https://www.bridge.xyz\".",
+      "values": [
+        "www.bridge.xyz"
+      ]
+    },
+    {
+      "type": "repeated_service_code",
+      "entityKey": "2549000KEHDV2LWRRZ45",
+      "name": "Ripple Payments Europe S.A.",
+      "country": "Luxembourg",
+      "detail": "Service code(s) listed more than once in a single record: exchange crypto",
+      "values": [
+        "exchange crypto"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "54930069NLWEIGLHXU42",
+      "name": "OKX Europe Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.okx.com\" was repaired to \"https://www.okx.com\".",
+      "values": [
+        "www.okx.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500DEID7B03J77118",
+      "name": "BP23 CA Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.bitpanda.com\" was repaired to \"https://www.bitpanda.com\".",
+      "values": [
+        "www.bitpanda.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "2549005CVR5HH70FDO07",
+      "name": "Foris DAX MT Limited",
+      "country": "Malta",
+      "detail": "Website value \"crypto.com\" was repaired to \"https://crypto.com\".",
+      "values": [
+        "crypto.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "254900FESD7AF56FOQ37",
+      "name": "Zillion Bits Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.zbx.com\" was repaired to \"https://www.zbx.com\".",
+      "values": [
+        "www.zbx.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "5299000X84JRI8MS7D35",
+      "name": "Altarius Asset Management Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.altariusgroup.com\" was repaired to \"https://www.altariusgroup.com\".",
+      "values": [
+        "www.altariusgroup.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "2138002QAMX8PPKSO715",
+      "name": "Gemini Intergalactic EU Ltd",
+      "country": "Malta",
+      "detail": "Website value \"www.gemini.com\" was repaired to \"https://www.gemini.com\".",
+      "values": [
+        "www.gemini.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500EBA2E9980CDD80",
+      "name": "Socios Europe Services Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.socios.com\" was repaired to \"https://www.socios.com\".",
+      "values": [
+        "www.socios.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500D6A0F945BB5A15",
+      "name": "Gate Technology Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.gate.com/en-eu\" was repaired to \"https://www.gate.com/en-eu\".",
+      "values": [
+        "www.gate.com/en-eu"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "254900GDCT8070R2VV26",
+      "name": "Blue Cube (Malta) Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.blockchain.com\" was repaired to \"https://www.blockchain.com\".",
+      "values": [
+        "www.blockchain.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "9845001DD90AF543DC90",
+      "name": "Payhound Limited",
+      "country": "Malta",
+      "detail": "Website value \"www.payhound.com\" was repaired to \"https://www.payhound.com\".",
+      "values": [
+        "www.payhound.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "9845008E8QA4CCFE5F68",
+      "name": "Damex Digital LTD",
+      "country": "Malta",
+      "detail": "Website value \"www.damex.io\" was repaired to \"https://www.damex.io\".",
+      "values": [
+        "www.damex.io"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "984500F9M4XF7C5E5E25",
+      "name": "Olmipay Limited",
+      "country": "Malta",
+      "detail": "Website value \"Olmipay.com\" was repaired to \"https://Olmipay.com\".",
+      "values": [
+        "Olmipay.com"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "984500F9M4XF7C5E5E25",
+      "name": "Olmipay Limited",
+      "country": "Malta",
+      "detail": "Website field contains \"(upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "(upcoming)"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "894500QKMN1PCG2V7U40",
+      "name": "Safello AB",
+      "country": "Sweden",
+      "detail": "Website value \"www.safello.com\" was repaired to \"https://www.safello.com\".",
+      "values": [
+        "www.safello.com"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "984500DCB2AF415E5Y71",
+      "name": "NAGA X",
+      "country": "Cyprus",
+      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
+      "values": [
+        "NAGA X"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "529900032TYR45XIEW79",
+      "name": "EUWAX AG",
+      "country": "Germany",
+      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
+      "values": [
+        "EUWAX AG"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "0W2PZJM8XOY22M4GG883",
+      "name": "DekaBank Deutsche Girozentrale",
+      "country": "Germany",
+      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
+      "values": [
+        "DekaBank Deutsche Girozentrale"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "984500AB011S3AEF6706",
+      "name": "FLOWDESK EUROPE SAS",
+      "country": "France",
+      "detail": "One legal entity (LEI 984500AB011S3AEF6706) appears under 2 different names: FLOWDESK EUROPE SAS / APLO SAS. These are the same firm, not duplicates.",
+      "values": [
+        "FLOWDESK EUROPE SAS",
+        "APLO SAS"
+      ]
+    }
+  ]
+}
