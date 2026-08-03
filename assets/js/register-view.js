@@ -1,5 +1,5 @@
 /*
- * register-view.js — renders a single MiCA register (CASPs, EMT issuers, or
+ * register-view.js: renders a single MiCA register (CASPs, EMT issuers, or
  * non-compliant entities) into a mount point, with search, sorting, CSV/JSON
  * export, freshness, and (for CASPs) country/service filters.
  *
@@ -164,7 +164,7 @@
           '<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">' + (i + 1) + '</td>' +
           '<td class="p-4 rv-title" data-label="CASP"><p class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</p></td>' +
           '<td class="p-4" data-label="Country"><span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.memberState) + '</span> ' + esc(item.memberState || 'Unknown') + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm casps-authority-cell" data-label="Authority">' + esc(item.authority || '—') + '</td>' +
+          '<td class="p-4 text-gray-600 text-sm casps-authority-cell" data-label="Authority">' + esc(item.authority || 'N/A') + '</td>' +
           '<td class="p-4 services-cell" data-label="Services"><div class="service-badges">' + (services || '<span class="text-xs text-gray-500">Not specified</span>') + '</div></td>' +
           '<td class="p-4" data-label="Websites"><div class="space-y-1">' + sites + '</div></td></tr>';
       },
@@ -313,7 +313,7 @@
       return [
         { title: 'Total Providers', value: items.length, subtitle: 'Registered CASP providers', icon: '🏢', color: 'kpi-teal' },
         { title: 'Total Countries', value: uniqueCount(items, function (i) { return i.memberState; }), subtitle: 'Countries represented', icon: '🌍', color: 'kpi-blue' },
-        { title: 'Non-Compliant CASPs', value: (extra && extra.nonCompliantCount != null) ? extra.nonCompliantCount : '—', subtitle: 'Flagged providers', icon: '⚠️', color: 'kpi-red' }
+        { title: 'Non-Compliant CASPs', value: (extra && extra.nonCompliantCount != null) ? extra.nonCompliantCount : 'N/A', subtitle: 'Flagged providers', icon: '⚠️', color: 'kpi-red' }
       ];
     },
     emt: function (items) {

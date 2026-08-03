@@ -1,5 +1,5 @@
 /*
- * data-quality.js — renders data/anomalies.json as a public audit of what the
+ * data-quality.js: renders data/anomalies.json as a public audit of what the
  * pipeline had to correct, preserve, or merely note while turning ESMA's
  * register rows into entities.
  *
@@ -59,7 +59,7 @@
       tone: 'amber',
       types: ['malformed_url', 'encoding_artefact'],
       blurb: 'The register published a value we could interpret but not use as-is. '
-        + 'We repaired it and record both forms — the original is kept verbatim in '
+        + 'We repaired it and record both forms. The original is kept verbatim in '
         + 'the data so the correction is always auditable.'
     },
     {
@@ -68,7 +68,7 @@
       icon: 'fa-circle-question',
       tone: 'rose',
       types: ['non_url_in_website_field'],
-      blurb: 'The field holds something that is not a URL — a page title, a postal '
+      blurb: 'The field holds something that is not a URL, such as a page title, a postal '
         + 'address, or a note. We never guess. The value is preserved exactly as '
         + 'published and is shown as plain text, never as a clickable link.'
     },
@@ -153,11 +153,11 @@
           '<p class="text-xs text-gray-500 mt-1">' + esc(r.country || '') + '</p></td>' +
           '<td class="p-4" data-label="Finding"><span class="dq-badge dq-badge-' + group.tone + '">' +
           esc(TYPE_LABELS[r.type] || r.type) + '</span></td>' +
-          '<td class="p-4" data-label="Value as published">' + (values || '<span class="text-xs text-gray-500">—</span>') + '</td>' +
+          '<td class="p-4" data-label="Value as published">' + (values || '<span class="text-xs text-gray-500">N/A</span>') + '</td>' +
           '<td class="p-4 text-sm text-gray-600" data-label="What we did">' + esc(r.detail || '') + '</td>' +
           '</tr>';
       }).join('')
-      : '<tr><td colspan="4" class="p-6 text-center text-gray-500">Nothing in this category — the register is clean here.</td></tr>';
+      : '<tr><td colspan="4" class="p-6 text-center text-gray-500">Nothing in this category. The register is clean here.</td></tr>';
 
     return '<section class="dq-section" id="dq-' + group.key + '">' +
       '<h2 class="dq-section-title"><i class="fas ' + group.icon + ' mr-2" aria-hidden="true"></i>' +

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * test-normalise.js — tests for entity resolution and normalisation.
+ * test-normalise.js: tests for entity resolution and normalisation.
  *
  * The load-bearing assertion is reconciliation: every source row must survive
  * into entities.json. A normalisation step that silently drops a row would be

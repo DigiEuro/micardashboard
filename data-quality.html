@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiCAR register data quality — what we corrected and why | DEA MiCAR Tracker</title>
+    <title>MiCAR register data quality: what we corrected and why | DEA MiCAR Tracker</title>
     <meta name="description" content="A public audit of every value the DEA MiCAR Tracker had to correct, preserve verbatim, or flag while processing the ESMA interim MiCA register. Nothing is deleted; every correction is recorded next to the value as published.">
     <link rel="canonical" href="https://micatracker.digital-euro-association.de/data-quality.html">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self'">
     <link rel="icon" type="image/png" href="favicon.png">
-    <meta property="og:title" content="MiCAR register data quality — what we corrected and why">
+    <meta property="og:title" content="MiCAR register data quality: what we corrected and why">
     <meta property="og:description" content="Every correction the MiCAR Tracker applies to ESMA register data, published openly. Nothing is deleted; originals are kept verbatim.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://micatracker.digital-euro-association.de/data-quality.html">
@@ -133,7 +133,7 @@
     <section class="mt-10 bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6 md:p-8 text-gray-700">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">How to read this page</h2>
     <h3 class="text-lg font-semibold text-gray-800 mt-4">Does the tracker change ESMA's data?</h3>
-    <p class="mt-1 leading-relaxed">It repairs values that cannot be used as published — most often a website address with no scheme, which no browser will open. The value as published is kept verbatim in the underlying data, and every correction appears on this page. Nothing is deleted, and no row is ever dropped: the number of authorisation records always equals the number of rows in the source register, and the build fails if it does not.</p>
+    <p class="mt-1 leading-relaxed">It repairs values that cannot be used as published. The most common case is a website address with no scheme, which no browser will open. The value as published is kept verbatim in the underlying data, and every correction appears on this page. Nothing is deleted, and no row is ever dropped: the number of authorisation records always equals the number of rows in the source register, and the build fails if it does not.</p>
     <h3 class="text-lg font-semibold text-gray-800 mt-4">Why do some entities appear more than once?</h3>
     <p class="mt-1 leading-relaxed">A firm may legitimately hold more than one authorisation, and two separately named firms may share a legal entity identifier. These are listed under <em>Observations</em> because they look surprising, not because anything is wrong. Both records are retained.</p>
     <h3 class="text-lg font-semibold text-gray-800 mt-4">What happens when a field cannot be interpreted?</h3>

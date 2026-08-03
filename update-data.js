@@ -993,7 +993,7 @@ function readSnapshotRegisters(date) {
 //
 // A new folder is only created when the content actually differs from the most
 // recent snapshot, so unchanged weeks cost nothing and each folder marks a real
-// change. Existing snapshots are never rewritten — citations must stay stable.
+// change. Existing snapshots are never rewritten; citations must stay stable.
 function archiveSnapshot(esmaSnapshotDate) {
     const today = new Date().toISOString().slice(0, 10);
 
@@ -1099,7 +1099,7 @@ function buildSnapshot(register, entries, dateLong) {
             `<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">${i + 1}</td>` +
             `<td class="p-4 rv-title" data-label="CASP"><span class="font-semibold text-gray-900">${htmlEscape(it.name || 'N/A')}</span></td>` +
             `<td class="p-4 text-gray-700 text-sm" data-label="Country">${htmlEscape(it.memberState || 'Unknown')}</td>` +
-            `<td class="p-4 text-gray-600 text-sm" data-label="Authority">${htmlEscape(it.authority || '—')}</td>` +
+            `<td class="p-4 text-gray-600 text-sm" data-label="Authority">${htmlEscape(it.authority || 'N/A')}</td>` +
             `<td class="p-4 text-gray-700 text-sm" data-label="Services">${htmlEscape((it.services || []).join(', ') || 'Not specified')}</td>` +
             `<td class="p-4 text-gray-600 text-sm" data-label="Websites">${websitesText(it.websites)}</td>` +
             '</tr>'

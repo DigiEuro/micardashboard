@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * smoke.js — opens every page in a real browser and asserts it renders.
+ * smoke.js: opens every page in a real browser and asserts it renders.
  *
  * Every other check in CI validates JSON or pipeline logic. None of them opens
  * a page, and the bugs that actually reached production were all render-time:

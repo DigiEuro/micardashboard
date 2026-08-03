@@ -1,11 +1,11 @@
 /*
- * normalise.js — entity identity and record normalisation.
+ * normalise.js: entity identity and record normalisation.
  *
  * Resolves the CASP register's authorisation *records* into legal *entities*,
  * and reports every data-quality issue it finds instead of quietly fixing it.
  *
  * HARD RULE: nothing is ever deleted. Every source row survives into
- * entities.json as an authorisation record. Normalisation only adds fields —
+ * entities.json as an authorisation record. Normalisation only adds fields;
  * a value that cannot be validated is preserved verbatim alongside a typed
  * anomaly, never dropped.
  *
@@ -69,9 +69,9 @@ const BARE_DOMAIN = /^[a-z0-9][a-z0-9-]*(\.[a-z0-9-]+)+(\/[^\s]*)?$/i;
 
 /*
  * Returns { url, raw, issue }.
- *   url   — a usable https(s) link, or '' when the value could not be repaired
- *   raw   — the original value, always preserved
- *   issue — null, or an anomaly type describing what was wrong
+ *   url   is a usable https(s) link, or '' when the value could not be repaired
+ *   raw   is the original value, always preserved
+ *   issue is null, or an anomaly type describing what was wrong
  */
 function normaliseWebsite(value) {
     const raw = collapseWhitespace(value);
@@ -79,7 +79,7 @@ function normaliseWebsite(value) {
         return { url: '', raw: '', issue: null };
     }
 
-    // Mistyped scheme separator, e.g. "https.//coinbase.com" — a period where
+    // Mistyped scheme separator, e.g. "https.//coinbase.com", a period where
     // the colon should be. Unambiguous, so repair it rather than leaving a
     // major entity with no working link.
     const mistypedSeparator = raw.match(/^(https?)[.,;]\/\/(.*)$/i);
@@ -91,7 +91,7 @@ function normaliseWebsite(value) {
         };
     }
 
-    // Truncated scheme, e.g. "ttps://example.com" — a character was eaten
+    // Truncated scheme, e.g. "ttps://example.com", a character was eaten
     // somewhere upstream. Repairable, but recorded as an encoding artefact.
     const truncated = raw.match(/^t{1,2}(ps?|p):\/\/(.*)$/i);
     if (truncated && !/^https?:\/\//i.test(raw)) {
@@ -301,7 +301,7 @@ function buildEntities(caspRecords, options = {}) {
 /*
  * options.snapshots: [{ date, casps: [...] }] oldest first.
  * Older snapshots predate LEI capture, so entities are matched on normalised
- * name + country here — the only key available across the whole archive.
+ * name + country here, the only key available across the whole archive.
  */
 function applyFirstSeen(entities, snapshots) {
     const firstSeenByNameCountry = new Map();
