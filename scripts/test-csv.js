@@ -111,6 +111,33 @@ test('a torn record does not invent a phantom CASP', () => {
     assert.strictEqual(entries[0].lei, '529900032TYR45XIEW79');
     assert.strictEqual(entries[1].lei, '213800QBQVHWRBHJTA89');
 });
+test('the live sheet schema keeps the LEI that sits after the website column', () => {
+    // This is the exact shape that lost Paysafe's LEI in production. In the
+    // sheet, ae_lei comes AFTER ae_website, and Paysafe is the one row whose
+    // website cell holds two URLs on separate lines. Splitting on '\n' ended
+    // the record inside that cell, so everything up to ae_website survived
+    // (name, authority, member state, services all looked right) while ae_lei
+    // sat on the orphaned second line and was never read.
+    const header = 'Authority,ae_competentAuthority,ae_homeMemberState,ae_lei_name,'
+        + 'ac_serviceCode,ae_website,ae_lei,esma_status';
+    const csv = header + '\n'
+        + 'CBI,CBI,Ireland,Paysafe Payment Solutions Limited.,custody | transfer,'
+        + '"www.skrill.com\nwww.neteller.com",213800QBQVHWRBHJTA89,\n'
+        + 'CBI,CBI,Ireland,CoinJar Europe Limited,custody,https://www.coinjar.com,98450066Q3A1G1A4T786,';
+    const entries = convertToCaspsData(csvToArray(csv));
+    assert.strictEqual(entries.length, 2, `expected 2 CASPs, got ${entries.length}`);
+    assert.strictEqual(entries[0].lei, '213800QBQVHWRBHJTA89', 'Paysafe lost its LEI again');
+    assert.deepStrictEqual(entries[0].websites, ['www.skrill.com', 'www.neteller.com']);
+    // The row after the torn one must not be swallowed or shifted.
+    assert.strictEqual(entries[1].name, 'CoinJar Europe Limited');
+    assert.strictEqual(entries[1].lei, '98450066Q3A1G1A4T786');
+});
+test('a trailing space does not invalidate an otherwise good LEI', () => {
+    // K33 MARKETS carries '6367008S3JL8VVP6T689 ' in the sheet.
+    const csv = 'ae_lei_name,ae_lei\nK33 MARKETS as,6367008S3JL8VVP6T689 ';
+    const [entry] = convertToCaspsData(csvToArray(csv));
+    assert.strictEqual(entry.lei, '6367008S3JL8VVP6T689');
+});
 test('a multi-line website cell becomes separate websites', () => {
     const csv = 'ae_lei_name,ae_lei,ae_website\n'
         + 'Paysafe,213800QBQVHWRBHJTA89,"www.skrill.com\nwww.neteller.com"';
