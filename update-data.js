@@ -21,6 +21,7 @@ const SITEMAP_PAGES = [
     { loc: '/casp-tracker.html', priority: '0.9', changefreq: 'weekly' },
     { loc: '/emt-tracker.html', priority: '0.9', changefreq: 'weekly' },
     { loc: '/non-compliant-casps.html', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/data-quality.html', priority: '0.6', changefreq: 'weekly' },
     { loc: '/about.html', priority: '0.5', changefreq: 'monthly' }
 ];
 

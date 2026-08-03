@@ -165,3 +165,14 @@ jobs:
 
     - name: Validate dashboard data
       run: npm run validate:data
+
+    - name: Install Chromium for the smoke test
+      run: npx playwright install --with-deps chromium
+
+    - name: Smoke-test the pages in a real browser
+      # Every check above validates JSON or pipeline logic; none of them opens a
+      # page. The bugs that actually reached production were all render-time - a
+      # Tailwind class missing from the committed build (three times), display:flex
+      # cancelling a colspan, controls colliding on mobile. Valid JSON and valid JS
+      # can still paint a broken page, so the pages get opened and asserted on.
+      run: npm run test:smoke

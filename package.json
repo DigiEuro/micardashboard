@@ -9,13 +9,15 @@
     "validate:data": "node scripts/validate-dashboard-data.js",
     "test:normalise": "node scripts/test-normalise.js",
     "test:csv": "node scripts/test-csv.js",
-    "check:css": "cp styles/tailwind.css /tmp/tw.committed.css && npm run build:css --silent && diff -q /tmp/tw.committed.css styles/tailwind.css > /dev/null && echo 'Tailwind CSS is up to date.' || (echo 'STALE: run npm run build:css and commit'; exit 1)"
+    "check:css": "cp styles/tailwind.css /tmp/tw.committed.css && npm run build:css --silent && diff -q /tmp/tw.committed.css styles/tailwind.css > /dev/null && echo 'Tailwind CSS is up to date.' || (echo 'STALE: run npm run build:css and commit'; exit 1)",
+    "test:smoke": "node scripts/smoke.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "playwright": "^1.62.1",
     "tailwindcss": "^3.4.14"
   }
 }
