@@ -1,5 +1,5 @@
 /*
- * register-view.js — renders a single MiCA register (CASPs, EMT issuers, or
+ * register-view.js: renders a single MiCA register (CASPs, EMT issuers, or
  * non-compliant entities) into a mount point, with search, sorting, CSV/JSON
  * export, freshness, and (for CASPs) country/service filters.
  *
@@ -120,8 +120,8 @@
     casps: {
       dataUrl: 'data/casps.json', jsonHref: 'data/casps.json', jsonName: 'micar-casps.json',
       csvName: 'micar-casps.csv', snapshotKey: 'caspsSnapshotDate', theme: 'teal',
-      searchPlaceholder: 'Search CASPs, countries, services…',
-      searchLabel: 'Search CASPs by name, country, authority, service, or website',
+      searchPlaceholder: 'Search CASPs, countries, services, LEI…',
+      searchLabel: 'Search CASPs by name, LEI, country, authority, service, or website',
       caption: 'Crypto-Asset Service Providers registered under MiCAR',
       filters: true,
       unit: ['provider', 'providers'],
@@ -136,8 +136,13 @@
         { label: 'Services', width: '28%', cls: 'services-cell' },
         { label: 'Websites', width: '16%' }
       ],
+      // The LEI is searchable but deliberately not a column: it is a 20-char
+      // lookup key, not something a human scans, and the table is already six
+      // columns wide. Paste an LEI into the search box and it resolves to the
+      // CASP; the full value ships in the CSV and JSON exports.
       matches: function (item, term) {
         return (item.name || '').toLowerCase().indexOf(term) !== -1 ||
+          (item.lei || '').toLowerCase().indexOf(term) !== -1 ||
           (item.memberState || '').toLowerCase().indexOf(term) !== -1 ||
           (item.authority || '').toLowerCase().indexOf(term) !== -1 ||
           (item.services || []).join(' ').toLowerCase().indexOf(term) !== -1 ||
@@ -159,12 +164,13 @@
           '<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">' + (i + 1) + '</td>' +
           '<td class="p-4 rv-title" data-label="CASP"><p class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</p></td>' +
           '<td class="p-4" data-label="Country"><span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.memberState) + '</span> ' + esc(item.memberState || 'Unknown') + '</span></td>' +
-          '<td class="p-4 text-gray-600 text-sm casps-authority-cell" data-label="Authority">' + esc(item.authority || '—') + '</td>' +
+          '<td class="p-4 text-gray-600 text-sm casps-authority-cell" data-label="Authority">' + esc(item.authority || 'N/A') + '</td>' +
           '<td class="p-4 services-cell" data-label="Services"><div class="service-badges">' + (services || '<span class="text-xs text-gray-500">Not specified</span>') + '</div></td>' +
           '<td class="p-4" data-label="Websites"><div class="space-y-1">' + sites + '</div></td></tr>';
       },
       csv: [
         { label: 'CASP', value: function (r) { return r.name; } },
+        { label: 'LEI', value: function (r) { return r.lei || ''; } },
         { label: 'Country', value: function (r) { return r.memberState; } },
         { label: 'Competent Authority', value: function (r) { return r.authority; } },
         { label: 'Services', value: function (r) { return (r.services || []).join('; '); } },
@@ -307,7 +313,7 @@
       return [
         { title: 'Total Providers', value: items.length, subtitle: 'Registered CASP providers', icon: '🏢', color: 'kpi-teal' },
         { title: 'Total Countries', value: uniqueCount(items, function (i) { return i.memberState; }), subtitle: 'Countries represented', icon: '🌍', color: 'kpi-blue' },
-        { title: 'Non-Compliant CASPs', value: (extra && extra.nonCompliantCount != null) ? extra.nonCompliantCount : '—', subtitle: 'Flagged providers', icon: '⚠️', color: 'kpi-red' }
+        { title: 'Non-Compliant CASPs', value: (extra && extra.nonCompliantCount != null) ? extra.nonCompliantCount : 'N/A', subtitle: 'Flagged providers', icon: '⚠️', color: 'kpi-red' }
       ];
     },
     emt: function (items) {

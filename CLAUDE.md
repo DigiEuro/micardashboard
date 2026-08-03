@@ -1,10 +1,10 @@
-# MiCAR Tracker — working notes
+# MiCAR Tracker: working notes
 
 ## Branch workflow (dev hygiene)
 
 - All development happens on `dev`; never commit directly to `main`.
 - `main` is merged from `dev` via a pull request (creates a merge commit).
-- **Keep `dev` — do not delete it after a merge.**
+- **Keep `dev`. Do not delete it after a merge.**
 - **Do not stack new work on already-merged history.** After each `dev → main`
   PR merges, bring `dev` back in line with `main` *before* starting new work:
   - Preferred (no history rewrite): because the PR merge commit has the `dev`
@@ -13,7 +13,7 @@
   - If `dev` and `main` have genuinely diverged and no fast-forward is
     possible, reset `dev` onto `main`
     (`git checkout dev && git reset --hard origin/main && git push --force-with-lease origin dev`)
-    — but only when `dev` carries no unmerged commits worth keeping.
+    but only when `dev` carries no unmerged commits worth keeping.
 
 ## Architecture
 
@@ -36,7 +36,7 @@
 - `data/snapshots/<YYYY-MM-DD>/` is a dated archive of each register, written
   by `update-data.js` on every run and indexed in `data/snapshots/index.json`.
   Folders are keyed by the **observation date** (when we captured it), not the
-  ESMA snapshot date — register content changes while that date stays put, so
+  ESMA snapshot date. Register content changes while that date stays put, so
   keying on it would let one observation overwrite another. The ESMA date is
   stored in each folder's `meta.json`. A new folder is only created when the
   content differs from the latest snapshot, and existing snapshots are never
@@ -47,7 +47,7 @@
   **entities** and emits `data/entities.json` + `data/anomalies.json`.
   Entity key: LEI where present (~98% of CASPs), else a hash of normalised
   name + country, with a unique slug alongside. **Hard rule: nothing is ever
-  deleted** — every source row survives as an authorisation record, and values
+  deleted**. Every source row survives as an authorisation record, and values
   that fail validation are preserved verbatim (`websitesRaw`, `servicesRaw`)
   next to a typed anomaly. Reconciliation (source rows == authorisation
   records) is enforced in the updater and in CI; a mismatch fails the build.
@@ -55,7 +55,7 @@
 - `styles/tailwind.css` is **committed and served as-is**, so it must be
   rebuilt whenever a Tailwind utility class is added to any scanned file
   (`./*.html`, `assets/js/**`, `scripts/**`). A class the build does not
-  contain silently does nothing — no error, the page just renders wrong.
+  contain silently does nothing: no error, the page just renders wrong.
   Run `npm run build:css` and commit the result; `npm run check:css`
   verifies it locally and CI fails on a stale file. Prefer hand-authored
   rules in `styles/site.css` for anything structural.

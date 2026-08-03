@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * test-csv.js — tests for the CSV reader that feeds every register.
+ * test-csv.js: tests for the CSV reader that feeds every register.
  *
  * These exist because the previous reader split the export on '\n' before
  * parsing it. The ESMA register legitimately puts newlines inside quoted

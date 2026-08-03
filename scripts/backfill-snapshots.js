@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * backfill-snapshots.js — one-off recovery of historic register snapshots.
+ * backfill-snapshots.js: one-off recovery of historic register snapshots.
  *
  * Walks the git history of data/*.json and reconstructs a dated snapshot for
  * every commit that changed a register. This recovers whatever real history
@@ -68,7 +68,7 @@ function collectCommits() {
 
 function main() {
     console.log('🕰️  Backfilling register snapshots from git history...');
-    if (DRY_RUN) console.log('   (dry run — nothing will be written)');
+    if (DRY_RUN) console.log('   (dry run, nothing will be written)');
 
     const commits = collectCommits();
     if (commits.length === 0) {
