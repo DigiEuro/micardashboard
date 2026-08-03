@@ -47,10 +47,15 @@
     malformed_url: 'Website missing its scheme',
     encoding_artefact: 'Mistyped scheme',
     non_url_in_website_field: 'Not a URL',
+    exact_duplicate: 'Row published twice',
     repeated_service_code: 'Service listed twice',
     multi_authorisation: 'Multiple authorisations'
   };
 
+  // Every type in normalise.js ANOMALY_TYPES must appear in exactly one group.
+  // npm run test:normalise fails the build if one is missing, because an
+  // unmapped type would otherwise fall through to UNCATEGORISED and sit on a
+  // page that makes claims about it we have not actually checked.
   const GROUPS = [
     {
       key: 'repaired',
@@ -73,16 +78,46 @@
         + 'published and is shown as plain text, never as a clickable link.'
     },
     {
+      key: 'duplicated',
+      title: 'Repeated in the source',
+      icon: 'fa-clone',
+      tone: 'sky',
+      types: ['exact_duplicate', 'repeated_service_code'],
+      blurb: 'The register states the same thing twice, either as an identical row or '
+        + 'as a service code repeated inside one record. We keep every occurrence '
+        + 'rather than quietly collapsing them, so the published totals still '
+        + 'reconcile against the source.'
+    },
+    {
       key: 'observations',
       title: 'Observations, not defects',
       icon: 'fa-circle-info',
       tone: 'slate',
-      types: ['multi_authorisation', 'repeated_service_code'],
+      types: ['multi_authorisation'],
       blurb: 'Nothing is wrong with these records. They are listed because they look '
         + 'surprising at a glance and we would rather explain them than have you '
         + 'wonder. A firm may legitimately hold more than one authorisation.'
     }
   ];
+
+  // Anything normalise.js emits that this page does not know about. It is
+  // hidden while empty and loud when not, because the honest answer to an
+  // unrecognised finding is "we have not classified this yet", never the
+  // reassurance that the Observations heading would imply.
+  const UNCATEGORISED = {
+    key: 'uncategorised',
+    title: 'Not yet categorised',
+    icon: 'fa-triangle-exclamation',
+    tone: 'red',
+    types: [],
+    optional: true,
+    blurb: 'The pipeline reported a finding this page has no description for, which '
+      + 'means the site was updated without the report being updated alongside it. '
+      + 'Treat these as unreviewed: they have not been assessed as harmless, and '
+      + 'they may be real defects. Please report them so they can be classified.'
+  };
+
+  const ALL_GROUPS = GROUPS.concat([UNCATEGORISED]);
 
   let all = [];
   let sourceRows = 0;
@@ -91,7 +126,18 @@
     for (const g of GROUPS) {
       if (g.types.indexOf(type) !== -1) return g;
     }
-    return GROUPS[GROUPS.length - 1];
+    // Never fall through to the last group. It used to be "Observations, not
+    // defects", so a newly emitted type would have been published under the
+    // claim that nothing was wrong with it.
+    return UNCATEGORISED;
+  }
+
+  // A group is drawn when it always applies, or when it has something to show.
+  function visibleGroups(rows) {
+    return ALL_GROUPS.filter(function (g) {
+      if (!g.optional) return true;
+      return rows.some(function (r) { return groupOf(r.type).key === g.key; });
+    });
   }
 
   function matches(item, term) {
@@ -129,7 +175,7 @@
 
   // ---- rendering ---------------------------------------------------------
   function summaryCards(rows) {
-    const cards = GROUPS.map(function (g) {
+    const cards = visibleGroups(rows).map(function (g) {
       const n = rows.filter(function (r) { return groupOf(r.type).key === g.key; }).length;
       return '<div class="dq-card dq-card-' + g.tone + '">' +
         '<p class="dq-card-count">' + n + '</p>' +
@@ -159,7 +205,7 @@
       }).join('')
       : '<tr><td colspan="4" class="p-6 text-center text-gray-500">Nothing in this category. The register is clean here.</td></tr>';
 
-    return '<section class="dq-section" id="dq-' + group.key + '">' +
+    return '<section class="dq-section dq-section-' + group.tone + '" id="dq-' + group.key + '">' +
       '<h2 class="dq-section-title"><i class="fas ' + group.icon + ' mr-2" aria-hidden="true"></i>' +
       esc(group.title) + ' <span class="dq-section-count">' + mine.length + '</span></h2>' +
       '<p class="dq-section-blurb">' + esc(group.blurb) + '</p>' +
@@ -178,7 +224,7 @@
     const rows = term ? all.filter(function (r) { return matches(r, term); }) : all;
 
     document.getElementById('dqSummary').innerHTML = summaryCards(rows);
-    document.getElementById('dqSections').innerHTML = GROUPS.map(function (g) {
+    document.getElementById('dqSections').innerHTML = visibleGroups(rows).map(function (g) {
       return tableFor(g, rows);
     }).join('');
     document.getElementById('dqCount').textContent = term

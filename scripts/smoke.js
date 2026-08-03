@@ -115,18 +115,22 @@ const CHECKS = [
     assert: async function (page, expect) {
       await page.waitForSelector('#dqSearch', { timeout: 15000 });
       const cards = await page.locator('.dq-card').count();
-      await expect(cards === 3, 'three summary cards render (got ' + cards + ')');
+      await expect(cards === 4, 'four summary cards render (got ' + cards + ')');
       const sections = await page.locator('.dq-section').count();
-      await expect(sections === 3, 'three grouped sections render (got ' + sections + ')');
+      await expect(sections === 4, 'four grouped sections render (got ' + sections + ')');
       const rows = await page.locator('.dq-table tbody tr').count();
       await expect(rows > 0, 'findings render (got ' + rows + ')');
+      // The uncategorised bucket means the page has drifted behind the
+      // pipeline. It must stay hidden while every emitted type is mapped.
+      const unknown = await page.locator('#dq-uncategorised').count();
+      await expect(unknown === 0, 'no "Not yet categorised" section while all types are mapped');
       // Anomaly values failed validation; they must never become links.
       const links = await page.locator('.dq-value a').count();
       await expect(links === 0, 'anomaly values are never rendered as links');
       await page.fill('#dqSearch', 'zzzznomatch');
       await page.waitForTimeout(300);
       const empty = await page.locator('.dq-table tbody tr').count();
-      await expect(empty === 3, 'a no-match search shows one empty state per section (got ' + empty + ')');
+      await expect(empty === 4, 'a no-match search shows one empty state per section (got ' + empty + ')');
     }
   },
   { page: 'about.html', assert: async function (page, expect) {
