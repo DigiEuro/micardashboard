@@ -45,45 +45,89 @@ function hasNumericId(row) {
     return Boolean(row['#']) && row['#'] !== 'nan' && !isNaN(parseInt(row['#']));
 }
 
+// RFC 4180. Two things here are load-bearing and were both wrong before:
+//
+// 1. A quoted field may contain a newline. The register does this - Paysafe
+//    lists "www.skrill.com\nwww.neteller.com" in one cell - so the file must
+//    be scanned as a character stream, not split into lines first. Splitting
+//    on '\n' tore such records in half: the tail of the record became a row
+//    of its own, and because a Maltese address happened to put text in the
+//    entity-name column, one address fragment was published as a CASP called
+//    "Hardrocks Business Park". Every field after the break shifted a column,
+//    which silently blanked 18 websites in the register.
+// 2. A literal quote inside a quoted field is escaped by doubling it. Simply
+//    toggling on every '"' turned the legal name SIA ""Paybis Europe"" into
+//    SIA Paybis Europe, i.e. a name that does not match the official record.
+function parseCsvGrid(text) {
+    const rows = [];
+    let row = [];
+    let field = '';
+    let inQuotes = false;
+
+    for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+
+        if (inQuotes) {
+            if (char !== '"') {
+                field += char;
+            } else if (text[i + 1] === '"') {
+                field += '"';
+                i += 1;
+            } else {
+                inQuotes = false;
+            }
+            continue;
+        }
+
+        if (char === '"') {
+            inQuotes = true;
+        } else if (char === ',') {
+            row.push(field);
+            field = '';
+        } else if (char === '\r') {
+            // swallow; '\n' terminates the record
+        } else if (char === '\n') {
+            row.push(field);
+            rows.push(row);
+            row = [];
+            field = '';
+        } else {
+            field += char;
+        }
+    }
+
+    if (field.length > 0 || row.length > 0) {
+        row.push(field);
+        rows.push(row);
+    }
+
+    return rows;
+}
+
 function csvToArray(str, { requireNumericId = false } = {}) {
-    const lines = str.split('\n');
-    const headers = parseCSVLine(lines[0]);
+    // Strip a UTF-8 BOM so the first header is 'ae_competentAuthority' rather
+    // than '﻿ae_competentAuthority', which no lookup would ever match.
+    const grid = parseCsvGrid(str.replace(/^﻿/, ''));
+    if (grid.length === 0) {
+        return [];
+    }
+
+    const headers = grid[0].map(header => header.trim());
     const result = [];
 
-    for (let i = 1; i < lines.length; i++) {
-        if (lines[i].trim()) {
-            const values = parseCSVLine(lines[i]);
-            const obj = {};
-            headers.forEach((header, index) => {
-                obj[header.trim()] = values[index] ? values[index].trim() : '';
-            });
-            result.push(obj);
+    for (let i = 1; i < grid.length; i++) {
+        const values = grid[i];
+        if (!values.some(value => value.trim())) {
+            continue;
         }
+        const obj = {};
+        headers.forEach((header, index) => {
+            obj[header] = values[index] ? values[index].trim() : '';
+        });
+        result.push(obj);
     }
 
     return requireNumericId ? result.filter(hasNumericId) : result;
-}
-
-function parseCSVLine(line) {
-    const result = [];
-    let current = '';
-    let inQuotes = false;
-
-    for (let i = 0; i < line.length; i++) {
-        const char = line[i];
-
-        if (char === '"') {
-            inQuotes = !inQuotes;
-        } else if (char === ',' && !inQuotes) {
-            result.push(current);
-            current = '';
-        } else {
-            current += char;
-        }
-    }
-
-    result.push(current);
-    return result;
 }
 
 function parseNumber(value) {
@@ -355,15 +399,13 @@ async function fetchCsv(url, label = 'CSV export') {
 }
 
 function extractDatesFromCsv(csv) {
-    const lines = csv.trim().split('\n');
     const dateMap = {};
 
-    lines.forEach((line, index) => {
-        if (!line.trim()) {
+    parseCsvGrid(csv.trim()).forEach((values, index) => {
+        if (!values.some(value => value.trim())) {
             return;
         }
 
-        const values = parseCSVLine(line);
         const key = values[0] ? values[0].trim() : `row_${index}`;
         const value = values[1] ? values[1].trim() : '';
 
@@ -478,8 +520,12 @@ function parseMultiValueField(value) {
         return [];
     }
 
+    // A single newline is a separator too: the register puts multi-value cells
+    // on separate lines inside one quoted field (Paysafe lists skrill.com and
+    // neteller.com that way). \s{2,} does not match a lone \n, so without this
+    // the two URLs stayed glued into one unusable "site".
     return value
-        .split(/\||,|;|\s{2,}/)
+        .split(/\||,|;|\r?\n|\s{2,}/)
         .map(entry => entry.trim())
         .filter(entry => entry.length > 0);
 }
@@ -488,13 +534,21 @@ function parseMultiValueField(value) {
 const LEI_PATTERN = /^[A-Z0-9]{18}[0-9]{2}$/;
 
 // The LEI code lives in a column whose exact header we don't hard-code, so
-// match any LEI-ish header. 'ae_lei_name' is deliberately excluded: it holds
-// the entity NAME on the LEI record, not the code - mistaking the two is what
-// made the register look like it had no LEIs at all.
+// match any LEI-ish header. Two neighbouring columns also contain "lei" but
+// hold something else entirely, and both must be excluded by name:
+//   ae_lei_name     - the entity NAME on the LEI record, not the code.
+//                     Mistaking the two made the register look like it had
+//                     no LEIs at all.
+//   ae_lei_cou_code - the ISO country of the LEI issuer ('IE', 'ES', ...).
+//                     Whenever ae_lei was blank this was returned instead and
+//                     reported as a "malformed LEI", which pointed the data
+//                     -quality review at a value that was never an LEI.
+const NON_LEI_COLUMNS = new Set(['ae_lei_name', 'ae_lei_cou_code']);
+
 function extractLei(row) {
     for (const [header, value] of Object.entries(row || {})) {
         const key = String(header || '').trim().toLowerCase();
-        if (!key.includes('lei') || key === 'ae_lei_name') {
+        if (!key.includes('lei') || NON_LEI_COLUMNS.has(key) || key.includes('cou_code')) {
             continue;
         }
         const candidate = String(value || '').trim().toUpperCase();
@@ -1387,5 +1441,7 @@ module.exports = {
     registersDiffer,
     convertToCaspsData,
     extractLei,
+    csvToArray,
+    parseCsvGrid,
     LEI_PATTERN
 };
