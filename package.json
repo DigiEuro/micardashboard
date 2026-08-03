@@ -8,6 +8,7 @@
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./styles/tailwind.css",
     "validate:data": "node scripts/validate-dashboard-data.js",
     "test:normalise": "node scripts/test-normalise.js",
+    "test:csv": "node scripts/test-csv.js",
     "check:css": "cp styles/tailwind.css /tmp/tw.committed.css && npm run build:css --silent && diff -q /tmp/tw.committed.css styles/tailwind.css > /dev/null && echo 'Tailwind CSS is up to date.' || (echo 'STALE: run npm run build:css and commit'; exit 1)"
   },
   "keywords": [],

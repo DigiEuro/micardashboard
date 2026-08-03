@@ -49,6 +49,7 @@ jobs:
         node --check scripts/validate-dashboard-data.js
         node --check assets/js/mobile-menu.js
         node --check assets/js/register-view.js
+        node --check scripts/test-csv.js
 
     - name: Check sitemap lists the intent pages
       run: |
@@ -98,6 +99,12 @@ jobs:
           }
           console.log('data files OK');
         "
+
+    - name: Test the CSV reader
+      # The register export puts newlines inside quoted cells. A reader that
+      # splits on '\n' before parsing tears those records in half, shifts every
+      # later field one column, and publishes address fragments as CASPs.
+      run: npm run test:csv
 
     - name: Test entity resolution and normalisation
       run: npm run test:normalise
