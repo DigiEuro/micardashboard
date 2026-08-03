@@ -1,7 +1,7 @@
 {
   "sourceRows": 323,
   "entityCount": 320,
-  "keyedByLei": 315,
+  "keyedByLei": 314,
   "entities": [
     {
       "entityKey": "5493007WZ7IFULIL8G21",
@@ -3089,10 +3089,7 @@
         "RTO"
       ],
       "websites": [],
-      "websitesRaw": [
-        "N26 – Die erste Onlinebank",
-        "die du lieben wirst"
-      ],
+      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 62,
@@ -3107,10 +3104,7 @@
             "RTO"
           ],
           "websites": [],
-          "websitesRaw": [
-            "N26 – Die erste Onlinebank",
-            "die du lieben wirst"
-          ]
+          "websitesRaw": []
         }
       ],
       "firstSeen": "2025-11-20"
@@ -3170,9 +3164,7 @@
         "transfer"
       ],
       "websites": [],
-      "websitesRaw": [
-        "Commerzbank AG – Investor Relations"
-      ],
+      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 64,
@@ -3189,9 +3181,7 @@
             "transfer"
           ],
           "websites": [],
-          "websitesRaw": [
-            "Commerzbank AG – Investor Relations"
-          ]
+          "websitesRaw": []
         }
       ],
       "firstSeen": "2025-11-20"
@@ -6214,9 +6204,7 @@
         "RTO",
         "transfer"
       ],
-      "websites": [
-        "https://portal.kutxabank.es/cs/ Satellite/kb/es/particulares"
-      ],
+      "websites": [],
       "websitesRaw": [],
       "authorisations": [
         {
@@ -6235,9 +6223,7 @@
             "RTO",
             "transfer"
           ],
-          "websites": [
-            "https://portal.kutxabank.es/cs/ Satellite/kb/es/particulares"
-          ],
+          "websites": [],
           "websitesRaw": []
         }
       ],
@@ -6424,10 +6410,10 @@
       "firstSeen": "2026-07-05"
     },
     {
-      "entityKey": "959800U0R44NN5DJC930",
-      "keySource": "lei",
+      "entityKey": "nc:27e8e3bb795b",
+      "keySource": "name-country",
       "slug": "minos-global-s-l",
-      "lei": "959800U0R44NN5DJC930",
+      "lei": "",
       "name": "MINOS GLOBAL, S.L.",
       "alsoKnownAs": [],
       "country": "Spain",
@@ -7188,9 +7174,7 @@
         "exchange funds"
       ],
       "websites": [],
-      "websitesRaw": [
-        "75012 Paris"
-      ],
+      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 159,
@@ -7205,9 +7189,7 @@
             "exchange funds"
           ],
           "websites": [],
-          "websitesRaw": [
-            "75012 Paris"
-          ]
+          "websitesRaw": []
         }
       ],
       "firstSeen": "2025-11-20"
@@ -7228,9 +7210,7 @@
         "transfer"
       ],
       "websites": [],
-      "websitesRaw": [
-        "92800 PUTEAUX"
-      ],
+      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 160,
@@ -7247,9 +7227,7 @@
             "transfer"
           ],
           "websites": [],
-          "websitesRaw": [
-            "92800 PUTEAUX"
-          ]
+          "websitesRaw": []
         }
       ],
       "firstSeen": "2025-11-20"
@@ -7275,9 +7253,7 @@
         "transfer"
       ],
       "websites": [],
-      "websitesRaw": [
-        "07160 LE CHEYLARD"
-      ],
+      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 161,
@@ -7304,9 +7280,7 @@
             "transfer"
           ],
           "websites": [],
-          "websitesRaw": [
-            "07160 LE CHEYLARD"
-          ]
+          "websitesRaw": []
         }
       ],
       "firstSeen": "2025-11-20"
@@ -11701,7 +11675,9 @@
         "exchange funds",
         "transfer"
       ],
-      "websites": [],
+      "websites": [
+        "https://nodu.fi"
+      ],
       "websitesRaw": [],
       "authorisations": [
         {
@@ -11718,7 +11694,9 @@
             "exchange funds",
             "transfer"
           ],
-          "websites": [],
+          "websites": [
+            "https://nodu.fi"
+          ],
           "websitesRaw": []
         }
       ],
@@ -12423,12 +12401,8 @@
         "RTO",
         "transfer"
       ],
-      "websites": [
-        "https://Olmipay.com"
-      ],
-      "websitesRaw": [
-        "(upcoming)"
-      ],
+      "websites": [],
+      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 269,
@@ -12450,12 +12424,8 @@
             "RTO",
             "transfer"
           ],
-          "websites": [
-            "https://Olmipay.com"
-          ],
-          "websitesRaw": [
-            "(upcoming)"
-          ]
+          "websites": [],
+          "websitesRaw": []
         }
       ],
       "firstSeen": "2026-07-05"

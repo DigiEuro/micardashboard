@@ -188,7 +188,7 @@
       "transfer"
     ],
     "websites": [
-      "www.kbc.com"
+      "https://www.kbc.com"
     ]
   },
   {
@@ -202,7 +202,7 @@
       "transfer"
     ],
     "websites": [
-      "www.bny.com"
+      "https://www.bny.com"
     ]
   },
   {
@@ -286,7 +286,7 @@
       "transfer"
     ],
     "websites": [
-      "www.etoro.com"
+      "https://www.etoro.com"
     ]
   },
   {
@@ -318,7 +318,7 @@
       "RTO"
     ],
     "websites": [
-      "www.trading212.com"
+      "https://www.trading212.com"
     ]
   },
   {
@@ -371,7 +371,7 @@
       "transfer"
     ],
     "websites": [
-      "www.teroxx.com"
+      "https://www.teroxx.com"
     ]
   },
   {
@@ -387,7 +387,7 @@
       "execution"
     ],
     "websites": [
-      "www.capital.com"
+      "https://www.capital.com"
     ]
   },
   {
@@ -403,7 +403,7 @@
       "portfolio mgmt"
     ],
     "websites": [
-      "www.pelicaneu.com"
+      "https://www.pelicaneu.com"
     ]
   },
   {
@@ -437,7 +437,7 @@
       "portfolio mgmt"
     ],
     "websites": [
-      "www.noemon.finance"
+      "https://www.noemon.finance"
     ]
   },
   {
@@ -455,7 +455,7 @@
       "portfolio mgmt"
     ],
     "websites": [
-      "www.trading.com/eu"
+      "https://www.trading.com/eu"
     ]
   },
   {
@@ -475,7 +475,7 @@
       "transfer"
     ],
     "websites": [
-      "www.j2tx.com"
+      "https://www.j2tx.com"
     ]
   },
   {
@@ -493,7 +493,7 @@
       "transfer"
     ],
     "websites": [
-      "www.daskkrypto.eu"
+      "https://www.daskkrypto.eu"
     ]
   },
   {
@@ -513,7 +513,7 @@
       "transfer"
     ],
     "websites": [
-      "www.nagax.com/eu/"
+      "https://www.nagax.com/eu/"
     ]
   },
   {
@@ -549,7 +549,7 @@
       "transfer"
     ],
     "websites": [
-      "www.krypto-knight.com"
+      "https://www.krypto-knight.com"
     ]
   },
   {
@@ -589,7 +589,7 @@
       "transfer"
     ],
     "websites": [
-      "www.noemon.tech"
+      "https://www.noemon.tech"
     ]
   },
   {
@@ -608,7 +608,7 @@
       "transfer"
     ],
     "websites": [
-      "www.crypto.unlimit.com"
+      "https://www.crypto.unlimit.com"
     ]
   },
   {
@@ -626,7 +626,7 @@
       "transfer"
     ],
     "websites": [
-      "www.complycrypto.eu"
+      "https://www.complycrypto.eu"
     ]
   },
   {
@@ -715,7 +715,7 @@
       "transfer"
     ],
     "websites": [
-      "www.cloverum.com"
+      "https://www.cloverum.com"
     ]
   },
   {
@@ -733,7 +733,7 @@
       "transfer"
     ],
     "websites": [
-      "www.invity.io"
+      "https://www.invity.io"
     ]
   },
   {
@@ -750,7 +750,7 @@
       "execution"
     ],
     "websites": [
-      "www.anycoin.cz"
+      "https://www.anycoin.cz"
     ]
   },
   {
@@ -893,7 +893,7 @@
       "advice"
     ],
     "websites": [
-      "ttps://www.altlift.cz/"
+      "https://www.altlift.cz/"
     ]
   },
   {
@@ -907,7 +907,7 @@
       "transfer"
     ],
     "websites": [
-      "www.bsdigital.com"
+      "https://www.bsdigital.com"
     ]
   },
   {
@@ -923,7 +923,7 @@
       "transfer"
     ],
     "websites": [
-      "www.bitpanda.com"
+      "https://www.bitpanda.com"
     ]
   },
   {
@@ -940,7 +940,7 @@
       "transfer"
     ],
     "websites": [
-      "www.tradias.de"
+      "https://www.tradias.de"
     ]
   },
   {
@@ -954,7 +954,7 @@
       "exchange crypto"
     ],
     "websites": [
-      "www.euwax-ag.de"
+      "https://www.euwax-ag.de"
     ]
   },
   {
@@ -967,7 +967,7 @@
       "execution"
     ],
     "websites": [
-      "www.flatexdegiro.com/de/flatexdegiro-bank/login"
+      "https://www.flatexdegiro.com/de/flatexdegiro-bank/login"
     ]
   },
   {
@@ -980,7 +980,7 @@
       "trading platform"
     ],
     "websites": [
-      "www.360t.com"
+      "https://www.360t.com"
     ]
   },
   {
@@ -1026,10 +1026,7 @@
     "services": [
       "RTO"
     ],
-    "websites": [
-      "N26 – Die erste Onlinebank",
-      "die du lieben wirst"
-    ]
+    "websites": []
   },
   {
     "id": 63,
@@ -1054,9 +1051,7 @@
       "custody",
       "transfer"
     ],
-    "websites": [
-      "Commerzbank AG – Investor Relations"
-    ]
+    "websites": []
   },
   {
     "id": 65,
@@ -1112,7 +1107,7 @@
       "transfer"
     ],
     "websites": [
-      "www.tangany.com"
+      "https://www.tangany.com"
     ]
   },
   {
@@ -1190,7 +1185,7 @@
       "advice"
     ],
     "websites": [
-      "www.bankhaus-scheich.de"
+      "https://www.bankhaus-scheich.de"
     ]
   },
   {
@@ -1230,7 +1225,7 @@
       "execution"
     ],
     "websites": [
-      "www.vr-bayernmitte.de"
+      "https://www.vr-bayernmitte.de"
     ]
   },
   {
@@ -1243,7 +1238,7 @@
       "RTO"
     ],
     "websites": [
-      "www.huddlestock.com"
+      "https://www.huddlestock.com"
     ]
   },
   {
@@ -1310,7 +1305,7 @@
       "execution"
     ],
     "websites": [
-      "www.euwax-ag.de"
+      "https://www.euwax-ag.de"
     ]
   },
   {
@@ -1353,7 +1348,7 @@
       "execution"
     ],
     "websites": [
-      "www.westerwaldbank.de"
+      "https://www.westerwaldbank.de"
     ]
   },
   {
@@ -1379,7 +1374,7 @@
       "execution"
     ],
     "websites": [
-      "www.vr-teilhaberbank.de"
+      "https://www.vr-teilhaberbank.de"
     ]
   },
   {
@@ -1434,7 +1429,7 @@
       "execution"
     ],
     "websites": [
-      "www.vrbk.de"
+      "https://www.vrbk.de"
     ]
   },
   {
@@ -1447,7 +1442,7 @@
       "execution"
     ],
     "websites": [
-      "www.vrbank-suedpfalz.de"
+      "https://www.vrbank-suedpfalz.de"
     ]
   },
   {
@@ -1473,7 +1468,7 @@
       "RTO"
     ],
     "websites": [
-      "www.wsw-pm.de"
+      "https://www.wsw-pm.de"
     ]
   },
   {
@@ -1518,7 +1513,7 @@
       "transfer"
     ],
     "websites": [
-      "www.tradevest.ai"
+      "https://www.tradevest.ai"
     ]
   },
   {
@@ -1531,7 +1526,7 @@
       "RTO"
     ],
     "websites": [
-      "www.isf-institut.de"
+      "https://www.isf-institut.de"
     ]
   },
   {
@@ -1544,7 +1539,7 @@
       "portfolio mgmt"
     ],
     "websites": [
-      "www.plutos.de"
+      "https://www.plutos.de"
     ]
   },
   {
@@ -1557,7 +1552,7 @@
       "advice"
     ],
     "websites": [
-      "www.scalable.capital"
+      "https://www.scalable.capital"
     ]
   },
   {
@@ -1572,7 +1567,7 @@
       "portfolio mgmt"
     ],
     "websites": [
-      "www.anceka.de"
+      "https://www.anceka.de"
     ]
   },
   {
@@ -1590,7 +1585,7 @@
       "transfer"
     ],
     "websites": [
-      "www.berenberg.de"
+      "https://www.berenberg.de"
     ]
   },
   {
@@ -1603,7 +1598,7 @@
       "execution"
     ],
     "websites": [
-      "www.mlp.de"
+      "https://www.mlp.de"
     ]
   },
   {
@@ -1617,7 +1612,7 @@
       "portfolio mgmt"
     ],
     "websites": [
-      "www.bvp-vermoegen.de"
+      "https://www.bvp-vermoegen.de"
     ]
   },
   {
@@ -1647,7 +1642,7 @@
       "placing"
     ],
     "websites": [
-      "www.dlt-finance.com"
+      "https://www.dlt-finance.com"
     ]
   },
   {
@@ -1676,7 +1671,7 @@
       "advice"
     ],
     "websites": [
-      "www.vermoegensbutler.de"
+      "https://www.vermoegensbutler.de"
     ]
   },
   {
@@ -1689,7 +1684,7 @@
       "execution"
     ],
     "websites": [
-      "www.vbheiden.de"
+      "https://www.vbheiden.de"
     ]
   },
   {
@@ -1702,7 +1697,7 @@
       "execution"
     ],
     "websites": [
-      "www.rbkk.de"
+      "https://www.rbkk.de"
     ]
   },
   {
@@ -1728,7 +1723,7 @@
       "execution"
     ],
     "websites": [
-      "www.donau-iller-bank.de"
+      "https://www.donau-iller-bank.de"
     ]
   },
   {
@@ -1741,7 +1736,7 @@
       "execution"
     ],
     "websites": [
-      "www.vbsdn.de"
+      "https://www.vbsdn.de"
     ]
   },
   {
@@ -1754,7 +1749,7 @@
       "execution"
     ],
     "websites": [
-      "www.rb-af.de"
+      "https://www.rb-af.de"
     ]
   },
   {
@@ -1781,7 +1776,7 @@
       "execution"
     ],
     "websites": [
-      "www.skb-rheinstetten.de"
+      "https://www.skb-rheinstetten.de"
     ]
   },
   {
@@ -1794,7 +1789,7 @@
       "execution"
     ],
     "websites": [
-      "www.vrbank-augsburg-ostallgaeu.de"
+      "https://www.vrbank-augsburg-ostallgaeu.de"
     ]
   },
   {
@@ -1807,7 +1802,7 @@
       "execution"
     ],
     "websites": [
-      "www.rbfalkenstein-woerth.de"
+      "https://www.rbfalkenstein-woerth.de"
     ]
   },
   {
@@ -1820,7 +1815,7 @@
       "execution"
     ],
     "websites": [
-      "www-vrbank-obb-so.de"
+      "https://www-vrbank-obb-so.de"
     ]
   },
   {
@@ -1846,7 +1841,7 @@
       "execution"
     ],
     "websites": [
-      "www.vrbanklm.de"
+      "https://www.vrbanklm.de"
     ]
   },
   {
@@ -1865,7 +1860,7 @@
       "transfer"
     ],
     "websites": [
-      "www.penning.io"
+      "https://www.penning.io"
     ]
   },
   {
@@ -1910,7 +1905,7 @@
       "transfer"
     ],
     "websites": [
-      "www.northstake.dk"
+      "https://www.northstake.dk"
     ]
   },
   {
@@ -2014,7 +2009,7 @@
       "transfer"
     ],
     "websites": [
-      "www.bbva.es"
+      "https://www.bbva.es"
     ]
   },
   {
@@ -2028,7 +2023,7 @@
       "execution"
     ],
     "websites": [
-      "www.openbank.es"
+      "https://www.openbank.es"
     ]
   },
   {
@@ -2043,7 +2038,7 @@
       "transfer"
     ],
     "websites": [
-      "www.cecabank.es"
+      "https://www.cecabank.es"
     ]
   },
   {
@@ -2062,7 +2057,7 @@
       "transfer"
     ],
     "websites": [
-      "bit2me.com"
+      "https://bit2me.com"
     ]
   },
   {
@@ -2077,7 +2072,7 @@
       "transfer"
     ],
     "websites": [
-      "www.r4.com"
+      "https://www.r4.com"
     ]
   },
   {
@@ -2091,9 +2086,7 @@
       "RTO",
       "transfer"
     ],
-    "websites": [
-      "https://portal.kutxabank.es/cs/ Satellite/kb/es/particulares"
-    ]
+    "websites": []
   },
   {
     "id": 138,
@@ -2136,7 +2129,7 @@
       "transfer"
     ],
     "websites": [
-      "www.crossmint.com"
+      "https://www.crossmint.com"
     ]
   },
   {
@@ -2152,13 +2145,13 @@
       "transfer"
     ],
     "websites": [
-      "www.criptan.com"
+      "https://www.criptan.com"
     ]
   },
   {
     "id": 142,
     "name": "MINOS GLOBAL, S.L.",
-    "lei": "959800U0R44NN5DJC930",
+    "lei": "",
     "authority": "CNMV",
     "memberState": "Spain",
     "services": [
@@ -2170,7 +2163,7 @@
       "RTO"
     ],
     "websites": [
-      "ttps://minos.global"
+      "https://minos.global"
     ]
   },
   {
@@ -2184,7 +2177,7 @@
       "RTO"
     ],
     "websites": [
-      "www.prosegurcrypto.com"
+      "https://www.prosegurcrypto.com"
     ]
   },
   {
@@ -2414,9 +2407,7 @@
     "services": [
       "exchange funds"
     ],
-    "websites": [
-      "75012 Paris"
-    ]
+    "websites": []
   },
   {
     "id": 160,
@@ -2428,9 +2419,7 @@
       "custody",
       "transfer"
     ],
-    "websites": [
-      "92800 PUTEAUX"
-    ]
+    "websites": []
   },
   {
     "id": 161,
@@ -2447,9 +2436,7 @@
       "portfolio mgmt",
       "transfer"
     ],
-    "websites": [
-      "07160 LE CHEYLARD"
-    ]
+    "websites": []
   },
   {
     "id": 162,
@@ -2986,7 +2973,7 @@
       "exchange crypto"
     ],
     "websites": [
-      "www.legendtrading.com"
+      "https://www.legendtrading.com"
     ]
   },
   {
@@ -3000,7 +2987,7 @@
       "exchange crypto"
     ],
     "websites": [
-      "push.co"
+      "https://push.co"
     ]
   },
   {
@@ -3013,7 +3000,7 @@
       "exchange funds"
     ],
     "websites": [
-      "rampnetwork.com"
+      "https://rampnetwork.com"
     ]
   },
   {
@@ -3029,8 +3016,8 @@
       "transfer"
     ],
     "websites": [
-      "www.skrill.com",
-      "www.neteller.com"
+      "https://www.skrill.com",
+      "https://www.neteller.com"
     ]
   },
   {
@@ -3061,7 +3048,7 @@
       "transfer"
     ],
     "websites": [
-      "confirmo.eu"
+      "https://confirmo.eu"
     ]
   },
   {
@@ -3077,7 +3064,7 @@
       "transfer"
     ],
     "websites": [
-      "www.webot.com/eu"
+      "https://www.webot.com/eu"
     ]
   },
   {
@@ -3095,7 +3082,7 @@
       "transfer"
     ],
     "websites": [
-      "www.stonex.com"
+      "https://www.stonex.com"
     ]
   },
   {
@@ -3155,7 +3142,7 @@
       "transfer"
     ],
     "websites": [
-      "WWW.CHECKSIG.COM"
+      "https://WWW.CHECKSIG.COM"
     ]
   },
   {
@@ -3201,7 +3188,7 @@
       "transfer"
     ],
     "websites": [
-      "www.conio.com"
+      "https://www.conio.com"
     ]
   },
   {
@@ -3215,7 +3202,7 @@
       "transfer"
     ],
     "websites": [
-      "www.sella.it"
+      "https://www.sella.it"
     ]
   },
   {
@@ -3356,7 +3343,7 @@
       "transfer"
     ],
     "websites": [
-      "www.celsion-finance.com"
+      "https://www.celsion-finance.com"
     ]
   },
   {
@@ -3469,7 +3456,7 @@
       "transfer"
     ],
     "websites": [
-      "www.paymonade.tech"
+      "https://www.paymonade.tech"
     ]
   },
   {
@@ -3613,7 +3600,7 @@
       "transfer"
     ],
     "websites": [
-      "https.//coinbase.com"
+      "https://coinbase.com"
     ]
   },
   {
@@ -3734,7 +3721,7 @@
       "transfer"
     ],
     "websites": [
-      "www.bridge.xyz"
+      "https://www.bridge.xyz"
     ]
   },
   {
@@ -3928,7 +3915,9 @@
       "exchange funds",
       "transfer"
     ],
-    "websites": []
+    "websites": [
+      "https://nodu.fi"
+    ]
   },
   {
     "id": 256,
@@ -3948,7 +3937,7 @@
       "transfer"
     ],
     "websites": [
-      "www.okx.com"
+      "https://www.okx.com"
     ]
   },
   {
@@ -3966,7 +3955,7 @@
       "transfer"
     ],
     "websites": [
-      "www.bitpanda.com"
+      "https://www.bitpanda.com"
     ]
   },
   {
@@ -3984,7 +3973,7 @@
       "transfer"
     ],
     "websites": [
-      "crypto.com"
+      "https://crypto.com"
     ]
   },
   {
@@ -4004,7 +3993,7 @@
       "transfer"
     ],
     "websites": [
-      "www.zbx.com"
+      "https://www.zbx.com"
     ]
   },
   {
@@ -4018,7 +4007,7 @@
       "portfolio mgmt"
     ],
     "websites": [
-      "www.altariusgroup.com"
+      "https://www.altariusgroup.com"
     ]
   },
   {
@@ -4037,7 +4026,7 @@
       "transfer"
     ],
     "websites": [
-      "www.gemini.com"
+      "https://www.gemini.com"
     ]
   },
   {
@@ -4054,7 +4043,7 @@
       "transfer"
     ],
     "websites": [
-      "www.socios.com"
+      "https://www.socios.com"
     ]
   },
   {
@@ -4072,7 +4061,7 @@
       "transfer"
     ],
     "websites": [
-      "www.gate.com/en-eu"
+      "https://www.gate.com/en-eu"
     ]
   },
   {
@@ -4089,7 +4078,7 @@
       "transfer"
     ],
     "websites": [
-      "www.blockchain.com"
+      "https://www.blockchain.com"
     ]
   },
   {
@@ -4106,7 +4095,7 @@
       "transfer"
     ],
     "websites": [
-      "www.payhound.com"
+      "https://www.payhound.com"
     ]
   },
   {
@@ -4123,7 +4112,7 @@
       "transfer"
     ],
     "websites": [
-      "www.damex.io"
+      "https://www.damex.io"
     ]
   },
   {
@@ -4170,10 +4159,7 @@
       "RTO",
       "transfer"
     ],
-    "websites": [
-      "Olmipay.com",
-      "(upcoming)"
-    ]
+    "websites": []
   },
   {
     "id": 270,
@@ -4920,7 +4906,7 @@
       "transfer"
     ],
     "websites": [
-      "www.safello.com"
+      "https://www.safello.com"
     ]
   },
   {
