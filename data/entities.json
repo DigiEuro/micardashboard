@@ -1,7 +1,7 @@
 {
   "sourceRows": 323,
   "entityCount": 320,
-  "keyedByLei": 314,
+  "keyedByLei": 315,
   "entities": [
     {
       "entityKey": "5493007WZ7IFULIL8G21",
@@ -3088,7 +3088,9 @@
       "services": [
         "RTO"
       ],
-      "websites": [],
+      "websites": [
+        "https://n26.com"
+      ],
       "websitesRaw": [],
       "authorisations": [
         {
@@ -3103,7 +3105,9 @@
           "servicesRaw": [
             "RTO"
           ],
-          "websites": [],
+          "websites": [
+            "https://n26.com"
+          ],
           "websitesRaw": []
         }
       ],
@@ -3163,7 +3167,9 @@
         "custody",
         "transfer"
       ],
-      "websites": [],
+      "websites": [
+        "https://www.commerzbank.de"
+      ],
       "websitesRaw": [],
       "authorisations": [
         {
@@ -3180,7 +3186,9 @@
             "custody",
             "transfer"
           ],
-          "websites": [],
+          "websites": [
+            "https://www.commerzbank.de"
+          ],
           "websitesRaw": []
         }
       ],
@@ -6204,7 +6212,9 @@
         "RTO",
         "transfer"
       ],
-      "websites": [],
+      "websites": [
+        "https://portal.kutxabank.es/cs/Satellite/kb/es/particulares"
+      ],
       "websitesRaw": [],
       "authorisations": [
         {
@@ -6223,7 +6233,9 @@
             "RTO",
             "transfer"
           ],
-          "websites": [],
+          "websites": [
+            "https://portal.kutxabank.es/cs/Satellite/kb/es/particulares"
+          ],
           "websitesRaw": []
         }
       ],
@@ -6410,10 +6422,10 @@
       "firstSeen": "2026-07-05"
     },
     {
-      "entityKey": "nc:27e8e3bb795b",
-      "keySource": "name-country",
+      "entityKey": "959800U0R44NN5DJC930",
+      "keySource": "lei",
       "slug": "minos-global-s-l",
-      "lei": "",
+      "lei": "959800U0R44NN5DJC930",
       "name": "MINOS GLOBAL, S.L.",
       "alsoKnownAs": [],
       "country": "Spain",
@@ -12401,7 +12413,9 @@
         "RTO",
         "transfer"
       ],
-      "websites": [],
+      "websites": [
+        "https://olmipay.com"
+      ],
       "websitesRaw": [],
       "authorisations": [
         {
@@ -12424,7 +12438,9 @@
             "RTO",
             "transfer"
           ],
-          "websites": [],
+          "websites": [
+            "https://olmipay.com"
+          ],
           "websitesRaw": []
         }
       ],
