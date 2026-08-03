@@ -165,5 +165,52 @@ test('live CASP register reconciles exactly', () => {
     assert.strictEqual(new Set(slugs).size, slugs.length, 'duplicate slugs');
 });
 
+console.log('\ndata-quality page covers every anomaly type');
+
+function groupedTypes() {
+    const fs = require('fs');
+    const path = require('path');
+    const source = fs.readFileSync(
+        path.join(__dirname, '..', 'assets', 'js', 'data-quality.js'), 'utf8');
+    // GROUPS entries only. UNCATEGORISED declares types: [] and is the sink, so
+    // a type "covered" by it is precisely the bug this guards against.
+    const block = source.slice(
+        source.indexOf('const GROUPS = ['), source.indexOf('const UNCATEGORISED'));
+    const found = [];
+    for (const arr of block.match(/types: \[[^\]]*\]/g) || []) {
+        for (const t of arr.match(/'[a-z_]+'/g) || []) found.push(t.replace(/'/g, ''));
+    }
+    return { found, source };
+}
+
+test('every anomaly type is mapped to a group on data-quality.html', () => {
+    // Without this, adding a type to normalise.js and forgetting the page would
+    // publish the new finding under whatever the fallback happens to be. That
+    // fallback used to be "Observations, not defects", whose copy states that
+    // nothing is wrong with the records beneath it, so a genuine new defect
+    // would have been announced to readers as harmless.
+    const { found } = groupedTypes();
+    const mapped = new Set(found);
+    const missing = Object.values(N.ANOMALY_TYPES).filter(t => !mapped.has(t));
+    assert.strictEqual(missing.length, 0,
+        `not grouped on data-quality.html: ${missing.join(', ')} ` +
+        '(add each to a GROUPS entry and give it a TYPE_LABELS label)');
+});
+
+test('every anomaly type has a human-readable label', () => {
+    const { source } = groupedTypes();
+    const labels = source.slice(
+        source.indexOf('const TYPE_LABELS = {'), source.indexOf('const GROUPS = ['));
+    const unlabelled = Object.values(N.ANOMALY_TYPES).filter(t => !labels.includes(t + ':'));
+    assert.strictEqual(unlabelled.length, 0,
+        `no label, so the badge would show the raw code: ${unlabelled.join(', ')}`);
+});
+
+test('no anomaly type is claimed by two groups at once', () => {
+    const { found } = groupedTypes();
+    assert.strictEqual(new Set(found).size, found.length,
+        `a type appears in more than one group: ${found.join(', ')}`);
+});
+
 console.log(`\n${failed === 0 ? '✅' : '❌'} ${passed} passed, ${failed} failed\n`);
 process.exit(failed === 0 ? 0 : 1);

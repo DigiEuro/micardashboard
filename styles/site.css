@@ -901,15 +901,14 @@ select.search-input:hover {
   margin-bottom: 1.25rem;
 }
 
+/* auto-fit rather than a fixed column count: the number of cards depends on
+   how many groups have findings, and an "unrecognised finding" card appears
+   only when the pipeline emits a type the page does not know. */
 .dq-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   gap: 1rem;
   margin-bottom: 2rem;
-}
-
-@media (min-width: 640px) {
-  .dq-cards { grid-template-columns: repeat(3, 1fr); }
 }
 
 .dq-card {
@@ -936,7 +935,9 @@ select.search-input:hover {
 
 .dq-card-amber { border-left-color: #d97706; }
 .dq-card-rose  { border-left-color: #e11d48; }
+.dq-card-sky   { border-left-color: #0284c7; }
 .dq-card-slate { border-left-color: #64748b; }
+.dq-card-red   { border-left-color: #b91c1c; }
 
 .dq-section {
   background: rgba(255, 255, 255, 0.96);
@@ -995,7 +996,17 @@ select.search-input:hover {
 
 .dq-badge-amber { background: #fef3c7; color: #92400e; }
 .dq-badge-rose  { background: #ffe4e6; color: #9f1239; }
+.dq-badge-sky   { background: #e0f2fe; color: #075985; }
 .dq-badge-slate { background: #e2e8f0; color: #334155; }
+.dq-badge-red   { background: #fee2e2; color: #991b1b; }
+
+/* The uncategorised section means the report is out of date with the
+   pipeline. It should read as a problem, not as another neutral bucket. */
+.dq-section.dq-section-red {
+  border: 2px solid #b91c1c;
+}
+
+.dq-section-red .dq-section-title { color: #991b1b; }
 
 .dq-value {
   display: inline-block;
