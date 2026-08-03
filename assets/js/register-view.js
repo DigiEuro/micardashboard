@@ -120,8 +120,8 @@
     casps: {
       dataUrl: 'data/casps.json', jsonHref: 'data/casps.json', jsonName: 'micar-casps.json',
       csvName: 'micar-casps.csv', snapshotKey: 'caspsSnapshotDate', theme: 'teal',
-      searchPlaceholder: 'Search CASPs, countries, services…',
-      searchLabel: 'Search CASPs by name, country, authority, service, or website',
+      searchPlaceholder: 'Search CASPs, countries, services, LEI…',
+      searchLabel: 'Search CASPs by name, LEI, country, authority, service, or website',
       caption: 'Crypto-Asset Service Providers registered under MiCAR',
       filters: true,
       unit: ['provider', 'providers'],
@@ -136,8 +136,13 @@
         { label: 'Services', width: '28%', cls: 'services-cell' },
         { label: 'Websites', width: '16%' }
       ],
+      // The LEI is searchable but deliberately not a column: it is a 20-char
+      // lookup key, not something a human scans, and the table is already six
+      // columns wide. Paste an LEI into the search box and it resolves to the
+      // CASP; the full value ships in the CSV and JSON exports.
       matches: function (item, term) {
         return (item.name || '').toLowerCase().indexOf(term) !== -1 ||
+          (item.lei || '').toLowerCase().indexOf(term) !== -1 ||
           (item.memberState || '').toLowerCase().indexOf(term) !== -1 ||
           (item.authority || '').toLowerCase().indexOf(term) !== -1 ||
           (item.services || []).join(' ').toLowerCase().indexOf(term) !== -1 ||
@@ -165,6 +170,7 @@
       },
       csv: [
         { label: 'CASP', value: function (r) { return r.name; } },
+        { label: 'LEI', value: function (r) { return r.lei || ''; } },
         { label: 'Country', value: function (r) { return r.memberState; } },
         { label: 'Competent Authority', value: function (r) { return r.authority; } },
         { label: 'Services', value: function (r) { return (r.services || []).join('; '); } },
