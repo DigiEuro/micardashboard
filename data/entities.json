@@ -1,7 +1,7 @@
 {
   "sourceRows": 323,
   "entityCount": 320,
-  "keyedByLei": 314,
+  "keyedByLei": 315,
   "entities": [
     {
       "entityKey": "5493007WZ7IFULIL8G21",
@@ -8984,10 +8984,10 @@
       "firstSeen": "2026-07-05"
     },
     {
-      "entityKey": "nc:4f6654a74358",
-      "keySource": "name-country",
+      "entityKey": "213800QBQVHWRBHJTA89",
+      "keySource": "lei",
       "slug": "paysafe-payment-solutions-limited",
-      "lei": "",
+      "lei": "213800QBQVHWRBHJTA89",
       "name": "Paysafe Payment Solutions Limited.",
       "alsoKnownAs": [],
       "country": "Ireland",
@@ -9001,7 +9001,8 @@
         "transfer"
       ],
       "websites": [
-        "https://www.skrill.com"
+        "https://www.skrill.com",
+        "https://www.neteller.com"
       ],
       "websitesRaw": [],
       "authorisations": [
@@ -9024,7 +9025,8 @@
             "transfer"
           ],
           "websites": [
-            "https://www.skrill.com"
+            "https://www.skrill.com",
+            "https://www.neteller.com"
           ],
           "websitesRaw": []
         }
@@ -11341,7 +11343,7 @@
       "keySource": "lei",
       "slug": "sia-paybis-europe",
       "lei": "259400LUESNGU5XM2J49",
-      "name": "SIA Paybis Europe",
+      "name": "SIA \"Paybis Europe\"",
       "alsoKnownAs": [],
       "country": "Latvia",
       "authorities": [
@@ -11363,7 +11365,7 @@
         {
           "sourceRow": 248,
           "sourceId": 248,
-          "name": "SIA Paybis Europe",
+          "name": "SIA \"Paybis Europe\"",
           "country": "Latvia",
           "authority": "Latvijas Banka",
           "services": [
@@ -11446,7 +11448,7 @@
       "keySource": "lei",
       "slug": "trek-technologies-sia",
       "lei": "6488C2PNI17093U2YA18",
-      "name": "Trek Technologies SIA",
+      "name": "\"Trek Technologies\" SIA",
       "alsoKnownAs": [],
       "country": "Latvia",
       "authorities": [
@@ -11467,7 +11469,7 @@
         {
           "sourceRow": 250,
           "sourceId": 250,
-          "name": "Trek Technologies SIA",
+          "name": "\"Trek Technologies\" SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
           "services": [

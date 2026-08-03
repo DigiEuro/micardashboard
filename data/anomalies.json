@@ -1,7 +1,7 @@
 {
-  "total": 106,
+  "total": 107,
   "byType": {
-    "malformed_url": 91,
+    "malformed_url": 92,
     "encoding_artefact": 3,
     "non_url_in_website_field": 7,
     "repeated_service_code": 2,
@@ -781,12 +781,22 @@
     },
     {
       "type": "malformed_url",
-      "entityKey": "nc:4f6654a74358",
+      "entityKey": "213800QBQVHWRBHJTA89",
       "name": "Paysafe Payment Solutions Limited.",
       "country": "Ireland",
       "detail": "Website value \"www.skrill.com\" was repaired to \"https://www.skrill.com\".",
       "values": [
         "www.skrill.com"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "213800QBQVHWRBHJTA89",
+      "name": "Paysafe Payment Solutions Limited.",
+      "country": "Ireland",
+      "detail": "Website value \"www.neteller.com\" was repaired to \"https://www.neteller.com\".",
+      "values": [
+        "www.neteller.com"
       ]
     },
     {

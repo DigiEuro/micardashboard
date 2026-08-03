@@ -4,7 +4,15 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Sat, 01 Aug 2026 16:11:38 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 07:33:53 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-08-03</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-08-03T07:33:53.607Z</guid>
+      <pubDate>Mon, 03 Aug 2026 07:33:53 GMT</pubDate>
+      <description>CASPs added: SIA &quot;Paybis Europe&quot; (Latvia), &quot;Trek Technologies&quot; SIA (Latvia)
+CASPs removed: SIA Paybis Europe (Latvia), Trek Technologies SIA (Latvia)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-08-01</title>
       <link>https://micatracker.digital-euro-association.de/</link>
