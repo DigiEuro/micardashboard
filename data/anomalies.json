@@ -1,13 +1,37 @@
 {
-  "total": 5,
+  "total": 11,
   "byType": {
+    "lei_checksum_failed": 6,
     "repeated_service_code": 2,
     "multi_authorisation": 3
   },
   "anomalies": [
     {
+      "type": "lei_checksum_failed",
+      "entityKey": "8945001TKX2A5OJMNR45",
+      "sourceRow": 11,
+      "name": "OSL EU GmbH",
+      "country": "Austria",
+      "detail": "LEI 8945001TKX2A5OJMNR45 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
+      "values": [
+        "8945001TKX2A5OJMNR45"
+      ]
+    },
+    {
+      "type": "lei_checksum_failed",
+      "entityKey": "25490004TC93R20KW073",
+      "sourceRow": 27,
+      "name": "Noemon Finance Ltd",
+      "country": "Cyprus",
+      "detail": "LEI 25490004TC93R20KW073 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
+      "values": [
+        "25490004TC93R20KW073"
+      ]
+    },
+    {
       "type": "repeated_service_code",
       "entityKey": "54930079HJ1JTMKTW637",
+      "sourceRow": 73,
       "name": "Bankhaus Scheich Wertpapierspezialist AG",
       "country": "Germany",
       "detail": "Service code(s) listed more than once in a single record: exchange funds, execution",
@@ -17,13 +41,58 @@
       ]
     },
     {
+      "type": "lei_checksum_failed",
+      "entityKey": "391200236O6D9SGBE882",
+      "sourceRow": 118,
+      "name": "Raiffeisenbank Falkenstein-Wörth",
+      "country": "Germany",
+      "detail": "LEI 391200236O6D9SGBE882 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
+      "values": [
+        "391200236O6D9SGBE882"
+      ]
+    },
+    {
+      "type": "lei_checksum_failed",
+      "entityKey": "549300746K71T6YJCV41",
+      "sourceRow": 146,
+      "name": "FINTECH PAYMENTS PSC, S.L.",
+      "country": "Spain",
+      "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
+      "values": [
+        "549300746K71T6YJCV41"
+      ]
+    },
+    {
+      "type": "lei_checksum_failed",
+      "entityKey": "969500OA6NVZB5BXAB29",
+      "sourceRow": 239,
+      "name": "B2C2 Europe Sarl",
+      "country": "Luxembourg",
+      "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
+      "values": [
+        "969500OA6NVZB5BXAB29"
+      ]
+    },
+    {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
+      "sourceRow": 245,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
       "values": [
         "exchange crypto"
+      ]
+    },
+    {
+      "type": "lei_checksum_failed",
+      "entityKey": "984500457TABOA3BZ224",
+      "sourceRow": 272,
+      "name": "Zap (Strike) Europe Limited",
+      "country": "Malta",
+      "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
+      "values": [
+        "984500457TABOA3BZ224"
       ]
     },
     {

@@ -47,6 +47,7 @@
     malformed_url: 'Website missing its scheme',
     encoding_artefact: 'Mistyped scheme',
     non_url_in_website_field: 'Not a URL',
+    lei_checksum_failed: 'LEI check digits fail',
     exact_duplicate: 'Row published twice',
     repeated_service_code: 'Service listed twice',
     multi_authorisation: 'Multiple authorisations'
@@ -76,6 +77,18 @@
       blurb: 'The field holds something that is not a URL, such as a page title, a postal '
         + 'address, or a note. We never guess. The value is preserved exactly as '
         + 'published and is shown as plain text, never as a clickable link.'
+    },
+    {
+      key: 'verify',
+      title: 'Flagged for verification',
+      icon: 'fa-magnifying-glass',
+      tone: 'violet',
+      types: ['lei_checksum_failed'],
+      blurb: 'The value is the right shape but fails an integrity check built into the '
+        + 'standard itself, which usually means a character was mistyped somewhere '
+        + 'upstream. We keep using it as the entity identifier, because switching to '
+        + 'a different key would break every link and citation pointing at this firm. '
+        + 'It needs confirming against GLEIF rather than guessing.'
     },
     {
       key: 'duplicated',
