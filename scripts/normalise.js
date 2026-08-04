@@ -20,7 +20,8 @@ const ANOMALY_TYPES = {
     MALFORMED_URL: 'malformed_url',
     NON_URL_IN_WEBSITE_FIELD: 'non_url_in_website_field',
     REPEATED_SERVICE_CODE: 'repeated_service_code',
-    ENCODING_ARTEFACT: 'encoding_artefact'
+    ENCODING_ARTEFACT: 'encoding_artefact',
+    LEI_CHECKSUM_FAILED: 'lei_checksum_failed'
 };
 
 // ---- primitives -------------------------------------------------------------
@@ -34,10 +35,40 @@ function stripAccents(value) {
     return String(value || '').normalize('NFD').replace(/[̀-ͯ]/g, '');
 }
 
+// Cyrillic and Greek letters that are visually identical to a Latin one. The
+// register contains them: "Belayer OOD" is spelled with Cyrillic O (U+041E),
+// so without folding it never matches the Latin spelling of the same firm.
+// Only unambiguous look-alikes are listed; nothing here merges names a reader
+// would consider different.
+const CONFUSABLES = {
+    'А': 'a', 'В': 'b', 'Е': 'e', 'К': 'k', 'М': 'm',
+    'Н': 'h', 'О': 'o', 'Р': 'p', 'С': 'c', 'Т': 't',
+    'У': 'y', 'Х': 'x', 'І': 'i', 'Ј': 'j',
+    'а': 'a', 'в': 'b', 'е': 'e', 'к': 'k', 'м': 'm',
+    'н': 'h', 'о': 'o', 'р': 'p', 'с': 'c', 'т': 't',
+    'у': 'y', 'х': 'x', 'і': 'i', 'ј': 'j',
+    'Α': 'a', 'Β': 'b', 'Ε': 'e', 'Ζ': 'z', 'Η': 'h',
+    'Ι': 'i', 'Κ': 'k', 'Μ': 'm', 'Ν': 'n', 'Ο': 'o',
+    'Ρ': 'p', 'Τ': 't', 'Υ': 'y', 'Χ': 'x'
+};
+
+function foldConfusables(value) {
+    return String(value || '').replace(/[Ͱ-ӿ]/g, ch => CONFUSABLES[ch] || ch);
+}
+
+/*
+ * The comparison key for a legal name.
+ *
+ * Keeps every letter and digit in any script. The previous version stripped
+ * anything outside [a-z0-9], which deleted non-Latin text outright: a name
+ * written wholly in Cyrillic or Greek collapsed to '', so two unrelated firms
+ * without LEIs shared a name+country key and merged into one entity. Nothing
+ * reported it, because the authorisation count still reconciled.
+ */
 function normaliseName(value) {
-    return stripAccents(collapseWhitespace(value))
+    return foldConfusables(stripAccents(collapseWhitespace(value)))
         .toLowerCase()
-        .replace(/[^a-z0-9]+/g, ' ')
+        .replace(/[^\p{L}\p{N}]+/gu, ' ')
         .trim();
 }
 
@@ -58,6 +89,36 @@ const LEI_PATTERN = /^[A-Z0-9]{18}[0-9]{2}$/;
 
 function isValidLei(value) {
     return LEI_PATTERN.test(String(value || '').trim().toUpperCase());
+}
+
+/*
+ * ISO 17442 check digits, verified with ISO 7064 MOD 97-10.
+ *
+ * Shape alone does not catch a mistyped character: 5493007WZ7IFULIL8G22 is 20
+ * valid characters and passes LEI_PATTERN, but its check digits are wrong.
+ * Letters become two-digit numbers (A=10 ... Z=35) and the whole string read
+ * as one integer must leave remainder 1. The remainder is carried digit by
+ * digit so no BigInt is needed.
+ *
+ * Returns true for anything that is not a well-formed LEI, so callers can
+ * treat "wrong shape" and "wrong check digits" as the separate problems they
+ * are.
+ */
+function leiChecksumValid(value) {
+    const lei = String(value || '').trim().toUpperCase();
+    if (!LEI_PATTERN.test(lei)) {
+        return true;
+    }
+    let remainder = 0;
+    for (const char of lei) {
+        const digits = char >= 'A' && char <= 'Z'
+            ? String(char.charCodeAt(0) - 55)
+            : char;
+        for (const digit of digits) {
+            remainder = (remainder * 10 + Number(digit)) % 97;
+        }
+    }
+    return remainder === 1;
 }
 
 // ---- website normalisation --------------------------------------------------
@@ -162,10 +223,29 @@ function buildEntities(caspRecords, options = {}) {
                 services.push(service);
             }
         });
+        // --- LEI check digits. The key still uses this LEI even when the
+        // check fails: re-keying on a suspect value would move the entity to a
+        // new identity and break every slug and citation pointing at it. We
+        // report it and let a human resolve it against GLEIF.
+        const declaredLei = String(record.lei || '').trim().toUpperCase();
+        if (isValidLei(declaredLei) && !leiChecksumValid(declaredLei)) {
+            anomalies.push({
+                type: ANOMALY_TYPES.LEI_CHECKSUM_FAILED,
+                entityKey: key,
+                sourceRow: index + 1,
+                name,
+                country,
+                detail: `LEI ${declaredLei} has the right shape but fails the ISO 17442 check digits. `
+                    + 'It is still used as this entity\'s identifier; verify it against GLEIF.',
+                values: [declaredLei]
+            });
+        }
+
         if (repeated.length) {
             anomalies.push({
                 type: ANOMALY_TYPES.REPEATED_SERVICE_CODE,
                 entityKey: key,
+                sourceRow: index + 1,
                 name,
                 country,
                 detail: `Service code(s) listed more than once in a single record: ${repeated.join(', ')}`,
@@ -176,10 +256,18 @@ function buildEntities(caspRecords, options = {}) {
         // --- websites: repair what is repairable, preserve what is not
         const websites = [];
         const websitesRaw = [];
+        const websiteRepairs = [];
         (record.websites || []).forEach(value => {
             const { url, raw, issue } = normaliseWebsite(value);
             if (url) {
                 if (!websites.includes(url)) websites.push(url);
+                // A repaired link used to exist only as the corrected form on
+                // the record, with the original surviving nowhere but a
+                // free-text anomaly detail. The record now carries both, so
+                // "as published" is answerable from the record alone.
+                if (raw && raw !== url) {
+                    websiteRepairs.push({ raw, url });
+                }
             } else if (raw) {
                 websitesRaw.push(raw);
             }
@@ -187,6 +275,7 @@ function buildEntities(caspRecords, options = {}) {
                 anomalies.push({
                     type: issue,
                     entityKey: key,
+                    sourceRow: index + 1,
                     name,
                     country,
                     detail: url
@@ -206,6 +295,7 @@ function buildEntities(caspRecords, options = {}) {
             anomalies.push({
                 type: ANOMALY_TYPES.EXACT_DUPLICATE,
                 entityKey: key,
+                sourceRow: index + 1,
                 name,
                 country,
                 detail: `Identical to source row #${seenExact.get(fingerprint) + 1}. Both rows are retained.`,
@@ -224,7 +314,8 @@ function buildEntities(caspRecords, options = {}) {
             services,
             servicesRaw: rawServices,
             websites,
-            websitesRaw
+            websitesRaw,
+            websiteRepairs
         };
 
         if (!byKey.has(key)) {
@@ -300,24 +391,51 @@ function buildEntities(caspRecords, options = {}) {
 
 /*
  * options.snapshots: [{ date, casps: [...] }] oldest first.
- * Older snapshots predate LEI capture, so entities are matched on normalised
- * name + country here, the only key available across the whole archive.
+ *
+ * Two indexes, deliberately. Matching on name + country alone made firstSeen
+ * reset the day a firm was renamed or respelled in the register: the new name
+ * matched no earlier snapshot, so an entity tracked for months looked new. An
+ * LEI survives a rename, so it is tried first. Snapshots older than LEI
+ * capture have no LEI to match on, which is why the name + country index is
+ * kept rather than replaced.
+ *
+ * Candidates from both indexes are collected and the earliest wins, so a
+ * rename anywhere in the archive can only ever move firstSeen backwards.
  */
 function applyFirstSeen(entities, snapshots) {
-    const firstSeenByNameCountry = new Map();
+    const byLei = new Map();
+    const byNameCountry = new Map();
+
     snapshots.forEach(({ date, casps }) => {
         (casps || []).forEach(row => {
-            const k = `${normaliseName(row.name)}::${normaliseName(row.memberState)}`;
-            if (!firstSeenByNameCountry.has(k)) {
-                firstSeenByNameCountry.set(k, date);
+            const lei = String(row.lei || '').trim().toUpperCase();
+            if (isValidLei(lei) && !byLei.has(lei)) {
+                byLei.set(lei, date);
+            }
+            const key = `${normaliseName(row.name)}::${normaliseName(row.memberState)}`;
+            if (!byNameCountry.has(key)) {
+                byNameCountry.set(key, date);
             }
         });
     });
+
     entities.forEach(entity => {
-        const dates = entity.authorisations
-            .map(a => firstSeenByNameCountry.get(`${normaliseName(a.name)}::${normaliseName(a.country)}`))
-            .filter(Boolean)
-            .sort();
+        const dates = [];
+        if (entity.lei && byLei.has(entity.lei)) {
+            dates.push(byLei.get(entity.lei));
+        }
+        entity.authorisations.forEach(a => {
+            const hit = byNameCountry.get(
+                `${normaliseName(a.name)}::${normaliseName(a.country)}`);
+            if (hit) dates.push(hit);
+        });
+        // Historic names too: a rename leaves the old spelling in the archive.
+        (entity.alsoKnownAs || []).forEach(alias => {
+            const hit = byNameCountry.get(
+                `${normaliseName(alias)}::${normaliseName(entity.country)}`);
+            if (hit) dates.push(hit);
+        });
+        dates.sort();
         entity.firstSeen = dates[0] || null;
     });
 }
@@ -329,6 +447,7 @@ module.exports = {
     normaliseAuthority,
     slugify,
     isValidLei,
+    leiChecksumValid,
     normaliseWebsite,
     nameCountryKey,
     entityKeyFor,

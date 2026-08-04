@@ -165,6 +165,109 @@ test('live CASP register reconciles exactly', () => {
     assert.strictEqual(new Set(slugs).size, slugs.length, 'duplicate slugs');
 });
 
+console.log('\nnon-Latin names');
+test('a wholly non-Latin name does not collapse to an empty key', () => {
+    // The old normaliser stripped everything outside [a-z0-9], so two unrelated
+    // Cyrillic-named firms in one country both keyed on '' and merged into a
+    // single entity. Reconciliation still passed, so nothing reported it.
+    const a = N.normaliseName('Банка');
+    const b = N.normaliseName('Финанс');
+    assert.notStrictEqual(a, '', 'Cyrillic name normalised to empty string');
+    assert.notStrictEqual(b, '', 'Cyrillic name normalised to empty string');
+    assert.notStrictEqual(a, b, 'two different Cyrillic names collided');
+    assert.notStrictEqual(N.nameCountryKey('Банка', 'Bulgaria'),
+        N.nameCountryKey('Финанс', 'Bulgaria'), 'distinct firms share an entity key');
+});
+test('two Cyrillic-named firms resolve to two entities, not one', () => {
+    const { entities } = N.buildEntities([
+        { id: 1, name: 'Банка', memberState: 'Bulgaria', authority: 'FSC', services: [], websites: [] },
+        { id: 2, name: 'Финанс', memberState: 'Bulgaria', authority: 'FSC', services: [], websites: [] }
+    ]);
+    assert.strictEqual(entities.length, 2, `expected 2 entities, got ${entities.length}`);
+});
+test('a Cyrillic look-alike matches its Latin spelling', () => {
+    // "Belayer OOD" is in the register spelled with Cyrillic O (U+041E).
+    assert.strictEqual(N.normaliseName('Belayer ООD'), N.normaliseName('Belayer OOD'));
+});
+test('accented Latin still folds to plain ASCII', () => {
+    assert.strictEqual(N.normaliseName('Société Générale'), 'societe generale');
+});
+
+console.log('\nLEI check digits');
+test('a correct LEI passes mod-97', () => {
+    assert.strictEqual(N.leiChecksumValid('5493007WZ7IFULIL8G21'), true);
+});
+test('a tampered digit fails mod-97', () => {
+    assert.strictEqual(N.leiChecksumValid('5493007WZ7IFULIL8G22'), false);
+});
+test('a badly shaped value is not reported as a checksum failure', () => {
+    // Wrong shape is a different problem, already handled by isValidLei.
+    assert.strictEqual(N.leiChecksumValid('not-an-lei'), true);
+    assert.strictEqual(N.leiChecksumValid(''), true);
+});
+test('a failing checksum is reported but still used as the entity key', () => {
+    const { entities, anomalies } = N.buildEntities([
+        { id: 1, name: 'Example AG', lei: '5493007WZ7IFULIL8G22', memberState: 'Germany',
+          authority: 'BaFin', services: [], websites: [] }
+    ]);
+    const flagged = anomalies.filter(a => a.type === N.ANOMALY_TYPES.LEI_CHECKSUM_FAILED);
+    assert.strictEqual(flagged.length, 1, 'checksum failure not reported');
+    assert.strictEqual(entities[0].entityKey, '5493007WZ7IFULIL8G22',
+        're-keying on a suspect LEI would break existing slugs and citations');
+});
+
+console.log('\ntraceability of findings');
+test('every anomaly carries the source row it came from', () => {
+    const { anomalies } = N.buildEntities([
+        { id: 1, name: 'A Ltd', lei: '5493007WZ7IFULIL8G22', memberState: 'Ireland',
+          authority: 'CBI', services: ['custody', 'custody'], websites: ['75012 Paris', 'www.a.com'] }
+    ]);
+    assert.ok(anomalies.length > 0, 'expected findings');
+    const untraceable = anomalies.filter(a => a.sourceRow == null);
+    assert.strictEqual(untraceable.length, 0,
+        `findings with no sourceRow: ${untraceable.map(a => a.type).join(', ')}`);
+    anomalies.forEach(a => assert.strictEqual(a.sourceRow, 1));
+});
+test('a repaired website keeps both forms on the authorisation record', () => {
+    // Previously the corrected URL replaced the original on the record, and the
+    // original survived only inside a free-text anomaly detail.
+    const { entities } = N.buildEntities([
+        { id: 1, name: 'KBC Bank NV', lei: '6B2PBRV1FCJDMR45RZ53', memberState: 'Belgium',
+          authority: 'NBB', services: [], websites: ['www.kbc.com'] }
+    ]);
+    const auth = entities[0].authorisations[0];
+    assert.deepStrictEqual(auth.websites, ['https://www.kbc.com']);
+    assert.deepStrictEqual(auth.websiteRepairs, [
+        { raw: 'www.kbc.com', url: 'https://www.kbc.com' }
+    ]);
+});
+
+console.log('\nfirstSeen survives a rename');
+test('an entity renamed in the register keeps its original first-seen date', () => {
+    const snapshots = [
+        { date: '2025-11-20', casps: [
+            { name: 'Old Name Ltd', memberState: 'Ireland', lei: '6B2PBRV1FCJDMR45RZ53' } ] },
+        { date: '2026-08-01', casps: [
+            { name: 'New Name Ltd', memberState: 'Ireland', lei: '6B2PBRV1FCJDMR45RZ53' } ] }
+    ];
+    const { entities } = N.buildEntities([
+        { id: 1, name: 'New Name Ltd', lei: '6B2PBRV1FCJDMR45RZ53', memberState: 'Ireland',
+          authority: 'CBI', services: [], websites: [] }
+    ], { snapshots });
+    assert.strictEqual(entities[0].firstSeen, '2025-11-20',
+        'a rename reset firstSeen, making a long-tracked firm look new');
+});
+test('snapshots with no LEI still match on name and country', () => {
+    const snapshots = [
+        { date: '2025-11-20', casps: [{ name: 'Legacy Ltd', memberState: 'Ireland' }] }
+    ];
+    const { entities } = N.buildEntities([
+        { id: 1, name: 'Legacy Ltd', lei: '6B2PBRV1FCJDMR45RZ53', memberState: 'Ireland',
+          authority: 'CBI', services: [], websites: [] }
+    ], { snapshots });
+    assert.strictEqual(entities[0].firstSeen, '2025-11-20');
+});
+
 console.log('\ndata-quality page covers every anomaly type');
 
 function groupedTypes() {

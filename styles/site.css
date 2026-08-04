@@ -935,7 +935,8 @@ select.search-input:hover {
 
 .dq-card-amber { border-left-color: #d97706; }
 .dq-card-rose  { border-left-color: #e11d48; }
-.dq-card-sky   { border-left-color: #0284c7; }
+.dq-card-sky    { border-left-color: #0284c7; }
+.dq-card-violet { border-left-color: #7c3aed; }
 .dq-card-slate { border-left-color: #64748b; }
 .dq-card-red   { border-left-color: #b91c1c; }
 
@@ -996,7 +997,8 @@ select.search-input:hover {
 
 .dq-badge-amber { background: #fef3c7; color: #92400e; }
 .dq-badge-rose  { background: #ffe4e6; color: #9f1239; }
-.dq-badge-sky   { background: #e0f2fe; color: #075985; }
+.dq-badge-sky    { background: #e0f2fe; color: #075985; }
+.dq-badge-violet { background: #ede9fe; color: #5b21b6; }
 .dq-badge-slate { background: #e2e8f0; color: #334155; }
 .dq-badge-red   { background: #fee2e2; color: #991b1b; }
 
