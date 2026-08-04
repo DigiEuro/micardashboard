@@ -368,9 +368,15 @@ function buildEntities(caspRecords, options = {}) {
     entities.forEach(entity => {
         if (entity.authorisations.length > 1) {
             const names = [...new Set(entity.authorisations.map(a => a.name))];
+            // This finding spans several rows by definition, so it carries the
+            // full list. sourceRow is the first of them, so that every anomaly
+            // has a row to point at regardless of type.
+            const rows = entity.authorisations.map(a => a.sourceRow).sort((x, y) => x - y);
             anomalies.push({
                 type: ANOMALY_TYPES.MULTI_AUTHORISATION,
                 entityKey: entity.entityKey,
+                sourceRow: rows[0],
+                sourceRows: rows,
                 name: entity.name,
                 country: entity.country,
                 detail: names.length > 1
