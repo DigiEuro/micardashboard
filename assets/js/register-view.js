@@ -149,6 +149,9 @@
           (item.websites || []).join(' ').toLowerCase().indexOf(term) !== -1;
       },
       row: function (item, i) {
+        const title = item.entitySlug
+          ? '<a class="rv-entity-link" href="entities/' + esc(item.entitySlug) + '.html">' + esc(item.name || 'N/A') + '</a>'
+          : '<span class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</span>';
         const services = (item.services || []).map(function (s) {
           return '<span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">' + esc(s) + '</span>';
         }).join(' ');
@@ -162,7 +165,7 @@
           : '<span class="text-xs text-gray-500">Not provided</span>';
         return '<tr class="border-b hover:bg-gradient-to-r hover:from-teal-200 hover:to-blue-200 transition-all duration-200">' +
           '<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">' + (i + 1) + '</td>' +
-          '<td class="p-4 rv-title" data-label="CASP"><p class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</p></td>' +
+          '<td class="p-4 rv-title" data-label="CASP">' + title + '</td>' +
           '<td class="p-4" data-label="Country"><span class="casps-country-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"><span aria-hidden="true">' + flag(item.memberState) + '</span> ' + esc(item.memberState || 'Unknown') + '</span></td>' +
           '<td class="p-4 text-gray-600 text-sm casps-authority-cell" data-label="Authority">' + esc(item.authority || 'N/A') + '</td>' +
           '<td class="p-4 services-cell" data-label="Services"><div class="service-badges">' + (services || '<span class="text-xs text-gray-500">Not specified</span>') + '</div></td>' +
@@ -703,6 +706,29 @@
     if (parts.length) el.textContent = parts.join(' · ');
   }
 
+  function applyUrlFilters() {
+    let params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { return false; }
+    let active = false;
+    const search = params.get('q') || '';
+    const country = params.get('country') || '';
+    const service = params.get('service') || '';
+
+    const searchInput = document.getElementById('rvSearch');
+    if (searchInput && search) { searchInput.value = search; active = true; }
+    const countrySelect = document.getElementById('rvCountry');
+    if (countrySelect && country && Array.from(countrySelect.options).some(function (o) { return o.value === country; })) {
+      countrySelect.value = country;
+      active = true;
+    }
+    const serviceSelect = document.getElementById('rvService');
+    if (serviceSelect && service && Array.from(serviceSelect.options).some(function (o) { return o.value === service; })) {
+      serviceSelect.value = service;
+      active = true;
+    }
+    return active;
+  }
+
   // ---- boot -------------------------------------------------------------
   async function boot() {
     try {
@@ -721,10 +747,29 @@
     // the real number; if it fails the card falls back to an em dash.
     if (register === 'casps') {
       try {
-        const ncRes = await fetch('data/non-compliant.json', { cache: 'no-cache' });
+        const results = await Promise.all([
+          fetch('data/non-compliant.json', { cache: 'no-cache' }),
+          fetch('data/entities.json', { cache: 'no-cache' })
+        ]);
+        const ncRes = results[0];
+        const entityRes = results[1];
         if (ncRes.ok) {
           const nc = await ncRes.json();
           if (Array.isArray(nc)) extraSummary = { nonCompliantCount: nc.length };
+        }
+        if (entityRes.ok) {
+          const entityData = await entityRes.json();
+          const bySourceId = {};
+          const byLei = {};
+          (entityData.entities || []).forEach(function (entity) {
+            if (entity.lei) byLei[entity.lei] = entity.slug;
+            (entity.authorisations || []).forEach(function (record) {
+              if (record.sourceId != null) bySourceId[String(record.sourceId)] = entity.slug;
+            });
+          });
+          all.forEach(function (item) {
+            item.entitySlug = bySourceId[String(item.id)] || byLei[item.lei] || '';
+          });
         }
       } catch (e) { /* non-fatal */ }
     }
@@ -732,7 +777,8 @@
     root.innerHTML = '<div id="rvSummary"></div>' + shellHtml();
     if (cfg.filters) populateFilters();
     wire();
-    renderRows(); // also renders the summary from the (initially full) view
+    if (applyUrlFilters()) applyFilters();
+    else renderRows(); // also renders the summary from the (initially full) view
     // Freshness (non-fatal)
     fetch('data/snapshot.json', { cache: 'no-cache' })
       .then(function (r) { return r.ok ? r.json() : null; })

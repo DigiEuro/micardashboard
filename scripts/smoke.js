@@ -76,6 +76,11 @@ const CHECKS = [
       await expect(await page.locator('header').count() > 0, 'header renders');
       await expect(await page.locator('footer a[href="data-quality.html"]').count() > 0,
         'footer links to the data-quality page');
+      const flagFont = await page.evaluate(async function () {
+        await document.fonts.ready;
+        return document.fonts.check('16px "Twemoji Country Flags"');
+      });
+      await expect(flagFont, 'shared country flag font loads');
     }
   },
   {
@@ -84,6 +89,13 @@ const CHECKS = [
       await page.waitForSelector('#rvSearch', { timeout: 15000 });
       const rows = await page.locator('#registerRoot tbody tr').count();
       await expect(rows > 100, 'CASP table renders rows (got ' + rows + ')');
+      const flags = await page.locator('#registerRoot tbody td[data-label="Country"] span[aria-hidden="true"]').count();
+      await expect(flags > 0, 'CASP country flags render (got ' + flags + ')');
+      const flagFont = await page.evaluate(async function () {
+        await document.fonts.ready;
+        return document.fonts.check('16px "Twemoji Country Flags"');
+      });
+      await expect(flagFont, 'shared country flag font loads');
       await page.fill('#rvSearch', 'Bitpanda');
       await page.waitForTimeout(400);
       const hits = await page.locator('#registerRoot tbody tr').count();
@@ -97,6 +109,13 @@ const CHECKS = [
       await page.waitForSelector('#rvSearch', { timeout: 15000 });
       const rows = await page.locator('#registerRoot tbody tr').count();
       await expect(rows > 5, 'EMT table renders rows (got ' + rows + ')');
+      const flags = await page.locator('#registerRoot tbody td[data-label="Country"] span[aria-hidden="true"]').count();
+      await expect(flags > 0, 'EMT country flags render (got ' + flags + ')');
+      const flagFont = await page.evaluate(async function () {
+        await document.fonts.ready;
+        return document.fonts.check('16px "Twemoji Country Flags"');
+      });
+      await expect(flagFont, 'shared country flag font loads');
     }
   },
   {
@@ -105,6 +124,13 @@ const CHECKS = [
       await page.waitForSelector('#rvSearch', { timeout: 15000 });
       const rows = await page.locator('#registerRoot tbody tr').count();
       await expect(rows > 50, 'non-compliant table renders rows (got ' + rows + ')');
+      const flags = await page.locator('#registerRoot tbody td[data-label="Country"] span[aria-hidden="true"]').count();
+      await expect(flags > 0, 'non-compliant country flags render (got ' + flags + ')');
+      const flagFont = await page.evaluate(async function () {
+        await document.fonts.ready;
+        return document.fonts.check('16px "Twemoji Country Flags"');
+      });
+      await expect(flagFont, 'shared country flag font loads');
       // Hard security invariant: these websites are never clickable.
       const links = await page.locator('#registerRoot tbody a').count();
       await expect(links === 0, 'non-compliant rows contain no links (got ' + links + ')');
@@ -133,6 +159,18 @@ const CHECKS = [
       await expect(empty === 5, 'a no-match search shows one empty state per section (got ' + empty + ')');
     }
   },
+  {
+    page: 'entities/flowdesk-europe-sas.html',
+    assert: async function (page, expect) {
+      await expect(await page.locator('#entity-name').textContent() === 'FLOWDESK EUROPE SAS', 'entity page renders the legal name');
+      await expect(await page.locator('.entity-status').count() === 1, 'authorisation status is present');
+      await expect(await page.locator('.entity-note').count() === 1, 'entity-specific data note renders');
+      await expect(await page.locator('.entity-context-row').count() >= 4, 'context rows render');
+      await expect(await page.locator('a[href*="casp-tracker.html?country=France"]').count() > 0, 'context links to the filtered CASP tracker');
+      await expect(await page.locator('a[href^="mailto:"]').count() === 2, 'verification and correction routes are actionable');
+      await expect(await page.locator('[data-copy="984500AB011S3AEF6706"]').count() === 1, 'LEI is shown with a copy action');
+    }
+  },
   { page: 'about.html', assert: async function (page, expect) {
       await expect(await page.locator('main').count() > 0, 'about page renders');
     } }
@@ -158,6 +196,11 @@ const CHECKS = [
     const page = await browser.newPage();
     const problems = [];
     page.on('pageerror', function (e) { problems.push('uncaught: ' + e.message); });
+    page.on('response', function (response) {
+      if (response.status() >= 400 && isOurProblem(response.url())) {
+        problems.push('HTTP ' + response.status() + ': ' + response.url());
+      }
+    });
     page.on('console', function (m) {
       if (m.type() === 'error' && isOurProblem(m.text())) problems.push('console: ' + m.text());
     });

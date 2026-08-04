@@ -13,6 +13,7 @@ const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
 const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
 const FEED_FILE = path.join(__dirname, 'feed.xml');
 const SITEMAP_FILE = path.join(__dirname, 'sitemap.xml');
+const { generateEntityPages } = require('./scripts/generate-entity-pages');
 
 // Static, crawlable pages served by GitHub Pages. Entity pages are generated
 // separately; keep this list in sync when adding intent pages.
@@ -816,7 +817,17 @@ function writeSitemap(lastmodDate) {
         ? lastmodDate
         : new Date().toISOString().slice(0, 10);
 
-    const urls = SITEMAP_PAGES.map(page => [
+    const entityData = readJsonFile(ENTITIES_FILE, { entities: [] }) || { entities: [] };
+    const entityPages = Array.isArray(entityData.entities)
+        ? entityData.entities.map(entity => ({
+            loc: `/entities/${entity.slug}.html`,
+            priority: '0.6',
+            changefreq: 'weekly'
+        }))
+        : [];
+    const pages = SITEMAP_PAGES.concat(entityPages);
+
+    const urls = pages.map(page => [
         '  <url>',
         `    <loc>${SITE_URL}${page.loc}</loc>`,
         `    <lastmod>${lastmod}</lastmod>`,
@@ -834,7 +845,7 @@ function writeSitemap(lastmodDate) {
     ].join('\n');
 
     fs.writeFileSync(SITEMAP_FILE, xml);
-    console.log(`🗺️  Sitemap written with ${SITEMAP_PAGES.length} pages (lastmod ${lastmod})`);
+    console.log(`🗺️  Sitemap written with ${pages.length} pages (lastmod ${lastmod})`);
 }
 
 // ---- Entity resolution ------------------------------------------------------
@@ -1089,21 +1100,35 @@ function buildSnapshot(register, entries, dateLong) {
     let summary, caption, theme, headers, rows;
 
     if (register === 'casps') {
+        const entityData = readJsonFile(ENTITIES_FILE, { entities: [] }) || { entities: [] };
+        const bySourceId = new Map();
+        const byLei = new Map();
+        (entityData.entities || []).forEach(entity => {
+            if (entity.lei) byLei.set(entity.lei, entity.slug);
+            (entity.authorisations || []).forEach(record => {
+                if (record.sourceId != null) bySourceId.set(String(record.sourceId), entity.slug);
+            });
+        });
         const countries = uniqueCount(entries, 'memberState');
         summary = `${entries.length} Crypto-Asset Service Providers (CASPs) authorised under the EU Markets in Crypto-Assets Regulation (MiCA) across ${countries} ${countries === 1 ? 'country' : 'countries'}${dateSuffix}.`;
         caption = 'Crypto-Asset Service Providers registered under MiCAR';
         theme = 'teal';
         headers = ['#', 'CASP', 'Country', 'Competent Authority', 'Services', 'Websites'];
-        rows = entries.map((it, i) =>
-            '<tr class="border-b">' +
+        rows = entries.map((it, i) => {
+            const slug = bySourceId.get(String(it.id)) || byLei.get(it.lei);
+            const name = htmlEscape(it.name || 'N/A');
+            const nameMarkup = slug
+                ? `<a href="entities/${htmlEscape(slug)}.html" class="font-semibold text-blue-700 underline decoration-blue-300 underline-offset-2 hover:text-blue-900">${name}</a>`
+                : `<span class="font-semibold text-gray-900">${name}</span>`;
+            return '<tr class="border-b">' +
             `<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">${i + 1}</td>` +
-            `<td class="p-4 rv-title" data-label="CASP"><span class="font-semibold text-gray-900">${htmlEscape(it.name || 'N/A')}</span></td>` +
+            `<td class="p-4 rv-title" data-label="CASP">${nameMarkup}</td>` +
             `<td class="p-4 text-gray-700 text-sm" data-label="Country">${htmlEscape(it.memberState || 'Unknown')}</td>` +
             `<td class="p-4 text-gray-600 text-sm" data-label="Authority">${htmlEscape(it.authority || 'N/A')}</td>` +
             `<td class="p-4 text-gray-700 text-sm" data-label="Services">${htmlEscape((it.services || []).join(', ') || 'Not specified')}</td>` +
             `<td class="p-4 text-gray-600 text-sm" data-label="Websites">${websitesText(it.websites)}</td>` +
-            '</tr>'
-        ).join('\n');
+            '</tr>';
+        }).join('\n');
     } else if (register === 'emt') {
         const countries = uniqueCount(entries, 'state');
         summary = `${entries.length} e-money token (EMT) issuers authorised under MiCA across ${countries} ${countries === 1 ? 'country' : 'countries'}${dateSuffix}.`;
@@ -1409,9 +1434,10 @@ async function main() {
         }
 
         updateFooterDates(emtSheetDate, caspsSheetDate);
-        writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
         archiveSnapshot(caspsSheetDate || emtSheetDate);
         buildEntityFiles();
+        generateEntityPages();
+        writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
         generateAllSnapshots();
         logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);
@@ -1436,6 +1462,8 @@ if (require.main === module) {
 // Exported so snapshot generation, change detection and field extraction can
 // be exercised without a live fetch.
 module.exports = {
+    writeSitemap,
+    buildEntityFiles,
     buildSnapshot,
     injectRegisterSnapshot,
     generateAllSnapshots,
