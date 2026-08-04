@@ -1,7 +1,7 @@
 {
   "sourceRows": 323,
   "entityCount": 320,
-  "keyedByLei": 315,
+  "keyedByLei": 316,
   "entities": [
     {
       "entityKey": "5493007WZ7IFULIL8G21",
@@ -9127,10 +9127,10 @@
       "firstSeen": "2026-07-05"
     },
     {
-      "entityKey": "nc:086c5a3d0a9f",
-      "keySource": "name-country",
+      "entityKey": "89450036UW3ID72T1M84",
+      "keySource": "lei",
       "slug": "ramp-swaps-ireland-limited",
-      "lei": "",
+      "lei": "89450036UW3ID72T1M84",
       "name": "Ramp Swaps (Ireland) Limited",
       "alsoKnownAs": [],
       "country": "Ireland",
