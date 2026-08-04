@@ -14,6 +14,7 @@ const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
 const FEED_FILE = path.join(__dirname, 'feed.xml');
 const SITEMAP_FILE = path.join(__dirname, 'sitemap.xml');
 const { generateEntityPages } = require('./scripts/generate-entity-pages');
+const { deriveServiceCodes } = require('./scripts/services');
 
 // Static, crawlable pages served by GitHub Pages. Entity pages are generated
 // separately; keep this list in sync when adding intent pages.
@@ -570,6 +571,19 @@ function convertToCaspsData(csvData) {
         .map((row, index) => {
             const name = row['ae_lei_name'] ? row['ae_lei_name'].trim() : '';
             const lei = extractLei(row);
+            const serviceCodeRaw = String(row['ac_serviceCode_raw'] ?? '');
+            const legacyServices = parseMultiValueField(row['ac_serviceCode']);
+            const services = serviceCodeRaw.trim()
+                ? deriveServiceCodes(serviceCodeRaw)
+                : legacyServices;
+
+            // A populated raw source value that maps to nothing is unsafe to
+            // publish: it would turn an unknown permission into a blank one.
+            // Add the new service wording to scripts/services.js instead of
+            // silently falling back to the bot-authored legacy column.
+            if (serviceCodeRaw.trim() && services.length === 0) {
+                throw new Error(`Unrecognised CASP service value for ${name || `row ${index + 1}`}: ${serviceCodeRaw}`);
+            }
 
             // Keep malformed values out of the published field but never drop
             // them silently - they are reported for the data-quality review.
@@ -589,7 +603,8 @@ function convertToCaspsData(csvData) {
                 lei: validLei,
                 authority: row['ae_competentAuthority'] ? row['ae_competentAuthority'].trim() : '',
                 memberState: row['ae_homeMemberState'] ? row['ae_homeMemberState'].trim() : '',
-                services: parseMultiValueField(row['ac_serviceCode']),
+                services,
+                ...(serviceCodeRaw.trim() ? { serviceCodeRaw } : {}),
                 websites: parseMultiValueField(row['ae_website'])
             };
         });

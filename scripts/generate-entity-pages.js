@@ -12,23 +12,11 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const DATA_DIR = path.join(ROOT, 'data');
 const OUTPUT_DIR = path.join(ROOT, 'entities');
+const { SERVICE_LABELS } = require('./services');
 const SITE_URL = 'https://micatracker.digital-euro-association.de';
 const ESMA_SOURCE = 'https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister';
 const MEMBERSHIP_URL = 'https://digital-euro-association.de/institutional-membership-form';
 const CONTACT_EMAIL = 'info@digital-euro-association.de';
-
-const SERVICE_LABELS = {
-  custody: 'Custody',
-  'trading platform': 'Operation of a trading platform',
-  'exchange funds': 'Exchange for funds',
-  'exchange crypto': 'Exchange for crypto-assets',
-  execution: 'Execution',
-  placing: 'Placing',
-  RTO: 'Reception and transmission of orders',
-  advice: 'Advice',
-  'portfolio mgmt': 'Portfolio management',
-  transfer: 'Transfer services'
-};
 
 const COUNTRY_FLAGS = {
   Austria: '🇦🇹', Belgium: '🇧🇪', Bulgaria: '🇧🇬', Croatia: '🇭🇷', Cyprus: '🇨🇾',

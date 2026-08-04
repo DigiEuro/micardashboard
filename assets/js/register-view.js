@@ -19,6 +19,25 @@
   if (!root) return;
   const register = root.dataset.register;
 
+  // CASP data stores stable internal service codes. Keep the table compact,
+  // while the title/aria label retains the full regulatory wording.
+  const SERVICE_LABELS = {
+    custody: { short: 'Custody', full: 'Custody' },
+    'trading platform': { short: 'Trading platform', full: 'Operation of a trading platform' },
+    'exchange funds': { short: 'Funds exchange', full: 'Exchange for funds' },
+    'exchange crypto': { short: 'Crypto exchange', full: 'Exchange for crypto-assets' },
+    execution: { short: 'Execution', full: 'Execution' },
+    placing: { short: 'Placing', full: 'Placing' },
+    RTO: { short: 'RTO', full: 'Reception and transmission of orders' },
+    advice: { short: 'Advice', full: 'Advice' },
+    'portfolio mgmt': { short: 'Portfolio mgmt', full: 'Portfolio management' },
+    transfer: { short: 'Transfers', full: 'Transfer services' }
+  };
+
+  function serviceDisplay(code) {
+    return SERVICE_LABELS[code] || { short: code, full: code };
+  }
+
   // ---- helpers ----------------------------------------------------------
   function esc(value) {
     return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) {
@@ -153,7 +172,8 @@
           ? '<a class="rv-entity-link" href="entities/' + esc(item.entitySlug) + '.html">' + esc(item.name || 'N/A') + '</a>'
           : '<span class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</span>';
         const services = (item.services || []).map(function (s) {
-          return '<span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium">' + esc(s) + '</span>';
+          const display = serviceDisplay(s);
+          return '<span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium" title="' + esc(display.full) + '" aria-label="' + esc(display.full) + '">' + esc(display.short) + '</span>';
         }).join(' ');
         const sites = (item.websites && item.websites.length)
           ? item.websites.map(function (site) {

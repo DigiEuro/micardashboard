@@ -9,6 +9,7 @@
     "validate:data": "node scripts/validate-dashboard-data.js",
     "test:normalise": "node scripts/test-normalise.js",
     "test:csv": "node scripts/test-csv.js",
+    "test:services": "node scripts/test-services.js",
     "build:entities": "node scripts/generate-entity-pages.js",
     "build:static": "node scripts/refresh-static-pages.js",
     "test:entities": "node scripts/test-entity-pages.js",
