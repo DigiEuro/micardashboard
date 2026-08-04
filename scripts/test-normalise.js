@@ -218,15 +218,44 @@ test('a failing checksum is reported but still used as the entity key', () => {
 
 console.log('\ntraceability of findings');
 test('every anomaly carries the source row it came from', () => {
+    // Deliberately shaped to emit EVERY anomaly type at once. An earlier
+    // version of this test used a single record, which can never produce a
+    // multi_authorisation finding, so it passed while three anomalies in the
+    // live data still had no sourceRow at all.
     const { anomalies } = N.buildEntities([
         { id: 1, name: 'A Ltd', lei: '5493007WZ7IFULIL8G22', memberState: 'Ireland',
-          authority: 'CBI', services: ['custody', 'custody'], websites: ['75012 Paris', 'www.a.com'] }
+          authority: 'CBI', services: ['custody', 'custody'],
+          websites: ['75012 Paris', 'www.a.com', 'ttps://b.com'] },
+        // same LEI, second authorisation -> multi_authorisation
+        { id: 2, name: 'A Ltd (branch)', lei: '5493007WZ7IFULIL8G22', memberState: 'Ireland',
+          authority: 'CBI', services: ['custody'], websites: [] },
+        { id: 3, name: 'B Ltd', memberState: 'Malta', authority: 'MFSA',
+          services: ['custody'], websites: ['https://b.example'] },
+        // byte-identical to row 3 -> exact_duplicate
+        { id: 4, name: 'B Ltd', memberState: 'Malta', authority: 'MFSA',
+          services: ['custody'], websites: ['https://b.example'] }
     ]);
-    assert.ok(anomalies.length > 0, 'expected findings');
+
+    const seen = new Set(anomalies.map(a => a.type));
+    Object.values(N.ANOMALY_TYPES).forEach(type => {
+        assert.ok(seen.has(type), `fixture did not emit ${type}, so it is untested here`);
+    });
+
     const untraceable = anomalies.filter(a => a.sourceRow == null);
     assert.strictEqual(untraceable.length, 0,
         `findings with no sourceRow: ${untraceable.map(a => a.type).join(', ')}`);
-    anomalies.forEach(a => assert.strictEqual(a.sourceRow, 1));
+});
+test('a multi-row finding lists every row it spans', () => {
+    const { anomalies } = N.buildEntities([
+        { id: 1, name: 'A Ltd', lei: '6B2PBRV1FCJDMR45RZ53', memberState: 'Ireland',
+          authority: 'CBI', services: [], websites: [] },
+        { id: 2, name: 'A Ltd', lei: '6B2PBRV1FCJDMR45RZ53', memberState: 'Ireland',
+          authority: 'CBI', services: [], websites: [] }
+    ]);
+    const multi = anomalies.find(a => a.type === N.ANOMALY_TYPES.MULTI_AUTHORISATION);
+    assert.ok(multi, 'expected a multi_authorisation finding');
+    assert.deepStrictEqual(multi.sourceRows, [1, 2]);
+    assert.strictEqual(multi.sourceRow, 1);
 });
 test('a repaired website keeps both forms on the authorisation record', () => {
     // Previously the corrected URL replaced the original on the record, and the

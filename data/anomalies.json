@@ -98,6 +98,11 @@
     {
       "type": "multi_authorisation",
       "entityKey": "529900032TYR45XIEW79",
+      "sourceRow": 57,
+      "sourceRows": [
+        57,
+        82
+      ],
       "name": "EUWAX AG",
       "country": "Germany",
       "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
@@ -108,6 +113,11 @@
     {
       "type": "multi_authorisation",
       "entityKey": "0W2PZJM8XOY22M4GG883",
+      "sourceRow": 81,
+      "sourceRows": [
+        81,
+        111
+      ],
       "name": "DekaBank Deutsche Girozentrale",
       "country": "Germany",
       "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
@@ -118,6 +128,11 @@
     {
       "type": "multi_authorisation",
       "entityKey": "984500AB011S3AEF6706",
+      "sourceRow": 179,
+      "sourceRows": [
+        179,
+        180
+      ],
       "name": "FLOWDESK EUROPE SAS",
       "country": "France",
       "detail": "One legal entity (LEI 984500AB011S3AEF6706) appears under 2 different names: FLOWDESK EUROPE SAS / APLO SAS. These are the same firm, not duplicates.",
