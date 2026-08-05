@@ -52,6 +52,7 @@ function checkStaticPages() {
     if (!fs.existsSync(path.join(ROOT, page))) throw new Error('missing page ' + page);
     if (!sitemap.includes(page)) throw new Error('sitemap missing ' + page);
     const html = read(page);
+    if ((html.match(/<h1\b/g) || []).length !== 1) throw new Error(page + ' must have exactly one H1');
     const start = html.indexOf('<!-- register-snapshot:start -->');
     const end = html.indexOf('<!-- register-snapshot:end -->');
     if (start < 0 || end < start) throw new Error(page + ' is missing its register snapshot markers');

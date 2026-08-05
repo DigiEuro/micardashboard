@@ -212,31 +212,65 @@ function entityPage(entity, data) {
   const flag = COUNTRY_FLAGS[entity.country] || '';
   const sourceDate = formatDate(snapshot.caspsSnapshotDate);
   const checkedDate = formatDate(snapshot.lastUpdated);
+  const dateModified = snapshot.lastUpdated && !isNaN(new Date(snapshot.lastUpdated).getTime())
+    ? new Date(snapshot.lastUpdated).toISOString()
+    : undefined;
   const canonical = SITE_URL + '/entities/' + entity.slug + '.html';
   const note = dataNote(entity, data.anomalies);
   const contextRows = contextFor(entity, data.entities);
   const history = changeHistory(entity, data.changelog, snapshot);
   const website = (entity.websites || []).map(safeHttpUrl).find(Boolean) || '';
   const metaDescription = `${entity.name} is listed as a MiCAR-authorised Crypto-Asset Service Provider in ${entity.country}, supervised by ${authority}. View services, LEI, source freshness and register context.`;
+  const pageTitle = `${entity.name} | MiCA CASP | ${entity.country} | DEA Tracker`;
   const verifySubject = encodeURIComponent('Verify organisation affiliation - ' + entity.name);
   const verifyBody = encodeURIComponent('Hello DEA,\n\nI represent ' + entity.name + ' and would like to verify my organisation affiliation for the MiCAR Tracker.\n\nName:\nRole:\nWork email:\n\nEntity page: ' + canonical);
   const correctionSubject = encodeURIComponent('MiCAR Tracker correction - ' + entity.name);
   const correctionBody = encodeURIComponent('Hello DEA,\n\nI would like to suggest a correction to this MiCAR Tracker entity page.\n\nEntity: ' + entity.name + '\nPage: ' + canonical + '\nCorrection and supporting source:\n');
+  const organizationId = canonical + '#organization';
+  const datasetId = canonical + '#dataset';
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: entity.name,
-    legalName: entity.name,
-    alternateName: entity.alsoKnownAs || [],
-    leiCode: entity.lei || undefined,
-    url: canonical,
-    sameAs: website ? [website] : undefined,
-    address: { '@type': 'PostalAddress', addressCountry: entity.country },
-    subjectOf: {
-      '@type': 'Dataset',
-      name: 'ESMA interim MiCA register',
-      url: ESMA_SOURCE
-    }
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': organizationId,
+        name: entity.name,
+        legalName: entity.name,
+        alternateName: entity.alsoKnownAs || [],
+        leiCode: entity.lei || undefined,
+        url: canonical,
+        sameAs: website ? [website] : undefined,
+        address: { '@type': 'PostalAddress', addressCountry: entity.country },
+        subjectOf: { '@id': datasetId }
+      },
+      {
+        '@type': 'Dataset',
+        '@id': datasetId,
+        name: 'ESMA interim MiCA register record for ' + entity.name,
+        description: metaDescription,
+        url: ESMA_SOURCE,
+        isBasedOn: ESMA_SOURCE,
+        dateModified: dateModified,
+        creator: { '@type': 'Organization', name: 'Digital Euro Association', url: 'https://digital-euro-association.de' }
+      },
+      {
+        '@type': 'WebPage',
+        '@id': canonical + '#webpage',
+        url: canonical,
+        name: pageTitle,
+        dateModified: dateModified,
+        mainEntity: { '@id': organizationId },
+        breadcrumb: { '@id': canonical + '#breadcrumb' }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': canonical + '#breadcrumb',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'CASP Tracker', item: SITE_URL + '/casp-tracker.html' },
+          { '@type': 'ListItem', position: 2, name: entity.name, item: canonical }
+        ]
+      }
+    ]
   };
 
   const historyHtml = history.length ? history.map(function (event) {
@@ -253,15 +287,16 @@ function entityPage(entity, data) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
-  <title>${esc(entity.name)} - MiCAR CASP Profile</title>
+  <title>${esc(pageTitle)}</title>
   <meta name="description" content="${esc(metaDescription)}">
   <link rel="canonical" href="${esc(canonical)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${esc(canonical)}">
-  <meta property="og:title" content="${esc(entity.name)} - MiCAR CASP Profile">
+  <meta property="og:title" content="${esc(pageTitle)}">
   <meta property="og:description" content="${esc(metaDescription)}">
   <meta property="og:image" content="${SITE_URL}/cover.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="${SITE_URL}/cover.png">
   <link rel="icon" type="image/png" href="../favicon.png">
   <link rel="alternate" type="application/rss+xml" title="MiCAR Tracker register updates" href="../feed.xml">
   <script type="application/ld+json">${jsonForHtml(structuredData)}</script>
@@ -279,7 +314,7 @@ function entityPage(entity, data) {
       <div class="flex items-center justify-between flex-wrap header-content">
         <div class="flex items-center space-x-6 mb-4 md:mb-0">
           <a href="../index.html" class="inline-flex items-center" aria-label="Return to the dashboard"><img src="../DEA%20logo%20white.svg" alt="DEA Logo" class="logo-container"></a>
-          <h1 class="text-[1.8rem] md:text-[2.2rem] font-bold text-white mb-0 leading-tight"><span class="text-sky-100">MiCAR</span> <span class="text-sky-50">Tracker</span></h1>
+          <div class="text-[1.8rem] md:text-[2.2rem] font-bold text-white mb-0 leading-tight" aria-label="MiCAR Tracker"><span class="text-sky-100">MiCAR</span> <span class="text-sky-50">Tracker</span></div>
         </div>
         <div class="flex items-center gap-3 header-actions">
           <nav class="hidden md:flex items-center nav-buttons" aria-label="Main navigation">
@@ -311,7 +346,7 @@ function entityPage(entity, data) {
       <div class="entity-hero-main">
         ${entityLogo(entity, data.logos)}
         <div>
-          <h2 id="entity-name">${esc(entity.name)}</h2>
+          <h1 id="entity-name">${esc(entity.name)}</h1>
           <p class="entity-type">CASP <span aria-hidden="true">•</span> ${esc(entity.country)}</p>
           <div class="entity-meta-line">
             <span class="entity-status"><i class="fas fa-circle-check" aria-hidden="true"></i>Authorised under MiCAR</span>
