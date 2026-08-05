@@ -47,6 +47,31 @@ function isOurProblem(text) {
   return !/umami|ERR_TUNNEL|ERR_NAME_NOT_RESOLVED|ERR_INTERNET_DISCONNECTED|net::ERR_FAILED/i.test(text);
 }
 
+async function assertAccessibilityBasics(page, expect) {
+  const issues = await page.evaluate(function () {
+    const problems = [];
+    const ids = Array.from(document.querySelectorAll('[id]')).map(function (el) { return el.id; });
+    const duplicateIds = ids.filter(function (id, index) { return ids.indexOf(id) !== index; });
+    if (duplicateIds.length) problems.push('duplicate ids: ' + Array.from(new Set(duplicateIds)).join(', '));
+
+    document.querySelectorAll('a,button,input,select,textarea').forEach(function (el) {
+      const name = el.getAttribute('aria-label') || el.getAttribute('title') || el.textContent.trim() ||
+        (el.tagName === 'INPUT' && el.getAttribute('placeholder')) || '';
+      if (!name) problems.push(el.tagName.toLowerCase() + ' has no accessible name');
+    });
+    document.querySelectorAll('input,select,textarea').forEach(function (el) {
+      const labelled = el.getAttribute('aria-label') || el.getAttribute('aria-labelledby') ||
+        (el.id && document.querySelector('label[for="' + CSS.escape(el.id) + '"]'));
+      if (!labelled) problems.push((el.id || el.tagName.toLowerCase()) + ' has no label');
+    });
+    document.querySelectorAll('table').forEach(function (table) {
+      if (!table.querySelector('caption')) problems.push('table has no caption');
+    });
+    return problems;
+  });
+  await expect(issues.length === 0, issues.length ? 'basic accessibility checks: ' + issues.join('; ') : 'basic accessibility checks pass');
+}
+
 /*
  * Some environments ship a preinstalled Chromium whose build number does not
  * match the pinned playwright package. Rather than download a second copy,
@@ -84,6 +109,28 @@ const CHECKS = [
     }
   },
   {
+    page: 'index.html',
+    name: 'index.html (mobile)',
+    viewport: { width: 390, height: 844 },
+    assert: async function (page, expect) {
+      const overflow = await page.evaluate(function () {
+        return document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1;
+      });
+      await expect(overflow, 'no horizontal overflow at 390px');
+
+      const menuButton = page.locator('#mobile-menu-button');
+      await menuButton.click();
+      await expect(await menuButton.getAttribute('aria-expanded') === 'true', 'mobile menu opens');
+      await expect(await page.locator('#mobile-menu:not(.hidden)').count() === 1, 'mobile menu is visible');
+      await page.keyboard.press('Escape');
+      await page.waitForTimeout(250);
+      await expect(await menuButton.getAttribute('aria-expanded') === 'false', 'Escape closes mobile menu');
+      await expect(await page.evaluate(function () { return document.activeElement?.id === 'mobile-menu-button'; }),
+        'closing the menu restores focus to its button');
+      await assertAccessibilityBasics(page, expect);
+    }
+  },
+  {
     page: 'casp-tracker.html',
     assert: async function (page, expect) {
       await page.waitForSelector('#rvSearch', { timeout: 15000 });
@@ -100,7 +147,67 @@ const CHECKS = [
       await page.waitForTimeout(400);
       const hits = await page.locator('#registerRoot tbody tr').count();
       await expect(hits > 0 && hits < rows, 'search narrows the CASP table (' + rows + ' -> ' + hits + ')');
+      const sharedUrl = page.url();
+      await expect(new URL(sharedUrl).searchParams.get('q') === 'Bitpanda', 'search is reflected in a shareable URL');
+      await page.goto(sharedUrl, { waitUntil: 'load', timeout: 30000 });
+      await page.waitForSelector('#rvSearch', { timeout: 15000 });
+      await page.waitForTimeout(250);
+      await expect(await page.inputValue('#rvSearch') === 'Bitpanda', 'shareable URL restores the search');
+      await expect(await page.locator('#registerRoot tbody tr').count() > 0, 'shareable URL restores matching rows');
       await expect(await page.locator('#rvCsv').count() > 0, 'CSV button present');
+    }
+  },
+  {
+    page: 'casp-tracker.html',
+    name: 'casp-tracker.html (mobile)',
+    viewport: { width: 390, height: 844 },
+    assert: async function (page, expect) {
+      await page.waitForSelector('#rvSearch', { timeout: 15000 });
+      const layout = await page.evaluate(function () {
+        const root = document.documentElement;
+        const search = document.querySelector('#rvSearch');
+        const controls = document.querySelector('.rv-controls');
+        const summary = document.querySelector('#rvSummary');
+        const count = document.querySelector('#rvCount');
+        const boxes = [search, document.querySelector('#rvCountry'), document.querySelector('#rvService')]
+          .filter(Boolean).map(function (el) { return el.getBoundingClientRect(); });
+        const overlaps = boxes.some(function (a, i) {
+          return boxes.slice(i + 1).some(function (b) {
+            return a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top;
+          });
+        });
+        return {
+          overflow: root.scrollWidth > root.clientWidth + 1,
+          searchBeforeSummary: controls && summary && controls.getBoundingClientRect().top < summary.getBoundingClientRect().top,
+          summaryAfterSearch: search && summary && search.getBoundingClientRect().bottom <= summary.getBoundingClientRect().top,
+          countAfterSummary: summary && count && summary.getBoundingClientRect().bottom <= count.getBoundingClientRect().top,
+          controlsOverlap: overlaps
+        };
+      });
+      await expect(!layout.overflow, 'no horizontal overflow at 390px');
+      await expect(layout.searchBeforeSummary, 'search and filters appear before statistics on mobile');
+      await expect(layout.summaryAfterSearch, 'search field does not collide with summary cards');
+      await expect(layout.countAfterSummary, 'register count follows the summary cards');
+      await expect(!layout.controlsOverlap, 'search and filters do not overlap');
+
+      // Basic keyboard/focus contract: the primary search control is reachable
+      // and has a visible focus indicator rather than silently disappearing.
+      await page.locator('#rvSearch').focus();
+      const focus = await page.evaluate(function () {
+        const el = document.activeElement;
+        if (!el) return { id: '', visible: false, named: false };
+        const style = getComputedStyle(el);
+        const rect = el.getBoundingClientRect();
+        return {
+          id: el.id,
+          visible: rect.width > 0 && rect.height > 0,
+          named: Boolean(el.getAttribute('aria-label') || el.getAttribute('title') || el.textContent.trim()),
+          focusStyle: style.outlineStyle !== 'none' || style.boxShadow !== 'none'
+        };
+      });
+      await expect(focus.id === 'rvSearch' && focus.visible && focus.named, 'search is keyboard reachable and named');
+      await expect(focus.focusStyle, 'keyboard focus is visibly indicated');
+      await assertAccessibilityBasics(page, expect);
     }
   },
   {
@@ -193,7 +300,7 @@ const CHECKS = [
   let passed = 0;
 
   for (const check of CHECKS) {
-    const page = await browser.newPage();
+    const page = await browser.newPage(check.viewport ? { viewport: check.viewport } : {});
     const problems = [];
     page.on('pageerror', function (e) { problems.push('uncaught: ' + e.message); });
     page.on('response', function (response) {
@@ -205,7 +312,7 @@ const CHECKS = [
       if (m.type() === 'error' && isOurProblem(m.text())) problems.push('console: ' + m.text());
     });
 
-    console.log('\n' + check.page);
+    console.log('\n' + (check.name || check.page));
     async function expect(condition, label) {
       if (condition) { console.log('  ok   ' + label); passed += 1; }
       else { console.log('  FAIL ' + label); failed += 1; }
