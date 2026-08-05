@@ -14,6 +14,7 @@ const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
 const FEED_FILE = path.join(__dirname, 'feed.xml');
 const SITEMAP_FILE = path.join(__dirname, 'sitemap.xml');
 const { generateEntityPages } = require('./scripts/generate-entity-pages');
+const { generateExplainerPage } = require('./scripts/generate-explainer-page');
 const { deriveServiceCodes, unknownServiceSegments } = require('./scripts/services');
 
 // Static, crawlable pages served by GitHub Pages. Entity pages are generated
@@ -24,6 +25,7 @@ const SITEMAP_PAGES = [
     { loc: '/emt-tracker.html', priority: '0.9', changefreq: 'weekly' },
     { loc: '/non-compliant-casps.html', priority: '0.9', changefreq: 'weekly' },
     { loc: '/data-quality.html', priority: '0.6', changefreq: 'weekly' },
+    { loc: '/micar-explained.html', priority: '0.7', changefreq: 'monthly' },
     { loc: '/about.html', priority: '0.5', changefreq: 'monthly' }
 ];
 
@@ -1458,6 +1460,7 @@ async function main() {
         archiveSnapshot(caspsSheetDate || emtSheetDate);
         buildEntityFiles();
         generateEntityPages();
+        generateExplainerPage();
         const generatedAt = readJsonFile(SNAPSHOT_FILE, {}) || {};
         writeSitemap(String(generatedAt.lastUpdated || emtSheetDate || caspsSheetDate || '').slice(0, 10));
         generateAllSnapshots();

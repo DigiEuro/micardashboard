@@ -109,6 +109,18 @@ const CHECKS = [
     }
   },
   {
+    page: 'micar-explained.html',
+    assert: async function (page, expect) {
+      await expect(await page.locator('h1').textContent() === 'What is MiCA? MiCAR, ESMA and NCAs explained', 'MiCA explainer heading renders');
+      await expect(await page.locator('#live-snapshot-title').count() === 1, 'live snapshot section renders');
+      await expect(await page.locator('text=CASPs listed').count() === 1, 'live CASP stat renders');
+      await expect(await page.locator('text=represented countries').count() === 1, 'live country stat renders');
+      await expect(await page.locator('text=CASPs in France').count() === 1, 'live France stat renders');
+      await expect(await page.locator('a[href="casp-tracker.html"]').count() > 0, 'explainer links to CASP register');
+      await assertAccessibilityBasics(page, expect);
+    }
+  },
+  {
     page: 'index.html',
     name: 'index.html (mobile)',
     viewport: { width: 390, height: 844 },
