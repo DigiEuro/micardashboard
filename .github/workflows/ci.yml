@@ -49,6 +49,10 @@ jobs:
         node --check scripts/validate-dashboard-data.js
         node --check assets/js/mobile-menu.js
         node --check assets/js/register-view.js
+        node --check assets/js/entity-page.js
+        node --check scripts/generate-entity-pages.js
+        node --check scripts/refresh-static-pages.js
+        node --check scripts/test-entity-pages.js
         node --check scripts/test-csv.js
 
     - name: Check sitemap lists the intent pages
@@ -57,6 +61,7 @@ jobs:
           grep -q "$page" sitemap.xml || { echo "sitemap missing $page"; exit 1; }
           test -f "$page" || { echo "missing page $page"; exit 1; }
         done
+        grep -q 'entities/flowdesk-europe-sas.html' sitemap.xml || { echo "sitemap missing entity pages"; exit 1; }
 
     - name: Check intent pages carry a static register snapshot
       # The updater bakes a crawlable <table> between these markers so the
@@ -106,8 +111,14 @@ jobs:
       # later field one column, and publishes address fragments as CASPs.
       run: npm run test:csv
 
+    - name: Test raw MiCAR service mapping
+      run: npm run test:services
+
     - name: Test entity resolution and normalisation
       run: npm run test:normalise
+
+    - name: Check generated entity pages
+      run: npm run test:entities
 
     - name: Check entities reconcile against the source register
       # The hard rule: no source row may be silently dropped. If the

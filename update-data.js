@@ -13,6 +13,8 @@ const NON_COMPLIANT_DATA_FILE = path.join(DATA_DIR, 'non-compliant.json');
 const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
 const FEED_FILE = path.join(__dirname, 'feed.xml');
 const SITEMAP_FILE = path.join(__dirname, 'sitemap.xml');
+const { generateEntityPages } = require('./scripts/generate-entity-pages');
+const { deriveServiceCodes, unknownServiceSegments } = require('./scripts/services');
 
 // Static, crawlable pages served by GitHub Pages. Entity pages are generated
 // separately; keep this list in sync when adding intent pages.
@@ -569,6 +571,25 @@ function convertToCaspsData(csvData) {
         .map((row, index) => {
             const name = row['ae_lei_name'] ? row['ae_lei_name'].trim() : '';
             const lei = extractLei(row);
+            const serviceCodeRaw = String(row['ac_serviceCode_raw'] ?? '');
+            const legacyServices = parseMultiValueField(row['ac_serviceCode']);
+            const services = serviceCodeRaw.trim()
+                ? deriveServiceCodes(serviceCodeRaw)
+                : legacyServices;
+            const unknownServices = serviceCodeRaw.trim()
+                ? unknownServiceSegments(serviceCodeRaw)
+                : [];
+
+            // A populated raw source value with any unmapped segment is unsafe
+            // to publish: it would turn an unknown permission into a missing
+            // one. Add the new wording to services.js rather than silently
+            // falling back to the bot-authored legacy column.
+            if (serviceCodeRaw.trim() && (services.length === 0 || unknownServices.length)) {
+                const detail = unknownServices.length
+                    ? unknownServices.join(' || ')
+                    : serviceCodeRaw;
+                throw new Error(`Unrecognised CASP service value for ${name || `row ${index + 1}`}: ${detail}`);
+            }
 
             // Keep malformed values out of the published field but never drop
             // them silently - they are reported for the data-quality review.
@@ -588,7 +609,8 @@ function convertToCaspsData(csvData) {
                 lei: validLei,
                 authority: row['ae_competentAuthority'] ? row['ae_competentAuthority'].trim() : '',
                 memberState: row['ae_homeMemberState'] ? row['ae_homeMemberState'].trim() : '',
-                services: parseMultiValueField(row['ac_serviceCode']),
+                services,
+                ...(serviceCodeRaw.trim() ? { serviceCodeRaw } : {}),
                 websites: parseMultiValueField(row['ae_website'])
             };
         });
@@ -816,7 +838,17 @@ function writeSitemap(lastmodDate) {
         ? lastmodDate
         : new Date().toISOString().slice(0, 10);
 
-    const urls = SITEMAP_PAGES.map(page => [
+    const entityData = readJsonFile(ENTITIES_FILE, { entities: [] }) || { entities: [] };
+    const entityPages = Array.isArray(entityData.entities)
+        ? entityData.entities.map(entity => ({
+            loc: `/entities/${entity.slug}.html`,
+            priority: '0.6',
+            changefreq: 'weekly'
+        }))
+        : [];
+    const pages = SITEMAP_PAGES.concat(entityPages);
+
+    const urls = pages.map(page => [
         '  <url>',
         `    <loc>${SITE_URL}${page.loc}</loc>`,
         `    <lastmod>${lastmod}</lastmod>`,
@@ -834,7 +866,7 @@ function writeSitemap(lastmodDate) {
     ].join('\n');
 
     fs.writeFileSync(SITEMAP_FILE, xml);
-    console.log(`🗺️  Sitemap written with ${SITEMAP_PAGES.length} pages (lastmod ${lastmod})`);
+    console.log(`🗺️  Sitemap written with ${pages.length} pages (lastmod ${lastmod})`);
 }
 
 // ---- Entity resolution ------------------------------------------------------
@@ -1089,21 +1121,35 @@ function buildSnapshot(register, entries, dateLong) {
     let summary, caption, theme, headers, rows;
 
     if (register === 'casps') {
+        const entityData = readJsonFile(ENTITIES_FILE, { entities: [] }) || { entities: [] };
+        const bySourceId = new Map();
+        const byLei = new Map();
+        (entityData.entities || []).forEach(entity => {
+            if (entity.lei) byLei.set(entity.lei, entity.slug);
+            (entity.authorisations || []).forEach(record => {
+                if (record.sourceId != null) bySourceId.set(String(record.sourceId), entity.slug);
+            });
+        });
         const countries = uniqueCount(entries, 'memberState');
         summary = `${entries.length} Crypto-Asset Service Providers (CASPs) authorised under the EU Markets in Crypto-Assets Regulation (MiCA) across ${countries} ${countries === 1 ? 'country' : 'countries'}${dateSuffix}.`;
         caption = 'Crypto-Asset Service Providers registered under MiCAR';
         theme = 'teal';
         headers = ['#', 'CASP', 'Country', 'Competent Authority', 'Services', 'Websites'];
-        rows = entries.map((it, i) =>
-            '<tr class="border-b">' +
+        rows = entries.map((it, i) => {
+            const slug = bySourceId.get(String(it.id)) || byLei.get(it.lei);
+            const name = htmlEscape(it.name || 'N/A');
+            const nameMarkup = slug
+                ? `<a href="entities/${htmlEscape(slug)}.html" class="font-semibold text-blue-700 underline decoration-blue-300 underline-offset-2 hover:text-blue-900">${name}</a>`
+                : `<span class="font-semibold text-gray-900">${name}</span>`;
+            return '<tr class="border-b">' +
             `<td class="p-4 text-sm font-semibold text-gray-500 rv-index" data-label="#">${i + 1}</td>` +
-            `<td class="p-4 rv-title" data-label="CASP"><span class="font-semibold text-gray-900">${htmlEscape(it.name || 'N/A')}</span></td>` +
+            `<td class="p-4 rv-title" data-label="CASP">${nameMarkup}</td>` +
             `<td class="p-4 text-gray-700 text-sm" data-label="Country">${htmlEscape(it.memberState || 'Unknown')}</td>` +
             `<td class="p-4 text-gray-600 text-sm" data-label="Authority">${htmlEscape(it.authority || 'N/A')}</td>` +
             `<td class="p-4 text-gray-700 text-sm" data-label="Services">${htmlEscape((it.services || []).join(', ') || 'Not specified')}</td>` +
             `<td class="p-4 text-gray-600 text-sm" data-label="Websites">${websitesText(it.websites)}</td>` +
-            '</tr>'
-        ).join('\n');
+            '</tr>';
+        }).join('\n');
     } else if (register === 'emt') {
         const countries = uniqueCount(entries, 'state');
         summary = `${entries.length} e-money token (EMT) issuers authorised under MiCA across ${countries} ${countries === 1 ? 'country' : 'countries'}${dateSuffix}.`;
@@ -1409,9 +1455,10 @@ async function main() {
         }
 
         updateFooterDates(emtSheetDate, caspsSheetDate);
-        writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
         archiveSnapshot(caspsSheetDate || emtSheetDate);
         buildEntityFiles();
+        generateEntityPages();
+        writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
         generateAllSnapshots();
         logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);
@@ -1436,6 +1483,8 @@ if (require.main === module) {
 // Exported so snapshot generation, change detection and field extraction can
 // be exercised without a live fetch.
 module.exports = {
+    writeSitemap,
+    buildEntityFiles,
     buildSnapshot,
     injectRegisterSnapshot,
     generateAllSnapshots,

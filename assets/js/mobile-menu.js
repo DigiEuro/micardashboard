@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const overlay = document.getElementById('mobile-menu-overlay');
   const hamburger = document.getElementById('hamburger-icon');
   const closeIcon = document.getElementById('close-icon');
+  const header = btn ? btn.closest('header') : null;
 
   if (!btn || !menu || !menuPanel || !overlay) return;
   const transitionMs = 220;
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     btn.setAttribute('aria-expanded', 'true');
+    btn.setAttribute('aria-label', 'Close main menu');
+    header?.classList.add('menu-open');
     overlay.classList.remove('hidden');
     menu.classList.remove('hidden');
 
@@ -37,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const immediate = options.immediate === true;
 
     btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Open main menu');
+    header?.classList.remove('menu-open');
 
     overlay.classList.remove('menu-open');
     menu.classList.remove('menu-open');

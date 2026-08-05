@@ -1396,6 +1396,14 @@ video {
   text-decoration-line: underline;
 }
 
+.decoration-blue-300 {
+  text-decoration-color: #93c5fd;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .opacity-80 {
   opacity: 0.8;
 }
@@ -1544,6 +1552,11 @@ video {
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
 .hover\:text-sky-100:hover {

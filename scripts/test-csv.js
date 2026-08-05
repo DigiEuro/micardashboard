@@ -144,6 +144,23 @@ test('a multi-line website cell becomes separate websites', () => {
     const [entry] = convertToCaspsData(csvToArray(csv));
     assert.deepStrictEqual(entry.websites, ['www.skrill.com', 'www.neteller.com']);
 });
+test('the raw service column drives canonical codes and preserves the source text', () => {
+    const raw = 'a. providing custody and administration of crypto-assets on behalf of clients'
+        + ' | g. reception and transmission of orders for crypto-assets on behalf of clients';
+    const csv = 'ae_lei_name,ae_lei,ac_serviceCode,ac_serviceCode_raw\n'
+        + `Example,529900032TYR45XIEW79,execution,"${raw}"`;
+    const [entry] = convertToCaspsData(csvToArray(csv));
+    assert.deepStrictEqual(entry.services, ['custody', 'RTO']);
+    assert.strictEqual(entry.serviceCodeRaw, raw);
+});
+test('an unmapped non-empty raw service value fails the conversion', () => {
+    const csv = 'ae_lei_name,ae_lei,ac_serviceCode,ac_serviceCode_raw\n'
+        + 'Example,529900032TYR45XIEW79,execution,"a. providing custody and administration of crypto-assets on behalf of clients | z. an unknown MiCAR permission"';
+    assert.throws(
+        () => convertToCaspsData(csvToArray(csv)),
+        /Unrecognised CASP service value/
+    );
+});
 
 console.log(`\n${passed} passed, ${failed} failed\n`);
 process.exit(failed === 0 ? 0 : 1);

@@ -13,6 +13,7 @@
  * normalised legal name plus country, with a human-readable slug alongside.
  */
 const crypto = require('crypto');
+const { deriveServiceCodeOccurrences } = require('./services');
 
 const ANOMALY_TYPES = {
     EXACT_DUPLICATE: 'exact_duplicate',
@@ -223,6 +224,16 @@ function buildEntities(caspRecords, options = {}) {
                 services.push(service);
             }
         });
+        const rawServiceOccurrences = record.serviceCodeRaw
+            ? deriveServiceCodeOccurrences(record.serviceCodeRaw)
+            : [];
+        const rawServiceCounts = rawServiceOccurrences.reduce((counts, occurrence) => {
+            counts[occurrence.code] = (counts[occurrence.code] || 0) + 1;
+            return counts;
+        }, {});
+        const repeatedFromRaw = Object.keys(rawServiceCounts)
+            .filter(code => rawServiceCounts[code] > 1);
+        const repeatedCodes = [...new Set(repeated.concat(repeatedFromRaw))];
         // --- LEI check digits. The key still uses this LEI even when the
         // check fails: re-keying on a suspect value would move the entity to a
         // new identity and break every slug and citation pointing at it. We
@@ -241,15 +252,15 @@ function buildEntities(caspRecords, options = {}) {
             });
         }
 
-        if (repeated.length) {
+        if (repeatedCodes.length) {
             anomalies.push({
                 type: ANOMALY_TYPES.REPEATED_SERVICE_CODE,
                 entityKey: key,
                 sourceRow: index + 1,
                 name,
                 country,
-                detail: `Service code(s) listed more than once in a single record: ${repeated.join(', ')}`,
-                values: repeated
+                detail: `Service code(s) listed more than once in a single record: ${repeatedCodes.join(', ')}`,
+                values: repeatedCodes
             });
         }
 
@@ -313,6 +324,7 @@ function buildEntities(caspRecords, options = {}) {
             authority,
             services,
             servicesRaw: rawServices,
+            ...(record.serviceCodeRaw ? { serviceCodeRaw: String(record.serviceCodeRaw) } : {}),
             websites,
             websitesRaw,
             websiteRepairs
