@@ -7,7 +7,7 @@ const { writeSitemap, generateAllSnapshots } = require('../update-data');
 
 const ROOT = path.join(__dirname, '..');
 const snapshot = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'snapshot.json'), 'utf8'));
-const lastmod = String(snapshot.caspsSnapshotDate || snapshot.emtSnapshotDate || '').slice(0, 10);
+const lastmod = String(snapshot.lastUpdated || snapshot.caspsSnapshotDate || snapshot.emtSnapshotDate || '').slice(0, 10);
 
 generateEntityPages();
 writeSitemap(lastmod);

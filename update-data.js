@@ -1458,7 +1458,8 @@ async function main() {
         archiveSnapshot(caspsSheetDate || emtSheetDate);
         buildEntityFiles();
         generateEntityPages();
-        writeSitemap((emtSheetDate || caspsSheetDate || '').slice(0, 10));
+        const generatedAt = readJsonFile(SNAPSHOT_FILE, {}) || {};
+        writeSitemap(String(generatedAt.lastUpdated || emtSheetDate || caspsSheetDate || '').slice(0, 10));
         generateAllSnapshots();
         logSummary(jsData, nonCompliantEntries || [], caspsEntries || []);
         console.log(`📦 Data source used: ${dataSource === 'cache' ? 'cached JSON files' : 'Sheets / CSV fetch'}`);

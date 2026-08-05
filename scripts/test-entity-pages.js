@@ -24,6 +24,11 @@ entities.forEach(function (entity) {
   const html = fs.readFileSync(file, 'utf8');
   expect(html.includes('<link rel="canonical" href="https://micatracker.digital-euro-association.de/entities/' + entity.slug + '.html">'), 'bad canonical: ' + entity.slug);
   expect(html.includes(esc(entity.name)), 'entity name missing: ' + entity.slug);
+  expect((html.match(/<h1\b/g) || []).length === 1 && html.includes('<h1 id="entity-name">'), 'entity page must have one entity H1: ' + entity.slug);
+  expect(html.includes('<title>' + esc(entity.name) + ' | MiCA CASP | ' + esc(entity.country) + ' | DEA Tracker</title>'), 'entity title missing country context: ' + entity.slug);
+  expect(html.includes('"@type": "BreadcrumbList"'), 'breadcrumb structured data missing: ' + entity.slug);
+  expect(html.includes('"@type": "WebPage"'), 'WebPage structured data missing: ' + entity.slug);
+  expect(html.includes('"dateModified"'), 'structured-data freshness missing: ' + entity.slug);
   expect(html.includes('View official ESMA source'), 'official source missing: ' + entity.slug);
   expect(html.includes('Membership is not regulatory endorsement.'), 'membership disclaimer missing: ' + entity.slug);
   expect(!html.includes('—'), 'entity page contains an em dash: ' + entity.slug);
