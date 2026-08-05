@@ -110,6 +110,47 @@ function normaliseServiceText(value) {
         .trim();
 }
 
+function globalPattern(pattern) {
+    return new RegExp(pattern.source, pattern.flags.includes('g') ? pattern.flags : pattern.flags + 'g');
+}
+
+function serviceSegments(text) {
+    return text
+        .split(/\||;|\/|\s+\bI\b\s+|,\s*(?=[a-j]\s*\.)/i)
+        .map(segment => segment.trim())
+        .filter(Boolean);
+}
+
+function inspectServiceText(value) {
+    const text = normaliseServiceText(value);
+    if (!text) return { text: '', codes: [], occurrences: [], unknownSegments: [] };
+
+    const occurrences = [];
+    SERVICE_DEFINITIONS.forEach(service => {
+        service.patterns.forEach(pattern => {
+            const regex = globalPattern(pattern);
+            let match;
+            while ((match = regex.exec(text))) {
+                occurrences.push({ code: service.code, index: match.index, source: match[0] });
+                if (match[0] === '') regex.lastIndex += 1;
+            }
+        });
+    });
+
+    // Multiple aliases can match the same occurrence. Keep one record for a
+    // code at a given position, but keep separate occurrences of the same code
+    // at different positions so source duplicates remain reportable.
+    const uniqueOccurrences = [...new Map(
+        occurrences.map(item => [`${item.code}:${item.index}`, item])
+    ).values()].sort((a, b) => a.index - b.index);
+    const codes = [...new Set(uniqueOccurrences.map(item => item.code))];
+    const unknownSegments = serviceSegments(text).filter(segment => {
+        return !SERVICE_DEFINITIONS.some(service => service.patterns.some(pattern => pattern.test(segment)));
+    });
+
+    return { text, codes, occurrences: uniqueOccurrences, unknownSegments };
+}
+
 /**
  * Derive the stable application service codes from ESMA's source wording.
  *
@@ -119,23 +160,15 @@ function normaliseServiceText(value) {
  * variants already present in the register.
  */
 function deriveServiceCodes(value) {
-    const text = normaliseServiceText(value);
-    if (!text) return [];
+    return inspectServiceText(value).codes;
+}
 
-    const matches = [];
-    SERVICE_DEFINITIONS.forEach(service => {
-        let firstIndex = -1;
-        service.patterns.forEach(pattern => {
-            const match = pattern.exec(text);
-            if (match && (firstIndex === -1 || match.index < firstIndex)) {
-                firstIndex = match.index;
-            }
-        });
-        if (firstIndex !== -1) matches.push({ code: service.code, index: firstIndex });
-    });
+function deriveServiceCodeOccurrences(value) {
+    return inspectServiceText(value).occurrences;
+}
 
-    matches.sort((a, b) => a.index - b.index);
-    return [...new Set(matches.map(match => match.code))];
+function unknownServiceSegments(value) {
+    return inspectServiceText(value).unknownSegments;
 }
 
 module.exports = {
@@ -144,5 +177,8 @@ module.exports = {
     SERVICE_LABELS,
     SERVICE_SHORT_LABELS,
     normaliseServiceText,
-    deriveServiceCodes
+    deriveServiceCodes,
+    deriveServiceCodeOccurrences,
+    unknownServiceSegments,
+    inspectServiceText
 };

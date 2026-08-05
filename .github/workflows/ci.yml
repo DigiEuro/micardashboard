@@ -111,6 +111,9 @@ jobs:
       # later field one column, and publishes address fragments as CASPs.
       run: npm run test:csv
 
+    - name: Test raw MiCAR service mapping
+      run: npm run test:services
+
     - name: Test entity resolution and normalisation
       run: npm run test:normalise
 

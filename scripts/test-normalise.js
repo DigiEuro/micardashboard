@@ -116,6 +116,23 @@ test('repeated service codes are reported but the raw order is preserved', () =>
     assert.deepStrictEqual(entities[0].authorisations[0].servicesRaw, ['execution', 'execution', 'placing']);
     assert.ok(anomalies.some(a => a.type === N.ANOMALY_TYPES.REPEATED_SERVICE_CODE));
 });
+test('repeated raw service wording remains a data-quality finding after mapping', () => {
+    const { entities, anomalies } = N.buildEntities([{
+        id: 1,
+        lei: LEI_A,
+        name: 'Ripple Payments Europe S.A.',
+        memberState: 'LU',
+        authority: 'CSSF',
+        services: ['exchange funds', 'exchange crypto', 'transfer'],
+        serviceCodeRaw: 'd. exchange of crypto-assets for other crypto-assets | d. exchange of crypto-assets for other crypto-assets',
+        websites: []
+    }]);
+    assert.deepStrictEqual(entities[0].authorisations[0].services, ['exchange funds', 'exchange crypto', 'transfer']);
+    assert.strictEqual(entities[0].authorisations[0].serviceCodeRaw.includes('| d.'), true);
+    const finding = anomalies.find(a => a.type === N.ANOMALY_TYPES.REPEATED_SERVICE_CODE);
+    assert.ok(finding, 'raw duplicate was not reported');
+    assert.deepStrictEqual(finding.values, ['exchange crypto']);
+});
 test('slugs are unique even for identically named entities', () => {
     const { entities } = N.buildEntities([
         { id: 1, name: 'Acme Ltd', memberState: 'Malta', authority: 'MFSA', services: [], websites: [] },

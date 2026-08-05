@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 /* Tests for the versioned ESMA service-text mapper. */
 const assert = require('assert');
-const { deriveServiceCodes } = require('./services');
+const {
+    deriveServiceCodes,
+    deriveServiceCodeOccurrences,
+    unknownServiceSegments
+} = require('./services');
 
 let passed = 0;
 let failed = 0;
@@ -53,6 +57,19 @@ test('does not duplicate a service mentioned more than once', () => {
         deriveServiceCodes('c. exchange of crypto-assets for funds | c. exchange of crypto-assets for funds'),
         ['exchange funds']
     );
+});
+
+test('retains duplicate occurrences for source-quality reporting', () => {
+    const occurrences = deriveServiceCodeOccurrences(
+        'd. exchange of crypto-assets for other crypto-assets | d. exchange of crypto-assets for other crypto-assets'
+    );
+    assert.deepStrictEqual(occurrences.map(item => item.code), ['exchange crypto', 'exchange crypto']);
+});
+
+test('reports an unknown segment even when another segment is recognised', () => {
+    const raw = 'a. providing custody and administration of crypto-assets on behalf of clients | z. newly worded service';
+    assert.deepStrictEqual(deriveServiceCodes(raw), ['custody']);
+    assert.deepStrictEqual(unknownServiceSegments(raw), ['z. newly worded service']);
 });
 
 test('returns no code for an empty source value', () => {

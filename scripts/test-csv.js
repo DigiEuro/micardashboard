@@ -155,7 +155,7 @@ test('the raw service column drives canonical codes and preserves the source tex
 });
 test('an unmapped non-empty raw service value fails the conversion', () => {
     const csv = 'ae_lei_name,ae_lei,ac_serviceCode,ac_serviceCode_raw\n'
-        + 'Example,529900032TYR45XIEW79,execution,an unknown MiCAR permission';
+        + 'Example,529900032TYR45XIEW79,execution,"a. providing custody and administration of crypto-assets on behalf of clients | z. an unknown MiCAR permission"';
     assert.throws(
         () => convertToCaspsData(csvToArray(csv)),
         /Unrecognised CASP service value/

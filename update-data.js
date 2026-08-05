@@ -14,7 +14,7 @@ const CHANGELOG_FILE = path.join(DATA_DIR, 'changelog.json');
 const FEED_FILE = path.join(__dirname, 'feed.xml');
 const SITEMAP_FILE = path.join(__dirname, 'sitemap.xml');
 const { generateEntityPages } = require('./scripts/generate-entity-pages');
-const { deriveServiceCodes } = require('./scripts/services');
+const { deriveServiceCodes, unknownServiceSegments } = require('./scripts/services');
 
 // Static, crawlable pages served by GitHub Pages. Entity pages are generated
 // separately; keep this list in sync when adding intent pages.
@@ -576,13 +576,19 @@ function convertToCaspsData(csvData) {
             const services = serviceCodeRaw.trim()
                 ? deriveServiceCodes(serviceCodeRaw)
                 : legacyServices;
+            const unknownServices = serviceCodeRaw.trim()
+                ? unknownServiceSegments(serviceCodeRaw)
+                : [];
 
-            // A populated raw source value that maps to nothing is unsafe to
-            // publish: it would turn an unknown permission into a blank one.
-            // Add the new service wording to scripts/services.js instead of
-            // silently falling back to the bot-authored legacy column.
-            if (serviceCodeRaw.trim() && services.length === 0) {
-                throw new Error(`Unrecognised CASP service value for ${name || `row ${index + 1}`}: ${serviceCodeRaw}`);
+            // A populated raw source value with any unmapped segment is unsafe
+            // to publish: it would turn an unknown permission into a missing
+            // one. Add the new wording to services.js rather than silently
+            // falling back to the bot-authored legacy column.
+            if (serviceCodeRaw.trim() && (services.length === 0 || unknownServices.length)) {
+                const detail = unknownServices.length
+                    ? unknownServices.join(' || ')
+                    : serviceCodeRaw;
+                throw new Error(`Unrecognised CASP service value for ${name || `row ${index + 1}`}: ${detail}`);
             }
 
             // Keep malformed values out of the published field but never drop

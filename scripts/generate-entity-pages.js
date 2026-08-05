@@ -42,7 +42,7 @@ function esc(value) {
   });
 }
 
-function safeUrl(value) {
+function safeHttpUrl(value) {
   const url = String(value || '').trim();
   return /^https?:\/\//i.test(url) ? url : '';
 }
@@ -186,7 +186,7 @@ function authorityText(entity) {
 }
 
 function websites(entity, compact) {
-  const valid = (entity.websites || []).map(safeUrl).filter(Boolean);
+  const valid = (entity.websites || []).map(safeHttpUrl).filter(Boolean);
   if (!valid.length) return '<span class="entity-muted">Not provided in the ESMA source</span>';
   return valid.map(function (url) {
     let label = url;
@@ -205,7 +205,7 @@ function entityPage(entity, data) {
   const note = dataNote(entity, data.anomalies);
   const contextRows = contextFor(entity, data.entities);
   const history = changeHistory(entity, data.changelog, snapshot);
-  const website = (entity.websites || []).map(safeUrl).find(Boolean) || '';
+  const website = (entity.websites || []).map(safeHttpUrl).find(Boolean) || '';
   const metaDescription = `${entity.name} is listed as a MiCAR-authorised Crypto-Asset Service Provider in ${entity.country}, supervised by ${authority}. View services, LEI, source freshness and register context.`;
   const verifySubject = encodeURIComponent('Verify organisation affiliation — ' + entity.name);
   const verifyBody = encodeURIComponent('Hello DEA,\n\nI represent ' + entity.name + ' and would like to verify my organisation affiliation for the MiCAR Tracker.\n\nName:\nRole:\nWork email:\n\nEntity page: ' + canonical);
