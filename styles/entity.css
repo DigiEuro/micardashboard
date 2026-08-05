@@ -91,6 +91,31 @@
   box-shadow: 0 2px 8px rgba(26, 49, 86, 0.05);
 }
 
+.entity-logo-frame {
+  display: grid;
+  flex: 0 0 5.25rem;
+  width: 5.25rem;
+  height: 5.25rem;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #d9e2ef;
+  border-radius: 0.85rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(26, 49, 86, 0.05);
+}
+
+.entity-logo-frame-dark {
+  border-color: #213b57;
+  background: #102a43;
+}
+
+.entity-logo-image {
+  display: block;
+  width: 4.35rem;
+  height: 3.55rem;
+  object-fit: contain;
+}
+
 .entity-hero h2 {
   margin: 0;
   color: #121a2c;
