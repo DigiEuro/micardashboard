@@ -1,0 +1,24 @@
+{
+  "bankhaus-scheich-wertpapierspezialist-ag": {
+    "src": "../assets/casp-logos/bankhaus-scheich.png",
+    "alt": "Bankhaus Scheich Wertpapierspezialist AG logo",
+    "source": "https://www.bankhaus-scheich.de"
+  },
+  "bitpanda-gmbh": {
+    "src": "../assets/casp-logos/bitpanda.svg",
+    "alt": "Bitpanda logo",
+    "theme": "dark",
+    "source": "https://www.bitpanda.com"
+  },
+  "bitpanda-asset-management-gmbh": {
+    "src": "../assets/casp-logos/bitpanda.svg",
+    "alt": "Bitpanda logo",
+    "theme": "dark",
+    "source": "https://www.bitpanda.com"
+  },
+  "ripple-payments-europe-s-a": {
+    "src": "../assets/casp-logos/ripple.svg",
+    "alt": "Ripple logo",
+    "source": "https://ripple.com/"
+  }
+}

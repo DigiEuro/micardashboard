@@ -195,6 +195,17 @@ function websites(entity, compact) {
   }).join(compact ? ' <span aria-hidden="true">·</span> ' : '<br>');
 }
 
+function entityLogo(entity, logos) {
+  const logo = logos && logos[entity.slug];
+  const src = logo && String(logo.src || '').trim();
+  if (!src || !/^\.\.\/assets\/casp-logos\/[A-Za-z0-9._-]+\.(?:png|svg)$/i.test(src)) {
+    return '<div class="entity-icon" aria-hidden="true"><i class="fas fa-building"></i></div>';
+  }
+  const alt = String(logo.alt || (entity.name + ' logo')).trim();
+  const theme = logo.theme === 'dark' ? ' entity-logo-frame-dark' : '';
+  return `<div class="entity-logo-frame${theme}"><img class="entity-logo-image" src="${esc(src)}" alt="${esc(alt)}" width="96" height="72" decoding="async"></div>`;
+}
+
 function entityPage(entity, data) {
   const snapshot = data.snapshot;
   const authority = authorityText(entity);
@@ -207,9 +218,9 @@ function entityPage(entity, data) {
   const history = changeHistory(entity, data.changelog, snapshot);
   const website = (entity.websites || []).map(safeHttpUrl).find(Boolean) || '';
   const metaDescription = `${entity.name} is listed as a MiCAR-authorised Crypto-Asset Service Provider in ${entity.country}, supervised by ${authority}. View services, LEI, source freshness and register context.`;
-  const verifySubject = encodeURIComponent('Verify organisation affiliation — ' + entity.name);
+  const verifySubject = encodeURIComponent('Verify organisation affiliation - ' + entity.name);
   const verifyBody = encodeURIComponent('Hello DEA,\n\nI represent ' + entity.name + ' and would like to verify my organisation affiliation for the MiCAR Tracker.\n\nName:\nRole:\nWork email:\n\nEntity page: ' + canonical);
-  const correctionSubject = encodeURIComponent('MiCAR Tracker correction — ' + entity.name);
+  const correctionSubject = encodeURIComponent('MiCAR Tracker correction - ' + entity.name);
   const correctionBody = encodeURIComponent('Hello DEA,\n\nI would like to suggest a correction to this MiCAR Tracker entity page.\n\nEntity: ' + entity.name + '\nPage: ' + canonical + '\nCorrection and supporting source:\n');
   const structuredData = {
     '@context': 'https://schema.org',
@@ -242,12 +253,12 @@ function entityPage(entity, data) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
-  <title>${esc(entity.name)} — MiCAR CASP Profile</title>
+  <title>${esc(entity.name)} - MiCAR CASP Profile</title>
   <meta name="description" content="${esc(metaDescription)}">
   <link rel="canonical" href="${esc(canonical)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${esc(canonical)}">
-  <meta property="og:title" content="${esc(entity.name)} — MiCAR CASP Profile">
+  <meta property="og:title" content="${esc(entity.name)} - MiCAR CASP Profile">
   <meta property="og:description" content="${esc(metaDescription)}">
   <meta property="og:image" content="${SITE_URL}/cover.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -267,7 +278,7 @@ function entityPage(entity, data) {
     <div class="max-w-7xl mx-auto px-6 py-6">
       <div class="flex items-center justify-between flex-wrap header-content">
         <div class="flex items-center space-x-6 mb-4 md:mb-0">
-          <a href="../index.html" class="inline-flex items-center" aria-label="Return to the dashboard"><img src="../DEA%20logo%20white.png" alt="DEA Logo" class="logo-container"></a>
+          <a href="../index.html" class="inline-flex items-center" aria-label="Return to the dashboard"><img src="../DEA%20logo%20white.svg" alt="DEA Logo" class="logo-container"></a>
           <h1 class="text-[1.8rem] md:text-[2.2rem] font-bold text-white mb-0 leading-tight"><span class="text-sky-100">MiCAR</span> <span class="text-sky-50">Tracker</span></h1>
         </div>
         <div class="flex items-center gap-3 header-actions">
@@ -298,13 +309,13 @@ function entityPage(entity, data) {
 
     <section class="entity-hero" aria-labelledby="entity-name">
       <div class="entity-hero-main">
-        <div class="entity-icon" aria-hidden="true"><i class="fas fa-building"></i></div>
+        ${entityLogo(entity, data.logos)}
         <div>
           <h2 id="entity-name">${esc(entity.name)}</h2>
           <p class="entity-type">CASP <span aria-hidden="true">•</span> ${esc(entity.country)}</p>
           <div class="entity-meta-line">
             <span class="entity-status"><i class="fas fa-circle-check" aria-hidden="true"></i>Authorised under MiCAR</span>
-            <span>Competent authority: <strong>${esc(authority)} — ${esc(entity.country)}</strong> <span class="entity-flag" aria-hidden="true">${flag}</span></span>
+            <span>Competent authority: <strong>${esc(authority)} - ${esc(entity.country)}</strong> <span class="entity-flag" aria-hidden="true">${flag}</span></span>
             <span>Register snapshot: <strong>${esc(sourceDate)}</strong></span>
             <span>Last checked: <strong>${esc(checkedDate)}</strong></span>
           </div>
@@ -325,7 +336,7 @@ function entityPage(entity, data) {
           <dl class="entity-facts">
             <div><dt><i class="fas fa-file" aria-hidden="true"></i>Legal name</dt><dd>${esc(entity.name)}</dd></div>
             <div><dt><i class="fas fa-location-dot" aria-hidden="true"></i>Country</dt><dd><span class="entity-flag" aria-hidden="true">${flag}</span> ${esc(entity.country)}</dd></div>
-            <div><dt><i class="fas fa-landmark" aria-hidden="true"></i>Competent authority</dt><dd>${esc(authority)} — ${esc(entity.country)} <span class="entity-flag" aria-hidden="true">${flag}</span></dd></div>
+            <div><dt><i class="fas fa-landmark" aria-hidden="true"></i>Competent authority</dt><dd>${esc(authority)} - ${esc(entity.country)} <span class="entity-flag" aria-hidden="true">${flag}</span></dd></div>
             <div><dt><i class="fas fa-globe" aria-hidden="true"></i>Website</dt><dd>${websites(entity)}</dd></div>
           </dl>
           <div class="entity-permissions"><h3><i class="fas fa-shield-halved" aria-hidden="true"></i>Service permissions</h3><p>Authorised to provide the following services under MiCAR:</p><div class="entity-services">${serviceBadges(entity) || '<span class="entity-muted">Not specified in the source data</span>'}</div></div>
@@ -369,6 +380,7 @@ function generateEntityPages() {
   const data = {
     entities,
     casps: readJson('casps.json', []),
+    logos: readJson('casp-logos.json', {}),
     anomalies: (readJson('anomalies.json', { anomalies: [] }).anomalies || []),
     changelog: readJson('changelog.json', []),
     snapshot: readJson('snapshot.json', {})
