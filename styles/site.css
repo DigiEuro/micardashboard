@@ -584,7 +584,24 @@ body {
    Below 640px a 6-column table can't fit, so each row becomes a
    labelled card (column header shown via the td's data-label).
    ------------------------------------------------------------ */
+.rv-shell {
+  display: flex;
+  flex-direction: column;
+}
+
+.rv-shell > #rvSummary { order: 1; }
+.rv-shell > #rvCount { order: 2; }
+.rv-shell > .rv-controls { order: 3; }
+.rv-shell > .data-table-container { order: 4; }
+.rv-shell > #rvNoResults { order: 5; }
+
 @media (max-width: 640px) {
+  /* Put the primary action first on a narrow screen: users can search before
+     spending vertical space on the summary cards and register count. */
+  .rv-shell > .rv-controls { order: 1; }
+  .rv-shell > #rvSummary { order: 2; }
+  .rv-shell > #rvCount { order: 3; }
+
   /* Controls: full-width search, filters share a row, and the
      Clear / CSV / JSON group stays together on one line. */
   .rv-controls .rv-search {

@@ -434,6 +434,28 @@
     renderRows();
   }
 
+  // Keep the current view reproducible. Search/filter changes use replaceState
+  // so typing does not create a browser-history entry for every character,
+  // while copied/bookmarked URLs still reopen the same filtered register.
+  function syncUrlFilters() {
+    try {
+      const url = new URL(window.location.href);
+      const search = (document.getElementById('rvSearch')?.value || '').trim();
+      const country = cfg.filters ? (document.getElementById('rvCountry')?.value || '') : '';
+      const service = cfg.filters ? (document.getElementById('rvService')?.value || '') : '';
+      const values = { q: search, country, service, group: groupBy || '' };
+
+      Object.keys(values).forEach(function (key) {
+        if (values[key]) url.searchParams.set(key, values[key]);
+        else url.searchParams.delete(key);
+      });
+      history.replaceState(null, '', url);
+    } catch (e) {
+      // URL synchronisation is an enhancement; filtering must still work if
+      // history APIs are unavailable in an embedded or restricted browser.
+    }
+  }
+
   // Summary cards reflect the current filtered view (Total Providers /
   // Countries track the filter); cross-dataset values come from extraSummary.
   function renderSummary() {
@@ -611,7 +633,8 @@
   }
 
   function shellHtml() {
-    return '<div class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6">' +
+    return '<div class="rv-shell bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg rounded-2xl shadow-lg p-6">' +
+      '<div id="rvSummary"></div>' +
       '<p id="rvCount" class="text-sm text-gray-500 mb-4"></p>' +
       controlsHtml() + tableHtml() + '</div>';
   }
@@ -654,16 +677,26 @@
   }
 
   function wire() {
-    const debounced = debounce(applyFilters, 150);
+    const debounced = debounce(function () {
+      syncUrlFilters();
+      applyFilters();
+    }, 150);
     document.getElementById('rvSearch').addEventListener('input', debounced);
     document.getElementById('rvClear').addEventListener('click', function () {
       document.getElementById('rvSearch').value = '';
       if (cfg.filters) { document.getElementById('rvCountry').value = ''; document.getElementById('rvService').value = ''; }
+      syncUrlFilters();
       applyFilters();
     });
     if (cfg.filters) {
-      document.getElementById('rvCountry').addEventListener('change', applyFilters);
-      document.getElementById('rvService').addEventListener('change', applyFilters);
+      document.getElementById('rvCountry').addEventListener('change', function () {
+        syncUrlFilters();
+        applyFilters();
+      });
+      document.getElementById('rvService').addEventListener('change', function () {
+        syncUrlFilters();
+        applyFilters();
+      });
     }
     const groupSelect = document.getElementById('rvGroup');
     if (groupSelect) {
@@ -671,16 +704,15 @@
         groupBy = groupSelect.value;
         collapseInitialised = false; // re-decide the default for the new grouping
         collapsed = new Set();
-        // Keep the URL shareable without adding a history entry per change.
-        try {
-          const url = new URL(window.location.href);
-          if (groupBy) url.searchParams.set('group', groupBy);
-          else url.searchParams.delete('group');
-          history.replaceState(null, '', url);
-        } catch (e) { /* non-fatal */ }
+        syncUrlFilters();
         renderRows();
       });
     }
+
+    window.addEventListener('popstate', function () {
+      applyUrlFilters();
+      applyFilters();
+    });
 
     // Delegated so it survives re-renders of the table body.
     const tbodyEl = document.getElementById('rvTbody');
@@ -733,19 +765,32 @@
     const search = params.get('q') || '';
     const country = params.get('country') || '';
     const service = params.get('service') || '';
+    const requestedGroup = params.get('group') || '';
+    const validGroup = groupOptions.some(function (o) { return o.key === requestedGroup; });
+    groupBy = validGroup ? requestedGroup : '';
+    collapseInitialised = false;
+    collapsed = new Set();
 
     const searchInput = document.getElementById('rvSearch');
-    if (searchInput && search) { searchInput.value = search; active = true; }
+    if (searchInput) {
+      searchInput.value = search;
+      if (search) active = true;
+    }
     const countrySelect = document.getElementById('rvCountry');
-    if (countrySelect && country && Array.from(countrySelect.options).some(function (o) { return o.value === country; })) {
-      countrySelect.value = country;
-      active = true;
+    if (countrySelect) {
+      const validCountry = country && Array.from(countrySelect.options).some(function (o) { return o.value === country; });
+      countrySelect.value = validCountry ? country : '';
+      if (validCountry) active = true;
     }
     const serviceSelect = document.getElementById('rvService');
-    if (serviceSelect && service && Array.from(serviceSelect.options).some(function (o) { return o.value === service; })) {
-      serviceSelect.value = service;
-      active = true;
+    if (serviceSelect) {
+      const validService = service && Array.from(serviceSelect.options).some(function (o) { return o.value === service; });
+      serviceSelect.value = validService ? service : '';
+      if (validService) active = true;
     }
+    const groupSelect = document.getElementById('rvGroup');
+    if (groupSelect) groupSelect.value = groupBy;
+    if (groupBy) active = true;
     return active;
   }
 
@@ -794,7 +839,7 @@
       } catch (e) { /* non-fatal */ }
     }
 
-    root.innerHTML = '<div id="rvSummary"></div>' + shellHtml();
+    root.innerHTML = shellHtml();
     if (cfg.filters) populateFilters();
     wire();
     if (applyUrlFilters()) applyFilters();

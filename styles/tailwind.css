@@ -624,8 +624,16 @@ video {
   border-width: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .collapse {
   visibility: collapse;
+}
+
+.static {
+  position: static;
 }
 
 .fixed {
@@ -752,6 +760,10 @@ video {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.\!table {
+  display: table !important;
 }
 
 .table {

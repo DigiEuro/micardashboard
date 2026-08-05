@@ -1,1 +1,7 @@
 node_modules/
+
+# Local browser QA output and notes
+.playwright-cli/
+artifacts/
+output/playwright/
+design-qa.md
