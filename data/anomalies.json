@@ -1,8 +1,8 @@
 {
-  "total": 11,
+  "total": 12,
   "byType": {
     "lei_checksum_failed": 6,
-    "repeated_service_code": 2,
+    "repeated_service_code": 3,
     "multi_authorisation": 3
   },
   "anomalies": [
@@ -30,13 +30,23 @@
     },
     {
       "type": "repeated_service_code",
-      "entityKey": "54930079HJ1JTMKTW637",
-      "sourceRow": 73,
-      "name": "Bankhaus Scheich Wertpapierspezialist AG",
-      "country": "Germany",
-      "detail": "Service code(s) listed more than once in a single record: exchange funds, execution",
+      "entityKey": "213800V83W83UL8WR118",
+      "sourceRow": 32,
+      "name": "Ronin EM Ltd",
+      "country": "Cyprus",
+      "detail": "Service code(s) listed more than once in a single record: exchange crypto",
       "values": [
-        "exchange funds",
+        "exchange crypto"
+      ]
+    },
+    {
+      "type": "repeated_service_code",
+      "entityKey": "2138005EFA978Y43G944",
+      "sourceRow": 40,
+      "name": "PM MTF LTD",
+      "country": "Cyprus",
+      "detail": "Service code(s) listed more than once in a single record: execution",
+      "values": [
         "execution"
       ]
     },

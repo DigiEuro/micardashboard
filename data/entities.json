@@ -52,6 +52,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitpanda.com"
           ],
@@ -104,6 +105,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bybit.eu"
           ],
@@ -153,6 +155,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.cryptonow.at"
           ],
@@ -205,6 +208,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://eu.aminagroup.com"
           ],
@@ -251,6 +255,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.21bitcoin.app"
           ],
@@ -303,6 +308,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.kucoin.eu"
           ],
@@ -343,6 +349,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.dad.at"
           ],
@@ -395,6 +402,7 @@
             "advice",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | h. providing advice on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coinfinity.co"
           ],
@@ -435,6 +443,7 @@
           "servicesRaw": [
             "advice"
           ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets",
           "websites": [
             "https://validvent.com"
           ],
@@ -487,6 +496,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://whitebit.eu"
           ],
@@ -536,6 +546,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.osl.com/eu"
           ],
@@ -582,6 +593,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.kbc.com"
           ],
@@ -625,6 +637,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bny.com"
           ],
@@ -689,6 +702,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets|  j. providing transfer services",
           "websites": [
             "https://alaricsecurities.com/"
           ],
@@ -735,6 +749,7 @@
             "execution",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e.execution of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.belayer.bg/"
           ],
@@ -784,6 +799,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://altcoins.bg/"
           ],
@@ -824,6 +840,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://digitalassist.bg/"
           ],
@@ -882,6 +899,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds |execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients | providing advice on crypto-assets |providing portfolio management on crypto-assets | providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.etoro.com"
           ],
@@ -931,6 +949,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://collectnexchange.cy/"
           ],
@@ -980,6 +999,7 @@
             "execution",
             "RTO"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.trading212.com"
           ],
@@ -1026,6 +1046,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds | exchange of crypto-assets for other crypto assets",
           "websites": [
             "https://www.tradu.com/eu/"
           ],
@@ -1081,6 +1102,7 @@
             "trading platform",
             "transfer"
           ],
+          "serviceCodeRaw": "Providing Custody and administration of crypto-assets on behalf of clients |Placing of crypto-assets |Exchange of crypto-assets for funds |Exchange of crypto-assets for other crypto-assets | Operation of a trading platform for crypto-assets |Providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.revolut.com/en-CY/crypto/"
           ],
@@ -1142,6 +1164,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders on behalf of clients |placing of crypto-assets | providing advice on crypto assets | providing portfolio management on crypto-assets |providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.teroxx.com"
           ],
@@ -1191,6 +1214,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients|exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets|execution of orders for crypto-assets on behalf of clients |",
           "websites": [
             "https://www.capital.com"
           ],
@@ -1240,6 +1264,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets  providing advice on crypto-assets on behalf of clients |providing portfolio management on crypto-assets",
           "websites": [
             "https://www.pelicaneu.com"
           ],
@@ -1286,6 +1311,7 @@
             "execution",
             "RTO"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |  execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.xtb.com/cy"
           ],
@@ -1344,6 +1370,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets on behalf of clients |providing advice on crypto-assets|providing portfolio management on crypto-assets",
           "websites": [
             "https://www.noemon.finance"
           ],
@@ -1399,6 +1426,7 @@
             "RTO",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets on behalf of clients |  providing portfolio management on crypto-assets",
           "websites": [
             "https://www.trading.com/eu"
           ],
@@ -1460,6 +1488,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients | providing advice on crypto-assets| providing portfolio management on crypto-assets |providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.j2tx.com"
           ],
@@ -1515,6 +1544,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients | providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.daskkrypto.eu"
           ],
@@ -1576,6 +1606,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "Providing custody and administration of crypto-assets on behalf of clients | Exchange of crypto-assets for funds | Exchange of crypto-assets for other crypto-assets | Execution of orders on behalf of clients | Reception and transmission of orders for crypto-assets on behalf of clients | Providing advice on crypto-assets | Providing portfolio management on crypto-assets | Providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.nagax.com/eu/"
           ],
@@ -1597,11 +1628,11 @@
         "CySEC"
       ],
       "services": [
-        "custody",
+        "RTO",
+        "execution",
         "exchange funds",
         "exchange crypto",
-        "execution",
-        "RTO",
+        "custody",
         "transfer"
       ],
       "websites": [
@@ -1616,21 +1647,22 @@
           "country": "Cyprus",
           "authority": "CySEC",
           "services": [
-            "custody",
+            "RTO",
+            "execution",
             "exchange funds",
             "exchange crypto",
-            "execution",
-            "RTO",
+            "custody",
             "transfer"
           ],
           "servicesRaw": [
-            "custody",
+            "RTO",
+            "execution",
             "exchange funds",
             "exchange crypto",
-            "execution",
-            "RTO",
+            "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "Reception and transmission of client orders/ Execution of orders on behalf of clients/ Exchange between crypto assets and fiat currency/ Exchange between crypto assets/ Providing custody and administration of crypto-assets on behalf of clients/ Providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://em.ron.in/"
           ],
@@ -1686,6 +1718,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.krypto-knight.com"
           ],
@@ -1744,6 +1777,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets| i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://triabridge.com/"
           ],
@@ -1808,6 +1842,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets| i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.noemon.tech"
           ],
@@ -1866,6 +1901,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.crypto.unlimit.com"
           ],
@@ -1921,6 +1957,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.complycrypto.eu"
           ],
@@ -1979,6 +2016,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://tothemoon.com"
           ],
@@ -2034,6 +2072,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://solidgate.com/casp/"
           ],
@@ -2087,6 +2126,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|b. operation of a trading platform for crypto-assetse execution of orders for crypto-assets on behalf of clients| e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://mtf.perpetuals.com/",
             "http://eu.barriers.com/"
@@ -2137,6 +2177,7 @@
             "RTO",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.aquillanummus.com/"
           ],
@@ -2192,6 +2233,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.cloverum.com"
           ],
@@ -2247,6 +2289,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.invity.io"
           ],
@@ -2299,6 +2342,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.anycoin.cz"
           ],
@@ -2354,6 +2398,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.ilavo.cz/cs"
           ],
@@ -2403,6 +2448,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.pluso.cz/"
           ],
@@ -2455,6 +2501,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coinmate.io/cs"
           ],
@@ -2501,6 +2548,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coinero.cz"
           ],
@@ -2553,6 +2601,7 @@
             "advice",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | h. providing advice on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.goldengate.cz/"
           ],
@@ -2602,6 +2651,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bit.plus"
           ],
@@ -2651,6 +2701,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.simplecoin.eu"
           ],
@@ -2691,6 +2742,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://bit.plus"
           ],
@@ -2737,6 +2789,7 @@
             "RTO",
             "advice"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets",
           "websites": [
             "https://www.altlift.cz/"
           ],
@@ -2780,6 +2833,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bsdigital.com"
           ],
@@ -2829,6 +2883,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of client|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitpanda.com"
           ],
@@ -2881,6 +2936,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.tradias.de"
           ],
@@ -2925,6 +2981,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets",
           "websites": [
             "https://www.euwax-ag.de"
           ],
@@ -2943,6 +3000,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.euwax-ag.de"
           ],
@@ -2983,6 +3041,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.flatexdegiro.com/de/flatexdegiro-bank/login"
           ],
@@ -3023,6 +3082,7 @@
           "servicesRaw": [
             "trading platform"
           ],
+          "serviceCodeRaw": "b. operation of a trading platform for crypto-assets",
           "websites": [
             "https://www.360t.com"
           ],
@@ -3072,6 +3132,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of client|e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://traderepublic.com/"
           ],
@@ -3127,6 +3188,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitgo.de/entities/bitgoeuropegmbh/"
           ],
@@ -3167,6 +3229,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://n26.com"
           ],
@@ -3207,6 +3270,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.baaderbank.de/"
           ],
@@ -3250,6 +3314,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.commerzbank.de"
           ],
@@ -3290,6 +3355,7 @@
           "servicesRaw": [
             "trading platform"
           ],
+          "serviceCodeRaw": "b. operation of a trading platform for crypto-assets",
           "websites": [
             "https://www.bsdex.de/de/"
           ],
@@ -3342,6 +3408,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.crypto-finance.com/germany/de/"
           ],
@@ -3382,6 +3449,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://tradersplace.de/angebot/uebersicht/kryptowaehrungen"
           ],
@@ -3425,6 +3493,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of client|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.tangany.com"
           ],
@@ -3465,6 +3534,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.smartbrokerplus.de/de-de/"
           ],
@@ -3508,6 +3578,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets;",
           "websites": [
             "https://www.drpam.de/"
           ],
@@ -3560,6 +3631,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bullish.com/home-de/"
           ],
@@ -3606,6 +3678,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.v-bank.com/"
           ],
@@ -3628,10 +3701,12 @@
       ],
       "services": [
         "exchange funds",
+        "exchange crypto",
         "execution",
         "placing",
         "RTO",
-        "advice"
+        "advice",
+        "portfolio mgmt"
       ],
       "websites": [
         "https://www.bankhaus-scheich.de"
@@ -3646,20 +3721,23 @@
           "authority": "BaFin",
           "services": [
             "exchange funds",
+            "exchange crypto",
             "execution",
             "placing",
             "RTO",
-            "advice"
+            "advice",
+            "portfolio mgmt"
           ],
           "servicesRaw": [
             "exchange funds",
-            "exchange funds",
-            "execution",
+            "exchange crypto",
             "execution",
             "placing",
             "RTO",
-            "advice"
+            "advice",
+            "portfolio mgmt"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|c. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|e. placing of crypto-assets|f.reception and transmission of orders for crypto-assets on behalf of clients|g. providing advice on crypto-assets |h. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.bankhaus-scheich.de"
           ],
@@ -3703,6 +3781,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets",
           "websites": [
             "https://www.ls-tc.de/de/"
           ],
@@ -3743,6 +3822,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.donaucapital.de"
           ],
@@ -3764,7 +3844,8 @@
         "BaFin"
       ],
       "services": [
-        "execution"
+        "execution",
+        "RTO"
       ],
       "websites": [
         "https://www.vr-bayernmitte.de"
@@ -3778,11 +3859,14 @@
           "country": "Germany",
           "authority": "BaFin",
           "services": [
-            "execution"
+            "execution",
+            "RTO"
           ],
           "servicesRaw": [
-            "execution"
+            "execution",
+            "RTO"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients, g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vr-bayernmitte.de"
           ],
@@ -3823,6 +3907,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.huddlestock.com"
           ],
@@ -3863,6 +3948,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.sino.de/"
           ],
@@ -3903,6 +3989,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://hyphe.com/"
           ],
@@ -3943,6 +4030,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://dwpbank.de"
           ],
@@ -3990,6 +4078,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.deka.de/deka-gruppe"
           ],
@@ -4008,6 +4097,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://www.deka.de/deka-gruppe"
           ],
@@ -4051,6 +4141,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.hal-privatbank.com/asset-servicing/digitale-assets/regulierte-kryptoverwahrung"
           ],
@@ -4100,6 +4191,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets",
           "websites": [
             "https://followmymoney.de/"
           ],
@@ -4140,6 +4232,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.westerwaldbank.de"
           ],
@@ -4180,6 +4273,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.hannoversche-volksbank.de/"
           ],
@@ -4220,6 +4314,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vr-teilhaberbank.de"
           ],
@@ -4260,6 +4355,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.voba-msw.de"
           ],
@@ -4309,6 +4405,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|",
           "websites": [
             "https://www.ig.com/de"
           ],
@@ -4349,6 +4446,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vr-bank-wuerzburg.de"
           ],
@@ -4389,6 +4487,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vrbk.de"
           ],
@@ -4429,6 +4528,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vrbank-suedpfalz.de"
           ],
@@ -4469,6 +4569,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.sutorbank.de/"
           ],
@@ -4509,6 +4610,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.wsw-pm.de"
           ],
@@ -4558,6 +4660,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto assets",
           "websites": [
             "https://fidus-ag.de"
           ],
@@ -4604,6 +4707,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.dzbank.de"
           ],
@@ -4647,6 +4751,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.tradevest.ai"
           ],
@@ -4687,6 +4792,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.isf-institut.de"
           ],
@@ -4727,6 +4833,7 @@
           "servicesRaw": [
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.plutos.de"
           ],
@@ -4767,6 +4874,7 @@
           "servicesRaw": [
             "advice"
           ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets",
           "websites": [
             "https://www.scalable.capital"
           ],
@@ -4813,6 +4921,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.anceka.de"
           ],
@@ -4868,6 +4977,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.berenberg.de"
           ],
@@ -4908,6 +5018,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.mlp.de"
           ],
@@ -4951,6 +5062,7 @@
             "RTO",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients|i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.bvp-vermoegen.de"
           ],
@@ -4994,6 +5106,7 @@
             "RTO",
             "advice"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets",
           "websites": [
             "https://concedus.com/"
           ],
@@ -5018,7 +5131,10 @@
         "exchange funds",
         "exchange crypto",
         "execution",
-        "placing"
+        "placing",
+        "RTO",
+        "advice",
+        "portfolio mgmt"
       ],
       "websites": [
         "https://www.dlt-finance.com"
@@ -5035,14 +5151,21 @@
             "exchange funds",
             "exchange crypto",
             "execution",
-            "placing"
+            "placing",
+            "RTO",
+            "advice",
+            "portfolio mgmt"
           ],
           "servicesRaw": [
             "exchange funds",
             "exchange crypto",
             "execution",
-            "placing"
+            "placing",
+            "RTO",
+            "advice",
+            "portfolio mgmt"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets I g. reception and transmission of orders for crypto-assets on behalf of clients I h. providing advice on crypto-assets I i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.dlt-finance.com"
           ],
@@ -5066,7 +5189,10 @@
       "services": [
         "exchange funds",
         "exchange crypto",
-        "execution"
+        "execution",
+        "RTO",
+        "advice",
+        "portfolio mgmt"
       ],
       "websites": [
         "https://www.tradevest.ai/de"
@@ -5082,13 +5208,20 @@
           "services": [
             "exchange funds",
             "exchange crypto",
-            "execution"
+            "execution",
+            "RTO",
+            "advice",
+            "portfolio mgmt"
           ],
           "servicesRaw": [
             "exchange funds",
             "exchange crypto",
-            "execution"
+            "execution",
+            "RTO",
+            "advice",
+            "portfolio mgmt"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients I g. reception and transmission of orders for crypto-assets on behalf of clients I h. providing advice on crypto-assets I i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.tradevest.ai/de"
           ],
@@ -5132,6 +5265,7 @@
             "RTO",
             "advice"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets",
           "websites": [
             "https://www.vermoegensbutler.de"
           ],
@@ -5172,6 +5306,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vbheiden.de"
           ],
@@ -5212,6 +5347,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.rbkk.de"
           ],
@@ -5252,6 +5388,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.donau-iller-bank.de"
           ],
@@ -5292,6 +5429,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vbsdn.de"
           ],
@@ -5332,6 +5470,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.rb-af.de"
           ],
@@ -5375,6 +5514,7 @@
             "execution",
             "RTO"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.justtrade.com/"
           ],
@@ -5415,6 +5555,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.skb-rheinstetten.de"
           ],
@@ -5455,6 +5596,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vrbank-augsburg-ostallgaeu.de"
           ],
@@ -5495,6 +5637,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.rbfalkenstein-woerth.de"
           ],
@@ -5535,6 +5678,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www-vrbank-obb-so.de"
           ],
@@ -5575,6 +5719,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vrbank-sh-mitte.de"
           ],
@@ -5615,6 +5760,7 @@
           "servicesRaw": [
             "execution"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.vrbanklm.de"
           ],
@@ -5673,6 +5819,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.penning.io"
           ],
@@ -5716,6 +5863,7 @@
             "custody",
             "execution"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.lunar.app/dk/privat/krypto"
           ],
@@ -5765,6 +5913,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://gc.exchange/"
           ],
@@ -5811,6 +5960,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.northstake.dk"
           ],
@@ -5860,6 +6010,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.coinify.com/"
           ],
@@ -5906,6 +6057,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.januar.com/"
           ],
@@ -5946,6 +6098,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://www.safelynx.io/"
           ],
@@ -5992,6 +6145,7 @@
             "execution",
             "RTO"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://lightyear.com/"
           ],
@@ -6035,6 +6189,7 @@
             "custody",
             "RTO"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients| reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.lhv.ee"
           ],
@@ -6084,6 +6239,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://eu.lightspark.com/"
           ],
@@ -6130,6 +6286,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|e. execution of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.bbva.es"
           ],
@@ -6173,6 +6330,7 @@
             "custody",
             "execution"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|e. execution of orders for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.openbank.es"
           ],
@@ -6219,6 +6377,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.cecabank.es"
           ],
@@ -6277,6 +6436,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients.|f. placing of crypto-assets|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://bit2me.com"
           ],
@@ -6323,6 +6483,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.r4.com"
           ],
@@ -6369,6 +6530,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://portal.kutxabank.es/cs/Satellite/kb/es/particulares"
           ],
@@ -6418,6 +6580,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|e. execution of orders for crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://caixabank.es"
           ],
@@ -6461,6 +6624,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets",
           "websites": [
             "http://www.opendue.com/"
           ],
@@ -6483,6 +6647,7 @@
       ],
       "services": [
         "custody",
+        "exchange funds",
         "transfer"
       ],
       "websites": [
@@ -6498,12 +6663,15 @@
           "authority": "CNMV",
           "services": [
             "custody",
+            "exchange funds",
             "transfer"
           ],
           "servicesRaw": [
             "custody",
+            "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.I c. exchange of crypto-assets for funds|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.crossmint.com"
           ],
@@ -6553,6 +6721,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.criptan.com"
           ],
@@ -6579,7 +6748,8 @@
         "exchange crypto",
         "execution",
         "placing",
-        "RTO"
+        "RTO",
+        "transfer"
       ],
       "websites": [
         "https://minos.global"
@@ -6598,7 +6768,8 @@
             "exchange crypto",
             "execution",
             "placing",
-            "RTO"
+            "RTO",
+            "transfer"
           ],
           "servicesRaw": [
             "custody",
@@ -6606,8 +6777,10 @@
             "exchange crypto",
             "execution",
             "placing",
-            "RTO"
+            "RTO",
+            "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients.|f. placing of crypto-assets|g. reception and transmission of orders for crypto-assets on behalf of clients.j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://minos.global"
           ],
@@ -6630,7 +6803,8 @@
       ],
       "services": [
         "custody",
-        "RTO"
+        "RTO",
+        "transfer"
       ],
       "websites": [
         "https://www.prosegurcrypto.com"
@@ -6645,12 +6819,15 @@
           "authority": "CNMV",
           "services": [
             "custody",
-            "RTO"
+            "RTO",
+            "transfer"
           ],
           "servicesRaw": [
             "custody",
-            "RTO"
+            "RTO",
+            "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.prosegurcrypto.com"
           ],
@@ -6691,6 +6868,7 @@
           "servicesRaw": [
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "i. providing portfolio management on crypto-assets.",
           "websites": [
             "https://iqana.io/"
           ],
@@ -6731,6 +6909,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://fazilcrypto.com/es/"
           ],
@@ -6771,6 +6950,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://cryptopocket.io/"
           ],
@@ -6792,7 +6972,10 @@
         "FIN-FSA"
       ],
       "services": [
-        "custody"
+        "custody",
+        "exchange funds",
+        "execution",
+        "transfer"
       ],
       "websites": [
         "https://coinmotion.com"
@@ -6806,11 +6989,18 @@
           "country": "Finland",
           "authority": "FIN-FSA",
           "services": [
-            "custody"
+            "custody",
+            "exchange funds",
+            "execution",
+            "transfer"
           ],
           "servicesRaw": [
-            "custody"
+            "custody",
+            "exchange funds",
+            "execution",
+            "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients\nc. exchange of crypto-assets for funds\ne. execution of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coinmotion.com"
           ],
@@ -6832,7 +7022,11 @@
         "FIN-FSA"
       ],
       "services": [
-        "custody"
+        "custody",
+        "RTO",
+        "advice",
+        "portfolio mgmt",
+        "transfer"
       ],
       "websites": [
         "https://tesseract.fi"
@@ -6846,11 +7040,20 @@
           "country": "Finland",
           "authority": "FIN-FSA",
           "services": [
-            "custody"
+            "custody",
+            "RTO",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
           ],
           "servicesRaw": [
-            "custody"
+            "custody",
+            "RTO",
+            "advice",
+            "portfolio mgmt",
+            "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nh. providing advice on crypto-assets\ni. providing portfolio management on crypto-assets\nj. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://tesseract.fi"
           ],
@@ -6891,6 +7094,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://bittimaatti.fi"
           ],
@@ -6912,7 +7116,10 @@
         "FIN-FSA"
       ],
       "services": [
-        "custody"
+        "custody",
+        "execution",
+        "RTO",
+        "transfer"
       ],
       "websites": [
         "https://www.northcrypto.com/"
@@ -6926,11 +7133,18 @@
           "country": "Finland",
           "authority": "FIN-FSA",
           "services": [
-            "custody"
+            "custody",
+            "execution",
+            "RTO",
+            "transfer"
           ],
           "servicesRaw": [
-            "custody"
+            "custody",
+            "execution",
+            "RTO",
+            "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients \ne. execution of orders for crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.northcrypto.com/"
           ],
@@ -6952,7 +7166,10 @@
         "FIN-FSA"
       ],
       "services": [
-        "custody"
+        "custody",
+        "execution",
+        "RTO",
+        "transfer"
       ],
       "websites": [
         "https://www.kvarnx.com/"
@@ -6966,11 +7183,18 @@
           "country": "Finland",
           "authority": "FIN-FSA",
           "services": [
-            "custody"
+            "custody",
+            "execution",
+            "RTO",
+            "transfer"
           ],
           "servicesRaw": [
-            "custody"
+            "custody",
+            "execution",
+            "RTO",
+            "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients \ne. execution of orders for crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.kvarnx.com/"
           ],
@@ -7017,6 +7241,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "http://www.caceis.com"
           ],
@@ -7060,6 +7285,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets",
           "websites": [
             "https://coinshares.com/"
           ],
@@ -7112,6 +7338,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bitstack-app.com/"
           ],
@@ -7161,6 +7388,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://metalgear.xyz/"
           ],
@@ -7207,6 +7435,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://deblock.com/"
           ],
@@ -7265,6 +7494,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://goin-invest.com"
           ],
@@ -7320,6 +7550,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://finctek.com"
           ],
@@ -7358,6 +7589,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [],
           "websitesRaw": [],
           "websiteRepairs": []
@@ -7397,6 +7629,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [],
           "websitesRaw": [],
           "websiteRepairs": []
@@ -7451,6 +7684,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [],
           "websitesRaw": [],
           "websiteRepairs": []
@@ -7495,6 +7729,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://cometh.io/"
           ],
@@ -7547,6 +7782,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.fipto.com/"
           ],
@@ -7599,6 +7835,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.hexarq.com/"
           ],
@@ -7654,6 +7891,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://swissborg.com/"
           ],
@@ -7697,6 +7935,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.circle.com/en/"
           ],
@@ -7752,6 +7991,7 @@
             "advice",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.deskoin.com/"
           ],
@@ -7810,6 +8050,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.coinhouse.com/"
           ],
@@ -7865,6 +8106,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | e. execution of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.qwarks.fr/"
           ],
@@ -7911,6 +8153,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.paytop.com/"
           ],
@@ -7963,6 +8206,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.rufiji.capital/"
           ],
@@ -8015,6 +8259,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://keyrock.com/"
           ],
@@ -8055,6 +8300,7 @@
           "servicesRaw": [
             "advice"
           ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets",
           "websites": [
             "https://www.bpifrance.fr/"
           ],
@@ -8098,6 +8344,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets  | i. providing portfolio management on crypto-assets;",
           "websites": [
             "https://rcube.com/"
           ],
@@ -8153,6 +8400,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.paymium.com/"
           ],
@@ -8193,6 +8441,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds |",
           "websites": [
             "https://app.bullbitcoin.com/"
           ],
@@ -8248,6 +8497,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.meria.com/"
           ],
@@ -8297,6 +8547,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://alphacap.fr/"
           ],
@@ -8352,6 +8603,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.flowdesk.co/"
           ],
@@ -8378,6 +8630,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.aplo.io/"
           ],
@@ -8424,6 +8677,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.iceblockinvestments.com/"
           ],
@@ -8467,6 +8721,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets |",
           "websites": [
             "https://crypto-assets-management.com/"
           ],
@@ -8513,6 +8768,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients| j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://finary.com/en"
           ],
@@ -8559,6 +8815,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.woorton.com/"
           ],
@@ -8614,6 +8871,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://feel-mining.com/"
           ],
@@ -8660,6 +8918,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients| j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.shares.io/"
           ],
@@ -8706,6 +8965,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |",
           "websites": [
             "https://electrocoin.eu/hr"
           ],
@@ -8755,6 +9015,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://whitely.hr/hr"
           ],
@@ -8810,6 +9071,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |  f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitstore.net/"
           ],
@@ -8850,6 +9112,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://kriptomat.hr/"
           ],
@@ -8890,6 +9153,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://www.inkapital.hr/"
           ],
@@ -8930,6 +9194,7 @@
           "servicesRaw": [
             "custody"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients",
           "websites": [
             "https://www.hpb.hr/"
           ],
@@ -8970,6 +9235,7 @@
           "servicesRaw": [
             "trading platform"
           ],
+          "serviceCodeRaw": "b. operation of a trading platform for crypto-assets",
           "websites": [
             "https://www.kraken.com/"
           ],
@@ -9031,6 +9297,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.kraken.com/"
           ],
@@ -9074,6 +9341,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-asset",
           "websites": [
             "https://www.legendtrading.com"
           ],
@@ -9117,6 +9385,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds |d. exchange of crypto-assets for other crypto-asset",
           "websites": [
             "https://push.co"
           ],
@@ -9157,6 +9426,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://rampnetwork.com"
           ],
@@ -9207,6 +9477,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.skrill.com",
             "https://www.neteller.com"
@@ -9257,6 +9528,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.coinjar.com"
           ],
@@ -9303,6 +9575,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://confirmo.eu"
           ],
@@ -9352,6 +9625,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.webot.com/eu"
           ],
@@ -9407,6 +9681,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.stonex.com"
           ],
@@ -9447,6 +9722,7 @@
           "servicesRaw": [
             "RTO"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.interactivebrokers.ie"
           ],
@@ -9490,6 +9766,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets",
           "websites": [
             "https://www.virtu.com/"
           ],
@@ -9539,6 +9816,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://myntkaup.is/"
           ],
@@ -9591,6 +9869,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://WWW.CHECKSIG.COM"
           ],
@@ -9631,6 +9910,7 @@
           "servicesRaw": [
             "exchange funds"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [
             "https://coinflip.tech/it-IT"
           ],
@@ -9677,6 +9957,7 @@
             "exchange crypto",
             "placing"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets",
           "websites": [
             "https://riv-digital.it"
           ],
@@ -9732,6 +10013,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.conio.com"
           ],
@@ -9775,6 +10057,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.sella.it"
           ],
@@ -9830,6 +10113,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://cryptosmart.it/"
           ],
@@ -9891,6 +10175,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | h. providing advice on crypto-assets| i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://youngplatform.com"
           ],
@@ -9934,6 +10219,7 @@
             "custody",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets",
           "websites": [
             "https://hodli.com"
           ],
@@ -9983,6 +10269,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.hercle.financial"
           ],
@@ -10023,6 +10310,7 @@
           "servicesRaw": [
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.zeus-management.li/en"
           ],
@@ -10072,6 +10360,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.lgt.com/li-en"
           ],
@@ -10118,6 +10407,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bankfrick.li/en"
           ],
@@ -10158,6 +10448,7 @@
           "servicesRaw": [
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.wydencapital.com/en/"
           ],
@@ -10207,6 +10498,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.celsion-finance.com"
           ],
@@ -10253,6 +10545,7 @@
             "trading platform",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.rulematch.com/europe"
           ],
@@ -10305,6 +10598,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://floin.com/"
           ],
@@ -10360,6 +10654,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitcoinsuisse.com"
           ],
@@ -10409,6 +10704,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.sygnum.com/eu"
           ],
@@ -10461,6 +10757,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://smartvalor.com/en/"
           ],
@@ -10510,6 +10807,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://kaiserpartner.bank"
           ],
@@ -10553,6 +10851,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.paymonade.tech"
           ],
@@ -10602,6 +10901,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.robinhood.com"
           ],
@@ -10651,6 +10951,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coingate.com"
           ],
@@ -10700,6 +11001,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://simplex.com"
           ],
@@ -10755,6 +11057,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://myriadcapital.lt"
           ],
@@ -10798,6 +11101,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.newrails.xyz"
           ],
@@ -10838,6 +11142,7 @@
           "servicesRaw": [
             "custody"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients",
           "websites": [
             "https://blueemi.com"
           ],
@@ -10878,6 +11183,7 @@
           "servicesRaw": [
             "custody"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients",
           "websites": [
             "https://www.clearstream.com/clearstream-en/"
           ],
@@ -10936,6 +11242,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitstamp.net/"
           ],
@@ -10994,6 +11301,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coinbase.com"
           ],
@@ -11037,6 +11345,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://zodia-custody.com/"
           ],
@@ -11083,6 +11392,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets  |  j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bankingcircle.com/"
           ],
@@ -11129,6 +11439,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.swissquote.com/en-lu/private"
           ],
@@ -11175,6 +11486,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.b2c2.com/"
           ],
@@ -11218,6 +11530,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://stokr.io/"
           ],
@@ -11261,6 +11574,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.sc.com/"
           ],
@@ -11313,6 +11627,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. Exchange for crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bitflyer.com/en-eu/"
           ],
@@ -11365,6 +11680,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. Exchange for crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bridge.xyz"
           ],
@@ -11417,6 +11733,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.enum8.com/"
           ],
@@ -11461,9 +11778,9 @@
           "servicesRaw": [
             "exchange funds",
             "exchange crypto",
-            "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://ripple.com/"
           ],
@@ -11516,6 +11833,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://blockben.com/en/"
           ],
@@ -11562,6 +11880,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://nexdesk.io/"
           ],
@@ -11617,6 +11936,7 @@
             "advice",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |h.providing advice on crypto-assets| j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://paybis.com/"
           ],
@@ -11669,6 +11989,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets | i. providing portfolio management on crypto-assets| j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://neverless.com/"
           ],
@@ -11721,6 +12042,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://eu.backpack.exchange/"
           ],
@@ -11770,6 +12092,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.twino.eu/en"
           ],
@@ -11825,6 +12148,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.kangaexchange.eu/"
           ],
@@ -11874,6 +12198,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://hfinance.eu/"
           ],
@@ -11917,6 +12242,7 @@
             "exchange funds",
             "exchange crypto"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets",
           "websites": [
             "https://www.bleap.finance"
           ],
@@ -11960,6 +12286,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://nodu.fi"
           ],
@@ -12024,6 +12351,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients |f.\tplacing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | i.\tproviding portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.okx.com"
           ],
@@ -12079,6 +12407,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |  c.\texchange of crypto-assets for funds |d.\texchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.bitpanda.com"
           ],
@@ -12134,6 +12463,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.\texchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://crypto.com"
           ],
@@ -12195,6 +12525,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | b.\toperation of a trading platform for crypto-assets | c.\texchange of crypto-assets for funds | d.\texchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.zbx.com"
           ],
@@ -12238,6 +12569,7 @@
             "RTO",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets;",
           "websites": [
             "https://www.altariusgroup.com"
           ],
@@ -12296,6 +12628,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients |f.\tplacing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.gemini.com"
           ],
@@ -12348,6 +12681,7 @@
             "placing",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |f.\tplacing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.socios.com"
           ],
@@ -12403,6 +12737,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.gate.com/en-eu"
           ],
@@ -12455,6 +12790,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.blockchain.com"
           ],
@@ -12507,6 +12843,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.payhound.com"
           ],
@@ -12559,6 +12896,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.damex.io"
           ],
@@ -12611,6 +12949,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://bvnk.com/"
           ],
@@ -12654,6 +12993,7 @@
             "custody",
             "execution"
           ],
+          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://cc.com.mt"
           ],
@@ -12706,6 +13046,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://olmipay.com"
           ],
@@ -12749,6 +13090,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://stablemint.io/"
           ],
@@ -12801,6 +13143,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.openpayd.com/"
           ],
@@ -12850,6 +13193,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://strike.me/en-GB/"
           ],
@@ -12899,6 +13243,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://legion.cc/"
           ],
@@ -12951,6 +13296,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.falconx.io/"
           ],
@@ -13000,6 +13346,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j.\tproviding transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://xcoins.com/en"
           ],
@@ -13052,6 +13399,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | e.\t execution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g.  reception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.everest.org/"
           ],
@@ -13101,6 +13449,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j.\tproviding transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://bequant.pro/"
           ],
@@ -13147,6 +13496,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.moonpay.com/"
           ],
@@ -13188,6 +13538,7 @@
           "servicesRaw": [
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "i. providing portfolio management on crypto-assets",
           "websites": [
             "https://bitstaete.nl/",
             "http://www.bitstaete.com/"
@@ -13235,6 +13586,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://zbd.gg/"
           ],
@@ -13281,6 +13633,7 @@
             "exchange crypto",
             "execution"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://hiddenroad.com/"
           ],
@@ -13327,6 +13680,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://sling.money/"
           ],
@@ -13370,6 +13724,7 @@
             "custody",
             "RTO"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://vivid.money/"
           ],
@@ -13413,6 +13768,7 @@
             "custody",
             "trading platform"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets",
           "websites": [
             "https://www.onetrading.com"
           ],
@@ -13465,6 +13821,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.acherontrading.com/"
           ],
@@ -13511,6 +13868,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://my.btcdirect.eu/"
           ],
@@ -13557,6 +13915,7 @@
             "trading platform",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bitvavo.com/nl"
           ],
@@ -13607,6 +13966,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.amdax.com/nl",
             "https://www.getnovelist.nl/en"
@@ -13657,6 +14017,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://finst.com/"
           ],
@@ -13704,6 +14065,7 @@
             "execution",
             "placing"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets",
           "websites": [
             "https://www.decubate.com/",
             "https://platform.decubate.com/"
@@ -13748,6 +14110,7 @@
             "custody",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://fiatrepublic.com/"
           ],
@@ -13794,6 +14157,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://weareblox.com/"
           ],
@@ -13840,6 +14204,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://banxa.com"
           ],
@@ -13892,6 +14257,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://zerohash.com/eu"
           ],
@@ -13941,6 +14307,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coinmerce.io"
           ],
@@ -13990,6 +14357,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitmymoney.com/"
           ],
@@ -14039,6 +14407,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bitonic.nl/en/"
           ],
@@ -14088,6 +14457,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.blockrise.com/en"
           ],
@@ -14134,6 +14504,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.monflo.com"
           ],
@@ -14183,6 +14554,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://ari10.com/en"
           ],
@@ -14223,6 +14595,7 @@
           "servicesRaw": [
             "custody"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients",
           "websites": [
             "https://d2x.com/"
           ],
@@ -14269,6 +14642,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://clear.bank/"
           ],
@@ -14315,6 +14689,7 @@
             "exchange funds",
             "execution"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | e. execution of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.changeinvest.com/"
           ],
@@ -14361,6 +14736,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://happycoins.com/"
           ],
@@ -14404,6 +14780,7 @@
             "custody",
             "RTO"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.webull.eu/"
           ],
@@ -14425,7 +14802,8 @@
         "AFM"
       ],
       "services": [
-        "exchange funds"
+        "exchange funds",
+        "transfer"
       ],
       "websites": [
         "https://www.bitpay.com/"
@@ -14439,11 +14817,14 @@
           "country": "Netherlands",
           "authority": "AFM",
           "services": [
-            "exchange funds"
+            "exchange funds",
+            "transfer"
           ],
           "servicesRaw": [
-            "exchange funds"
+            "exchange funds",
+            "transfer"
           ],
+          "serviceCodeRaw": "(c) exchange of crypto-assets for funds\n(j) providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitpay.com/"
           ],
@@ -14487,6 +14868,7 @@
             "RTO",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.akj.com/"
           ],
@@ -14536,6 +14918,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.tyrmarkets.net/no"
           ],
@@ -14591,6 +14974,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://firi.com/no"
           ],
@@ -14637,6 +15021,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.k33.com"
           ],
@@ -14683,6 +15068,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://barebitcoin.no/"
           ],
@@ -14741,6 +15127,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://nbx.com"
           ],
@@ -14802,6 +15189,7 @@
             "advice",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients  | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bisonbank.com/"
           ],
@@ -14851,6 +15239,7 @@
             "RTO",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|i. providing portfolio management on crypto-assets",
           "websites": [
             "https://www.ilirika.si/"
           ],
@@ -14897,6 +15286,7 @@
             "advice",
             "portfolio mgmt"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets",
           "websites": [
             "https://incrementum.si/"
           ],
@@ -14940,6 +15330,7 @@
             "execution",
             "advice"
           ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets",
           "websites": [
             "https://orcabay.io/"
           ],
@@ -14995,6 +15386,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.safello.com"
           ],
@@ -15042,6 +15434,7 @@
             "exchange funds",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://cryptovoucher.io/",
             "https://giftmecrypto.io/"
@@ -15095,6 +15488,7 @@
             "execution",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bitcoinmat.sk"
           ],
@@ -15150,6 +15544,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets |h.providing advice on crypto-assets|i. providing portfolio management on crypto-assets| j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://fumbi.network/sk/"
           ],
@@ -15206,6 +15601,7 @@
             "RTO",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://madisonsix.com/",
             "https://crypto4me.eu"
@@ -15256,6 +15652,7 @@
             "exchange crypto",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://firefish.io/"
           ],
@@ -15308,6 +15705,7 @@
             "portfolio mgmt",
             "transfer"
           ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients| h.providing advice on crypto-assets|i. providing portfolio management on crypto-assets| j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://okazio.sk/"
           ],
