@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-08-06",
+    "timestamp": "2026-08-06T12:47:42.127Z",
+    "changes": {
+      "emt": {
+        "added": [
+          "Bridge Building S.A."
+        ],
+        "removed": []
+      },
+      "casps": {
+        "added": [
+          "Volksbank eG - Die Gestalterbank (Germany)",
+          "VBU Volksbank im Unterland eG (Germany)",
+          "VR-Bank Erding eG (Germany)",
+          "MINOS GLOBAL S.L. (Spain)",
+          "BASQUE PAY S.L. (Spain)",
+          "FINTECH PAYMENTS PSC S.L. (Spain)"
+        ],
+        "removed": [
+          "MINOS GLOBAL, S.L. (Spain)",
+          "BASQUE PAY, S.L. (Spain)",
+          "FINTECH PAYMENTS PSC, S.L. (Spain)"
+        ]
+      }
+    }
+  },
+  {
     "date": "2026-08-03",
     "timestamp": "2026-08-03T07:33:53.607Z",
     "changes": {

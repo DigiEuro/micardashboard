@@ -4,7 +4,16 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Wed, 05 Aug 2026 09:03:46 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 12:47:42 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-08-06</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-08-06T12:47:42.127Z</guid>
+      <pubDate>Thu, 06 Aug 2026 12:47:42 GMT</pubDate>
+      <description>EMT issuers added: Bridge Building S.A.
+CASPs added: Volksbank eG - Die Gestalterbank (Germany), VBU Volksbank im Unterland eG (Germany), VR-Bank Erding eG (Germany), MINOS GLOBAL S.L. (Spain), BASQUE PAY S.L. (Spain), FINTECH PAYMENTS PSC S.L. (Spain)
+CASPs removed: MINOS GLOBAL, S.L. (Spain), BASQUE PAY, S.L. (Spain), FINTECH PAYMENTS PSC, S.L. (Spain)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-08-03</title>
       <link>https://micatracker.digital-euro-association.de/</link>
