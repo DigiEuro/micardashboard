@@ -17,16 +17,21 @@ const { generateEntityPages } = require('./scripts/generate-entity-pages');
 const { generateExplainerPage } = require('./scripts/generate-explainer-page');
 const { deriveServiceCodes, unknownServiceSegments } = require('./scripts/services');
 
-// Static, crawlable pages served by GitHub Pages. Entity pages are generated
-// separately; keep this list in sync when adding intent pages.
+// Static, crawlable pages. Entity pages are generated separately; keep this
+// list in sync when adding intent pages.
+//
+// Locations are extensionless because the host 308-redirects /foo.html to
+// /foo. Listing the .html form would make every sitemap entry a redirect,
+// which search engines report rather than index. The files on disk are still
+// named <page>.html; only the published URL drops the suffix.
 const SITEMAP_PAGES = [
     { loc: '/', priority: '1.0', changefreq: 'weekly' },
-    { loc: '/casp-tracker.html', priority: '0.9', changefreq: 'weekly' },
-    { loc: '/emt-tracker.html', priority: '0.9', changefreq: 'weekly' },
-    { loc: '/non-compliant-casps.html', priority: '0.9', changefreq: 'weekly' },
-    { loc: '/data-quality.html', priority: '0.6', changefreq: 'weekly' },
-    { loc: '/micar-explained.html', priority: '0.7', changefreq: 'monthly' },
-    { loc: '/about.html', priority: '0.5', changefreq: 'monthly' }
+    { loc: '/casp-tracker', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/emt-tracker', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/non-compliant-casps', priority: '0.9', changefreq: 'weekly' },
+    { loc: '/data-quality', priority: '0.6', changefreq: 'weekly' },
+    { loc: '/micar-explained', priority: '0.7', changefreq: 'monthly' },
+    { loc: '/about', priority: '0.5', changefreq: 'monthly' }
 ];
 
 const SITE_URL = 'https://micatracker.digital-euro-association.de';
@@ -843,7 +848,7 @@ function writeSitemap(lastmodDate) {
     const entityData = readJsonFile(ENTITIES_FILE, { entities: [] }) || { entities: [] };
     const entityPages = Array.isArray(entityData.entities)
         ? entityData.entities.map(entity => ({
-            loc: `/entities/${entity.slug}.html`,
+            loc: `/entities/${entity.slug}`,
             priority: '0.6',
             changefreq: 'weekly'
         }))

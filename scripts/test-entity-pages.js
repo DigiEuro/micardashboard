@@ -22,7 +22,8 @@ entities.forEach(function (entity) {
   const file = path.join(ROOT, 'entities', entity.slug + '.html');
   expect(fs.existsSync(file), 'missing entity page: ' + entity.slug);
   const html = fs.readFileSync(file, 'utf8');
-  expect(html.includes('<link rel="canonical" href="https://micatracker.digital-euro-association.de/entities/' + entity.slug + '.html">'), 'bad canonical: ' + entity.slug);
+  // Extensionless: the .html URL 308-redirects, so it must never be canonical.
+  expect(html.includes('<link rel="canonical" href="https://micatracker.digital-euro-association.de/entities/' + entity.slug + '">'), 'bad canonical: ' + entity.slug);
   expect(html.includes(esc(entity.name)), 'entity name missing: ' + entity.slug);
   expect((html.match(/<h1\b/g) || []).length === 1 && html.includes('<h1 id="entity-name">'), 'entity page must have one entity H1: ' + entity.slug);
   expect(html.includes('<title>' + esc(entity.name) + ' | MiCA CASP | ' + esc(entity.country) + ' | DEA Tracker</title>'), 'entity title missing country context: ' + entity.slug);

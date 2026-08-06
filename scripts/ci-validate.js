@@ -50,7 +50,11 @@ function checkStaticPages() {
   const sitemap = read('sitemap.xml');
   ['casp-tracker.html', 'emt-tracker.html', 'non-compliant-casps.html'].forEach(function (page) {
     if (!fs.existsSync(path.join(ROOT, page))) throw new Error('missing page ' + page);
-    if (!sitemap.includes(page)) throw new Error('sitemap missing ' + page);
+    // The file on disk keeps its .html name; the published URL does not, so
+    // the sitemap is checked against the extensionless form. Anchoring on
+    // </loc> stops '/casp-tracker' matching '/casp-tracker-something'.
+    const url = '/' + page.replace(/\.html$/, '') + '</loc>';
+    if (!sitemap.includes(url)) throw new Error('sitemap missing ' + url);
     const html = read(page);
     if ((html.match(/<h1\b/g) || []).length !== 1) throw new Error(page + ' must have exactly one H1');
     const start = html.indexOf('<!-- register-snapshot:start -->');
@@ -63,9 +67,12 @@ function checkStaticPages() {
       throw new Error('non-compliant snapshot must not contain links');
     }
   });
-  if (!sitemap.includes('entities/flowdesk-europe-sas.html')) throw new Error('sitemap missing entity pages');
+  if (!sitemap.includes('/entities/flowdesk-europe-sas</loc>')) throw new Error('sitemap missing entity pages');
   if (!fs.existsSync(path.join(ROOT, 'micar-explained.html'))) throw new Error('missing micar explainer page');
-  if (!sitemap.includes('micar-explained.html')) throw new Error('sitemap missing micar explainer page');
+  if (!sitemap.includes('/micar-explained</loc>')) throw new Error('sitemap missing micar explainer page');
+  // The .html suffix must not reappear in published URLs: every one of them
+  // would be a redirect, which is what this change exists to remove.
+  if (/<loc>[^<]*\.html<\/loc>/.test(sitemap)) throw new Error('sitemap still lists .html URLs');
   const explainer = read('micar-explained.html');
   if ((explainer.match(/<h1\b/g) || []).length !== 1) throw new Error('micar explainer must have exactly one H1');
   if (!explainer.includes('MiCA is the EU rulebook for crypto-assets.')) throw new Error('micar explainer heading missing');
