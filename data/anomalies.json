@@ -1,9 +1,10 @@
 {
-  "total": 12,
+  "total": 17,
   "byType": {
     "lei_checksum_failed": 6,
-    "repeated_service_code": 3,
-    "multi_authorisation": 3
+    "repeated_service_code": 4,
+    "exact_duplicate": 1,
+    "multi_authorisation": 6
   },
   "anomalies": [
     {
@@ -51,9 +52,32 @@
       ]
     },
     {
+      "type": "repeated_service_code",
+      "entityKey": "213800V83W83UL8WR118",
+      "sourceRow": 44,
+      "name": "Ronin EM Ltd",
+      "country": "Cyprus",
+      "detail": "Service code(s) listed more than once in a single record: exchange crypto",
+      "values": [
+        "exchange crypto"
+      ]
+    },
+    {
+      "type": "exact_duplicate",
+      "entityKey": "213800V83W83UL8WR118",
+      "sourceRow": 44,
+      "name": "Ronin EM Ltd",
+      "country": "Cyprus",
+      "detail": "Identical to source row #32. Both rows are retained.",
+      "values": [
+        "44",
+        "32"
+      ]
+    },
+    {
       "type": "lei_checksum_failed",
       "entityKey": "391200236O6D9SGBE882",
-      "sourceRow": 118,
+      "sourceRow": 120,
       "name": "Raiffeisenbank Falkenstein-Wörth",
       "country": "Germany",
       "detail": "LEI 391200236O6D9SGBE882 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -64,8 +88,8 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "549300746K71T6YJCV41",
-      "sourceRow": 146,
-      "name": "FINTECH PAYMENTS PSC, S.L.",
+      "sourceRow": 152,
+      "name": "FINTECH PAYMENTS PSC S.L.",
       "country": "Spain",
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
       "values": [
@@ -75,7 +99,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "969500OA6NVZB5BXAB29",
-      "sourceRow": 239,
+      "sourceRow": 245,
       "name": "B2C2 Europe Sarl",
       "country": "Luxembourg",
       "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -86,7 +110,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
-      "sourceRow": 245,
+      "sourceRow": 251,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -97,7 +121,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
-      "sourceRow": 272,
+      "sourceRow": 278,
       "name": "Zap (Strike) Europe Limited",
       "country": "Malta",
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -107,11 +131,41 @@
     },
     {
       "type": "multi_authorisation",
-      "entityKey": "529900032TYR45XIEW79",
-      "sourceRow": 57,
+      "entityKey": "213800V83W83UL8WR118",
+      "sourceRow": 32,
       "sourceRows": [
-        57,
-        82
+        32,
+        44
+      ],
+      "name": "Ronin EM Ltd",
+      "country": "Cyprus",
+      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
+      "values": [
+        "Ronin EM Ltd"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "9845007E2C96JA7B8653",
+      "sourceRow": 34,
+      "sourceRows": [
+        34,
+        43
+      ],
+      "name": "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd)",
+      "country": "Cyprus",
+      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
+      "values": [
+        "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd)"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "529900032TYR45XIEW79",
+      "sourceRow": 59,
+      "sourceRows": [
+        59,
+        84
       ],
       "name": "EUWAX AG",
       "country": "Germany",
@@ -122,11 +176,26 @@
     },
     {
       "type": "multi_authorisation",
-      "entityKey": "0W2PZJM8XOY22M4GG883",
-      "sourceRow": 81,
+      "entityKey": "529900EXG2PM316ISO63",
+      "sourceRow": 82,
       "sourceRows": [
-        81,
-        111
+        82,
+        125
+      ],
+      "name": "Deutsche WertpapierService Bank AG",
+      "country": "Germany",
+      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
+      "values": [
+        "Deutsche WertpapierService Bank AG"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "0W2PZJM8XOY22M4GG883",
+      "sourceRow": 83,
+      "sourceRows": [
+        83,
+        113
       ],
       "name": "DekaBank Deutsche Girozentrale",
       "country": "Germany",
@@ -138,10 +207,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "984500AB011S3AEF6706",
-      "sourceRow": 179,
+      "sourceRow": 185,
       "sourceRows": [
-        179,
-        180
+        185,
+        186
       ],
       "name": "FLOWDESK EUROPE SAS",
       "country": "France",
