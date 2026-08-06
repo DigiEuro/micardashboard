@@ -122,16 +122,10 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       run: gh pr merge "${{ steps.update-pr.outputs.pr_number }}" --repo "$GITHUB_REPOSITORY" --merge --delete-branch
 
-    - name: Trigger GitHub Pages build
-      if: steps.verify-changed-files.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-      env:
-        GH_TOKEN: ${{ github.token }}
-      run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
-
     - name: Summary
       run: |
         if [ "${{ steps.verify-changed-files.outputs.changed }}" = "true" ]; then
-          echo 'Dashboard update validated, merged to main, and Pages rebuild requested.'
+          echo 'Dashboard update validated and merged to main. GitHub Pages will deploy from the main-branch push.'
         else
           echo 'Dashboard was already up to date.'
         fi
