@@ -198,7 +198,7 @@ function websites(entity, compact) {
 function entityLogo(entity, logos) {
   const logo = logos && logos[entity.slug];
   const src = logo && String(logo.src || '').trim();
-  if (!src || !/^\.\.\/assets\/casp-logos\/[A-Za-z0-9._-]+\.(?:png|svg)$/i.test(src)) {
+  if (!src || !/^\.\.\/assets\/casp-logos\/[A-Za-z0-9._-]+\.(?:png|svg|jpe?g|webp|ico|gif)$/i.test(src)) {
     return '<div class="entity-icon" aria-hidden="true"><i class="fas fa-building"></i></div>';
   }
   const alt = String(logo.alt || (entity.name + ' logo')).trim();

@@ -20,5 +20,2543 @@
     "src": "../assets/casp-logos/ripple.svg",
     "alt": "Ripple logo",
     "source": "https://ripple.com/"
+  },
+  "amina-austria-ag": {
+    "src": "../assets/casp-logos/eu-aminagroup-com-6553a5fc1220.png",
+    "alt": "AMINA (Austria) AG logo from eu.aminagroup.com",
+    "source": "https://eu.aminagroup.com",
+    "sourceUrl": "https://eu.aminagroup.com/wp-content/uploads/2024/08/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "fior-digital-gmbh": {
+    "src": "../assets/casp-logos/21bitcoin-app-821e3f6e1bc7.svg",
+    "alt": "FIOR Digital GmbH logo from 21bitcoin.app",
+    "source": "https://www.21bitcoin.app",
+    "sourceUrl": "https://cdn.prod.website-files.com/60c07b1b1b4d0f10f867a916/67f659b47279484a5276fc40_21bitcoin.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "kucoin-eu-exchange-gmbh": {
+    "src": "../assets/casp-logos/kucoin-eu-b279db0263b0.png",
+    "alt": "KuCoin EU Exchange GmbH logo from kucoin.eu",
+    "source": "https://www.kucoin.eu",
+    "sourceUrl": "https://www.kucoin.com/logo_eu.png",
+    "method": "link-shortcut",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bybit-eu-gmbh": {
+    "src": "../assets/casp-logos/bybit-eu-4110e4276d76.png",
+    "alt": "Bybit EU GmbH logo from bybit.eu",
+    "source": "https://www.bybit.eu",
+    "sourceUrl": "https://www.bybit.eu/apple-touch-icon.png",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "coinfinity-gmbh": {
+    "src": "../assets/casp-logos/coinfinity-co-3d1574d8cb76.svg",
+    "alt": "Coinfinity GmbH logo from coinfinity.co",
+    "source": "https://coinfinity.co",
+    "sourceUrl": "https://cdn.prod.website-files.com/6101150d9366c36921e3abb7/62bbfa94850495e6de18d50f_CO_Website%20Navigation%20Logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "alaric-securities-ood": {
+    "src": "../assets/casp-logos/alaricsecurities-com-bda559713c49.webp",
+    "alt": "Alaric Securities OOD logo from alaricsecurities.com",
+    "source": "https://alaricsecurities.com/",
+    "sourceUrl": "https://alaricsecurities.com/wp-content/uploads/2026/06/Nasdaq-MarketSite-1-1024x767.webp",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "wb-shields-innovations-gmbh": {
+    "src": "../assets/casp-logos/whitebit-eu-e5ce21c3241c.ico",
+    "alt": "WB-Shields Innovations GmbH logo from whitebit.eu",
+    "source": "https://whitebit.eu",
+    "sourceUrl": "https://whitebit.eu/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "validvent-technology-gmbh": {
+    "src": "../assets/casp-logos/validvent-com-6cfec093f6f7.png",
+    "alt": "Validvent Technology GmbH logo from validvent.com",
+    "source": "https://validvent.com",
+    "sourceUrl": "https://validvent.com/wp-content/uploads/2026/04/Validvent_icon_Black-150x150.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "belayer-d": {
+    "src": "../assets/casp-logos/belayer-bg-87590705d644.svg",
+    "alt": "Belayer ООD logo from belayer.bg",
+    "source": "https://www.belayer.bg/",
+    "sourceUrl": "https://www.belayer.bg/favicon.svg",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "etoro-europe-ltd": {
+    "src": "../assets/casp-logos/etoro-com-a81f2586764d.png",
+    "alt": "eToro (Europe) Ltd logo from etoro.com",
+    "source": "https://www.etoro.com",
+    "sourceUrl": "https://www.etoro.com/wp-content/uploads/favicons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "dadat-krypto-gmbh": {
+    "src": "../assets/casp-logos/dad-at-8890f1d3bf20.png",
+    "alt": "DADAT Krypto GmbH logo from dad.at",
+    "source": "https://www.dad.at",
+    "sourceUrl": "https://www.dad.at/build/images/theme/DADAT_Bank_Logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "altcoins-bg-e-d": {
+    "src": "../assets/casp-logos/altcoins-bg-9735d8209c98.png",
+    "alt": "Altcoins BG EООD logo from altcoins.bg",
+    "source": "https://altcoins.bg/",
+    "sourceUrl": "https://altcoins.bg/assets/images/favicons/apple-icon-57x57.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "trading-212-markets-ltd": {
+    "src": "../assets/casp-logos/trading212-com-7d21248251d9.ico",
+    "alt": "Trading 212 Markets Ltd logo from trading212.com",
+    "source": "https://www.trading212.com",
+    "sourceUrl": "https://www.trading212.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "stratos-europe-ltd": {
+    "src": "../assets/casp-logos/tradu-com-75cc61a03b40.ico",
+    "alt": "Stratos Europe Ltd logo from tradu.com",
+    "source": "https://www.tradu.com/eu/",
+    "sourceUrl": "https://www.tradu.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "kbc-bank-nv": {
+    "src": "../assets/casp-logos/kbc-com-dc125c7b47b8.svg",
+    "alt": "KBC Bank NV logo from kbc.com",
+    "source": "https://www.kbc.com",
+    "sourceUrl": "https://wcmassets.kbc.be/content/dam/kdl-assets/logos/k/logos-kbc.svg.cdn.res/last-modified/1733244069305/logos-kbc.svg",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "osl-eu-gmbh": {
+    "src": "../assets/casp-logos/osl-com-24752c8271cc.ico",
+    "alt": "OSL EU GmbH logo from osl.com",
+    "source": "https://www.osl.com/eu",
+    "sourceUrl": "https://static.osl.com/cdn_upload/8/20260626T09424_d34dfe7a36bf10a5ba7d5a63a785cc45.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bny-sa-nv": {
+    "src": "../assets/casp-logos/bny-com-04ece71d576d.ico",
+    "alt": "BNY SA/NV logo from bny.com",
+    "source": "https://www.bny.com",
+    "sourceUrl": "https://www.bny.com/content/dam/bnymellon/web/favicons/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "collect-exchange-cy-ltd": {
+    "src": "../assets/casp-logos/collectnexchange-cy-c5b4f9b87cdc.png",
+    "alt": "COLLECT & EXCHANGE CY LTD logo from collectnexchange.cy",
+    "source": "https://collectnexchange.cy/",
+    "sourceUrl": "https://collectnexchange.cy/assets/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "trading-com-markets-eu-ltd": {
+    "src": "../assets/casp-logos/trading-com-d55d47c761ea.png",
+    "alt": "Trading.com Markets EU Ltd logo from trading.com",
+    "source": "https://www.trading.com/eu",
+    "sourceUrl": "https://www.trading.com/eu/assets/favicons/apple-touch-icon-57x57.png",
+    "method": "link-apple-touch-icon-precomposed",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "capital-vault-ltd": {
+    "src": "../assets/casp-logos/capital-com-6abb78bcbb77.png",
+    "alt": "CAPITAL VAULT LTD logo from capital.com",
+    "source": "https://www.capital.com",
+    "sourceUrl": "https://static.capital.com/favicon-v2/apple-icon-57x57.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "teroxx-digital-asset-ltd": {
+    "src": "../assets/casp-logos/teroxx-com-ca2e5e5e70ae.svg",
+    "alt": "TEROXX DIGITAL ASSET LTD logo from teroxx.com",
+    "source": "https://www.teroxx.com",
+    "sourceUrl": "https://teroxx.com/hubfs/Banners%202025/teroxx-pay-logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "pelican-exchange-europe-cy-ltd": {
+    "src": "../assets/casp-logos/pelicaneu-com-bd8eb99525b5.png",
+    "alt": "PELICAN EXCHANGE EUROPE (CY) LTD logo from pelicaneu.com",
+    "source": "https://www.pelicaneu.com",
+    "sourceUrl": "https://pelicaneu.com/wp-content/themes/pelicaneu/static/favicon/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "noemon-finance-ltd": {
+    "src": "../assets/casp-logos/noemon-finance-c07de50219ed.svg",
+    "alt": "Noemon Finance Ltd logo from noemon.finance",
+    "source": "https://www.noemon.finance",
+    "sourceUrl": "https://noemon.finance/favicon.svg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "ronin-em-ltd": {
+    "src": "../assets/casp-logos/em-ron-in-99708884af96.svg",
+    "alt": "Ronin EM Ltd logo from em.ron.in",
+    "source": "https://em.ron.in/",
+    "sourceUrl": "https://em.ron.in/images/ronin_em_blue.svg",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "digital-assist-ood": {
+    "src": "../assets/casp-logos/digitalassist-bg-c1f02ebcff7f.png",
+    "alt": "Digital Assist OOD logo from digitalassist.bg",
+    "source": "https://digitalassist.bg/",
+    "sourceUrl": "https://digitalassist.bg/wp-content/uploads/2022/03/SubtractDA-LOGO-150x150.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "j2tx-ltd": {
+    "src": "../assets/casp-logos/j2tx-com-ce2a367f5527.png",
+    "alt": "J2TX Ltd logo from j2tx.com",
+    "source": "https://www.j2tx.com",
+    "sourceUrl": "https://j2tx.com/images/logo_1bg_light.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "unlimit-crypto-ltd": {
+    "src": "../assets/casp-logos/crypto-unlimit-com-fd0375a76c12.webp",
+    "alt": "Unlimit Crypto Ltd logo from crypto.unlimit.com",
+    "source": "https://www.crypto.unlimit.com",
+    "sourceUrl": "https://www.crypto.unlimit.com/wp-content/themes/unl-crypto/assets/images/widget/widget.webp",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "brilliantscope-trading-limited": {
+    "src": "../assets/casp-logos/tothemoon-com-8b9e454f335c.png",
+    "alt": "Brilliantscope Trading Limited logo from tothemoon.com",
+    "source": "https://tothemoon.com",
+    "sourceUrl": "https://tothemoon.com/static/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "krypto-knight-ltd": {
+    "src": "../assets/casp-logos/krypto-knight-com-2206cd99c3fd.png",
+    "alt": "Krypto Knight Ltd logo from krypto-knight.com",
+    "source": "https://www.krypto-knight.com",
+    "sourceUrl": "https://krypto-knight.com/knight-head.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "sg-digital-assets-limited": {
+    "src": "../assets/casp-logos/solidgate-com-8807e219bf14.svg",
+    "alt": "SG Digital Assets Limited logo from solidgate.com",
+    "source": "https://solidgate.com/casp/",
+    "sourceUrl": "https://fa7cda2cubg8rqr9.public.blob.vercel-storage.com/Logo_new_015b7bb7f9.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "pm-mtf-ltd": {
+    "src": "../assets/casp-logos/mtf-perpetuals-com-9c2279c6ac42.jpg",
+    "alt": "PM MTF LTD logo from mtf.perpetuals.com",
+    "source": "https://mtf.perpetuals.com/",
+    "sourceUrl": "https://mtf.perpetuals.com/wp-content/uploads/2024/09/favicon-150x150.jpg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "aquilla-nummus-ltd": {
+    "src": "../assets/casp-logos/aquillanummus-com-ff2edc8d4b56.png",
+    "alt": "Aquilla Nummus Ltd logo from aquillanummus.com",
+    "source": "https://www.aquillanummus.com/",
+    "sourceUrl": "https://www.aquillanummus.com/wp-content/uploads/2025/05/aquilla-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "invity-finance-s-r-o": {
+    "src": "../assets/casp-logos/invity-io-7a92af7eea35.png",
+    "alt": "Invity Finance s.r.o. logo from invity.io",
+    "source": "https://www.invity.io",
+    "sourceUrl": "https://www.invity.io/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "naga-x": {
+    "src": "../assets/casp-logos/nagax-com-bc2dfbd6cec7.ico",
+    "alt": "NAGA X logo from nagax.com",
+    "source": "https://www.nagax.com/eu/",
+    "sourceUrl": "https://nagax.com/images/favicon-red.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "cloverum-finance-cy-limited": {
+    "src": "../assets/casp-logos/cloverum-com-5687161ad4ef.svg",
+    "alt": "Cloverum Finance (CY) Limited logo from cloverum.com",
+    "source": "https://www.cloverum.com",
+    "sourceUrl": "https://www.cloverum.com/logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "complycrypto-depository-eu-limited": {
+    "src": "../assets/casp-logos/complycrypto-eu-834d097d47ab.png",
+    "alt": "COMPLYCRYPTO DEPOSITORY EU LIMITED logo from complycrypto.eu",
+    "source": "https://www.complycrypto.eu",
+    "sourceUrl": "https://complycrypto.eu/wp-content/uploads/2024/01/Complycripto-new-logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "coinmate-a-s": {
+    "src": "../assets/casp-logos/coinmate-io-5189e9bbc33b.svg",
+    "alt": "COINMATE a.s. logo from coinmate.io",
+    "source": "https://coinmate.io/cs",
+    "sourceUrl": "https://coinmate.io/assets/img/app-store-cs.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "mp-developers-s-r-o": {
+    "src": "../assets/casp-logos/anycoin-cz-978376c59538.png",
+    "alt": "MP Developers s.r.o. logo from anycoin.cz",
+    "source": "https://www.anycoin.cz",
+    "sourceUrl": "https://www.anycoin.cz/favicon.png",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "pluso-a-s": {
+    "src": "../assets/casp-logos/pluso-cz-56032d851286.svg",
+    "alt": "Pluso a.s. logo from pluso.cz",
+    "source": "https://www.pluso.cz/",
+    "sourceUrl": "https://www.pluso.cz/favicon.svg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "ilavo-group-a-s": {
+    "src": "../assets/casp-logos/ilavo-cz-03782732c062.png",
+    "alt": "ILAVO GROUP a.s. logo from ilavo.cz",
+    "source": "https://www.ilavo.cz/cs",
+    "sourceUrl": "https://www.ilavo.cz/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "simple-coin-s-r-o": {
+    "src": "../assets/casp-logos/simplecoin-eu-f4c81d3348b9.png",
+    "alt": "Simple Coin s.r.o. logo from simplecoin.eu",
+    "source": "https://www.simplecoin.eu",
+    "sourceUrl": "https://www.simplecoin.eu/favicons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "altlift-s-r-o": {
+    "src": "../assets/casp-logos/altlift-cz-800847ceddd1.png",
+    "alt": "Altlift s.r.o. logo from altlift.cz",
+    "source": "https://www.altlift.cz/",
+    "sourceUrl": "https://static.wixstatic.com/media/f9175f_22e2c6ecd683460698b405959affbb3f~mv2.png/v1/fill/w_108,h_45,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/altlift-logo-RGB.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "mipsoftware-s-r-o": {
+    "src": "../assets/casp-logos/coinero-cz-442b11e3156f.svg",
+    "alt": "MipSoftware s.r.o. logo from coinero.cz",
+    "source": "https://coinero.cz",
+    "sourceUrl": "https://assets.coinbank.cz/images/logo/Coinero-logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "gg-digital-a-s": {
+    "src": "../assets/casp-logos/goldengate-cz-b2c262e342f0.svg",
+    "alt": "GG Digital, a.s. logo from goldengate.cz",
+    "source": "https://www.goldengate.cz/",
+    "sourceUrl": "https://cdn.prod.website-files.com/62039ab2063c101f554e89fc/6220f74728bd60c60cd9b29c_Group%201.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "tradias-gmbh": {
+    "src": "../assets/casp-logos/tradias-de-1130bdcc2098.png",
+    "alt": "Tradias GmbH logo from tradias.de",
+    "source": "https://www.tradias.de",
+    "sourceUrl": "https://www.tradias.de/wp-content/uploads/2024/10/Bull-Black-e1730296060629.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "euwax-ag": {
+    "src": "../assets/casp-logos/euwax-ag-de-1cf2d6ca38b6.png",
+    "alt": "EUWAX AG logo from euwax-ag.de",
+    "source": "https://www.euwax-ag.de",
+    "sourceUrl": "https://www.euwax-ag.de/assets/images/Euwax_BS_Logo_violett_RGB.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "boerse-stuttgart-digital-custody-gmbh": {
+    "src": "../assets/casp-logos/bsdigital-com-d0b1dab402cc.svg",
+    "alt": "Boerse Stuttgart Digital Custody GmbH logo from bsdigital.com",
+    "source": "https://www.bsdigital.com",
+    "sourceUrl": "https://www.bsdigital.com/media/0e4b5uep/logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "flatexdegiro-bank-ag": {
+    "src": "../assets/casp-logos/flatexdegiro-com-9982eb911b80.ico",
+    "alt": "flatexDEGIRO Bank AG logo from flatexdegiro.com",
+    "source": "https://www.flatexdegiro.com/de/flatexdegiro-bank/login",
+    "sourceUrl": "https://www.flatexdegiro.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "trade-republic-bank-gmbh": {
+    "src": "../assets/casp-logos/traderepublic-com-17b8a6fe10b0.jpg",
+    "alt": "Trade Republic Bank GmbH logo from traderepublic.com",
+    "source": "https://traderepublic.com/",
+    "sourceUrl": "https://images.ctfassets.net/vkizfq3pbtzc/1qZ98P57qw3kjUMS6D3PQD/6ffe45ffdf5ece2c750995c3d3b4d6b1/HomepageTR_Thumbnail_medium.jpg",
+    "method": "twitter:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "n26-bank-se": {
+    "src": "../assets/casp-logos/n26-com-3bf3504c6c75.png",
+    "alt": "N26 Bank SE logo from n26.com",
+    "source": "https://n26.com",
+    "sourceUrl": "https://n26.com/_build/logo-256x256.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "360-treasury-systems-ag": {
+    "src": "../assets/casp-logos/360t-com-4b6d98758f7d.png",
+    "alt": "360 Treasury Systems AG logo from 360t.com",
+    "source": "https://www.360t.com",
+    "sourceUrl": "https://www.360t.com/wp-content/uploads/logo_360t_db_gruen.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "baader-bank-aktiengesellschaft": {
+    "src": "../assets/casp-logos/baaderbank-de-2abeeea3f6b9.svg",
+    "alt": "Baader Bank Aktiengesellschaft logo from baaderbank.de",
+    "source": "https://www.baaderbank.de/",
+    "sourceUrl": "https://www.datocms-assets.com/146209/1734953397-mode-positive.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "tangany-gmbh": {
+    "src": "../assets/casp-logos/tangany-com-22aa336935a1.png",
+    "alt": "Tangany GmbH logo from tangany.com",
+    "source": "https://www.tangany.com",
+    "sourceUrl": "https://tangany.com/favicon/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "smartbroker-ag": {
+    "src": "../assets/casp-logos/smartbrokerplus-de-b961d631ba64.png",
+    "alt": "Smartbroker AG logo from smartbrokerplus.de",
+    "source": "https://www.smartbrokerplus.de/de-de/",
+    "sourceUrl": "https://www.smartbrokerplus.de/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "commerzbank-aktiengesellschaft": {
+    "src": "../assets/casp-logos/commerzbank-de-43b73752e74c.svg",
+    "alt": "Commerzbank Aktiengesellschaft logo from commerzbank.de",
+    "source": "https://www.commerzbank.de",
+    "sourceUrl": "https://www.commerzbank.de/ms/media/favicons/CB-2022-Ribbon_RGB.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "traders-place-gmbh-co-kgaa": {
+    "src": "../assets/casp-logos/tradersplace-de-61484de6afc6.svg",
+    "alt": "Traders Place GmbH & Co. KGaA logo from tradersplace.de",
+    "source": "https://tradersplace.de/angebot/uebersicht/kryptowaehrungen",
+    "sourceUrl": "https://tradersplace.de/build/images/theme/tradersplace-logo-icon_only.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "lang-schwarz-tradecenter-ag-co-kg": {
+    "src": "../assets/casp-logos/ls-tc-de-8adeb85856f6.ico",
+    "alt": "Lang & Schwarz TradeCenter AG & Co. KG logo from ls-tc.de",
+    "source": "https://www.ls-tc.de/de/",
+    "sourceUrl": "https://www.ls-tc.de/media/site/ls2023.ico",
+    "method": "link-shortcut",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "crypto-finance-deutschland-gmbh": {
+    "src": "../assets/casp-logos/crypto-finance-com-5f6424bc4cb6.png",
+    "alt": "Crypto Finance (Deutschland) GmbH logo from crypto-finance.com",
+    "source": "https://www.crypto-finance.com/germany/de/",
+    "sourceUrl": "https://www.crypto-finance.com/germany/wp-content/uploads/sites/2/cropped-cropped-cropped-cropped-cf_favicon-1-1-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bitgo-europe-gmbh": {
+    "src": "../assets/casp-logos/bitgo-de-835f71c03bbd.png",
+    "alt": "BitGo Europe GmbH logo from bitgo.de",
+    "source": "https://www.bitgo.de/entities/bitgoeuropegmbh/",
+    "sourceUrl": "https://www.bitgo.de/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bullish-europe-gmbh": {
+    "src": "../assets/casp-logos/bullish-com-c88bcdbb7dbe.svg",
+    "alt": "Bullish Europe GmbH logo from bullish.com",
+    "source": "https://bullish.com/home-de/",
+    "sourceUrl": "https://cdn.prod.website-files.com/67e428d18ac85216b5a9d0e4/67f949a57fa08489a0c7843a_Bullish-Logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "dietrich-richter-private-asset-management-ag": {
+    "src": "../assets/casp-logos/drpam-de-bb4e87ad6011.png",
+    "alt": "Dietrich & Richter Private Asset Management AG logo from drpam.de",
+    "source": "https://www.drpam.de/",
+    "sourceUrl": "https://www.drpam.de/wp-content/uploads/2022/05/cropped-DR_Logo_hochformat_Favicon_Zeichenfla%CC%88che-1-Kopie-2-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "huddlestock-gmbh": {
+    "src": "../assets/casp-logos/huddlestock-com-2c2351aa88ce.png",
+    "alt": "Huddlestock GmbH logo from huddlestock.com",
+    "source": "https://www.huddlestock.com",
+    "sourceUrl": "https://huddlestock.com/wp-content/uploads/2023/09/cropped-hs_h_dark_512x512-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "volksbank-raiffeisenbank-bayern-mitte-eg": {
+    "src": "../assets/casp-logos/vr-bayernmitte-de-7d6fd8e119dc.jpg",
+    "alt": "Volksbank Raiffeisenbank Bayern Mitte eG logo from vr-bayernmitte.de",
+    "source": "https://www.vr-bayernmitte.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "sino-aktiengesellschaft": {
+    "src": "../assets/casp-logos/sino-de-3bf0f15511be.png",
+    "alt": "sino Aktiengesellschaft logo from sino.de",
+    "source": "https://www.sino.de/",
+    "sourceUrl": "https://www.sino.de/wp-content/uploads/2021/03/cropped-highres-icon-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "donaucapital-wertpapier-gmbh": {
+    "src": "../assets/casp-logos/donaucapital-de-13ca8a288e36.png",
+    "alt": "DonauCapital Wertpapier GmbH logo from donaucapital.de",
+    "source": "https://www.donaucapital.de",
+    "sourceUrl": "https://www.donaucapital.de/images/donau/dc%20gmbh%20wp%20gruen%20logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "hyphe-markets-gmbh": {
+    "src": "../assets/casp-logos/hyphe-com-185a20a509dc.svg",
+    "alt": "Hyphe Markets GmbH logo from hyphe.com",
+    "source": "https://hyphe.com/",
+    "sourceUrl": "https://hyphe.com/static/img/logo-hyphe.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "fels-wealth-gmbh": {
+    "src": "../assets/casp-logos/followmymoney-de-8ac12f5c333f.png",
+    "alt": "Fels wealth GmbH logo from followmymoney.de",
+    "source": "https://followmymoney.de/",
+    "sourceUrl": "https://followmymoney.de/wp-content/uploads/2023/03/Invest-Zuschuss-fuer-Wagniskapital.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "deutsche-wertpapierservice-bank-ag": {
+    "src": "../assets/casp-logos/dwpbank-de-e30154678f7e.png",
+    "alt": "Deutsche WertpapierService Bank AG logo from dwpbank.de",
+    "source": "https://dwpbank.de",
+    "sourceUrl": "https://www.dwpbank.de/wp-content/uploads/2021/01/cropped-dwpbank-Favicon-60x60.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "ig-europe-gmbh": {
+    "src": "../assets/casp-logos/ig-com-1bc8e6603e62.png",
+    "alt": "IG Europe GmbH logo from ig.com",
+    "source": "https://www.ig.com/de",
+    "sourceUrl": "https://www.ig.com/etc.clientlibs/settings/wcm/designs/onedomain/1785861946000/clientlibs_resources/resources/images/icons/apple-touch-icon-180x180-precomposed.png",
+    "method": "link-apple-touch-icon-precomposed",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "westerwald-bank-eg-volks-und-raiffeisenbank": {
+    "src": "../assets/casp-logos/westerwaldbank-de-54e1a4d32d76.png",
+    "alt": "Westerwald Bank eG Volks- und Raiffeisenbank logo from westerwaldbank.de",
+    "source": "https://www.westerwaldbank.de",
+    "sourceUrl": "https://sw-assets.ekomiapps.de/resources/de_seal_silver-105.png",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "volksbank-mittlerer-schwarzwald-eg": {
+    "src": "../assets/casp-logos/voba-msw-de-7d6fd8e119dc.jpg",
+    "alt": "Volksbank Mittlerer Schwarzwald eG logo from voba-msw.de",
+    "source": "https://www.voba-msw.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "dekabank-deutsche-girozentrale": {
+    "src": "../assets/casp-logos/deka-de-029f2d2bd064.png",
+    "alt": "DekaBank Deutsche Girozentrale logo from deka.de",
+    "source": "https://www.deka.de/deka-gruppe",
+    "sourceUrl": "https://www.deka.de/site/dekade_deka-gruppe_site/resourceCached/25.4.1.2/assets/images/brand-logos/DekaGruppe_Logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "vr-teilhaberbank-metropolregion-nurnberg-eg": {
+    "src": "../assets/casp-logos/vr-teilhaberbank-de-7d6fd8e119dc.jpg",
+    "alt": "VR TeilhaberBank Metropolregion Nürnberg eG logo from vr-teilhaberbank.de",
+    "source": "https://www.vr-teilhaberbank.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "sutor-bank-gmbh": {
+    "src": "../assets/casp-logos/sutorbank-de-813315b49102.svg",
+    "alt": "Sutor Bank GmbH logo from sutorbank.de",
+    "source": "https://www.sutorbank.de/",
+    "sourceUrl": "https://www.sutorbank.de/_assets/84317c74a9eab7e4f0fbcf1c79dfac2e/Logos/sutorbank_desktop_header_Logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "dz-bank-ag-deutsche-zentral-genossenschaftsbank": {
+    "src": "../assets/casp-logos/dzbank-de-2c593d078ba1.png",
+    "alt": "DZ BANK AG Deutsche Zentral-Genossenschaftsbank logo from dzbank.de",
+    "source": "https://www.dzbank.de",
+    "sourceUrl": "https://www.dzbank.de/content/dam/dzbank/bilder/Homepage/logo/logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "fidus-finanz-ag": {
+    "src": "../assets/casp-logos/fidus-ag-de-77a99e430757.svg",
+    "alt": "FIDUS Finanz AG logo from fidus-ag.de",
+    "source": "https://fidus-ag.de",
+    "sourceUrl": "https://fidus-ag.de/wp-content/uploads/2021/08/fidus_logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "vr-bank-rottal-inn-eg": {
+    "src": "../assets/casp-logos/vrbk-de-7d6fd8e119dc.jpg",
+    "alt": "VR-Bank Rottal-Inn eG logo from vrbk.de",
+    "source": "https://www.vrbk.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "isf-institut-deutsch-schweizer-finanzdienstleistungen-gmbh": {
+    "src": "../assets/casp-logos/isf-institut-de-2d8d1019935f.png",
+    "alt": "ISF Institut Deutsch-Schweizer Finanzdienstleistungen GmbH logo from isf-institut.de",
+    "source": "https://www.isf-institut.de",
+    "sourceUrl": "https://www.isf-institut.de/media/site/298980eac6-1723814157/cropped-favicon_3_512_12_px-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "wsw-portfoliomanagement-ag": {
+    "src": "../assets/casp-logos/wsw-pm-de-c9af64f0023f.png",
+    "alt": "wSw PortfolioManagement AG logo from wsw-pm.de",
+    "source": "https://www.wsw-pm.de",
+    "sourceUrl": "https://www.wsw-pm.de/wp-content/uploads/2024/10/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "vr-bank-sudpfalz-eg": {
+    "src": "../assets/casp-logos/vrbank-suedpfalz-de-7d6fd8e119dc.jpg",
+    "alt": "VR Bank Südpfalz eG logo from vrbank-suedpfalz.de",
+    "source": "https://www.vrbank-suedpfalz.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "xtb-limited": {
+    "src": "../assets/casp-logos/xtb-com-27e513c498b7.ico",
+    "alt": "XTB Limited logo from xtb.com",
+    "source": "https://www.xtb.com/cy",
+    "sourceUrl": "https://www.xtb.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "plutos-vermogensverwaltung-ag": {
+    "src": "../assets/casp-logos/plutos-de-eb7ae902307d.png",
+    "alt": "Plutos Vermögensverwaltung AG logo from plutos.de",
+    "source": "https://www.plutos.de",
+    "sourceUrl": "https://www.plutos.de/hubfs/website/presse/Plutos-Logo-wide.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "hannoversche-volksbank-eg": {
+    "src": "../assets/casp-logos/hannoversche-volksbank-de-7d6fd8e119dc.jpg",
+    "alt": "Hannoversche Volksbank eG logo from hannoversche-volksbank.de",
+    "source": "https://www.hannoversche-volksbank.de/",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "anceka-vermogensbetreuungs-aktiengesellschaft": {
+    "src": "../assets/casp-logos/anceka-de-6df35b4326f8.png",
+    "alt": "AnCeKa Vermögensbetreuungs Aktiengesellschaft logo from anceka.de",
+    "source": "https://www.anceka.de",
+    "sourceUrl": "https://www.anceka.de/wp-content/uploads/2015/08/LOGO.png",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "joh-berenberg-gossler-co-kg": {
+    "src": "../assets/casp-logos/berenberg-de-e2a0bbb816aa.png",
+    "alt": "Joh. Berenberg, Gossler & Co. KG logo from berenberg.de",
+    "source": "https://www.berenberg.de",
+    "sourceUrl": "https://www.berenberg.de/icons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "scalable-capital-bank-gmbh": {
+    "src": "../assets/casp-logos/scalable-capital-160bfb1773d3.png",
+    "alt": "Scalable Capital Bank GmbH logo from scalable.capital",
+    "source": "https://www.scalable.capital",
+    "sourceUrl": "https://assets.scalable.capital/touch-icons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon-precomposed",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "concedus-gmbh": {
+    "src": "../assets/casp-logos/concedus-com-0c2ad8394dcc.svg",
+    "alt": "CONCEDUS GmbH logo from concedus.com",
+    "source": "https://concedus.com/",
+    "sourceUrl": "https://concedus.com/favicon.svg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "mlp-banking-ag": {
+    "src": "../assets/casp-logos/mlp-de-79bc72508fb0.png",
+    "alt": "MLP Banking AG logo from mlp.de",
+    "source": "https://www.mlp.de",
+    "sourceUrl": "https://mlp.de/layout/img/logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "dlt-securities-gmbh": {
+    "src": "../assets/casp-logos/dlt-finance-com-f396b570a3b5.svg",
+    "alt": "DLT Securities GmbH logo from dlt-finance.com",
+    "source": "https://www.dlt-finance.com",
+    "sourceUrl": "https://www.dlt-finance.com/media/site/c66b0cea18-1729073555/kraken-vector-logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "vermogensbutler-gmbh": {
+    "src": "../assets/casp-logos/vermoegensbutler-de-9b4d54ffaebb.jpg",
+    "alt": "Vermögensbutler GmbH logo from vermoegensbutler.de",
+    "source": "https://www.vermoegensbutler.de",
+    "sourceUrl": "https://www.vermoegensbutler.de/wp-content/uploads/2020/11/vmb-logo-1.jpg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "raiffeisenbank-kreis-kelheim-eg": {
+    "src": "../assets/casp-logos/rbkk-de-7d6fd8e119dc.jpg",
+    "alt": "Raiffeisenbank Kreis Kelheim eG logo from rbkk.de",
+    "source": "https://www.rbkk.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bv-p-vermogen-ag": {
+    "src": "../assets/casp-logos/bvp-vermoegen-de-18f1db88f65c.png",
+    "alt": "BV & P Vermögen AG logo from bvp-vermoegen.de",
+    "source": "https://www.bvp-vermoegen.de",
+    "sourceUrl": "https://bvp-vermoegen.de/wp-content/uploads/2021/03/cropped-output-onlinepngtools-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "volksbank-schwarzwald-donau-neckar-eg": {
+    "src": "../assets/casp-logos/vbsdn-de-ee69653a6568.svg",
+    "alt": "Volksbank Schwarzwald-Donau-Neckar eG logo from vbsdn.de",
+    "source": "https://www.vbsdn.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/content/atruvia/ruv-logo?ts&",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "vr-bank-landau-mengkofen-eg": {
+    "src": "../assets/casp-logos/vrbanklm-de-7d6fd8e119dc.jpg",
+    "alt": "VR-Bank Landau-Mengkofen eG logo from vrbanklm.de",
+    "source": "https://www.vrbanklm.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "donau-iller-bank-eg": {
+    "src": "../assets/casp-logos/donau-iller-bank-de-7d6fd8e119dc.jpg",
+    "alt": "Donau-Iller-Bank eG logo from donau-iller-bank.de",
+    "source": "https://www.donau-iller-bank.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "penning-financial-services-aps": {
+    "src": "../assets/casp-logos/penning-io-a78605d5cc51.svg",
+    "alt": "Penning Financial Services ApS logo from penning.io",
+    "source": "https://www.penning.io",
+    "sourceUrl": "https://www.penning.io/images/tokens/bitcoin.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "raiffeisenbank-falkenstein-worth": {
+    "src": "../assets/casp-logos/rbfalkenstein-woerth-de-7d6fd8e119dc.jpg",
+    "alt": "Raiffeisenbank Falkenstein-Wörth logo from rbfalkenstein-woerth.de",
+    "source": "https://www.rbfalkenstein-woerth.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "lunar-block-a-s": {
+    "src": "../assets/casp-logos/lunar-app-ce15aae8b8f9.png",
+    "alt": "Lunar Block A/S logo from lunar.app",
+    "source": "https://www.lunar.app/dk/privat/krypto",
+    "sourceUrl": "https://www.lunar.app/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "vr-bank-schleswig-holstein-mitte-eg": {
+    "src": "../assets/casp-logos/vrbank-sh-mitte-de-7d6fd8e119dc.jpg",
+    "alt": "VR Bank Schleswig-Holstein Mitte eG logo from vrbank-sh-mitte.de",
+    "source": "https://www.vrbank-sh-mitte.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "gc-exchange-a-s": {
+    "src": "../assets/casp-logos/gc-exchange-4e8a5333841e.png",
+    "alt": "GC Exchange A/S logo from gc.exchange",
+    "source": "https://gc.exchange/",
+    "sourceUrl": "https://gc.exchange/hubfs/3.png",
+    "method": "link-shortcut",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "northstake-aps": {
+    "src": "../assets/casp-logos/northstake-dk-46569eaf05ef.png",
+    "alt": "Northstake ApS logo from northstake.dk",
+    "source": "https://www.northstake.dk",
+    "sourceUrl": "https://cdn.prod.website-files.com/64118169be2e2ed3f826015f/6654dc0faf227fe51c67b176_3iq.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "januar-aps": {
+    "src": "../assets/casp-logos/januar-com-2714c76c8a63.png",
+    "alt": "Januar ApS logo from januar.com",
+    "source": "https://www.januar.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/68d11830cc9d61bad348fb81/68ef9ae84b8a150f5e0d2a1d_Bitcoin%20transparent%20black%20(1).png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "open-bank-s-a": {
+    "src": "../assets/casp-logos/openbank-es-5166a76b9508.png",
+    "alt": "OPEN BANK S.A. logo from openbank.es",
+    "source": "https://www.openbank.es",
+    "sourceUrl": "https://www.openbank.es/assets/icons/flame_icon_white.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "coinify-aps": {
+    "src": "../assets/casp-logos/coinify-com-c41d5cacc605.png",
+    "alt": "Coinify ApS logo from coinify.com",
+    "source": "https://www.coinify.com/",
+    "sourceUrl": "https://images.squarespace-cdn.com/content/v1/638a48377c09bb00bbc62b94/019e9ada-f799-47ec-b429-c4b6c5f426ec/coinify_logomark_orange.png?format=1500w",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "safelynx-technologies-aps": {
+    "src": "../assets/casp-logos/safelynx-io-cc5c4ae3b4aa.png",
+    "alt": "SafeLynx Technologies ApS logo from safelynx.io",
+    "source": "https://www.safelynx.io/",
+    "sourceUrl": "https://cdn.prod.website-files.com/63a455da6b5256847354ea40/63ca992c158de230e031c44e_safelynx-clip.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "spar-und-kreditbank-rheinstetten-eg": {
+    "src": "../assets/casp-logos/skb-rheinstetten-de-f5582390284e.jpg",
+    "alt": "Spar- und Kreditbank Rheinstetten eG logo from skb-rheinstetten.de",
+    "source": "https://www.skb-rheinstetten.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/onlinebanking-fk-bvr-visual-teaser-1290x860:3-2?ts&",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bitcoinforme-s-l": {
+    "src": "../assets/casp-logos/bit2me-com-2f850635e4b1.svg",
+    "alt": "Bitcoinforme S.L. logo from bit2me.com",
+    "source": "https://bit2me.com",
+    "sourceUrl": "https://bit2me.com/assets/img/header/brand/bit2me-logo-light.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "lightspark-payments-europe-as": {
+    "src": "../assets/casp-logos/eu-lightspark-com-c2631c30ce92.ico",
+    "alt": "Lightspark Payments Europe AS logo from eu.lightspark.com",
+    "source": "https://eu.lightspark.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/69627538d496bb0e863c02f5/69793b791327d2ad99c631a5_favicon%20(1).ico",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "lightyear-europe-as": {
+    "src": "../assets/casp-logos/lightyear-com-1b84398c2359.png",
+    "alt": "Lightyear Europe AS logo from lightyear.com",
+    "source": "https://lightyear.com/",
+    "sourceUrl": "https://lightyear.com/resources/favicon/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "renta-4-banco-s-a": {
+    "src": "../assets/casp-logos/r4-com-0b1a99491b52.png",
+    "alt": "RENTA 4 BANCO S.A. logo from r4.com",
+    "source": "https://www.r4.com",
+    "sourceUrl": "https://www.r4.com/content/dam/rentabanco/r4/logos/favicon_banco_192_new.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "crossmint-europe-s-l": {
+    "src": "../assets/casp-logos/crossmint-com-03c5328dc306.svg",
+    "alt": "CROSSMINT EUROPE S.L. logo from crossmint.com",
+    "source": "https://www.crossmint.com",
+    "sourceUrl": "https://cdn.prod.website-files.com/653a93effa45d5e5a3b8e1e8/653b06fa13571d64bd7b757d_Logo%20Arrow%20Gray%40.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "as-lhv-pank": {
+    "src": "../assets/casp-logos/lhv-ee-94bb75fabe0c.ico",
+    "alt": "AS LHV Pank logo from lhv.ee",
+    "source": "https://www.lhv.ee",
+    "sourceUrl": "https://www.lhv.ee/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "due-network-s-l": {
+    "src": "../assets/casp-logos/opendue-com-e8ed4d3c9772.png",
+    "alt": "DUE NETWORK S.L. logo from opendue.com",
+    "source": "http://www.opendue.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/65035c417fe69396bd8c0d5c/6543e3ffbd62e51056b43e42_touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "minos-global-s-l": {
+    "src": "../assets/casp-logos/minos-global-25a3b036c12a.ico",
+    "alt": "MINOS GLOBAL, S.L. logo from minos.global",
+    "source": "https://minos.global",
+    "sourceUrl": "https://minos.global/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "iqana-technologies-s-l": {
+    "src": "../assets/casp-logos/iqana-io-782a4f766eb4.png",
+    "alt": "IQANA TECHNOLOGIES S.L. logo from iqana.io",
+    "source": "https://iqana.io/",
+    "sourceUrl": "https://iqana.io/logos_png/goldman.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "caixabank-s-a": {
+    "src": "../assets/casp-logos/caixabank-es-1a2844f889f3.gif",
+    "alt": "CAIXABANK S.A. logo from caixabank.es",
+    "source": "https://caixabank.es",
+    "sourceUrl": "https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/images/gif/logo_laCaixa_principal.gif",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "fintech-payments-psc-s-l": {
+    "src": "../assets/casp-logos/cryptopocket-io-0b8800e45a08.ico",
+    "alt": "FINTECH PAYMENTS PSC, S.L. logo from cryptopocket.io",
+    "source": "https://cryptopocket.io/",
+    "sourceUrl": "https://cryptopocket.io/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "coinmotion-oy": {
+    "src": "../assets/casp-logos/coinmotion-com-60498808b11c.png",
+    "alt": "Coinmotion Oy logo from coinmotion.com",
+    "source": "https://coinmotion.com",
+    "sourceUrl": "https://coinmotion.com/wp-content/uploads/2020/06/cm_favicon_light_blue512_-150x150.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "northcrypto-oy": {
+    "src": "../assets/casp-logos/northcrypto-com-19c2371e27b4.png",
+    "alt": "NorthCrypto Oy logo from northcrypto.com",
+    "source": "https://www.northcrypto.com/",
+    "sourceUrl": "https://www.northcrypto.com/images/SFS.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "tesseract-investment-oy": {
+    "src": "../assets/casp-logos/tesseract-fi-157b90ca140e.png",
+    "alt": "Tesseract Investment Oy logo from tesseract.fi",
+    "source": "https://tesseract.fi",
+    "sourceUrl": "https://tesseract.fi/apple-icon.png?apple-icon.0kulwj4vjrf5d.png?dpl=dpl_7o7LLYVeehqsiALSTkkuy6vAH55m",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "prosegur-custodia-de-activos-digitales": {
+    "src": "../assets/casp-logos/prosegurcrypto-com-6e5a8c3fb891.png",
+    "alt": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES logo from prosegurcrypto.com",
+    "source": "https://www.prosegurcrypto.com",
+    "sourceUrl": "https://www.prosegurcrypto.com/.resources/ProsegurWebCorpModule/resources/icons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "kvarn-capital-oy": {
+    "src": "../assets/casp-logos/kvarnx-com-2d6c6bf4d9c4.svg",
+    "alt": "Kvarn Capital Oy logo from kvarnx.com",
+    "source": "https://www.kvarnx.com/",
+    "sourceUrl": "https://www.kvarnx.com/icons/tokens/eos.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bittimaatti-oy": {
+    "src": "../assets/casp-logos/bittimaatti-fi-9ad5edd75120.png",
+    "alt": "Bittimaatti Oy logo from bittimaatti.fi",
+    "source": "https://bittimaatti.fi",
+    "sourceUrl": "https://bittimaatti.fi/wp-content/uploads/2025/01/bittimaatti_logo_UusiSininen1000px-2.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bitstack-digital-assets-sas": {
+    "src": "../assets/casp-logos/bitstack-app-com-1a13302f3f59.svg",
+    "alt": "BITSTACK DIGITAL ASSETS SAS logo from bitstack-app.com",
+    "source": "https://bitstack-app.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/63ea3e6d2856ff83c7d77160/6672afae1e036e5508ca5e3b_Logo_Bitstack.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "caceis-bank": {
+    "src": "../assets/casp-logos/caceis-com-24169b15b980.png",
+    "alt": "CACEIS BANK logo from caceis.com",
+    "source": "http://www.caceis.com",
+    "sourceUrl": "https://www.caceis.com/templates/img/logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "deblock-sas": {
+    "src": "../assets/casp-logos/deblock-com-4ac8684cf46d.svg",
+    "alt": "DEBLOCK SAS logo from deblock.com",
+    "source": "https://deblock.com/",
+    "sourceUrl": "https://deblock.com/_next/static/media/header-logo-stroke-2.5b858888.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "metal-gear-sas": {
+    "src": "../assets/casp-logos/metalgear-xyz-b8ad591e783e.png",
+    "alt": "METAL GEAR SAS logo from metalgear.xyz",
+    "source": "https://metalgear.xyz/",
+    "sourceUrl": "https://framerusercontent.com/images/ojcuIX3P8d2I21smZ4ta6Q9TGpk.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "cecabank-s-a": {
+    "src": "../assets/casp-logos/cecabank-es-c07d84134bd9.png",
+    "alt": "CECABANK S.A. logo from cecabank.es",
+    "source": "https://www.cecabank.es",
+    "sourceUrl": "https://www.cecabank.es/wp-content/uploads/2023/01/logo-del-tesoro.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "coinshares-asset-management": {
+    "src": "../assets/casp-logos/coinshares-com-40b956d92bf2.svg",
+    "alt": "COINSHARES ASSET MANAGEMENT logo from coinshares.com",
+    "source": "https://coinshares.com/",
+    "sourceUrl": "https://coinshares.com/icons/coinshares-logo-white.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "cometh-sas": {
+    "src": "../assets/casp-logos/cometh-io-ad5e8f58b24e.png",
+    "alt": "COMETH SAS logo from cometh.io",
+    "source": "https://cometh.io/",
+    "sourceUrl": "https://framerusercontent.com/images/rV6PWLJO7YdtzOK9MCf1zfaLXA.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "finctek-ue-sas": {
+    "src": "../assets/casp-logos/finctek-com-9b09ac292d10.png",
+    "alt": "FINCTEK UE SAS logo from finctek.com",
+    "source": "https://finctek.com",
+    "sourceUrl": "https://finctek.com/wp-content/uploads/2025/09/cropped-picture-logo-2.png?w=180",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "blocknodes-sas": {
+    "src": "../assets/casp-logos/swissborg-com-5d301ec23492.png",
+    "alt": "BLOCKNODES SAS logo from swissborg.com",
+    "source": "https://swissborg.com/",
+    "sourceUrl": "https://swissborg.com/icons/icon-48x48.png?v=6b2ccbb991dde8d06305bcff423bf971",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "fipto-pi-sas": {
+    "src": "../assets/casp-logos/fipto-com-e244b53418e4.svg",
+    "alt": "FIPTO PI SAS logo from fipto.com",
+    "source": "https://www.fipto.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/64511692b02334865eecc197/647ce0f1113e2327cd2630f7_logo-nobg.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "hexarq-sas": {
+    "src": "../assets/casp-logos/hexarq-com-e43e65b05784.png",
+    "alt": "HEXARQ SAS logo from hexarq.com",
+    "source": "https://www.hexarq.com/",
+    "sourceUrl": "https://www.hexarq.com/wp-content/uploads/2025/03/cropped-hexarq-logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "goin-sas": {
+    "src": "../assets/casp-logos/goin-invest-com-1bd42255bcd2.png",
+    "alt": "GOin SAS logo from goin-invest.com",
+    "source": "https://goin-invest.com",
+    "sourceUrl": "https://goin-invest.com/img/new-design/logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "circle-internet-financial-europe-sas": {
+    "src": "../assets/casp-logos/circle-com-a34ac2272c99.svg",
+    "alt": "CIRCLE INTERNET FINANCIAL EUROPE SAS logo from circle.com",
+    "source": "https://www.circle.com/en/",
+    "sourceUrl": "https://cdn.prod.website-files.com/67116d0daddc92483c812e88/6761db25817bd4f9398d18bb_nu-bank.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "paytop-sas": {
+    "src": "../assets/casp-logos/paytop-com-c699004c23b9.png",
+    "alt": "PAYTOP SAS logo from paytop.com",
+    "source": "https://www.paytop.com/",
+    "sourceUrl": "https://www.paytop.com/images/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "rufiji-capital-sas": {
+    "src": "../assets/casp-logos/rufiji-capital-ed9d7a6ea3f1.svg",
+    "alt": "RUFIJI CAPITAL SAS logo from rufiji.capital",
+    "source": "https://www.rufiji.capital/",
+    "sourceUrl": "https://www.rufiji.capital/wp-content/uploads/logo_rufiji_capital_white.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "criptan-trade-s-l": {
+    "src": "../assets/casp-logos/criptan-com-4009a80e86a2.png",
+    "alt": "CRIPTAN TRADE S.L. logo from criptan.com",
+    "source": "https://www.criptan.com",
+    "sourceUrl": "https://criptan.com/wp-content/uploads/2024/08/logo_3.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "deskoin-sas": {
+    "src": "../assets/casp-logos/deskoin-com-af9d20f2e1a1.png",
+    "alt": "DESKOIN SAS logo from deskoin.com",
+    "source": "https://www.deskoin.com/",
+    "sourceUrl": "https://framerusercontent.com/images/IIXGr3SH3GdXggZ45g9ObiEEs.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "qwarks-sas": {
+    "src": "../assets/casp-logos/qwarks-fr-314eadc2057f.svg",
+    "alt": "QWARKS SAS logo from qwarks.fr",
+    "source": "https://www.qwarks.fr/",
+    "sourceUrl": "https://www.qwarks.fr/favicon.svg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "keyrock-fr-sas": {
+    "src": "../assets/casp-logos/keyrock-com-f7e20a86be44.png",
+    "alt": "KEYROCK FR SAS logo from keyrock.com",
+    "source": "https://keyrock.com/",
+    "sourceUrl": "https://keyrock.com/assets/uploads/2024/04/cropped-Favicon-1-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "flowdesk-europe-sas": {
+    "src": "../assets/casp-logos/flowdesk-co-de32ad4611b5.svg",
+    "alt": "FLOWDESK EUROPE SAS logo from flowdesk.co",
+    "source": "https://www.flowdesk.co/",
+    "sourceUrl": "https://cdn.prod.website-files.com/69807514ef19ea1c45a6ec49/69820a81f7303c1df0e976c9_flowdesk_logo_white.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "leonod-sarl": {
+    "src": "../assets/casp-logos/app-bullbitcoin-com-cebf8fba3908.png",
+    "alt": "LEONOD SARL logo from app.bullbitcoin.com",
+    "source": "https://app.bullbitcoin.com/",
+    "sourceUrl": "https://app.bullbitcoin.com/icons/Icon-192.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "rcube-asset-management": {
+    "src": "../assets/casp-logos/rcube-com-bab3b2292257.png",
+    "alt": "RCUBE ASSET MANAGEMENT logo from rcube.com",
+    "source": "https://rcube.com/",
+    "sourceUrl": "https://rcube.com/wp-content/uploads/2018/03/cropped-favicon-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "alphacap-digital-assets-sas": {
+    "src": "../assets/casp-logos/alphacap-fr-0772bd73debd.png",
+    "alt": "ALPHACAP DIGITAL ASSETS SAS logo from alphacap.fr",
+    "source": "https://alphacap.fr/",
+    "sourceUrl": "https://cdn.prod.website-files.com/6a2ea3aba98d4dd14bfa0e9a/6a3e25702744f1aaf4a4dd86_favicon-monogramme-ardoise-512.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "finary-sas": {
+    "src": "../assets/casp-logos/finary-com-9ed8a0f6490e.svg",
+    "alt": "FINARY SAS logo from finary.com",
+    "source": "https://finary.com/en",
+    "sourceUrl": "https://wf-cache.finary.com/64fb4d9ac1d7723434b54019/64ff76712e5abaef133e4bbe_finary-logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "paymium-sas": {
+    "src": "../assets/casp-logos/paymium-com-350a650fd2fc.svg",
+    "alt": "PAYMIUM SAS logo from paymium.com",
+    "source": "https://www.paymium.com/",
+    "sourceUrl": "https://www.paymium.com/_next/static/media/logo.c992fa26.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "iceblock-sas": {
+    "src": "../assets/casp-logos/iceblockinvestments-com-3d7c044a40b8.png",
+    "alt": "ICEBLOCK SAS logo from iceblockinvestments.com",
+    "source": "https://www.iceblockinvestments.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/6891a45c7285034e83856d6d/6a2682d44a47d381e69b5cf3_iceblock-favicon-256.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "electrocoin-ltd-for-services": {
+    "src": "../assets/casp-logos/electrocoin-eu-3581d7567e46.png",
+    "alt": "ELECTROCOIN Ltd for services logo from electrocoin.eu",
+    "source": "https://electrocoin.eu/hr",
+    "sourceUrl": "https://electrocoin.eu/static/build/favicon/apple-icon-57x57.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "woorton-sas": {
+    "src": "../assets/casp-logos/woorton-com-ce675baa3c4d.svg",
+    "alt": "WOORTON SAS logo from woorton.com",
+    "source": "https://www.woorton.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/622e1f5ff800c52f15eaf0b8/624afd5e9e1cb31f0d77277e_logo%20woorton.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "blockchain-process-security-b-p-s-sas": {
+    "src": "../assets/casp-logos/feel-mining-com-ef0789fd3e75.png",
+    "alt": "BLOCKCHAIN PROCESS SECURITY (B.P.S.) SAS logo from feel-mining.com",
+    "source": "https://feel-mining.com/",
+    "sourceUrl": "https://feel-mining.com/images/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "shares-financial-assets-sas": {
+    "src": "../assets/casp-logos/shares-io-d49688403804.svg",
+    "alt": "SHARES FINANCIAL ASSETS SAS logo from shares.io",
+    "source": "https://www.shares.io/",
+    "sourceUrl": "https://cdn.prod.website-files.com/668fa7cba71e7a0773fff140/672895682ba0fd963b594948_Amundi.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "payward-global-solutions-limited": {
+    "src": "../assets/casp-logos/kraken-com-5265bed9d96e.svg",
+    "alt": "Payward Global Solutions Limited logo from kraken.com",
+    "source": "https://www.kraken.com/",
+    "sourceUrl": "https://assets-cms.kraken.com/images/51n36hrp/facade/1698017cf06d51d17fff161c3704544f8402ecc5-68x18.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "payward-europe-solutions-limited": {
+    "src": "../assets/casp-logos/kraken-com-5265bed9d96e.svg",
+    "alt": "Payward Europe Solutions Limited logo from kraken.com",
+    "source": "https://www.kraken.com/",
+    "sourceUrl": "https://assets-cms.kraken.com/images/51n36hrp/facade/1698017cf06d51d17fff161c3704544f8402ecc5-68x18.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "white-tech-limited-liability-company-for-services": {
+    "src": "../assets/casp-logos/whitely-hr-b0100e284c32.svg",
+    "alt": "WHITE TECH Limited liability company for services logo from whitely.hr",
+    "source": "https://whitely.hr/hr",
+    "sourceUrl": "https://whitely.hr/whitely.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "digital-assets-limited-liability-company-for-intermediation-and-services": {
+    "src": "../assets/casp-logos/bitstore-net-106f46986c73.png",
+    "alt": "DIGITAL ASSETS Limited liability company for intermediation and services logo from bitstore.net",
+    "source": "https://www.bitstore.net/",
+    "sourceUrl": "https://www.bitstore.net/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bitblock-ltd-for-services": {
+    "src": "../assets/casp-logos/kriptomat-hr-c7225d7795fc.png",
+    "alt": "Bitblock Ltd. for Services logo from kriptomat.hr",
+    "source": "https://kriptomat.hr/",
+    "sourceUrl": "https://kriptomat.hr/wp-content/uploads/2024/05/bitcoin-btc-logo-150x150.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "ramp-swaps-ireland-limited": {
+    "src": "../assets/casp-logos/rampnetwork-com-cdad9ffd5e87.png",
+    "alt": "Ramp Swaps (Ireland) Limited logo from rampnetwork.com",
+    "source": "https://rampnetwork.com",
+    "sourceUrl": "https://cdn.prod.website-files.com/69df241561d9aa86a14607b7/69df4c6a528fcd3041decbbe_coin-r.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "mereau-finance-sas": {
+    "src": "../assets/casp-logos/crypto-assets-management-com-a97e8ca735ba.png",
+    "alt": "MEREAU FINANCE SAS logo from crypto-assets-management.com",
+    "source": "https://crypto-assets-management.com/",
+    "sourceUrl": "https://crypto-assets-management.com/wp-content/themes/cam/img/logo_sans_fond.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "hrvatska-postanska-banka-d-d": {
+    "src": "../assets/casp-logos/hpb-hr-b8247ef141fd.png",
+    "alt": "Hrvatska poštanska banka d.d. logo from hpb.hr",
+    "source": "https://www.hpb.hr/",
+    "sourceUrl": "https://www.hpb.hr/img/favicons/apple-icon-57x57.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "legend-financial-ireland-limited": {
+    "src": "../assets/casp-logos/legendtrading-com-cd07c579f96a.ico",
+    "alt": "Legend Financial Ireland Limited logo from legendtrading.com",
+    "source": "https://www.legendtrading.com",
+    "sourceUrl": "https://www.legendtrading.com/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "coinjar-europe-limited": {
+    "src": "../assets/casp-logos/coinjar-com-68e4c7384ddf.svg",
+    "alt": "CoinJar Europe Limited logo from coinjar.com",
+    "source": "https://www.coinjar.com",
+    "sourceUrl": "https://assets.contentbase.coinjar.com/Vector_Stroke_cef91ac7f1_adc1810f66.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "paysafe-payment-solutions-limited": {
+    "src": "../assets/casp-logos/skrill-com-6e07f79fa426.jpg",
+    "alt": "Paysafe Payment Solutions Limited. logo from skrill.com",
+    "source": "https://www.skrill.com",
+    "sourceUrl": "https://www.skrill.com/fileadmin/_processed_/4/2/csm_knect-text-media_a5dd1f1c4d.jpg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "confirmo-limited": {
+    "src": "../assets/casp-logos/confirmo-eu-4405e097c957.png",
+    "alt": "Confirmo Limited logo from confirmo.eu",
+    "source": "https://confirmo.eu",
+    "sourceUrl": "https://framerusercontent.com/images/WS5k2BRd7van5MoVggBEQKb4838.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "virtu-financial-ireland-limited": {
+    "src": "../assets/casp-logos/virtu-com-2f50eb0c06a3.png",
+    "alt": "Virtu Financial Ireland Limited logo from virtu.com",
+    "source": "https://www.virtu.com/",
+    "sourceUrl": "https://virtu-www.s3.amazonaws.com/uploads/2019/02/01192911/cropped-Virtu_Favicon-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "pionew-ireland-limited": {
+    "src": "../assets/casp-logos/webot-com-d622086a3797.png",
+    "alt": "Pionew Ireland Limited logo from webot.com",
+    "source": "https://www.webot.com/eu",
+    "sourceUrl": "https://www.webot.com/static/media/logo-webot.e10dd396.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "push-virtual-assets-ireland-limited": {
+    "src": "../assets/casp-logos/push-co-fa87c5f7c086.png",
+    "alt": "Push Virtual Assets Ireland Limited logo from push.co",
+    "source": "https://push.co",
+    "sourceUrl": "https://www.push.co/favicon.png",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "checksig-s-r-l-societa-benefit": {
+    "src": "../assets/casp-logos/checksig-com-6e3b0118ad26.svg",
+    "alt": "CHECKSIG S.R.L. SOCIETÀ BENEFIT logo from checksig.com",
+    "source": "https://WWW.CHECKSIG.COM",
+    "sourceUrl": "https://www.checksig.com/logo-positive.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "conio-s-r-l": {
+    "src": "../assets/casp-logos/conio-com-7b698a5e7875.png",
+    "alt": "CONIO S.R.L. logo from conio.com",
+    "source": "https://www.conio.com",
+    "sourceUrl": "https://www.conio.com/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "interactive-brokers-ireland-limited": {
+    "src": "../assets/casp-logos/interactivebrokers-ie-e2ef5811c607.png",
+    "alt": "Interactive Brokers Ireland Limited logo from interactivebrokers.ie",
+    "source": "https://www.interactivebrokers.ie",
+    "sourceUrl": "https://www.interactivebrokers.ie/images/web/favicons/apple-touch-icon-57x57.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "myntkaup-ehf": {
+    "src": "../assets/casp-logos/myntkaup-is-93d53690f387.svg",
+    "alt": "Myntkaup ehf. logo from myntkaup.is",
+    "source": "https://myntkaup.is/",
+    "sourceUrl": "https://myntkaup.is/images/logoBlack.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "cryptosmart-s-p-a": {
+    "src": "../assets/casp-logos/cryptosmart-it-1b1dbc0cfa6e.png",
+    "alt": "CRYPTOSMART S.P.A. logo from cryptosmart.it",
+    "source": "https://cryptosmart.it/",
+    "sourceUrl": "https://cryptosmart.it/wp-content/uploads/2023/03/cropped-favicon1-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "banca-sella": {
+    "src": "../assets/casp-logos/sella-it-632a9974c078.ico",
+    "alt": "BANCA SELLA logo from sella.it",
+    "source": "https://www.sella.it",
+    "sourceUrl": "https://www.sella.it/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "riv-digital-s-r-l": {
+    "src": "../assets/casp-logos/riv-digital-it-396cf6cc7346.png",
+    "alt": "RIV-DIGITAL S.R.L. logo from riv-digital.it",
+    "source": "https://riv-digital.it",
+    "sourceUrl": "https://www.riv-digital.it/wp-content/uploads/2025/09/cropped-V-LOGO-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "hodlie-s-r-l": {
+    "src": "../assets/casp-logos/hodli-com-3f6df29285a0.ico",
+    "alt": "HODLIE S.R.L. logo from hodli.com",
+    "source": "https://hodli.com",
+    "sourceUrl": "https://hodli.com/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "lgt-bank-ag": {
+    "src": "../assets/casp-logos/lgt-com-de058a97f5d7.png",
+    "alt": "LGT Bank AG logo from lgt.com",
+    "source": "https://www.lgt.com/li-en",
+    "sourceUrl": "https://www.lgt.com/resource/crblob/5106/125593681436adb70518133989d1d857/apple-touch-icon-png-data.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "zeus-anstalt-fur-vermogensverwaltung": {
+    "src": "../assets/casp-logos/zeus-management-li-c20a69c0d0e1.png",
+    "alt": "ZEUS Anstalt für Vermögensverwaltung logo from zeus-management.li",
+    "source": "https://www.zeus-management.li/en",
+    "sourceUrl": "https://www.zeus-management.li/assets/meta/touch-icon-apple.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bank-frick-ag": {
+    "src": "../assets/casp-logos/bankfrick-li-aa89a0880e86.png",
+    "alt": "Bank Frick AG logo from bankfrick.li",
+    "source": "https://www.bankfrick.li/en",
+    "sourceUrl": "https://www.bankfrick.li/sites/default/files/styles/partner/public/images/eas-liechtenstein_transparent.png.webp?itok=Q_OWzqQD",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "young-platform-s-p-a": {
+    "src": "../assets/casp-logos/youngplatform-com-403615ae521b.png",
+    "alt": "YOUNG PLATFORM S.P.A. logo from youngplatform.com",
+    "source": "https://youngplatform.com",
+    "sourceUrl": "https://youngplatform.com/icons/icon-48x48.png?v=5ba7af8394df032e575d720f1e8cdbc0",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "wyden-capital-ag": {
+    "src": "../assets/casp-logos/wydencapital-com-694a6a4b6e39.svg",
+    "alt": "Wyden Capital AG logo from wydencapital.com",
+    "source": "https://www.wydencapital.com/en/",
+    "sourceUrl": "https://www.wydencapital.com/wp-content/uploads/wyden-capital-logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "hercle-s-r-l": {
+    "src": "../assets/casp-logos/hercle-financial-490873fb2b7b.png",
+    "alt": "HERCLE S.R.L. logo from hercle.financial",
+    "source": "https://www.hercle.financial",
+    "sourceUrl": "https://hercle.com/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "floin-ag": {
+    "src": "../assets/casp-logos/floin-com-b6864cd2af36.svg",
+    "alt": "Floin AG logo from floin.com",
+    "source": "https://floin.com/",
+    "sourceUrl": "https://floin.com/assets/img/floin.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "damoon-technology-europe-ag": {
+    "src": "../assets/casp-logos/paymonade-tech-2087d78af576.ico",
+    "alt": "Damoon Technology (Europe) AG logo from paymonade.tech",
+    "source": "https://www.paymonade.tech",
+    "sourceUrl": "https://www.paymonade.tech/img/Favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "sygnum-europe-ag": {
+    "src": "../assets/casp-logos/sygnum-com-5e68e62a4618.ico",
+    "alt": "Sygnum Europe AG logo from sygnum.com",
+    "source": "https://www.sygnum.com/eu",
+    "sourceUrl": "https://www.sygnum.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "celsion-bank-ag": {
+    "src": "../assets/casp-logos/celsion-finance-com-f7f3c2b19451.png",
+    "alt": "Celsion Bank AG logo from celsion-finance.com",
+    "source": "https://www.celsion-finance.com",
+    "sourceUrl": "https://cdn.prod.website-files.com/6894489ef151d98990fc58ef/6894489ef151d98990fc5962_celsion-256.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "olliv-italia-s-r-l": {
+    "src": "../assets/casp-logos/coinflip-tech-d93f74b3aec2.svg",
+    "alt": "OLLIV ITALIA S.R.L. logo from coinflip.tech",
+    "source": "https://coinflip.tech/it-IT",
+    "sourceUrl": "https://www.datocms-assets.com/107373/1764170666-bloomberg.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bitcoin-suisse-europe-ag": {
+    "src": "../assets/casp-logos/bitcoinsuisse-com-4c39f3581581.png",
+    "alt": "Bitcoin Suisse (Europe) AG logo from bitcoinsuisse.com",
+    "source": "https://www.bitcoinsuisse.com",
+    "sourceUrl": "https://bitcoinsuisse.com/favicon/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "smart-valor-ag": {
+    "src": "../assets/casp-logos/smartvalor-com-0b57393ec50d.svg",
+    "alt": "SMART VALOR AG logo from smartvalor.com",
+    "source": "https://smartvalor.com/en/",
+    "sourceUrl": "https://smartvalor.com/en/assets/img/smart_valor_logo_white.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "rulematch-europe-ag": {
+    "src": "../assets/casp-logos/rulematch-com-ec92562bb65b.png",
+    "alt": "RULEMATCH Europe AG logo from rulematch.com",
+    "source": "https://www.rulematch.com/europe",
+    "sourceUrl": "https://www.rulematch.com/wp-content/themes/rulematch/assets/img/favicon/apple-icon-57x57.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "uab-decentralized": {
+    "src": "../assets/casp-logos/coingate-com-45f6bd5a406c.png",
+    "alt": "UAB Decentralized logo from coingate.com",
+    "source": "https://coingate.com",
+    "sourceUrl": "https://coingate.com/app/themes/coingate/dist/images/icons/favicons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "nuvei-liquidity-uab": {
+    "src": "../assets/casp-logos/simplex-com-535698a6e4ad.png",
+    "alt": "Nuvei Liquidity UAB logo from simplex.com",
+    "source": "https://simplex.com",
+    "sourceUrl": "https://simplexprd.wpenginepowered.com/scorpius/uploads/2021/02/logo-kucoin.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bitstamp-europe-s-a": {
+    "src": "../assets/casp-logos/bitstamp-net-cf79e1a0b6f7.ico",
+    "alt": "Bitstamp Europe S.A. logo from bitstamp.net",
+    "source": "https://www.bitstamp.net/",
+    "sourceUrl": "https://www.bitstamp.net/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "kaiser-partner-privatbank-ag": {
+    "src": "../assets/casp-logos/kaiserpartner-bank-118af1da6433.ico",
+    "alt": "Kaiser Partner Privatbank AG logo from kaiserpartner.bank",
+    "source": "https://kaiserpartner.bank",
+    "sourceUrl": "https://kaiserpartner.bank/wp-content/themes/kp-wp-theme/favicon.ico",
+    "method": "link-shortcut",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "coinbase-luxembourg-s-a": {
+    "src": "../assets/casp-logos/coinbase-com-6deea128d9c1.ico",
+    "alt": "Coinbase Luxembourg S.A. logo from coinbase.com",
+    "source": "https://coinbase.com",
+    "sourceUrl": "https://coinbase.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "clearstream-banking-s-a": {
+    "src": "../assets/casp-logos/clearstream-com-2afeb188c500.svg",
+    "alt": "Clearstream Banking S.A. logo from clearstream.com",
+    "source": "https://www.clearstream.com/clearstream-en/",
+    "sourceUrl": "https://www.clearstream.com/caas/v1/media/4602824/data/4dc0fef3a6929ebef570ecd66b15d315",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "uab-micar-assets": {
+    "src": "../assets/casp-logos/myriadcapital-lt-921bcee29242.png",
+    "alt": "UAB Micar assets logo from myriadcapital.lt",
+    "source": "https://myriadcapital.lt",
+    "sourceUrl": "https://myriadcapital.lt/wp-content/themes/myriad-capital/images/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "uab-blue-emi-lt": {
+    "src": "../assets/casp-logos/blueemi-com-aee512ba5b15.png",
+    "alt": "UAB BLUE EMI LT logo from blueemi.com",
+    "source": "https://blueemi.com",
+    "sourceUrl": "https://blueemi.com/wp-content/uploads/2024/07/cropped-BLUE_EMI_Logo_main-1.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "robinhood-europe-uab": {
+    "src": "../assets/casp-logos/robinhood-com-2bd9c6cc404a.png",
+    "alt": "Robinhood Europe UAB logo from robinhood.com",
+    "source": "https://www.robinhood.com",
+    "sourceUrl": "https://robinhood.com/us/en/rh_favicon_60.png?v=2024",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "newrails-uab": {
+    "src": "../assets/casp-logos/newrails-xyz-f5de09914469.svg",
+    "alt": "Newrails, UAB logo from newrails.xyz",
+    "source": "https://www.newrails.xyz",
+    "sourceUrl": "https://assets-static.newrails.xyz/images/newrails.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "b2c2-europe-sarl": {
+    "src": "../assets/casp-logos/b2c2-com-690be7216cf5.svg",
+    "alt": "B2C2 Europe Sarl logo from b2c2.com",
+    "source": "https://www.b2c2.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/6140ac854c72f30bea35cc50/6141df3a4a83e8b66c12c8e3_logo-817322.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "standard-chartered-luxembourg-s-a": {
+    "src": "../assets/casp-logos/sc-com-a111fb8bfd88.ico",
+    "alt": "Standard Chartered Luxembourg S.A. logo from sc.com",
+    "source": "https://www.sc.com/",
+    "sourceUrl": "https://www.sc.com/favicon.ico",
+    "method": "link-shortcut",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "zodia-custody-europe-s-a": {
+    "src": "../assets/casp-logos/zodia-custody-com-3d8474173491.svg",
+    "alt": "Zodia Custody (Europe) S.A. logo from zodia-custody.com",
+    "source": "https://zodia-custody.com/",
+    "sourceUrl": "https://zodia-custody.com/wp-content/themes/zodia/images/logo-white.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "banking-circle-s-a": {
+    "src": "../assets/casp-logos/bankingcircle-com-64243381f482.svg",
+    "alt": "Banking Circle S.A. logo from bankingcircle.com",
+    "source": "https://bankingcircle.com/",
+    "sourceUrl": "https://www.bankingcircle.com/wp-content/uploads/2024/10/BCLogo2024.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bridge-building-s-a": {
+    "src": "../assets/casp-logos/bridge-xyz-88b75911d691.svg",
+    "alt": "Bridge Building S.A. logo from bridge.xyz",
+    "source": "https://www.bridge.xyz",
+    "sourceUrl": "https://cdn.prod.website-files.com/66c78bffc753432b33c4f61a/676f68fb0dcc0518dabd8fdb_Co-branded-Bridge-Stripe-Vertical-Small-trans.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "swissquote-bank-europe-sa": {
+    "src": "../assets/casp-logos/swissquote-com-d93d38ad0ded.jpg",
+    "alt": "Swissquote Bank Europe SA logo from swissquote.com",
+    "source": "https://www.swissquote.com/en-lu/private",
+    "sourceUrl": "https://www.swissquote.com/api/internal/media/get-media?filename=2025-08/swissquote-swiss-leader-digital-banking.jpg",
+    "method": "og:image",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "blockben-sia": {
+    "src": "../assets/casp-logos/blockben-com-0438d6aee0a1.png",
+    "alt": "BlockBen SIA logo from blockben.com",
+    "source": "https://blockben.com/en/",
+    "sourceUrl": "https://blockben.com/favicons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "sia-paybis-europe": {
+    "src": "../assets/casp-logos/paybis-com-e6729dcc0f47.png",
+    "alt": "SIA \"Paybis Europe\" logo from paybis.com",
+    "source": "https://paybis.com/",
+    "sourceUrl": "https://cdn.paybis.com/resources/favicons/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "neverless-sia": {
+    "src": "../assets/casp-logos/neverless-com-4bf00b314637.png",
+    "alt": "Neverless SIA logo from neverless.com",
+    "source": "https://neverless.com/",
+    "sourceUrl": "https://neverless.com/apple-touch-icon-57x57_dark.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "cps-europe-s-a": {
+    "src": "../assets/casp-logos/enum8-com-4f8dc67f6263.ico",
+    "alt": "CPS Europe S.A. logo from enum8.com",
+    "source": "https://www.enum8.com/",
+    "sourceUrl": "https://www.enum8.com/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "hodleris-sia": {
+    "src": "../assets/casp-logos/hfinance-eu-7a00e5beed12.png",
+    "alt": "Hodleris SIA logo from hfinance.eu",
+    "source": "https://hfinance.eu/",
+    "sourceUrl": "https://hfinance.eu/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bleap-sia": {
+    "src": "../assets/casp-logos/bleap-finance-8a777f35a02d.png",
+    "alt": "Bleap SIA logo from bleap.finance",
+    "source": "https://www.bleap.finance",
+    "sourceUrl": "https://cdn.bleap.finance/website-images/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "stokr-s-a": {
+    "src": "../assets/casp-logos/stokr-io-0dab1055fda6.ico",
+    "alt": "STOKR S.A. logo from stokr.io",
+    "source": "https://stokr.io/",
+    "sourceUrl": "https://stokr.io/favicon.ico",
+    "method": "link-shortcut",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "nodu-digital-sia": {
+    "src": "../assets/casp-logos/nodu-fi-ebecd5404fd8.png",
+    "alt": "Nodu Digital, SIA logo from nodu.fi",
+    "source": "https://nodu.fi",
+    "sourceUrl": "https://nodu.fi/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "as-twino-investments": {
+    "src": "../assets/casp-logos/twino-eu-44618933fa2c.png",
+    "alt": "AS TWINO Investments logo from twino.eu",
+    "source": "https://www.twino.eu/en",
+    "sourceUrl": "https://www.twino.eu/apple-touch-icon-57x57.png",
+    "method": "link-apple-touch-icon-precomposed",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "okx-europe-limited": {
+    "src": "../assets/casp-logos/okx-com-f9127394ccf1.png",
+    "alt": "OKX Europe Limited logo from okx.com",
+    "source": "https://www.okx.com",
+    "sourceUrl": "https://www.okx.com/cdn/assets/imgs/236/DD7AC9432E675714.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "foris-dax-mt-limited": {
+    "src": "../assets/casp-logos/crypto-com-3218fd325fca.svg",
+    "alt": "Foris DAX MT Limited logo from crypto.com",
+    "source": "https://crypto.com",
+    "sourceUrl": "https://mkt-site-asset.crypto.com/assets/logo/crypto-com.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "nexdesk-sia": {
+    "src": "../assets/casp-logos/nexdesk-io-446a26fab888.ico",
+    "alt": "Nexdesk SIA logo from nexdesk.io",
+    "source": "https://nexdesk.io/",
+    "sourceUrl": "https://nexdesk.io/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "gemini-intergalactic-eu-ltd": {
+    "src": "../assets/casp-logos/gemini-com-a9f3fcf644dc.png",
+    "alt": "Gemini Intergalactic EU Ltd logo from gemini.com",
+    "source": "https://www.gemini.com",
+    "sourceUrl": "https://www.gemini.com/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "blue-cube-malta-limited": {
+    "src": "../assets/casp-logos/blockchain-com-8931ef2d2c2c.ico",
+    "alt": "Blue Cube (Malta) Limited logo from blockchain.com",
+    "source": "https://www.blockchain.com",
+    "sourceUrl": "https://www.blockchain.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "gate-technology-limited": {
+    "src": "../assets/casp-logos/gate-com-7e1cf0b67233.webp",
+    "alt": "Gate Technology Limited logo from gate.com",
+    "source": "https://www.gate.com/en-eu",
+    "sourceUrl": "https://gimg2.staticimgs.com/logo/174710317166486220-open_sesame_night.webp?w=256&amp;q=75",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "zillion-bits-limited": {
+    "src": "../assets/casp-logos/zbx-com-368629d430a8.png",
+    "alt": "Zillion Bits Limited logo from zbx.com",
+    "source": "https://www.zbx.com",
+    "sourceUrl": "https://www.zbx.com/logo-app.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "payhound-limited": {
+    "src": "../assets/casp-logos/payhound-com-7621ba177a1f.svg",
+    "alt": "Payhound Limited logo from payhound.com",
+    "source": "https://www.payhound.com",
+    "sourceUrl": "https://cdn.prod.website-files.com/67d011426fd80006d563ff6a/67d011426fd80006d563ff96_logo-footer.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "altarius-asset-management-limited": {
+    "src": "../assets/casp-logos/altariusgroup-com-c1b74913066e.png",
+    "alt": "Altarius Asset Management Limited logo from altariusgroup.com",
+    "source": "https://www.altariusgroup.com",
+    "sourceUrl": "https://altariusgroup.com/wp-content/uploads/2024/06/cropped-altarius-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "socios-europe-services-limited": {
+    "src": "../assets/casp-logos/socios-com-c295b5dbe4d8.svg",
+    "alt": "Socios Europe Services Limited logo from socios.com",
+    "source": "https://www.socios.com",
+    "sourceUrl": "https://www.socios.com/wp-content/themes/socios/images/socios-logo-horizontal.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "calamatta-cuschieri-investment-services-limited": {
+    "src": "../assets/casp-logos/cc-com-mt-6b8590448a8c.png",
+    "alt": "Calamatta Cuschieri Investment Services Limited logo from cc.com.mt",
+    "source": "https://cc.com.mt",
+    "sourceUrl": "https://cc.com.mt/wp-content/themes/calamatta-cuschieri/favicon/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "sia-alpharoute": {
+    "src": "../assets/casp-logos/kangaexchange-eu-7edd5a1ff8e0.ico",
+    "alt": "SIA AlphaRoute logo from kangaexchange.eu",
+    "source": "https://www.kangaexchange.eu/",
+    "sourceUrl": "https://kangaexchange.eu/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "trek-technologies-sia": {
+    "src": "../assets/casp-logos/eu-backpack-exchange-6bacd335f994.png",
+    "alt": "\"Trek Technologies\" SIA logo from eu.backpack.exchange",
+    "source": "https://eu.backpack.exchange/",
+    "sourceUrl": "https://eu.backpack.exchange/assets/logo.png",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "system-pay-services-malta-limited": {
+    "src": "../assets/casp-logos/bvnk-com-674755585164.svg",
+    "alt": "System Pay Services (Malta) Limited logo from bvnk.com",
+    "source": "https://bvnk.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/69aaae9fde6aa81b8078e93f/69f842fc0c0f40f1c2a26605_worldpay.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "stable-mint-ltd": {
+    "src": "../assets/casp-logos/stablemint-io-86f9b4dc4d3f.svg",
+    "alt": "Stable Mint Ltd. logo from stablemint.io",
+    "source": "https://stablemint.io/",
+    "sourceUrl": "https://stablemint.io/images/stable-big.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "cf-technologies-ltd": {
+    "src": "../assets/casp-logos/xcoins-com-8880ad639c73.png",
+    "alt": "CF Technologies Ltd logo from xcoins.com",
+    "source": "https://xcoins.com/en",
+    "sourceUrl": "https://xcoins.com/wp-content/uploads/2021/11/cropped-favicon@2x-180x180.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "falconx-limited": {
+    "src": "../assets/casp-logos/falconx-io-e608c18f1a36.png",
+    "alt": "FalconX Limited logo from falconx.io",
+    "source": "https://www.falconx.io/",
+    "sourceUrl": "https://cdn.prod.website-files.com/67cf8df6829ec3cb958afd57/67eedf5b976599a717f29c7c_falconx_webclip_250px.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "op-digital-services-limited": {
+    "src": "../assets/casp-logos/openpayd-com-054542f050bf.ico",
+    "alt": "OP Digital Services Limited logo from openpayd.com",
+    "source": "https://www.openpayd.com/",
+    "sourceUrl": "https://www.openpayd.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "moonpay-europe-b-v": {
+    "src": "../assets/casp-logos/moonpay-com-2f2fe1cbd056.svg",
+    "alt": "MoonPay Europe B.V. logo from moonpay.com",
+    "source": "https://www.moonpay.com/",
+    "sourceUrl": "https://payload-marketing.moonpay.com/api/media/file/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "damex-digital-ltd": {
+    "src": "../assets/casp-logos/damex-io-948c3bf9859f.png",
+    "alt": "Damex Digital LTD logo from damex.io",
+    "source": "https://www.damex.io",
+    "sourceUrl": "https://damex.io/wp-content/uploads/2022/11/61e1a47d6bf37f41bfec1fb0_DAM-Favicon-Green-32-x-32.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "everest-network-limited": {
+    "src": "../assets/casp-logos/everest-org-f7ed157f160f.svg",
+    "alt": "Everest Network Limited logo from everest.org",
+    "source": "https://www.everest.org/",
+    "sourceUrl": "https://www.everest.org/favicon.svg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "hidden-road-partners-civ-nl-b-v": {
+    "src": "../assets/casp-logos/hiddenroad-com-12a765046d3f.ico",
+    "alt": "Hidden Road Partners CIV NL B.V. logo from hiddenroad.com",
+    "source": "https://hiddenroad.com/",
+    "sourceUrl": "https://ripple.com/favicon.ico?favicon.1-g7pe_vm_qz0.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bequant-pro-limited": {
+    "src": "../assets/casp-logos/bequant-pro-35fe47ff90e9.ico",
+    "alt": "Bequant Pro Limited logo from bequant.pro",
+    "source": "https://bequant.pro/",
+    "sourceUrl": "https://bequant.pro/favicon.ico?favicon.0ht5-pqloepj~.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bitstaete-b-v": {
+    "src": "../assets/casp-logos/bitstaete-nl-2f9bcfef2b96.svg",
+    "alt": "BitStaete B.V. logo from bitstaete.nl",
+    "source": "https://bitstaete.nl/",
+    "sourceUrl": "https://cdn-ilbccjh.nitrocdn.com/VYTLINknDNIIlqorQAKckJLmCxWTrgyv/assets/images/optimized/rev-50831b1/bitstaete.nl/wp-content/uploads/2024/03/bitstaete-footer-logo.svg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "one-trading-exchange-b-v": {
+    "src": "../assets/casp-logos/onetrading-com-7dd8ab99ee45.png",
+    "alt": "One Trading Exchange B.V. logo from onetrading.com",
+    "source": "https://www.onetrading.com",
+    "sourceUrl": "https://framerusercontent.com/images/LcVbLwjbqieDiv2urAVTyJi2Gw.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "avianlabs-netherlands-b-v": {
+    "src": "../assets/casp-logos/sling-money-ca7ea3425f62.png",
+    "alt": "AvianLabs Netherlands B.V. logo from sling.money",
+    "source": "https://sling.money/",
+    "sourceUrl": "https://morsemoney.com/apple-icon.png?apple-icon.30ykp9guwyi-u.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "zap-strike-europe-limited": {
+    "src": "../assets/casp-logos/strike-me-dd08aea8b22b.ico",
+    "alt": "Zap (Strike) Europe Limited logo from strike.me",
+    "source": "https://strike.me/en-GB/",
+    "sourceUrl": "https://strike.me/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "amdax-b-v": {
+    "src": "../assets/casp-logos/amdax-com-3dfa3c844807.svg",
+    "alt": "Amdax B.V. logo from amdax.com",
+    "source": "https://www.amdax.com/nl",
+    "sourceUrl": "https://cdn.amdax.com/web/images/icons8-linkedin.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "zebedee-europe-b-v": {
+    "src": "../assets/casp-logos/zbd-gg-2ea91010aeea.ico",
+    "alt": "Zebedee Europe B.V. logo from zbd.gg",
+    "source": "https://zbd.gg/",
+    "sourceUrl": "https://zbdpay.com/favicon.ico?favicon.3u-3at_swr-2v.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "eu-internet-ventures-b-v": {
+    "src": "../assets/casp-logos/banxa-com-c5fac934c9a4.webp",
+    "alt": "EU Internet Ventures B.V. logo from banxa.com",
+    "source": "https://banxa.com",
+    "sourceUrl": "https://banxa.com/wp-content/uploads/2025/01/Banxa-Logo-LightGradient.webp",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "finst-b-v": {
+    "src": "../assets/casp-logos/finst-com-f7768b7b619c.png",
+    "alt": "Finst B.V. logo from finst.com",
+    "source": "https://finst.com/",
+    "sourceUrl": "https://finst.com/icon-180.8841d063c0.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "decubate-b-v": {
+    "src": "../assets/casp-logos/decubate-com-718dea935e85.svg",
+    "alt": "Decubate B.V. logo from decubate.com",
+    "source": "https://www.decubate.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/623b471f31c24a4a20eb3ca7/627bcf290e11371569f8466d_Decubate-MobileLogo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "blox-b-v": {
+    "src": "../assets/casp-logos/weareblox-com-d0d1d6760083.png",
+    "alt": "BLOX B.V. logo from weareblox.com",
+    "source": "https://weareblox.com/",
+    "sourceUrl": "https://weareblox.com/apple-icon.png?64ad3234afe37b16",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "fiat-republic-netherlands-b-v": {
+    "src": "../assets/casp-logos/fiatrepublic-com-03a7febaf085.webp",
+    "alt": "Fiat Republic Netherlands B.V. logo from fiatrepublic.com",
+    "source": "https://fiatrepublic.com/",
+    "sourceUrl": "https://fiatrepublic.com/images/home_bridge.webp",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "zerohash-europe-b-v": {
+    "src": "../assets/casp-logos/zerohash-com-3f3775ac11e8.png",
+    "alt": "zerohash europe B.V. logo from zerohash.com",
+    "source": "https://zerohash.com/eu",
+    "sourceUrl": "https://cdn.prod.website-files.com/68c59605946d2fed8ac8bcbd/68c59606946d2fed8ac8c017_logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "vivid-money-b-v": {
+    "src": "../assets/casp-logos/vivid-money-ad85a6b58fec.png",
+    "alt": "Vivid Money B.V. logo from vivid.money",
+    "source": "https://vivid.money/",
+    "sourceUrl": "https://website-static.vivid.money/static/images/favicons/256x256.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bitonic-b-v": {
+    "src": "../assets/casp-logos/bitonic-nl-1af4e2737e7a.png",
+    "alt": "Bitonic B.V. logo from bitonic.nl",
+    "source": "https://bitonic.nl/en/",
+    "sourceUrl": "https://bitonic.nl/public/img/app-icons/icon-black-green.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "web3-technology-b-v": {
+    "src": "../assets/casp-logos/ari10-com-a06cd15e34c0.png",
+    "alt": "WEB3 Technology B.V. logo from ari10.com",
+    "source": "https://ari10.com/en",
+    "sourceUrl": "https://cdn.prod.website-files.com/67a0c7c1c66639ce76fb134c/681d021dcf301729c3a2e4fa_4e818335f42d54404eb5904df15ad422_untitled-ui-logo.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bitmymoney-b-v": {
+    "src": "../assets/casp-logos/bitmymoney-com-8ec399be1463.svg",
+    "alt": "Bitmymoney B.V. logo from bitmymoney.com",
+    "source": "https://www.bitmymoney.com/",
+    "sourceUrl": "https://www.bitmymoney.com/static/img/2019/bmmlogo-white.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "coinmerce-b-v": {
+    "src": "../assets/casp-logos/coinmerce-io-b70c5310c741.png",
+    "alt": "Coinmerce B.V. logo from coinmerce.io",
+    "source": "https://coinmerce.io",
+    "sourceUrl": "https://coinmerce.io/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "btc-direct-europe-b-v": {
+    "src": "../assets/casp-logos/my-btcdirect-eu-fea58ed0ce23.png",
+    "alt": "BTC Direct Europe B.V. logo from my.btcdirect.eu",
+    "source": "https://my.btcdirect.eu/",
+    "sourceUrl": "https://btcdirect.eu/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "change-securities-b-v": {
+    "src": "../assets/casp-logos/changeinvest-com-679d93a487ce.png",
+    "alt": "Change Securities B.V. logo from changeinvest.com",
+    "source": "https://www.changeinvest.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/5e6ba7d73bd4764a57337c92/63763e5a734dba9279e9696d_Change_Logo_Full_Black%402x.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "d2x-group-n-v": {
+    "src": "../assets/casp-logos/d2x-com-0a30f31060f0.svg",
+    "alt": "D2X Group N.V. logo from d2x.com",
+    "source": "https://d2x.com/",
+    "sourceUrl": "https://d2x.com/logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "clearbank-europe-n-v": {
+    "src": "../assets/casp-logos/clear-bank-7ad4f3804bba.svg",
+    "alt": "ClearBank Europe N.V. logo from clear.bank",
+    "source": "https://clear.bank/",
+    "sourceUrl": "https://clear.bank/uploads/Logos/New-homepage-ticker/Airwallex-Logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bitpay-b-v": {
+    "src": "../assets/casp-logos/bitpay-com-21efd47e22e9.png",
+    "alt": "BitPay B.V. logo from bitpay.com",
+    "source": "https://www.bitpay.com/",
+    "sourceUrl": "https://framerusercontent.com/images/2iIIkkV5Qoskq2dfhwja8G8rFW0.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "digital-currency-services-b-v": {
+    "src": "../assets/casp-logos/happycoins-com-3c7877f7d8b4.png",
+    "alt": "Digital Currency Services B.V. logo from happycoins.com",
+    "source": "https://happycoins.com/",
+    "sourceUrl": "https://www.happycoins.com/favicon/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "webull-securities-europe-b-v": {
+    "src": "../assets/casp-logos/webull-eu-4ae706af43d2.ico",
+    "alt": "Webull Securities (Europe) B.V. logo from webull.eu",
+    "source": "https://www.webull.eu/",
+    "sourceUrl": "https://wbstatic.webullfintech.com/v0/web/favicon.ico",
+    "method": "link-shortcut",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "firi-as": {
+    "src": "../assets/casp-logos/firi-com-be0b3bd4211c.png",
+    "alt": "FIRI AS logo from firi.com",
+    "source": "https://firi.com/no",
+    "sourceUrl": "https://firi.com/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "blockrise-capital-b-v": {
+    "src": "../assets/casp-logos/blockrise-com-0a1d62b89bed.png",
+    "alt": "Blockrise Capital B.V. logo from blockrise.com",
+    "source": "https://www.blockrise.com/en",
+    "sourceUrl": "https://cdn.prod.website-files.com/6909f851e374984c24b4b77c/6909f91ff63f50466d628b97_webclip.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "ak-jensen-norway-as": {
+    "src": "../assets/casp-logos/akj-com-b31e1b0ae7a3.png",
+    "alt": "AK JENSEN NORWAY AS logo from akj.com",
+    "source": "https://www.akj.com/",
+    "sourceUrl": "https://cdn.prod.website-files.com/655b7aeacc77bd33098fbac6/65df1e133a0bf545950eba18_svgviewer-png-output.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "norwegian-block-exchange-as": {
+    "src": "../assets/casp-logos/nbx-com-82d2fef1211e.svg",
+    "alt": "NORWEGIAN BLOCK EXCHANGE AS logo from nbx.com",
+    "source": "https://nbx.com",
+    "sourceUrl": "https://cdn.prod.website-files.com/6152dfaed2ce58d94ef37b88/619509e489aaca39961511c2_DarkLogo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "k33-markets-as": {
+    "src": "../assets/casp-logos/k33-com-f2a83934dc95.webp",
+    "alt": "K33 MARKETS as logo from k33.com",
+    "source": "https://www.k33.com",
+    "sourceUrl": "https://cdn.prod.website-files.com/645396e8d92c58b99155faf3/67ee71645b3accd61be4c41d_k33-alternative-image.webp",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bison-bank-s-a": {
+    "src": "../assets/casp-logos/bisonbank-com-bc7e09f5ef7e.png",
+    "alt": "Bison Bank, S.A. logo from bisonbank.com",
+    "source": "https://bisonbank.com/",
+    "sourceUrl": "https://bisonbank.com/wp-content/uploads/2026/03/BB26_favicon-150x150.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "ilirika-borzno-posredniska-hisa-d-d": {
+    "src": "../assets/casp-logos/ilirika-si-fc2061f90c28.png",
+    "alt": "ILIRIKA borzno posredniška hiša d.d. logo from ilirika.si",
+    "source": "https://www.ilirika.si/",
+    "sourceUrl": "https://framerusercontent.com/images/lYryDQBnxuZgIKFPrwnrAwoM.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "orcabay-financne-storitve-d-o-o": {
+    "src": "../assets/casp-logos/orcabay-io-abb0b38a3b70.png",
+    "alt": "Orcabay finančne storitve d.o.o. logo from orcabay.io",
+    "source": "https://orcabay.io/",
+    "sourceUrl": "https://orcabay.io/wp-content/uploads/elementor/thumbs/b2c2-logo-q4fe366hlev04535n5elhhn8mberzr894a27wa1mno.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "safello-ab": {
+    "src": "../assets/casp-logos/safello-com-5a813f350def.png",
+    "alt": "Safello AB logo from safello.com",
+    "source": "https://www.safello.com",
+    "sourceUrl": "https://framerusercontent.com/images/HnkQNzUAvioQuhAAd39rfNIBVE.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "tyr-markets-as": {
+    "src": "../assets/casp-logos/tyrmarkets-net-30acd9bcc1f9.png",
+    "alt": "TÝR MARKETS AS logo from tyrmarkets.net",
+    "source": "https://www.tyrmarkets.net/no",
+    "sourceUrl": "https://www.tyrmarkets.net/web-icons/Icon16.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "fintech-sk-s-r-o": {
+    "src": "../assets/casp-logos/bitcoinmat-sk-5e5bf3025bae.svg",
+    "alt": "FINTECH SK s. r. o. logo from bitcoinmat.sk",
+    "source": "https://bitcoinmat.sk",
+    "sourceUrl": "https://bitcoinmat.sk/favicon.svg",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "bare-bitcoin-as": {
+    "src": "../assets/casp-logos/barebitcoin-no-da1a2c556e63.svg",
+    "alt": "BARE BITCOIN AS logo from barebitcoin.no",
+    "source": "https://barebitcoin.no/",
+    "sourceUrl": "https://barebitcoin.no/_next/static/media/bare-bitcoin-scrolled.29-d89hmjcuk5.svg?dpl=dpl_CrkhLaguYA4rH3RSJ1pKDBMhQEbs",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "firefish-europe-s-r-o": {
+    "src": "../assets/casp-logos/firefish-io-93caf8accda3.png",
+    "alt": "Firefish Europe s.r.o logo from firefish.io",
+    "source": "https://firefish.io/",
+    "sourceUrl": "https://framerusercontent.com/images/hgJ6KaN90ZhuVhzn0WI91XOVMV8.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "monflo-b-v": {
+    "src": "../assets/casp-logos/monflo-com-0a8bb8217d5a.ico",
+    "alt": "Monflo B.V. logo from monflo.com",
+    "source": "https://www.monflo.com",
+    "sourceUrl": "https://www.monflo.com/favicon.ico",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "fintegence-s-r-o": {
+    "src": "../assets/casp-logos/cryptovoucher-io-8c3ffd5c8a0c.svg",
+    "alt": "Fintegence, s.r.o. logo from cryptovoucher.io",
+    "source": "https://cryptovoucher.io/",
+    "sourceUrl": "https://cryptovoucher.io/_nuxt/cv-black.Lsz7yob1.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "fumbi-s-r-o": {
+    "src": "../assets/casp-logos/fumbi-network-87e60db3f56c.svg",
+    "alt": "FUMBI, s.r.o. logo from fumbi.network",
+    "source": "https://fumbi.network/sk/",
+    "sourceUrl": "https://fumbi.network/wp-content/themes/wp-bootstrap-starter/assets/images/fumbi-logo-dark-new.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "madison-six-j-s-a": {
+    "src": "../assets/casp-logos/madisonsix-com-7d40fd3615e5.svg",
+    "alt": "Madison Six j. s. a. logo from madisonsix.com",
+    "source": "https://madisonsix.com/",
+    "sourceUrl": "https://madisonsix.com/img/logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "okazio-s-r-o": {
+    "src": "../assets/casp-logos/okazio-sk-db506c723e6d.png",
+    "alt": "Okazio s.r.o. logo from okazio.sk",
+    "source": "https://okazio.sk/",
+    "sourceUrl": "https://okazio.sk/wp-content/uploads/2025/03/ok-zel-1.png",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "incrementum-druzba-za-izvajanje-storitev-v-zvezi-s-kriptosredstvi-d-o-o": {
+    "src": "../assets/casp-logos/incrementum-si-28a2b51c7735.jpg",
+    "alt": "INCREMENTUM družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o. logo from incrementum.si",
+    "source": "https://incrementum.si/",
+    "sourceUrl": "https://incrementum.si/wp-content/uploads/2025/05/cropped-logo-incrementum-300x86.jpg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "stonex-digital-international-limited": {
+    "src": "../assets/casp-logos/stonex-com-8defad8551cf.svg",
+    "alt": "StoneX Digital International Limited logo from stonex.com",
+    "source": "https://www.stonex.com",
+    "sourceUrl": "https://marketingcenter.stonex.com/m/572f3403a7dde954/original/StoneX-logo-black-137x30.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
   }
 }
