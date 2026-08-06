@@ -46,3 +46,25 @@ npm run build:css
 ```
 
 Fonts (Inter), icons (Font Awesome), and the flag-emoji polyfill are vendored under `assets/vendor/`. The site makes no third-party requests except Umami analytics.
+
+## CASP logos
+
+Entity pages use `data/casp-logos.json` for locally stored provider branding. To
+refresh the best-effort enrichment from the official website URLs in the
+register, run:
+
+```
+npm run logos:harvest
+npm run build:entities
+```
+
+For a focused QA retry, use `node scripts/harvest-casp-logos.js
+--retry-missing` (only unresolved domains) or `--retry-low-confidence` (only
+previously flagged/low-confidence sources). Both modes keep the regulatory
+data pipeline independent of provider-site availability.
+
+The harvester records each image's source URL, discovery method, and retrieval
+date in the manifest, writes a review report to `data/casp-logo-report.json`,
+and leaves a building fallback where no reliable image is available. It is
+intentionally not part of scheduled data CI because third-party websites may
+be unavailable or rate-limit automated requests.

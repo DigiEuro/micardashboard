@@ -1,0 +1,2256 @@
+{
+  "generatedAt": "2026-08-06T10:07:55.648Z",
+  "entities": 320,
+  "domains": 312,
+  "results": [
+    {
+      "slug": "relai-eu-sasu",
+      "name": "RELAI EU SASU",
+      "status": "missing",
+      "reason": "no valid official website"
+    },
+    {
+      "slug": "societe-generale-forge",
+      "name": "SOCIETE GENERALE - FORGE",
+      "status": "missing",
+      "reason": "no valid official website"
+    },
+    {
+      "slug": "banque-delubac-et-cie",
+      "name": "BANQUE DELUBAC ET CIE",
+      "status": "missing",
+      "reason": "no valid official website"
+    },
+    {
+      "slug": "noemon-tech-ltd",
+      "name": "NOEMON TECH LTD",
+      "domain": "noemon.tech",
+      "status": "missing",
+      "reason": "no usable logo image discovered",
+      "tried": [
+        "https://www.noemon.tech/favicon.svg",
+        "https://www.noemon.tech/favicon.ico",
+        "https://www.noemon.tech/favicon.png",
+        "https://www.noemon.tech/favicon.webp",
+        "https://www.noemon.tech/apple-touch-icon.png",
+        "https://www.noemon.tech/logo.svg",
+        "https://www.noemon.tech/logo.png",
+        "https://www.noemon.tech/logo.webp",
+        "https://www.noemon.tech/logo.jpg",
+        "https://www.noemon.tech/assets/logo.svg",
+        "https://www.noemon.tech/assets/logo.png",
+        "https://www.noemon.tech/assets/logo.webp",
+        "https://www.noemon.tech/images/logo.svg",
+        "https://www.noemon.tech/images/logo.png",
+        "https://www.noemon.tech/images/logo.webp",
+        "https://www.noemon.tech/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "ip-wbtcb-solutions-s-r-o",
+      "name": "IP wBTCb solutions, s.r.o.",
+      "domain": "bit.plus",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bit.plus/favicon.svg",
+        "http://www.bit.plus/favicon.ico",
+        "http://www.bit.plus/favicon.png",
+        "http://www.bit.plus/favicon.webp",
+        "http://www.bit.plus/apple-touch-icon.png",
+        "http://www.bit.plus/logo.svg",
+        "http://www.bit.plus/logo.png",
+        "http://www.bit.plus/logo.webp",
+        "http://www.bit.plus/logo.jpg",
+        "http://www.bit.plus/assets/logo.svg",
+        "http://www.bit.plus/assets/logo.png",
+        "http://www.bit.plus/assets/logo.webp",
+        "http://www.bit.plus/images/logo.svg",
+        "http://www.bit.plus/images/logo.png",
+        "http://www.bit.plus/images/logo.webp",
+        "http://www.bit.plus/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "wbtcb-cz-s-r-o",
+      "name": "wBTCb.cz, s.r.o.",
+      "domain": "bit.plus",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bit.plus/favicon.svg",
+        "http://www.bit.plus/favicon.ico",
+        "http://www.bit.plus/favicon.png",
+        "http://www.bit.plus/favicon.webp",
+        "http://www.bit.plus/apple-touch-icon.png",
+        "http://www.bit.plus/logo.svg",
+        "http://www.bit.plus/logo.png",
+        "http://www.bit.plus/logo.webp",
+        "http://www.bit.plus/logo.jpg",
+        "http://www.bit.plus/assets/logo.svg",
+        "http://www.bit.plus/assets/logo.png",
+        "http://www.bit.plus/assets/logo.webp",
+        "http://www.bit.plus/images/logo.svg",
+        "http://www.bit.plus/images/logo.png",
+        "http://www.bit.plus/images/logo.webp",
+        "http://www.bit.plus/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "tradevest-digital-assets-gmbh",
+      "name": "Tradevest Digital Assets GmbH",
+      "domain": "tradevest.ai",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.tradevest.ai/assets/logo.svg",
+        "http://www.tradevest.ai/assets/logo.png",
+        "http://www.tradevest.ai/assets/logo.webp",
+        "http://www.tradevest.ai/favicon.svg",
+        "http://www.tradevest.ai/favicon.ico",
+        "http://www.tradevest.ai/favicon.png",
+        "http://www.tradevest.ai/favicon.webp",
+        "http://www.tradevest.ai/apple-touch-icon.png",
+        "http://www.tradevest.ai/logo.svg",
+        "http://www.tradevest.ai/logo.png",
+        "http://www.tradevest.ai/logo.webp",
+        "http://www.tradevest.ai/logo.jpg",
+        "http://www.tradevest.ai/images/logo.svg",
+        "http://www.tradevest.ai/images/logo.png",
+        "http://www.tradevest.ai/images/logo.webp",
+        "http://www.tradevest.ai/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "tradevest-markets-ag",
+      "name": "Tradevest Markets AG",
+      "domain": "tradevest.ai",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.tradevest.ai/assets/logo.svg",
+        "http://www.tradevest.ai/assets/logo.png",
+        "http://www.tradevest.ai/assets/logo.webp",
+        "http://www.tradevest.ai/favicon.svg",
+        "http://www.tradevest.ai/favicon.ico",
+        "http://www.tradevest.ai/favicon.png",
+        "http://www.tradevest.ai/favicon.webp",
+        "http://www.tradevest.ai/apple-touch-icon.png",
+        "http://www.tradevest.ai/logo.svg",
+        "http://www.tradevest.ai/logo.png",
+        "http://www.tradevest.ai/logo.webp",
+        "http://www.tradevest.ai/logo.jpg",
+        "http://www.tradevest.ai/images/logo.svg",
+        "http://www.tradevest.ai/images/logo.png",
+        "http://www.tradevest.ai/images/logo.webp",
+        "http://www.tradevest.ai/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "volksbank-raiffeisenbank-oberbayern-sudost-eg",
+      "name": "Volksbank Raiffeisenbank Oberbayern Südost eG",
+      "domain": "www-vrbank-obb-so.de",
+      "status": "missing",
+      "reason": "website fetch failed: fetch failed",
+      "tried": [
+        "https://www-vrbank-obb-so.de/favicon.svg",
+        "https://www-vrbank-obb-so.de/favicon.ico",
+        "https://www-vrbank-obb-so.de/favicon.png",
+        "https://www-vrbank-obb-so.de/favicon.webp",
+        "https://www-vrbank-obb-so.de/apple-touch-icon.png",
+        "https://www-vrbank-obb-so.de/logo.svg",
+        "https://www-vrbank-obb-so.de/logo.png",
+        "https://www-vrbank-obb-so.de/logo.webp",
+        "https://www-vrbank-obb-so.de/logo.jpg",
+        "https://www-vrbank-obb-so.de/assets/logo.svg",
+        "https://www-vrbank-obb-so.de/assets/logo.png",
+        "https://www-vrbank-obb-so.de/assets/logo.webp",
+        "https://www-vrbank-obb-so.de/images/logo.svg",
+        "https://www-vrbank-obb-so.de/images/logo.png",
+        "https://www-vrbank-obb-so.de/images/logo.webp",
+        "https://www-vrbank-obb-so.de/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "banco-bilbao-vizcaya-argentaria-s-a",
+      "name": "Banco Bilbao Vizcaya Argentaria S.A.",
+      "domain": "bbva.es",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bbva.es/favicon.svg",
+        "http://www.bbva.es/favicon.ico",
+        "http://www.bbva.es/favicon.png",
+        "http://www.bbva.es/favicon.webp",
+        "http://www.bbva.es/apple-touch-icon.png",
+        "http://www.bbva.es/logo.svg",
+        "http://www.bbva.es/logo.png",
+        "http://www.bbva.es/logo.webp",
+        "http://www.bbva.es/logo.jpg",
+        "http://www.bbva.es/assets/logo.svg",
+        "http://www.bbva.es/assets/logo.png",
+        "http://www.bbva.es/assets/logo.webp",
+        "http://www.bbva.es/images/logo.svg",
+        "http://www.bbva.es/images/logo.png",
+        "http://www.bbva.es/images/logo.webp",
+        "http://www.bbva.es/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "kutxabank-s-a",
+      "name": "KUTXABANK S.A.",
+      "domain": "portal.kutxabank.es",
+      "status": "missing",
+      "reason": "website fetch failed: fetch failed",
+      "tried": [
+        "http://www.portal.kutxabank.es/favicon.svg",
+        "http://www.portal.kutxabank.es/favicon.ico",
+        "http://www.portal.kutxabank.es/favicon.png",
+        "http://www.portal.kutxabank.es/favicon.webp",
+        "http://www.portal.kutxabank.es/apple-touch-icon.png",
+        "http://www.portal.kutxabank.es/logo.svg",
+        "http://www.portal.kutxabank.es/logo.png",
+        "http://www.portal.kutxabank.es/logo.webp",
+        "http://www.portal.kutxabank.es/logo.jpg",
+        "http://www.portal.kutxabank.es/assets/logo.svg",
+        "http://www.portal.kutxabank.es/assets/logo.png",
+        "http://www.portal.kutxabank.es/assets/logo.webp",
+        "http://www.portal.kutxabank.es/images/logo.svg",
+        "http://www.portal.kutxabank.es/images/logo.png",
+        "http://www.portal.kutxabank.es/images/logo.webp",
+        "http://www.portal.kutxabank.es/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "v-bank-ag",
+      "name": "V-Bank AG",
+      "domain": "v-bank.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.v-bank.com/favicon.svg",
+        "http://www.v-bank.com/favicon.ico",
+        "http://www.v-bank.com/favicon.png",
+        "http://www.v-bank.com/favicon.webp",
+        "http://www.v-bank.com/apple-touch-icon.png",
+        "http://www.v-bank.com/logo.svg",
+        "http://www.v-bank.com/logo.png",
+        "http://www.v-bank.com/logo.webp",
+        "http://www.v-bank.com/logo.jpg",
+        "http://www.v-bank.com/assets/logo.svg",
+        "http://www.v-bank.com/assets/logo.png",
+        "http://www.v-bank.com/assets/logo.webp",
+        "http://www.v-bank.com/images/logo.svg",
+        "http://www.v-bank.com/images/logo.png",
+        "http://www.v-bank.com/images/logo.webp",
+        "http://www.v-bank.com/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "baden-wurttembergische-wertpapierborse-gmbh",
+      "name": "Baden-Württembergische Wertpapierbörse GmbH",
+      "domain": "bsdex.de",
+      "status": "missing",
+      "reason": "website fetch failed: fetch failed",
+      "tried": [
+        "http://www.bsdex.de/favicon.svg",
+        "http://www.bsdex.de/favicon.ico",
+        "http://www.bsdex.de/favicon.png",
+        "http://www.bsdex.de/favicon.webp",
+        "http://www.bsdex.de/apple-touch-icon.png",
+        "http://www.bsdex.de/logo.svg",
+        "http://www.bsdex.de/logo.png",
+        "http://www.bsdex.de/logo.webp",
+        "http://www.bsdex.de/logo.jpg",
+        "http://www.bsdex.de/assets/logo.svg",
+        "http://www.bsdex.de/assets/logo.png",
+        "http://www.bsdex.de/assets/logo.webp",
+        "http://www.bsdex.de/images/logo.svg",
+        "http://www.bsdex.de/images/logo.png",
+        "http://www.bsdex.de/images/logo.webp",
+        "http://www.bsdex.de/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "bpifrance-investissement",
+      "name": "Bpifrance Investissement",
+      "domain": "bpifrance.fr",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bpifrance.fr/favicon.svg",
+        "http://www.bpifrance.fr/favicon.ico",
+        "http://www.bpifrance.fr/favicon.png",
+        "http://www.bpifrance.fr/favicon.webp",
+        "http://www.bpifrance.fr/apple-touch-icon.png",
+        "http://www.bpifrance.fr/logo.svg",
+        "http://www.bpifrance.fr/logo.png",
+        "http://www.bpifrance.fr/logo.webp",
+        "http://www.bpifrance.fr/logo.jpg",
+        "http://www.bpifrance.fr/assets/logo.svg",
+        "http://www.bpifrance.fr/assets/logo.png",
+        "http://www.bpifrance.fr/assets/logo.webp",
+        "http://www.bpifrance.fr/images/logo.svg",
+        "http://www.bpifrance.fr/images/logo.png",
+        "http://www.bpifrance.fr/images/logo.webp",
+        "http://www.bpifrance.fr/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "coinhouse-sas",
+      "name": "COINHOUSE SAS",
+      "domain": "coinhouse.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.coinhouse.com/favicon.svg",
+        "http://www.coinhouse.com/favicon.ico",
+        "http://www.coinhouse.com/favicon.png",
+        "http://www.coinhouse.com/favicon.webp",
+        "http://www.coinhouse.com/apple-touch-icon.png",
+        "http://www.coinhouse.com/logo.svg",
+        "http://www.coinhouse.com/logo.png",
+        "http://www.coinhouse.com/logo.webp",
+        "http://www.coinhouse.com/logo.jpg",
+        "http://www.coinhouse.com/assets/logo.svg",
+        "http://www.coinhouse.com/assets/logo.png",
+        "http://www.coinhouse.com/assets/logo.webp",
+        "http://www.coinhouse.com/images/logo.svg",
+        "http://www.coinhouse.com/images/logo.png",
+        "http://www.coinhouse.com/images/logo.webp",
+        "http://www.coinhouse.com/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "meria-sas",
+      "name": "MERIA SAS",
+      "domain": "meria.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.meria.com/favicon.svg",
+        "http://www.meria.com/favicon.ico",
+        "http://www.meria.com/favicon.png",
+        "http://www.meria.com/favicon.webp",
+        "http://www.meria.com/apple-touch-icon.png",
+        "http://www.meria.com/logo.svg",
+        "http://www.meria.com/logo.png",
+        "http://www.meria.com/logo.webp",
+        "http://www.meria.com/logo.jpg",
+        "http://www.meria.com/assets/logo.svg",
+        "http://www.meria.com/assets/logo.png",
+        "http://www.meria.com/assets/logo.webp",
+        "http://www.meria.com/images/logo.svg",
+        "http://www.meria.com/images/logo.png",
+        "http://www.meria.com/images/logo.webp",
+        "http://www.meria.com/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "bitflyer-europe-s-a",
+      "name": "bitFlyer EUROPE S.A.",
+      "domain": "bitflyer.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bitflyer.com/favicon.svg",
+        "http://www.bitflyer.com/favicon.ico",
+        "http://www.bitflyer.com/favicon.png",
+        "http://www.bitflyer.com/favicon.webp",
+        "http://www.bitflyer.com/apple-touch-icon.png",
+        "http://www.bitflyer.com/logo.svg",
+        "http://www.bitflyer.com/logo.png",
+        "http://www.bitflyer.com/logo.webp",
+        "http://www.bitflyer.com/logo.jpg",
+        "http://www.bitflyer.com/assets/logo.svg",
+        "http://www.bitflyer.com/assets/logo.png",
+        "http://www.bitflyer.com/assets/logo.webp",
+        "http://www.bitflyer.com/images/logo.svg",
+        "http://www.bitflyer.com/images/logo.png",
+        "http://www.bitflyer.com/images/logo.webp",
+        "http://www.bitflyer.com/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "hauck-aufhauser-digital-custody-gmbh",
+      "name": "Hauck Aufhäuser Digital Custody GmbH",
+      "domain": "hal-privatbank.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 503",
+      "tried": [
+        "http://www.hal-privatbank.com/favicon.svg",
+        "http://www.hal-privatbank.com/favicon.ico",
+        "http://www.hal-privatbank.com/favicon.png",
+        "http://www.hal-privatbank.com/favicon.webp",
+        "http://www.hal-privatbank.com/apple-touch-icon.png",
+        "http://www.hal-privatbank.com/logo.svg",
+        "http://www.hal-privatbank.com/logo.png",
+        "http://www.hal-privatbank.com/logo.webp",
+        "http://www.hal-privatbank.com/logo.jpg",
+        "http://www.hal-privatbank.com/assets/logo.svg",
+        "http://www.hal-privatbank.com/assets/logo.png",
+        "http://www.hal-privatbank.com/assets/logo.webp",
+        "http://www.hal-privatbank.com/images/logo.svg",
+        "http://www.hal-privatbank.com/images/logo.png",
+        "http://www.hal-privatbank.com/images/logo.webp",
+        "http://www.hal-privatbank.com/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "olmipay-limited",
+      "name": "Olmipay Limited",
+      "domain": "olmipay.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 404",
+      "tried": [
+        "http://www.olmipay.com/favicon.svg",
+        "http://www.olmipay.com/favicon.ico",
+        "http://www.olmipay.com/favicon.png",
+        "http://www.olmipay.com/favicon.webp",
+        "http://www.olmipay.com/apple-touch-icon.png",
+        "http://www.olmipay.com/logo.svg",
+        "http://www.olmipay.com/logo.png",
+        "http://www.olmipay.com/logo.webp",
+        "http://www.olmipay.com/logo.jpg",
+        "http://www.olmipay.com/assets/logo.svg",
+        "http://www.olmipay.com/assets/logo.png",
+        "http://www.olmipay.com/assets/logo.webp",
+        "http://www.olmipay.com/images/logo.svg",
+        "http://www.olmipay.com/images/logo.png",
+        "http://www.olmipay.com/images/logo.webp",
+        "http://www.olmipay.com/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "in-kapital-limited-liability-company-for-trade-and-services",
+      "name": "IN KAPITAL limited liability company for trade and services",
+      "domain": "inkapital.hr",
+      "status": "missing",
+      "reason": "no usable logo image discovered",
+      "tried": [
+        "https://www.inkapital.hr/wp-content/themes/Impreza/fonts/fa-brands-400.woff2?ver=9.1",
+        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_fawicon-150x150.png",
+        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_fawicon-300x300.png",
+        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_logotip.png",
+        "https://www.inkapital.hr/favicon.svg",
+        "https://www.inkapital.hr/favicon.ico",
+        "https://www.inkapital.hr/favicon.png",
+        "https://www.inkapital.hr/favicon.webp",
+        "https://www.inkapital.hr/apple-touch-icon.png",
+        "https://www.inkapital.hr/logo.svg",
+        "https://www.inkapital.hr/logo.png",
+        "https://www.inkapital.hr/logo.webp",
+        "https://www.inkapital.hr/logo.jpg",
+        "https://www.inkapital.hr/assets/logo.svg",
+        "https://www.inkapital.hr/assets/logo.png",
+        "https://www.inkapital.hr/assets/logo.webp",
+        "https://www.inkapital.hr/images/logo.svg",
+        "https://www.inkapital.hr/images/logo.png",
+        "https://www.inkapital.hr/images/logo.webp",
+        "https://www.inkapital.hr/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "bitpanda-gmbh",
+      "domain": "bitpanda.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitpanda.svg"
+    },
+    {
+      "slug": "bitpanda-asset-management-gmbh",
+      "domain": "bitpanda.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitpanda.svg"
+    },
+    {
+      "slug": "bp23-ca-limited",
+      "name": "BP23 CA Limited",
+      "domain": "bitpanda.com",
+      "status": "review",
+      "reason": "shared website already has a curated logo entry; confirm whether this legal entity uses the same brand"
+    },
+    {
+      "slug": "bybit-eu-gmbh",
+      "domain": "bybit.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bybit-eu-4110e4276d76.png"
+    },
+    {
+      "slug": "cryptonow-gmbh",
+      "domain": "cryptonow.at",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cryptonow-at-d07ac17ee07c.svg"
+    },
+    {
+      "slug": "amina-austria-ag",
+      "domain": "eu.aminagroup.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/eu-aminagroup-com-6553a5fc1220.png"
+    },
+    {
+      "slug": "fior-digital-gmbh",
+      "domain": "21bitcoin.app",
+      "status": "existing",
+      "asset": "../assets/casp-logos/21bitcoin-app-821e3f6e1bc7.svg"
+    },
+    {
+      "slug": "kucoin-eu-exchange-gmbh",
+      "domain": "kucoin.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kucoin-eu-b279db0263b0.png"
+    },
+    {
+      "slug": "dadat-krypto-gmbh",
+      "domain": "dad.at",
+      "status": "existing",
+      "asset": "../assets/casp-logos/dad-at-8890f1d3bf20.png"
+    },
+    {
+      "slug": "coinfinity-gmbh",
+      "domain": "coinfinity.co",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinfinity-co-3d1574d8cb76.svg"
+    },
+    {
+      "slug": "validvent-technology-gmbh",
+      "domain": "validvent.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/validvent-com-6cfec093f6f7.png"
+    },
+    {
+      "slug": "wb-shields-innovations-gmbh",
+      "domain": "whitebit.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/whitebit-eu-e5ce21c3241c.ico"
+    },
+    {
+      "slug": "osl-eu-gmbh",
+      "domain": "osl.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/osl-com-24752c8271cc.ico"
+    },
+    {
+      "slug": "kbc-bank-nv",
+      "domain": "kbc.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kbc-com-dc125c7b47b8.svg"
+    },
+    {
+      "slug": "bny-sa-nv",
+      "domain": "bny.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bny-com-04ece71d576d.ico"
+    },
+    {
+      "slug": "alaric-securities-ood",
+      "domain": "alaricsecurities.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/alaricsecurities-com-bda559713c49.webp"
+    },
+    {
+      "slug": "belayer-d",
+      "domain": "belayer.bg",
+      "status": "existing",
+      "asset": "../assets/casp-logos/belayer-bg-87590705d644.svg"
+    },
+    {
+      "slug": "altcoins-bg-e-d",
+      "domain": "altcoins.bg",
+      "status": "existing",
+      "asset": "../assets/casp-logos/altcoins-bg-9735d8209c98.png"
+    },
+    {
+      "slug": "digital-assist-ood",
+      "domain": "digitalassist.bg",
+      "status": "existing",
+      "asset": "../assets/casp-logos/digitalassist-bg-c1f02ebcff7f.png"
+    },
+    {
+      "slug": "etoro-europe-ltd",
+      "domain": "etoro.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/etoro-com-a81f2586764d.png"
+    },
+    {
+      "slug": "collect-exchange-cy-ltd",
+      "domain": "collectnexchange.cy",
+      "status": "existing",
+      "asset": "../assets/casp-logos/collectnexchange-cy-c5b4f9b87cdc.png"
+    },
+    {
+      "slug": "trading-212-markets-ltd",
+      "domain": "trading212.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/trading212-com-7d21248251d9.ico"
+    },
+    {
+      "slug": "stratos-europe-ltd",
+      "domain": "tradu.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/tradu-com-75cc61a03b40.ico"
+    },
+    {
+      "slug": "revolut-digital-assets-europe-ltd",
+      "domain": "revolut.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/revolut-com-1fe9791617d6.png"
+    },
+    {
+      "slug": "teroxx-digital-asset-ltd",
+      "domain": "teroxx.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/teroxx-com-8ae8407d54c7.svg"
+    },
+    {
+      "slug": "capital-vault-ltd",
+      "domain": "capital.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/capital-com-6abb78bcbb77.png"
+    },
+    {
+      "slug": "pelican-exchange-europe-cy-ltd",
+      "domain": "pelicaneu.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/pelicaneu-com-bd8eb99525b5.png"
+    },
+    {
+      "slug": "xtb-limited",
+      "domain": "xtb.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/xtb-com-27e513c498b7.ico"
+    },
+    {
+      "slug": "noemon-finance-ltd",
+      "domain": "noemon.finance",
+      "status": "existing",
+      "asset": "../assets/casp-logos/noemon-finance-c07de50219ed.svg"
+    },
+    {
+      "slug": "trading-com-markets-eu-ltd",
+      "domain": "trading.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/trading-com-d55d47c761ea.png"
+    },
+    {
+      "slug": "j2tx-ltd",
+      "domain": "j2tx.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/j2tx-com-ce2a367f5527.png"
+    },
+    {
+      "slug": "s-k-dask-krypto-ltd",
+      "domain": "daskkrypto.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/daskkrypto-eu-1acd247d3b0f.png"
+    },
+    {
+      "slug": "naga-x",
+      "domain": "nagax.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/nagax-com-bc2dfbd6cec7.ico"
+    },
+    {
+      "slug": "ronin-em-ltd",
+      "domain": "em.ron.in",
+      "status": "existing",
+      "asset": "../assets/casp-logos/em-ron-in-99708884af96.svg"
+    },
+    {
+      "slug": "krypto-knight-ltd",
+      "domain": "krypto-knight.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/krypto-knight-com-2206cd99c3fd.png"
+    },
+    {
+      "slug": "tria-bridge-limited-ex-tokenomica-bridge-ltd",
+      "domain": "triabridge.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/triabridge-com-3e0cf6b9b3b7.svg"
+    },
+    {
+      "slug": "unlimit-crypto-ltd",
+      "domain": "crypto.unlimit.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/crypto-unlimit-com-fd0375a76c12.webp"
+    },
+    {
+      "slug": "complycrypto-depository-eu-limited",
+      "domain": "complycrypto.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/complycrypto-eu-834d097d47ab.png"
+    },
+    {
+      "slug": "brilliantscope-trading-limited",
+      "domain": "tothemoon.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/tothemoon-com-8b9e454f335c.png"
+    },
+    {
+      "slug": "sg-digital-assets-limited",
+      "domain": "solidgate.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/solidgate-com-8807e219bf14.svg"
+    },
+    {
+      "slug": "pm-mtf-ltd",
+      "domain": "mtf.perpetuals.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/mtf-perpetuals-com-9c2279c6ac42.jpg"
+    },
+    {
+      "slug": "aquilla-nummus-ltd",
+      "domain": "aquillanummus.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/aquillanummus-com-ff2edc8d4b56.png"
+    },
+    {
+      "slug": "cloverum-finance-cy-limited",
+      "domain": "cloverum.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cloverum-com-5687161ad4ef.svg"
+    },
+    {
+      "slug": "invity-finance-s-r-o",
+      "domain": "invity.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/invity-io-7a92af7eea35.png"
+    },
+    {
+      "slug": "mp-developers-s-r-o",
+      "domain": "anycoin.cz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/anycoin-cz-978376c59538.png"
+    },
+    {
+      "slug": "ilavo-group-a-s",
+      "domain": "ilavo.cz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/ilavo-cz-03782732c062.png"
+    },
+    {
+      "slug": "pluso-a-s",
+      "domain": "pluso.cz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/pluso-cz-56032d851286.svg"
+    },
+    {
+      "slug": "coinmate-a-s",
+      "domain": "coinmate.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinmate-io-5189e9bbc33b.svg"
+    },
+    {
+      "slug": "mipsoftware-s-r-o",
+      "domain": "coinero.cz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinero-cz-442b11e3156f.svg"
+    },
+    {
+      "slug": "gg-digital-a-s",
+      "domain": "goldengate.cz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/goldengate-cz-b2c262e342f0.svg"
+    },
+    {
+      "slug": "simple-coin-s-r-o",
+      "domain": "simplecoin.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/simplecoin-eu-f4c81d3348b9.png"
+    },
+    {
+      "slug": "altlift-s-r-o",
+      "domain": "altlift.cz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/altlift-cz-800847ceddd1.png"
+    },
+    {
+      "slug": "boerse-stuttgart-digital-custody-gmbh",
+      "domain": "bsdigital.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bsdigital-com-d0b1dab402cc.svg"
+    },
+    {
+      "slug": "tradias-gmbh",
+      "domain": "tradias.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/tradias-de-1130bdcc2098.png"
+    },
+    {
+      "slug": "euwax-ag",
+      "domain": "euwax-ag.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/euwax-ag-de-1cf2d6ca38b6.png"
+    },
+    {
+      "slug": "flatexdegiro-bank-ag",
+      "domain": "flatexdegiro.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/flatexdegiro-com-9982eb911b80.ico"
+    },
+    {
+      "slug": "360-treasury-systems-ag",
+      "domain": "360t.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/360t-com-4b6d98758f7d.png"
+    },
+    {
+      "slug": "trade-republic-bank-gmbh",
+      "domain": "traderepublic.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/traderepublic-com-17b8a6fe10b0.jpg"
+    },
+    {
+      "slug": "bitgo-europe-gmbh",
+      "domain": "bitgo.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitgo-de-835f71c03bbd.png"
+    },
+    {
+      "slug": "n26-bank-se",
+      "domain": "n26.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/n26-com-3bf3504c6c75.png"
+    },
+    {
+      "slug": "baader-bank-aktiengesellschaft",
+      "domain": "baaderbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/baaderbank-de-2abeeea3f6b9.svg"
+    },
+    {
+      "slug": "commerzbank-aktiengesellschaft",
+      "domain": "commerzbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/commerzbank-de-43b73752e74c.svg"
+    },
+    {
+      "slug": "crypto-finance-deutschland-gmbh",
+      "domain": "crypto-finance.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/crypto-finance-com-5f6424bc4cb6.png"
+    },
+    {
+      "slug": "traders-place-gmbh-co-kgaa",
+      "domain": "tradersplace.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/tradersplace-de-61484de6afc6.svg"
+    },
+    {
+      "slug": "tangany-gmbh",
+      "domain": "tangany.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/tangany-com-22aa336935a1.png"
+    },
+    {
+      "slug": "smartbroker-ag",
+      "domain": "smartbrokerplus.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/smartbrokerplus-de-b961d631ba64.png"
+    },
+    {
+      "slug": "dietrich-richter-private-asset-management-ag",
+      "domain": "drpam.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/drpam-de-bb4e87ad6011.png"
+    },
+    {
+      "slug": "bullish-europe-gmbh",
+      "domain": "bullish.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bullish-com-c88bcdbb7dbe.svg"
+    },
+    {
+      "slug": "bankhaus-scheich-wertpapierspezialist-ag",
+      "domain": "bankhaus-scheich.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bankhaus-scheich.png"
+    },
+    {
+      "slug": "lang-schwarz-tradecenter-ag-co-kg",
+      "domain": "ls-tc.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/ls-tc-de-8adeb85856f6.ico"
+    },
+    {
+      "slug": "donaucapital-wertpapier-gmbh",
+      "domain": "donaucapital.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/donaucapital-de-13ca8a288e36.png"
+    },
+    {
+      "slug": "volksbank-raiffeisenbank-bayern-mitte-eg",
+      "domain": "vr-bayernmitte.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vr-bayernmitte-de-aebeb9e1176a.avif"
+    },
+    {
+      "slug": "huddlestock-gmbh",
+      "domain": "huddlestock.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/huddlestock-com-2c2351aa88ce.png"
+    },
+    {
+      "slug": "sino-aktiengesellschaft",
+      "domain": "sino.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/sino-de-3bf0f15511be.png"
+    },
+    {
+      "slug": "hyphe-markets-gmbh",
+      "domain": "hyphe.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/hyphe-com-185a20a509dc.svg"
+    },
+    {
+      "slug": "deutsche-wertpapierservice-bank-ag",
+      "domain": "dwpbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/dwpbank-de-e30154678f7e.png"
+    },
+    {
+      "slug": "dekabank-deutsche-girozentrale",
+      "domain": "deka.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/deka-de-029f2d2bd064.png"
+    },
+    {
+      "slug": "fels-wealth-gmbh",
+      "domain": "followmymoney.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/followmymoney-de-8ac12f5c333f.png"
+    },
+    {
+      "slug": "westerwald-bank-eg-volks-und-raiffeisenbank",
+      "domain": "westerwaldbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/westerwaldbank-de-54e1a4d32d76.png"
+    },
+    {
+      "slug": "hannoversche-volksbank-eg",
+      "domain": "hannoversche-volksbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/hannoversche-volksbank-de-1ec215e31990.avif"
+    },
+    {
+      "slug": "vr-teilhaberbank-metropolregion-nurnberg-eg",
+      "domain": "vr-teilhaberbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vr-teilhaberbank-de-4b1299f35437.avif"
+    },
+    {
+      "slug": "volksbank-mittlerer-schwarzwald-eg",
+      "domain": "voba-msw.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/voba-msw-de-04e86b7ec61b.avif"
+    },
+    {
+      "slug": "ig-europe-gmbh",
+      "domain": "ig.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/ig-com-1bc8e6603e62.png"
+    },
+    {
+      "slug": "volksbank-raiffeisenbank-wurzburg-eg",
+      "domain": "vr-bank-wuerzburg.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vr-bank-wuerzburg-de-82fc8a71c741.avif"
+    },
+    {
+      "slug": "vr-bank-rottal-inn-eg",
+      "domain": "vrbk.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vrbk-de-040fd9509b94.avif"
+    },
+    {
+      "slug": "vr-bank-sudpfalz-eg",
+      "domain": "vrbank-suedpfalz.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vrbank-suedpfalz-de-b7a8c3c8f99e.avif"
+    },
+    {
+      "slug": "sutor-bank-gmbh",
+      "domain": "sutorbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/sutorbank-de-813315b49102.svg"
+    },
+    {
+      "slug": "wsw-portfoliomanagement-ag",
+      "domain": "wsw-pm.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/wsw-pm-de-c9af64f0023f.png"
+    },
+    {
+      "slug": "fidus-finanz-ag",
+      "domain": "fidus-ag.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/fidus-ag-de-77a99e430757.svg"
+    },
+    {
+      "slug": "dz-bank-ag-deutsche-zentral-genossenschaftsbank",
+      "domain": "dzbank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/dzbank-de-2c593d078ba1.png"
+    },
+    {
+      "slug": "isf-institut-deutsch-schweizer-finanzdienstleistungen-gmbh",
+      "domain": "isf-institut.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/isf-institut-de-2d8d1019935f.png"
+    },
+    {
+      "slug": "plutos-vermogensverwaltung-ag",
+      "domain": "plutos.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/plutos-de-eb7ae902307d.png"
+    },
+    {
+      "slug": "scalable-capital-bank-gmbh",
+      "domain": "scalable.capital",
+      "status": "existing",
+      "asset": "../assets/casp-logos/scalable-capital-160bfb1773d3.png"
+    },
+    {
+      "slug": "anceka-vermogensbetreuungs-aktiengesellschaft",
+      "domain": "anceka.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/anceka-de-6df35b4326f8.png"
+    },
+    {
+      "slug": "joh-berenberg-gossler-co-kg",
+      "domain": "berenberg.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/berenberg-de-e2a0bbb816aa.png"
+    },
+    {
+      "slug": "mlp-banking-ag",
+      "domain": "mlp.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/mlp-de-79bc72508fb0.png"
+    },
+    {
+      "slug": "bv-p-vermogen-ag",
+      "domain": "bvp-vermoegen.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bvp-vermoegen-de-18f1db88f65c.png"
+    },
+    {
+      "slug": "concedus-gmbh",
+      "domain": "concedus.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/concedus-com-0c2ad8394dcc.svg"
+    },
+    {
+      "slug": "dlt-securities-gmbh",
+      "domain": "dlt-finance.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/dlt-finance-com-f396b570a3b5.svg"
+    },
+    {
+      "slug": "vermogensbutler-gmbh",
+      "domain": "vermoegensbutler.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vermoegensbutler-de-9b4d54ffaebb.jpg"
+    },
+    {
+      "slug": "volksbank-heiden-eg",
+      "domain": "vbheiden.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vbheiden-de-6bb096f908cd.avif"
+    },
+    {
+      "slug": "raiffeisenbank-kreis-kelheim-eg",
+      "domain": "rbkk.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/rbkk-de-15003d8b1706.avif"
+    },
+    {
+      "slug": "donau-iller-bank-eg",
+      "domain": "donau-iller-bank.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/donau-iller-bank-de-d2b7385e59b2.avif"
+    },
+    {
+      "slug": "volksbank-schwarzwald-donau-neckar-eg",
+      "domain": "vbsdn.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vbsdn-de-ee69653a6568.svg"
+    },
+    {
+      "slug": "raiffeisebank-auerbach-freihung-eg",
+      "domain": "rb-af.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/rb-af-de-9c8b9875f456.avif"
+    },
+    {
+      "slug": "jt-technologies-gmbh",
+      "domain": "justtrade.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/justtrade-com-8499d30b1495.svg"
+    },
+    {
+      "slug": "spar-und-kreditbank-rheinstetten-eg",
+      "domain": "skb-rheinstetten.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/skb-rheinstetten-de-f5e1bb04f554.avif"
+    },
+    {
+      "slug": "vr-bank-augsburg-ostallgau-eg",
+      "domain": "vrbank-augsburg-ostallgaeu.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vrbank-augsburg-ostallgaeu-de-cca4f6ac63e4.avif"
+    },
+    {
+      "slug": "raiffeisenbank-falkenstein-worth",
+      "domain": "rbfalkenstein-woerth.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/rbfalkenstein-woerth-de-8c0d9bb0835f.avif"
+    },
+    {
+      "slug": "vr-bank-schleswig-holstein-mitte-eg",
+      "domain": "vrbank-sh-mitte.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vrbank-sh-mitte-de-97616f791a26.avif"
+    },
+    {
+      "slug": "vr-bank-landau-mengkofen-eg",
+      "domain": "vrbanklm.de",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vrbanklm-de-e7ec9d3d6658.avif"
+    },
+    {
+      "slug": "penning-financial-services-aps",
+      "domain": "penning.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/penning-io-922fc646fef2.svg"
+    },
+    {
+      "slug": "lunar-block-a-s",
+      "domain": "lunar.app",
+      "status": "existing",
+      "asset": "../assets/casp-logos/lunar-app-ce15aae8b8f9.png"
+    },
+    {
+      "slug": "gc-exchange-a-s",
+      "domain": "gc.exchange",
+      "status": "existing",
+      "asset": "../assets/casp-logos/gc-exchange-4e8a5333841e.png"
+    },
+    {
+      "slug": "northstake-aps",
+      "domain": "northstake.dk",
+      "status": "existing",
+      "asset": "../assets/casp-logos/northstake-dk-46569eaf05ef.png"
+    },
+    {
+      "slug": "coinify-aps",
+      "domain": "coinify.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinify-com-c41d5cacc605.png"
+    },
+    {
+      "slug": "januar-aps",
+      "domain": "januar.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/januar-com-2714c76c8a63.png"
+    },
+    {
+      "slug": "safelynx-technologies-aps",
+      "domain": "safelynx.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/safelynx-io-cc5c4ae3b4aa.png"
+    },
+    {
+      "slug": "lightyear-europe-as",
+      "domain": "lightyear.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/lightyear-com-1b84398c2359.png"
+    },
+    {
+      "slug": "as-lhv-pank",
+      "domain": "lhv.ee",
+      "status": "existing",
+      "asset": "../assets/casp-logos/lhv-ee-94bb75fabe0c.ico"
+    },
+    {
+      "slug": "lightspark-payments-europe-as",
+      "domain": "eu.lightspark.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/eu-lightspark-com-c2631c30ce92.ico"
+    },
+    {
+      "slug": "open-bank-s-a",
+      "domain": "openbank.es",
+      "status": "existing",
+      "asset": "../assets/casp-logos/openbank-es-5166a76b9508.png"
+    },
+    {
+      "slug": "cecabank-s-a",
+      "domain": "cecabank.es",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cecabank-es-c07d84134bd9.png"
+    },
+    {
+      "slug": "bitcoinforme-s-l",
+      "domain": "bit2me.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bit2me-com-2f850635e4b1.svg"
+    },
+    {
+      "slug": "renta-4-banco-s-a",
+      "domain": "r4.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/r4-com-0b1a99491b52.png"
+    },
+    {
+      "slug": "caixabank-s-a",
+      "domain": "caixabank.es",
+      "status": "existing",
+      "asset": "../assets/casp-logos/caixabank-es-1a2844f889f3.gif"
+    },
+    {
+      "slug": "due-network-s-l",
+      "domain": "opendue.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/opendue-com-e8ed4d3c9772.png"
+    },
+    {
+      "slug": "crossmint-europe-s-l",
+      "domain": "crossmint.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/crossmint-com-03c5328dc306.svg"
+    },
+    {
+      "slug": "criptan-trade-s-l",
+      "domain": "criptan.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/criptan-com-4009a80e86a2.png"
+    },
+    {
+      "slug": "minos-global-s-l",
+      "domain": "minos.global",
+      "status": "existing",
+      "asset": "../assets/casp-logos/minos-global-25a3b036c12a.ico"
+    },
+    {
+      "slug": "prosegur-custodia-de-activos-digitales",
+      "domain": "prosegurcrypto.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/prosegurcrypto-com-6e5a8c3fb891.png"
+    },
+    {
+      "slug": "iqana-technologies-s-l",
+      "domain": "iqana.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/iqana-io-782a4f766eb4.png"
+    },
+    {
+      "slug": "basque-pay-s-l",
+      "domain": "fazilcrypto.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/fazilcrypto-com-8b7dba917de5.svg"
+    },
+    {
+      "slug": "fintech-payments-psc-s-l",
+      "domain": "cryptopocket.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cryptopocket-io-0b8800e45a08.ico"
+    },
+    {
+      "slug": "coinmotion-oy",
+      "domain": "coinmotion.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinmotion-com-60498808b11c.png"
+    },
+    {
+      "slug": "tesseract-investment-oy",
+      "domain": "tesseract.fi",
+      "status": "existing",
+      "asset": "../assets/casp-logos/tesseract-fi-157b90ca140e.png"
+    },
+    {
+      "slug": "bittimaatti-oy",
+      "domain": "bittimaatti.fi",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bittimaatti-fi-9ad5edd75120.png"
+    },
+    {
+      "slug": "northcrypto-oy",
+      "domain": "northcrypto.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/northcrypto-com-19c2371e27b4.png"
+    },
+    {
+      "slug": "kvarn-capital-oy",
+      "domain": "kvarnx.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kvarnx-com-2d6c6bf4d9c4.svg"
+    },
+    {
+      "slug": "caceis-bank",
+      "domain": "caceis.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/caceis-com-24169b15b980.png"
+    },
+    {
+      "slug": "coinshares-asset-management",
+      "domain": "coinshares.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinshares-com-40b956d92bf2.svg"
+    },
+    {
+      "slug": "bitstack-digital-assets-sas",
+      "domain": "bitstack-app.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitstack-app-com-1a13302f3f59.svg"
+    },
+    {
+      "slug": "metal-gear-sas",
+      "domain": "metalgear.xyz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/metalgear-xyz-b8ad591e783e.png"
+    },
+    {
+      "slug": "deblock-sas",
+      "domain": "deblock.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/deblock-com-4ac8684cf46d.svg"
+    },
+    {
+      "slug": "goin-sas",
+      "domain": "goin-invest.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/goin-invest-com-1bd42255bcd2.png"
+    },
+    {
+      "slug": "finctek-ue-sas",
+      "domain": "finctek.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/finctek-com-9b09ac292d10.png"
+    },
+    {
+      "slug": "cometh-sas",
+      "domain": "cometh.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cometh-io-ad5e8f58b24e.png"
+    },
+    {
+      "slug": "fipto-pi-sas",
+      "domain": "fipto.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/fipto-com-e244b53418e4.svg"
+    },
+    {
+      "slug": "hexarq-sas",
+      "domain": "hexarq.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/hexarq-com-e43e65b05784.png"
+    },
+    {
+      "slug": "blocknodes-sas",
+      "domain": "swissborg.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/swissborg-com-5d301ec23492.png"
+    },
+    {
+      "slug": "circle-internet-financial-europe-sas",
+      "domain": "circle.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/circle-com-a34ac2272c99.svg"
+    },
+    {
+      "slug": "deskoin-sas",
+      "domain": "deskoin.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/deskoin-com-af9d20f2e1a1.png"
+    },
+    {
+      "slug": "qwarks-sas",
+      "domain": "qwarks.fr",
+      "status": "existing",
+      "asset": "../assets/casp-logos/qwarks-fr-314eadc2057f.svg"
+    },
+    {
+      "slug": "paytop-sas",
+      "domain": "paytop.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/paytop-com-c699004c23b9.png"
+    },
+    {
+      "slug": "rufiji-capital-sas",
+      "domain": "rufiji.capital",
+      "status": "existing",
+      "asset": "../assets/casp-logos/rufiji-capital-ed9d7a6ea3f1.svg"
+    },
+    {
+      "slug": "keyrock-fr-sas",
+      "domain": "keyrock.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/keyrock-com-f7e20a86be44.png"
+    },
+    {
+      "slug": "rcube-asset-management",
+      "domain": "rcube.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/rcube-com-bab3b2292257.png"
+    },
+    {
+      "slug": "paymium-sas",
+      "domain": "paymium.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/paymium-com-350a650fd2fc.svg"
+    },
+    {
+      "slug": "leonod-sarl",
+      "domain": "app.bullbitcoin.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/app-bullbitcoin-com-cebf8fba3908.png"
+    },
+    {
+      "slug": "alphacap-digital-assets-sas",
+      "domain": "alphacap.fr",
+      "status": "existing",
+      "asset": "../assets/casp-logos/alphacap-fr-0772bd73debd.png"
+    },
+    {
+      "slug": "flowdesk-europe-sas",
+      "domain": "flowdesk.co",
+      "status": "existing",
+      "asset": "../assets/casp-logos/flowdesk-co-de32ad4611b5.svg"
+    },
+    {
+      "slug": "iceblock-sas",
+      "domain": "iceblockinvestments.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/iceblockinvestments-com-3d7c044a40b8.png"
+    },
+    {
+      "slug": "mereau-finance-sas",
+      "domain": "crypto-assets-management.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/crypto-assets-management-com-a97e8ca735ba.png"
+    },
+    {
+      "slug": "finary-sas",
+      "domain": "finary.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/finary-com-9ed8a0f6490e.svg"
+    },
+    {
+      "slug": "woorton-sas",
+      "domain": "woorton.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/woorton-com-ce675baa3c4d.svg"
+    },
+    {
+      "slug": "blockchain-process-security-b-p-s-sas",
+      "domain": "feel-mining.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/feel-mining-com-ef0789fd3e75.png"
+    },
+    {
+      "slug": "shares-financial-assets-sas",
+      "domain": "shares.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/shares-io-d49688403804.svg"
+    },
+    {
+      "slug": "electrocoin-ltd-for-services",
+      "domain": "electrocoin.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/electrocoin-eu-3581d7567e46.png"
+    },
+    {
+      "slug": "white-tech-limited-liability-company-for-services",
+      "domain": "whitely.hr",
+      "status": "existing",
+      "asset": "../assets/casp-logos/whitely-hr-b0100e284c32.svg"
+    },
+    {
+      "slug": "digital-assets-limited-liability-company-for-intermediation-and-services",
+      "domain": "bitstore.net",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitstore-net-106f46986c73.png"
+    },
+    {
+      "slug": "bitblock-ltd-for-services",
+      "domain": "kriptomat.hr",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kriptomat-hr-17d4454a1773.png"
+    },
+    {
+      "slug": "hrvatska-postanska-banka-d-d",
+      "domain": "hpb.hr",
+      "status": "existing",
+      "asset": "../assets/casp-logos/hpb-hr-b8247ef141fd.png"
+    },
+    {
+      "slug": "payward-global-solutions-limited",
+      "domain": "kraken.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kraken-com-5265bed9d96e.svg"
+    },
+    {
+      "slug": "payward-europe-solutions-limited",
+      "domain": "kraken.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kraken-com-5265bed9d96e.svg"
+    },
+    {
+      "slug": "legend-financial-ireland-limited",
+      "domain": "legendtrading.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/legendtrading-com-cd07c579f96a.ico"
+    },
+    {
+      "slug": "push-virtual-assets-ireland-limited",
+      "domain": "push.co",
+      "status": "existing",
+      "asset": "../assets/casp-logos/push-co-fa87c5f7c086.png"
+    },
+    {
+      "slug": "ramp-swaps-ireland-limited",
+      "domain": "rampnetwork.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/rampnetwork-com-cdad9ffd5e87.png"
+    },
+    {
+      "slug": "paysafe-payment-solutions-limited",
+      "domain": "skrill.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/skrill-com-6e07f79fa426.jpg"
+    },
+    {
+      "slug": "coinjar-europe-limited",
+      "domain": "coinjar.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinjar-com-68e4c7384ddf.svg"
+    },
+    {
+      "slug": "confirmo-limited",
+      "domain": "confirmo.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/confirmo-eu-4405e097c957.png"
+    },
+    {
+      "slug": "pionew-ireland-limited",
+      "domain": "webot.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/webot-com-d622086a3797.png"
+    },
+    {
+      "slug": "stonex-digital-international-limited",
+      "domain": "stonex.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/stonex-com-8defad8551cf.svg"
+    },
+    {
+      "slug": "interactive-brokers-ireland-limited",
+      "domain": "interactivebrokers.ie",
+      "status": "existing",
+      "asset": "../assets/casp-logos/interactivebrokers-ie-e2ef5811c607.png"
+    },
+    {
+      "slug": "virtu-financial-ireland-limited",
+      "domain": "virtu.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/virtu-com-2f50eb0c06a3.png"
+    },
+    {
+      "slug": "myntkaup-ehf",
+      "domain": "myntkaup.is",
+      "status": "existing",
+      "asset": "../assets/casp-logos/myntkaup-is-93d53690f387.svg"
+    },
+    {
+      "slug": "checksig-s-r-l-societa-benefit",
+      "domain": "checksig.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/checksig-com-6e3b0118ad26.svg"
+    },
+    {
+      "slug": "olliv-italia-s-r-l",
+      "domain": "coinflip.tech",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinflip-tech-d93f74b3aec2.svg"
+    },
+    {
+      "slug": "riv-digital-s-r-l",
+      "domain": "riv-digital.it",
+      "status": "existing",
+      "asset": "../assets/casp-logos/riv-digital-it-396cf6cc7346.png"
+    },
+    {
+      "slug": "conio-s-r-l",
+      "domain": "conio.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/conio-com-7b698a5e7875.png"
+    },
+    {
+      "slug": "banca-sella",
+      "domain": "sella.it",
+      "status": "existing",
+      "asset": "../assets/casp-logos/sella-it-632a9974c078.ico"
+    },
+    {
+      "slug": "cryptosmart-s-p-a",
+      "domain": "cryptosmart.it",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cryptosmart-it-1b1dbc0cfa6e.png"
+    },
+    {
+      "slug": "young-platform-s-p-a",
+      "domain": "youngplatform.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/youngplatform-com-403615ae521b.png"
+    },
+    {
+      "slug": "hodlie-s-r-l",
+      "domain": "hodli.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/hodli-com-3f6df29285a0.ico"
+    },
+    {
+      "slug": "hercle-s-r-l",
+      "domain": "hercle.financial",
+      "status": "existing",
+      "asset": "../assets/casp-logos/hercle-financial-490873fb2b7b.png"
+    },
+    {
+      "slug": "zeus-anstalt-fur-vermogensverwaltung",
+      "domain": "zeus-management.li",
+      "status": "existing",
+      "asset": "../assets/casp-logos/zeus-management-li-c20a69c0d0e1.png"
+    },
+    {
+      "slug": "lgt-bank-ag",
+      "domain": "lgt.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/lgt-com-de058a97f5d7.png"
+    },
+    {
+      "slug": "bank-frick-ag",
+      "domain": "bankfrick.li",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bankfrick-li-aa89a0880e86.png"
+    },
+    {
+      "slug": "wyden-capital-ag",
+      "domain": "wydencapital.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/wydencapital-com-694a6a4b6e39.svg"
+    },
+    {
+      "slug": "celsion-bank-ag",
+      "domain": "celsion-finance.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/celsion-finance-com-f7f3c2b19451.png"
+    },
+    {
+      "slug": "rulematch-europe-ag",
+      "domain": "rulematch.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/rulematch-com-ec92562bb65b.png"
+    },
+    {
+      "slug": "floin-ag",
+      "domain": "floin.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/floin-com-b6864cd2af36.svg"
+    },
+    {
+      "slug": "bitcoin-suisse-europe-ag",
+      "domain": "bitcoinsuisse.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitcoinsuisse-com-4c39f3581581.png"
+    },
+    {
+      "slug": "sygnum-europe-ag",
+      "domain": "sygnum.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/sygnum-com-5e68e62a4618.ico"
+    },
+    {
+      "slug": "smart-valor-ag",
+      "domain": "smartvalor.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/smartvalor-com-0b57393ec50d.svg"
+    },
+    {
+      "slug": "kaiser-partner-privatbank-ag",
+      "domain": "kaiserpartner.bank",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kaiserpartner-bank-118af1da6433.ico"
+    },
+    {
+      "slug": "damoon-technology-europe-ag",
+      "domain": "paymonade.tech",
+      "status": "existing",
+      "asset": "../assets/casp-logos/paymonade-tech-2087d78af576.ico"
+    },
+    {
+      "slug": "robinhood-europe-uab",
+      "domain": "robinhood.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/robinhood-com-2bd9c6cc404a.png"
+    },
+    {
+      "slug": "uab-decentralized",
+      "domain": "coingate.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coingate-com-45f6bd5a406c.png"
+    },
+    {
+      "slug": "nuvei-liquidity-uab",
+      "domain": "simplex.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/simplex-com-535698a6e4ad.png"
+    },
+    {
+      "slug": "uab-micar-assets",
+      "domain": "myriadcapital.lt",
+      "status": "existing",
+      "asset": "../assets/casp-logos/myriadcapital-lt-921bcee29242.png"
+    },
+    {
+      "slug": "newrails-uab",
+      "domain": "newrails.xyz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/newrails-xyz-f5de09914469.svg"
+    },
+    {
+      "slug": "uab-blue-emi-lt",
+      "domain": "blueemi.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/blueemi-com-aee512ba5b15.png"
+    },
+    {
+      "slug": "clearstream-banking-s-a",
+      "domain": "clearstream.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/clearstream-com-2afeb188c500.svg"
+    },
+    {
+      "slug": "bitstamp-europe-s-a",
+      "domain": "bitstamp.net",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitstamp-net-cf79e1a0b6f7.ico"
+    },
+    {
+      "slug": "coinbase-luxembourg-s-a",
+      "domain": "coinbase.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinbase-com-6deea128d9c1.ico"
+    },
+    {
+      "slug": "zodia-custody-europe-s-a",
+      "domain": "zodia-custody.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/zodia-custody-com-3d8474173491.svg"
+    },
+    {
+      "slug": "banking-circle-s-a",
+      "domain": "bankingcircle.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bankingcircle-com-64243381f482.svg"
+    },
+    {
+      "slug": "swissquote-bank-europe-sa",
+      "domain": "swissquote.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/swissquote-com-d93d38ad0ded.jpg"
+    },
+    {
+      "slug": "b2c2-europe-sarl",
+      "domain": "b2c2.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/b2c2-com-690be7216cf5.svg"
+    },
+    {
+      "slug": "stokr-s-a",
+      "domain": "stokr.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/stokr-io-0dab1055fda6.ico"
+    },
+    {
+      "slug": "standard-chartered-luxembourg-s-a",
+      "domain": "sc.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/sc-com-a111fb8bfd88.ico"
+    },
+    {
+      "slug": "bridge-building-s-a",
+      "domain": "bridge.xyz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bridge-xyz-88b75911d691.svg"
+    },
+    {
+      "slug": "cps-europe-s-a",
+      "domain": "enum8.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/enum8-com-4f8dc67f6263.ico"
+    },
+    {
+      "slug": "ripple-payments-europe-s-a",
+      "domain": "ripple.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/ripple.svg"
+    },
+    {
+      "slug": "blockben-sia",
+      "domain": "blockben.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/blockben-com-0438d6aee0a1.png"
+    },
+    {
+      "slug": "nexdesk-sia",
+      "domain": "nexdesk.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/nexdesk-io-446a26fab888.ico"
+    },
+    {
+      "slug": "sia-paybis-europe",
+      "domain": "paybis.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/paybis-com-e6729dcc0f47.png"
+    },
+    {
+      "slug": "neverless-sia",
+      "domain": "neverless.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/neverless-com-4bf00b314637.png"
+    },
+    {
+      "slug": "trek-technologies-sia",
+      "domain": "eu.backpack.exchange",
+      "status": "existing",
+      "asset": "../assets/casp-logos/eu-backpack-exchange-6bacd335f994.png"
+    },
+    {
+      "slug": "as-twino-investments",
+      "domain": "twino.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/twino-eu-44618933fa2c.png"
+    },
+    {
+      "slug": "sia-alpharoute",
+      "domain": "kangaexchange.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/kangaexchange-eu-7edd5a1ff8e0.ico"
+    },
+    {
+      "slug": "hodleris-sia",
+      "domain": "hfinance.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/hfinance-eu-7a00e5beed12.png"
+    },
+    {
+      "slug": "bleap-sia",
+      "domain": "bleap.finance",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bleap-finance-8a777f35a02d.png"
+    },
+    {
+      "slug": "nodu-digital-sia",
+      "domain": "nodu.fi",
+      "status": "existing",
+      "asset": "../assets/casp-logos/nodu-fi-ebecd5404fd8.png"
+    },
+    {
+      "slug": "okx-europe-limited",
+      "domain": "okx.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/okx-com-f9127394ccf1.png"
+    },
+    {
+      "slug": "foris-dax-mt-limited",
+      "domain": "crypto.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/crypto-com-3218fd325fca.svg"
+    },
+    {
+      "slug": "zillion-bits-limited",
+      "domain": "zbx.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/zbx-com-368629d430a8.png"
+    },
+    {
+      "slug": "altarius-asset-management-limited",
+      "domain": "altariusgroup.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/altariusgroup-com-c1b74913066e.png"
+    },
+    {
+      "slug": "gemini-intergalactic-eu-ltd",
+      "domain": "gemini.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/gemini-com-a9f3fcf644dc.png"
+    },
+    {
+      "slug": "socios-europe-services-limited",
+      "domain": "socios.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/socios-com-c295b5dbe4d8.svg"
+    },
+    {
+      "slug": "gate-technology-limited",
+      "domain": "gate.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/gate-com-7e1cf0b67233.webp"
+    },
+    {
+      "slug": "blue-cube-malta-limited",
+      "domain": "blockchain.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/blockchain-com-8931ef2d2c2c.ico"
+    },
+    {
+      "slug": "payhound-limited",
+      "domain": "payhound.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/payhound-com-7621ba177a1f.svg"
+    },
+    {
+      "slug": "damex-digital-ltd",
+      "domain": "damex.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/damex-io-948c3bf9859f.png"
+    },
+    {
+      "slug": "system-pay-services-malta-limited",
+      "domain": "bvnk.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bvnk-com-674755585164.svg"
+    },
+    {
+      "slug": "calamatta-cuschieri-investment-services-limited",
+      "domain": "cc.com.mt",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cc-com-mt-6b8590448a8c.png"
+    },
+    {
+      "slug": "stable-mint-ltd",
+      "domain": "stablemint.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/stablemint-io-86f9b4dc4d3f.svg"
+    },
+    {
+      "slug": "op-digital-services-limited",
+      "domain": "openpayd.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/openpayd-com-054542f050bf.ico"
+    },
+    {
+      "slug": "zap-strike-europe-limited",
+      "domain": "strike.me",
+      "status": "existing",
+      "asset": "../assets/casp-logos/strike-me-dd08aea8b22b.ico"
+    },
+    {
+      "slug": "legion-malta-limited",
+      "domain": "legion.cc",
+      "status": "existing",
+      "asset": "../assets/casp-logos/legion-cc-420bc8e4fab7.png"
+    },
+    {
+      "slug": "falconx-limited",
+      "domain": "falconx.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/falconx-io-e608c18f1a36.png"
+    },
+    {
+      "slug": "cf-technologies-ltd",
+      "domain": "xcoins.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/xcoins-com-8880ad639c73.png"
+    },
+    {
+      "slug": "everest-network-limited",
+      "domain": "everest.org",
+      "status": "existing",
+      "asset": "../assets/casp-logos/everest-org-f7ed157f160f.svg"
+    },
+    {
+      "slug": "bequant-pro-limited",
+      "domain": "bequant.pro",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bequant-pro-35fe47ff90e9.ico"
+    },
+    {
+      "slug": "moonpay-europe-b-v",
+      "domain": "moonpay.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/moonpay-com-2f2fe1cbd056.svg"
+    },
+    {
+      "slug": "bitstaete-b-v",
+      "domain": "bitstaete.nl",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitstaete-nl-2f9bcfef2b96.svg"
+    },
+    {
+      "slug": "zebedee-europe-b-v",
+      "domain": "zbd.gg",
+      "status": "existing",
+      "asset": "../assets/casp-logos/zbd-gg-2ea91010aeea.ico"
+    },
+    {
+      "slug": "hidden-road-partners-civ-nl-b-v",
+      "name": "Hidden Road Partners CIV NL B.V.",
+      "domain": "hiddenroad.com",
+      "status": "review",
+      "reason": "shared website already has a curated logo entry; confirm whether this legal entity uses the same brand"
+    },
+    {
+      "slug": "avianlabs-netherlands-b-v",
+      "domain": "sling.money",
+      "status": "existing",
+      "asset": "../assets/casp-logos/sling-money-ca7ea3425f62.png"
+    },
+    {
+      "slug": "vivid-money-b-v",
+      "domain": "vivid.money",
+      "status": "existing",
+      "asset": "../assets/casp-logos/vivid-money-ad85a6b58fec.png"
+    },
+    {
+      "slug": "one-trading-exchange-b-v",
+      "domain": "onetrading.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/onetrading-com-7dd8ab99ee45.png"
+    },
+    {
+      "slug": "acheron-europe-b-v",
+      "domain": "acherontrading.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/acherontrading-com-8371c6845386.svg"
+    },
+    {
+      "slug": "btc-direct-europe-b-v",
+      "domain": "my.btcdirect.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/my-btcdirect-eu-fea58ed0ce23.png"
+    },
+    {
+      "slug": "bitvavo-b-v",
+      "domain": "bitvavo.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitvavo-com-932085199f1a.png"
+    },
+    {
+      "slug": "amdax-b-v",
+      "domain": "amdax.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/amdax-com-3dfa3c844807.svg"
+    },
+    {
+      "slug": "finst-b-v",
+      "domain": "finst.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/finst-com-f7768b7b619c.png"
+    },
+    {
+      "slug": "decubate-b-v",
+      "domain": "decubate.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/decubate-com-718dea935e85.svg"
+    },
+    {
+      "slug": "fiat-republic-netherlands-b-v",
+      "domain": "fiatrepublic.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/fiatrepublic-com-03a7febaf085.webp"
+    },
+    {
+      "slug": "blox-b-v",
+      "domain": "weareblox.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/weareblox-com-d0d1d6760083.png"
+    },
+    {
+      "slug": "eu-internet-ventures-b-v",
+      "domain": "banxa.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/banxa-com-c5fac934c9a4.webp"
+    },
+    {
+      "slug": "zerohash-europe-b-v",
+      "domain": "zerohash.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/zerohash-com-3f3775ac11e8.png"
+    },
+    {
+      "slug": "coinmerce-b-v",
+      "domain": "coinmerce.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinmerce-io-b70c5310c741.png"
+    },
+    {
+      "slug": "bitmymoney-b-v",
+      "domain": "bitmymoney.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitmymoney-com-8ec399be1463.svg"
+    },
+    {
+      "slug": "bitonic-b-v",
+      "domain": "bitonic.nl",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitonic-nl-1af4e2737e7a.png"
+    },
+    {
+      "slug": "blockrise-capital-b-v",
+      "domain": "blockrise.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/blockrise-com-0a1d62b89bed.png"
+    },
+    {
+      "slug": "monflo-b-v",
+      "domain": "monflo.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/monflo-com-0a8bb8217d5a.ico"
+    },
+    {
+      "slug": "web3-technology-b-v",
+      "domain": "ari10.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/ari10-com-a06cd15e34c0.png"
+    },
+    {
+      "slug": "d2x-group-n-v",
+      "domain": "d2x.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/d2x-com-0a30f31060f0.svg"
+    },
+    {
+      "slug": "clearbank-europe-n-v",
+      "domain": "clear.bank",
+      "status": "existing",
+      "asset": "../assets/casp-logos/clear-bank-7ad4f3804bba.svg"
+    },
+    {
+      "slug": "change-securities-b-v",
+      "domain": "changeinvest.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/changeinvest-com-679d93a487ce.png"
+    },
+    {
+      "slug": "digital-currency-services-b-v",
+      "domain": "happycoins.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/happycoins-com-3c7877f7d8b4.png"
+    },
+    {
+      "slug": "webull-securities-europe-b-v",
+      "domain": "webull.eu",
+      "status": "existing",
+      "asset": "../assets/casp-logos/webull-eu-4ae706af43d2.ico"
+    },
+    {
+      "slug": "bitpay-b-v",
+      "domain": "bitpay.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitpay-com-21efd47e22e9.png"
+    },
+    {
+      "slug": "ak-jensen-norway-as",
+      "domain": "akj.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/akj-com-b31e1b0ae7a3.png"
+    },
+    {
+      "slug": "tyr-markets-as",
+      "domain": "tyrmarkets.net",
+      "status": "existing",
+      "asset": "../assets/casp-logos/tyrmarkets-net-30acd9bcc1f9.png"
+    },
+    {
+      "slug": "firi-as",
+      "domain": "firi.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/firi-com-be0b3bd4211c.png"
+    },
+    {
+      "slug": "k33-markets-as",
+      "domain": "k33.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/k33-com-f2a83934dc95.webp"
+    },
+    {
+      "slug": "bare-bitcoin-as",
+      "domain": "barebitcoin.no",
+      "status": "existing",
+      "asset": "../assets/casp-logos/barebitcoin-no-da1a2c556e63.svg"
+    },
+    {
+      "slug": "norwegian-block-exchange-as",
+      "domain": "nbx.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/nbx-com-82d2fef1211e.svg"
+    },
+    {
+      "slug": "bison-bank-s-a",
+      "domain": "bisonbank.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bisonbank-com-bc7e09f5ef7e.png"
+    },
+    {
+      "slug": "ilirika-borzno-posredniska-hisa-d-d",
+      "domain": "ilirika.si",
+      "status": "existing",
+      "asset": "../assets/casp-logos/ilirika-si-fc2061f90c28.png"
+    },
+    {
+      "slug": "incrementum-druzba-za-izvajanje-storitev-v-zvezi-s-kriptosredstvi-d-o-o",
+      "domain": "incrementum.si",
+      "status": "existing",
+      "asset": "../assets/casp-logos/incrementum-si-28a2b51c7735.jpg"
+    },
+    {
+      "slug": "orcabay-financne-storitve-d-o-o",
+      "domain": "orcabay.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/orcabay-io-abb0b38a3b70.png"
+    },
+    {
+      "slug": "safello-ab",
+      "domain": "safello.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/safello-com-5a813f350def.png"
+    },
+    {
+      "slug": "fintegence-s-r-o",
+      "domain": "cryptovoucher.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/cryptovoucher-io-8c3ffd5c8a0c.svg"
+    },
+    {
+      "slug": "fintech-sk-s-r-o",
+      "domain": "bitcoinmat.sk",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitcoinmat-sk-5e5bf3025bae.svg"
+    },
+    {
+      "slug": "fumbi-s-r-o",
+      "domain": "fumbi.network",
+      "status": "existing",
+      "asset": "../assets/casp-logos/fumbi-network-87e60db3f56c.svg"
+    },
+    {
+      "slug": "madison-six-j-s-a",
+      "domain": "madisonsix.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/madisonsix-com-7d40fd3615e5.svg"
+    },
+    {
+      "slug": "firefish-europe-s-r-o",
+      "domain": "firefish.io",
+      "status": "existing",
+      "asset": "../assets/casp-logos/firefish-io-93caf8accda3.png"
+    },
+    {
+      "slug": "okazio-s-r-o",
+      "domain": "okazio.sk",
+      "status": "existing",
+      "asset": "../assets/casp-logos/okazio-sk-db506c723e6d.png"
+    }
+  ]
+}

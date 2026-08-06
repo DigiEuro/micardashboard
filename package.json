@@ -11,6 +11,7 @@
     "test:csv": "node scripts/test-csv.js",
     "test:services": "node scripts/test-services.js",
     "build:entities": "node scripts/generate-entity-pages.js",
+    "logos:harvest": "node scripts/harvest-casp-logos.js",
     "build:static": "node scripts/refresh-static-pages.js",
     "test:entities": "node scripts/test-entity-pages.js",
     "preview": "node scripts/preview.js",

@@ -117,7 +117,7 @@ try {
   [
     'update-data.js', 'config.js', 'scripts/validate-dashboard-data.js',
     'assets/js/mobile-menu.js', 'assets/js/register-view.js', 'assets/js/entity-page.js',
-    'scripts/generate-entity-pages.js', 'scripts/generate-explainer-page.js', 'scripts/refresh-static-pages.js',
+    'scripts/generate-entity-pages.js', 'scripts/generate-explainer-page.js', 'scripts/harvest-casp-logos.js', 'scripts/refresh-static-pages.js',
     'scripts/test-entity-pages.js', 'scripts/test-csv.js', 'scripts/check-css.js',
     'scripts/ci-validate.js'
   ].forEach(nodeCheck);

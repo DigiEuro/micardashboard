@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="aP1-KT4_t7ysQfvzzyBjZWP39XGneWoggEjEWyoagHU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://cs-images.whitebit.eu/logo-whitebit.svg" alt="Whitebit EU" width="154" height="24">
+    </header>
+    <main>
+        <h1><mark>Your&nbsp;Crypto.</mark> Your&nbsp;Control. </h1>
+        <h5>WhiteBIT EU is Coming Soon!</h5>
+    </main>
+    <footer>
+        <div class="holder">
+            <p>This shall not constitute investment advice, nor an invitation or recommendation to engage in any crypto asset operations. Any investment in crypto assets carries risks of total or partial loss of capital and a risk of significant volatility, potentially inappropriate for retail clients. Past financial performance is no guarantee of future performance. Risk only assets you are willing to lose.</p>
+            <img src="https://cs-images.whitebit.eu/payment-icons.png" alt="Partners" width="248" height="56">
+        </div>
+    </footer>
+
+    <style>
+        html {
+            box-sizing: border-box;
+            height: 100%;
+            background-color: #000;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            background-color: #000;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            min-height: 100%;
+            height: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 64px;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            line-height: 80px;
+        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 48px;
+                line-height: 56px;
+            }
+        }
+        h5 {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: #fff;
+            margin: 0;
+            line-height: 24px;
+        }
+        @media screen and (max-width: 768px) {
+            h5 {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        header {
+            padding: 12px 56px;
+            display: flex;
+            justify-content: center;
+        }
+        main {
+            padding: 12px 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 24px;
+            flex-grow: 1;
+            background: url("https://cs-images.whitebit.eu/main-bg.png") 50% 100% / cover no-repeat;
+        }
+        @media screen and (max-width: 768px) {
+            main {
+                gap: 16px;
+            }
+        }
+        footer {
+            padding: 26px 56px;
+        }
+        p {
+            max-width: 768px;
+            margin: 0;
+        }
+        mark {
+            background: none;
+            color: #DDF218;
+        }
+        .holder {
+            max-width: 1584px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        @media screen and (max-width: 768px) {
+            .holder {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</body>
+</html>

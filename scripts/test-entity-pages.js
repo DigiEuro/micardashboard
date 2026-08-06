@@ -47,7 +47,7 @@ expect(!flowdesk.includes('—'), 'entity page contains an em dash');
 const logos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'casp-logos.json'), 'utf8'));
 Object.keys(logos).forEach(function (slug) {
   const logo = logos[slug];
-  expect(/^\.\.\/assets\/casp-logos\/[A-Za-z0-9._-]+\.(?:png|svg)$/i.test(logo.src), 'unsafe logo asset path: ' + slug);
+  expect(/^\.\.\/assets\/casp-logos\/[A-Za-z0-9._-]+\.(?:png|svg|jpe?g|webp|avif|ico|gif)$/i.test(logo.src), 'unsafe logo asset path: ' + slug);
   expect(fs.existsSync(path.join(ROOT, logo.src.replace(/^\.\.\//, ''))), 'missing logo asset: ' + slug);
   const html = fs.readFileSync(path.join(ROOT, 'entities', slug + '.html'), 'utf8');
   expect(html.includes('class="entity-logo-image"'), 'logo missing from entity page: ' + slug);

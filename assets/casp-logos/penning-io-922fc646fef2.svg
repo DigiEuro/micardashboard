@@ -1,0 +1,7 @@
+<svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon mark -->
+  <rect width="40" height="40" rx="20" fill="#0B0B08"/>
+  <path d="M26 31L21.698 25.4859L15.0097 29.7559L15 20L15.0097 10.2441L21.698 14.5141L26 9" stroke="#F9FBF9" stroke-width="1.2" stroke-miterlimit="10.15" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Wordmark -->
+  <text x="50" y="25.5" font-family="Switzer, system-ui, -apple-system, sans-serif" font-size="18" font-weight="500" fill="#F9FBF9" letter-spacing="0.02em">Penning</text>
+</svg>
