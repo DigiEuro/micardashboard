@@ -202,10 +202,10 @@
     "confidence": "medium"
   },
   "teroxx-digital-asset-ltd": {
-    "src": "../assets/casp-logos/teroxx-com-ca2e5e5e70ae.svg",
+    "src": "../assets/casp-logos/teroxx-com-8ae8407d54c7.svg",
     "alt": "TEROXX DIGITAL ASSET LTD logo from teroxx.com",
     "source": "https://www.teroxx.com",
-    "sourceUrl": "https://teroxx.com/hubfs/Banners%202025/teroxx-pay-logo.svg",
+    "sourceUrl": "https://teroxx.com/hubfs/Logo.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
     "confidence": "high"
@@ -580,11 +580,11 @@
     "confidence": "medium"
   },
   "volksbank-raiffeisenbank-bayern-mitte-eg": {
-    "src": "../assets/casp-logos/vr-bayernmitte-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/vr-bayernmitte-de-aebeb9e1176a.avif",
     "alt": "Volksbank Raiffeisenbank Bayern Mitte eG logo from vr-bayernmitte.de",
     "source": "https://www.vr-bayernmitte.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/Logo_vrbm_45x250",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -652,11 +652,11 @@
     "confidence": "medium"
   },
   "volksbank-mittlerer-schwarzwald-eg": {
-    "src": "../assets/casp-logos/voba-msw-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/voba-msw-de-04e86b7ec61b.avif",
     "alt": "Volksbank Mittlerer Schwarzwald eG logo from voba-msw.de",
     "source": "https://www.voba-msw.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/vobamsw-logo-2z-l-rgb-300-x-50-px",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -670,11 +670,11 @@
     "confidence": "high"
   },
   "vr-teilhaberbank-metropolregion-nurnberg-eg": {
-    "src": "../assets/casp-logos/vr-teilhaberbank-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/vr-teilhaberbank-de-4b1299f35437.avif",
     "alt": "VR TeilhaberBank Metropolregion Nürnberg eG logo from vr-teilhaberbank.de",
     "source": "https://www.vr-teilhaberbank.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/Logo_Teilhaberbank_450x50",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -706,11 +706,11 @@
     "confidence": "high"
   },
   "vr-bank-rottal-inn-eg": {
-    "src": "../assets/casp-logos/vrbk-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/vrbk-de-040fd9509b94.avif",
     "alt": "VR-Bank Rottal-Inn eG logo from vrbk.de",
     "source": "https://www.vrbk.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/vrbk_logo",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -733,11 +733,11 @@
     "confidence": "medium"
   },
   "vr-bank-sudpfalz-eg": {
-    "src": "../assets/casp-logos/vrbank-suedpfalz-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/vrbank-suedpfalz-de-b7a8c3c8f99e.avif",
     "alt": "VR Bank Südpfalz eG logo from vrbank-suedpfalz.de",
     "source": "https://www.vrbank-suedpfalz.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/Logo-(2020)",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -760,11 +760,11 @@
     "confidence": "high"
   },
   "hannoversche-volksbank-eg": {
-    "src": "../assets/casp-logos/hannoversche-volksbank-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/hannoversche-volksbank-de-1ec215e31990.avif",
     "alt": "Hannoversche Volksbank eG logo from hannoversche-volksbank.de",
     "source": "https://www.hannoversche-volksbank.de/",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/HannoverscheVolksbank_Logo_BlaueSchrift_transparenterHG_RGB_PNG",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -832,11 +832,11 @@
     "confidence": "high"
   },
   "raiffeisenbank-kreis-kelheim-eg": {
-    "src": "../assets/casp-logos/rbkk-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/rbkk-de-15003d8b1706.avif",
     "alt": "Raiffeisenbank Kreis Kelheim eG logo from rbkk.de",
     "source": "https://www.rbkk.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/KK%20Logo%20links_",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -859,38 +859,38 @@
     "confidence": "high"
   },
   "vr-bank-landau-mengkofen-eg": {
-    "src": "../assets/casp-logos/vrbanklm-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/vrbanklm-de-e7ec9d3d6658.avif",
     "alt": "VR-Bank Landau-Mengkofen eG logo from vrbanklm.de",
     "source": "https://www.vrbanklm.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/Logo-NEU-212x50",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
   "donau-iller-bank-eg": {
-    "src": "../assets/casp-logos/donau-iller-bank-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/donau-iller-bank-de-d2b7385e59b2.avif",
     "alt": "Donau-Iller-Bank eG logo from donau-iller-bank.de",
     "source": "https://www.donau-iller-bank.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/450x50_Logo_Donau_Iller-Bank_1",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
   "penning-financial-services-aps": {
-    "src": "../assets/casp-logos/penning-io-a78605d5cc51.svg",
+    "src": "../assets/casp-logos/penning-io-922fc646fef2.svg",
     "alt": "Penning Financial Services ApS logo from penning.io",
     "source": "https://www.penning.io",
-    "sourceUrl": "https://www.penning.io/images/tokens/bitcoin.svg",
-    "method": "img-logo",
+    "sourceUrl": "https://www.penning.io/images/logo.svg",
+    "method": "jsonld-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "medium"
   },
   "raiffeisenbank-falkenstein-worth": {
-    "src": "../assets/casp-logos/rbfalkenstein-woerth-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/rbfalkenstein-woerth-de-8c0d9bb0835f.avif",
     "alt": "Raiffeisenbank Falkenstein-Wörth logo from rbfalkenstein-woerth.de",
     "source": "https://www.rbfalkenstein-woerth.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/header_webBank_plus_Firmierung_ausrichtunglinks",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -904,11 +904,11 @@
     "confidence": "medium"
   },
   "vr-bank-schleswig-holstein-mitte-eg": {
-    "src": "../assets/casp-logos/vrbank-sh-mitte-de-7d6fd8e119dc.jpg",
+    "src": "../assets/casp-logos/vrbank-sh-mitte-de-97616f791a26.avif",
     "alt": "VR Bank Schleswig-Holstein Mitte eG logo from vrbank-sh-mitte.de",
     "source": "https://www.vrbank-sh-mitte.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/startseite-vrnw-ogt-1200x628?ts&",
-    "method": "og:image",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/Logo%20VR%20Bank%20Schleswig-Holstein%20Mitte",
+    "method": "embedded-logo-config",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -967,11 +967,11 @@
     "confidence": "medium"
   },
   "spar-und-kreditbank-rheinstetten-eg": {
-    "src": "../assets/casp-logos/skb-rheinstetten-de-f5582390284e.jpg",
+    "src": "../assets/casp-logos/skb-rheinstetten-de-f5e1bb04f554.avif",
     "alt": "Spar- und Kreditbank Rheinstetten eG logo from skb-rheinstetten.de",
     "source": "https://www.skb-rheinstetten.de",
-    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/onlinebanking-fk-bvr-visual-teaser-1290x860:3-2?ts&",
-    "method": "img-brand",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/VB_Logo_DZ_links_4c_pos",
+    "method": "link-icon",
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
@@ -1435,10 +1435,10 @@
     "confidence": "medium"
   },
   "bitblock-ltd-for-services": {
-    "src": "../assets/casp-logos/kriptomat-hr-c7225d7795fc.png",
+    "src": "../assets/casp-logos/kriptomat-hr-17d4454a1773.png",
     "alt": "Bitblock Ltd. for Services logo from kriptomat.hr",
     "source": "https://kriptomat.hr/",
-    "sourceUrl": "https://kriptomat.hr/wp-content/uploads/2024/05/bitcoin-btc-logo-150x150.png",
+    "sourceUrl": "https://kriptomat.hr/wp-content/uploads/2026/02/kriptomat-obojan-logo.png",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
     "confidence": "high"
@@ -2145,15 +2145,6 @@
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
-  "hidden-road-partners-civ-nl-b-v": {
-    "src": "../assets/casp-logos/hiddenroad-com-12a765046d3f.ico",
-    "alt": "Hidden Road Partners CIV NL B.V. logo from hiddenroad.com",
-    "source": "https://hiddenroad.com/",
-    "sourceUrl": "https://ripple.com/favicon.ico?favicon.1-g7pe_vm_qz0.ico",
-    "method": "link-icon",
-    "retrievedAt": "2026-08-06",
-    "confidence": "medium"
-  },
   "bequant-pro-limited": {
     "src": "../assets/casp-logos/bequant-pro-35fe47ff90e9.ico",
     "alt": "Bequant Pro Limited logo from bequant.pro",
@@ -2558,5 +2549,122 @@
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
     "confidence": "high"
+  },
+  "s-k-dask-krypto-ltd": {
+    "src": "../assets/casp-logos/daskkrypto-eu-1acd247d3b0f.png",
+    "alt": "S.K. DASK KRYPTO LTD logo from daskkrypto.eu",
+    "source": "https://www.daskkrypto.eu",
+    "sourceUrl": "https://daskkrypto.eu/icons/favicon.png",
+    "method": "link-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "revolut-digital-assets-europe-ltd": {
+    "src": "../assets/casp-logos/revolut-com-1fe9791617d6.png",
+    "alt": "Revolut Digital Assets (Europe) Ltd logo from revolut.com",
+    "source": "https://www.revolut.com/en-CY/crypto/",
+    "sourceUrl": "https://assets.revolut.com/website/images/revolut-logo.png",
+    "method": "jsonld-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "jt-technologies-gmbh": {
+    "src": "../assets/casp-logos/justtrade-com-8499d30b1495.svg",
+    "alt": "JT Technologies GmbH logo from justtrade.com",
+    "source": "https://www.justtrade.com/",
+    "sourceUrl": "https://www.justtrade.com/_assets/f5b2babd0f8eb14955e2993069b611fd/Images/Dist/logo.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "bitvavo-b-v": {
+    "src": "../assets/casp-logos/bitvavo-com-932085199f1a.png",
+    "alt": "Bitvavo B.V. logo from bitvavo.com",
+    "source": "https://bitvavo.com/nl",
+    "sourceUrl": "https://www.bitvavo.com/icons/icon-48x48.png?v=7ba51b544a17c10de8defa086df79917",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "acheron-europe-b-v": {
+    "src": "../assets/casp-logos/acherontrading-com-8371c6845386.svg",
+    "alt": "Acheron Europe B.V. logo from acherontrading.com",
+    "source": "https://www.acherontrading.com/",
+    "sourceUrl": "https://acherontrading.com/build/assets/acheron-logo-light-VpRNC792.svg",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "tria-bridge-limited-ex-tokenomica-bridge-ltd": {
+    "src": "../assets/casp-logos/triabridge-com-3e0cf6b9b3b7.svg",
+    "alt": "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd) logo from triabridge.com",
+    "source": "https://triabridge.com/",
+    "sourceUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA4MiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wLjI0OTkyIDIuODkyOTRIMjYuMzk3OEMyNi42MTk5IDIuODkyOTQgMjYuNzMxIDMuMTU2NTQgMjYuNTc2MSAzLjMxMDA2TDIyLjg3NzMgNi45NDA5OEMyMi44MDcxIDcuMDA5MDUgMjIuNzEyMSA3LjA0OTYgMjIuNjEyNyA3LjA0OTZIMTQuODUyNkMxNC44NDkgNy4wNDk2IDE0Ljg0NTMgNy4wNTAzMiAxNC44NDE3IDcuMDUxMDVDMTQuODM4IDcuMDUxNzcgMTQuODM0MyA3LjA1MjUgMTQuODMwNyA3LjA1MjVDMTQuMjkgNy4wNjQwOCAxMy44NTQ1IDcuNDk1NjggMTMuODU0NSA4LjAyODY2VjguOTI3MjZIMjAuMzUzMkMyMC41ODU4IDguOTI3MjYgMjAuNzAyOSA5LjIxNDIyIDIwLjUzODEgOS4zODEzNUwxOS44MTA5IDEwLjExNzdMMTYuNjM4NSAxMy4zMzQyQzE2LjU2NDYgMTMuNDA5OCAxNi40NjQ0IDEzLjQ1MjQgMTYuMzU5NiAxMy40NTI0SDEzLjg1NDVWMTguMDQwOEMxMy44NTQ1IDE4LjA0NDUgMTMuODUzNCAxOC4wNDc3IDEzLjg1MjMgMTguMDUxQzEzLjg1MTIgMTguMDU0MiAxMy44NTAxIDE4LjA1NzUgMTMuODUwMSAxOC4wNjExQzEzLjg0NDIgMTguMTUwOSAxMy44MTA2IDE4LjIzNjQgMTMuNzQ0OSAxOC4zMDAxTDEwLjA1MTkgMjEuOTI2N0M5Ljg5NTQ4IDIyLjA4MTYgOS42MjY1OCAyMS45NzE2IDkuNjI2NTggMjEuNzU0M0w5LjYyMjIgOC4wMjcyMUM5LjYyMjIgNy40OTQyMyA5LjE4ODE2IDcuMDYyNjMgOC42NDc0MyA3LjA1MTA1QzguNjQzNzggNy4wNTEwNSA4LjY0MDEyIDcuMDUwMzIgOC42MzY0NyA3LjA0OTZDOC42MzI4MiA3LjA0ODg4IDguNjI5MTYgNy4wNDgxNSA4LjYyNTUxIDcuMDQ4MTVINC4wMzY0NUMzLjkzNzA4IDcuMDQ4MTUgMy44NDIwOCA3LjAwOTA1IDMuNzcxOTQgNi45NDA5OEwwLjA3MzA4ODYgMy4zMTAwNkMtMC4wODMyODMxIDMuMTU2NTQgMC4wMjc3ODQ3IDIuODkyOTQgMC4yNDk5MiAyLjg5Mjk0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTc1Ljk4NTkgMjAuNjcxOFYxOC4zMjc1SDgwLjg2OVYxNy4yNzE5SDc1Ljk4NTlWMTUuMzI1Mkg4MS4xMjlWMTQuMjY0NUg3NS4xOTMxQzc0Ljk5MiAxNC4yNjQ1IDc0LjgyODIgMTQuNDI4MyA3NC44MjgyIDE0LjYyOTRWMjEuMzY3NkM3NC44MjgyIDIxLjU2ODkgNzQuOTkyIDIxLjczMjcgNzUuMTkzMSAyMS43MzI3SDgxLjIwNTVWMjAuNjcxOEg3NS45ODU5WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTczLjEzNzYgMTcuNzgyMUg2OS45MTYzQzY5LjcxNTIgMTcuNzgyMSA2OS41NTE0IDE3Ljk0NTggNjkuNTUxNCAxOC4xNDdWMTguNDc4QzY5LjU1MTQgMTguNjc5MiA2OS43MTUyIDE4Ljg0MjkgNjkuOTE2MyAxOC44NDI5SDcyLjQwMDlWMjAuNTYwN0M3Mi4zMTIgMjAuNTgzOSA3Mi4yMTI1IDIwLjYwNzQgNzIuMTA0MyAyMC42MzA4QzcxLjkxNTQgMjAuNjY3OCA3MS43MDY0IDIwLjcwMzIgNzEuNDg2NCAyMC43MzU2QzcxLjI2MDMgMjAuNzY1MiA3MS4wMTU3IDIwLjc5MDUgNzAuNzU5NCAyMC44MTA2QzcwLjUwNzcgMjAuODMwNCA3MC4yNDk3IDIwLjg0MDUgNjkuOTkyNyAyMC44NDA1QzY5LjM0MjcgMjAuODQwNSA2OC43NzAyIDIwLjc2NjYgNjguMjkxNCAyMC42MjFDNjcuODE5OSAyMC40Nzc4IDY3LjQyMjcgMjAuMjc3NCA2Ny4xMTE2IDIwLjAyNjNDNjYuODA4NSAxOS43Nzg5IDY2LjU3ODUgMTkuNDgxNiA2Ni40Mjg3IDE5LjE0NTVDNjYuMjc4OSAxOC43OTk1IDY2LjIwMyAxOC40MTU1IDY2LjIwMyAxOC4wMDQyQzY2LjIwMyAxNy41NjI4IDY2LjI4MDUgMTcuMTYxOSA2Ni40MzI2IDE2LjgxNDNDNjYuNTg2MyAxNi40NzAxIDY2LjgxODggMTYuMTczOCA2Ny4xMjM4IDE1LjkzMzVDNjcuNDM0OCAxNS42ODg0IDY3LjgzMzEgMTUuNDk2NiA2OC4zMDcyIDE1LjM2M0M2OC43OTAzIDE1LjIyNjcgNjkuMzY3NiAxNS4xNTc2IDcwLjAyMzMgMTUuMTU3NkM3MC4zNDMxIDE1LjE1NzYgNzAuNjQ0MSAxNS4xODA2IDcwLjkxODUgMTUuMjI1OUM3MS4xOTkgMTUuMjcxNSA3MS40NjE3IDE1LjMzMzkgNzEuNzAwOSAxNS40MTE3QzcxLjk0NDEgMTUuNDg5NSA3Mi4xNzE0IDE1LjU4MSA3Mi4zNzc2IDE1LjY4NDJDNzIuNTg5NyAxNS43ODg3IDcyLjc5MTYgMTUuOTAxMiA3Mi45Nzc4IDE2LjAxODdMNzMuMzM0MSAxNi4yNDM1VjE0Ljg5M0w3My4xOTEzIDE0LjgzMzRDNzIuOTQzNCAxNC43MyA3Mi42OTMyIDE0LjYzNTUgNzIuNDUwMyAxNC41NTM1QzcyLjIwMTkgMTQuNDY2IDcxLjk0MjkgMTQuMzkxMyA3MS42ODMxIDE0LjMzMjVDNzEuNDE5NSAxNC4yNjkzIDcxLjE0MDYgMTQuMjIxMiA3MC44NTY2IDE0LjE5MDJDNzAuNTcwNCAxNC4xNTUzIDcwLjI1NzUgMTQuMTM3NiA2OS45MjY0IDE0LjEzNzZDNjkuNDg3MyAxNC4xMzc2IDY5LjA1OTEgMTQuMTczIDY4LjY1NTIgMTQuMjQyNUM2OC4yNDY3IDE0LjMwOTUgNjcuODU5IDE0LjQxMzIgNjcuNTA0MyAxNC41NTAzQzY3LjE0NzUgMTQuNjg1OCA2Ni44MTYgMTQuODYxNSA2Ni41MTgzIDE1LjA3MzNDNjYuMjIxMiAxNS4yODcyIDY1Ljk2MjIgMTUuNTQyNSA2NS43NDc4IDE1LjgzMjhDNjUuNTM2NyAxNi4xMjA5IDY1LjM3MSAxNi40NTAyIDY1LjI1NTMgMTYuODExMkM2NS4xMzk3IDE3LjE2OTYgNjUuMDgxIDE3LjU3MSA2NS4wODEgMTguMDA0MkM2NS4wODEgMTguNjUzMyA2NS4yMDggMTkuMjI5MyA2NS40NTg1IDE5LjcxNjJDNjUuNzA4NSAyMC4yMDE3IDY2LjA1NzYgMjAuNjExMyA2Ni40OTc2IDIwLjkzNDdDNjYuOTMzMyAyMS4yNDkgNjcuNDUyOCAyMS40ODc2IDY4LjA0MzIgMjEuNjQ0QzY4LjYyNCAyMS43OTQ0IDY5LjI2MSAyMS44NzA2IDY5LjkzNjYgMjEuODcwNkM3MC4yNjU1IDIxLjg3MDYgNzAuNTgyMiAyMS44NTg0IDcwLjg3NzggMjEuODM0MkM3MS4xNzc2IDIxLjgxMDEgNzEuNDcwMSAyMS43NzUyIDcxLjc1IDIxLjcyOTdDNzIuMDMxMSAyMS42ODExIDcyLjMwNTUgMjEuNjIxMiA3Mi41NjQ3IDIxLjU1MjJDNzIuODI2OCAyMS40ODMxIDczLjA5MDIgMjEuNDAyNCA3My4zNDcyIDIxLjMxMjJMNzMuNTAyNSAyMS4yNTc2VjE4LjE0N0M3My41MDI1IDE3Ljk0NTggNzMuMzM4NyAxNy43ODIxIDczLjEzNzYgMTcuNzgyMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02My4yMzg1IDE1LjA1NTVDNjIuODUzNiAxNC43NjUxIDYyLjM5MzQgMTQuNTU3NCA2MS44NzA4IDE0LjQzODRDNjEuMzYzNCAxNC4zMjMgNjAuODA3NSAxNC4yNjQ1IDYwLjIxODYgMTQuMjY0NUg1Ni43NDc2QzU2LjU0NjUgMTQuMjY0NSA1Ni4zODI3IDE0LjQyODMgNTYuMzgyNyAxNC42Mjk0VjIxLjM2NzZDNTYuMzgyNyAyMS41Njg5IDU2LjU0NjUgMjEuNzMyNyA1Ni43NDc2IDIxLjczMjdINjAuMjI5QzYwLjYyMiAyMS43MzI3IDYxLjAwMTMgMjEuNzA4IDYxLjM1ODEgMjEuNjU4OUM2MS43MjIgMjEuNjA2IDYyLjA2MzYgMjEuNTIxNCA2Mi4zNzI4IDIxLjQwNzhDNjIuNjkxNiAyMS4yOTE3IDYyLjk4NDEgMjEuMTM1MSA2My4yNDE1IDIwLjk0MzNDNjMuNTA3MiAyMC43NDc3IDYzLjczNTUgMjAuNTA2NSA2My45MTk3IDIwLjIyNjNDNjQuMTAyNiAxOS45NDgyIDY0LjI0NDkgMTkuNjE5OSA2NC4zNDIyIDE5LjI1MjJDNjQuNDQyMiAxOC44ODQyIDY0LjQ5MjkgMTguNDYwOCA2NC40OTI5IDE3Ljk5MzVDNjQuNDkyOSAxNy4yOTMgNjQuMzgxMiAxNi42OTU5IDY0LjE2MTMgMTYuMjIwNUM2My45NDIxIDE1LjczNzggNjMuNjMwOSAxNS4zNDUzIDYzLjIzODUgMTUuMDU1NVpNNTcuNDg0MiAxNS4zMUg2MC4yMTg2QzYwLjUzOTcgMTUuMzEgNjAuODQ3MiAxNS4zMjgzIDYxLjEzMjUgMTUuMzY0MkM2MS40MDk1IDE1LjM5OTMgNjEuNjY4NyAxNS40NjA0IDYxLjkwNTEgMTUuNTQ2NkM2Mi4xMzQ3IDE1LjYyNzQgNjIuMzQyNiAxNS43MzUxIDYyLjUyMzYgMTUuODY3MUM2Mi42OTk4IDE1Ljk5NTQgNjIuODUxNCAxNi4xNTc5IDYyLjk3NTQgMTYuMzUxM0M2My4xMDA0IDE2LjU0MzMgNjMuMTk4MiAxNi43NzU3IDYzLjI2NjIgMTcuMDQxOUM2My4zMzU3IDE3LjMxNCA2My4zNzExIDE3LjYzNDIgNjMuMzcxMSAxNy45OTM1QzYzLjM3MTEgMTguNTI5NCA2My4yOTM2IDE4Ljk3NjQgNjMuMTQxMiAxOS4zMjEzQzYyLjk5MiAxOS42NTY0IDYyLjc4MTYgMTkuOTI3NiA2Mi41MTYzIDIwLjEyNjdDNjIuMjQ4NiAyMC4zMjY4IDYxLjkyIDIwLjQ3MDggNjEuNTQxNCAyMC41NTQ2QzYxLjE0NDQgMjAuNjM5MiA2MC42OTkzIDIwLjY4MiA2MC4yMTg2IDIwLjY4Mkg1Ny40ODQyVjE1LjMxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTU0LjgwMDIgMTQuMjY0NUg1My42OTg1VjIxLjczMjdINTQuODAwMlYxNC4yNjQ1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTUxLjU3ODUgMTcuOTIxNkM1MS44OTAyIDE3LjU2MzUgNTIuMDQ4MiAxNy4wODg2IDUyLjA0ODIgMTYuNTEwMUM1Mi4wNDgyIDE2LjE0MjEgNTEuOTg0OCAxNS44MTM3IDUxLjg2MDEgMTUuNTMzOEM1MS43MzA2IDE1LjI0MzYgNTEuNTIzMiAxNC45OTk5IDUxLjI0NjMgMTQuODExNUM1MC45ODA1IDE0LjYyNDEgNTAuNjM3OSAxNC40ODQ4IDUwLjIzMDMgMTQuMzk3NUM0OS44MzU2IDE0LjMwOTIgNDkuMzU3MyAxNC4yNjQ1IDQ4LjgwODYgMTQuMjY0NUg0NS40NTQ4QzQ1LjI1MzcgMTQuMjY0NSA0NS4wODk5IDE0LjQyODMgNDUuMDg5OSAxNC42Mjk0VjIxLjczMjdINDYuMTkxNFYxOC43MzU0SDQ4LjgwODZDNDguOTE2OSAxOC43MzU0IDQ5LjAyMTcgMTguNzMzOCA0OS4xMjIxIDE4LjczMDFDNDkuMTgwMiAxOC43MjgyIDQ5LjIzNzYgMTguNzI1OCA0OS4yOTQ0IDE4LjcyMjVMNTEuNDM3NCAyMS41ODY2QzUxLjUwNiAyMS42NzggNTEuNjE1MSAyMS43MzI3IDUxLjcyOTUgMjEuNzMyN0g1Mi45MzY5TDUwLjQ3NzYgMTguNTU1QzUwLjk1ODYgMTguNDE4MyA1MS4zMjc4IDE4LjIwNjEgNTEuNTc4NSAxNy45MjE2Wk00Ni4xOTE0IDE1LjMyNTJINDguMTMwOEM0OC42ODA0IDE1LjMyNTIgNDkuMTQ5NiAxNS4zNDM3IDQ5LjUyNzUgMTUuMzgwM0M0OS44ODg0IDE1LjQxMjIgNTAuMTggMTUuNDc0OSA1MC4zOTQxIDE1LjU2NjRDNTAuNTg1NiAxNS42NDg1IDUwLjcxNzkgMTUuNzU3OCA1MC43OTkyIDE1LjkwMkM1MC44ODM1IDE2LjA0ODggNTAuOTI2MyAxNi4yNTM2IDUwLjkyNjMgMTYuNTEwMUM1MC45MjYzIDE2Ljc2OSA1MC44ODI0IDE2Ljk3NDQgNTAuNzk0OCAxNy4xMjE4QzUwLjcxNDggMTcuMjU4OSA1MC41ODA2IDE3LjM2NTYgNTAuMzg3NyAxNy40NDcxQzUwLjE2OSAxNy41MzY0IDQ5Ljg3NDQgMTcuNTk3OCA0OS41MTQgMTcuNjI5NUM0OS4xMzU5IDE3LjY1OTUgNDguNjYzNiAxNy42NzQ3IDQ4LjExMDMgMTcuNjc0N0g0Ni4xOTE0VjE1LjMyNTJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNDMuNTMwOCAxOC4xNDAxQzQzLjM1NTQgMTcuOTY0OCA0My4xMjkxIDE3LjgyMzUgNDIuODU3OCAxNy43MjAxQzQyLjg0MTMgMTcuNzEzOSA0Mi44MjQ2IDE3LjcwNzcgNDIuODA3NyAxNy43MDE4QzQyLjkzMDUgMTcuNjI5NSA0My4wMzcyIDE3LjU0NTUgNDMuMTI1NSAxNy40NTE5QzQzLjI2NTMgMTcuMzA4MSA0My4zNjkzIDE3LjEzMzggNDMuNDMzIDE2LjkzODJDNDMuNDk5MiAxNi43NDgxIDQzLjUzMjcgMTYuNTIzNSA0My41MzI3IDE2LjI3MDZDNDMuNTMyNyAxNS45ODk5IDQzLjQ5MzcgMTUuNzQwMSA0My40MTggMTUuNTMyMUM0My4zNDM1IDE1LjMxNjUgNDMuMjM1MSAxNS4xMjg2IDQzLjA5ODIgMTQuOTc2MkM0Mi45NjQgMTQuODIyIDQyLjgwMTcgMTQuNjk1NyA0Mi42MTc3IDE0LjYwMTZDNDIuNDQ1MiAxNC41MTE4IDQyLjI1MzggMTQuNDQxNSA0Mi4wNTM5IDE0LjM5NDNDNDEuODU4NyAxNC4zNDM1IDQxLjY1MTggMTQuMzA4OCA0MS40MzkyIDE0LjI5MDhDNDEuMjM0NSAxNC4yNzM0IDQxLjAyNTUgMTQuMjY0NSA0MC44MTgxIDE0LjI2NDVIMzcuMDAwM0MzNi43OTkxIDE0LjI2NDUgMzYuNjM1NCAxNC40MjgzIDM2LjYzNTQgMTQuNjI5NFYyMS4zNjc2QzM2LjYzNTQgMjEuNTY4OSAzNi43OTkxIDIxLjczMjcgMzcuMDAwMyAyMS43MzI3SDQwLjkwOThDNDEuMTc2IDIxLjczMjcgNDEuNDM4IDIxLjcyMjEgNDEuNjg4NiAyMS43MDEzQzQxLjk0MjYgMjEuNjgwMiA0Mi4xODU3IDIxLjY0MjMgNDIuNDE0NSAyMS41ODc4QzQyLjY0MzkgMjEuNTI5NiA0Mi44NTY4IDIxLjQ1MTcgNDMuMDQ5IDIxLjM1NTZDNDMuMjU0NCAyMS4yNTEyIDQzLjQzMTkgMjEuMTE0OCA0My41NzY0IDIwLjk1MDdDNDMuNzI0NyAyMC43ODI5IDQzLjg0MDkgMjAuNTgyNSA0My45MjE4IDIwLjM1NUM0NC4wMDE5IDIwLjEzMDYgNDQuMDQyNCAxOS44NjU5IDQ0LjA0MjQgMTkuNTY4NkM0NC4wNDI0IDE5LjI3OTQgNDQuMDAyMiAxOS4wMTQzIDQzLjkyMzMgMTguNzgxNUM0My44NDA4IDE4LjUzMzYgNDMuNzA4NyAxOC4zMTc5IDQzLjUzMDggMTguMTQwMVpNMzcuNzM3IDE3LjI4MjFWMTUuMjk5OEg0MC42MDkxQzQwLjkxODYgMTUuMjk5OCA0MS4xODQ5IDE1LjMxNjEgNDEuNDA0NCAxNS4zNDg4QzQxLjYxNzEgMTUuMzc2OSA0MS43OTU3IDE1LjQxNzMgNDEuOTM5OCAxNS40NzA1QzQyLjA2NjYgMTUuNTE0NiA0Mi4xNjQgMTUuNTY2MyA0Mi4yMzIyIDE1LjYyNjVDNDIuMzAwNSAxNS42ODQ3IDQyLjM1MjIgMTUuNzQ3MSA0Mi4zODc1IDE1LjgxNDhDNDIuNDIyMSAxNS44NzkgNDIuNDQzNyAxNS45NDUzIDQyLjQ1MzYgMTYuMDE2N0M0Mi40NjU3IDE2LjEwNDcgNDIuNDcxOCAxNi4xOTM2IDQyLjQ3MTggMTYuMjgwN0M0Mi40NzE4IDE2LjQyMjcgNDIuNDUxNSAxNi41NTg3IDQyLjQxIDE2LjY4ODlDNDIuMzggMTYuNzkwMyA0Mi4zMTIzIDE2Ljg3OTUgNDIuMjAwNyAxNi45NjMyQzQyLjA4MSAxNy4wNTUxIDQxLjg5NzIgMTcuMTMyIDQxLjY1NyAxNy4xOTEzQzQxLjQwMDQgMTcuMjUxNiA0MS4wNDc4IDE3LjI4MjEgNDAuNjA5MSAxNy4yODIxSDM3LjczN1pNNDIuNzk2NCAxOC45ODMxQzQyLjg3MTkgMTkuMTM2NCA0Mi45MTAyIDE5LjMzIDQyLjkxMDIgMTkuNTU4M0M0Mi45MTAyIDE5Ljc2ODYgNDIuODc3NiAxOS45NDc2IDQyLjgxMiAyMC4wOTMzQzQyLjc1NTggMjAuMjIzNCA0Mi42NjAzIDIwLjMyOTEgNDIuNTIxMiAyMC40MTU4QzQyLjM3MDYgMjAuNTA4NCA0Mi4xNjE1IDIwLjU3ODUgNDEuOTAxNiAyMC42MjRDNDEuNjI2OSAyMC42NjkzIDQxLjI3OTUgMjAuNjkyMyA0MC44NjkgMjAuNjkyM0gzNy43MzdWMTguMzA3MUg0MC43ODIzQzQxLjE3NjEgMTguMzA3MSA0MS41MTk4IDE4LjMzNDkgNDEuODA2IDE4LjM5QzQyLjA3NDkgMTguNDM5MSA0Mi4yOTQ0IDE4LjUxNjEgNDIuNDU4NiAxOC42MTg3QzQyLjYxMjggMTguNzE0OSA0Mi43MjMzIDE4LjgzNDEgNDIuNzk2NCAxOC45ODMxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTUyLjE5ODUgMi45MDc4NEg1MS4wNDUxVjEwLjcyNzRINTIuMTk4NVYyLjkwNzg0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQ4Ljc3NjYgNi43MzcwM0M0OS4xMDMxIDYuMzYyMTEgNDkuMjY4NiA1Ljg2NDggNDkuMjY4NiA1LjI1OTExQzQ5LjI2ODYgNC44NzQxMSA0OS4yMDIzIDQuNTMwMjMgNDkuMDcxNSA0LjIzNjg5QzQ4LjkzNTggMy45MzI4MiA0OC43MTg3IDMuNjc3NjcgNDguNDI5IDMuNDgwNTRDNDguMTUwNiAzLjI4NDM5IDQ3Ljc5MiAzLjEzODQ1IDQ3LjM2NTQgMy4wNDcxMUM0Ni45NTE5IDIuOTU0NjQgNDYuNDUwOSAyLjkwNzg0IDQ1Ljg3NjcgMi45MDc4NEg0Mi4zNjUxQzQyLjE1NDQgMi45MDc4NCA0MS45ODMxIDMuMDc5MjkgNDEuOTgzMSAzLjI4OTkxVjEwLjcyNzRINDMuMTM2NFY3LjU4OTFINDUuODc2N0M0NS45OSA3LjU4OTEgNDYuMDk5NyA3LjU4NzQ4IDQ2LjIwNSA3LjU4MzU3QzQ2LjI2NTcgNy41ODE2MyA0Ni4zMjU4IDcuNTc5MDIgNDYuMzg1MyA3LjU3NTYxTDQ4LjYyOTMgMTAuNTc0OEM0OC43MDExIDEwLjY3MDQgNDguODE1NCAxMC43Mjc0IDQ4LjkzNSAxMC43Mjc0SDUwLjE5OUw0Ny42MjQgNy40MDAyNUM0OC4xMjc4IDcuMjU3MDggNDguNTE0MyA3LjAzNDkyIDQ4Ljc3NjYgNi43MzcwM1pNNDYuNjE1MyA2LjQzMTE3QzQ2LjIxOTQgNi40NjI1NCA0NS43MjQ4IDYuNDc4NDYgNDUuMTQ1NSA2LjQ3ODQ2SDQzLjEzNjRWNC4wMTg0N0g0NS4xNjY5QzQ1Ljc0MjMgNC4wMTg0NyA0Ni4yMzM2IDQuMDM3ODEgNDYuNjI5MiA0LjA3NjE3QzQ3LjAwNzMgNC4xMDk0OCA0Ny4zMTI2IDQuMTc1MTMgNDcuNTM2NyA0LjI3MTAxQzQ3LjczNzMgNC4zNTY5OCA0Ny44NzU2IDQuNDcxNCA0Ny45NjA3IDQuNjIyMzhDNDguMDQ5MSA0Ljc3NjI4IDQ4LjA5NCA0Ljk5MDQ3IDQ4LjA5NCA1LjI1OTExQzQ4LjA5NCA1LjUzMDAyIDQ4LjA0NzkgNS43NDUyIDQ3Ljk1NjQgNS44OTk1OUM0Ny44NzI1IDYuMDQzMDkgNDcuNzMyMiA2LjE1NDkgNDcuNTI5OSA2LjI0MDIyQzQ3LjMwMTEgNi4zMzM2NyA0Ni45OTI3IDYuMzk4MDIgNDYuNjE1MyA2LjQzMTE3WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTMzLjI3NDcgNC4wMDI1NEgzNi42MTAzVjEwLjcyNzRIMzcuNzU4M1Y0LjAwMjU0SDQxLjA5NFYyLjkwNzg0SDMzLjI3NDdWNC4wMDI1NFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik01OC4wMjg0IDIuOTA3ODRINTcuNTgwMkM1Ny4zODU2IDIuOTA3ODQgNTcuMjA4NiAzLjAxNDk0IDU3LjExODUgMy4xODcyTDUzLjE3MzEgMTAuNzI3NEg1NC40NTMxTDU1LjQ2MTkgOC43OTUyOUg2MC4xNDY3TDYxLjE1NTMgMTAuNzI3NEg2Mi40MzU0TDU4LjQ5IDMuMTg3MzZDNTguMzk5OCAzLjAxNDkzIDU4LjIyMjkgMi45MDc4NCA1OC4wMjg0IDIuOTA3ODRaTTU2LjA0MTcgNy42OTUyMkw1Ny44MDY2IDQuMzIxODlMNTkuNTY3MiA3LjY5NTIySDU2LjA0MTdaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTQuMDQ1MyAwLjg1NDc1OUM1NC4xMDU5IDAuODI5NjEyIDU0LjEzMjUgMC43NTg1MzcgNTQuMTAzNSAwLjY5OTc4TDUzLjc4ODkgMC4wNjMxNzgzQzUzLjc2MTIgMC4wMDcxOTczNyA1My42OTM1IC0wLjAxNTg4IDUzLjYzNzQgMC4wMTE1NTc5TDUwLjc1NTEgMS40MjEyNEM1MC42OTgyIDEuNDQ5MDYgNTAuNjc1MSAxLjUxODA5IDUwLjcwMzggMS41NzQ1NEw1MC45MzY5IDIuMDMyNzNDNTAuOTYzOCAyLjA4NTU0IDUxLjAyNjggMi4xMDg3NyA1MS4wODE1IDIuMDg2MDRMNTQuMDQ1MyAwLjg1NDc1OVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+    "method": "img-brand",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "cryptonow-gmbh": {
+    "src": "../assets/casp-logos/cryptonow-at-d07ac17ee07c.svg",
+    "alt": "Cryptonow GmbH logo from cryptonow.at",
+    "source": "https://www.cryptonow.at",
+    "sourceUrl": "data:image/svg+xml;base64,PHN2ZwogICAgICAgICAgICBjbGFzcz0idy1hdXRvIgogICAgICAgICAgICB3aWR0aD0iMTAwJSIKICAgICAgICAgICAgaGVpZ2h0PSIxMDAlIgogICAgICAgICAgICB2aWV3Qm94PSIwIDAgMjQzIDM1IgogICAgICAgICAgICBhCiAgICAgICAgICAgIGZpbGw9Im5vbmUiCiAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgICAgICAgID4KICAgICAgICAgICAgPHBhdGgKICAgICAgICAgICAgICBkPSJNMTA5LjQ1IDE3LjVDMTA5LjA1NSAxOC43MTM4IDEwOC41NDkgMjAuNjcyMyAxMDguNTQ5IDIwLjY3MjNIMTA4LjM4OUMxMDguMzg5IDIwLjY3MjMgMTA3Ljk2IDE4LjcxMzggMTA3LjU2NiAxNy40NTlMMTA0LjA4MSA3LjI2ODA5SDk4LjkwNTFMMTA1LjIxNiAyNC41NTIxQzEwNS41NDcgMjUuMzYwNiAxMDUuNzIxIDI2LjIyNTIgMTA1LjcyNiAyNy4wOTg5QzEwNS43MjYgMjguMzk0NyAxMDUuMDYgMzEuMDYwNyAxMDIuOTQxIDMxLjA2MDdIMTAwLjc4OVYzNUgxMDMuNTdDMTA2LjU0OSAzNSAxMDguNTQ5IDMzLjQ2OTcgMTA5LjggMzAuMDIxOEwxMTguMDMyIDcuMjQ5NDZMMTEyLjg1NyA3LjI5MDQxTDEwOS40NSAxNy41Wk05MS44MzA2IDkuODU1ODRWNy4yNDk0Nkg4Ni43NzQyVjI2Ljk4MzVIOTEuODMwNlYxNi4wNTE2QzkxLjgzMDYgMTMuNzM5NCA5My4xNTk4IDExLjQ2NDQgOTUuNDM0OCAxMS40NjQ0SDk4LjI1NzJWNy4yMzA4N0g5NS44MjU4Qzk0Ljk3NDQgNy4yMTI3NSA5NC4xMzc0IDcuNDUyMjUgOTMuNDI0NSA3LjkxODAxQzkyLjcxMTYgOC4zODM3NiA5Mi4xNTYgOS4wNTQwNCA5MS44MzA2IDkuODQwOThWOS44NTU4NFpNNC42MjAxMmUtMDYgMTMuNTMwOEM0LjYyMDEyZS0wNiAxNy4xMTI1IDEuNDIyODMgMjAuNTQ3NiAzLjk1NTQ3IDIzLjA4MDJDNi40ODgxMiAyNS42MTI4IDkuOTIzMTEgMjcuMDM1NiAxMy41MDQ4IDI3LjAzNTZIMjcuMDA1OVYwSDEzLjUwNDhDMTEuNzMwNCAtNi4wNjk3N2UtMDcgOS45NzMzOCAwLjM0OTY5NSA4LjMzNDE3IDEuMDI5MDdDNi42OTQ5NiAxLjcwODQ1IDUuMjA1NyAyLjcwNDE3IDMuOTUxNTIgMy45NTkzOUMyLjY5NzMzIDUuMjE0NjEgMS43MDI4MSA2LjcwNDcxIDEuMDI0NzggOC4zNDQ0OEMwLjM0Njc2MSA5Ljk4NDI1IC0wLjAwMTQ2MzA1IDExLjc0MTYgNC42MjAxMmUtMDYgMTMuNTE2VjEzLjUzMDhaTTc2LjE1MTMgMjIuOTg0Nkg3NC45NzQ3QzcyLjY2MjQgMjIuOTg0NiA3MS4yODg1IDIwLjMyMjQgNzEuMjg4NSAxNy4xNDYzQzcxLjI4ODUgMTMuOTcwMiA3Mi42NjI0IDExLjMwOCA3NS4wNTI5IDExLjMwOEg3Ni4yMjk1Qzc3LjkxMjQgMTEuMzA4IDc5LjEyNjMgMTIuODc1NSA3OS4zMjM2IDE1LjA2ODZIODQuMzhDODQuMTQ1NSAxMC4zMjUgODAuODU0IDYuOTU1MzQgNzYuMzA3NyA2Ljk1NTM0SDc1LjA1MjlDNjkuNjA1NSA2Ljk1NTM0IDY2LjE1NzYgMTEuNDY0NCA2Ni4xNTc2IDE3LjE0NjNDNjYuMTU3NiAyMi44MjgyIDY5LjU2NDYgMjcuMzM3MiA3NC45NzQ3IDI3LjMzNzJINzYuMTg4NUM4MC44NTQgMjcuMzM3MiA4My45NDgxIDIzLjg0ODQgODQuNDU4MiAxOS4zMDIxSDc5LjQwMThDNzkuMDQ4MSAyMS4zNjQ5IDc3LjkxMjQgMjIuOTY5NyA3Ni4xNTEzIDIyLjk2OTdWMjIuOTg0NlpNNDQuNTU4MSAwQzQwLjk3NzcgMC4wMDA5ODcwMTYgMzcuNTQ0MiAxLjQyMzc1IDM1LjAxMjUgMy45NTU0OEMzMi40ODA3IDYuNDg3MjEgMzEuMDU4IDkuOTIwNjYgMzEuMDU3IDEzLjUwMTFWMjcuMDA1OUg1OC4wNjI5VjEzLjUxNkM1OC4wNjQ0IDExLjc0MTYgNTcuNzE2MiA5Ljk4NDI1IDU3LjAzODEgOC4zNDQ0OEM1Ni4zNjAxIDYuNzA0NzEgNTUuMzY1NiA1LjIxNDYxIDU0LjExMTQgMy45NTkzOUM1Mi44NTcyIDIuNzA0MTcgNTEuMzY4IDEuNzA4NDUgNDkuNzI4NyAxLjAyOTA3QzQ4LjA4OTUgMC4zNDk2OTUgNDYuMzMyNSAtNi4wNjk3N2UtMDcgNDQuNTU4MSAwWk0xMzAuMjYgNi45MjU1MkgxMjkuMDgzQzEyNy4zOTcgNi45MjU1MiAxMjUuNTE2IDcuOTgyOTggMTI0LjQ5NiA5LjM1NjkyVjcuMjM4MjhIMTE5LjQ0M1YzNUgxMjQuNDk2VjI0Ljg4NzJDMTI1LjUxNiAyNi4yNTc0IDEyNy4zNTkgMjcuMzE4NiAxMjguOTI3IDI3LjMxODZIMTMwLjE0MUMxMzUuMTk3IDI3LjMxODYgMTM4LjQ4OSAyMi43MzE0IDEzOC40ODkgMTcuMTI3N0MxMzguNDg5IDExLjc2MjIgMTM1IDYuOTQwNDMgMTMwLjI2IDYuOTQwNDNWNi45MjU1MlpNMTI5LjM5NiAyMi45MzYySDEyOC4xNDFDMTI1LjkwNyAyMi45MzYyIDEyNC4xODMgMjAuNTQ1OCAxMjQuMTgzIDE3LjA5NzlDMTI0LjE4MyAxMy42NSAxMjUuOTA3IDExLjI1OTYgMTI4LjE0MSAxMS4yNTk2SDEyOS4zOTZDMTMxLjU1MiAxMS4yNTk2IDEzMy4zNTQgMTMuNjUgMTMzLjM1NCAxNy4wOTc5QzEzMy4zNTQgMjAuNTQ1OCAxMzEuNTUyIDIyLjk2OTcgMTI5LjM5NiAyMi45Njk3VjIyLjkzNjJaTTIzNy40MDEgNy4yMTk2OUwyMzQuODU0IDE2LjkwMDVDMjM0LjU3OSAxOC4xNTUzIDIzNC4xODggMjAuMTEzOCAyMzQuMTg4IDIwLjExMzhIMjM0LjAzMUMyMzQuMDMxIDIwLjExMzggMjMzLjcxOSAxOC4xMTgxIDIzMy40MDYgMTYuOTAwNUwyMzAuNzc3IDcuMjE5NjlIMjI2LjAzN0wyMjMuNDMxIDE2LjkwMDVDMjIzLjExNCAxOC4xNTUzIDIyMi43MjMgMjAuMTEzOCAyMjIuNzIzIDIwLjExMzhIMjIyLjU2N0MyMjIuNTY3IDIwLjExMzggMjIyLjI1NCAxOC4xMTgxIDIyMS45NzkgMTYuOTAwNUwyMTkuNDMyIDcuMjE5NjlIMjE0LjI3OUwyMTkuODY0IDI2Ljk1MzdIMjI0LjgxNkwyMjcuNjM1IDE3LjExNjVDMjI3Ljk1MSAxNS45MDI2IDIyOC4zNzkgMTMuOTQ0MSAyMjguMzc5IDEzLjk0NDFIMjI4LjQ5OUMyMjguNDk5IDEzLjk0NDEgMjI4Ljg3MSAxNS45MDI2IDIyOS4yMDIgMTcuMTU3NEwyMzEuOTQ2IDI2Ljk1MzdIMjM2Ljg4NEwyNDIuNDkxIDcuMjE5NjlIMjM3LjQwMVpNMjA1LjQzMiA2LjkwNjkzSDIwMy44NjRDMTk4Ljg4NiA2LjkwNjkzIDE5NS4xMjYgMTEuMTgxNCAxOTUuMTI2IDE3LjA5NzlDMTk1LjEyNiAyMy4wMTQ0IDE5OC44ODYgMjcuMjg4OCAyMDMuOTAyIDI3LjI4ODhIMjA1LjQ1NEMyMTAuNDMyIDI3LjI4ODggMjE0LjE1NiAyMy4wMTQ0IDIxNC4xNTYgMTcuMDk3OUMyMTQuMTU2IDExLjE4MTQgMjEwLjQ0NyA2Ljk0MDQzIDIwNS40MzIgNi45NDA0M1Y2LjkwNjkzWk0yMDUuMjc2IDIyLjkxNzZIMjA0LjA1OEMyMDEuOTAyIDIyLjkxNzYgMjAwLjIxOSAyMC40NDg5IDIwMC4yMTkgMTcuMDc5M0MyMDAuMjE5IDEzLjcwOTYgMjAxLjkwMiAxMS4yNDA5IDIwNC4wNTggMTEuMjQwOUgyMDUuMjM1QzIwNy4zOSAxMS4yNDA5IDIwOS4wNzcgMTMuNzg3OCAyMDkuMDc3IDE3LjA3OTNDMjA5LjA3NyAyMC4zNzA3IDIwNy4zOSAyMi45Njk3IDIwNS4yNzYgMjIuOTY5N1YyMi45MTc2Wk0xODYuNjI1IDYuOTA2OTNIMTg0Ljk3NkMxODMuMTE0IDYuOTA2OTMgMTgxLjA1NSA4LjIwMjY0IDE4MC4wNzUgOS44NDgzOVY3LjIxOTY5SDE3NS4wMTlWMjYuOTUzN0gxODAuMDc1VjE2LjQxMjdDMTgwLjA3NSAxMy41OTA0IDE4MS41NjUgMTEuMzk3MyAxODMuNjQzIDExLjM5NzNIMTg0Ljg5N0MxODYuNjk5IDExLjM5NzMgMTg3LjgzNSAxMy4xNTg1IDE4Ny44MzUgMTUuMjc3MVYyNi45NTM3SDE5Mi44OTFWMTQuNTIxM0MxOTIuODk1IDEwLjE1MzcgMTkwLjAzNiA2Ljk0MDQzIDE4Ni42MjUgNi45NDA0M1Y2LjkwNjkzWk0xNjMuOTEyIDYuOTA2OTNIMTYyLjM0NUMxNTcuMzcgNi45MDY5MyAxNTMuNjA2IDExLjE4MTQgMTUzLjYwNiAxNy4wOTc5QzE1My42MDYgMjMuMDE0NCAxNTcuMzcgMjcuMjg4OCAxNjIuMzg2IDI3LjI4ODhIMTYzLjk1M0MxNjguOTMxIDI3LjI4ODggMTcyLjY1MSAyMy4wMTQ0IDE3Mi42NTEgMTcuMDk3OUMxNzIuNjUxIDExLjE4MTQgMTY4LjkxNiA2Ljk0MDQzIDE2My44OTcgNi45NDA0M0wxNjMuOTEyIDYuOTA2OTNaTTE2My43NTYgMjIuOTE3NkgxNjIuNTQyQzE2MC4zODYgMjIuOTE3NiAxNTguNjk5IDIwLjQ0ODkgMTU4LjY5OSAxNy4wNzkzQzE1OC42OTkgMTMuNzA5NiAxNjAuMzg2IDExLjI0MDkgMTYyLjU0MiAxMS4yNDA5SDE2My43MTlDMTY1Ljg3NCAxMS4yNDA5IDE2Ny41NTcgMTMuNzg3OCAxNjcuNTU3IDE3LjA3OTNDMTY3LjU1NyAyMC4zNzA3IDE2NS44NTkgMjIuOTY5NyAxNjMuNzUyIDIyLjk2OTdMMTYzLjc1NiAyMi45MTc2Wk0xNDcuNjg5IDEuNDg5MzZIMTQyLjYzM1Y3LjI2ODA5SDEzOC45NVYxMS41MDE2SDE0Mi42MzNWMjEuMTgyNUMxNDIuNjMzIDI1LjIxODYgMTQ0LjY3MyAyNy4wMjA3IDE0OC4xNTggMjcuMDIwN0gxNTIuOTAyVjIyLjc5MDlIMTQ5LjY0OEMxNDguNTMxIDIyLjc5MDkgMTQ3LjY4OSAyMi4yODA5IDE0Ny42ODkgMjAuNjM1MVYxMS41MDE2SDE1My4wMjFWNy4yNjgwOUgxNDcuNjg5VjEuNDg5MzZaIgogICAgICAgICAgICAgIGZpbGw9IiMwMjAyMDIiCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3N2Zz4=",
+    "method": "inline-svg-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "legion-malta-limited": {
+    "src": "../assets/casp-logos/legion-cc-420bc8e4fab7.png",
+    "alt": "Legion Malta Limited logo from legion.cc",
+    "source": "https://legion.cc/",
+    "sourceUrl": "https://framerusercontent.com/images/YCRwn5DJidWoGvXscPMHcj8vwQ.png?width=524&height=80",
+    "method": "img-logo",
+    "retrievedAt": "2026-08-06",
+    "confidence": "high"
+  },
+  "vr-bank-augsburg-ostallgau-eg": {
+    "src": "../assets/casp-logos/vrbank-augsburg-ostallgaeu-de-cca4f6ac63e4.avif",
+    "alt": "VR-Bank Augsburg-Ostallgäu eG logo from vrbank-augsburg-ostallgaeu.de",
+    "source": "https://www.vrbank-augsburg-ostallgaeu.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/Logo%20neu%20VR%20Bank%20Augsburg-Ostallg%C3%A4u",
+    "method": "embedded-logo-config",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "volksbank-raiffeisenbank-wurzburg-eg": {
+    "src": "../assets/casp-logos/vr-bank-wuerzburg-de-82fc8a71c741.avif",
+    "alt": "Volksbank Raiffeisenbank Würzburg eG logo from vr-bank-wuerzburg.de",
+    "source": "https://www.vr-bank-wuerzburg.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/banklogo-einzeilig-web-4",
+    "method": "embedded-logo-config",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "volksbank-heiden-eg": {
+    "src": "../assets/casp-logos/vbheiden-de-6bb096f908cd.avif",
+    "alt": "Volksbank Heiden eG logo from vbheiden.de",
+    "source": "https://www.vbheiden.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/4608-banklogo",
+    "method": "embedded-logo-config",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "raiffeisebank-auerbach-freihung-eg": {
+    "src": "../assets/casp-logos/rb-af-de-9c8b9875f456.avif",
+    "alt": "Raiffeisebank Auerbach-Freihung eG logo from rb-af.de",
+    "source": "https://www.rb-af.de",
+    "sourceUrl": "https://atruvia.scene7.com/is/image/atruvia/0765-banklogo",
+    "method": "embedded-logo-config",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
+  },
+  "basque-pay-s-l": {
+    "src": "../assets/casp-logos/fazilcrypto-com-8b7dba917de5.svg",
+    "alt": "BASQUE PAY, S.L. logo from fazilcrypto.com",
+    "source": "https://fazilcrypto.com/es/",
+    "sourceUrl": "https://www.fazilcrypto.com/favicon.svg",
+    "method": "common-path",
+    "retrievedAt": "2026-08-06",
+    "confidence": "medium"
   }
 }

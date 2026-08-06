@@ -25,7 +25,7 @@ const MIME = {
   '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript',
   '.css': 'text/css', '.json': 'application/json', '.xml': 'application/xml',
   '.png': 'image/png', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
-  '.webp': 'image/webp', '.gif': 'image/gif', '.woff2': 'font/woff2',
+  '.webp': 'image/webp', '.avif': 'image/avif', '.gif': 'image/gif', '.woff2': 'font/woff2',
   '.ico': 'image/x-icon', '.txt': 'text/plain'
 };
 
@@ -312,6 +312,16 @@ const CHECKS = [
       await expect(await logo.evaluate(function (image) {
         return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
       }), 'Bitpanda logo asset loads');
+    }
+  },
+  {
+    page: 'entities/volksbank-raiffeisenbank-wurzburg-eg.html',
+    assert: async function (page, expect) {
+      const logo = page.locator('.entity-logo-image');
+      await expect(await logo.count() === 1, 'AVIF bank logo renders');
+      await expect(await logo.evaluate(function (image) {
+        return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
+      }), 'AVIF bank logo asset loads');
     }
   },
   { page: 'about.html', assert: async function (page, expect) {

@@ -58,6 +58,11 @@ npm run logos:harvest
 npm run build:entities
 ```
 
+For a focused QA retry, use `node scripts/harvest-casp-logos.js
+--retry-missing` (only unresolved domains) or `--retry-low-confidence` (only
+previously flagged/low-confidence sources). Both modes keep the regulatory
+data pipeline independent of provider-site availability.
+
 The harvester records each image's source URL, discovery method, and retrieval
 date in the manifest, writes a review report to `data/casp-logo-report.json`,
 and leaves a building fallback where no reliable image is available. It is
