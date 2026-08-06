@@ -44,8 +44,14 @@ function formatDate(value) {
 function generateExplainerPage() {
   const casps = readJson('casps.json', []);
   const snapshot = readJson('snapshot.json', {});
-  const countries = new Set(casps.map(row => row.memberState).filter(Boolean));
-  const franceCount = casps.filter(row => row.memberState === 'France').length;
+  const countryCounts = casps.reduce((counts, row) => {
+    const country = row.memberState;
+    if (country) counts.set(country, (counts.get(country) || 0) + 1);
+    return counts;
+  }, new Map());
+  const countries = new Set(countryCounts.keys());
+  const [largestCountry, largestCountryCount] = Array.from(countryCounts.entries())
+    .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))[0] || ['No country data', 0];
   const snapshotDate = formatDate(snapshot.caspsSnapshotDate);
   const processedDate = formatDate(snapshot.lastUpdated);
   const dateModified = validIso(snapshot.lastUpdated);
@@ -100,14 +106,14 @@ function generateExplainerPage() {
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="dbd82f5d-689a-452f-9fff-fba85b9de507"></script>
 </head>
-<body>
+<body class="explainer-page">
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-blue-900 focus:font-semibold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg">Skip to main content</a>
-  <header class="header-sticky shadow-2xl">
-    <div class="max-w-7xl mx-auto px-6 py-6">
+  <header class="header-sticky explainer-site-header">
+    <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex items-center justify-between flex-wrap header-content">
-        <div class="flex items-center space-x-6 mb-4 md:mb-0">
+        <div class="flex items-center space-x-5 mb-4 md:mb-0">
           <a href="index.html" class="inline-flex items-center" aria-label="Return to the dashboard"><img src="DEA%20logo%20white.svg" alt="DEA Logo" class="logo-container"></a>
-          <div class="text-[1.8rem] md:text-[2.2rem] font-bold text-white mb-0 leading-tight" aria-label="MiCAR Tracker"><span class="text-sky-100">MiCAR</span> <span class="text-sky-50">Tracker</span></div>
+          <div class="explainer-wordmark font-bold text-white mb-0 leading-tight" aria-label="MiCAR Tracker"><span class="text-sky-100">MiCAR</span> <span class="text-sky-50">Tracker</span></div>
         </div>
         <div class="flex items-center gap-3 header-actions">
           <nav class="hidden md:flex items-center nav-buttons" aria-label="Main navigation">
@@ -132,57 +138,84 @@ function generateExplainerPage() {
     <a href="about.html" class="mobile-menu-link mobile-menu-item text-base font-medium"><span class="mobile-menu-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></span><span class="mobile-menu-text">About</span></a>
   </nav></div></div>
 
-  <main id="main" class="max-w-7xl mx-auto my-10 px-6">
-    <nav class="text-sm text-blue-700 mb-4" aria-label="Breadcrumb"><a href="index.html" class="underline">MiCAR Tracker</a><span aria-hidden="true" class="mx-2">/</span><span aria-current="page">MiCA explained</span></nav>
-    <div class="floating-card p-8 md:p-10 about-content">
-      <header class="mb-8">
-        <h1 class="text-3xl font-semibold mb-3 text-gray-900">What is MiCA? MiCAR, ESMA and NCAs explained</h1>
-        <p class="text-base leading-7 text-gray-700">A plain-language guide to the EU Markets in Crypto-Assets Regulation, the European Securities and Markets Authority, and the national authorities that report authorisations.</p>
-      </header>
+  <main id="main" class="explainer-main">
+    <section class="explainer-hero" aria-labelledby="explainer-title">
+      <div class="explainer-shell">
+        <nav class="explainer-breadcrumb" aria-label="Breadcrumb"><a href="index.html">MiCAR Tracker</a><span aria-hidden="true">/</span><span aria-current="page">MiCA explained</span></nav>
 
-      <section class="mb-8" aria-labelledby="live-snapshot-title">
-        <h2 id="live-snapshot-title" class="text-2xl font-semibold mb-3 text-gray-900">The live register in context</h2>
-        <p class="text-base leading-7 text-gray-700">The latest CASP snapshot contains the following figures. They are generated from the same register data used by the tracker, so this page stays aligned with the live tables.</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
-          <div class="rounded-xl bg-teal-50 border border-teal-100 p-5"><strong class="block text-3xl text-teal-800">${casps.length}</strong><span class="text-sm text-gray-700">CASPs listed</span></div>
-          <div class="rounded-xl bg-blue-50 border border-blue-100 p-5"><strong class="block text-3xl text-blue-800">${countries.size}</strong><span class="text-sm text-gray-700">represented countries</span></div>
-          <div class="rounded-xl bg-indigo-50 border border-indigo-100 p-5"><strong class="block text-3xl text-indigo-800">${franceCount}</strong><span class="text-sm text-gray-700">CASPs in France</span></div>
+        <div class="explainer-hero-grid">
+          <header class="explainer-hero-copy">
+            <p class="explainer-eyebrow">MiCAR explained</p>
+            <h1 id="explainer-title">MiCA is the EU rulebook for crypto-assets.</h1>
+            <p class="explainer-lede">A plain-language guide to the EU Markets in Crypto-Assets Regulation, the European Securities and Markets Authority, and the national authorities that report authorisations.</p>
+            <div class="explainer-actions">
+              <a href="casp-tracker.html" class="explainer-primary-cta"><i class="fas fa-magnifying-glass" aria-hidden="true"></i><span>Search authorised CASPs</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              <a href="${ESMA_SOURCE}" target="_blank" rel="noopener" class="explainer-source-link">View the official ESMA register <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </header>
+
+          <section class="explainer-live-stats" aria-labelledby="live-snapshot-title">
+            <h2 id="live-snapshot-title" class="explainer-eyebrow">Live CASP register</h2>
+            <div class="explainer-stat"><strong>${casps.length}</strong><span>CASPs listed</span></div>
+            <div class="explainer-stat"><strong>${countries.size}</strong><span>represented countries</span></div>
+            <div class="explainer-stat explainer-stat-country"><span class="explainer-country-name">${esc(largestCountry)}</span><strong>${largestCountryCount}</strong><span>CASPs<br>Largest represented country</span></div>
+          </section>
+
+          <figure class="explainer-map">
+            <img src="assets/micar-register-map.png" width="1462" height="1078" alt="Illustrative European register map with ${esc(largestCountry)} highlighted" fetchpriority="high">
+            <figcaption class="sr-only">The map provides geographic context for the live European CASP register figures.</figcaption>
+          </figure>
         </div>
-        <p class="text-sm text-gray-600 mt-4">CASP register snapshot: <strong>${esc(snapshotDate)}</strong>. Processed by DEA: <strong>${esc(processedDate)}</strong>.</p>
-      </section>
 
-      <section class="mb-8" aria-labelledby="mica-title">
-        <h2 id="mica-title" class="text-2xl font-semibold mb-3 text-gray-900">What is MiCA (MiCAR)?</h2>
-        <p class="text-base leading-7 text-gray-700">MiCAR, commonly shortened to MiCA, is the European Union’s legal framework for crypto-assets and the services built around them. It sets common rules for issuers, crypto-asset service providers, and the protection of users and investors across the EU.</p>
-        <p class="text-base leading-7 text-gray-700 mt-3">The regulation is the reason registers of authorised providers, token issuers, and non-compliant entities matter: it gives market participants a common regulatory vocabulary and a way to check who is reported as authorised.</p>
-      </section>
+        <div class="explainer-provenance" aria-label="Register update details">
+          <span class="explainer-provenance-label"><i class="fas fa-arrows-rotate" aria-hidden="true"></i> Updated from ESMA</span>
+          <span>Snapshot: <strong>${esc(snapshotDate)}</strong></span>
+          <span aria-hidden="true">·</span>
+          <span>Processed: <strong>${esc(processedDate)}</strong></span>
+        </div>
+      </div>
+    </section>
 
-      <section class="mb-8" aria-labelledby="esma-title">
-        <h2 id="esma-title" class="text-2xl font-semibold mb-3 text-gray-900">What is ESMA?</h2>
-        <p class="text-base leading-7 text-gray-700">ESMA is the European Securities and Markets Authority. It coordinates supervisory activity across the EU and publishes the interim MiCA register used as the primary source for this tracker.</p>
-        <p class="text-base leading-7 text-gray-700 mt-3">The tracker presents that public register in a searchable format, while the official ESMA record remains the source to use for formal verification.</p>
-        <p class="text-base leading-7 text-gray-700 mt-3"><a href="${ESMA_SOURCE}" target="_blank" rel="noopener" class="text-blue-700 underline">View the official ESMA MiCA page and interim register</a>.</p>
-      </section>
+    <section class="explainer-guide" aria-labelledby="guide-title">
+      <div class="explainer-shell">
+        <header class="explainer-guide-heading">
+          <p class="explainer-eyebrow">The essentials</p>
+          <h2 id="guide-title">MiCA, ESMA and national authorities in plain language</h2>
+        </header>
 
-      <section class="mb-8" aria-labelledby="nca-title">
-        <h2 id="nca-title" class="text-2xl font-semibold mb-3 text-gray-900">What are National Competent Authorities (NCAs)?</h2>
-        <p class="text-base leading-7 text-gray-700">Each EU member state designates one or more National Competent Authorities to carry out the supervisory duties assigned by MiCAR. NCAs report authorisations, services, and relevant compliance information to ESMA.</p>
-        <p class="text-base leading-7 text-gray-700 mt-3">That is why every CASP profile in this tracker identifies the competent authority and the country that reported the record.</p>
-      </section>
+        <div class="explainer-chapters">
+          <article id="mica" class="explainer-chapter" aria-labelledby="mica-title">
+            <div class="explainer-chapter-heading"><span class="explainer-chapter-icon" aria-hidden="true"><i class="fas fa-book-open"></i></span><span class="explainer-chapter-number">01</span></div>
+            <h3 id="mica-title">What is MiCA (MiCAR)?</h3>
+            <p>MiCAR, commonly shortened to MiCA, is the European Union’s legal framework for crypto-assets and the services built around them. It sets common rules for issuers, crypto-asset service providers, and the protection of users and investors across the EU.</p>
+            <p>The regulation gives market participants a common regulatory vocabulary and a way to check who is reported as authorised.</p>
+          </article>
 
-      <section class="mb-2" aria-labelledby="next-title">
-        <h2 id="next-title" class="text-2xl font-semibold mb-3 text-gray-900">Explore the registers</h2>
-        <p class="text-base leading-7 text-gray-700">Use the live tables to search providers and issuers, then read the methodology for the source, update cadence, and presentation choices.</p>
-        <ul class="list-disc ml-6 mt-3 space-y-2 text-gray-700">
-          <li><a href="casp-tracker.html" class="text-blue-700 underline">Search CASPs by country, authority, or service</a></li>
-          <li><a href="emt-tracker.html" class="text-blue-700 underline">Browse e-money token issuers</a></li>
-          <li><a href="about.html" class="text-blue-700 underline">Read the tracker methodology</a></li>
-        </ul>
-      </section>
-    </div>
+          <article id="esma" class="explainer-chapter" aria-labelledby="esma-title">
+            <div class="explainer-chapter-heading"><span class="explainer-chapter-icon" aria-hidden="true"><i class="fas fa-earth-europe"></i></span><span class="explainer-chapter-number">02</span></div>
+            <h3 id="esma-title">What is ESMA?</h3>
+            <p>ESMA is the European Securities and Markets Authority. It coordinates supervisory activity across the EU and publishes the interim MiCA register used as the primary source for this tracker.</p>
+            <p>The tracker presents that public register in a searchable format, while the official ESMA record remains the source to use for formal verification.</p>
+            <p><a href="${ESMA_SOURCE}" target="_blank" rel="noopener">View the official ESMA MiCA page and interim register <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
+          </article>
+
+          <article id="ncas" class="explainer-chapter" aria-labelledby="nca-title">
+            <div class="explainer-chapter-heading"><span class="explainer-chapter-icon" aria-hidden="true"><i class="fas fa-building-columns"></i></span><span class="explainer-chapter-number">03</span></div>
+            <h3 id="nca-title">What are NCAs?</h3>
+            <p>Each EU member state designates one or more National Competent Authorities to carry out the supervisory duties assigned by MiCAR.</p>
+            <p>NCAs report authorisations, services, and relevant compliance information to ESMA. That is why every CASP profile identifies the competent authority and country that reported the record.</p>
+          </article>
+        </div>
+
+        <aside class="explainer-context-note" aria-label="About the live figures">
+          <span class="explainer-note-icon" aria-hidden="true"><i class="fas fa-circle-info"></i></span>
+          <p>The figures above come from the same register data used by this tracker, so this page stays aligned with the live tables. For the most current data, explore the <a href="casp-tracker.html">CASP register</a> or the <a href="emt-tracker.html">EMT register</a>.</p>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <footer class="bg-slate-900 text-gray-300 py-10 mt-10"><div class="max-w-7xl mx-auto px-6"><div class="grid md:grid-cols-4 gap-8"><div><h3 class="text-white font-bold mb-3">MiCAR Tracker</h3><p class="text-sm">Public-data tracker for EU crypto-asset registers.</p></div><div><h4 class="text-white font-semibold mb-3">Explore</h4><ul class="space-y-2 text-sm"><li><a href="casp-tracker.html" class="hover:text-white font-semibold">CASP register</a></li><li><a href="emt-tracker.html" class="hover:text-white font-semibold">EMT register</a></li><li><a href="micar-explained.html" class="hover:text-white font-semibold">MiCA explained</a></li></ul></div><div><h4 class="text-white font-semibold mb-3">Transparency</h4><ul class="space-y-2 text-sm"><li><a href="about.html" class="hover:text-white font-semibold">Methodology</a></li><li><a href="data-quality.html" class="hover:text-white font-semibold">Data quality</a></li><li><a href="feed.xml" class="hover:text-white font-semibold">Register updates</a></li></ul></div><div><h4 class="text-white font-semibold mb-3">Digital Euro Association</h4><p class="text-sm">The DEA MiCAR Tracker is a public research utility.</p><a href="mailto:info@digital-euro-association.de" data-umami-event="footer-email" aria-label="Email" class="hover:text-white"><i class="fas fa-envelope" aria-hidden="true"></i></a></div></div><p class="border-t border-slate-700 mt-8 pt-6 text-xs text-gray-400">Source: <a href="${ESMA_SOURCE}" target="_blank" rel="noopener" class="underline hover:text-white">ESMA interim MiCA register</a> · <a href="index.html" class="underline hover:text-white">Back to dashboard</a></p></div></footer>
+  <footer class="bg-slate-900 text-gray-300 py-10"><div class="max-w-7xl mx-auto px-6"><div class="grid md:grid-cols-4 gap-8"><div><h3 class="text-white font-bold mb-3">MiCAR Tracker</h3><p class="text-sm">Public-data tracker for EU crypto-asset registers.</p></div><div><h4 class="text-white font-semibold mb-3">Explore</h4><ul class="space-y-2 text-sm"><li><a href="casp-tracker.html" class="hover:text-white font-semibold">CASP register</a></li><li><a href="emt-tracker.html" class="hover:text-white font-semibold">EMT register</a></li><li><a href="micar-explained.html" class="hover:text-white font-semibold">MiCA explained</a></li></ul></div><div><h4 class="text-white font-semibold mb-3">Transparency</h4><ul class="space-y-2 text-sm"><li><a href="about.html" class="hover:text-white font-semibold">Methodology</a></li><li><a href="data-quality.html" class="hover:text-white font-semibold">Data quality</a></li><li><a href="feed.xml" class="hover:text-white font-semibold">Register updates</a></li></ul></div><div><h4 class="text-white font-semibold mb-3">Digital Euro Association</h4><p class="text-sm">The DEA MiCAR Tracker is a public research utility.</p><a href="mailto:info@digital-euro-association.de" data-umami-event="footer-email" aria-label="Email" class="hover:text-white"><i class="fas fa-envelope" aria-hidden="true"></i></a></div></div><p class="border-t border-slate-700 mt-8 pt-6 text-xs text-gray-400">Source: <a href="${ESMA_SOURCE}" target="_blank" rel="noopener" class="underline hover:text-white">ESMA interim MiCA register</a> · <a href="index.html" class="underline hover:text-white">Back to dashboard</a></p></div></footer>
   <script src="assets/js/mobile-menu.js"></script>
 </body>
 </html>

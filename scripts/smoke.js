@@ -111,11 +111,12 @@ const CHECKS = [
   {
     page: 'micar-explained.html',
     assert: async function (page, expect) {
-      await expect(await page.locator('h1').textContent() === 'What is MiCA? MiCAR, ESMA and NCAs explained', 'MiCA explainer heading renders');
+      await expect(await page.locator('h1').textContent() === 'MiCA is the EU rulebook for crypto-assets.', 'MiCA explainer heading renders');
       await expect(await page.locator('#live-snapshot-title').count() === 1, 'live snapshot section renders');
       await expect(await page.locator('text=CASPs listed').count() === 1, 'live CASP stat renders');
       await expect(await page.locator('text=represented countries').count() === 1, 'live country stat renders');
-      await expect(await page.locator('text=CASPs in France').count() === 1, 'live France stat renders');
+      await expect(await page.locator('text=Largest represented country').count() === 1, 'largest represented country stat renders');
+      await expect(await page.getByRole('link', { name: /Search authorised CASPs/i }).count() === 1, 'primary CASP action renders');
       await expect(await page.locator('a[href="casp-tracker.html"]').count() > 0, 'explainer links to CASP register');
       await assertAccessibilityBasics(page, expect);
     }
@@ -131,9 +132,21 @@ const CHECKS = [
       await expect(overflow, 'no horizontal overflow at 390px');
 
       const menuButton = page.locator('#mobile-menu-button');
+      await expect(await page.locator('#hamburger-icon').isVisible(), 'hamburger icon is visible while menu is closed');
+      await expect(!(await page.locator('#close-icon').isVisible()), 'close icon is hidden while menu is closed');
       await menuButton.click();
       await expect(await menuButton.getAttribute('aria-expanded') === 'true', 'mobile menu opens');
       await expect(await page.locator('#mobile-menu:not(.hidden)').count() === 1, 'mobile menu is visible');
+      await expect(!(await page.locator('#hamburger-icon').isVisible()), 'hamburger icon is hidden while menu is open');
+      await expect(await page.locator('#close-icon').isVisible(), 'close icon is visible while menu is open');
+      const closeButtonIsReachable = await page.evaluate(function () {
+        const button = document.getElementById('mobile-menu-button');
+        if (!button) return false;
+        const rect = button.getBoundingClientRect();
+        const hit = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        return hit === button || button.contains(hit);
+      });
+      await expect(closeButtonIsReachable, 'open menu does not cover its close button');
       await page.keyboard.press('Escape');
       await page.waitForTimeout(250);
       await expect(await menuButton.getAttribute('aria-expanded') === 'false', 'Escape closes mobile menu');
