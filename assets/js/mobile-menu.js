@@ -26,11 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
     overlay.classList.remove('hidden');
     menu.classList.remove('hidden');
 
+    // Swap the control icon synchronously with aria-expanded. The menu's
+    // visual transition can wait for the next frame, but the button state
+    // should be immediately consistent for keyboard users and smoke tests.
+    hamburger?.classList.add('hidden');
+    closeIcon?.classList.remove('hidden');
+
     requestAnimationFrame(() => {
       overlay.classList.add('menu-open');
       menu.classList.add('menu-open');
-      hamburger?.classList.add('hidden');
-      closeIcon?.classList.remove('hidden');
     });
   }
 
