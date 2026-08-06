@@ -29,6 +29,8 @@ entities.forEach(function (entity) {
   expect(html.includes('"@type": "BreadcrumbList"'), 'breadcrumb structured data missing: ' + entity.slug);
   expect(html.includes('"@type": "WebPage"'), 'WebPage structured data missing: ' + entity.slug);
   expect(html.includes('"dateModified"'), 'structured-data freshness missing: ' + entity.slug);
+  expect(html.includes('data-umami-event="entity-verify-affiliation"'), 'verification event missing: ' + entity.slug);
+  expect(html.includes('data-umami-event="entity-suggest-correction"'), 'correction event missing: ' + entity.slug);
   expect(html.includes('View official ESMA source'), 'official source missing: ' + entity.slug);
   expect(html.includes('Membership is not regulatory endorsement.'), 'membership disclaimer missing: ' + entity.slug);
   expect(!html.includes('—'), 'entity page contains an em dash: ' + entity.slug);

@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { generateEntityPages } = require('./generate-entity-pages');
+const { generateExplainerPage } = require('./generate-explainer-page');
 const { writeSitemap, generateAllSnapshots } = require('../update-data');
 
 const ROOT = path.join(__dirname, '..');
@@ -10,6 +11,7 @@ const snapshot = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'snapshot.js
 const lastmod = String(snapshot.lastUpdated || snapshot.caspsSnapshotDate || snapshot.emtSnapshotDate || '').slice(0, 10);
 
 generateEntityPages();
+generateExplainerPage();
 writeSitemap(lastmod);
 generateAllSnapshots();
 console.log('Static entity pages, register snapshots and sitemap refreshed.');

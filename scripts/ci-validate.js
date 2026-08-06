@@ -64,6 +64,17 @@ function checkStaticPages() {
     }
   });
   if (!sitemap.includes('entities/flowdesk-europe-sas.html')) throw new Error('sitemap missing entity pages');
+  if (!fs.existsSync(path.join(ROOT, 'micar-explained.html'))) throw new Error('missing micar explainer page');
+  if (!sitemap.includes('micar-explained.html')) throw new Error('sitemap missing micar explainer page');
+  const explainer = read('micar-explained.html');
+  if ((explainer.match(/<h1\b/g) || []).length !== 1) throw new Error('micar explainer must have exactly one H1');
+  if (!explainer.includes('MiCA is the EU rulebook for crypto-assets.')) throw new Error('micar explainer heading missing');
+  if (!explainer.includes('CASPs listed') || !explainer.includes('represented countries') || !explainer.includes('Largest represented country')) {
+    throw new Error('micar explainer live stats missing');
+  }
+  if (!explainer.includes('assets/micar-register-map.png') || !explainer.includes('Search authorised CASPs')) {
+    throw new Error('micar explainer register map or primary action missing');
+  }
   if (!read('index.html').includes('ESMA EMT Register</a> - Data as of ')) throw new Error('index EMT updater marker missing');
   if (!read('index.html').includes('ESMA CASPs Register</a> - Data as of ')) throw new Error('index CASP updater marker missing');
 }
@@ -106,7 +117,7 @@ try {
   [
     'update-data.js', 'config.js', 'scripts/validate-dashboard-data.js',
     'assets/js/mobile-menu.js', 'assets/js/register-view.js', 'assets/js/entity-page.js',
-    'scripts/generate-entity-pages.js', 'scripts/refresh-static-pages.js',
+    'scripts/generate-entity-pages.js', 'scripts/generate-explainer-page.js', 'scripts/refresh-static-pages.js',
     'scripts/test-entity-pages.js', 'scripts/test-csv.js', 'scripts/check-css.js',
     'scripts/ci-validate.js'
   ].forEach(nodeCheck);
