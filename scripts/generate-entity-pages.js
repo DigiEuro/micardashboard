@@ -215,7 +215,12 @@ function entityPage(entity, data) {
   const dateModified = snapshot.lastUpdated && !isNaN(new Date(snapshot.lastUpdated).getTime())
     ? new Date(snapshot.lastUpdated).toISOString()
     : undefined;
-  const canonical = SITE_URL + '/entities/' + entity.slug + '.html';
+  // Extensionless: the host 308-redirects /entities/<slug>.html to this form,
+  // so the .html URL is never the one that answers 200. A canonical pointing
+  // at a redirect is a signal search engines have to resolve rather than one
+  // we have given them. The file on disk keeps its .html name; only the
+  // published URL changes. og:url and every JSON-LD @id derive from this.
+  const canonical = SITE_URL + '/entities/' + entity.slug;
   const note = dataNote(entity, data.anomalies);
   const contextRows = contextFor(entity, data.entities);
   const history = changeHistory(entity, data.changelog, snapshot);

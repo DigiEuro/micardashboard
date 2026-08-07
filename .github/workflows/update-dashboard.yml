@@ -78,14 +78,30 @@ jobs:
         git checkout -B "$branch"
         git config user.email 'action@github.com'
         git config user.name 'GitHub Action Bot'
-        git add index.html casp-tracker.html emt-tracker.html non-compliant-casps.html entities/ data/ feed.xml sitemap.xml
-        git diff --cached --quiet && { echo 'No generated changes to commit.'; exit 0; }
+        # Every generated artefact must be listed here. micar-explained.html is
+        # written by generateExplainerPage() on each run and was missing, so the
+        # updater rewrote it, saw a dirty tree, staged nothing, and published a
+        # register whose explainer kept the previous run's totals for ever.
+        git add index.html casp-tracker.html emt-tracker.html non-compliant-casps.html micar-explained.html entities/ data/ feed.xml sitemap.xml
+        if git diff --cached --quiet; then
+          # `exit 0` here ends only THIS step, not the job, so the steps below
+          # went on to open a pull request from a branch that git checkout -B
+          # had created locally and that was never pushed. Record the outcome
+          # and let each later step test it instead.
+          echo 'No generated changes to commit.'
+          echo "committed=false" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
         git commit -m "🤖 Auto-update dashboard data - $(date '+%Y-%m-%d %H:%M:%S UTC')"
         git push --force-with-lease origin "HEAD:$branch"
+        echo "committed=true" >> "$GITHUB_OUTPUT"
         echo "branch=$branch" >> "$GITHUB_OUTPUT"
 
+    # Gated on the commit actually happening, not merely on the tree being
+    # dirty. A run can rewrite a generated file that stages to nothing, and
+    # then there is no branch to open a pull request from.
     - name: Create or update the dashboard update pull request
-      if: steps.verify-changed-files.outputs.changed == 'true'
+      if: steps.commit-update.outputs.committed == 'true'
       id: update-pr
       env:
         GH_TOKEN: ${{ github.token }}
@@ -113,19 +129,19 @@ jobs:
     # Waiting on that optional duplicate run would make an otherwise validated
     # data update fail before it can merge.
     - name: Confirm generated update passed the validation gate
-      if: steps.verify-changed-files.outputs.changed == 'true'
+      if: steps.commit-update.outputs.committed == 'true'
       run: echo 'The generated update passed the full repository validation gate.'
 
     - name: Merge the validated update pull request
-      if: steps.verify-changed-files.outputs.changed == 'true'
+      if: steps.commit-update.outputs.committed == 'true'
       env:
         GH_TOKEN: ${{ github.token }}
       run: gh pr merge "${{ steps.update-pr.outputs.pr_number }}" --repo "$GITHUB_REPOSITORY" --merge --delete-branch
 
     - name: Summary
       run: |
-        if [ "${{ steps.verify-changed-files.outputs.changed }}" = "true" ]; then
-          echo 'Dashboard update validated and merged to main. GitHub Pages will deploy from the main-branch push.'
+        if [ "${{ steps.commit-update.outputs.committed }}" = "true" ]; then
+          echo 'Dashboard update validated and merged to main. The host deploys from the main-branch push.'
         else
           echo 'Dashboard was already up to date.'
         fi
