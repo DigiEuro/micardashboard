@@ -1,5 +1,12 @@
 # MiCAR Tracker: working notes
 
+## Time zone
+
+- Report times in **SAST (GMT+2)**. That is where the maintainer works.
+- Scheduled workflows are **UTC** and stay UTC: `0 */6 * * *` fires at 02:00,
+  08:00, 14:00 and 20:00 SAST. Log timestamps are UTC too, so convert them
+  before quoting a time back.
+
 ## Branch workflow (dev hygiene)
 
 - All development happens on `dev`; never commit directly to `main`.
