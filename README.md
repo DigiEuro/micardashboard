@@ -8,6 +8,7 @@ This project tracks issuers of Electronic Money Tokens (EMTs), Crypto-Asset Serv
 - **`update-data.js`**: the scheduled updater. It reads the source Google Sheet (Sheets API when `GOOGLE_API_KEY` is set, public CSV export otherwise), converts the rows, diffs them against the previous data to extend the changelog and `feed.xml` (RSS), writes the JSON files, and patches the human-readable "Data as of" dates in `index.html`'s footer.
 - **`.github/workflows/update-dashboard.yml`**: runs the updater every 6 hours and commits `index.html`, `data/`, and `feed.xml` when anything changed.
 - **`.github/workflows/ci.yml`**: runs on pull requests and pushes to `dev`: script syntax checks, updater-marker checks, and data validation.
+- **`.github/workflows/mirror-to-gitlab.yml`**: mirrors every GitHub branch and tag to GitLab as an off-site backup. GitHub remains canonical; see `GITHUB_GITLAB_MIRROR.md` for the one-time secret setup.
 
 ## Data API
 
