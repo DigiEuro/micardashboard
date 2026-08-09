@@ -1,0 +1,43 @@
+name: Mirror repository to GitLab
+
+on:
+  push:
+  workflow_dispatch:
+  # The scheduled updater merges with GITHUB_TOKEN. GitHub does not start a
+  # second workflow for token-created pushes, so mirror after that workflow
+  # completes successfully as well.
+  workflow_run:
+    workflows: ['Update EMT Dashboard']
+    types: [completed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gitlab-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror all GitHub refs to GitLab
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITLAB_MIRROR_TOKEN: ${{ secrets.GITLAB_MIRROR_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "$GITLAB_MIRROR_TOKEN" ]; then
+            echo '::error::GITLAB_MIRROR_TOKEN is not configured in GitHub repository secrets.'
+            exit 1
+          fi
+
+          # A mirror clone contains real branches and tags, without the
+          # checkout's remote-tracking refs. That makes --mirror safe here:
+          # GitLab is kept as an exact backup of GitHub's refs.
+          git clone --mirror "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" mirror.git
+          git -C mirror.git remote set-url --push origin "https://oauth2:${GITLAB_MIRROR_TOKEN}@gitlab.com/digital-euro-association-group/micardashboard.git"
+          git -C mirror.git push --mirror origin

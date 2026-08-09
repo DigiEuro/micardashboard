@@ -9,6 +9,7 @@ This project tracks issuers of Electronic Money Tokens (EMTs), Crypto-Asset Serv
 - **`.gitlab-ci.yml`**: validates merge requests and runs the scheduled updater every 6 hours, committing generated site files to `main` after the full validation gate passes.
 - **`.github/workflows/update-dashboard.yml`**: legacy fallback during the GitLab migration. Disable its schedule after the first successful GitLab updater run so there is only one data writer.
 - **`.github/workflows/ci.yml`**: runs on pull requests and pushes to `dev`: script syntax checks, updater-marker checks, and data validation.
+- **`.github/workflows/mirror-to-gitlab.yml`**: mirrors every GitHub branch and tag to GitLab as an off-site backup. GitHub remains canonical; see `GITHUB_GITLAB_MIRROR.md` for the one-time secret setup.
 
 ## Data API
 
