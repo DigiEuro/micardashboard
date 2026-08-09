@@ -24,8 +24,9 @@
 
 ## Architecture
 
-- Static site: HTML + Tailwind + vanilla JS, served via GitHub Pages
-  (`CNAME` → micatracker.digital-euro-association.de).
+- Static site: HTML + Tailwind + vanilla JS, served via Cloudflare Pages
+  (`CNAME` → micatracker.digital-euro-association.de). GitHub is the canonical
+  repository and GitLab is an automatic backup mirror.
 - Data pipeline: Google Sheets → `update-data.js` → `data/*.json`, fetched at
   runtime by the pages. The scheduled GitHub Action refreshes the JSON.
 - `index.html` is Overview-only (KPIs, charts, changelog). Each register lives
