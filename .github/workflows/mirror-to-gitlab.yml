@@ -3,6 +3,12 @@ name: Mirror repository to GitLab
 on:
   push:
   workflow_dispatch:
+  # The scheduled updater merges with GITHUB_TOKEN. GitHub does not start a
+  # second workflow for token-created pushes, so mirror after that workflow
+  # completes successfully as well.
+  workflow_run:
+    workflows: ['Update EMT Dashboard']
+    types: [completed]
 
 permissions:
   contents: read
@@ -13,6 +19,7 @@ concurrency:
 
 jobs:
   mirror:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Mirror all GitHub refs to GitLab

@@ -23,5 +23,7 @@ systems cannot compete with each other.
 ## Normal operation
 
 Every push to GitHub, including branch and tag updates, runs the workflow and
-updates GitLab without a manual step. If the mirror fails, GitHub remains the
-live source and the failed workflow is visible in Actions.
+updates GitLab without a manual step. The workflow also mirrors after a
+successful scheduled dashboard update, whose merge is performed with the
+GitHub Actions token. If the mirror fails, GitHub remains the live source and
+the failed workflow is visible in Actions.
