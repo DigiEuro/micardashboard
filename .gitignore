@@ -1,5 +1,4 @@
 node_modules/
-.npm/
 
 # Local browser QA output and notes
 .playwright-cli/

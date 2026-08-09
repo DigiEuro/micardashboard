@@ -1,13 +1,12 @@
 # Digital Euro Association (DEA) MiCAR Tracker
 
-This project tracks issuers of Electronic Money Tokens (EMTs), Crypto-Asset Service Providers (CASPs), and non-compliant entities under the MiCAR framework. The dashboard is a static site (HTML + Tailwind CSS + vanilla JS) served via Cloudflare Pages that loads its register data from JSON files at runtime. GitLab is the canonical repository; GitHub is maintained as an automatic mirror.
+This project tracks issuers of Electronic Money Tokens (EMTs), Crypto-Asset Service Providers (CASPs), and non-compliant entities under the MiCAR framework. The dashboard is a static site (HTML + Tailwind CSS + vanilla JS) served via Cloudflare Pages that loads its register data from JSON files at runtime. GitHub is the canonical repository; GitLab is maintained as an automatic backup mirror.
 
 ## Architecture
 
 - **`data/*.json`**: the registers themselves. `emts.json`, `casps.json`, and `non-compliant.json` are the single source of truth; the page fetches them on load. `snapshot.json` records the sheet snapshot dates and the last refresh time, and `changelog.json` records dated additions/removals.
 - **`update-data.js`**: the scheduled updater. It reads the source Google Sheet (Sheets API when `GOOGLE_API_KEY` is set, public CSV export otherwise), converts the rows, diffs them against the previous data to extend the changelog and `feed.xml` (RSS), writes the JSON files, and patches the human-readable "Data as of" dates in `index.html`'s footer.
-- **`.gitlab-ci.yml`**: validates merge requests and runs the scheduled updater every 6 hours, committing generated site files to `main` after the full validation gate passes.
-- **`.github/workflows/update-dashboard.yml`**: legacy fallback during the GitLab migration. Disable its schedule after the first successful GitLab updater run so there is only one data writer.
+- **`.github/workflows/update-dashboard.yml`**: runs the updater every 6 hours and commits `index.html`, `data/`, and `feed.xml` when anything changed.
 - **`.github/workflows/ci.yml`**: runs on pull requests and pushes to `dev`: script syntax checks, updater-marker checks, and data validation.
 - **`.github/workflows/mirror-to-gitlab.yml`**: mirrors every GitHub branch and tag to GitLab as an off-site backup. GitHub remains canonical; see `GITHUB_GITLAB_MIRROR.md` for the one-time secret setup.
 
