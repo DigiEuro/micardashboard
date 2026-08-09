@@ -1,0 +1,79 @@
+stages:
+  - validate
+  - update
+
+workflow:
+  rules:
+    # Validate merge requests, the development branch, and the default branch.
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+    - if: '$CI_COMMIT_BRANCH == "dev" || $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    - when: never
+
+default:
+  image: node:22-bookworm
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+
+validate:
+  stage: validate
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH == "dev"'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  script:
+    - npm run check:css
+    - npx playwright install --with-deps chromium
+    - npm run ci:validate
+
+update-dashboard:
+  stage: update
+  resource_group: dashboard-update
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    - if: '$CI_PIPELINE_SOURCE == "web" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  script:
+    - |
+      set -euo pipefail
+
+      node update-data.js
+
+      if [ -z "$(git status --porcelain)" ]; then
+        echo 'Dashboard was already up to date.'
+        exit 0
+      fi
+
+      # Validate the exact generated tree before it is committed. This is the
+      # same gate used for merge requests, so scheduled data cannot bypass CI.
+      npx playwright install --with-deps chromium
+      npm run check:css
+      npm run ci:validate
+
+      git config user.email 'gitlab-updater@digital-euro-association.de'
+      git config user.name 'GitLab Dashboard Updater'
+      git add index.html casp-tracker.html emt-tracker.html non-compliant-casps.html micar-explained.html entities/ data/ feed.xml sitemap.xml
+
+      if git diff --cached --quiet; then
+        echo 'The updater changed no tracked generated files.'
+        exit 0
+      fi
+
+      git commit -m "🤖 Auto-update dashboard data - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+
+      # Prefer the short-lived CI job token. GitLab requires the project
+      # setting "Allow Git push requests to the repository" for this path.
+      # GITLAB_PUSH_TOKEN is an optional masked fallback for protected-branch
+      # policies that do not permit CI job-token pushes.
+      if [ -n "${GITLAB_PUSH_TOKEN:-}" ]; then
+        git remote set-url origin "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+      else
+        git remote set-url origin "https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+      fi
+      git push origin "HEAD:${CI_DEFAULT_BRANCH}"
