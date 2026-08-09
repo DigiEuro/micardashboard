@@ -10,7 +10,7 @@
 ## Branch workflow (dev hygiene)
 
 - All development happens on `dev`; never commit directly to `main`.
-- `main` is merged from `dev` via a GitLab merge request (creates a merge commit).
+- `main` is merged from `dev` via a pull request (creates a merge commit).
 - **Keep `dev`. Do not delete it after a merge.**
 - **Do not stack new work on already-merged history.** After each `dev → main`
   PR merges, bring `dev` back in line with `main` *before* starting new work:
@@ -25,12 +25,10 @@
 ## Architecture
 
 - Static site: HTML + Tailwind + vanilla JS, served via Cloudflare Pages
-  (`CNAME` → micatracker.digital-euro-association.de). GitLab is the canonical
-  repository and GitHub is an automatic mirror.
+  (`CNAME` → micatracker.digital-euro-association.de). GitHub is the canonical
+  repository and GitLab is an automatic backup mirror.
 - Data pipeline: Google Sheets → `update-data.js` → `data/*.json`, fetched at
-  runtime by the pages. The scheduled GitLab pipeline refreshes the JSON. The
-  legacy GitHub updater remains only as a temporary rollback path during
-  migration; disable its schedule after the first successful GitLab run.
+  runtime by the pages. The scheduled GitHub Action refreshes the JSON.
 - `index.html` is Overview-only (KPIs, charts, changelog). Each register lives
   on its own standalone page: `casp-tracker.html`, `emt-tracker.html`,
   `non-compliant-casps.html`.
