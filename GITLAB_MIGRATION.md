@@ -26,12 +26,16 @@ protected. The pipeline uses it only as a fallback.
 
 ## Cloudflare Pages
 
-After the first scheduled GitLab update succeeds, open the Cloudflare Pages
-project and reconnect its Git repository to
-`digital-euro-association-group/micardashboard` on GitLab. Keep the existing
-GitHub connection until the first GitLab-triggered deployment is confirmed;
-then disable the legacy GitHub scheduled updater so there is only one data
-writer.
+Once the merge request checks are green, open the Cloudflare Pages project and
+change its connected repository from GitHub to
+`digital-euro-association-group/micardashboard` on GitLab. Doing this before
+the merge lets the GitLab `main` push be the first deployment test. If you
+switch after the merge, use Cloudflare's **Retry deployment** action to verify
+the GitLab connection. The GitHub mirror remains the rollback copy; reconnect
+Cloudflare to GitHub only if a rollback is needed.
+
+After the first scheduled GitLab update succeeds, disable the legacy GitHub
+scheduled updater so there is only one data writer.
 
 The GitLab pipeline validates and commits the generated site files. Cloudflare
 Pages remains responsible for building and publishing the static site from
