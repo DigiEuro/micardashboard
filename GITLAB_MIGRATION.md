@@ -6,7 +6,7 @@ its history remain available as a second copy.
 
 ## One-time GitLab setup
 
-1. Merge the migration branch into `main` in GitLab.
+1. Merge `dev` into `main` in GitLab.
 2. Open **Settings > CI/CD > Job token permissions** and enable **Allow Git
    push requests to the repository**. The scheduled updater uses the
    short-lived `CI_JOB_TOKEN` to commit generated data; it does not require a
