@@ -1,10 +1,10 @@
 {
-  "total": 17,
+  "total": 23,
   "byType": {
     "lei_checksum_failed": 6,
-    "repeated_service_code": 4,
-    "exact_duplicate": 1,
-    "multi_authorisation": 6
+    "repeated_service_code": 3,
+    "non_url_in_website_field": 9,
+    "multi_authorisation": 5
   },
   "anomalies": [
     {
@@ -52,37 +52,58 @@
       ]
     },
     {
-      "type": "repeated_service_code",
-      "entityKey": "213800V83W83UL8WR118",
-      "sourceRow": 44,
-      "name": "Ronin EM Ltd",
-      "country": "Cyprus",
-      "detail": "Service code(s) listed more than once in a single record: exchange crypto",
+      "type": "non_url_in_website_field",
+      "entityKey": "529900JB9XYZ8E87N345",
+      "sourceRow": 63,
+      "name": "N26 Bank SE",
+      "country": "Germany",
+      "detail": "Website field contains \"https://N26 – Die erste Onlinebank\", which is not a URL. Kept as raw text; no link is rendered.",
       "values": [
-        "exchange crypto"
+        "https://N26 – Die erste Onlinebank"
       ]
     },
     {
-      "type": "exact_duplicate",
-      "entityKey": "213800V83W83UL8WR118",
-      "sourceRow": 44,
-      "name": "Ronin EM Ltd",
-      "country": "Cyprus",
-      "detail": "Identical to source row #32. Both rows are retained.",
+      "type": "non_url_in_website_field",
+      "entityKey": "529900JB9XYZ8E87N345",
+      "sourceRow": 63,
+      "name": "N26 Bank SE",
+      "country": "Germany",
+      "detail": "Website field contains \"die du lieben wirst\", which is not a URL. Kept as raw text; no link is rendered.",
       "values": [
-        "44",
-        "32"
+        "die du lieben wirst"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "851WYGNLUQLFZBSYGB56",
+      "sourceRow": 65,
+      "name": "Commerzbank Aktiengesellschaft",
+      "country": "Germany",
+      "detail": "Website field contains \"https://Commerzbank AG – Investor Relations\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "https://Commerzbank AG – Investor Relations"
       ]
     },
     {
       "type": "lei_checksum_failed",
       "entityKey": "391200236O6D9SGBE882",
-      "sourceRow": 120,
+      "sourceRow": 119,
       "name": "Raiffeisenbank Falkenstein-Wörth",
       "country": "Germany",
       "detail": "LEI 391200236O6D9SGBE882 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
       "values": [
         "391200236O6D9SGBE882"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "959800U0R44NN5DJC930",
+      "sourceRow": 148,
+      "name": "MINOS GLOBAL S.L.",
+      "country": "Spain",
+      "detail": "Website field contains \"https://ttps://minos.global\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "https://ttps://minos.global"
       ]
     },
     {
@@ -94,6 +115,50 @@
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
       "values": [
         "549300746K71T6YJCV41"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "9695003EKRFOMYXJQL11",
+      "sourceRow": 165,
+      "name": "RELAI EU SASU",
+      "country": "France",
+      "detail": "Website field contains \"https://75012 Paris\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "https://75012 Paris"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "969500FX8K40ZDW4F377",
+      "sourceRow": 166,
+      "name": "SOCIETE GENERALE - FORGE",
+      "country": "France",
+      "detail": "Website field contains \"https://92800 PUTEAUX\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "https://92800 PUTEAUX"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "969500A4IPKVUBH3CA90",
+      "sourceRow": 167,
+      "name": "BANQUE DELUBAC ET CIE",
+      "country": "France",
+      "detail": "Website field contains \"https://07160 LE CHEYLARD\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "https://07160 LE CHEYLARD"
+      ]
+    },
+    {
+      "type": "non_url_in_website_field",
+      "entityKey": "213800QBQVHWRBHJTA89",
+      "sourceRow": 204,
+      "name": "Paysafe Payment Solutions Limited.",
+      "country": "Ireland",
+      "detail": "Website field contains \"https://www.skrill.com www.neteller.com\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "https://www.skrill.com www.neteller.com"
       ]
     },
     {
@@ -119,6 +184,17 @@
       ]
     },
     {
+      "type": "non_url_in_website_field",
+      "entityKey": "984500F9M4XF7C5E5E25",
+      "sourceRow": 275,
+      "name": "Olmipay Limited",
+      "country": "Malta",
+      "detail": "Website field contains \"https://Olmipay.com (upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
+      "values": [
+        "https://Olmipay.com (upcoming)"
+      ]
+    },
+    {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
       "sourceRow": 278,
@@ -127,21 +203,6 @@
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
       "values": [
         "984500457TABOA3BZ224"
-      ]
-    },
-    {
-      "type": "multi_authorisation",
-      "entityKey": "213800V83W83UL8WR118",
-      "sourceRow": 32,
-      "sourceRows": [
-        32,
-        44
-      ],
-      "name": "Ronin EM Ltd",
-      "country": "Cyprus",
-      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
-      "values": [
-        "Ronin EM Ltd"
       ]
     },
     {
@@ -162,10 +223,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "529900032TYR45XIEW79",
-      "sourceRow": 59,
+      "sourceRow": 58,
       "sourceRows": [
-        59,
-        84
+        58,
+        83
       ],
       "name": "EUWAX AG",
       "country": "Germany",
@@ -177,10 +238,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "529900EXG2PM316ISO63",
-      "sourceRow": 82,
+      "sourceRow": 81,
       "sourceRows": [
-        82,
-        125
+        81,
+        124
       ],
       "name": "Deutsche WertpapierService Bank AG",
       "country": "Germany",
@@ -192,10 +253,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "0W2PZJM8XOY22M4GG883",
-      "sourceRow": 83,
+      "sourceRow": 82,
       "sourceRows": [
-        83,
-        113
+        82,
+        112
       ],
       "name": "DekaBank Deutsche Girozentrale",
       "country": "Germany",

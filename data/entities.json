@@ -1,6 +1,6 @@
 {
   "sourceRows": 329,
-  "entityCount": 323,
+  "entityCount": 324,
   "keyedByLei": 319,
   "entities": [
     {
@@ -593,7 +593,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.kbc.com"
           ],
@@ -637,7 +637,7 @@
             "custody",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bny.com"
           ],
@@ -702,7 +702,7 @@
             "portfolio mgmt",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets|  j. providing transfer services",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets| j. providing transfer services",
           "websites": [
             "https://alaricsecurities.com/"
           ],
@@ -1264,7 +1264,7 @@
             "advice",
             "portfolio mgmt"
           ],
-          "serviceCodeRaw": "execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets  providing advice on crypto-assets on behalf of clients |providing portfolio management on crypto-assets",
+          "serviceCodeRaw": "execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets providing advice on crypto-assets on behalf of clients |providing portfolio management on crypto-assets",
           "websites": [
             "https://www.pelicaneu.com"
           ],
@@ -1311,7 +1311,7 @@
             "execution",
             "RTO"
           ],
-          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |  execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
             "https://www.xtb.com/cy"
           ],
@@ -1426,7 +1426,7 @@
             "RTO",
             "portfolio mgmt"
           ],
-          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets on behalf of clients |  providing portfolio management on crypto-assets",
+          "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets on behalf of clients | providing portfolio management on crypto-assets",
           "websites": [
             "https://www.trading.com/eu"
           ],
@@ -1643,35 +1643,6 @@
         {
           "sourceRow": 32,
           "sourceId": 32,
-          "name": "Ronin EM Ltd",
-          "country": "Cyprus",
-          "authority": "CySEC",
-          "services": [
-            "RTO",
-            "execution",
-            "exchange funds",
-            "exchange crypto",
-            "custody",
-            "transfer"
-          ],
-          "servicesRaw": [
-            "RTO",
-            "execution",
-            "exchange funds",
-            "exchange crypto",
-            "custody",
-            "transfer"
-          ],
-          "serviceCodeRaw": "Reception and transmission of client orders/ Execution of orders on behalf of clients/ Exchange between crypto assets and fiat currency/ Exchange between crypto assets/ Providing custody and administration of crypto-assets on behalf of clients/ Providing transfer services for crypto-assets on behalf of clients",
-          "websites": [
-            "https://em.ron.in/"
-          ],
-          "websitesRaw": [],
-          "websiteRepairs": []
-        },
-        {
-          "sourceRow": 44,
-          "sourceId": 44,
           "name": "Ronin EM Ltd",
           "country": "Cyprus",
           "authority": "CySEC",
@@ -2331,8 +2302,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 45,
-          "sourceId": 45,
+          "sourceRow": 44,
+          "sourceId": 44,
           "name": "Invity Finance s.r.o.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2386,8 +2357,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 46,
-          "sourceId": 46,
+          "sourceRow": 45,
+          "sourceId": 45,
           "name": "MP Developers s.r.o.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2440,8 +2411,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 47,
-          "sourceId": 47,
+          "sourceRow": 46,
+          "sourceId": 46,
           "name": "ILAVO GROUP a.s.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2494,8 +2465,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 48,
-          "sourceId": 48,
+          "sourceRow": 47,
+          "sourceId": 47,
           "name": "Pluso a.s.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2545,8 +2516,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 49,
-          "sourceId": 49,
+          "sourceRow": 48,
+          "sourceId": 48,
           "name": "COINMATE a.s.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2596,8 +2567,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 50,
-          "sourceId": 50,
+          "sourceRow": 49,
+          "sourceId": 49,
           "name": "MipSoftware s.r.o.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2645,8 +2616,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 51,
-          "sourceId": 51,
+          "sourceRow": 50,
+          "sourceId": 50,
           "name": "GG Digital, a.s.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2697,8 +2668,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 52,
-          "sourceId": 52,
+          "sourceRow": 51,
+          "sourceId": 51,
           "name": "IP wBTCb solutions, s.r.o.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2747,8 +2718,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 53,
-          "sourceId": 53,
+          "sourceRow": 52,
+          "sourceId": 52,
           "name": "Simple Coin s.r.o.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2794,8 +2765,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 54,
-          "sourceId": 54,
+          "sourceRow": 53,
+          "sourceId": 53,
           "name": "wBTCb.cz, s.r.o.",
           "country": "Czechia",
           "authority": "CNB",
@@ -2816,51 +2787,45 @@
       "firstSeen": "2026-07-05"
     },
     {
-      "entityKey": "8945004PZEJSSPTTVB16",
+      "entityKey": "315700J0QGFRKN11MF15",
       "keySource": "lei",
-      "slug": "altlift-s-r-o",
-      "lei": "8945004PZEJSSPTTVB16",
-      "name": "Altlift s.r.o.",
+      "slug": "partners-banka-a-s",
+      "lei": "315700J0QGFRKN11MF15",
+      "name": "Partners Banka, a.s.",
       "alsoKnownAs": [],
       "country": "Czechia",
       "authorities": [
         "CNB"
       ],
       "services": [
-        "execution",
-        "RTO",
-        "advice"
+        "RTO"
       ],
       "websites": [
-        "https://www.altlift.cz/"
+        "https://www.partnersbanka.cz/"
       ],
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 55,
-          "sourceId": 55,
-          "name": "Altlift s.r.o.",
+          "sourceRow": 54,
+          "sourceId": 54,
+          "name": "Partners Banka, a.s.",
           "country": "Czechia",
           "authority": "CNB",
           "services": [
-            "execution",
-            "RTO",
-            "advice"
+            "RTO"
           ],
           "servicesRaw": [
-            "execution",
-            "RTO",
-            "advice"
+            "RTO"
           ],
-          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets",
+          "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
           "websites": [
-            "https://www.altlift.cz/"
+            "https://www.partnersbanka.cz/"
           ],
           "websitesRaw": [],
           "websiteRepairs": []
         }
       ],
-      "firstSeen": "2026-07-05"
+      "firstSeen": "2026-08-17"
     },
     {
       "entityKey": "529900RC04FR9EHUT228",
@@ -2883,8 +2848,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 56,
-          "sourceId": 56,
+          "sourceRow": 55,
+          "sourceId": 55,
           "name": "Boerse Stuttgart Digital Custody GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -2929,8 +2894,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 57,
-          "sourceId": 57,
+          "sourceRow": 56,
+          "sourceId": 56,
           "name": "Bitpanda Asset Management GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -2980,8 +2945,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 58,
-          "sourceId": 58,
+          "sourceRow": 57,
+          "sourceId": 57,
           "name": "Tradias GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3031,8 +2996,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 59,
-          "sourceId": 59,
+          "sourceRow": 58,
+          "sourceId": 58,
           "name": "EUWAX AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3052,8 +3017,8 @@
           "websiteRepairs": []
         },
         {
-          "sourceRow": 84,
-          "sourceId": 84,
+          "sourceRow": 83,
+          "sourceId": 83,
           "name": "EUWAX AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3093,8 +3058,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 60,
-          "sourceId": 60,
+          "sourceRow": 59,
+          "sourceId": 59,
           "name": "flatexDEGIRO Bank AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3134,8 +3099,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 61,
-          "sourceId": 61,
+          "sourceRow": 60,
+          "sourceId": 60,
           "name": "360 Treasury Systems AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3178,8 +3143,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 62,
-          "sourceId": 62,
+          "sourceRow": 61,
+          "sourceId": 61,
           "name": "Trade Republic Bank GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3230,8 +3195,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 63,
-          "sourceId": 63,
+          "sourceRow": 62,
+          "sourceId": 62,
           "name": "BitGo Europe GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3275,14 +3240,15 @@
       "services": [
         "RTO"
       ],
-      "websites": [
-        "https://n26.com"
+      "websites": [],
+      "websitesRaw": [
+        "https://N26 – Die erste Onlinebank",
+        "die du lieben wirst"
       ],
-      "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 64,
-          "sourceId": 64,
+          "sourceRow": 63,
+          "sourceId": 63,
           "name": "N26 Bank SE",
           "country": "Germany",
           "authority": "BaFin",
@@ -3293,10 +3259,11 @@
             "RTO"
           ],
           "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
-          "websites": [
-            "https://n26.com"
+          "websites": [],
+          "websitesRaw": [
+            "https://N26 – Die erste Onlinebank",
+            "die du lieben wirst"
           ],
-          "websitesRaw": [],
           "websiteRepairs": []
         }
       ],
@@ -3322,8 +3289,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 65,
-          "sourceId": 65,
+          "sourceRow": 64,
+          "sourceId": 64,
           "name": "Baader Bank Aktiengesellschaft",
           "country": "Germany",
           "authority": "BaFin",
@@ -3358,14 +3325,14 @@
         "custody",
         "transfer"
       ],
-      "websites": [
-        "https://www.commerzbank.de"
+      "websites": [],
+      "websitesRaw": [
+        "https://Commerzbank AG – Investor Relations"
       ],
-      "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 66,
-          "sourceId": 66,
+          "sourceRow": 65,
+          "sourceId": 65,
           "name": "Commerzbank Aktiengesellschaft",
           "country": "Germany",
           "authority": "BaFin",
@@ -3378,10 +3345,10 @@
             "transfer"
           ],
           "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
-          "websites": [
-            "https://www.commerzbank.de"
+          "websites": [],
+          "websitesRaw": [
+            "https://Commerzbank AG – Investor Relations"
           ],
-          "websitesRaw": [],
           "websiteRepairs": []
         }
       ],
@@ -3407,8 +3374,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 67,
-          "sourceId": 67,
+          "sourceRow": 66,
+          "sourceId": 66,
           "name": "Baden-Württembergische Wertpapierbörse GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3452,8 +3419,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 68,
-          "sourceId": 68,
+          "sourceRow": 67,
+          "sourceId": 67,
           "name": "Crypto Finance (Deutschland) GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3501,8 +3468,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 69,
-          "sourceId": 69,
+          "sourceRow": 68,
+          "sourceId": 68,
           "name": "Traders Place GmbH & Co. KGaA",
           "country": "Germany",
           "authority": "BaFin",
@@ -3543,8 +3510,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 70,
-          "sourceId": 70,
+          "sourceRow": 69,
+          "sourceId": 69,
           "name": "Tangany GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3586,8 +3553,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 71,
-          "sourceId": 71,
+          "sourceRow": 70,
+          "sourceId": 70,
           "name": "Smartbroker AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3628,8 +3595,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 72,
-          "sourceId": 72,
+          "sourceRow": 71,
+          "sourceId": 71,
           "name": "Dietrich & Richter Private Asset Management AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3675,8 +3642,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 73,
-          "sourceId": 73,
+          "sourceRow": 72,
+          "sourceId": 72,
           "name": "Bullish Europe GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3726,8 +3693,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 74,
-          "sourceId": 74,
+          "sourceRow": 73,
+          "sourceId": 73,
           "name": "V-Bank AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3777,8 +3744,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 75,
-          "sourceId": 75,
+          "sourceRow": 74,
+          "sourceId": 74,
           "name": "Bankhaus Scheich Wertpapierspezialist AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3831,8 +3798,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 76,
-          "sourceId": 76,
+          "sourceRow": 75,
+          "sourceId": 75,
           "name": "Lang & Schwarz TradeCenter AG & Co. KG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3874,8 +3841,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 77,
-          "sourceId": 77,
+          "sourceRow": 76,
+          "sourceId": 76,
           "name": "DonauCapital Wertpapier GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -3916,8 +3883,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 78,
-          "sourceId": 78,
+          "sourceRow": 77,
+          "sourceId": 77,
           "name": "Volksbank Raiffeisenbank Bayern Mitte eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -3959,8 +3926,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 79,
-          "sourceId": 79,
+          "sourceRow": 78,
+          "sourceId": 78,
           "name": "Huddlestock GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4000,8 +3967,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 80,
-          "sourceId": 80,
+          "sourceRow": 79,
+          "sourceId": 79,
           "name": "sino Aktiengesellschaft",
           "country": "Germany",
           "authority": "BaFin",
@@ -4041,8 +4008,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 81,
-          "sourceId": 81,
+          "sourceRow": 80,
+          "sourceId": 80,
           "name": "Hyphe Markets GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4086,8 +4053,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 82,
-          "sourceId": 82,
+          "sourceRow": 81,
+          "sourceId": 81,
           "name": "Deutsche WertpapierService Bank AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4105,8 +4072,8 @@
           "websiteRepairs": []
         },
         {
-          "sourceRow": 125,
-          "sourceId": 125,
+          "sourceRow": 124,
+          "sourceId": 124,
           "name": "Deutsche WertpapierService Bank AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4155,8 +4122,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 83,
-          "sourceId": 83,
+          "sourceRow": 82,
+          "sourceId": 82,
           "name": "DekaBank Deutsche Girozentrale",
           "country": "Germany",
           "authority": "BaFin",
@@ -4178,8 +4145,8 @@
           "websiteRepairs": []
         },
         {
-          "sourceRow": 113,
-          "sourceId": 113,
+          "sourceRow": 112,
+          "sourceId": 112,
           "name": "DekaBank Deutsche Girozentrale",
           "country": "Germany",
           "authority": "BaFin",
@@ -4220,8 +4187,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 85,
-          "sourceId": 85,
+          "sourceRow": 84,
+          "sourceId": 84,
           "name": "Hauck Aufhäuser Digital Custody GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4266,8 +4233,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 86,
-          "sourceId": 86,
+          "sourceRow": 85,
+          "sourceId": 85,
           "name": "Fels wealth GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4313,8 +4280,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 87,
-          "sourceId": 87,
+          "sourceRow": 86,
+          "sourceId": 86,
           "name": "Westerwald Bank eG Volks- und Raiffeisenbank",
           "country": "Germany",
           "authority": "BaFin",
@@ -4354,8 +4321,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 88,
-          "sourceId": 88,
+          "sourceRow": 87,
+          "sourceId": 87,
           "name": "Hannoversche Volksbank eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4395,8 +4362,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 89,
-          "sourceId": 89,
+          "sourceRow": 88,
+          "sourceId": 88,
           "name": "VR TeilhaberBank Metropolregion Nürnberg eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4436,8 +4403,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 90,
-          "sourceId": 90,
+          "sourceRow": 89,
+          "sourceId": 89,
           "name": "Volksbank Mittlerer Schwarzwald eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4480,8 +4447,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 91,
-          "sourceId": 91,
+          "sourceRow": 90,
+          "sourceId": 90,
           "name": "IG Europe GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4527,8 +4494,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 92,
-          "sourceId": 92,
+          "sourceRow": 91,
+          "sourceId": 91,
           "name": "Volksbank Raiffeisenbank Würzburg eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4568,8 +4535,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 93,
-          "sourceId": 93,
+          "sourceRow": 92,
+          "sourceId": 92,
           "name": "VR-Bank Rottal-Inn eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4609,8 +4576,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 94,
-          "sourceId": 94,
+          "sourceRow": 93,
+          "sourceId": 93,
           "name": "VR Bank Südpfalz eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4650,8 +4617,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 95,
-          "sourceId": 95,
+          "sourceRow": 94,
+          "sourceId": 94,
           "name": "Sutor Bank GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4691,8 +4658,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 96,
-          "sourceId": 96,
+          "sourceRow": 95,
+          "sourceId": 95,
           "name": "wSw PortfolioManagement AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4735,8 +4702,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 97,
-          "sourceId": 97,
+          "sourceRow": 96,
+          "sourceId": 96,
           "name": "FIDUS Finanz AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4784,8 +4751,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 98,
-          "sourceId": 98,
+          "sourceRow": 97,
+          "sourceId": 97,
           "name": "DZ BANK AG Deutsche Zentral-Genossenschaftsbank",
           "country": "Germany",
           "authority": "BaFin",
@@ -4830,8 +4797,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 99,
-          "sourceId": 99,
+          "sourceRow": 98,
+          "sourceId": 98,
           "name": "Tradevest Digital Assets GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4873,8 +4840,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 100,
-          "sourceId": 100,
+          "sourceRow": 99,
+          "sourceId": 99,
           "name": "ISF Institut Deutsch-Schweizer Finanzdienstleistungen GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4914,8 +4881,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 101,
-          "sourceId": 101,
+          "sourceRow": 100,
+          "sourceId": 100,
           "name": "Plutos Vermögensverwaltung AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -4955,8 +4922,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 102,
-          "sourceId": 102,
+          "sourceRow": 101,
+          "sourceId": 101,
           "name": "Scalable Capital Bank GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -4998,8 +4965,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 103,
-          "sourceId": 103,
+          "sourceRow": 102,
+          "sourceId": 102,
           "name": "AnCeKa Vermögensbetreuungs Aktiengesellschaft",
           "country": "Germany",
           "authority": "BaFin",
@@ -5048,8 +5015,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 104,
-          "sourceId": 104,
+          "sourceRow": 103,
+          "sourceId": 103,
           "name": "Joh. Berenberg, Gossler & Co. KG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5099,8 +5066,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 105,
-          "sourceId": 105,
+          "sourceRow": 104,
+          "sourceId": 104,
           "name": "MLP Banking AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5141,8 +5108,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 106,
-          "sourceId": 106,
+          "sourceRow": 105,
+          "sourceId": 105,
           "name": "BV & P Vermögen AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5185,8 +5152,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 107,
-          "sourceId": 107,
+          "sourceRow": 106,
+          "sourceId": 106,
           "name": "CONCEDUS GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -5234,8 +5201,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 108,
-          "sourceId": 108,
+          "sourceRow": 107,
+          "sourceId": 107,
           "name": "DLT Securities GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -5292,8 +5259,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 109,
-          "sourceId": 109,
+          "sourceRow": 108,
+          "sourceId": 108,
           "name": "Tradevest Markets AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5344,8 +5311,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 110,
-          "sourceId": 110,
+          "sourceRow": 109,
+          "sourceId": 109,
           "name": "Vermögensbutler GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -5387,8 +5354,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 111,
-          "sourceId": 111,
+          "sourceRow": 110,
+          "sourceId": 110,
           "name": "Volksbank Heiden eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5428,8 +5395,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 112,
-          "sourceId": 112,
+          "sourceRow": 111,
+          "sourceId": 111,
           "name": "Raiffeisenbank Kreis Kelheim eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5469,8 +5436,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 114,
-          "sourceId": 114,
+          "sourceRow": 113,
+          "sourceId": 113,
           "name": "Donau-Iller-Bank eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5510,8 +5477,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 115,
-          "sourceId": 115,
+          "sourceRow": 114,
+          "sourceId": 114,
           "name": "Volksbank Schwarzwald-Donau-Neckar eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5551,8 +5518,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 116,
-          "sourceId": 116,
+          "sourceRow": 115,
+          "sourceId": 115,
           "name": "Raiffeisebank Auerbach-Freihung eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5593,8 +5560,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 117,
-          "sourceId": 117,
+          "sourceRow": 116,
+          "sourceId": 116,
           "name": "JT Technologies GmbH",
           "country": "Germany",
           "authority": "BaFin",
@@ -5636,8 +5603,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 118,
-          "sourceId": 118,
+          "sourceRow": 117,
+          "sourceId": 117,
           "name": "Spar- und Kreditbank Rheinstetten eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5677,8 +5644,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 119,
-          "sourceId": 119,
+          "sourceRow": 118,
+          "sourceId": 118,
           "name": "VR-Bank Augsburg-Ostallgäu eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5718,8 +5685,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 120,
-          "sourceId": 120,
+          "sourceRow": 119,
+          "sourceId": 119,
           "name": "Raiffeisenbank Falkenstein-Wörth",
           "country": "Germany",
           "authority": "BaFin",
@@ -5759,8 +5726,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 121,
-          "sourceId": 121,
+          "sourceRow": 120,
+          "sourceId": 120,
           "name": "Volksbank Raiffeisenbank Oberbayern Südost eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5800,8 +5767,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 122,
-          "sourceId": 122,
+          "sourceRow": 121,
+          "sourceId": 121,
           "name": "VR Bank Schleswig-Holstein Mitte eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5841,8 +5808,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 123,
-          "sourceId": 123,
+          "sourceRow": 122,
+          "sourceId": 122,
           "name": "VR-Bank Landau-Mengkofen eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5882,8 +5849,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 124,
-          "sourceId": 124,
+          "sourceRow": 123,
+          "sourceId": 123,
           "name": "Volksbank eG - Die Gestalterbank",
           "country": "Germany",
           "authority": "BaFin",
@@ -5923,8 +5890,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 126,
-          "sourceId": 126,
+          "sourceRow": 125,
+          "sourceId": 125,
           "name": "VBU Volksbank im Unterland eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5964,8 +5931,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 127,
-          "sourceId": 127,
+          "sourceRow": 126,
+          "sourceId": 126,
           "name": "VR-Bank Erding eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -5986,6 +5953,47 @@
       "firstSeen": "2026-08-06"
     },
     {
+      "entityKey": "5299002RCY3D5M211G35",
+      "keySource": "lei",
+      "slug": "volksbank-beilstein-ilsfeld-abstatt-eg",
+      "lei": "5299002RCY3D5M211G35",
+      "name": "Volksbank Beilstein-Ilsfeld-Abstatt eG",
+      "alsoKnownAs": [],
+      "country": "Germany",
+      "authorities": [
+        "BaFin"
+      ],
+      "services": [
+        "execution"
+      ],
+      "websites": [
+        "https://www.vb-bia.de"
+      ],
+      "websitesRaw": [],
+      "authorisations": [
+        {
+          "sourceRow": 127,
+          "sourceId": 127,
+          "name": "Volksbank Beilstein-Ilsfeld-Abstatt eG",
+          "country": "Germany",
+          "authority": "BaFin",
+          "services": [
+            "execution"
+          ],
+          "servicesRaw": [
+            "execution"
+          ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+          "websites": [
+            "https://www.vb-bia.de"
+          ],
+          "websitesRaw": [],
+          "websiteRepairs": []
+        }
+      ],
+      "firstSeen": "2026-08-17"
+    },
+    {
       "entityKey": "9845000E4A7414709361",
       "keySource": "lei",
       "slug": "penning-financial-services-aps",
@@ -5994,7 +6002,7 @@
       "alsoKnownAs": [],
       "country": "Denmark",
       "authorities": [
-        "Finanstilsynet"
+        "DFSA"
       ],
       "services": [
         "custody",
@@ -6015,7 +6023,7 @@
           "sourceId": 128,
           "name": "Penning Financial Services ApS",
           "country": "Denmark",
-          "authority": "Finanstilsynet",
+          "authority": "DFSA",
           "services": [
             "custody",
             "exchange funds",
@@ -6053,7 +6061,7 @@
       "alsoKnownAs": [],
       "country": "Denmark",
       "authorities": [
-        "Finanstilsynet"
+        "DFSA"
       ],
       "services": [
         "custody",
@@ -6069,7 +6077,7 @@
           "sourceId": 129,
           "name": "Lunar Block A/S",
           "country": "Denmark",
-          "authority": "Finanstilsynet",
+          "authority": "DFSA",
           "services": [
             "custody",
             "execution"
@@ -6097,7 +6105,7 @@
       "alsoKnownAs": [],
       "country": "Denmark",
       "authorities": [
-        "Finanstilsynet"
+        "DFSA"
       ],
       "services": [
         "exchange funds",
@@ -6115,7 +6123,7 @@
           "sourceId": 130,
           "name": "GC Exchange A/S",
           "country": "Denmark",
-          "authority": "Finanstilsynet",
+          "authority": "DFSA",
           "services": [
             "exchange funds",
             "exchange crypto",
@@ -6147,7 +6155,7 @@
       "alsoKnownAs": [],
       "country": "Denmark",
       "authorities": [
-        "Finanstilsynet"
+        "DFSA"
       ],
       "services": [
         "custody",
@@ -6164,7 +6172,7 @@
           "sourceId": 131,
           "name": "Northstake ApS",
           "country": "Denmark",
-          "authority": "Finanstilsynet",
+          "authority": "DFSA",
           "services": [
             "custody",
             "execution",
@@ -6194,7 +6202,7 @@
       "alsoKnownAs": [],
       "country": "Denmark",
       "authorities": [
-        "Finanstilsynet"
+        "DFSA"
       ],
       "services": [
         "exchange funds",
@@ -6212,7 +6220,7 @@
           "sourceId": 132,
           "name": "Coinify ApS",
           "country": "Denmark",
-          "authority": "Finanstilsynet",
+          "authority": "DFSA",
           "services": [
             "exchange funds",
             "exchange crypto",
@@ -6244,7 +6252,7 @@
       "alsoKnownAs": [],
       "country": "Denmark",
       "authorities": [
-        "Finanstilsynet"
+        "DFSA"
       ],
       "services": [
         "custody",
@@ -6261,7 +6269,7 @@
           "sourceId": 133,
           "name": "Januar ApS",
           "country": "Denmark",
-          "authority": "Finanstilsynet",
+          "authority": "DFSA",
           "services": [
             "custody",
             "execution",
@@ -6291,7 +6299,7 @@
       "alsoKnownAs": [],
       "country": "Denmark",
       "authorities": [
-        "Finanstilsynet"
+        "DFSA"
       ],
       "services": [
         "exchange funds"
@@ -6306,7 +6314,7 @@
           "sourceId": 134,
           "name": "SafeLynx Technologies ApS",
           "country": "Denmark",
-          "authority": "Finanstilsynet",
+          "authority": "DFSA",
           "services": [
             "exchange funds"
           ],
@@ -6725,7 +6733,7 @@
         "transfer"
       ],
       "websites": [
-        "https://portal.kutxabank.es/cs/Satellite/kb/es/particulares"
+        "https://portal.kutxabank.es/cs/ Satellite/kb/es/particulares"
       ],
       "websitesRaw": [],
       "authorisations": [
@@ -6747,7 +6755,7 @@
           ],
           "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
-            "https://portal.kutxabank.es/cs/Satellite/kb/es/particulares"
+            "https://portal.kutxabank.es/cs/ Satellite/kb/es/particulares"
           ],
           "websitesRaw": [],
           "websiteRepairs": []
@@ -6966,10 +6974,10 @@
         "RTO",
         "transfer"
       ],
-      "websites": [
-        "https://minos.global"
+      "websites": [],
+      "websitesRaw": [
+        "https://ttps://minos.global"
       ],
-      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 148,
@@ -6996,10 +7004,10 @@
             "transfer"
           ],
           "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients.|f. placing of crypto-assets|g. reception and transmission of orders for crypto-assets on behalf of clients.j. providing transfer services for crypto-assets on behalf of clients.",
-          "websites": [
-            "https://minos.global"
+          "websites": [],
+          "websitesRaw": [
+            "https://ttps://minos.global"
           ],
-          "websitesRaw": [],
           "websiteRepairs": []
         }
       ],
@@ -7215,7 +7223,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients\nc. exchange of crypto-assets for funds\ne. execution of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients c. exchange of crypto-assets for funds e. execution of orders for crypto-assets on behalf of clients j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://coinmotion.com"
           ],
@@ -7268,7 +7276,7 @@
             "portfolio mgmt",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nh. providing advice on crypto-assets\ni. providing portfolio management on crypto-assets\nj. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients g. reception and transmission of orders for crypto-assets on behalf of clients h. providing advice on crypto-assets i. providing portfolio management on crypto-assets j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://tesseract.fi"
           ],
@@ -7359,7 +7367,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients \ne. execution of orders for crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients e. execution of orders for crypto-assets on behalf of clients g. reception and transmission of orders for crypto-assets on behalf of clients j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.northcrypto.com/"
           ],
@@ -7409,7 +7417,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients \ne. execution of orders for crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients e. execution of orders for crypto-assets on behalf of clients g. reception and transmission of orders for crypto-assets on behalf of clients j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.kvarnx.com/"
           ],
@@ -7790,7 +7798,9 @@
         "exchange funds"
       ],
       "websites": [],
-      "websitesRaw": [],
+      "websitesRaw": [
+        "https://75012 Paris"
+      ],
       "authorisations": [
         {
           "sourceRow": 165,
@@ -7806,7 +7816,9 @@
           ],
           "serviceCodeRaw": "c. exchange of crypto-assets for funds",
           "websites": [],
-          "websitesRaw": [],
+          "websitesRaw": [
+            "https://75012 Paris"
+          ],
           "websiteRepairs": []
         }
       ],
@@ -7828,7 +7840,9 @@
         "transfer"
       ],
       "websites": [],
-      "websitesRaw": [],
+      "websitesRaw": [
+        "https://92800 PUTEAUX"
+      ],
       "authorisations": [
         {
           "sourceRow": 166,
@@ -7846,7 +7860,9 @@
           ],
           "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [],
-          "websitesRaw": [],
+          "websitesRaw": [
+            "https://92800 PUTEAUX"
+          ],
           "websiteRepairs": []
         }
       ],
@@ -7873,7 +7889,9 @@
         "transfer"
       ],
       "websites": [],
-      "websitesRaw": [],
+      "websitesRaw": [
+        "https://07160 LE CHEYLARD"
+      ],
       "authorisations": [
         {
           "sourceRow": 167,
@@ -7901,7 +7919,9 @@
           ],
           "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other | | e. execution of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [],
-          "websitesRaw": [],
+          "websitesRaw": [
+            "https://07160 LE CHEYLARD"
+          ],
           "websiteRepairs": []
         }
       ],
@@ -8559,7 +8579,7 @@
             "advice",
             "portfolio mgmt"
           ],
-          "serviceCodeRaw": "h. providing advice on crypto-assets  | i. providing portfolio management on crypto-assets;",
+          "serviceCodeRaw": "h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets;",
           "websites": [
             "https://rcube.com/"
           ],
@@ -9180,7 +9200,7 @@
             "exchange funds",
             "exchange crypto"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |",
           "websites": [
             "https://electrocoin.eu/hr"
           ],
@@ -9230,7 +9250,7 @@
             "exchange crypto",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://whitely.hr/hr"
           ],
@@ -9286,7 +9306,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |  f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitstore.net/"
           ],
@@ -9611,10 +9631,10 @@
       "firstSeen": "2026-07-05"
     },
     {
-      "entityKey": "89450036UW3ID72T1M84",
-      "keySource": "lei",
+      "entityKey": "nc:086c5a3d0a9f",
+      "keySource": "name-country",
       "slug": "ramp-swaps-ireland-limited",
-      "lei": "89450036UW3ID72T1M84",
+      "lei": "",
       "name": "Ramp Swaps (Ireland) Limited",
       "alsoKnownAs": [],
       "country": "Ireland",
@@ -9668,11 +9688,10 @@
         "exchange crypto",
         "transfer"
       ],
-      "websites": [
-        "https://www.skrill.com",
-        "https://www.neteller.com"
+      "websites": [],
+      "websitesRaw": [
+        "https://www.skrill.com www.neteller.com"
       ],
-      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 204,
@@ -9693,11 +9712,10 @@
             "transfer"
           ],
           "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
-          "websites": [
-            "https://www.skrill.com",
-            "https://www.neteller.com"
+          "websites": [],
+          "websitesRaw": [
+            "https://www.skrill.com www.neteller.com"
           ],
-          "websitesRaw": [],
           "websiteRepairs": []
         }
       ],
@@ -9896,7 +9914,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.stonex.com"
           ],
@@ -10084,7 +10102,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://WWW.CHECKSIG.COM"
           ],
@@ -11488,7 +11506,7 @@
         "transfer"
       ],
       "websites": [
-        "https://coinbase.com"
+        "https://https.//coinbase.com"
       ],
       "websitesRaw": [],
       "authorisations": [
@@ -11516,9 +11534,9 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
-            "https://coinbase.com"
+            "https://https.//coinbase.com"
           ],
           "websitesRaw": [],
           "websiteRepairs": []
@@ -11607,7 +11625,7 @@
             "exchange crypto",
             "transfer"
           ],
-          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets  |  j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bankingcircle.com/"
           ],
@@ -11948,7 +11966,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.enum8.com/"
           ],
@@ -12566,7 +12584,7 @@
             "portfolio mgmt",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients |f.\tplacing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | i.\tproviding portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients |f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.okx.com"
           ],
@@ -12622,7 +12640,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |  c.\texchange of crypto-assets for funds |d.\texchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds |d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.bitpanda.com"
           ],
@@ -12678,7 +12696,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.\texchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://crypto.com"
           ],
@@ -12740,7 +12758,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | b.\toperation of a trading platform for crypto-assets | c.\texchange of crypto-assets for funds | d.\texchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.zbx.com"
           ],
@@ -12843,7 +12861,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients |f.\tplacing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients |f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.gemini.com"
           ],
@@ -12896,7 +12914,7 @@
             "placing",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |f.\tplacing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.socios.com"
           ],
@@ -12952,7 +12970,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.gate.com/en-eu"
           ],
@@ -13005,7 +13023,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.blockchain.com"
           ],
@@ -13058,7 +13076,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.payhound.com"
           ],
@@ -13111,7 +13129,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.damex.io"
           ],
@@ -13164,7 +13182,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://bvnk.com/"
           ],
@@ -13236,10 +13254,10 @@
         "RTO",
         "transfer"
       ],
-      "websites": [
-        "https://olmipay.com"
+      "websites": [],
+      "websitesRaw": [
+        "https://Olmipay.com (upcoming)"
       ],
-      "websitesRaw": [],
       "authorisations": [
         {
           "sourceRow": 275,
@@ -13261,11 +13279,11 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
-          "websites": [
-            "https://olmipay.com"
+          "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+          "websites": [],
+          "websitesRaw": [
+            "https://Olmipay.com (upcoming)"
           ],
-          "websitesRaw": [],
           "websiteRepairs": []
         }
       ],
@@ -13458,7 +13476,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://legion.cc/"
           ],
@@ -13511,7 +13529,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.falconx.io/"
           ],
@@ -13561,7 +13579,7 @@
             "exchange crypto",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://xcoins.com/en"
           ],
@@ -13614,7 +13632,7 @@
             "RTO",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | e.\t execution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g.  reception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://www.everest.org/"
           ],
@@ -13664,7 +13682,7 @@
             "exchange crypto",
             "transfer"
           ],
-          "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
           "websites": [
             "https://bequant.pro/"
           ],
@@ -14719,7 +14737,7 @@
             "execution",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.monflo.com"
           ],
@@ -15039,7 +15057,7 @@
             "exchange funds",
             "transfer"
           ],
-          "serviceCodeRaw": "(c) exchange of crypto-assets for funds\n(j) providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "(c) exchange of crypto-assets for funds (j) providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://www.bitpay.com/"
           ],
@@ -15058,7 +15076,7 @@
       "alsoKnownAs": [],
       "country": "Norway",
       "authorities": [
-        "Finanstilsynet"
+        "NFSA"
       ],
       "services": [
         "RTO",
@@ -15074,7 +15092,7 @@
           "sourceId": 313,
           "name": "AK JENSEN NORWAY AS",
           "country": "Norway",
-          "authority": "Finanstilsynet",
+          "authority": "NFSA",
           "services": [
             "RTO",
             "portfolio mgmt"
@@ -15102,7 +15120,7 @@
       "alsoKnownAs": [],
       "country": "Norway",
       "authorities": [
-        "Finanstilsynet"
+        "NFSA"
       ],
       "services": [
         "custody",
@@ -15120,7 +15138,7 @@
           "sourceId": 314,
           "name": "TÝR MARKETS AS",
           "country": "Norway",
-          "authority": "Finanstilsynet",
+          "authority": "NFSA",
           "services": [
             "custody",
             "exchange funds",
@@ -15152,7 +15170,7 @@
       "alsoKnownAs": [],
       "country": "Norway",
       "authorities": [
-        "Finanstilsynet"
+        "NFSA"
       ],
       "services": [
         "custody",
@@ -15172,7 +15190,7 @@
           "sourceId": 315,
           "name": "FIRI AS",
           "country": "Norway",
-          "authority": "Finanstilsynet",
+          "authority": "NFSA",
           "services": [
             "custody",
             "trading platform",
@@ -15208,7 +15226,7 @@
       "alsoKnownAs": [],
       "country": "Norway",
       "authorities": [
-        "Finanstilsynet"
+        "NFSA"
       ],
       "services": [
         "custody",
@@ -15225,7 +15243,7 @@
           "sourceId": 316,
           "name": "K33 MARKETS as",
           "country": "Norway",
-          "authority": "Finanstilsynet",
+          "authority": "NFSA",
           "services": [
             "custody",
             "execution",
@@ -15255,7 +15273,7 @@
       "alsoKnownAs": [],
       "country": "Norway",
       "authorities": [
-        "Finanstilsynet"
+        "NFSA"
       ],
       "services": [
         "custody",
@@ -15272,7 +15290,7 @@
           "sourceId": 317,
           "name": "BARE BITCOIN AS",
           "country": "Norway",
-          "authority": "Finanstilsynet",
+          "authority": "NFSA",
           "services": [
             "custody",
             "exchange funds",
@@ -15302,7 +15320,7 @@
       "alsoKnownAs": [],
       "country": "Norway",
       "authorities": [
-        "Finanstilsynet"
+        "NFSA"
       ],
       "services": [
         "custody",
@@ -15323,7 +15341,7 @@
           "sourceId": 318,
           "name": "NORWEGIAN BLOCK EXCHANGE AS",
           "country": "Norway",
-          "authority": "Finanstilsynet",
+          "authority": "NFSA",
           "services": [
             "custody",
             "trading platform",
@@ -15404,7 +15422,7 @@
             "advice",
             "transfer"
           ],
-          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients  | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
           "websites": [
             "https://bisonbank.com/"
           ],
