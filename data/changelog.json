@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-08-17",
+    "timestamp": "2026-08-17T09:00:20.317Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Partners Banka, a.s. (Czechia)",
+          "Volksbank Beilstein-Ilsfeld-Abstatt eG (Germany)",
+          "DIGITAL ASSETS Limited liability company for intermediation and services (Croatia)"
+        ],
+        "removed": [
+          "Altlift s.r.o. (Czechia)",
+          "DIGITAL ASSETS Limited liability company for intermediation and services (Croatia)"
+        ]
+      }
+    }
+  },
+  {
     "date": "2026-08-13",
     "timestamp": "2026-08-13T18:43:27.599Z",
     "changes": {
