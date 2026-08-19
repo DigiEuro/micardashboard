@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-19",
+    "timestamp": "2026-08-19T14:44:52.990Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Raiffeisenbank Aidlingen eG (Germany)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-08-17",
     "timestamp": "2026-08-17T09:00:20.317Z",
     "changes": {
