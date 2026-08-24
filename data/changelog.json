@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-08-24",
+    "timestamp": "2026-08-24T08:39:06.373Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Ihre Volksbank eG Neckar Odenwald Main Tauber (Germany)",
+          "VR-Bank Mittelfranken Mitte eG (Germany)",
+          "Volksbank Euskirchen eG (Germany)",
+          "VR Bank Ried-Überwald eG (Germany)",
+          "Volksbank Backnang eG (Germany)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-08-19",
     "timestamp": "2026-08-19T14:44:52.990Z",
     "changes": {
