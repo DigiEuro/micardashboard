@@ -1,5 +1,30 @@
 [
   {
+    "date": "2026-09-08",
+    "timestamp": "2026-09-08T13:56:05.028Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Altlift s.r.o. (Czechia)",
+          "Raiffeisenbank Schwaben Mitte eG (Germany)",
+          "VR Bank Ihre Heimatbank eG (Germany)",
+          "Frankfurter Volksbank Rhein/Main eG (Germany)",
+          "Raiffeisenbank Isar-Loisachtal eG (Germany)",
+          "Volksbank Alb eG (Germany)",
+          "Paymonade AG (Liechtenstein)",
+          "Blockchain.com Operations (Malta) Limited (Malta)",
+          "INCREMENTUM poslovne storitve d.o.o. (Slovenia)",
+          "GateHub Exchange družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o. (Slovenia)"
+        ],
+        "removed": [
+          "Damoon Technology (Europe) AG (Liechtenstein)",
+          "Blue Cube (Malta) Limited (Malta)",
+          "INCREMENTUM družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o. (Slovenia)"
+        ]
+      }
+    }
+  },
+  {
     "date": "2026-08-24",
     "timestamp": "2026-08-24T08:39:06.373Z",
     "changes": {
