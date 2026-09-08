@@ -1,7 +1,7 @@
 {
   "earliest": "2025-11-20",
-  "latest": "2026-08-24",
-  "count": 14,
+  "latest": "2026-09-08",
+  "count": 15,
   "snapshots": [
     {
       "date": "2025-11-20",
@@ -139,6 +139,16 @@
       "backfilled": false,
       "counts": {
         "casps": 335,
+        "emts": 23,
+        "non-compliant": 165
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "esmaSnapshotDate": "2026-09-07",
+      "backfilled": false,
+      "counts": {
+        "casps": 341,
         "emts": 23,
         "non-compliant": 165
       }

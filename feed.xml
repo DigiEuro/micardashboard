@@ -4,7 +4,15 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Mon, 07 Sep 2026 16:42:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 13:56:05 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-09-08</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-09-08T13:56:05.028Z</guid>
+      <pubDate>Tue, 08 Sep 2026 13:56:05 GMT</pubDate>
+      <description>CASPs added: Altlift s.r.o. (Czechia), Raiffeisenbank Schwaben Mitte eG (Germany), VR Bank Ihre Heimatbank eG (Germany), Frankfurter Volksbank Rhein/Main eG (Germany), Raiffeisenbank Isar-Loisachtal eG (Germany), Volksbank Alb eG (Germany), Paymonade AG (Liechtenstein), Blockchain.com Operations (Malta) Limited (Malta), INCREMENTUM poslovne storitve d.o.o. (Slovenia), GateHub Exchange družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o. (Slovenia)
+CASPs removed: Damoon Technology (Europe) AG (Liechtenstein), Blue Cube (Malta) Limited (Malta), INCREMENTUM družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o. (Slovenia)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-08-24</title>
       <link>https://micatracker.digital-euro-association.de/</link>

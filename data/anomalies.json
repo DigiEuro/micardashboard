@@ -1,10 +1,11 @@
 {
-  "total": 23,
+  "total": 20,
   "byType": {
     "lei_checksum_failed": 6,
     "repeated_service_code": 3,
-    "non_url_in_website_field": 9,
-    "multi_authorisation": 5
+    "malformed_url": 1,
+    "non_url_in_website_field": 6,
+    "multi_authorisation": 4
   },
   "anomalies": [
     {
@@ -49,6 +50,17 @@
       "detail": "Service code(s) listed more than once in a single record: execution",
       "values": [
         "execution"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "64889KAWPMO81X649843",
+      "sourceRow": 44,
+      "name": "MP Developers s.r.o.",
+      "country": "Czechia",
+      "detail": "Website value \"www.dase.com\" was repaired to \"https://www.dase.com\".",
+      "values": [
+        "www.dase.com"
       ]
     },
     {
@@ -98,7 +110,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "959800U0R44NN5DJC930",
-      "sourceRow": 154,
+      "sourceRow": 159,
       "name": "MINOS GLOBAL S.L.",
       "country": "Spain",
       "detail": "Website field contains \"https://ttps://minos.global\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -109,7 +121,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "549300746K71T6YJCV41",
-      "sourceRow": 158,
+      "sourceRow": 163,
       "name": "FINTECH PAYMENTS PSC S.L.",
       "country": "Spain",
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -119,41 +131,8 @@
     },
     {
       "type": "non_url_in_website_field",
-      "entityKey": "9695003EKRFOMYXJQL11",
-      "sourceRow": 171,
-      "name": "RELAI EU SASU",
-      "country": "France",
-      "detail": "Website field contains \"https://75012 Paris\", which is not a URL. Kept as raw text; no link is rendered.",
-      "values": [
-        "https://75012 Paris"
-      ]
-    },
-    {
-      "type": "non_url_in_website_field",
-      "entityKey": "969500FX8K40ZDW4F377",
-      "sourceRow": 172,
-      "name": "SOCIETE GENERALE - FORGE",
-      "country": "France",
-      "detail": "Website field contains \"https://92800 PUTEAUX\", which is not a URL. Kept as raw text; no link is rendered.",
-      "values": [
-        "https://92800 PUTEAUX"
-      ]
-    },
-    {
-      "type": "non_url_in_website_field",
-      "entityKey": "969500A4IPKVUBH3CA90",
-      "sourceRow": 173,
-      "name": "BANQUE DELUBAC ET CIE",
-      "country": "France",
-      "detail": "Website field contains \"https://07160 LE CHEYLARD\", which is not a URL. Kept as raw text; no link is rendered.",
-      "values": [
-        "https://07160 LE CHEYLARD"
-      ]
-    },
-    {
-      "type": "non_url_in_website_field",
       "entityKey": "213800QBQVHWRBHJTA89",
-      "sourceRow": 210,
+      "sourceRow": 215,
       "name": "Paysafe Payment Solutions Limited.",
       "country": "Ireland",
       "detail": "Website field contains \"https://www.skrill.com www.neteller.com\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -164,7 +143,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "969500OA6NVZB5BXAB29",
-      "sourceRow": 251,
+      "sourceRow": 256,
       "name": "B2C2 Europe Sarl",
       "country": "Luxembourg",
       "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -175,7 +154,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
-      "sourceRow": 257,
+      "sourceRow": 262,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -186,7 +165,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "984500F9M4XF7C5E5E25",
-      "sourceRow": 281,
+      "sourceRow": 286,
       "name": "Olmipay Limited",
       "country": "Malta",
       "detail": "Website field contains \"https://Olmipay.com (upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -197,27 +176,12 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
-      "sourceRow": 284,
+      "sourceRow": 289,
       "name": "Zap (Strike) Europe Limited",
       "country": "Malta",
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
       "values": [
         "984500457TABOA3BZ224"
-      ]
-    },
-    {
-      "type": "multi_authorisation",
-      "entityKey": "9845007E2C96JA7B8653",
-      "sourceRow": 34,
-      "sourceRows": [
-        34,
-        43
-      ],
-      "name": "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd)",
-      "country": "Cyprus",
-      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
-      "values": [
-        "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd)"
       ]
     },
     {
@@ -268,10 +232,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "984500AB011S3AEF6706",
-      "sourceRow": 191,
+      "sourceRow": 196,
       "sourceRows": [
-        191,
-        192
+        196,
+        197
       ],
       "name": "FLOWDESK EUROPE SAS",
       "country": "France",
