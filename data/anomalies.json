@@ -1,10 +1,10 @@
 {
   "total": 20,
   "byType": {
-    "lei_checksum_failed": 6,
+    "lei_checksum_failed": 7,
     "repeated_service_code": 3,
     "malformed_url": 1,
-    "non_url_in_website_field": 6,
+    "non_url_in_website_field": 5,
     "multi_authorisation": 4
   },
   "anomalies": [
@@ -108,20 +108,20 @@
       ]
     },
     {
-      "type": "non_url_in_website_field",
-      "entityKey": "959800U0R44NN5DJC930",
-      "sourceRow": 159,
-      "name": "MINOS GLOBAL S.L.",
-      "country": "Spain",
-      "detail": "Website field contains \"https://ttps://minos.global\", which is not a URL. Kept as raw text; no link is rendered.",
+      "type": "lei_checksum_failed",
+      "entityKey": "5299001O5S0MLDXH7A21",
+      "sourceRow": 140,
+      "name": "Volksbank Sauerland eG",
+      "country": "Germany",
+      "detail": "LEI 5299001O5S0MLDXH7A21 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
       "values": [
-        "https://ttps://minos.global"
+        "5299001O5S0MLDXH7A21"
       ]
     },
     {
       "type": "lei_checksum_failed",
       "entityKey": "549300746K71T6YJCV41",
-      "sourceRow": 163,
+      "sourceRow": 168,
       "name": "FINTECH PAYMENTS PSC S.L.",
       "country": "Spain",
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -132,7 +132,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "213800QBQVHWRBHJTA89",
-      "sourceRow": 215,
+      "sourceRow": 220,
       "name": "Paysafe Payment Solutions Limited.",
       "country": "Ireland",
       "detail": "Website field contains \"https://www.skrill.com www.neteller.com\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -143,7 +143,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "969500OA6NVZB5BXAB29",
-      "sourceRow": 256,
+      "sourceRow": 261,
       "name": "B2C2 Europe Sarl",
       "country": "Luxembourg",
       "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -154,7 +154,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
-      "sourceRow": 262,
+      "sourceRow": 267,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -165,7 +165,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "984500F9M4XF7C5E5E25",
-      "sourceRow": 286,
+      "sourceRow": 291,
       "name": "Olmipay Limited",
       "country": "Malta",
       "detail": "Website field contains \"https://Olmipay.com (upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -176,7 +176,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
-      "sourceRow": 289,
+      "sourceRow": 294,
       "name": "Zap (Strike) Europe Limited",
       "country": "Malta",
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -232,10 +232,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "984500AB011S3AEF6706",
-      "sourceRow": 196,
+      "sourceRow": 201,
       "sourceRows": [
-        196,
-        197
+        201,
+        202
       ],
       "name": "FLOWDESK EUROPE SAS",
       "country": "France",

@@ -4,7 +4,16 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Tue, 08 Sep 2026 13:56:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 08:55:55 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-09-11</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-09-11T08:55:55.360Z</guid>
+      <pubDate>Fri, 11 Sep 2026 08:55:55 GMT</pubDate>
+      <description>EMT issuers added: BISON BANK, S.A.
+CASPs added: Volksbank Raiffeisenbank Dachau eG (Germany), Volksbank Sauerland eG (Germany), Volksbank Zollernalb eG (Germany), VR Bank München Land eG (Germany), Volksbank Baumberge eG (Germany), PROSEGUR CUSTODIA DE ACTIVOS DIGITALES S.L.U. (Spain)
+CASPs removed: PROSEGUR CUSTODIA DE ACTIVOS DIGITALES (Spain)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-09-08</title>
       <link>https://micatracker.digital-euro-association.de/</link>

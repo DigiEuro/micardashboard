@@ -1,5 +1,30 @@
 [
   {
+    "date": "2026-09-11",
+    "timestamp": "2026-09-11T08:55:55.360Z",
+    "changes": {
+      "emt": {
+        "added": [
+          "BISON BANK, S.A."
+        ],
+        "removed": []
+      },
+      "casps": {
+        "added": [
+          "Volksbank Raiffeisenbank Dachau eG (Germany)",
+          "Volksbank Sauerland eG (Germany)",
+          "Volksbank Zollernalb eG (Germany)",
+          "VR Bank München Land eG (Germany)",
+          "Volksbank Baumberge eG (Germany)",
+          "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES S.L.U. (Spain)"
+        ],
+        "removed": [
+          "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES (Spain)"
+        ]
+      }
+    }
+  },
+  {
     "date": "2026-09-08",
     "timestamp": "2026-09-08T13:56:05.028Z",
     "changes": {
