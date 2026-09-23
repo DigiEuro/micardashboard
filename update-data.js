@@ -1513,4 +1513,3 @@ module.exports = {
     parseCsvGrid,
     LEI_PATTERN
 };
-

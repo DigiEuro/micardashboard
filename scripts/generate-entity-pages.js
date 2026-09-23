@@ -440,4 +440,3 @@ if (require.main === module) {
 }
 
 module.exports = { generateEntityPages, entityPage, contextFor, changeHistory, entityLookup };
-
