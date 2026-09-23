@@ -549,7 +549,7 @@
             if (snapshot.lastUpdated) {
                 const updated = new Date(snapshot.lastUpdated);
                 if (!Number.isNaN(updated.getTime())) {
-                    pieces.push(`last checked ${updated.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`);
+                    pieces.push(`last data update ${updated.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`);
                     // ESMA republishes weekly; older than two weeks means updates stopped
                     stale = (Date.now() - updated.getTime()) / 86400000 > 14;
                 }
@@ -1008,3 +1008,4 @@
     </script>
 </body>
 </html>
+

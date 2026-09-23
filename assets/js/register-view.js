@@ -753,7 +753,7 @@
     if (d) parts.push('Register snapshot: ' + d);
     if (snapshot.lastUpdated) {
       const u = new Date(snapshot.lastUpdated);
-      if (!isNaN(u.getTime())) parts.push('last checked ' + u.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }));
+      if (!isNaN(u.getTime())) parts.push('last data update ' + u.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }));
     }
     if (parts.length) el.textContent = parts.join(' · ');
   }
@@ -864,3 +864,4 @@
 
   boot();
 })();
+

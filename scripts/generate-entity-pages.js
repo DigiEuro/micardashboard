@@ -357,7 +357,7 @@ function entityPage(entity, data) {
             <span class="entity-status"><i class="fas fa-circle-check" aria-hidden="true"></i>Authorised under MiCAR</span>
             <span>Competent authority: <strong>${esc(authority)} - ${esc(entity.country)}</strong> <span class="entity-flag" aria-hidden="true">${flag}</span></span>
             <span>Register snapshot: <strong>${esc(sourceDate)}</strong></span>
-            <span>Last checked: <strong>${esc(checkedDate)}</strong></span>
+            <span>Last data update: <strong>${esc(checkedDate)}</strong></span>
           </div>
           <div class="entity-submeta">
             <span><i class="fas fa-globe" aria-hidden="true"></i> Website: ${websites(entity, true)}</span>
@@ -392,7 +392,7 @@ ${note}
         <section class="entity-panel entity-source" aria-labelledby="source-title"><h2 id="source-title">Source and freshness</h2><dl>
           <div><dt>Official source</dt><dd><a href="${ESMA_SOURCE}" target="_blank" rel="noopener" class="entity-link">ESMA MiCA register <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></dd></div>
           <div><dt>Register snapshot</dt><dd>${esc(sourceDate)}</dd></div>
-          <div><dt>Last checked</dt><dd>${esc(checkedDate)}</dd></div>
+          <div><dt>Last data update</dt><dd>${esc(checkedDate)}</dd></div>
         </dl><p class="entity-source-note"><i class="fas fa-circle-info" aria-hidden="true"></i>This page reflects public register information as recorded by ESMA on the snapshot date shown above.</p></section>
 
         <section class="entity-panel entity-represent" aria-labelledby="represent-title"><h2 id="represent-title">Represent this organisation?</h2><p>Verify a work email to receive profile alerts and manage company-provided information. Regulatory data cannot be edited here.</p><a class="entity-secondary-action" href="mailto:${CONTACT_EMAIL}?subject=${verifySubject}&amp;body=${verifyBody}" data-umami-event="entity-verify-affiliation" data-umami-event-entity="${esc(entity.slug)}" data-umami-event-country="${esc(entity.country)}"><i class="fas fa-envelope" aria-hidden="true"></i>Verify organisation affiliation</a><a class="entity-correction" href="mailto:${CONTACT_EMAIL}?subject=${correctionSubject}&amp;body=${correctionBody}" data-umami-event="entity-suggest-correction" data-umami-event-entity="${esc(entity.slug)}" data-umami-event-country="${esc(entity.country)}"><i class="fas fa-pen" aria-hidden="true"></i>Suggest a correction</a><small>Corrections are free.</small></section>
@@ -440,3 +440,4 @@ if (require.main === module) {
 }
 
 module.exports = { generateEntityPages, entityPage, contextFor, changeHistory, entityLookup };
+

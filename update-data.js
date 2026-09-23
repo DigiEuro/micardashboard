@@ -1429,6 +1429,15 @@ async function main() {
             process.exit(1);
         }
 
+        // Do not publish a mixture of fresh sheet metadata and cached register
+        // data. The footer is generated from the sheet date, while the runtime
+        // freshness banner reads data/snapshot.json. Publishing after either
+        // fetch falls back to cache makes those two trust signals disagree.
+        // Fail the run instead; the next scheduled run can retry atomically.
+        if (snapshotSource === 'cache' || dataSource !== 'remote') {
+            throw new Error('Live snapshot and register data are not both available; refusing to publish cached data or freshness metadata.');
+        }
+
         warnOnShrunkenDataset('EMT register', EMT_DATA_FILE, jsData);
         warnOnShrunkenDataset('Non-compliant register', NON_COMPLIANT_DATA_FILE, nonCompliantEntries);
         warnOnShrunkenDataset('CASPs register', CASPS_DATA_FILE, caspsEntries);
@@ -1504,3 +1513,4 @@ module.exports = {
     parseCsvGrid,
     LEI_PATTERN
 };
+
