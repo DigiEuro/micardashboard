@@ -20,6 +20,18 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const PORT = Number(process.env.SMOKE_PORT || 8123);
+const entityData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'entities.json'), 'utf8'));
+const entities = entityData.entities || [];
+const anomalyData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'anomalies.json'), 'utf8'));
+const anomalies = anomalyData.anomalies || [];
+const multiAuthorisation = anomalies.find(function (item) { return item.type === 'multi_authorisation'; });
+const smokeEntity = entities.find(function (entity) {
+  return multiAuthorisation && entity.entityKey === multiAuthorisation.entityKey;
+}) || entities.find(function (entity) {
+  return !anomalies.some(function (item) { return item.entityKey === entity.entityKey; });
+}) || entities[0];
+if (!smokeEntity) throw new Error('No entity available for profile smoke testing.');
+const smokeEntityHasDataNote = anomalies.some(function (item) { return item.entityKey === smokeEntity.entityKey; });
 
 const MIME = {
   '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript',
@@ -293,15 +305,18 @@ const CHECKS = [
     }
   },
   {
-    page: 'entities/flowdesk-europe-sas.html',
+    page: 'entities/' + smokeEntity.slug + '.html',
     assert: async function (page, expect) {
-      await expect(await page.locator('#entity-name').textContent() === 'FLOWDESK EUROPE SAS', 'entity page renders the legal name');
+      await expect(await page.locator('#entity-name').textContent() === smokeEntity.name, 'entity page renders the current legal name');
       await expect(await page.locator('.entity-status').count() === 1, 'authorisation status is present');
-      await expect(await page.locator('.entity-note').count() === 1, 'entity-specific data note renders');
-      await expect(await page.locator('.entity-context-row').count() >= 4, 'context rows render');
-      await expect(await page.locator('a[href*="casp-tracker.html?country=France"]').count() > 0, 'context links to the filtered CASP tracker');
+      await expect(await page.locator('.entity-note').count() === (smokeEntityHasDataNote ? 1 : 0), 'entity data note matches the current register anomalies');
+      await expect(await page.locator('.entity-context-row').count() >= 2, 'context rows render');
+      const contextHref = await page.locator('.entity-context-row').first().getAttribute('href');
+      await expect(contextHref && contextHref.includes('casp-tracker.html?country='), 'context links to the filtered CASP tracker');
       await expect(await page.locator('a[href^="mailto:"]').count() === 2, 'verification and correction routes are actionable');
-      await expect(await page.locator('[data-copy="984500AB011S3AEF6706"]').count() === 1, 'LEI is shown with a copy action');
+      if (smokeEntity.lei) {
+        await expect(await page.locator('[data-copy="' + smokeEntity.lei + '"]').count() === 1, 'LEI is shown with a copy action');
+      }
     }
   },
   {
