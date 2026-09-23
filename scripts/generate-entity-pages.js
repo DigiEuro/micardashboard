@@ -357,7 +357,7 @@ function entityPage(entity, data) {
             <span class="entity-status"><i class="fas fa-circle-check" aria-hidden="true"></i>Authorised under MiCAR</span>
             <span>Competent authority: <strong>${esc(authority)} - ${esc(entity.country)}</strong> <span class="entity-flag" aria-hidden="true">${flag}</span></span>
             <span>Register snapshot: <strong>${esc(sourceDate)}</strong></span>
-            <span>Last checked: <strong>${esc(checkedDate)}</strong></span>
+            <span>Last data update: <strong>${esc(checkedDate)}</strong></span>
           </div>
           <div class="entity-submeta">
             <span><i class="fas fa-globe" aria-hidden="true"></i> Website: ${websites(entity, true)}</span>
