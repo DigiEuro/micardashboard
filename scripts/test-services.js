@@ -52,6 +52,13 @@ test('handles malformed separators and truncated exchange wording', () => {
     ]);
 });
 
+test('maps the truncated service d from the live CASP sheet without guessing service c', () => {
+    assert.deepStrictEqual(deriveServiceCodes('d. exchange of crypto-assets'), ['exchange crypto']);
+    assert.deepStrictEqual(unknownServiceSegments('d. exchange of crypto-assets'), []);
+    assert.deepStrictEqual(deriveServiceCodes('c. exchange of crypto-assets'), []);
+    assert.deepStrictEqual(unknownServiceSegments('c. exchange of crypto-assets'), ['c. exchange of crypto-assets']);
+});
+
 test('does not duplicate a service mentioned more than once', () => {
     assert.deepStrictEqual(
         deriveServiceCodes('c. exchange of crypto-assets for funds | c. exchange of crypto-assets for funds'),
