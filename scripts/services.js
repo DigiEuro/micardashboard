@@ -40,7 +40,11 @@ const SERVICE_DEFINITIONS = Object.freeze([
             /exchange\s+(?:of\s+)?crypto[- ]assets?\s+for\s+(?:other\s+)?crypto[- ]assets?/i,
             /exchange\s+(?:of\s+)?crypto[- ]assets?\s+for\s+other\b/i,
             /exchange\s+for\s+crypto[- ]assets?/i,
-            /exchange\s+between\s+crypto\s+assets?(?!\s+and\s+fiat)/i
+            /exchange\s+between\s+crypto\s+assets?(?!\s+and\s+fiat)/i,
+            // The live sheet sometimes truncates service d after "crypto-assets".
+            // Require its letter prefix: the same phrase without d is ambiguous
+            // with service c (exchange for funds).
+            /\bd\.\s*exchange\s+of\s+crypto[- ]assets?\s*(?=$|[|;,/])/i
         ]
     },
     {
