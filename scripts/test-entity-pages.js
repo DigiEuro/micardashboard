@@ -5,6 +5,8 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const entitiesData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'entities.json'), 'utf8'));
 const entities = entitiesData.entities || [];
+const anomalyData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'anomalies.json'), 'utf8'));
+const anomalies = anomalyData.anomalies || [];
 
 function expect(condition, message) {
   if (!condition) throw new Error(message);
@@ -37,14 +39,26 @@ entities.forEach(function (entity) {
   expect(!html.includes('—'), 'entity page contains an em dash: ' + entity.slug);
 });
 
-const flowdesk = fs.readFileSync(path.join(ROOT, 'entities', 'flowdesk-europe-sas.html'), 'utf8');
-expect(flowdesk.includes('Same legal entity, multiple register names'), 'Flowdesk data note missing');
-expect(flowdesk.includes('APLO SAS'), 'Flowdesk alias missing');
-expect(flowdesk.includes('984500AB011S3AEF6706'), 'Flowdesk LEI missing');
-expect(flowdesk.includes('MiCAR-authorised legal entities in France'), 'Flowdesk context missing');
-expect(!flowdesk.includes('View in official record'), 'LEI should not require leaving the page');
-expect(!flowdesk.includes('—'), 'entity page contains an em dash');
+// Validate aliases and data-quality notes against the current register snapshot.
+// A fixed company-specific expectation can become stale when ESMA updates its records.
+entities.filter(function (entity) {
+  return Array.isArray(entity.alsoKnownAs) && entity.alsoKnownAs.length > 0;
+}).forEach(function (entity) {
+  const html = fs.readFileSync(path.join(ROOT, 'entities', entity.slug + '.html'), 'utf8');
+  entity.alsoKnownAs.forEach(function (alias) {
+    expect(html.includes(esc(alias)), 'entity alias missing: ' + entity.slug + ' (' + alias + ')');
+  });
+});
 
+anomalies.filter(function (item) {
+  return item.type === 'multi_authorisation';
+}).forEach(function (anomaly) {
+  const entity = entities.find(function (candidate) { return candidate.entityKey === anomaly.entityKey; });
+  expect(entity, 'multi-authorisation anomaly has no resolved entity: ' + anomaly.entityKey);
+  const html = fs.readFileSync(path.join(ROOT, 'entities', entity.slug + '.html'), 'utf8');
+  expect(html.includes('Same legal entity, multiple register names'), 'multi-authorisation data note missing: ' + entity.slug);
+});
+ 
 const logos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'casp-logos.json'), 'utf8'));
 Object.keys(logos).forEach(function (slug) {
   const logo = logos[slug];
