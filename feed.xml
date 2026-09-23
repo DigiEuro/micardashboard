@@ -4,7 +4,15 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Fri, 11 Sep 2026 09:12:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 17:01:35 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-09-23</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-09-23T17:01:35.434Z</guid>
+      <pubDate>Wed, 23 Sep 2026 17:01:35 GMT</pubDate>
+      <description>CASPs added: FF Digital EOOD (Bulgaria), Volksbank Olpe-Wenden-Drolshagen eG (Germany), Deutsche Bank Aktiengesellschaft (Germany), Raiffeisenbank Goldener Steig-Dreisessel eG (Germany), Vereinigte VR Bank eG (Germany), Vereinigte Volksbank Raiffeisenbank eG, Reinheim (Germany)
+Non-compliant entities added: Bank Bit (Belgium), Bithf Pro (Belgium), Dxago (Belgium), Global Dynamic Trade (Belgium), ZeriaFunding (Belgium), Aurum Foundation (Belgium), White Mint Financial Company s.r.o. (Czech Republic)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-09-11</title>
       <link>https://micatracker.digital-euro-association.de/</link>

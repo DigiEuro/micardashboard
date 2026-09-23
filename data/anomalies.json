@@ -1,11 +1,11 @@
 {
-  "total": 20,
+  "total": 19,
   "byType": {
     "lei_checksum_failed": 7,
     "repeated_service_code": 3,
     "malformed_url": 1,
     "non_url_in_website_field": 5,
-    "multi_authorisation": 4
+    "multi_authorisation": 3
   },
   "anomalies": [
     {
@@ -22,7 +22,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "25490004TC93R20KW073",
-      "sourceRow": 27,
+      "sourceRow": 28,
       "name": "Noemon Finance Ltd",
       "country": "Cyprus",
       "detail": "LEI 25490004TC93R20KW073 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -33,7 +33,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "213800V83W83UL8WR118",
-      "sourceRow": 32,
+      "sourceRow": 33,
       "name": "Ronin EM Ltd",
       "country": "Cyprus",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -44,7 +44,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2138005EFA978Y43G944",
-      "sourceRow": 40,
+      "sourceRow": 41,
       "name": "PM MTF LTD",
       "country": "Cyprus",
       "detail": "Service code(s) listed more than once in a single record: execution",
@@ -55,7 +55,7 @@
     {
       "type": "malformed_url",
       "entityKey": "64889KAWPMO81X649843",
-      "sourceRow": 44,
+      "sourceRow": 45,
       "name": "MP Developers s.r.o.",
       "country": "Czechia",
       "detail": "Website value \"www.dase.com\" was repaired to \"https://www.dase.com\".",
@@ -66,7 +66,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "529900JB9XYZ8E87N345",
-      "sourceRow": 63,
+      "sourceRow": 64,
       "name": "N26 Bank SE",
       "country": "Germany",
       "detail": "Website field contains \"https://N26 – Die erste Onlinebank\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -77,7 +77,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "529900JB9XYZ8E87N345",
-      "sourceRow": 63,
+      "sourceRow": 64,
       "name": "N26 Bank SE",
       "country": "Germany",
       "detail": "Website field contains \"die du lieben wirst\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -88,7 +88,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "851WYGNLUQLFZBSYGB56",
-      "sourceRow": 65,
+      "sourceRow": 66,
       "name": "Commerzbank Aktiengesellschaft",
       "country": "Germany",
       "detail": "Website field contains \"https://Commerzbank AG – Investor Relations\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -99,7 +99,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "391200236O6D9SGBE882",
-      "sourceRow": 119,
+      "sourceRow": 120,
       "name": "Raiffeisenbank Falkenstein-Wörth",
       "country": "Germany",
       "detail": "LEI 391200236O6D9SGBE882 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -110,7 +110,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "5299001O5S0MLDXH7A21",
-      "sourceRow": 140,
+      "sourceRow": 141,
       "name": "Volksbank Sauerland eG",
       "country": "Germany",
       "detail": "LEI 5299001O5S0MLDXH7A21 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -121,7 +121,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "549300746K71T6YJCV41",
-      "sourceRow": 168,
+      "sourceRow": 174,
       "name": "FINTECH PAYMENTS PSC S.L.",
       "country": "Spain",
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -132,7 +132,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "213800QBQVHWRBHJTA89",
-      "sourceRow": 220,
+      "sourceRow": 226,
       "name": "Paysafe Payment Solutions Limited.",
       "country": "Ireland",
       "detail": "Website field contains \"https://www.skrill.com www.neteller.com\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -143,7 +143,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "969500OA6NVZB5BXAB29",
-      "sourceRow": 261,
+      "sourceRow": 267,
       "name": "B2C2 Europe Sarl",
       "country": "Luxembourg",
       "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -154,7 +154,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
-      "sourceRow": 267,
+      "sourceRow": 273,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -165,7 +165,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "984500F9M4XF7C5E5E25",
-      "sourceRow": 291,
+      "sourceRow": 297,
       "name": "Olmipay Limited",
       "country": "Malta",
       "detail": "Website field contains \"https://Olmipay.com (upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -176,7 +176,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
-      "sourceRow": 294,
+      "sourceRow": 300,
       "name": "Zap (Strike) Europe Limited",
       "country": "Malta",
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -187,10 +187,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "529900032TYR45XIEW79",
-      "sourceRow": 58,
+      "sourceRow": 59,
       "sourceRows": [
-        58,
-        83
+        59,
+        84
       ],
       "name": "EUWAX AG",
       "country": "Germany",
@@ -202,10 +202,10 @@
     {
       "type": "multi_authorisation",
       "entityKey": "529900EXG2PM316ISO63",
-      "sourceRow": 81,
+      "sourceRow": 82,
       "sourceRows": [
-        81,
-        124
+        82,
+        125
       ],
       "name": "Deutsche WertpapierService Bank AG",
       "country": "Germany",
@@ -217,32 +217,16 @@
     {
       "type": "multi_authorisation",
       "entityKey": "0W2PZJM8XOY22M4GG883",
-      "sourceRow": 82,
+      "sourceRow": 83,
       "sourceRows": [
-        82,
-        112
+        83,
+        113
       ],
       "name": "DekaBank Deutsche Girozentrale",
       "country": "Germany",
       "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
       "values": [
         "DekaBank Deutsche Girozentrale"
-      ]
-    },
-    {
-      "type": "multi_authorisation",
-      "entityKey": "984500AB011S3AEF6706",
-      "sourceRow": 201,
-      "sourceRows": [
-        201,
-        202
-      ],
-      "name": "FLOWDESK EUROPE SAS",
-      "country": "France",
-      "detail": "One legal entity (LEI 984500AB011S3AEF6706) appears under 2 different names: FLOWDESK EUROPE SAS / APLO SAS. These are the same firm, not duplicates.",
-      "values": [
-        "FLOWDESK EUROPE SAS",
-        "APLO SAS"
       ]
     }
   ]
