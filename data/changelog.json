@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-09-29",
+    "timestamp": "2026-09-29T10:32:28.989Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Volksbank Göppingen eG (Germany)",
+          "Wiesbadener Volksbank eG (Germany)",
+          "Raiffeisenbank im Oberland eG (Germany)",
+          "Münchner Bank eG (Germany)",
+          "REGULAR FINANCE SAS (France)",
+          "BCASH SOCIETE ANONYME (Greece)",
+          "XENIOS BLOCKCHAIN GROUP S.A. (Greece)",
+          "CAPITAL WALLET GREECE S.A. (Greece)",
+          "PIRAEUS BANK Société Anonyme (S.A.) (Greece)",
+          "ICONOMI EUROPE, borznoposredniška družba, d.o.o. (Slovenia)"
+        ],
+        "removed": []
+      },
+      "nonCompliant": {
+        "added": [
+          "Nextrize Invest (Italy)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-09-23",
     "timestamp": "2026-09-23T17:01:35.434Z",
     "changes": {
