@@ -70,6 +70,68 @@ function isSafeSvg(buffer) {
   return !/<script\b|<foreignObject\b|\bon[a-z]+\s*=|(?:href|xlink:href)\s*=\s*["']https?:/i.test(text);
 }
 
+function isIgnoredPaint(value) {
+  const paint = String(value || '').replace(/\s+/g, '').toLowerCase();
+  return !paint
+    || paint === 'none'
+    || paint === 'transparent'
+    || paint === 'currentcolor'
+    || paint === 'inherit'
+    || /^url\(/.test(paint);
+}
+
+function isWhitePaint(value) {
+  const paint = String(value || '').replace(/\s+/g, '').toLowerCase();
+  return paint === 'white'
+    || paint === '#fff'
+    || paint === '#ffff'
+    || paint === '#ffffff'
+    || paint === '#ffffffff'
+    || paint === 'rgb(255,255,255)'
+    || paint === 'rgb(100%,100%,100%)'
+    || paint === 'rgba(255,255,255,1)'
+    || paint === 'rgba(100%,100%,100%,1)'
+    || paint === 'hsl(0,0%,100%)'
+    || paint === 'hsla(0,0%,100%,1)';
+}
+
+function svgTheme(buffer) {
+  const text = buffer.toString('utf8', 0, Math.min(buffer.length, 500000));
+  const paints = [];
+  const attributePattern = /\b(?:fill|stroke|stop-color|color)\s*=\s*(["'])(.*?)\1/gi;
+  const stylePattern = /\b(?:fill|stroke|stop-color|color)\s*:\s*([^;}]+)/gi;
+  let match;
+  while ((match = attributePattern.exec(text))) paints.push(match[2]);
+  while ((match = stylePattern.exec(text))) paints.push(match[1]);
+  const visiblePaints = paints.filter(function (paint) { return !isIgnoredPaint(paint); });
+  return visiblePaints.length && visiblePaints.every(isWhitePaint) ? 'dark' : '';
+}
+
+function logoThemeFromAsset(src) {
+  const raw = String(src || '').trim();
+  if (!/\.svg$/i.test(raw)) return '';
+  const relative = raw.replace(/^\.\.\//, '');
+  const file = path.join(ROOT, relative);
+  try {
+    return svgTheme(fs.readFileSync(file));
+  } catch (_) {
+    return '';
+  }
+}
+
+function applyDetectedLogoThemes(manifest) {
+  let updated = 0;
+  Object.values(manifest).forEach(function (logo) {
+    if (!logo || typeof logo !== 'object') return;
+    const detected = logoThemeFromAsset(logo.src);
+    if (detected && logo.theme !== detected) {
+      logo.theme = detected;
+      updated += 1;
+    }
+  });
+  return updated;
+}
+
 function attr(tag, name) {
   const pattern = new RegExp('\\b' + name + '\\s*=\\s*(["\\\'])(.*?)\\1', 'i');
   const match = tag.match(pattern);
@@ -128,7 +190,12 @@ function isTokenBrand(value) {
 }
 
 function isNonBrandAsset(value) {
-  return isTokenAsset(value) || /cookie-law-info|cookieyes|consent|revisit\.svg|jugendgo|startseite-vrnw|veranstaltung_vr|:3-2|co-branded|banner/i.test(String(value || ''));
+  const text = String(value || '');
+  return isTokenAsset(text)
+    || /cookie-law-info|cookieyes|consent|revisit\.svg|jugendgo|startseite-vrnw|veranstaltung_vr|:3-2|co-branded|banner/i.test(text)
+    || /(?:^|[^a-z0-9])(?:linkedin|facebook|instagram|twitter|youtube|tiktok|telegram|discord|icons?8)(?:[^a-z0-9]|$)/i.test(text)
+    || /(?:^|\/)(?:logo[-_]?x|x[-_]?logo)\.(?:svg|png|webp)(?:$|[?#])/i.test(text)
+    || /\/(?:partners?|sponsors?|widgets?|tokens?|coins?|currencies?)(?:\/|[?#])/i.test(text);
 }
 
 function extractCandidates(html, pageUrl, entities, domain) {
@@ -432,6 +499,12 @@ async function run() {
   const refresh = process.argv.includes('--refresh');
   const retryMissing = process.argv.includes('--retry-missing');
   const retryLowConfidence = process.argv.includes('--retry-low-confidence');
+  const themesOnly = process.argv.includes('--themes-only');
+  const slugArg = process.argv.find(function (arg) { return arg.indexOf('--slug=') === 0; });
+  const targetSlugs = new Set(slugArg ? slugArg.split('=')[1].split(',').map(function (slug) { return slug.trim(); }).filter(Boolean) : []);
+  targetSlugs.forEach(function (slug) {
+    if (!entities.some(function (entity) { return entity.slug === slug; })) throw new Error('Unknown entity slug: ' + slug);
+  });
   const previousReport = readJson('casp-logo-report.json', { results: [] });
   const previousBySlug = new Map((previousReport.results || []).map(function (entry) { return [entry.slug, entry]; }));
   const limitArg = process.argv.find(function (arg) { return arg.indexOf('--limit=') === 0; });
@@ -452,7 +525,8 @@ async function run() {
   groups.forEach(function (domainEntities, domain) {
     if (domainEntities.some(function (entity) { return lowConfidenceSlugs.has(entity.slug); })) lowConfidenceDomains.add(domain);
   });
-  const domains = [...groups.keys()].filter(function (domain) {
+  const domains = themesOnly ? [] : [...groups.keys()].filter(function (domain) {
+    if (targetSlugs.size) return groups.get(domain).some(function (entity) { return targetSlugs.has(entity.slug); });
     if (retryLowConfidence) return lowConfidenceDomains.has(domain);
     if (retryMissing) return retryDomains.has(domain) && !existingByDomain.has(domain);
     return refresh || !existingByDomain.has(domain);
@@ -479,7 +553,7 @@ async function run() {
   results.forEach(function (result, domain) {
     const domainEntities = groups.get(domain) || [];
     const existingSlugs = existingByDomain.get(domain) || [];
-    const targetedRefresh = retryLowConfidence && domains.includes(domain);
+    const targetedRefresh = domains.includes(domain) && (retryLowConfidence || targetSlugs.size > 0);
     if (existingSlugs.length && !refresh && !targetedRefresh) {
       domainEntities.forEach(function (entity) {
         if (!manifest[entity.slug]) report.push({ slug: entity.slug, name: entity.name, domain, status: 'review', reason: 'shared website already has a curated logo entry' });
@@ -488,7 +562,11 @@ async function run() {
     }
     domainEntities.forEach(function (entity) {
       if (result.status === 'found') {
-        if (!manifest[entity.slug] || refresh || targetedRefresh) {
+        const replaceExisting = refresh
+          || targetSlugs.has(entity.slug)
+          || (retryLowConfidence && lowConfidenceSlugs.has(entity.slug));
+        if (!manifest[entity.slug] || replaceExisting) {
+          const theme = logoThemeFromAsset(result.asset);
           manifest[entity.slug] = {
             src: result.asset,
             alt: logoAlt(entity, result),
@@ -496,12 +574,13 @@ async function run() {
             sourceUrl: result.sourceUrl,
             method: result.method,
             retrievedAt: new Date().toISOString().slice(0, 10),
-            confidence: result.method === 'img-logo' ? 'high' : 'medium'
+            confidence: result.method === 'img-logo' ? 'high' : 'medium',
+            ...(theme ? { theme } : {})
           };
         }
         report.push({ slug: entity.slug, name: entity.name, domain, status: 'found', sourceUrl: result.sourceUrl, method: result.method, asset: result.asset });
       } else {
-        if (targetedRefresh && lowConfidenceSlugs.has(entity.slug)) delete manifest[entity.slug];
+        if (targetSlugs.has(entity.slug) || (retryLowConfidence && lowConfidenceSlugs.has(entity.slug))) delete manifest[entity.slug];
         report.push({ slug: entity.slug, name: entity.name, domain, status: 'missing', reason: result.reason, tried: result.tried || [] });
       }
     });
@@ -536,8 +615,17 @@ async function run() {
     });
   });
 
+  const themed = applyDetectedLogoThemes(manifest);
+  if (themed) console.log('Detected dark logo frames for ' + themed + ' white-on-transparent SVG assets.');
+
   fs.writeFileSync(MANIFEST_FILE, JSON.stringify(manifest, null, 2) + '\n');
-  fs.writeFileSync(REPORT_FILE, JSON.stringify({ generatedAt: new Date().toISOString(), entities: entities.length, domains: groups.size, results: report }, null, 2) + '\n');
+  if (!themesOnly) {
+    fs.writeFileSync(REPORT_FILE, JSON.stringify({ generatedAt: new Date().toISOString(), entities: entities.length, domains: groups.size, results: report }, null, 2) + '\n');
+  }
+  if (themesOnly) {
+    console.log('Logo theme detection complete. Manifest: ' + path.relative(ROOT, MANIFEST_FILE));
+    return;
+  }
   const found = report.filter(function (entry) { return entry.status === 'found'; }).length;
   const missing = report.filter(function (entry) { return entry.status === 'missing'; }).length;
   const review = report.filter(function (entry) { return entry.status === 'review'; }).length;
