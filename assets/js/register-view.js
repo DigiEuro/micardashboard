@@ -50,6 +50,12 @@
     return /^https?:\/\//i.test(url) ? url : '';
   }
 
+  function caspDisplayName(item) {
+    const legalName = item && item.name ? item.name : 'N/A';
+    const formatter = window.MicarLegalName && window.MicarLegalName.formatLegalName;
+    return typeof formatter === 'function' ? formatter(legalName) : legalName;
+  }
+
   function debounce(fn, wait) {
     let timer = null;
     return function () {
@@ -168,9 +174,10 @@
           (item.websites || []).join(' ').toLowerCase().indexOf(term) !== -1;
       },
       row: function (item, i) {
+        const displayName = caspDisplayName(item);
         const title = item.entitySlug
-          ? '<a class="rv-entity-link" href="entities/' + esc(item.entitySlug) + '.html">' + esc(item.name || 'N/A') + '</a>'
-          : '<span class="text-gray-900 font-semibold">' + esc(item.name || 'N/A') + '</span>';
+          ? '<a class="rv-entity-link" href="entities/' + esc(item.entitySlug) + '.html">' + esc(displayName) + '</a>'
+          : '<span class="text-gray-900 font-semibold">' + esc(displayName) + '</span>';
         const services = (item.services || []).map(function (s) {
           const display = serviceDisplay(s);
           return '<span class="service-badge px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm font-medium" title="' + esc(display.full) + '" aria-label="' + esc(display.full) + '">' + esc(display.short) + '</span>';
