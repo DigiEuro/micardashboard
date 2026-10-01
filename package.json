@@ -8,6 +8,7 @@
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./styles/tailwind.css",
     "validate:data": "node scripts/validate-dashboard-data.js",
     "test:normalise": "node scripts/test-normalise.js",
+    "test:legal-name": "node scripts/test-legal-name.js",
     "test:csv": "node scripts/test-csv.js",
     "test:services": "node scripts/test-services.js",
     "build:entities": "node scripts/generate-entity-pages.js",

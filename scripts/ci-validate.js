@@ -13,6 +13,7 @@ const COMMANDS = {
   'test:csv': 'scripts/test-csv.js',
   'test:services': 'scripts/test-services.js',
   'test:normalise': 'scripts/test-normalise.js',
+  'test:legal-name': 'scripts/test-legal-name.js',
   'test:entities': 'scripts/test-entity-pages.js',
   'validate:data': 'scripts/validate-dashboard-data.js',
   'test:smoke': 'scripts/smoke.js'
@@ -123,9 +124,9 @@ try {
   console.log('Checking JavaScript syntax...');
   [
     'update-data.js', 'config.js', 'scripts/validate-dashboard-data.js',
-    'assets/js/mobile-menu.js', 'assets/js/register-view.js', 'assets/js/entity-page.js',
+    'assets/js/mobile-menu.js', 'assets/js/legal-name.js', 'assets/js/register-view.js', 'assets/js/entity-page.js',
     'scripts/generate-entity-pages.js', 'scripts/generate-explainer-page.js', 'scripts/harvest-casp-logos.js', 'scripts/refresh-static-pages.js',
-    'scripts/test-entity-pages.js', 'scripts/test-csv.js', 'scripts/check-css.js',
+    'scripts/test-entity-pages.js', 'scripts/test-legal-name.js', 'scripts/test-csv.js', 'scripts/check-css.js',
     'scripts/ci-validate.js'
   ].forEach(nodeCheck);
 
@@ -133,7 +134,7 @@ try {
   checkStaticPages();
   checkDataFiles();
 
-  ['test:csv', 'test:services', 'test:normalise', 'test:entities', 'validate:data', 'test:smoke']
+  ['test:csv', 'test:services', 'test:normalise', 'test:legal-name', 'test:entities', 'validate:data', 'test:smoke']
     .forEach(npmRun);
   console.log('\nFull repository validation passed.');
 } catch (error) {

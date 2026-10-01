@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { csvUrl, dateUrl, nonCompliantUrl, caspsUrl } = require('./config');
+const { formatLegalName } = require('./assets/js/legal-name');
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || '';
 const GOOGLE_SHEET_ID = process.env.GOOGLE_SHEET_ID || '1RfeiT68rH65izevXw_Upqdn0lXz-IGI83Zn3q0SBEbE';
@@ -1144,7 +1145,7 @@ function buildSnapshot(register, entries, dateLong) {
         headers = ['#', 'CASP', 'Country', 'Competent Authority', 'Services', 'Websites'];
         rows = entries.map((it, i) => {
             const slug = bySourceId.get(String(it.id)) || byLei.get(it.lei);
-            const name = htmlEscape(it.name || 'N/A');
+            const name = htmlEscape(formatLegalName(it.name || 'N/A'));
             const nameMarkup = slug
                 ? `<a href="entities/${htmlEscape(slug)}.html" class="font-semibold text-blue-700 underline decoration-blue-300 underline-offset-2 hover:text-blue-900">${name}</a>`
                 : `<span class="font-semibold text-gray-900">${name}</span>`;

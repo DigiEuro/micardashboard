@@ -17,9 +17,14 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { formatLegalName } = require('../assets/js/legal-name');
 
 const ROOT = path.join(__dirname, '..');
 const PORT = Number(process.env.SMOKE_PORT || 8123);
+const casps = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'casps.json'), 'utf8'));
+const formattedCasp = casps.find(function (item) {
+  return formatLegalName(item.name) !== item.name;
+});
 const entityData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'entities.json'), 'utf8'));
 const entities = entityData.entities || [];
 const logos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'casp-logos.json'), 'utf8'));
@@ -178,6 +183,9 @@ const CHECKS = [
       await page.waitForSelector('#rvSearch', { timeout: 15000 });
       const rows = await page.locator('#registerRoot tbody tr').count();
       await expect(rows > 100, 'CASP table renders rows (got ' + rows + ')');
+      const renderedNames = await page.locator('#registerRoot .rv-title').allTextContents();
+      await expect(formattedCasp && renderedNames.includes(formatLegalName(formattedCasp.name)), 'CASP table uses the standardised display name');
+      await expect(formattedCasp && !renderedNames.includes(formattedCasp.name), 'CASP table does not expose the raw all-caps name as its display label');
       const flags = await page.locator('#registerRoot tbody td[data-label="Country"] span[aria-hidden="true"]').count();
       await expect(flags > 0, 'CASP country flags render (got ' + flags + ')');
       const flagFont = await page.evaluate(async function () {
@@ -311,7 +319,8 @@ const CHECKS = [
   {
     page: 'entities/' + smokeEntity.slug + '.html',
     assert: async function (page, expect) {
-      await expect(await page.locator('#entity-name').textContent() === smokeEntity.name, 'entity page renders the current legal name');
+      await expect(await page.locator('#entity-name').textContent() === formatLegalName(smokeEntity.name), 'entity page renders the formatted display name');
+      await expect(await page.locator('.entity-facts dd').first().textContent() === smokeEntity.name, 'entity page retains the source legal name');
       await expect(await page.locator('.entity-status').count() === 1, 'authorisation status is present');
       await expect(await page.locator('.entity-note').count() === (smokeEntityHasDataNote ? 1 : 0), 'entity data note matches the current register anomalies');
       await expect(await page.locator('.entity-context-row').count() >= 2, 'context rows render');
