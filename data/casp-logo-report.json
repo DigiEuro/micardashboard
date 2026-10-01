@@ -1,454 +1,46 @@
 {
-  "generatedAt": "2026-08-06T10:07:55.648Z",
-  "entities": 320,
-  "domains": 312,
+  "generatedAt": "2026-10-01T17:34:54.982Z",
+  "entities": 359,
+  "domains": 349,
   "results": [
     {
-      "slug": "relai-eu-sasu",
-      "name": "RELAI EU SASU",
+      "slug": "n26-bank-se",
+      "name": "N26 Bank SE",
       "status": "missing",
       "reason": "no valid official website"
     },
     {
-      "slug": "societe-generale-forge",
-      "name": "SOCIETE GENERALE - FORGE",
+      "slug": "commerzbank-aktiengesellschaft",
+      "name": "Commerzbank Aktiengesellschaft",
       "status": "missing",
       "reason": "no valid official website"
     },
     {
-      "slug": "banque-delubac-et-cie",
-      "name": "BANQUE DELUBAC ET CIE",
+      "slug": "paysafe-payment-solutions-limited",
+      "name": "Paysafe Payment Solutions Limited.",
       "status": "missing",
       "reason": "no valid official website"
-    },
-    {
-      "slug": "noemon-tech-ltd",
-      "name": "NOEMON TECH LTD",
-      "domain": "noemon.tech",
-      "status": "missing",
-      "reason": "no usable logo image discovered",
-      "tried": [
-        "https://www.noemon.tech/favicon.svg",
-        "https://www.noemon.tech/favicon.ico",
-        "https://www.noemon.tech/favicon.png",
-        "https://www.noemon.tech/favicon.webp",
-        "https://www.noemon.tech/apple-touch-icon.png",
-        "https://www.noemon.tech/logo.svg",
-        "https://www.noemon.tech/logo.png",
-        "https://www.noemon.tech/logo.webp",
-        "https://www.noemon.tech/logo.jpg",
-        "https://www.noemon.tech/assets/logo.svg",
-        "https://www.noemon.tech/assets/logo.png",
-        "https://www.noemon.tech/assets/logo.webp",
-        "https://www.noemon.tech/images/logo.svg",
-        "https://www.noemon.tech/images/logo.png",
-        "https://www.noemon.tech/images/logo.webp",
-        "https://www.noemon.tech/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "ip-wbtcb-solutions-s-r-o",
-      "name": "IP wBTCb solutions, s.r.o.",
-      "domain": "bit.plus",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.bit.plus/favicon.svg",
-        "http://www.bit.plus/favicon.ico",
-        "http://www.bit.plus/favicon.png",
-        "http://www.bit.plus/favicon.webp",
-        "http://www.bit.plus/apple-touch-icon.png",
-        "http://www.bit.plus/logo.svg",
-        "http://www.bit.plus/logo.png",
-        "http://www.bit.plus/logo.webp",
-        "http://www.bit.plus/logo.jpg",
-        "http://www.bit.plus/assets/logo.svg",
-        "http://www.bit.plus/assets/logo.png",
-        "http://www.bit.plus/assets/logo.webp",
-        "http://www.bit.plus/images/logo.svg",
-        "http://www.bit.plus/images/logo.png",
-        "http://www.bit.plus/images/logo.webp",
-        "http://www.bit.plus/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "wbtcb-cz-s-r-o",
-      "name": "wBTCb.cz, s.r.o.",
-      "domain": "bit.plus",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.bit.plus/favicon.svg",
-        "http://www.bit.plus/favicon.ico",
-        "http://www.bit.plus/favicon.png",
-        "http://www.bit.plus/favicon.webp",
-        "http://www.bit.plus/apple-touch-icon.png",
-        "http://www.bit.plus/logo.svg",
-        "http://www.bit.plus/logo.png",
-        "http://www.bit.plus/logo.webp",
-        "http://www.bit.plus/logo.jpg",
-        "http://www.bit.plus/assets/logo.svg",
-        "http://www.bit.plus/assets/logo.png",
-        "http://www.bit.plus/assets/logo.webp",
-        "http://www.bit.plus/images/logo.svg",
-        "http://www.bit.plus/images/logo.png",
-        "http://www.bit.plus/images/logo.webp",
-        "http://www.bit.plus/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "tradevest-digital-assets-gmbh",
-      "name": "Tradevest Digital Assets GmbH",
-      "domain": "tradevest.ai",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.tradevest.ai/assets/logo.svg",
-        "http://www.tradevest.ai/assets/logo.png",
-        "http://www.tradevest.ai/assets/logo.webp",
-        "http://www.tradevest.ai/favicon.svg",
-        "http://www.tradevest.ai/favicon.ico",
-        "http://www.tradevest.ai/favicon.png",
-        "http://www.tradevest.ai/favicon.webp",
-        "http://www.tradevest.ai/apple-touch-icon.png",
-        "http://www.tradevest.ai/logo.svg",
-        "http://www.tradevest.ai/logo.png",
-        "http://www.tradevest.ai/logo.webp",
-        "http://www.tradevest.ai/logo.jpg",
-        "http://www.tradevest.ai/images/logo.svg",
-        "http://www.tradevest.ai/images/logo.png",
-        "http://www.tradevest.ai/images/logo.webp",
-        "http://www.tradevest.ai/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "tradevest-markets-ag",
-      "name": "Tradevest Markets AG",
-      "domain": "tradevest.ai",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.tradevest.ai/assets/logo.svg",
-        "http://www.tradevest.ai/assets/logo.png",
-        "http://www.tradevest.ai/assets/logo.webp",
-        "http://www.tradevest.ai/favicon.svg",
-        "http://www.tradevest.ai/favicon.ico",
-        "http://www.tradevest.ai/favicon.png",
-        "http://www.tradevest.ai/favicon.webp",
-        "http://www.tradevest.ai/apple-touch-icon.png",
-        "http://www.tradevest.ai/logo.svg",
-        "http://www.tradevest.ai/logo.png",
-        "http://www.tradevest.ai/logo.webp",
-        "http://www.tradevest.ai/logo.jpg",
-        "http://www.tradevest.ai/images/logo.svg",
-        "http://www.tradevest.ai/images/logo.png",
-        "http://www.tradevest.ai/images/logo.webp",
-        "http://www.tradevest.ai/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "volksbank-raiffeisenbank-oberbayern-sudost-eg",
-      "name": "Volksbank Raiffeisenbank Oberbayern Südost eG",
-      "domain": "www-vrbank-obb-so.de",
-      "status": "missing",
-      "reason": "website fetch failed: fetch failed",
-      "tried": [
-        "https://www-vrbank-obb-so.de/favicon.svg",
-        "https://www-vrbank-obb-so.de/favicon.ico",
-        "https://www-vrbank-obb-so.de/favicon.png",
-        "https://www-vrbank-obb-so.de/favicon.webp",
-        "https://www-vrbank-obb-so.de/apple-touch-icon.png",
-        "https://www-vrbank-obb-so.de/logo.svg",
-        "https://www-vrbank-obb-so.de/logo.png",
-        "https://www-vrbank-obb-so.de/logo.webp",
-        "https://www-vrbank-obb-so.de/logo.jpg",
-        "https://www-vrbank-obb-so.de/assets/logo.svg",
-        "https://www-vrbank-obb-so.de/assets/logo.png",
-        "https://www-vrbank-obb-so.de/assets/logo.webp",
-        "https://www-vrbank-obb-so.de/images/logo.svg",
-        "https://www-vrbank-obb-so.de/images/logo.png",
-        "https://www-vrbank-obb-so.de/images/logo.webp",
-        "https://www-vrbank-obb-so.de/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "banco-bilbao-vizcaya-argentaria-s-a",
-      "name": "Banco Bilbao Vizcaya Argentaria S.A.",
-      "domain": "bbva.es",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.bbva.es/favicon.svg",
-        "http://www.bbva.es/favicon.ico",
-        "http://www.bbva.es/favicon.png",
-        "http://www.bbva.es/favicon.webp",
-        "http://www.bbva.es/apple-touch-icon.png",
-        "http://www.bbva.es/logo.svg",
-        "http://www.bbva.es/logo.png",
-        "http://www.bbva.es/logo.webp",
-        "http://www.bbva.es/logo.jpg",
-        "http://www.bbva.es/assets/logo.svg",
-        "http://www.bbva.es/assets/logo.png",
-        "http://www.bbva.es/assets/logo.webp",
-        "http://www.bbva.es/images/logo.svg",
-        "http://www.bbva.es/images/logo.png",
-        "http://www.bbva.es/images/logo.webp",
-        "http://www.bbva.es/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "kutxabank-s-a",
-      "name": "KUTXABANK S.A.",
-      "domain": "portal.kutxabank.es",
-      "status": "missing",
-      "reason": "website fetch failed: fetch failed",
-      "tried": [
-        "http://www.portal.kutxabank.es/favicon.svg",
-        "http://www.portal.kutxabank.es/favicon.ico",
-        "http://www.portal.kutxabank.es/favicon.png",
-        "http://www.portal.kutxabank.es/favicon.webp",
-        "http://www.portal.kutxabank.es/apple-touch-icon.png",
-        "http://www.portal.kutxabank.es/logo.svg",
-        "http://www.portal.kutxabank.es/logo.png",
-        "http://www.portal.kutxabank.es/logo.webp",
-        "http://www.portal.kutxabank.es/logo.jpg",
-        "http://www.portal.kutxabank.es/assets/logo.svg",
-        "http://www.portal.kutxabank.es/assets/logo.png",
-        "http://www.portal.kutxabank.es/assets/logo.webp",
-        "http://www.portal.kutxabank.es/images/logo.svg",
-        "http://www.portal.kutxabank.es/images/logo.png",
-        "http://www.portal.kutxabank.es/images/logo.webp",
-        "http://www.portal.kutxabank.es/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "v-bank-ag",
-      "name": "V-Bank AG",
-      "domain": "v-bank.com",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.v-bank.com/favicon.svg",
-        "http://www.v-bank.com/favicon.ico",
-        "http://www.v-bank.com/favicon.png",
-        "http://www.v-bank.com/favicon.webp",
-        "http://www.v-bank.com/apple-touch-icon.png",
-        "http://www.v-bank.com/logo.svg",
-        "http://www.v-bank.com/logo.png",
-        "http://www.v-bank.com/logo.webp",
-        "http://www.v-bank.com/logo.jpg",
-        "http://www.v-bank.com/assets/logo.svg",
-        "http://www.v-bank.com/assets/logo.png",
-        "http://www.v-bank.com/assets/logo.webp",
-        "http://www.v-bank.com/images/logo.svg",
-        "http://www.v-bank.com/images/logo.png",
-        "http://www.v-bank.com/images/logo.webp",
-        "http://www.v-bank.com/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "baden-wurttembergische-wertpapierborse-gmbh",
-      "name": "Baden-Württembergische Wertpapierbörse GmbH",
-      "domain": "bsdex.de",
-      "status": "missing",
-      "reason": "website fetch failed: fetch failed",
-      "tried": [
-        "http://www.bsdex.de/favicon.svg",
-        "http://www.bsdex.de/favicon.ico",
-        "http://www.bsdex.de/favicon.png",
-        "http://www.bsdex.de/favicon.webp",
-        "http://www.bsdex.de/apple-touch-icon.png",
-        "http://www.bsdex.de/logo.svg",
-        "http://www.bsdex.de/logo.png",
-        "http://www.bsdex.de/logo.webp",
-        "http://www.bsdex.de/logo.jpg",
-        "http://www.bsdex.de/assets/logo.svg",
-        "http://www.bsdex.de/assets/logo.png",
-        "http://www.bsdex.de/assets/logo.webp",
-        "http://www.bsdex.de/images/logo.svg",
-        "http://www.bsdex.de/images/logo.png",
-        "http://www.bsdex.de/images/logo.webp",
-        "http://www.bsdex.de/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "bpifrance-investissement",
-      "name": "Bpifrance Investissement",
-      "domain": "bpifrance.fr",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.bpifrance.fr/favicon.svg",
-        "http://www.bpifrance.fr/favicon.ico",
-        "http://www.bpifrance.fr/favicon.png",
-        "http://www.bpifrance.fr/favicon.webp",
-        "http://www.bpifrance.fr/apple-touch-icon.png",
-        "http://www.bpifrance.fr/logo.svg",
-        "http://www.bpifrance.fr/logo.png",
-        "http://www.bpifrance.fr/logo.webp",
-        "http://www.bpifrance.fr/logo.jpg",
-        "http://www.bpifrance.fr/assets/logo.svg",
-        "http://www.bpifrance.fr/assets/logo.png",
-        "http://www.bpifrance.fr/assets/logo.webp",
-        "http://www.bpifrance.fr/images/logo.svg",
-        "http://www.bpifrance.fr/images/logo.png",
-        "http://www.bpifrance.fr/images/logo.webp",
-        "http://www.bpifrance.fr/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "coinhouse-sas",
-      "name": "COINHOUSE SAS",
-      "domain": "coinhouse.com",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.coinhouse.com/favicon.svg",
-        "http://www.coinhouse.com/favicon.ico",
-        "http://www.coinhouse.com/favicon.png",
-        "http://www.coinhouse.com/favicon.webp",
-        "http://www.coinhouse.com/apple-touch-icon.png",
-        "http://www.coinhouse.com/logo.svg",
-        "http://www.coinhouse.com/logo.png",
-        "http://www.coinhouse.com/logo.webp",
-        "http://www.coinhouse.com/logo.jpg",
-        "http://www.coinhouse.com/assets/logo.svg",
-        "http://www.coinhouse.com/assets/logo.png",
-        "http://www.coinhouse.com/assets/logo.webp",
-        "http://www.coinhouse.com/images/logo.svg",
-        "http://www.coinhouse.com/images/logo.png",
-        "http://www.coinhouse.com/images/logo.webp",
-        "http://www.coinhouse.com/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "meria-sas",
-      "name": "MERIA SAS",
-      "domain": "meria.com",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.meria.com/favicon.svg",
-        "http://www.meria.com/favicon.ico",
-        "http://www.meria.com/favicon.png",
-        "http://www.meria.com/favicon.webp",
-        "http://www.meria.com/apple-touch-icon.png",
-        "http://www.meria.com/logo.svg",
-        "http://www.meria.com/logo.png",
-        "http://www.meria.com/logo.webp",
-        "http://www.meria.com/logo.jpg",
-        "http://www.meria.com/assets/logo.svg",
-        "http://www.meria.com/assets/logo.png",
-        "http://www.meria.com/assets/logo.webp",
-        "http://www.meria.com/images/logo.svg",
-        "http://www.meria.com/images/logo.png",
-        "http://www.meria.com/images/logo.webp",
-        "http://www.meria.com/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "bitflyer-europe-s-a",
-      "name": "bitFlyer EUROPE S.A.",
-      "domain": "bitflyer.com",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 403",
-      "tried": [
-        "http://www.bitflyer.com/favicon.svg",
-        "http://www.bitflyer.com/favicon.ico",
-        "http://www.bitflyer.com/favicon.png",
-        "http://www.bitflyer.com/favicon.webp",
-        "http://www.bitflyer.com/apple-touch-icon.png",
-        "http://www.bitflyer.com/logo.svg",
-        "http://www.bitflyer.com/logo.png",
-        "http://www.bitflyer.com/logo.webp",
-        "http://www.bitflyer.com/logo.jpg",
-        "http://www.bitflyer.com/assets/logo.svg",
-        "http://www.bitflyer.com/assets/logo.png",
-        "http://www.bitflyer.com/assets/logo.webp",
-        "http://www.bitflyer.com/images/logo.svg",
-        "http://www.bitflyer.com/images/logo.png",
-        "http://www.bitflyer.com/images/logo.webp",
-        "http://www.bitflyer.com/images/logo.jpg"
-      ]
-    },
-    {
-      "slug": "hauck-aufhauser-digital-custody-gmbh",
-      "name": "Hauck Aufhäuser Digital Custody GmbH",
-      "domain": "hal-privatbank.com",
-      "status": "missing",
-      "reason": "website fetch failed: HTTP 503",
-      "tried": [
-        "http://www.hal-privatbank.com/favicon.svg",
-        "http://www.hal-privatbank.com/favicon.ico",
-        "http://www.hal-privatbank.com/favicon.png",
-        "http://www.hal-privatbank.com/favicon.webp",
-        "http://www.hal-privatbank.com/apple-touch-icon.png",
-        "http://www.hal-privatbank.com/logo.svg",
-        "http://www.hal-privatbank.com/logo.png",
-        "http://www.hal-privatbank.com/logo.webp",
-        "http://www.hal-privatbank.com/logo.jpg",
-        "http://www.hal-privatbank.com/assets/logo.svg",
-        "http://www.hal-privatbank.com/assets/logo.png",
-        "http://www.hal-privatbank.com/assets/logo.webp",
-        "http://www.hal-privatbank.com/images/logo.svg",
-        "http://www.hal-privatbank.com/images/logo.png",
-        "http://www.hal-privatbank.com/images/logo.webp",
-        "http://www.hal-privatbank.com/images/logo.jpg"
-      ]
     },
     {
       "slug": "olmipay-limited",
       "name": "Olmipay Limited",
-      "domain": "olmipay.com",
       "status": "missing",
-      "reason": "website fetch failed: HTTP 404",
-      "tried": [
-        "http://www.olmipay.com/favicon.svg",
-        "http://www.olmipay.com/favicon.ico",
-        "http://www.olmipay.com/favicon.png",
-        "http://www.olmipay.com/favicon.webp",
-        "http://www.olmipay.com/apple-touch-icon.png",
-        "http://www.olmipay.com/logo.svg",
-        "http://www.olmipay.com/logo.png",
-        "http://www.olmipay.com/logo.webp",
-        "http://www.olmipay.com/logo.jpg",
-        "http://www.olmipay.com/assets/logo.svg",
-        "http://www.olmipay.com/assets/logo.png",
-        "http://www.olmipay.com/assets/logo.webp",
-        "http://www.olmipay.com/images/logo.svg",
-        "http://www.olmipay.com/images/logo.png",
-        "http://www.olmipay.com/images/logo.webp",
-        "http://www.olmipay.com/images/logo.jpg"
-      ]
+      "reason": "no valid official website"
     },
     {
-      "slug": "in-kapital-limited-liability-company-for-trade-and-services",
-      "name": "IN KAPITAL limited liability company for trade and services",
-      "domain": "inkapital.hr",
+      "slug": "eu-internet-ventures-b-v",
+      "name": "EU Internet Ventures B.V.",
       "status": "missing",
-      "reason": "no usable logo image discovered",
-      "tried": [
-        "https://www.inkapital.hr/wp-content/themes/Impreza/fonts/fa-brands-400.woff2?ver=9.1",
-        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_fawicon-150x150.png",
-        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_fawicon-300x300.png",
-        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_logotip.png",
-        "https://www.inkapital.hr/favicon.svg",
-        "https://www.inkapital.hr/favicon.ico",
-        "https://www.inkapital.hr/favicon.png",
-        "https://www.inkapital.hr/favicon.webp",
-        "https://www.inkapital.hr/apple-touch-icon.png",
-        "https://www.inkapital.hr/logo.svg",
-        "https://www.inkapital.hr/logo.png",
-        "https://www.inkapital.hr/logo.webp",
-        "https://www.inkapital.hr/logo.jpg",
-        "https://www.inkapital.hr/assets/logo.svg",
-        "https://www.inkapital.hr/assets/logo.png",
-        "https://www.inkapital.hr/assets/logo.webp",
-        "https://www.inkapital.hr/images/logo.svg",
-        "https://www.inkapital.hr/images/logo.png",
-        "https://www.inkapital.hr/images/logo.webp",
-        "https://www.inkapital.hr/images/logo.jpg"
-      ]
+      "reason": "no valid official website"
+    },
+    {
+      "slug": "amdax-b-v",
+      "name": "Amdax B.V.",
+      "domain": "amdax.com",
+      "status": "found",
+      "sourceUrl": "https://www.amdax.com/apple-touch-icon.png",
+      "method": "link-apple-touch-icon",
+      "asset": "../assets/casp-logos/amdax-com-6c05883f9c15.png"
     },
     {
       "slug": "bitpanda-gmbh",
@@ -566,6 +158,13 @@
       "asset": "../assets/casp-logos/digitalassist-bg-c1f02ebcff7f.png"
     },
     {
+      "slug": "ff-digital-eood",
+      "name": "FF Digital EOOD",
+      "domain": "ffdigital.eu",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
       "slug": "etoro-europe-ltd",
       "domain": "etoro.com",
       "status": "existing",
@@ -668,10 +267,35 @@
       "asset": "../assets/casp-logos/triabridge-com-3e0cf6b9b3b7.svg"
     },
     {
+      "slug": "noemon-tech-ltd",
+      "name": "NOEMON TECH LTD",
+      "domain": "noemon.tech",
+      "status": "missing",
+      "reason": "no usable logo image discovered",
+      "tried": [
+        "https://www.noemon.tech/favicon.svg",
+        "https://www.noemon.tech/favicon.ico",
+        "https://www.noemon.tech/favicon.png",
+        "https://www.noemon.tech/favicon.webp",
+        "https://www.noemon.tech/apple-touch-icon.png",
+        "https://www.noemon.tech/logo.svg",
+        "https://www.noemon.tech/logo.png",
+        "https://www.noemon.tech/logo.webp",
+        "https://www.noemon.tech/logo.jpg",
+        "https://www.noemon.tech/assets/logo.svg",
+        "https://www.noemon.tech/assets/logo.png",
+        "https://www.noemon.tech/assets/logo.webp",
+        "https://www.noemon.tech/images/logo.svg",
+        "https://www.noemon.tech/images/logo.png",
+        "https://www.noemon.tech/images/logo.webp",
+        "https://www.noemon.tech/images/logo.jpg"
+      ]
+    },
+    {
       "slug": "unlimit-crypto-ltd",
       "domain": "crypto.unlimit.com",
       "status": "existing",
-      "asset": "../assets/casp-logos/crypto-unlimit-com-fd0375a76c12.webp"
+      "asset": "../assets/casp-logos/crypto-unlimit-com-41cc7c7d078e.ico"
     },
     {
       "slug": "complycrypto-depository-eu-limited",
@@ -752,6 +376,56 @@
       "asset": "../assets/casp-logos/goldengate-cz-b2c262e342f0.svg"
     },
     {
+      "slug": "ip-wbtcb-solutions-s-r-o",
+      "name": "IP wBTCb solutions, s.r.o.",
+      "domain": "bit.plus",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bit.plus/favicon.svg",
+        "http://www.bit.plus/favicon.ico",
+        "http://www.bit.plus/favicon.png",
+        "http://www.bit.plus/favicon.webp",
+        "http://www.bit.plus/apple-touch-icon.png",
+        "http://www.bit.plus/logo.svg",
+        "http://www.bit.plus/logo.png",
+        "http://www.bit.plus/logo.webp",
+        "http://www.bit.plus/logo.jpg",
+        "http://www.bit.plus/assets/logo.svg",
+        "http://www.bit.plus/assets/logo.png",
+        "http://www.bit.plus/assets/logo.webp",
+        "http://www.bit.plus/images/logo.svg",
+        "http://www.bit.plus/images/logo.png",
+        "http://www.bit.plus/images/logo.webp",
+        "http://www.bit.plus/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "wbtcb-cz-s-r-o",
+      "name": "wBTCb.cz, s.r.o.",
+      "domain": "bit.plus",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bit.plus/favicon.svg",
+        "http://www.bit.plus/favicon.ico",
+        "http://www.bit.plus/favicon.png",
+        "http://www.bit.plus/favicon.webp",
+        "http://www.bit.plus/apple-touch-icon.png",
+        "http://www.bit.plus/logo.svg",
+        "http://www.bit.plus/logo.png",
+        "http://www.bit.plus/logo.webp",
+        "http://www.bit.plus/logo.jpg",
+        "http://www.bit.plus/assets/logo.svg",
+        "http://www.bit.plus/assets/logo.png",
+        "http://www.bit.plus/assets/logo.webp",
+        "http://www.bit.plus/images/logo.svg",
+        "http://www.bit.plus/images/logo.png",
+        "http://www.bit.plus/images/logo.webp",
+        "http://www.bit.plus/images/logo.jpg"
+      ]
+    },
+    {
       "slug": "simple-coin-s-r-o",
       "domain": "simplecoin.eu",
       "status": "existing",
@@ -762,6 +436,13 @@
       "domain": "altlift.cz",
       "status": "existing",
       "asset": "../assets/casp-logos/altlift-cz-800847ceddd1.png"
+    },
+    {
+      "slug": "partners-banka-a-s",
+      "name": "Partners Banka, a.s.",
+      "domain": "partnersbanka.cz",
+      "status": "missing",
+      "reason": "no usable logo discovered"
     },
     {
       "slug": "boerse-stuttgart-digital-custody-gmbh",
@@ -806,22 +487,35 @@
       "asset": "../assets/casp-logos/bitgo-de-835f71c03bbd.png"
     },
     {
-      "slug": "n26-bank-se",
-      "domain": "n26.com",
-      "status": "existing",
-      "asset": "../assets/casp-logos/n26-com-3bf3504c6c75.png"
-    },
-    {
       "slug": "baader-bank-aktiengesellschaft",
       "domain": "baaderbank.de",
       "status": "existing",
       "asset": "../assets/casp-logos/baaderbank-de-2abeeea3f6b9.svg"
     },
     {
-      "slug": "commerzbank-aktiengesellschaft",
-      "domain": "commerzbank.de",
-      "status": "existing",
-      "asset": "../assets/casp-logos/commerzbank-de-43b73752e74c.svg"
+      "slug": "baden-wurttembergische-wertpapierborse-gmbh",
+      "name": "Baden-Württembergische Wertpapierbörse GmbH",
+      "domain": "bsdex.de",
+      "status": "missing",
+      "reason": "website fetch failed: fetch failed",
+      "tried": [
+        "http://www.bsdex.de/favicon.svg",
+        "http://www.bsdex.de/favicon.ico",
+        "http://www.bsdex.de/favicon.png",
+        "http://www.bsdex.de/favicon.webp",
+        "http://www.bsdex.de/apple-touch-icon.png",
+        "http://www.bsdex.de/logo.svg",
+        "http://www.bsdex.de/logo.png",
+        "http://www.bsdex.de/logo.webp",
+        "http://www.bsdex.de/logo.jpg",
+        "http://www.bsdex.de/assets/logo.svg",
+        "http://www.bsdex.de/assets/logo.png",
+        "http://www.bsdex.de/assets/logo.webp",
+        "http://www.bsdex.de/images/logo.svg",
+        "http://www.bsdex.de/images/logo.png",
+        "http://www.bsdex.de/images/logo.webp",
+        "http://www.bsdex.de/images/logo.jpg"
+      ]
     },
     {
       "slug": "crypto-finance-deutschland-gmbh",
@@ -858,6 +552,31 @@
       "domain": "bullish.com",
       "status": "existing",
       "asset": "../assets/casp-logos/bullish-com-c88bcdbb7dbe.svg"
+    },
+    {
+      "slug": "v-bank-ag",
+      "name": "V-Bank AG",
+      "domain": "v-bank.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.v-bank.com/favicon.svg",
+        "http://www.v-bank.com/favicon.ico",
+        "http://www.v-bank.com/favicon.png",
+        "http://www.v-bank.com/favicon.webp",
+        "http://www.v-bank.com/apple-touch-icon.png",
+        "http://www.v-bank.com/logo.svg",
+        "http://www.v-bank.com/logo.png",
+        "http://www.v-bank.com/logo.webp",
+        "http://www.v-bank.com/logo.jpg",
+        "http://www.v-bank.com/assets/logo.svg",
+        "http://www.v-bank.com/assets/logo.png",
+        "http://www.v-bank.com/assets/logo.webp",
+        "http://www.v-bank.com/images/logo.svg",
+        "http://www.v-bank.com/images/logo.png",
+        "http://www.v-bank.com/images/logo.webp",
+        "http://www.v-bank.com/images/logo.jpg"
+      ]
     },
     {
       "slug": "bankhaus-scheich-wertpapierspezialist-ag",
@@ -912,6 +631,31 @@
       "domain": "deka.de",
       "status": "existing",
       "asset": "../assets/casp-logos/deka-de-029f2d2bd064.png"
+    },
+    {
+      "slug": "hauck-aufhauser-digital-custody-gmbh",
+      "name": "Hauck Aufhäuser Digital Custody GmbH",
+      "domain": "hal-privatbank.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 503",
+      "tried": [
+        "http://www.hal-privatbank.com/favicon.svg",
+        "http://www.hal-privatbank.com/favicon.ico",
+        "http://www.hal-privatbank.com/favicon.png",
+        "http://www.hal-privatbank.com/favicon.webp",
+        "http://www.hal-privatbank.com/apple-touch-icon.png",
+        "http://www.hal-privatbank.com/logo.svg",
+        "http://www.hal-privatbank.com/logo.png",
+        "http://www.hal-privatbank.com/logo.webp",
+        "http://www.hal-privatbank.com/logo.jpg",
+        "http://www.hal-privatbank.com/assets/logo.svg",
+        "http://www.hal-privatbank.com/assets/logo.png",
+        "http://www.hal-privatbank.com/assets/logo.webp",
+        "http://www.hal-privatbank.com/images/logo.svg",
+        "http://www.hal-privatbank.com/images/logo.png",
+        "http://www.hal-privatbank.com/images/logo.webp",
+        "http://www.hal-privatbank.com/images/logo.jpg"
+      ]
     },
     {
       "slug": "fels-wealth-gmbh",
@@ -990,6 +734,56 @@
       "domain": "dzbank.de",
       "status": "existing",
       "asset": "../assets/casp-logos/dzbank-de-2c593d078ba1.png"
+    },
+    {
+      "slug": "tradevest-digital-assets-gmbh",
+      "name": "Tradevest Digital Assets GmbH",
+      "domain": "tradevest.ai",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.tradevest.ai/assets/logo.svg",
+        "http://www.tradevest.ai/assets/logo.png",
+        "http://www.tradevest.ai/assets/logo.webp",
+        "http://www.tradevest.ai/favicon.svg",
+        "http://www.tradevest.ai/favicon.ico",
+        "http://www.tradevest.ai/favicon.png",
+        "http://www.tradevest.ai/favicon.webp",
+        "http://www.tradevest.ai/apple-touch-icon.png",
+        "http://www.tradevest.ai/logo.svg",
+        "http://www.tradevest.ai/logo.png",
+        "http://www.tradevest.ai/logo.webp",
+        "http://www.tradevest.ai/logo.jpg",
+        "http://www.tradevest.ai/images/logo.svg",
+        "http://www.tradevest.ai/images/logo.png",
+        "http://www.tradevest.ai/images/logo.webp",
+        "http://www.tradevest.ai/images/logo.jpg"
+      ]
+    },
+    {
+      "slug": "tradevest-markets-ag",
+      "name": "Tradevest Markets AG",
+      "domain": "tradevest.ai",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.tradevest.ai/assets/logo.svg",
+        "http://www.tradevest.ai/assets/logo.png",
+        "http://www.tradevest.ai/assets/logo.webp",
+        "http://www.tradevest.ai/favicon.svg",
+        "http://www.tradevest.ai/favicon.ico",
+        "http://www.tradevest.ai/favicon.png",
+        "http://www.tradevest.ai/favicon.webp",
+        "http://www.tradevest.ai/apple-touch-icon.png",
+        "http://www.tradevest.ai/logo.svg",
+        "http://www.tradevest.ai/logo.png",
+        "http://www.tradevest.ai/logo.webp",
+        "http://www.tradevest.ai/logo.jpg",
+        "http://www.tradevest.ai/images/logo.svg",
+        "http://www.tradevest.ai/images/logo.png",
+        "http://www.tradevest.ai/images/logo.webp",
+        "http://www.tradevest.ai/images/logo.jpg"
+      ]
     },
     {
       "slug": "isf-institut-deutsch-schweizer-finanzdienstleistungen-gmbh",
@@ -1106,6 +900,31 @@
       "asset": "../assets/casp-logos/rbfalkenstein-woerth-de-8c0d9bb0835f.avif"
     },
     {
+      "slug": "volksbank-raiffeisenbank-oberbayern-sudost-eg",
+      "name": "Volksbank Raiffeisenbank Oberbayern Südost eG",
+      "domain": "www-vrbank-obb-so.de",
+      "status": "missing",
+      "reason": "website fetch failed: fetch failed",
+      "tried": [
+        "https://www-vrbank-obb-so.de/favicon.svg",
+        "https://www-vrbank-obb-so.de/favicon.ico",
+        "https://www-vrbank-obb-so.de/favicon.png",
+        "https://www-vrbank-obb-so.de/favicon.webp",
+        "https://www-vrbank-obb-so.de/apple-touch-icon.png",
+        "https://www-vrbank-obb-so.de/logo.svg",
+        "https://www-vrbank-obb-so.de/logo.png",
+        "https://www-vrbank-obb-so.de/logo.webp",
+        "https://www-vrbank-obb-so.de/logo.jpg",
+        "https://www-vrbank-obb-so.de/assets/logo.svg",
+        "https://www-vrbank-obb-so.de/assets/logo.png",
+        "https://www-vrbank-obb-so.de/assets/logo.webp",
+        "https://www-vrbank-obb-so.de/images/logo.svg",
+        "https://www-vrbank-obb-so.de/images/logo.png",
+        "https://www-vrbank-obb-so.de/images/logo.webp",
+        "https://www-vrbank-obb-so.de/images/logo.jpg"
+      ]
+    },
+    {
       "slug": "vr-bank-schleswig-holstein-mitte-eg",
       "domain": "vrbank-sh-mitte.de",
       "status": "existing",
@@ -1116,6 +935,209 @@
       "domain": "vrbanklm.de",
       "status": "existing",
       "asset": "../assets/casp-logos/vrbanklm-de-e7ec9d3d6658.avif"
+    },
+    {
+      "slug": "volksbank-eg-die-gestalterbank",
+      "name": "Volksbank eG - Die Gestalterbank",
+      "domain": "gestalterbank.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vbu-volksbank-im-unterland-eg",
+      "name": "VBU Volksbank im Unterland eG",
+      "domain": "vbu-volksbank.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vr-bank-erding-eg",
+      "name": "VR-Bank Erding eG",
+      "domain": "vr-bank-erding.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-beilstein-ilsfeld-abstatt-eg",
+      "name": "Volksbank Beilstein-Ilsfeld-Abstatt eG",
+      "domain": "vb-bia.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "raiffeisenbank-aidlingen-eg",
+      "name": "Raiffeisenbank Aidlingen eG",
+      "domain": "ihrziel.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "ihre-volksbank-eg-neckar-odenwald-main-tauber",
+      "name": "Ihre Volksbank eG Neckar Odenwald Main Tauber",
+      "domain": "ihre-vb.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vr-bank-mittelfranken-mitte-eg",
+      "name": "VR-Bank Mittelfranken Mitte eG",
+      "domain": "vr-mfr.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-euskirchen-eg",
+      "name": "Volksbank Euskirchen eG",
+      "domain": "eu-banking.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vr-bank-ried-uberwald-eg",
+      "name": "VR Bank Ried-Überwald eG",
+      "domain": "raiba-ried.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-backnang-eg",
+      "name": "Volksbank Backnang eG",
+      "domain": "volksbank-backnang.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "raiffeisenbank-schwaben-mitte-eg",
+      "name": "Raiffeisenbank Schwaben Mitte eG",
+      "domain": "rb-schwaben.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vr-bank-ihre-heimatbank-eg",
+      "name": "VR Bank Ihre Heimatbank eG",
+      "domain": "vr-heimatbank.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "frankfurter-volksbank-rhein-main-eg",
+      "name": "Frankfurter Volksbank Rhein/Main eG",
+      "domain": "frankfurter-volksbank.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "raiffeisenbank-isar-loisachtal-eg",
+      "name": "Raiffeisenbank Isar-Loisachtal eG",
+      "domain": "rileg.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-alb-eg",
+      "name": "Volksbank Alb eG",
+      "domain": "voba-alb.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-raiffeisenbank-dachau-eg",
+      "name": "Volksbank Raiffeisenbank Dachau eG",
+      "domain": "voba-raiba-dachau.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-sauerland-eg",
+      "name": "Volksbank Sauerland eG",
+      "domain": "vb-sauerland.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-zollernalb-eg",
+      "name": "Volksbank Zollernalb eG",
+      "domain": "volksbank-zollernalb.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vr-bank-munchen-land-eg",
+      "name": "VR Bank München Land eG",
+      "domain": "vr-bank-muenchen-land.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-baumberge-eg",
+      "name": "Volksbank Baumberge eG",
+      "domain": "volksbank-baumberge.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-olpe-wenden-drolshagen-eg",
+      "name": "Volksbank Olpe-Wenden-Drolshagen eG",
+      "domain": "voba-owd.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "deutsche-bank-aktiengesellschaft",
+      "name": "Deutsche Bank Aktiengesellschaft",
+      "domain": "deutsche-bank.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "raiffeisenbank-goldener-steig-dreisessel-eg",
+      "name": "Raiffeisenbank Goldener Steig-Dreisessel eG",
+      "domain": "rb-gsd.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vereinigte-vr-bank-eg",
+      "name": "Vereinigte VR Bank eG",
+      "domain": "vereinigte-vrbk.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "vereinigte-volksbank-raiffeisenbank-eg-reinheim",
+      "name": "Vereinigte Volksbank Raiffeisenbank eG, Reinheim",
+      "domain": "vvrb.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "volksbank-goppingen-eg",
+      "name": "Volksbank Göppingen eG",
+      "domain": "volksbank-goeppingen.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "wiesbadener-volksbank-eg",
+      "name": "Wiesbadener Volksbank eG",
+      "domain": "wvb.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "raiffeisenbank-im-oberland-eg",
+      "name": "Raiffeisenbank im Oberland eG",
+      "domain": "oberlandbank.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "munchner-bank-eg",
+      "name": "Münchner Bank eG",
+      "domain": "muenchner-bank.de",
+      "status": "missing",
+      "reason": "no usable logo discovered"
     },
     {
       "slug": "penning-financial-services-aps",
@@ -1178,6 +1200,31 @@
       "asset": "../assets/casp-logos/eu-lightspark-com-c2631c30ce92.ico"
     },
     {
+      "slug": "banco-bilbao-vizcaya-argentaria-s-a",
+      "name": "Banco Bilbao Vizcaya Argentaria S.A.",
+      "domain": "bbva.es",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bbva.es/favicon.svg",
+        "http://www.bbva.es/favicon.ico",
+        "http://www.bbva.es/favicon.png",
+        "http://www.bbva.es/favicon.webp",
+        "http://www.bbva.es/apple-touch-icon.png",
+        "http://www.bbva.es/logo.svg",
+        "http://www.bbva.es/logo.png",
+        "http://www.bbva.es/logo.webp",
+        "http://www.bbva.es/logo.jpg",
+        "http://www.bbva.es/assets/logo.svg",
+        "http://www.bbva.es/assets/logo.png",
+        "http://www.bbva.es/assets/logo.webp",
+        "http://www.bbva.es/images/logo.svg",
+        "http://www.bbva.es/images/logo.png",
+        "http://www.bbva.es/images/logo.webp",
+        "http://www.bbva.es/images/logo.jpg"
+      ]
+    },
+    {
       "slug": "open-bank-s-a",
       "domain": "openbank.es",
       "status": "existing",
@@ -1200,6 +1247,31 @@
       "domain": "r4.com",
       "status": "existing",
       "asset": "../assets/casp-logos/r4-com-0b1a99491b52.png"
+    },
+    {
+      "slug": "kutxabank-s-a",
+      "name": "KUTXABANK S.A.",
+      "domain": "portal.kutxabank.es",
+      "status": "missing",
+      "reason": "website fetch failed: fetch failed",
+      "tried": [
+        "http://www.portal.kutxabank.es/favicon.svg",
+        "http://www.portal.kutxabank.es/favicon.ico",
+        "http://www.portal.kutxabank.es/favicon.png",
+        "http://www.portal.kutxabank.es/favicon.webp",
+        "http://www.portal.kutxabank.es/apple-touch-icon.png",
+        "http://www.portal.kutxabank.es/logo.svg",
+        "http://www.portal.kutxabank.es/logo.png",
+        "http://www.portal.kutxabank.es/logo.webp",
+        "http://www.portal.kutxabank.es/logo.jpg",
+        "http://www.portal.kutxabank.es/assets/logo.svg",
+        "http://www.portal.kutxabank.es/assets/logo.png",
+        "http://www.portal.kutxabank.es/assets/logo.webp",
+        "http://www.portal.kutxabank.es/images/logo.svg",
+        "http://www.portal.kutxabank.es/images/logo.png",
+        "http://www.portal.kutxabank.es/images/logo.webp",
+        "http://www.portal.kutxabank.es/images/logo.jpg"
+      ]
     },
     {
       "slug": "caixabank-s-a",
@@ -1232,7 +1304,7 @@
       "asset": "../assets/casp-logos/minos-global-25a3b036c12a.ico"
     },
     {
-      "slug": "prosegur-custodia-de-activos-digitales",
+      "slug": "prosegur-custodia-de-activos-digitales-s-l-u",
       "domain": "prosegurcrypto.com",
       "status": "existing",
       "asset": "../assets/casp-logos/prosegurcrypto-com-6e5a8c3fb891.png"
@@ -1283,31 +1355,7 @@
       "slug": "kvarn-capital-oy",
       "domain": "kvarnx.com",
       "status": "existing",
-      "asset": "../assets/casp-logos/kvarnx-com-2d6c6bf4d9c4.svg"
-    },
-    {
-      "slug": "caceis-bank",
-      "domain": "caceis.com",
-      "status": "existing",
-      "asset": "../assets/casp-logos/caceis-com-24169b15b980.png"
-    },
-    {
-      "slug": "coinshares-asset-management",
-      "domain": "coinshares.com",
-      "status": "existing",
-      "asset": "../assets/casp-logos/coinshares-com-40b956d92bf2.svg"
-    },
-    {
-      "slug": "bitstack-digital-assets-sas",
-      "domain": "bitstack-app.com",
-      "status": "existing",
-      "asset": "../assets/casp-logos/bitstack-app-com-1a13302f3f59.svg"
-    },
-    {
-      "slug": "metal-gear-sas",
-      "domain": "metalgear.xyz",
-      "status": "existing",
-      "asset": "../assets/casp-logos/metalgear-xyz-b8ad591e783e.png"
+      "asset": "../assets/casp-logos/kvarnx-com-41631f66fc83.webp"
     },
     {
       "slug": "deblock-sas",
@@ -1322,10 +1370,55 @@
       "asset": "../assets/casp-logos/goin-invest-com-1bd42255bcd2.png"
     },
     {
+      "slug": "caceis-bank",
+      "domain": "caceis.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/caceis-com-24169b15b980.png"
+    },
+    {
+      "slug": "bitstack-digital-assets-sas",
+      "domain": "bitstack-app.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/bitstack-app-com-1a13302f3f59.svg"
+    },
+    {
+      "slug": "metal-gear-sas",
+      "domain": "metalgear.xyz",
+      "status": "existing",
+      "asset": "../assets/casp-logos/metalgear-xyz-b8ad591e783e.png"
+    },
+    {
+      "slug": "coinshares-asset-management",
+      "domain": "coinshares.com",
+      "status": "existing",
+      "asset": "../assets/casp-logos/coinshares-com-40b956d92bf2.svg"
+    },
+    {
       "slug": "finctek-ue-sas",
       "domain": "finctek.com",
       "status": "existing",
       "asset": "../assets/casp-logos/finctek-com-9b09ac292d10.png"
+    },
+    {
+      "slug": "relai-eu-sasu",
+      "name": "RELAI EU SASU",
+      "status": "missing",
+      "reason": "no valid official website",
+      "domain": "relai.app"
+    },
+    {
+      "slug": "societe-generale-forge",
+      "name": "SOCIETE GENERALE - FORGE",
+      "status": "missing",
+      "reason": "no valid official website",
+      "domain": "sgforge.com"
+    },
+    {
+      "slug": "banque-delubac-et-cie",
+      "name": "BANQUE DELUBAC ET CIE",
+      "status": "missing",
+      "reason": "no valid official website",
+      "domain": "delubac.com"
     },
     {
       "slug": "cometh-sas",
@@ -1364,6 +1457,31 @@
       "asset": "../assets/casp-logos/deskoin-com-af9d20f2e1a1.png"
     },
     {
+      "slug": "coinhouse-sas",
+      "name": "COINHOUSE SAS",
+      "domain": "coinhouse.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.coinhouse.com/favicon.svg",
+        "http://www.coinhouse.com/favicon.ico",
+        "http://www.coinhouse.com/favicon.png",
+        "http://www.coinhouse.com/favicon.webp",
+        "http://www.coinhouse.com/apple-touch-icon.png",
+        "http://www.coinhouse.com/logo.svg",
+        "http://www.coinhouse.com/logo.png",
+        "http://www.coinhouse.com/logo.webp",
+        "http://www.coinhouse.com/logo.jpg",
+        "http://www.coinhouse.com/assets/logo.svg",
+        "http://www.coinhouse.com/assets/logo.png",
+        "http://www.coinhouse.com/assets/logo.webp",
+        "http://www.coinhouse.com/images/logo.svg",
+        "http://www.coinhouse.com/images/logo.png",
+        "http://www.coinhouse.com/images/logo.webp",
+        "http://www.coinhouse.com/images/logo.jpg"
+      ]
+    },
+    {
       "slug": "qwarks-sas",
       "domain": "qwarks.fr",
       "status": "existing",
@@ -1388,6 +1506,31 @@
       "asset": "../assets/casp-logos/keyrock-com-f7e20a86be44.png"
     },
     {
+      "slug": "bpifrance-investissement",
+      "name": "Bpifrance Investissement",
+      "domain": "bpifrance.fr",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bpifrance.fr/favicon.svg",
+        "http://www.bpifrance.fr/favicon.ico",
+        "http://www.bpifrance.fr/favicon.png",
+        "http://www.bpifrance.fr/favicon.webp",
+        "http://www.bpifrance.fr/apple-touch-icon.png",
+        "http://www.bpifrance.fr/logo.svg",
+        "http://www.bpifrance.fr/logo.png",
+        "http://www.bpifrance.fr/logo.webp",
+        "http://www.bpifrance.fr/logo.jpg",
+        "http://www.bpifrance.fr/assets/logo.svg",
+        "http://www.bpifrance.fr/assets/logo.png",
+        "http://www.bpifrance.fr/assets/logo.webp",
+        "http://www.bpifrance.fr/images/logo.svg",
+        "http://www.bpifrance.fr/images/logo.png",
+        "http://www.bpifrance.fr/images/logo.webp",
+        "http://www.bpifrance.fr/images/logo.jpg"
+      ]
+    },
+    {
       "slug": "rcube-asset-management",
       "domain": "rcube.com",
       "status": "existing",
@@ -1406,6 +1549,31 @@
       "asset": "../assets/casp-logos/app-bullbitcoin-com-cebf8fba3908.png"
     },
     {
+      "slug": "meria-sas",
+      "name": "MERIA SAS",
+      "domain": "meria.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.meria.com/favicon.svg",
+        "http://www.meria.com/favicon.ico",
+        "http://www.meria.com/favicon.png",
+        "http://www.meria.com/favicon.webp",
+        "http://www.meria.com/apple-touch-icon.png",
+        "http://www.meria.com/logo.svg",
+        "http://www.meria.com/logo.png",
+        "http://www.meria.com/logo.webp",
+        "http://www.meria.com/logo.jpg",
+        "http://www.meria.com/assets/logo.svg",
+        "http://www.meria.com/assets/logo.png",
+        "http://www.meria.com/assets/logo.webp",
+        "http://www.meria.com/images/logo.svg",
+        "http://www.meria.com/images/logo.png",
+        "http://www.meria.com/images/logo.webp",
+        "http://www.meria.com/images/logo.jpg"
+      ]
+    },
+    {
       "slug": "alphacap-digital-assets-sas",
       "domain": "alphacap.fr",
       "status": "existing",
@@ -1416,6 +1584,13 @@
       "domain": "flowdesk.co",
       "status": "existing",
       "asset": "../assets/casp-logos/flowdesk-co-de32ad4611b5.svg"
+    },
+    {
+      "slug": "aplo-sas",
+      "name": "APLO SAS",
+      "domain": "aplo.io",
+      "status": "missing",
+      "reason": "no usable logo discovered"
     },
     {
       "slug": "iceblock-sas",
@@ -1454,6 +1629,41 @@
       "asset": "../assets/casp-logos/shares-io-d49688403804.svg"
     },
     {
+      "slug": "regular-finance-sas",
+      "name": "REGULAR FINANCE SAS",
+      "domain": "regular.eu",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "bcash-societe-anonyme",
+      "name": "BCASH SOCIETE ANONYME",
+      "domain": "bcash.eu",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "xenios-blockchain-group-s-a",
+      "name": "XENIOS BLOCKCHAIN GROUP S.A.",
+      "domain": "xeniosblockchaingroup.com",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "capital-wallet-greece-s-a",
+      "name": "CAPITAL WALLET GREECE S.A.",
+      "domain": "capitalwallet.com",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "piraeus-bank-societe-anonyme-s-a",
+      "name": "PIRAEUS BANK Société Anonyme (S.A.)",
+      "domain": "piraeusbank.gr",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
       "slug": "electrocoin-ltd-for-services",
       "domain": "electrocoin.eu",
       "status": "existing",
@@ -1476,6 +1686,35 @@
       "domain": "kriptomat.hr",
       "status": "existing",
       "asset": "../assets/casp-logos/kriptomat-hr-17d4454a1773.png"
+    },
+    {
+      "slug": "in-kapital-limited-liability-company-for-trade-and-services",
+      "name": "IN KAPITAL limited liability company for trade and services",
+      "domain": "inkapital.hr",
+      "status": "missing",
+      "reason": "no usable logo image discovered",
+      "tried": [
+        "https://www.inkapital.hr/wp-content/themes/Impreza/fonts/fa-brands-400.woff2?ver=9.1",
+        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_fawicon-150x150.png",
+        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_fawicon-300x300.png",
+        "https://www.inkapital.hr/wp-content/uploads/2026/07/inkapital_logotip.png",
+        "https://www.inkapital.hr/favicon.svg",
+        "https://www.inkapital.hr/favicon.ico",
+        "https://www.inkapital.hr/favicon.png",
+        "https://www.inkapital.hr/favicon.webp",
+        "https://www.inkapital.hr/apple-touch-icon.png",
+        "https://www.inkapital.hr/logo.svg",
+        "https://www.inkapital.hr/logo.png",
+        "https://www.inkapital.hr/logo.webp",
+        "https://www.inkapital.hr/logo.jpg",
+        "https://www.inkapital.hr/assets/logo.svg",
+        "https://www.inkapital.hr/assets/logo.png",
+        "https://www.inkapital.hr/assets/logo.webp",
+        "https://www.inkapital.hr/images/logo.svg",
+        "https://www.inkapital.hr/images/logo.png",
+        "https://www.inkapital.hr/images/logo.webp",
+        "https://www.inkapital.hr/images/logo.jpg"
+      ]
     },
     {
       "slug": "hrvatska-postanska-banka-d-d",
@@ -1512,12 +1751,6 @@
       "domain": "rampnetwork.com",
       "status": "existing",
       "asset": "../assets/casp-logos/rampnetwork-com-cdad9ffd5e87.png"
-    },
-    {
-      "slug": "paysafe-payment-solutions-limited",
-      "domain": "skrill.com",
-      "status": "existing",
-      "asset": "../assets/casp-logos/skrill-com-6e07f79fa426.jpg"
     },
     {
       "slug": "coinjar-europe-limited",
@@ -1631,7 +1864,7 @@
       "slug": "bank-frick-ag",
       "domain": "bankfrick.li",
       "status": "existing",
-      "asset": "../assets/casp-logos/bankfrick-li-aa89a0880e86.png"
+      "asset": "../assets/casp-logos/bankfrick-li-38939bdb76d0.svg"
     },
     {
       "slug": "wyden-capital-ag",
@@ -1682,7 +1915,7 @@
       "asset": "../assets/casp-logos/kaiserpartner-bank-118af1da6433.ico"
     },
     {
-      "slug": "damoon-technology-europe-ag",
+      "slug": "paymonade-ag",
       "domain": "paymonade.tech",
       "status": "existing",
       "asset": "../assets/casp-logos/paymonade-tech-2087d78af576.ico"
@@ -1737,7 +1970,7 @@
     },
     {
       "slug": "coinbase-luxembourg-s-a",
-      "domain": "coinbase.com",
+      "domain": "https.",
       "status": "existing",
       "asset": "../assets/casp-logos/coinbase-com-6deea128d9c1.ico"
     },
@@ -1776,6 +2009,31 @@
       "domain": "sc.com",
       "status": "existing",
       "asset": "../assets/casp-logos/sc-com-a111fb8bfd88.ico"
+    },
+    {
+      "slug": "bitflyer-europe-s-a",
+      "name": "bitFlyer EUROPE S.A.",
+      "domain": "bitflyer.com",
+      "status": "missing",
+      "reason": "website fetch failed: HTTP 403",
+      "tried": [
+        "http://www.bitflyer.com/favicon.svg",
+        "http://www.bitflyer.com/favicon.ico",
+        "http://www.bitflyer.com/favicon.png",
+        "http://www.bitflyer.com/favicon.webp",
+        "http://www.bitflyer.com/apple-touch-icon.png",
+        "http://www.bitflyer.com/logo.svg",
+        "http://www.bitflyer.com/logo.png",
+        "http://www.bitflyer.com/logo.webp",
+        "http://www.bitflyer.com/logo.jpg",
+        "http://www.bitflyer.com/assets/logo.svg",
+        "http://www.bitflyer.com/assets/logo.png",
+        "http://www.bitflyer.com/assets/logo.webp",
+        "http://www.bitflyer.com/images/logo.svg",
+        "http://www.bitflyer.com/images/logo.png",
+        "http://www.bitflyer.com/images/logo.webp",
+        "http://www.bitflyer.com/images/logo.jpg"
+      ]
     },
     {
       "slug": "bridge-building-s-a",
@@ -1898,7 +2156,7 @@
       "asset": "../assets/casp-logos/gate-com-7e1cf0b67233.webp"
     },
     {
-      "slug": "blue-cube-malta-limited",
+      "slug": "blockchain-com-operations-malta-limited",
       "domain": "blockchain.com",
       "status": "existing",
       "asset": "../assets/casp-logos/blockchain-com-8931ef2d2c2c.ico"
@@ -1997,8 +2255,8 @@
       "slug": "hidden-road-partners-civ-nl-b-v",
       "name": "Hidden Road Partners CIV NL B.V.",
       "domain": "hiddenroad.com",
-      "status": "review",
-      "reason": "shared website already has a curated logo entry; confirm whether this legal entity uses the same brand"
+      "status": "missing",
+      "reason": "no usable logo discovered"
     },
     {
       "slug": "avianlabs-netherlands-b-v",
@@ -2037,12 +2295,6 @@
       "asset": "../assets/casp-logos/bitvavo-com-932085199f1a.png"
     },
     {
-      "slug": "amdax-b-v",
-      "domain": "amdax.com",
-      "status": "existing",
-      "asset": "../assets/casp-logos/amdax-com-3dfa3c844807.svg"
-    },
-    {
       "slug": "finst-b-v",
       "domain": "finst.com",
       "status": "existing",
@@ -2065,12 +2317,6 @@
       "domain": "weareblox.com",
       "status": "existing",
       "asset": "../assets/casp-logos/weareblox-com-d0d1d6760083.png"
-    },
-    {
-      "slug": "eu-internet-ventures-b-v",
-      "domain": "banxa.com",
-      "status": "existing",
-      "asset": "../assets/casp-logos/banxa-com-c5fac934c9a4.webp"
     },
     {
       "slug": "zerohash-europe-b-v",
@@ -2199,7 +2445,7 @@
       "asset": "../assets/casp-logos/ilirika-si-fc2061f90c28.png"
     },
     {
-      "slug": "incrementum-druzba-za-izvajanje-storitev-v-zvezi-s-kriptosredstvi-d-o-o",
+      "slug": "incrementum-poslovne-storitve-d-o-o",
       "domain": "incrementum.si",
       "status": "existing",
       "asset": "../assets/casp-logos/incrementum-si-28a2b51c7735.jpg"
@@ -2209,6 +2455,20 @@
       "domain": "orcabay.io",
       "status": "existing",
       "asset": "../assets/casp-logos/orcabay-io-abb0b38a3b70.png"
+    },
+    {
+      "slug": "gatehub-exchange-druzba-za-izvajanje-storitev-v-zvezi-s-kriptosredstvi-d-o-o",
+      "name": "GateHub Exchange družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o.",
+      "domain": "gatehub.net",
+      "status": "missing",
+      "reason": "no usable logo discovered"
+    },
+    {
+      "slug": "iconomi-europe-borznoposredniska-druzba-d-o-o",
+      "name": "ICONOMI EUROPE, borznoposredniška družba, d.o.o.",
+      "domain": "iconomi.com",
+      "status": "missing",
+      "reason": "no usable logo discovered"
     },
     {
       "slug": "safello-ab",

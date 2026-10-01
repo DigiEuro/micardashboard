@@ -22,6 +22,10 @@ const ROOT = path.join(__dirname, '..');
 const PORT = Number(process.env.SMOKE_PORT || 8123);
 const entityData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'entities.json'), 'utf8'));
 const entities = entityData.entities || [];
+const logos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'casp-logos.json'), 'utf8'));
+const darkLogoSlugs = Object.keys(logos).filter(function (slug) {
+  return logos[slug] && logos[slug].theme === 'dark';
+});
 const anomalyData = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'anomalies.json'), 'utf8'));
 const anomalies = anomalyData.anomalies || [];
 const multiAuthorisation = anomalies.find(function (item) { return item.type === 'multi_authorisation'; });
@@ -319,16 +323,24 @@ const CHECKS = [
       }
     }
   },
-  {
-    page: 'entities/bitpanda-gmbh.html',
-    assert: async function (page, expect) {
-      const logo = page.locator('.entity-logo-image');
-      await expect(await logo.count() === 1, 'Bitpanda logo renders');
-      await expect(await logo.evaluate(function (image) {
-        return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
-      }), 'Bitpanda logo asset loads');
-    }
-  },
+  ...darkLogoSlugs.map(function (slug) {
+    return {
+      page: 'entities/' + slug + '.html',
+      assert: async function (page, expect) {
+        const frame = page.locator('.entity-logo-frame-dark');
+        await expect(await frame.count() === 1, slug + ' uses a dark logo frame');
+        await expect(await frame.evaluate(function (element) {
+          const background = getComputedStyle(element).backgroundColor;
+          return background !== 'rgba(0, 0, 0, 0)' && background !== 'rgb(255, 255, 255)';
+        }), slug + ' dark logo frame paints a contrasting background');
+        const logo = page.locator('.entity-logo-image');
+        await expect(await logo.count() === 1, slug + ' logo renders');
+        await expect(await logo.evaluate(function (image) {
+          return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
+        }), slug + ' logo asset loads');
+      }
+    };
+  }),
   {
     page: 'entities/volksbank-raiffeisenbank-wurzburg-eg.html',
     assert: async function (page, expect) {

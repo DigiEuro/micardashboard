@@ -61,8 +61,11 @@ npm run build:entities
 
 For a focused QA retry, use `node scripts/harvest-casp-logos.js
 --retry-missing` (only unresolved domains) or `--retry-low-confidence` (only
-previously flagged/low-confidence sources). Both modes keep the regulatory
-data pipeline independent of provider-site availability.
+previously flagged/low-confidence sources). Use `--slug=entity-slug` to refresh
+one reviewed entity without replacing other logos from the same domain. Run
+`npm run logos:themes` after adding local SVGs to detect white-on-transparent
+marks that require the dark logo frame. These modes keep the regulatory data
+pipeline independent of provider-site availability.
 
 The harvester records each image's source URL, discovery method, and retrieval
 date in the manifest, writes a review report to `data/casp-logo-report.json`,
