@@ -4,7 +4,15 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Tue, 29 Sep 2026 10:32:28 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 09:52:59 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-10-02</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-10-02T09:52:59.688Z</guid>
+      <pubDate>Fri, 02 Oct 2026 09:52:59 GMT</pubDate>
+      <description>EMT issuers added: Aplauz NL B.V.
+CASPs added: VR Bank zwischen den Meeren eG (Germany), VS Digital Europe Ltd. (Malta)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-09-29</title>
       <link>https://micatracker.digital-euro-association.de/</link>

@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-10-02",
+    "timestamp": "2026-10-02T09:52:59.688Z",
+    "changes": {
+      "emt": {
+        "added": [
+          "Aplauz NL B.V."
+        ],
+        "removed": []
+      },
+      "casps": {
+        "added": [
+          "VR Bank zwischen den Meeren eG (Germany)",
+          "VS Digital Europe Ltd. (Malta)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-09-29",
     "timestamp": "2026-09-29T10:32:28.989Z",
     "changes": {
