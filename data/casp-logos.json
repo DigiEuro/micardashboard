@@ -208,7 +208,8 @@
     "sourceUrl": "https://teroxx.com/hubfs/Logo.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "pelican-exchange-europe-cy-ltd": {
     "src": "../assets/casp-logos/pelicaneu-com-bd8eb99525b5.png",
@@ -256,13 +257,13 @@
     "confidence": "high"
   },
   "unlimit-crypto-ltd": {
-    "src": "../assets/casp-logos/crypto-unlimit-com-fd0375a76c12.webp",
-    "alt": "Unlimit Crypto Ltd logo from crypto.unlimit.com",
+    "src": "../assets/casp-logos/crypto-unlimit-com-41cc7c7d078e.ico",
+    "alt": "Stable.com logo used by Unlimit Crypto Ltd",
     "source": "https://www.crypto.unlimit.com",
-    "sourceUrl": "https://www.crypto.unlimit.com/wp-content/themes/unl-crypto/assets/images/widget/widget.webp",
-    "method": "img-logo",
-    "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "sourceUrl": "https://stable.com/images/favicon.ico",
+    "method": "link-icon",
+    "retrievedAt": "2026-10-01",
+    "confidence": "medium"
   },
   "brilliantscope-trading-limited": {
     "src": "../assets/casp-logos/tothemoon-com-8b9e454f335c.png",
@@ -559,7 +560,8 @@
     "sourceUrl": "https://cdn.prod.website-files.com/67e428d18ac85216b5a9d0e4/67f949a57fa08489a0c7843a_Bullish-Logo.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "dietrich-richter-private-asset-management-ag": {
     "src": "../assets/casp-logos/drpam-de-bb4e87ad6011.png",
@@ -1101,9 +1103,9 @@
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
-  "prosegur-custodia-de-activos-digitales": {
+  "prosegur-custodia-de-activos-digitales-s-l-u": {
     "src": "../assets/casp-logos/prosegurcrypto-com-6e5a8c3fb891.png",
-    "alt": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES logo from prosegurcrypto.com",
+    "alt": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES S.L.U. logo from prosegurcrypto.com",
     "source": "https://www.prosegurcrypto.com",
     "sourceUrl": "https://www.prosegurcrypto.com/.resources/ProsegurWebCorpModule/resources/icons/apple-touch-icon.png",
     "method": "link-apple-touch-icon",
@@ -1111,13 +1113,13 @@
     "confidence": "medium"
   },
   "kvarn-capital-oy": {
-    "src": "../assets/casp-logos/kvarnx-com-2d6c6bf4d9c4.svg",
+    "src": "../assets/casp-logos/kvarnx-com-41631f66fc83.webp",
     "alt": "Kvarn Capital Oy logo from kvarnx.com",
     "source": "https://www.kvarnx.com/",
-    "sourceUrl": "https://www.kvarnx.com/icons/tokens/eos.svg",
-    "method": "img-logo",
-    "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "sourceUrl": "https://www.kvarnx.com/images/kvarn_x_logo.webp",
+    "method": "jsonld-logo",
+    "retrievedAt": "2026-10-01",
+    "confidence": "medium"
   },
   "bittimaatti-oy": {
     "src": "../assets/casp-logos/bittimaatti-fi-9ad5edd75120.png",
@@ -1180,7 +1182,8 @@
     "sourceUrl": "https://coinshares.com/icons/coinshares-logo-white.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "cometh-sas": {
     "src": "../assets/casp-logos/cometh-io-ad5e8f58b24e.png",
@@ -1261,7 +1264,8 @@
     "sourceUrl": "https://www.rufiji.capital/wp-content/uploads/logo_rufiji_capital_white.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "criptan-trade-s-l": {
     "src": "../assets/casp-logos/criptan-com-4009a80e86a2.png",
@@ -1306,7 +1310,8 @@
     "sourceUrl": "https://cdn.prod.website-files.com/69807514ef19ea1c45a6ec49/69820a81f7303c1df0e976c9_flowdesk_logo_white.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "leonod-sarl": {
     "src": "../assets/casp-logos/app-bullbitcoin-com-cebf8fba3908.png",
@@ -1378,7 +1383,8 @@
     "sourceUrl": "https://cdn.prod.website-files.com/622e1f5ff800c52f15eaf0b8/624afd5e9e1cb31f0d77277e_logo%20woorton.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "blockchain-process-security-b-p-s-sas": {
     "src": "../assets/casp-logos/feel-mining-com-ef0789fd3e75.png",
@@ -1423,7 +1429,8 @@
     "sourceUrl": "https://whitely.hr/whitely.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "digital-assets-limited-liability-company-for-intermediation-and-services": {
     "src": "../assets/casp-logos/bitstore-net-106f46986c73.png",
@@ -1624,13 +1631,13 @@
     "confidence": "medium"
   },
   "bank-frick-ag": {
-    "src": "../assets/casp-logos/bankfrick-li-aa89a0880e86.png",
+    "src": "../assets/casp-logos/bankfrick-li-38939bdb76d0.svg",
     "alt": "Bank Frick AG logo from bankfrick.li",
     "source": "https://www.bankfrick.li/en",
-    "sourceUrl": "https://www.bankfrick.li/sites/default/files/styles/partner/public/images/eas-liechtenstein_transparent.png.webp?itok=Q_OWzqQD",
-    "method": "img-logo",
-    "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "sourceUrl": "https://www.bankfrick.li/themes/custom/bfr/logo.svg",
+    "method": "jsonld-logo",
+    "retrievedAt": "2026-10-01",
+    "confidence": "medium"
   },
   "young-platform-s-p-a": {
     "src": "../assets/casp-logos/youngplatform-com-403615ae521b.png",
@@ -1668,9 +1675,9 @@
     "retrievedAt": "2026-08-06",
     "confidence": "high"
   },
-  "damoon-technology-europe-ag": {
+  "paymonade-ag": {
     "src": "../assets/casp-logos/paymonade-tech-2087d78af576.ico",
-    "alt": "Damoon Technology (Europe) AG logo from paymonade.tech",
+    "alt": "Paymonade AG logo from paymonade.tech",
     "source": "https://www.paymonade.tech",
     "sourceUrl": "https://www.paymonade.tech/img/Favicon.ico",
     "method": "link-icon",
@@ -1846,7 +1853,8 @@
     "sourceUrl": "https://zodia-custody.com/wp-content/themes/zodia/images/logo-white.svg",
     "method": "img-logo",
     "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "confidence": "high",
+    "theme": "dark"
   },
   "banking-circle-s-a": {
     "src": "../assets/casp-logos/bankingcircle-com-64243381f482.svg",
@@ -1992,9 +2000,9 @@
     "retrievedAt": "2026-08-06",
     "confidence": "medium"
   },
-  "blue-cube-malta-limited": {
+  "blockchain-com-operations-malta-limited": {
     "src": "../assets/casp-logos/blockchain-com-8931ef2d2c2c.ico",
-    "alt": "Blue Cube (Malta) Limited logo from blockchain.com",
+    "alt": "Blockchain.com Operations (Malta) Limited logo from blockchain.com",
     "source": "https://www.blockchain.com",
     "sourceUrl": "https://www.blockchain.com/favicon.ico",
     "method": "common-path",
@@ -2191,13 +2199,13 @@
     "confidence": "medium"
   },
   "amdax-b-v": {
-    "src": "../assets/casp-logos/amdax-com-3dfa3c844807.svg",
+    "src": "../assets/casp-logos/amdax-com-6c05883f9c15.png",
     "alt": "Amdax B.V. logo from amdax.com",
     "source": "https://www.amdax.com/nl",
-    "sourceUrl": "https://cdn.amdax.com/web/images/icons8-linkedin.svg",
-    "method": "img-logo",
-    "retrievedAt": "2026-08-06",
-    "confidence": "high"
+    "sourceUrl": "https://www.amdax.com/apple-touch-icon.png",
+    "method": "link-apple-touch-icon",
+    "retrievedAt": "2026-10-01",
+    "confidence": "medium"
   },
   "zebedee-europe-b-v": {
     "src": "../assets/casp-logos/zbd-gg-2ea91010aeea.ico",
@@ -2532,9 +2540,9 @@
     "retrievedAt": "2026-08-06",
     "confidence": "high"
   },
-  "incrementum-druzba-za-izvajanje-storitev-v-zvezi-s-kriptosredstvi-d-o-o": {
+  "incrementum-poslovne-storitve-d-o-o": {
     "src": "../assets/casp-logos/incrementum-si-28a2b51c7735.jpg",
-    "alt": "INCREMENTUM družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o. logo from incrementum.si",
+    "alt": "INCREMENTUM poslovne storitve d.o.o. logo from incrementum.si",
     "source": "https://incrementum.si/",
     "sourceUrl": "https://incrementum.si/wp-content/uploads/2025/05/cropped-logo-incrementum-300x86.jpg",
     "method": "img-logo",
@@ -2602,7 +2610,8 @@
     "sourceUrl": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCA4MiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wLjI0OTkyIDIuODkyOTRIMjYuMzk3OEMyNi42MTk5IDIuODkyOTQgMjYuNzMxIDMuMTU2NTQgMjYuNTc2MSAzLjMxMDA2TDIyLjg3NzMgNi45NDA5OEMyMi44MDcxIDcuMDA5MDUgMjIuNzEyMSA3LjA0OTYgMjIuNjEyNyA3LjA0OTZIMTQuODUyNkMxNC44NDkgNy4wNDk2IDE0Ljg0NTMgNy4wNTAzMiAxNC44NDE3IDcuMDUxMDVDMTQuODM4IDcuMDUxNzcgMTQuODM0MyA3LjA1MjUgMTQuODMwNyA3LjA1MjVDMTQuMjkgNy4wNjQwOCAxMy44NTQ1IDcuNDk1NjggMTMuODU0NSA4LjAyODY2VjguOTI3MjZIMjAuMzUzMkMyMC41ODU4IDguOTI3MjYgMjAuNzAyOSA5LjIxNDIyIDIwLjUzODEgOS4zODEzNUwxOS44MTA5IDEwLjExNzdMMTYuNjM4NSAxMy4zMzQyQzE2LjU2NDYgMTMuNDA5OCAxNi40NjQ0IDEzLjQ1MjQgMTYuMzU5NiAxMy40NTI0SDEzLjg1NDVWMTguMDQwOEMxMy44NTQ1IDE4LjA0NDUgMTMuODUzNCAxOC4wNDc3IDEzLjg1MjMgMTguMDUxQzEzLjg1MTIgMTguMDU0MiAxMy44NTAxIDE4LjA1NzUgMTMuODUwMSAxOC4wNjExQzEzLjg0NDIgMTguMTUwOSAxMy44MTA2IDE4LjIzNjQgMTMuNzQ0OSAxOC4zMDAxTDEwLjA1MTkgMjEuOTI2N0M5Ljg5NTQ4IDIyLjA4MTYgOS42MjY1OCAyMS45NzE2IDkuNjI2NTggMjEuNzU0M0w5LjYyMjIgOC4wMjcyMUM5LjYyMjIgNy40OTQyMyA5LjE4ODE2IDcuMDYyNjMgOC42NDc0MyA3LjA1MTA1QzguNjQzNzggNy4wNTEwNSA4LjY0MDEyIDcuMDUwMzIgOC42MzY0NyA3LjA0OTZDOC42MzI4MiA3LjA0ODg4IDguNjI5MTYgNy4wNDgxNSA4LjYyNTUxIDcuMDQ4MTVINC4wMzY0NUMzLjkzNzA4IDcuMDQ4MTUgMy44NDIwOCA3LjAwOTA1IDMuNzcxOTQgNi45NDA5OEwwLjA3MzA4ODYgMy4zMTAwNkMtMC4wODMyODMxIDMuMTU2NTQgMC4wMjc3ODQ3IDIuODkyOTQgMC4yNDk5MiAyLjg5Mjk0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTc1Ljk4NTkgMjAuNjcxOFYxOC4zMjc1SDgwLjg2OVYxNy4yNzE5SDc1Ljk4NTlWMTUuMzI1Mkg4MS4xMjlWMTQuMjY0NUg3NS4xOTMxQzc0Ljk5MiAxNC4yNjQ1IDc0LjgyODIgMTQuNDI4MyA3NC44MjgyIDE0LjYyOTRWMjEuMzY3NkM3NC44MjgyIDIxLjU2ODkgNzQuOTkyIDIxLjczMjcgNzUuMTkzMSAyMS43MzI3SDgxLjIwNTVWMjAuNjcxOEg3NS45ODU5WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTczLjEzNzYgMTcuNzgyMUg2OS45MTYzQzY5LjcxNTIgMTcuNzgyMSA2OS41NTE0IDE3Ljk0NTggNjkuNTUxNCAxOC4xNDdWMTguNDc4QzY5LjU1MTQgMTguNjc5MiA2OS43MTUyIDE4Ljg0MjkgNjkuOTE2MyAxOC44NDI5SDcyLjQwMDlWMjAuNTYwN0M3Mi4zMTIgMjAuNTgzOSA3Mi4yMTI1IDIwLjYwNzQgNzIuMTA0MyAyMC42MzA4QzcxLjkxNTQgMjAuNjY3OCA3MS43MDY0IDIwLjcwMzIgNzEuNDg2NCAyMC43MzU2QzcxLjI2MDMgMjAuNzY1MiA3MS4wMTU3IDIwLjc5MDUgNzAuNzU5NCAyMC44MTA2QzcwLjUwNzcgMjAuODMwNCA3MC4yNDk3IDIwLjg0MDUgNjkuOTkyNyAyMC44NDA1QzY5LjM0MjcgMjAuODQwNSA2OC43NzAyIDIwLjc2NjYgNjguMjkxNCAyMC42MjFDNjcuODE5OSAyMC40Nzc4IDY3LjQyMjcgMjAuMjc3NCA2Ny4xMTE2IDIwLjAyNjNDNjYuODA4NSAxOS43Nzg5IDY2LjU3ODUgMTkuNDgxNiA2Ni40Mjg3IDE5LjE0NTVDNjYuMjc4OSAxOC43OTk1IDY2LjIwMyAxOC40MTU1IDY2LjIwMyAxOC4wMDQyQzY2LjIwMyAxNy41NjI4IDY2LjI4MDUgMTcuMTYxOSA2Ni40MzI2IDE2LjgxNDNDNjYuNTg2MyAxNi40NzAxIDY2LjgxODggMTYuMTczOCA2Ny4xMjM4IDE1LjkzMzVDNjcuNDM0OCAxNS42ODg0IDY3LjgzMzEgMTUuNDk2NiA2OC4zMDcyIDE1LjM2M0M2OC43OTAzIDE1LjIyNjcgNjkuMzY3NiAxNS4xNTc2IDcwLjAyMzMgMTUuMTU3NkM3MC4zNDMxIDE1LjE1NzYgNzAuNjQ0MSAxNS4xODA2IDcwLjkxODUgMTUuMjI1OUM3MS4xOTkgMTUuMjcxNSA3MS40NjE3IDE1LjMzMzkgNzEuNzAwOSAxNS40MTE3QzcxLjk0NDEgMTUuNDg5NSA3Mi4xNzE0IDE1LjU4MSA3Mi4zNzc2IDE1LjY4NDJDNzIuNTg5NyAxNS43ODg3IDcyLjc5MTYgMTUuOTAxMiA3Mi45Nzc4IDE2LjAxODdMNzMuMzM0MSAxNi4yNDM1VjE0Ljg5M0w3My4xOTEzIDE0LjgzMzRDNzIuOTQzNCAxNC43MyA3Mi42OTMyIDE0LjYzNTUgNzIuNDUwMyAxNC41NTM1QzcyLjIwMTkgMTQuNDY2IDcxLjk0MjkgMTQuMzkxMyA3MS42ODMxIDE0LjMzMjVDNzEuNDE5NSAxNC4yNjkzIDcxLjE0MDYgMTQuMjIxMiA3MC44NTY2IDE0LjE5MDJDNzAuNTcwNCAxNC4xNTUzIDcwLjI1NzUgMTQuMTM3NiA2OS45MjY0IDE0LjEzNzZDNjkuNDg3MyAxNC4xMzc2IDY5LjA1OTEgMTQuMTczIDY4LjY1NTIgMTQuMjQyNUM2OC4yNDY3IDE0LjMwOTUgNjcuODU5IDE0LjQxMzIgNjcuNTA0MyAxNC41NTAzQzY3LjE0NzUgMTQuNjg1OCA2Ni44MTYgMTQuODYxNSA2Ni41MTgzIDE1LjA3MzNDNjYuMjIxMiAxNS4yODcyIDY1Ljk2MjIgMTUuNTQyNSA2NS43NDc4IDE1LjgzMjhDNjUuNTM2NyAxNi4xMjA5IDY1LjM3MSAxNi40NTAyIDY1LjI1NTMgMTYuODExMkM2NS4xMzk3IDE3LjE2OTYgNjUuMDgxIDE3LjU3MSA2NS4wODEgMTguMDA0MkM2NS4wODEgMTguNjUzMyA2NS4yMDggMTkuMjI5MyA2NS40NTg1IDE5LjcxNjJDNjUuNzA4NSAyMC4yMDE3IDY2LjA1NzYgMjAuNjExMyA2Ni40OTc2IDIwLjkzNDdDNjYuOTMzMyAyMS4yNDkgNjcuNDUyOCAyMS40ODc2IDY4LjA0MzIgMjEuNjQ0QzY4LjYyNCAyMS43OTQ0IDY5LjI2MSAyMS44NzA2IDY5LjkzNjYgMjEuODcwNkM3MC4yNjU1IDIxLjg3MDYgNzAuNTgyMiAyMS44NTg0IDcwLjg3NzggMjEuODM0MkM3MS4xNzc2IDIxLjgxMDEgNzEuNDcwMSAyMS43NzUyIDcxLjc1IDIxLjcyOTdDNzIuMDMxMSAyMS42ODExIDcyLjMwNTUgMjEuNjIxMiA3Mi41NjQ3IDIxLjU1MjJDNzIuODI2OCAyMS40ODMxIDczLjA5MDIgMjEuNDAyNCA3My4zNDcyIDIxLjMxMjJMNzMuNTAyNSAyMS4yNTc2VjE4LjE0N0M3My41MDI1IDE3Ljk0NTggNzMuMzM4NyAxNy43ODIxIDczLjEzNzYgMTcuNzgyMVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02My4yMzg1IDE1LjA1NTVDNjIuODUzNiAxNC43NjUxIDYyLjM5MzQgMTQuNTU3NCA2MS44NzA4IDE0LjQzODRDNjEuMzYzNCAxNC4zMjMgNjAuODA3NSAxNC4yNjQ1IDYwLjIxODYgMTQuMjY0NUg1Ni43NDc2QzU2LjU0NjUgMTQuMjY0NSA1Ni4zODI3IDE0LjQyODMgNTYuMzgyNyAxNC42Mjk0VjIxLjM2NzZDNTYuMzgyNyAyMS41Njg5IDU2LjU0NjUgMjEuNzMyNyA1Ni43NDc2IDIxLjczMjdINjAuMjI5QzYwLjYyMiAyMS43MzI3IDYxLjAwMTMgMjEuNzA4IDYxLjM1ODEgMjEuNjU4OUM2MS43MjIgMjEuNjA2IDYyLjA2MzYgMjEuNTIxNCA2Mi4zNzI4IDIxLjQwNzhDNjIuNjkxNiAyMS4yOTE3IDYyLjk4NDEgMjEuMTM1MSA2My4yNDE1IDIwLjk0MzNDNjMuNTA3MiAyMC43NDc3IDYzLjczNTUgMjAuNTA2NSA2My45MTk3IDIwLjIyNjNDNjQuMTAyNiAxOS45NDgyIDY0LjI0NDkgMTkuNjE5OSA2NC4zNDIyIDE5LjI1MjJDNjQuNDQyMiAxOC44ODQyIDY0LjQ5MjkgMTguNDYwOCA2NC40OTI5IDE3Ljk5MzVDNjQuNDkyOSAxNy4yOTMgNjQuMzgxMiAxNi42OTU5IDY0LjE2MTMgMTYuMjIwNUM2My45NDIxIDE1LjczNzggNjMuNjMwOSAxNS4zNDUzIDYzLjIzODUgMTUuMDU1NVpNNTcuNDg0MiAxNS4zMUg2MC4yMTg2QzYwLjUzOTcgMTUuMzEgNjAuODQ3MiAxNS4zMjgzIDYxLjEzMjUgMTUuMzY0MkM2MS40MDk1IDE1LjM5OTMgNjEuNjY4NyAxNS40NjA0IDYxLjkwNTEgMTUuNTQ2NkM2Mi4xMzQ3IDE1LjYyNzQgNjIuMzQyNiAxNS43MzUxIDYyLjUyMzYgMTUuODY3MUM2Mi42OTk4IDE1Ljk5NTQgNjIuODUxNCAxNi4xNTc5IDYyLjk3NTQgMTYuMzUxM0M2My4xMDA0IDE2LjU0MzMgNjMuMTk4MiAxNi43NzU3IDYzLjI2NjIgMTcuMDQxOUM2My4zMzU3IDE3LjMxNCA2My4zNzExIDE3LjYzNDIgNjMuMzcxMSAxNy45OTM1QzYzLjM3MTEgMTguNTI5NCA2My4yOTM2IDE4Ljk3NjQgNjMuMTQxMiAxOS4zMjEzQzYyLjk5MiAxOS42NTY0IDYyLjc4MTYgMTkuOTI3NiA2Mi41MTYzIDIwLjEyNjdDNjIuMjQ4NiAyMC4zMjY4IDYxLjkyIDIwLjQ3MDggNjEuNTQxNCAyMC41NTQ2QzYxLjE0NDQgMjAuNjM5MiA2MC42OTkzIDIwLjY4MiA2MC4yMTg2IDIwLjY4Mkg1Ny40ODQyVjE1LjMxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTU0LjgwMDIgMTQuMjY0NUg1My42OTg1VjIxLjczMjdINTQuODAwMlYxNC4yNjQ1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTUxLjU3ODUgMTcuOTIxNkM1MS44OTAyIDE3LjU2MzUgNTIuMDQ4MiAxNy4wODg2IDUyLjA0ODIgMTYuNTEwMUM1Mi4wNDgyIDE2LjE0MjEgNTEuOTg0OCAxNS44MTM3IDUxLjg2MDEgMTUuNTMzOEM1MS43MzA2IDE1LjI0MzYgNTEuNTIzMiAxNC45OTk5IDUxLjI0NjMgMTQuODExNUM1MC45ODA1IDE0LjYyNDEgNTAuNjM3OSAxNC40ODQ4IDUwLjIzMDMgMTQuMzk3NUM0OS44MzU2IDE0LjMwOTIgNDkuMzU3MyAxNC4yNjQ1IDQ4LjgwODYgMTQuMjY0NUg0NS40NTQ4QzQ1LjI1MzcgMTQuMjY0NSA0NS4wODk5IDE0LjQyODMgNDUuMDg5OSAxNC42Mjk0VjIxLjczMjdINDYuMTkxNFYxOC43MzU0SDQ4LjgwODZDNDguOTE2OSAxOC43MzU0IDQ5LjAyMTcgMTguNzMzOCA0OS4xMjIxIDE4LjczMDFDNDkuMTgwMiAxOC43MjgyIDQ5LjIzNzYgMTguNzI1OCA0OS4yOTQ0IDE4LjcyMjVMNTEuNDM3NCAyMS41ODY2QzUxLjUwNiAyMS42NzggNTEuNjE1MSAyMS43MzI3IDUxLjcyOTUgMjEuNzMyN0g1Mi45MzY5TDUwLjQ3NzYgMTguNTU1QzUwLjk1ODYgMTguNDE4MyA1MS4zMjc4IDE4LjIwNjEgNTEuNTc4NSAxNy45MjE2Wk00Ni4xOTE0IDE1LjMyNTJINDguMTMwOEM0OC42ODA0IDE1LjMyNTIgNDkuMTQ5NiAxNS4zNDM3IDQ5LjUyNzUgMTUuMzgwM0M0OS44ODg0IDE1LjQxMjIgNTAuMTggMTUuNDc0OSA1MC4zOTQxIDE1LjU2NjRDNTAuNTg1NiAxNS42NDg1IDUwLjcxNzkgMTUuNzU3OCA1MC43OTkyIDE1LjkwMkM1MC44ODM1IDE2LjA0ODggNTAuOTI2MyAxNi4yNTM2IDUwLjkyNjMgMTYuNTEwMUM1MC45MjYzIDE2Ljc2OSA1MC44ODI0IDE2Ljk3NDQgNTAuNzk0OCAxNy4xMjE4QzUwLjcxNDggMTcuMjU4OSA1MC41ODA2IDE3LjM2NTYgNTAuMzg3NyAxNy40NDcxQzUwLjE2OSAxNy41MzY0IDQ5Ljg3NDQgMTcuNTk3OCA0OS41MTQgMTcuNjI5NUM0OS4xMzU5IDE3LjY1OTUgNDguNjYzNiAxNy42NzQ3IDQ4LjExMDMgMTcuNjc0N0g0Ni4xOTE0VjE1LjMyNTJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNDMuNTMwOCAxOC4xNDAxQzQzLjM1NTQgMTcuOTY0OCA0My4xMjkxIDE3LjgyMzUgNDIuODU3OCAxNy43MjAxQzQyLjg0MTMgMTcuNzEzOSA0Mi44MjQ2IDE3LjcwNzcgNDIuODA3NyAxNy43MDE4QzQyLjkzMDUgMTcuNjI5NSA0My4wMzcyIDE3LjU0NTUgNDMuMTI1NSAxNy40NTE5QzQzLjI2NTMgMTcuMzA4MSA0My4zNjkzIDE3LjEzMzggNDMuNDMzIDE2LjkzODJDNDMuNDk5MiAxNi43NDgxIDQzLjUzMjcgMTYuNTIzNSA0My41MzI3IDE2LjI3MDZDNDMuNTMyNyAxNS45ODk5IDQzLjQ5MzcgMTUuNzQwMSA0My40MTggMTUuNTMyMUM0My4zNDM1IDE1LjMxNjUgNDMuMjM1MSAxNS4xMjg2IDQzLjA5ODIgMTQuOTc2MkM0Mi45NjQgMTQuODIyIDQyLjgwMTcgMTQuNjk1NyA0Mi42MTc3IDE0LjYwMTZDNDIuNDQ1MiAxNC41MTE4IDQyLjI1MzggMTQuNDQxNSA0Mi4wNTM5IDE0LjM5NDNDNDEuODU4NyAxNC4zNDM1IDQxLjY1MTggMTQuMzA4OCA0MS40MzkyIDE0LjI5MDhDNDEuMjM0NSAxNC4yNzM0IDQxLjAyNTUgMTQuMjY0NSA0MC44MTgxIDE0LjI2NDVIMzcuMDAwM0MzNi43OTkxIDE0LjI2NDUgMzYuNjM1NCAxNC40MjgzIDM2LjYzNTQgMTQuNjI5NFYyMS4zNjc2QzM2LjYzNTQgMjEuNTY4OSAzNi43OTkxIDIxLjczMjcgMzcuMDAwMyAyMS43MzI3SDQwLjkwOThDNDEuMTc2IDIxLjczMjcgNDEuNDM4IDIxLjcyMjEgNDEuNjg4NiAyMS43MDEzQzQxLjk0MjYgMjEuNjgwMiA0Mi4xODU3IDIxLjY0MjMgNDIuNDE0NSAyMS41ODc4QzQyLjY0MzkgMjEuNTI5NiA0Mi44NTY4IDIxLjQ1MTcgNDMuMDQ5IDIxLjM1NTZDNDMuMjU0NCAyMS4yNTEyIDQzLjQzMTkgMjEuMTE0OCA0My41NzY0IDIwLjk1MDdDNDMuNzI0NyAyMC43ODI5IDQzLjg0MDkgMjAuNTgyNSA0My45MjE4IDIwLjM1NUM0NC4wMDE5IDIwLjEzMDYgNDQuMDQyNCAxOS44NjU5IDQ0LjA0MjQgMTkuNTY4NkM0NC4wNDI0IDE5LjI3OTQgNDQuMDAyMiAxOS4wMTQzIDQzLjkyMzMgMTguNzgxNUM0My44NDA4IDE4LjUzMzYgNDMuNzA4NyAxOC4zMTc5IDQzLjUzMDggMTguMTQwMVpNMzcuNzM3IDE3LjI4MjFWMTUuMjk5OEg0MC42MDkxQzQwLjkxODYgMTUuMjk5OCA0MS4xODQ5IDE1LjMxNjEgNDEuNDA0NCAxNS4zNDg4QzQxLjYxNzEgMTUuMzc2OSA0MS43OTU3IDE1LjQxNzMgNDEuOTM5OCAxNS40NzA1QzQyLjA2NjYgMTUuNTE0NiA0Mi4xNjQgMTUuNTY2MyA0Mi4yMzIyIDE1LjYyNjVDNDIuMzAwNSAxNS42ODQ3IDQyLjM1MjIgMTUuNzQ3MSA0Mi4zODc1IDE1LjgxNDhDNDIuNDIyMSAxNS44NzkgNDIuNDQzNyAxNS45NDUzIDQyLjQ1MzYgMTYuMDE2N0M0Mi40NjU3IDE2LjEwNDcgNDIuNDcxOCAxNi4xOTM2IDQyLjQ3MTggMTYuMjgwN0M0Mi40NzE4IDE2LjQyMjcgNDIuNDUxNSAxNi41NTg3IDQyLjQxIDE2LjY4ODlDNDIuMzggMTYuNzkwMyA0Mi4zMTIzIDE2Ljg3OTUgNDIuMjAwNyAxNi45NjMyQzQyLjA4MSAxNy4wNTUxIDQxLjg5NzIgMTcuMTMyIDQxLjY1NyAxNy4xOTEzQzQxLjQwMDQgMTcuMjUxNiA0MS4wNDc4IDE3LjI4MjEgNDAuNjA5MSAxNy4yODIxSDM3LjczN1pNNDIuNzk2NCAxOC45ODMxQzQyLjg3MTkgMTkuMTM2NCA0Mi45MTAyIDE5LjMzIDQyLjkxMDIgMTkuNTU4M0M0Mi45MTAyIDE5Ljc2ODYgNDIuODc3NiAxOS45NDc2IDQyLjgxMiAyMC4wOTMzQzQyLjc1NTggMjAuMjIzNCA0Mi42NjAzIDIwLjMyOTEgNDIuNTIxMiAyMC40MTU4QzQyLjM3MDYgMjAuNTA4NCA0Mi4xNjE1IDIwLjU3ODUgNDEuOTAxNiAyMC42MjRDNDEuNjI2OSAyMC42NjkzIDQxLjI3OTUgMjAuNjkyMyA0MC44NjkgMjAuNjkyM0gzNy43MzdWMTguMzA3MUg0MC43ODIzQzQxLjE3NjEgMTguMzA3MSA0MS41MTk4IDE4LjMzNDkgNDEuODA2IDE4LjM5QzQyLjA3NDkgMTguNDM5MSA0Mi4yOTQ0IDE4LjUxNjEgNDIuNDU4NiAxOC42MTg3QzQyLjYxMjggMTguNzE0OSA0Mi43MjMzIDE4LjgzNDEgNDIuNzk2NCAxOC45ODMxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTUyLjE5ODUgMi45MDc4NEg1MS4wNDUxVjEwLjcyNzRINTIuMTk4NVYyLjkwNzg0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTQ4Ljc3NjYgNi43MzcwM0M0OS4xMDMxIDYuMzYyMTEgNDkuMjY4NiA1Ljg2NDggNDkuMjY4NiA1LjI1OTExQzQ5LjI2ODYgNC44NzQxMSA0OS4yMDIzIDQuNTMwMjMgNDkuMDcxNSA0LjIzNjg5QzQ4LjkzNTggMy45MzI4MiA0OC43MTg3IDMuNjc3NjcgNDguNDI5IDMuNDgwNTRDNDguMTUwNiAzLjI4NDM5IDQ3Ljc5MiAzLjEzODQ1IDQ3LjM2NTQgMy4wNDcxMUM0Ni45NTE5IDIuOTU0NjQgNDYuNDUwOSAyLjkwNzg0IDQ1Ljg3NjcgMi45MDc4NEg0Mi4zNjUxQzQyLjE1NDQgMi45MDc4NCA0MS45ODMxIDMuMDc5MjkgNDEuOTgzMSAzLjI4OTkxVjEwLjcyNzRINDMuMTM2NFY3LjU4OTFINDUuODc2N0M0NS45OSA3LjU4OTEgNDYuMDk5NyA3LjU4NzQ4IDQ2LjIwNSA3LjU4MzU3QzQ2LjI2NTcgNy41ODE2MyA0Ni4zMjU4IDcuNTc5MDIgNDYuMzg1MyA3LjU3NTYxTDQ4LjYyOTMgMTAuNTc0OEM0OC43MDExIDEwLjY3MDQgNDguODE1NCAxMC43Mjc0IDQ4LjkzNSAxMC43Mjc0SDUwLjE5OUw0Ny42MjQgNy40MDAyNUM0OC4xMjc4IDcuMjU3MDggNDguNTE0MyA3LjAzNDkyIDQ4Ljc3NjYgNi43MzcwM1pNNDYuNjE1MyA2LjQzMTE3QzQ2LjIxOTQgNi40NjI1NCA0NS43MjQ4IDYuNDc4NDYgNDUuMTQ1NSA2LjQ3ODQ2SDQzLjEzNjRWNC4wMTg0N0g0NS4xNjY5QzQ1Ljc0MjMgNC4wMTg0NyA0Ni4yMzM2IDQuMDM3ODEgNDYuNjI5MiA0LjA3NjE3QzQ3LjAwNzMgNC4xMDk0OCA0Ny4zMTI2IDQuMTc1MTMgNDcuNTM2NyA0LjI3MTAxQzQ3LjczNzMgNC4zNTY5OCA0Ny44NzU2IDQuNDcxNCA0Ny45NjA3IDQuNjIyMzhDNDguMDQ5MSA0Ljc3NjI4IDQ4LjA5NCA0Ljk5MDQ3IDQ4LjA5NCA1LjI1OTExQzQ4LjA5NCA1LjUzMDAyIDQ4LjA0NzkgNS43NDUyIDQ3Ljk1NjQgNS44OTk1OUM0Ny44NzI1IDYuMDQzMDkgNDcuNzMyMiA2LjE1NDkgNDcuNTI5OSA2LjI0MDIyQzQ3LjMwMTEgNi4zMzM2NyA0Ni45OTI3IDYuMzk4MDIgNDYuNjE1MyA2LjQzMTE3WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTMzLjI3NDcgNC4wMDI1NEgzNi42MTAzVjEwLjcyNzRIMzcuNzU4M1Y0LjAwMjU0SDQxLjA5NFYyLjkwNzg0SDMzLjI3NDdWNC4wMDI1NFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik01OC4wMjg0IDIuOTA3ODRINTcuNTgwMkM1Ny4zODU2IDIuOTA3ODQgNTcuMjA4NiAzLjAxNDk0IDU3LjExODUgMy4xODcyTDUzLjE3MzEgMTAuNzI3NEg1NC40NTMxTDU1LjQ2MTkgOC43OTUyOUg2MC4xNDY3TDYxLjE1NTMgMTAuNzI3NEg2Mi40MzU0TDU4LjQ5IDMuMTg3MzZDNTguMzk5OCAzLjAxNDkzIDU4LjIyMjkgMi45MDc4NCA1OC4wMjg0IDIuOTA3ODRaTTU2LjA0MTcgNy42OTUyMkw1Ny44MDY2IDQuMzIxODlMNTkuNTY3MiA3LjY5NTIySDU2LjA0MTdaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNNTQuMDQ1MyAwLjg1NDc1OUM1NC4xMDU5IDAuODI5NjEyIDU0LjEzMjUgMC43NTg1MzcgNTQuMTAzNSAwLjY5OTc4TDUzLjc4ODkgMC4wNjMxNzgzQzUzLjc2MTIgMC4wMDcxOTczNyA1My42OTM1IC0wLjAxNTg4IDUzLjYzNzQgMC4wMTE1NTc5TDUwLjc1NTEgMS40MjEyNEM1MC42OTgyIDEuNDQ5MDYgNTAuNjc1MSAxLjUxODA5IDUwLjcwMzggMS41NzQ1NEw1MC45MzY5IDIuMDMyNzNDNTAuOTYzOCAyLjA4NTU0IDUxLjAyNjggMi4xMDg3NyA1MS4wODE1IDIuMDg2MDRMNTQuMDQ1MyAwLjg1NDc1OVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
     "method": "img-brand",
     "retrievedAt": "2026-08-06",
-    "confidence": "medium"
+    "confidence": "medium",
+    "theme": "dark"
   },
   "cryptonow-gmbh": {
     "src": "../assets/casp-logos/cryptonow-at-d07ac17ee07c.svg",

@@ -13,6 +13,7 @@ const ROOT = path.join(__dirname, '..');
 const DATA_DIR = path.join(ROOT, 'data');
 const OUTPUT_DIR = path.join(ROOT, 'entities');
 const { SERVICE_LABELS } = require('./services');
+const { formatLegalName } = require('../assets/js/legal-name');
 const SITE_URL = 'https://micatracker.digital-euro-association.de';
 const ESMA_SOURCE = 'https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica#InterimMiCARegister';
 const MEMBERSHIP_URL = 'https://digital-euro-association.de/institutional-membership-form';
@@ -207,6 +208,7 @@ function entityLogo(entity, logos) {
 }
 
 function entityPage(entity, data) {
+  const displayName = formatLegalName(entity.name);
   const snapshot = data.snapshot;
   const authority = authorityText(entity);
   const flag = COUNTRY_FLAGS[entity.country] || '';
@@ -225,8 +227,8 @@ function entityPage(entity, data) {
   const contextRows = contextFor(entity, data.entities);
   const history = changeHistory(entity, data.changelog, snapshot);
   const website = (entity.websites || []).map(safeHttpUrl).find(Boolean) || '';
-  const metaDescription = `${entity.name} is listed as a MiCAR-authorised Crypto-Asset Service Provider in ${entity.country}, supervised by ${authority}. View services, LEI, source freshness and register context.`;
-  const pageTitle = `${entity.name} | MiCA CASP | ${entity.country} | DEA Tracker`;
+  const metaDescription = `${displayName} is listed as a MiCAR-authorised Crypto-Asset Service Provider in ${entity.country}, supervised by ${authority}. View services, LEI, source freshness and register context.`;
+  const pageTitle = `${displayName} | MiCA CASP | ${entity.country} | DEA Tracker`;
   const verifySubject = encodeURIComponent('Verify organisation affiliation - ' + entity.name);
   const verifyBody = encodeURIComponent('Hello DEA,\n\nI represent ' + entity.name + ' and would like to verify my organisation affiliation for the MiCAR Tracker.\n\nName:\nRole:\nWork email:\n\nEntity page: ' + canonical);
   const correctionSubject = encodeURIComponent('MiCAR Tracker correction - ' + entity.name);
@@ -239,7 +241,7 @@ function entityPage(entity, data) {
       {
         '@type': 'Organization',
         '@id': organizationId,
-        name: entity.name,
+        name: displayName,
         legalName: entity.name,
         alternateName: entity.alsoKnownAs || [],
         leiCode: entity.lei || undefined,
@@ -251,7 +253,7 @@ function entityPage(entity, data) {
       {
         '@type': 'Dataset',
         '@id': datasetId,
-        name: 'ESMA interim MiCA register record for ' + entity.name,
+        name: 'ESMA interim MiCA register record for ' + displayName,
         description: metaDescription,
         url: ESMA_SOURCE,
         isBasedOn: ESMA_SOURCE,
@@ -272,7 +274,7 @@ function entityPage(entity, data) {
         '@id': canonical + '#breadcrumb',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'CASP Tracker', item: SITE_URL + '/casp-tracker.html' },
-          { '@type': 'ListItem', position: 2, name: entity.name, item: canonical }
+          { '@type': 'ListItem', position: 2, name: displayName, item: canonical }
         ]
       }
     ]
@@ -345,13 +347,13 @@ function entityPage(entity, data) {
   </nav></div></div>
 
   <main id="main" class="entity-page-shell">
-    <nav class="entity-breadcrumb" aria-label="Breadcrumb"><a href="../casp-tracker.html">CASP Tracker</a><span aria-hidden="true">/</span><span aria-current="page">${esc(entity.name)}</span></nav>
+    <nav class="entity-breadcrumb" aria-label="Breadcrumb"><a href="../casp-tracker.html">CASP Tracker</a><span aria-hidden="true">/</span><span aria-current="page">${esc(displayName)}</span></nav>
 
     <section class="entity-hero" aria-labelledby="entity-name">
       <div class="entity-hero-main">
         ${entityLogo(entity, data.logos)}
         <div>
-          <h1 id="entity-name">${esc(entity.name)}</h1>
+          <h1 id="entity-name">${esc(displayName)}</h1>
           <p class="entity-type">CASP <span aria-hidden="true">•</span> ${esc(entity.country)}</p>
           <div class="entity-meta-line">
             <span class="entity-status"><i class="fas fa-circle-check" aria-hidden="true"></i>Authorised under MiCAR</span>
