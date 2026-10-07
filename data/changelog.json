@@ -1,5 +1,22 @@
 [
   {
+    "date": "2026-10-07",
+    "timestamp": "2026-10-07T14:31:55.737Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Raiffeisenbank im Fuldaer Land eG (Germany)",
+          "VR Bank Nord eG (Germany)",
+          "Raiffeisenbank Rehling eG (Germany)",
+          "VR GenoBank DonauWald eG (Germany)",
+          "Atrya Technologies SIA (Latvia)",
+          "Noah LV SIA (Latvia)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-10-02",
     "timestamp": "2026-10-02T09:52:59.688Z",
     "changes": {

@@ -121,7 +121,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "549300746K71T6YJCV41",
-      "sourceRow": 179,
+      "sourceRow": 183,
       "name": "FINTECH PAYMENTS PSC S.L.",
       "country": "Spain",
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -132,7 +132,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "213800QBQVHWRBHJTA89",
-      "sourceRow": 236,
+      "sourceRow": 240,
       "name": "Paysafe Payment Solutions Limited.",
       "country": "Ireland",
       "detail": "Website field contains \"https://www.skrill.com www.neteller.com\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -143,7 +143,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "969500OA6NVZB5BXAB29",
-      "sourceRow": 277,
+      "sourceRow": 281,
       "name": "B2C2 Europe Sarl",
       "country": "Luxembourg",
       "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -154,7 +154,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
-      "sourceRow": 283,
+      "sourceRow": 287,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -165,7 +165,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "984500F9M4XF7C5E5E25",
-      "sourceRow": 307,
+      "sourceRow": 313,
       "name": "Olmipay Limited",
       "country": "Malta",
       "detail": "Website field contains \"https://Olmipay.com (upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -176,7 +176,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
-      "sourceRow": 310,
+      "sourceRow": 316,
       "name": "Zap (Strike) Europe Limited",
       "country": "Malta",
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -187,7 +187,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "nc:6226ff0404ee",
-      "sourceRow": 332,
+      "sourceRow": 338,
       "name": "EU Internet Ventures B.V.",
       "country": "Netherlands",
       "detail": "Website field contains \"https://banxa.com https://www.osl-pay.com/\", which is not a URL. Kept as raw text; no link is rendered.",
