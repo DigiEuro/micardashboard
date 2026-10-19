@@ -4,7 +4,16 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Wed, 07 Oct 2026 14:31:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 10:19:04 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-10-19</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-10-19T10:19:04.558Z</guid>
+      <pubDate>Mon, 19 Oct 2026 10:19:04 GMT</pubDate>
+      <description>CASPs added: MEGE zweite GmbH (Austria), Openbank Deutschland AG (Germany), KSW Vermögensverwaltung AG (Germany), VR-Bank Alb-Blau-Donau eG (Germany), Volksbank eG (Germany), VR Bank im südlichen Franken eG (Germany), VR Bank Lahn-Dill eG (Germany), PRAKMA MARKETS S.L. (Spain), YOUHODLER ITALY S.R.L. (Italy)
+CASPs removed: Penning Financial Services ApS (Denmark)
+Non-compliant entities added: ASWD78 (Italy), CDZG36 (Italy), EZWQ66 (Italy), HREE25 (Italy), K9C3Y (Italy)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-10-07</title>
       <link>https://micatracker.digital-euro-association.de/</link>

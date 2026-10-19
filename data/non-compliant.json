@@ -1789,6 +1789,56 @@
   },
   {
     "id": 172,
+    "entity": "ASWD78",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "aswd78.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 173,
+    "entity": "CDZG36",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "cdzg36.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 174,
+    "entity": "EZWQ66",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "ezwq66.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 175,
+    "entity": "HREE25",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "hree25.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 176,
+    "entity": "K9C3Y",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "k9c3y.fr"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 177,
     "entity": "MEXC",
     "country": "Netherlands",
     "authority": "Netherlands Authority for the Financial Markets (AFM)",
@@ -1798,7 +1848,7 @@
     "isNew": false
   },
   {
-    "id": 173,
+    "id": 178,
     "entity": "LWEX",
     "country": "Slovakia",
     "authority": "National Bank of Slovakia (NBS)",
