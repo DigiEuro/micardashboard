@@ -91,20 +91,31 @@ anomalies.filter(function (item) {
  
 const logos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'casp-logos.json'), 'utf8'));
 const entitySlugs = new Set(entities.map(function (entity) { return entity.slug; }));
+const dormantLogoSlugs = [];
 Object.keys(logos).forEach(function (slug) {
   const logo = logos[slug];
-  expect(entitySlugs.has(slug), 'logo manifest entry has no current entity: ' + slug);
   expect(!/(?:^|[^a-z0-9])(?:linkedin|facebook|instagram|twitter|youtube|tiktok|telegram|discord|icons?8)(?:[^a-z0-9]|$)/i.test(logo.sourceUrl || ''), 'social-media asset used as entity logo: ' + slug);
   expect(!/(?:^|\/)(?:logo[-_]?x|x[-_]?logo)\.(?:svg|png|webp)(?:$|[?#])/i.test(logo.sourceUrl || ''), 'social-media X asset used as entity logo: ' + slug);
   expect(!/\/(?:partners?|sponsors?|widgets?|tokens?|coins?|currencies?)(?:\/|[?#])/i.test(logo.sourceUrl || ''), 'non-brand asset used as entity logo: ' + slug);
   expect(/^\.\.\/assets\/casp-logos\/[A-Za-z0-9._-]+\.(?:png|svg|jpe?g|webp|avif|ico|gif)$/i.test(logo.src), 'unsafe logo asset path: ' + slug);
   expect(fs.existsSync(path.join(ROOT, logo.src.replace(/^\.\.\//, ''))), 'missing logo asset: ' + slug);
+  if (whiteOnlySvg(logo.src)) expect(logo.theme === 'dark', 'white-only SVG logo must declare dark theme: ' + slug);
+
+  // A CASP can disappear from a later register snapshot and return again.
+  // Keep its vetted logo metadata and asset, but only require rendered page
+  // assertions for entities that exist in the current snapshot.
+  if (!entitySlugs.has(slug)) {
+    dormantLogoSlugs.push(slug);
+    return;
+  }
+
   const html = fs.readFileSync(path.join(ROOT, 'entities', slug + '.html'), 'utf8');
   expect(html.includes('class="entity-logo-image"'), 'logo missing from entity page: ' + slug);
   expect(html.includes('alt="' + esc(logo.alt) + '"'), 'logo alt text missing: ' + slug);
   if (logo.theme === 'dark') expect(html.includes('entity-logo-frame-dark'), 'dark logo theme missing: ' + slug);
-  if (whiteOnlySvg(logo.src)) expect(logo.theme === 'dark', 'white-only SVG logo must declare dark theme: ' + slug);
 });
+
+console.log('Logo manifest OK: ' + (Object.keys(logos).length - dormantLogoSlugs.length) + ' current, ' + dormantLogoSlugs.length + ' dormant.');
 
 const coinbase = fs.readFileSync(path.join(ROOT, 'entities', 'coinbase-luxembourg-s-a.html'), 'utf8');
 expect(coinbase.includes('CSSF - Luxembourg'), 'Coinbase authority context missing');
@@ -113,3 +124,4 @@ expect(coinbase.includes('984500F14CA4571AAC11'), 'Coinbase LEI missing');
 expect(!coinbase.includes('—'), 'Coinbase entity page contains an em dash');
 
 console.log('Entity pages OK: ' + entities.length + ' generated profiles checked.');
+
