@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-10-26",
+    "timestamp": "2026-10-26T11:36:55.283Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Volksbank in der Region eG (Germany)",
+          "Volksbank Mittlerer Neckar eG (Germany)",
+          "Sparda-Bank Baden-Württemberg eG (Germany)",
+          "Raiffeisenbank Eifel eG (Germany)",
+          "Volksbank Niederrhein eG (Germany)",
+          "Volksbank in Ostwestfalen eG (Germany)",
+          "Volksbank Oberberg eG (Germany)",
+          "Volksbank in der Hohen Mark eG (Germany)",
+          "Penning Financial Services ApS (Denmark)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-10-19",
     "timestamp": "2026-10-19T10:19:04.558Z",
     "changes": {
