@@ -4,7 +4,14 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Mon, 19 Oct 2026 10:19:04 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 11:36:55 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-10-26</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-10-26T11:36:55.283Z</guid>
+      <pubDate>Mon, 26 Oct 2026 11:36:55 GMT</pubDate>
+      <description>CASPs added: Volksbank in der Region eG (Germany), Volksbank Mittlerer Neckar eG (Germany), Sparda-Bank Baden-Württemberg eG (Germany), Raiffeisenbank Eifel eG (Germany), Volksbank Niederrhein eG (Germany), Volksbank in Ostwestfalen eG (Germany), Volksbank Oberberg eG (Germany), Volksbank in der Hohen Mark eG (Germany), Penning Financial Services ApS (Denmark)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-10-19</title>
       <link>https://micatracker.digital-euro-association.de/</link>
