@@ -1839,6 +1839,107 @@
   },
   {
     "id": 177,
+    "entity": "Brelliozo IA",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "brelliozoia-it.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 178,
+    "entity": "IncomeMax",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "iincome-max.com",
+      "web.iincomemax.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 179,
+    "entity": "Tesorvenza",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "tesorvenza.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 180,
+    "entity": "Solvexpulse53ai",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "solvexpulse53ai.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 181,
+    "entity": "Valutixitalia",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "valutixitalia.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 182,
+    "entity": "Dashaxid400",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "dashaxid400.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 183,
+    "entity": "Sovriapro",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "sovriapro.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 184,
+    "entity": "Chainexelonfin",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "chainexelonfin.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 185,
+    "entity": "Cardinemodevo",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "cardinemodevo.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 186,
+    "entity": "Smartbitboost",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "smartbitboost.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 187,
     "entity": "MEXC",
     "country": "Netherlands",
     "authority": "Netherlands Authority for the Financial Markets (AFM)",
@@ -1848,7 +1949,7 @@
     "isNew": false
   },
   {
-    "id": 178,
+    "id": 188,
     "entity": "LWEX",
     "country": "Slovakia",
     "authority": "National Bank of Slovakia (NBS)",

@@ -4,7 +4,15 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Mon, 26 Oct 2026 11:36:55 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 13:55:28 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-11-02</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-11-02T13:55:28.750Z</guid>
+      <pubDate>Mon, 02 Nov 2026 13:55:28 GMT</pubDate>
+      <description>CASPs added: Raiffeisen-Volksbank Ebersberg eG (Germany), Volksbank Raiffeisenbank Regensburg-Schwandorf eG (Germany), Raiffeisenbank Wittelsbacher Land eG (Germany), Raiffeisenbank Kirchweihtal eG (Germany), VR Bank Neuburg-Rain eG (Germany)
+Non-compliant entities added: Brelliozo IA (Italy), IncomeMax (Italy), Tesorvenza (Italy), Solvexpulse53ai (Italy), Valutixitalia (Italy), Dashaxid400 (Italy), Sovriapro (Italy), Chainexelonfin (Italy), Cardinemodevo (Italy), Smartbitboost (Italy)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-10-26</title>
       <link>https://micatracker.digital-euro-association.de/</link>
