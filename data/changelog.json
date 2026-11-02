@@ -1,5 +1,36 @@
 [
   {
+    "date": "2026-11-02",
+    "timestamp": "2026-11-02T13:55:28.750Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Raiffeisen-Volksbank Ebersberg eG (Germany)",
+          "Volksbank Raiffeisenbank Regensburg-Schwandorf eG (Germany)",
+          "Raiffeisenbank Wittelsbacher Land eG (Germany)",
+          "Raiffeisenbank Kirchweihtal eG (Germany)",
+          "VR Bank Neuburg-Rain eG (Germany)"
+        ],
+        "removed": []
+      },
+      "nonCompliant": {
+        "added": [
+          "Brelliozo IA (Italy)",
+          "IncomeMax (Italy)",
+          "Tesorvenza (Italy)",
+          "Solvexpulse53ai (Italy)",
+          "Valutixitalia (Italy)",
+          "Dashaxid400 (Italy)",
+          "Sovriapro (Italy)",
+          "Chainexelonfin (Italy)",
+          "Cardinemodevo (Italy)",
+          "Smartbitboost (Italy)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-10-26",
     "timestamp": "2026-10-26T11:36:55.283Z",
     "changes": {
