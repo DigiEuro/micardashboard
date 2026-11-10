@@ -967,6 +967,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://micatracker.digital-euro-association.de/entities/vr-bank-amberg-sulzbach-eg</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://micatracker.digital-euro-association.de/entities/raiffeisenbank-rehling-eg</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -1088,6 +1094,18 @@
   </url>
   <url>
     <loc>https://micatracker.digital-euro-association.de/entities/vr-bank-neuburg-rain-eg</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://micatracker.digital-euro-association.de/entities/vr-bank-ostalb-eg</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://micatracker.digital-euro-association.de/entities/capricorn-capital-gmbh-co-kg</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -2089,6 +2107,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://micatracker.digital-euro-association.de/entities/sparkasse-bank-malta-plc</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://micatracker.digital-euro-association.de/entities/moonpay-europe-b-v</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -2372,6 +2396,12 @@
   </url>
   <url>
     <loc>https://micatracker.digital-euro-association.de/entities/okazio-s-r-o</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://micatracker.digital-euro-association.de/entities/tatra-banka-a-s</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

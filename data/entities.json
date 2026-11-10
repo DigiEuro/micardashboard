@@ -1,7 +1,7 @@
 {
-  "sourceRows": 392,
-  "entityCount": 389,
-  "keyedByLei": 386,
+  "sourceRows": 397,
+  "entityCount": 394,
+  "keyedByLei": 391,
   "entities": [
     {
       "entityKey": "5493007WZ7IFULIL8G21",
@@ -7274,6 +7274,52 @@
       "firstSeen": "2026-10-07"
     },
     {
+      "entityKey": "529900LZDW2COOVSK824",
+      "keySource": "lei",
+      "slug": "vr-bank-amberg-sulzbach-eg",
+      "lei": "529900LZDW2COOVSK824",
+      "name": "VR Bank Amberg-Sulzbach eG",
+      "alsoKnownAs": [],
+      "country": "Germany",
+      "authorities": [
+        "BaFin"
+      ],
+      "services": [
+        "execution"
+      ],
+      "websites": [
+        "https://www.vr-as.de"
+      ],
+      "websitesRaw": [],
+      "authorisations": [
+        {
+          "sourceRow": 158,
+          "sourceId": 158,
+          "name": "VR Bank Amberg-Sulzbach eG",
+          "country": "Germany",
+          "authority": "BaFin",
+          "services": [
+            "execution"
+          ],
+          "servicesRaw": [
+            "execution"
+          ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+          "websites": [
+            "https://www.vr-as.de"
+          ],
+          "websitesRaw": [],
+          "websiteRepairs": [
+            {
+              "raw": "www.vr-as.de",
+              "url": "https://www.vr-as.de"
+            }
+          ]
+        }
+      ],
+      "firstSeen": "2026-11-10"
+    },
+    {
       "entityKey": "529900JONLIJEZUYT574",
       "keySource": "lei",
       "slug": "raiffeisenbank-rehling-eg",
@@ -7293,8 +7339,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 158,
-          "sourceId": 158,
+          "sourceRow": 159,
+          "sourceId": 159,
           "name": "Raiffeisenbank Rehling eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7334,8 +7380,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 159,
-          "sourceId": 159,
+          "sourceRow": 160,
+          "sourceId": 160,
           "name": "VR GenoBank DonauWald eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7376,8 +7422,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 160,
-          "sourceId": 160,
+          "sourceRow": 161,
+          "sourceId": 161,
           "name": "Openbank Deutschland AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7420,8 +7466,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 161,
-          "sourceId": 161,
+          "sourceRow": 162,
+          "sourceId": 162,
           "name": "KSW Vermögensverwaltung AG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7463,8 +7509,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 162,
-          "sourceId": 162,
+          "sourceRow": 163,
+          "sourceId": 163,
           "name": "VR-Bank Alb-Blau-Donau eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7504,8 +7550,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 163,
-          "sourceId": 163,
+          "sourceRow": 164,
+          "sourceId": 164,
           "name": "Volksbank eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7545,8 +7591,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 164,
-          "sourceId": 164,
+          "sourceRow": 165,
+          "sourceId": 165,
           "name": "VR Bank im südlichen Franken eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7586,8 +7632,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 165,
-          "sourceId": 165,
+          "sourceRow": 166,
+          "sourceId": 166,
           "name": "VR Bank Lahn-Dill eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7627,8 +7673,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 166,
-          "sourceId": 166,
+          "sourceRow": 167,
+          "sourceId": 167,
           "name": "Volksbank in der Region eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7668,8 +7714,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 167,
-          "sourceId": 167,
+          "sourceRow": 168,
+          "sourceId": 168,
           "name": "Volksbank Mittlerer Neckar eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7709,8 +7755,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 168,
-          "sourceId": 168,
+          "sourceRow": 169,
+          "sourceId": 169,
           "name": "Sparda-Bank Baden-Württemberg eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7750,8 +7796,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 169,
-          "sourceId": 169,
+          "sourceRow": 170,
+          "sourceId": 170,
           "name": "Raiffeisenbank Eifel eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7791,8 +7837,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 170,
-          "sourceId": 170,
+          "sourceRow": 171,
+          "sourceId": 171,
           "name": "Volksbank Niederrhein eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7832,8 +7878,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 171,
-          "sourceId": 171,
+          "sourceRow": 172,
+          "sourceId": 172,
           "name": "Volksbank in Ostwestfalen eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7873,8 +7919,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 172,
-          "sourceId": 172,
+          "sourceRow": 173,
+          "sourceId": 173,
           "name": "Volksbank Oberberg eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7914,8 +7960,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 173,
-          "sourceId": 173,
+          "sourceRow": 174,
+          "sourceId": 174,
           "name": "Volksbank in der Hohen Mark eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7955,8 +8001,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 174,
-          "sourceId": 174,
+          "sourceRow": 175,
+          "sourceId": 175,
           "name": "Raiffeisen-Volksbank Ebersberg eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -7996,8 +8042,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 175,
-          "sourceId": 175,
+          "sourceRow": 176,
+          "sourceId": 176,
           "name": "Volksbank Raiffeisenbank Regensburg-Schwandorf eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -8037,8 +8083,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 176,
-          "sourceId": 176,
+          "sourceRow": 177,
+          "sourceId": 177,
           "name": "Raiffeisenbank Wittelsbacher Land eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -8078,8 +8124,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 177,
-          "sourceId": 177,
+          "sourceRow": 178,
+          "sourceId": 178,
           "name": "Raiffeisenbank Kirchweihtal eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -8119,8 +8165,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 178,
-          "sourceId": 178,
+          "sourceRow": 179,
+          "sourceId": 179,
           "name": "VR Bank Neuburg-Rain eG",
           "country": "Germany",
           "authority": "BaFin",
@@ -8139,6 +8185,101 @@
         }
       ],
       "firstSeen": "2026-11-02"
+    },
+    {
+      "entityKey": "5299009EELDZG8AZOX61",
+      "keySource": "lei",
+      "slug": "vr-bank-ostalb-eg",
+      "lei": "5299009EELDZG8AZOX61",
+      "name": "VR-Bank Ostalb eG",
+      "alsoKnownAs": [],
+      "country": "Germany",
+      "authorities": [
+        "BaFin"
+      ],
+      "services": [
+        "execution"
+      ],
+      "websites": [
+        "https://www.vrbank-ostalb.de"
+      ],
+      "websitesRaw": [],
+      "authorisations": [
+        {
+          "sourceRow": 180,
+          "sourceId": 180,
+          "name": "VR-Bank Ostalb eG",
+          "country": "Germany",
+          "authority": "BaFin",
+          "services": [
+            "execution"
+          ],
+          "servicesRaw": [
+            "execution"
+          ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+          "websites": [
+            "https://www.vrbank-ostalb.de"
+          ],
+          "websitesRaw": [],
+          "websiteRepairs": [
+            {
+              "raw": "www.vrbank-ostalb.de",
+              "url": "https://www.vrbank-ostalb.de"
+            }
+          ]
+        }
+      ],
+      "firstSeen": "2026-11-10"
+    },
+    {
+      "entityKey": "529900V2CC4NGZDBFK67",
+      "keySource": "lei",
+      "slug": "capricorn-capital-gmbh-co-kg",
+      "lei": "529900V2CC4NGZDBFK67",
+      "name": "Capricorn Capital GmbH & Co. KG",
+      "alsoKnownAs": [],
+      "country": "Germany",
+      "authorities": [
+        "BaFin"
+      ],
+      "services": [
+        "advice",
+        "portfolio mgmt"
+      ],
+      "websites": [
+        "https://www.capricorn-capital.de"
+      ],
+      "websitesRaw": [],
+      "authorisations": [
+        {
+          "sourceRow": 181,
+          "sourceId": 181,
+          "name": "Capricorn Capital GmbH & Co. KG",
+          "country": "Germany",
+          "authority": "BaFin",
+          "services": [
+            "advice",
+            "portfolio mgmt"
+          ],
+          "servicesRaw": [
+            "advice",
+            "portfolio mgmt"
+          ],
+          "serviceCodeRaw": "h. providing advice on crypto-assets|i.providing portfolio management on crypto-assets",
+          "websites": [
+            "https://www.capricorn-capital.de"
+          ],
+          "websitesRaw": [],
+          "websiteRepairs": [
+            {
+              "raw": "www.capricorn-capital.de",
+              "url": "https://www.capricorn-capital.de"
+            }
+          ]
+        }
+      ],
+      "firstSeen": "2026-11-10"
     },
     {
       "entityKey": "9845000E4A7414709361",
@@ -8166,8 +8307,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 179,
-          "sourceId": 179,
+          "sourceRow": 182,
+          "sourceId": 182,
           "name": "Penning Financial Services ApS",
           "country": "Denmark",
           "authority": "DFSA",
@@ -8220,8 +8361,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 180,
-          "sourceId": 180,
+          "sourceRow": 183,
+          "sourceId": 183,
           "name": "Lunar Block A/S",
           "country": "Denmark",
           "authority": "DFSA",
@@ -8266,8 +8407,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 181,
-          "sourceId": 181,
+          "sourceRow": 184,
+          "sourceId": 184,
           "name": "GC Exchange A/S",
           "country": "Denmark",
           "authority": "DFSA",
@@ -8315,8 +8456,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 182,
-          "sourceId": 182,
+          "sourceRow": 185,
+          "sourceId": 185,
           "name": "Northstake ApS",
           "country": "Denmark",
           "authority": "DFSA",
@@ -8363,8 +8504,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 183,
-          "sourceId": 183,
+          "sourceRow": 186,
+          "sourceId": 186,
           "name": "Coinify ApS",
           "country": "Denmark",
           "authority": "DFSA",
@@ -8412,8 +8553,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 184,
-          "sourceId": 184,
+          "sourceRow": 187,
+          "sourceId": 187,
           "name": "Januar ApS",
           "country": "Denmark",
           "authority": "DFSA",
@@ -8457,8 +8598,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 185,
-          "sourceId": 185,
+          "sourceRow": 188,
+          "sourceId": 188,
           "name": "SafeLynx Technologies ApS",
           "country": "Denmark",
           "authority": "DFSA",
@@ -8500,8 +8641,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 186,
-          "sourceId": 186,
+          "sourceRow": 189,
+          "sourceId": 189,
           "name": "Lightyear Europe AS",
           "country": "Estonia",
           "authority": "EFSA",
@@ -8546,8 +8687,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 187,
-          "sourceId": 187,
+          "sourceRow": 190,
+          "sourceId": 190,
           "name": "AS LHV Pank",
           "country": "Estonia",
           "authority": "EFSA",
@@ -8592,8 +8733,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 188,
-          "sourceId": 188,
+          "sourceRow": 191,
+          "sourceId": 191,
           "name": "Lightspark Payments Europe AS",
           "country": "Estonia",
           "authority": "EFSA",
@@ -8641,8 +8782,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 189,
-          "sourceId": 189,
+          "sourceRow": 192,
+          "sourceId": 192,
           "name": "Banco Bilbao Vizcaya Argentaria S.A.",
           "country": "Spain",
           "authority": "CNMV",
@@ -8687,8 +8828,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 190,
-          "sourceId": 190,
+          "sourceRow": 193,
+          "sourceId": 193,
           "name": "OPEN BANK S.A.",
           "country": "Spain",
           "authority": "CNMV",
@@ -8732,8 +8873,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 191,
-          "sourceId": 191,
+          "sourceRow": 194,
+          "sourceId": 194,
           "name": "CECABANK S.A.",
           "country": "Spain",
           "authority": "CNMV",
@@ -8783,8 +8924,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 192,
-          "sourceId": 192,
+          "sourceRow": 195,
+          "sourceId": 195,
           "name": "Bitcoinforme S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -8838,8 +8979,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 193,
-          "sourceId": 193,
+          "sourceRow": 196,
+          "sourceId": 196,
           "name": "RENTA 4 BANCO S.A.",
           "country": "Spain",
           "authority": "CNMV",
@@ -8885,8 +9026,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 194,
-          "sourceId": 194,
+          "sourceRow": 197,
+          "sourceId": 197,
           "name": "KUTXABANK S.A.",
           "country": "Spain",
           "authority": "CNMV",
@@ -8933,8 +9074,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 195,
-          "sourceId": 195,
+          "sourceRow": 198,
+          "sourceId": 198,
           "name": "CAIXABANK S.A.",
           "country": "Spain",
           "authority": "CNMV",
@@ -8981,8 +9122,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 196,
-          "sourceId": 196,
+          "sourceRow": 199,
+          "sourceId": 199,
           "name": "DUE NETWORK S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9026,8 +9167,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 197,
-          "sourceId": 197,
+          "sourceRow": 200,
+          "sourceId": 200,
           "name": "CROSSMINT EUROPE S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9074,8 +9215,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 198,
-          "sourceId": 198,
+          "sourceRow": 201,
+          "sourceId": 201,
           "name": "CRIPTAN TRADE S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9127,8 +9268,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 199,
-          "sourceId": 199,
+          "sourceRow": 202,
+          "sourceId": 202,
           "name": "MINOS GLOBAL S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9182,8 +9323,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 200,
-          "sourceId": 200,
+          "sourceRow": 203,
+          "sourceId": 203,
           "name": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES S.L.U.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9227,8 +9368,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 201,
-          "sourceId": 201,
+          "sourceRow": 204,
+          "sourceId": 204,
           "name": "IQANA TECHNOLOGIES S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9268,8 +9409,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 202,
-          "sourceId": 202,
+          "sourceRow": 205,
+          "sourceId": 205,
           "name": "BASQUE PAY S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9309,8 +9450,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 203,
-          "sourceId": 203,
+          "sourceRow": 206,
+          "sourceId": 206,
           "name": "FINTECH PAYMENTS PSC S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9352,8 +9493,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 204,
-          "sourceId": 204,
+          "sourceRow": 207,
+          "sourceId": 207,
           "name": "PRAKMA MARKETS S.L.",
           "country": "Spain",
           "authority": "CNMV",
@@ -9400,8 +9541,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 205,
-          "sourceId": 205,
+          "sourceRow": 208,
+          "sourceId": 208,
           "name": "Coinmotion Oy",
           "country": "Finland",
           "authority": "FIN-FSA",
@@ -9451,8 +9592,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 206,
-          "sourceId": 206,
+          "sourceRow": 209,
+          "sourceId": 209,
           "name": "Tesseract Investment Oy",
           "country": "Finland",
           "authority": "FIN-FSA",
@@ -9500,8 +9641,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 207,
-          "sourceId": 207,
+          "sourceRow": 210,
+          "sourceId": 210,
           "name": "Bittimaatti Oy",
           "country": "Finland",
           "authority": "FIN-FSA",
@@ -9544,8 +9685,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 208,
-          "sourceId": 208,
+          "sourceRow": 211,
+          "sourceId": 211,
           "name": "NorthCrypto Oy",
           "country": "Finland",
           "authority": "FIN-FSA",
@@ -9594,8 +9735,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 209,
-          "sourceId": 209,
+          "sourceRow": 212,
+          "sourceId": 212,
           "name": "Kvarn Capital Oy",
           "country": "Finland",
           "authority": "FIN-FSA",
@@ -9643,8 +9784,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 210,
-          "sourceId": 210,
+          "sourceRow": 213,
+          "sourceId": 213,
           "name": "DEBLOCK SAS",
           "country": "France",
           "authority": "AMF",
@@ -9694,8 +9835,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 211,
-          "sourceId": 211,
+          "sourceRow": 214,
+          "sourceId": 214,
           "name": "GOin SAS",
           "country": "France",
           "authority": "AMF",
@@ -9749,8 +9890,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 212,
-          "sourceId": 212,
+          "sourceRow": 215,
+          "sourceId": 215,
           "name": "CACEIS BANK",
           "country": "France",
           "authority": "AMF",
@@ -9798,8 +9939,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 213,
-          "sourceId": 213,
+          "sourceRow": 216,
+          "sourceId": 216,
           "name": "BITSTACK DIGITAL ASSETS SAS",
           "country": "France",
           "authority": "AMF",
@@ -9850,8 +9991,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 214,
-          "sourceId": 214,
+          "sourceRow": 217,
+          "sourceId": 217,
           "name": "METAL GEAR SAS",
           "country": "France",
           "authority": "AMF",
@@ -9898,8 +10039,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 215,
-          "sourceId": 215,
+          "sourceRow": 218,
+          "sourceId": 218,
           "name": "COINSHARES ASSET MANAGEMENT",
           "country": "France",
           "authority": "AMF",
@@ -9946,8 +10087,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 216,
-          "sourceId": 216,
+          "sourceRow": 219,
+          "sourceId": 219,
           "name": "FINCTEK UE SAS",
           "country": "France",
           "authority": "AMF",
@@ -9997,8 +10138,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 217,
-          "sourceId": 217,
+          "sourceRow": 220,
+          "sourceId": 220,
           "name": "RELAI EU SASU",
           "country": "France",
           "authority": "AMF",
@@ -10040,8 +10181,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 218,
-          "sourceId": 218,
+          "sourceRow": 221,
+          "sourceId": 221,
           "name": "SOCIETE GENERALE - FORGE",
           "country": "France",
           "authority": "AMF",
@@ -10091,8 +10232,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 219,
-          "sourceId": 219,
+          "sourceRow": 222,
+          "sourceId": 222,
           "name": "BANQUE DELUBAC ET CIE",
           "country": "France",
           "authority": "AMF",
@@ -10146,8 +10287,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 220,
-          "sourceId": 220,
+          "sourceRow": 223,
+          "sourceId": 223,
           "name": "COMETH SAS",
           "country": "France",
           "authority": "AMF",
@@ -10195,8 +10336,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 221,
-          "sourceId": 221,
+          "sourceRow": 224,
+          "sourceId": 224,
           "name": "FIPTO PI SAS",
           "country": "France",
           "authority": "AMF",
@@ -10248,8 +10389,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 222,
-          "sourceId": 222,
+          "sourceRow": 225,
+          "sourceId": 225,
           "name": "HEXARQ SAS",
           "country": "France",
           "authority": "AMF",
@@ -10302,8 +10443,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 223,
-          "sourceId": 223,
+          "sourceRow": 226,
+          "sourceId": 226,
           "name": "BLOCKNODES SAS",
           "country": "France",
           "authority": "AMF",
@@ -10354,8 +10495,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 224,
-          "sourceId": 224,
+          "sourceRow": 227,
+          "sourceId": 227,
           "name": "CIRCLE INTERNET FINANCIAL EUROPE SAS",
           "country": "France",
           "authority": "AMF",
@@ -10402,8 +10543,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 225,
-          "sourceId": 225,
+          "sourceRow": 228,
+          "sourceId": 228,
           "name": "DESKOIN SAS",
           "country": "France",
           "authority": "AMF",
@@ -10459,8 +10600,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 226,
-          "sourceId": 226,
+          "sourceRow": 229,
+          "sourceId": 229,
           "name": "COINHOUSE SAS",
           "country": "France",
           "authority": "AMF",
@@ -10517,8 +10658,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 227,
-          "sourceId": 227,
+          "sourceRow": 230,
+          "sourceId": 230,
           "name": "QWARKS SAS",
           "country": "France",
           "authority": "AMF",
@@ -10570,8 +10711,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 228,
-          "sourceId": 228,
+          "sourceRow": 231,
+          "sourceId": 231,
           "name": "PAYTOP SAS",
           "country": "France",
           "authority": "AMF",
@@ -10619,8 +10760,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 229,
-          "sourceId": 229,
+          "sourceRow": 232,
+          "sourceId": 232,
           "name": "RUFIJI CAPITAL SAS",
           "country": "France",
           "authority": "AMF",
@@ -10672,8 +10813,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 230,
-          "sourceId": 230,
+          "sourceRow": 233,
+          "sourceId": 233,
           "name": "KEYROCK FR SAS",
           "country": "France",
           "authority": "AMF",
@@ -10721,8 +10862,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 231,
-          "sourceId": 231,
+          "sourceRow": 234,
+          "sourceId": 234,
           "name": "Bpifrance Investissement",
           "country": "France",
           "authority": "AMF",
@@ -10763,8 +10904,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 232,
-          "sourceId": 232,
+          "sourceRow": 235,
+          "sourceId": 235,
           "name": "RCUBE ASSET MANAGEMENT",
           "country": "France",
           "authority": "AMF",
@@ -10811,8 +10952,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 233,
-          "sourceId": 233,
+          "sourceRow": 236,
+          "sourceId": 236,
           "name": "PAYMIUM SAS",
           "country": "France",
           "authority": "AMF",
@@ -10862,8 +11003,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 234,
-          "sourceId": 234,
+          "sourceRow": 237,
+          "sourceId": 237,
           "name": "LEONOD SARL",
           "country": "France",
           "authority": "AMF",
@@ -10908,8 +11049,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 235,
-          "sourceId": 235,
+          "sourceRow": 238,
+          "sourceId": 238,
           "name": "MERIA SAS",
           "country": "France",
           "authority": "AMF",
@@ -10962,8 +11103,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 236,
-          "sourceId": 236,
+          "sourceRow": 239,
+          "sourceId": 239,
           "name": "ALPHACAP DIGITAL ASSETS SAS",
           "country": "France",
           "authority": "AMF",
@@ -11013,8 +11154,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 237,
-          "sourceId": 237,
+          "sourceRow": 240,
+          "sourceId": 240,
           "name": "FLOWDESK EUROPE SAS",
           "country": "France",
           "authority": "AMF",
@@ -11066,8 +11207,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 238,
-          "sourceId": 238,
+          "sourceRow": 241,
+          "sourceId": 241,
           "name": "APLO SAS",
           "country": "France",
           "authority": "AMF",
@@ -11117,8 +11258,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 239,
-          "sourceId": 239,
+          "sourceRow": 242,
+          "sourceId": 242,
           "name": "ICEBLOCK SAS",
           "country": "France",
           "authority": "AMF",
@@ -11163,8 +11304,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 240,
-          "sourceId": 240,
+          "sourceRow": 243,
+          "sourceId": 243,
           "name": "MEREAU FINANCE SAS",
           "country": "France",
           "authority": "AMF",
@@ -11208,8 +11349,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 241,
-          "sourceId": 241,
+          "sourceRow": 244,
+          "sourceId": 244,
           "name": "FINARY SAS",
           "country": "France",
           "authority": "AMF",
@@ -11255,8 +11396,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 242,
-          "sourceId": 242,
+          "sourceRow": 245,
+          "sourceId": 245,
           "name": "WOORTON SAS",
           "country": "France",
           "authority": "AMF",
@@ -11305,8 +11446,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 243,
-          "sourceId": 243,
+          "sourceRow": 246,
+          "sourceId": 246,
           "name": "BLOCKCHAIN PROCESS SECURITY (B.P.S.) SAS",
           "country": "France",
           "authority": "AMF",
@@ -11358,8 +11499,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 244,
-          "sourceId": 244,
+          "sourceRow": 247,
+          "sourceId": 247,
           "name": "SHARES FINANCIAL ASSETS SAS",
           "country": "France",
           "authority": "AMF",
@@ -11407,8 +11548,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 245,
-          "sourceId": 245,
+          "sourceRow": 248,
+          "sourceId": 248,
           "name": "REGULAR FINANCE SAS",
           "country": "France",
           "authority": "AMF",
@@ -11456,8 +11597,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 246,
-          "sourceId": 246,
+          "sourceRow": 249,
+          "sourceId": 249,
           "name": "BCASH SOCIETE ANONYME",
           "country": "Greece",
           "authority": "HCMC",
@@ -11497,8 +11638,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 247,
-          "sourceId": 247,
+          "sourceRow": 250,
+          "sourceId": 250,
           "name": "XENIOS BLOCKCHAIN GROUP S.A.",
           "country": "Greece",
           "authority": "HCMC",
@@ -11543,8 +11684,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 248,
-          "sourceId": 248,
+          "sourceRow": 251,
+          "sourceId": 251,
           "name": "CAPITAL WALLET GREECE S.A.",
           "country": "Greece",
           "authority": "HCMC",
@@ -11597,8 +11738,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 249,
-          "sourceId": 249,
+          "sourceRow": 252,
+          "sourceId": 252,
           "name": "PIRAEUS BANK Société Anonyme (S.A.)",
           "country": "Greece",
           "authority": "Bank of Greece",
@@ -11646,8 +11787,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 250,
-          "sourceId": 250,
+          "sourceRow": 253,
+          "sourceId": 253,
           "name": "ELECTROCOIN Ltd for services",
           "country": "Croatia",
           "authority": "HANFA",
@@ -11694,8 +11835,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 251,
-          "sourceId": 251,
+          "sourceRow": 254,
+          "sourceId": 254,
           "name": "WHITE TECH Limited liability company for services",
           "country": "Croatia",
           "authority": "HANFA",
@@ -11746,8 +11887,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 252,
-          "sourceId": 252,
+          "sourceRow": 255,
+          "sourceId": 255,
           "name": "DIGITAL ASSETS Limited liability company for intermediation and services",
           "country": "Croatia",
           "authority": "HANFA",
@@ -11797,8 +11938,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 253,
-          "sourceId": 253,
+          "sourceRow": 256,
+          "sourceId": 256,
           "name": "Bitblock Ltd. for Services",
           "country": "Croatia",
           "authority": "HANFA",
@@ -11838,8 +11979,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 254,
-          "sourceId": 254,
+          "sourceRow": 257,
+          "sourceId": 257,
           "name": "IN KAPITAL limited liability company for trade and services",
           "country": "Croatia",
           "authority": "HANFA",
@@ -11879,8 +12020,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 255,
-          "sourceId": 255,
+          "sourceRow": 258,
+          "sourceId": 258,
           "name": "Hrvatska poštanska banka d.d.",
           "country": "Croatia",
           "authority": "Croatian National Bank",
@@ -11920,8 +12061,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 256,
-          "sourceId": 256,
+          "sourceRow": 259,
+          "sourceId": 259,
           "name": "Payward Global Solutions Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -11968,8 +12109,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 257,
-          "sourceId": 257,
+          "sourceRow": 260,
+          "sourceId": 260,
           "name": "Payward Europe Solutions Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12024,8 +12165,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 258,
-          "sourceId": 258,
+          "sourceRow": 261,
+          "sourceId": 261,
           "name": "Legend Financial Ireland Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12068,8 +12209,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 259,
-          "sourceId": 259,
+          "sourceRow": 262,
+          "sourceId": 262,
           "name": "Push Virtual Assets Ireland Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12111,8 +12252,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 260,
-          "sourceId": 260,
+          "sourceRow": 263,
+          "sourceId": 263,
           "name": "Ramp Swaps (Ireland) Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12155,8 +12296,8 @@
       ],
       "authorisations": [
         {
-          "sourceRow": 261,
-          "sourceId": 261,
+          "sourceRow": 264,
+          "sourceId": 264,
           "name": "Paysafe Payment Solutions Limited.",
           "country": "Ireland",
           "authority": "CBI",
@@ -12205,8 +12346,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 262,
-          "sourceId": 262,
+          "sourceRow": 265,
+          "sourceId": 265,
           "name": "CoinJar Europe Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12254,8 +12395,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 263,
-          "sourceId": 263,
+          "sourceRow": 266,
+          "sourceId": 266,
           "name": "Confirmo Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12302,8 +12443,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 264,
-          "sourceId": 264,
+          "sourceRow": 267,
+          "sourceId": 267,
           "name": "Pionew Ireland Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12354,8 +12495,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 265,
-          "sourceId": 265,
+          "sourceRow": 268,
+          "sourceId": 268,
           "name": "StoneX Digital International Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12405,8 +12546,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 266,
-          "sourceId": 266,
+          "sourceRow": 269,
+          "sourceId": 269,
           "name": "Interactive Brokers Ireland Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12447,8 +12588,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 267,
-          "sourceId": 267,
+          "sourceRow": 270,
+          "sourceId": 270,
           "name": "Virtu Financial Ireland Limited",
           "country": "Ireland",
           "authority": "CBI",
@@ -12493,8 +12634,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 268,
-          "sourceId": 268,
+          "sourceRow": 271,
+          "sourceId": 271,
           "name": "Myntkaup ehf.",
           "country": "Iceland",
           "authority": "Central Bank of Iceland",
@@ -12544,8 +12685,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 269,
-          "sourceId": 269,
+          "sourceRow": 272,
+          "sourceId": 272,
           "name": "CHECKSIG S.R.L. SOCIETÀ BENEFIT",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12593,8 +12734,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 270,
-          "sourceId": 270,
+          "sourceRow": 273,
+          "sourceId": 273,
           "name": "OLLIV ITALIA S.R.L.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12636,8 +12777,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 271,
-          "sourceId": 271,
+          "sourceRow": 274,
+          "sourceId": 274,
           "name": "RIV-DIGITAL S.R.L.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12686,8 +12827,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 272,
-          "sourceId": 272,
+          "sourceRow": 275,
+          "sourceId": 275,
           "name": "CONIO S.R.L.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12738,8 +12879,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 273,
-          "sourceId": 273,
+          "sourceRow": 276,
+          "sourceId": 276,
           "name": "BANCA SELLA",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12786,8 +12927,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 274,
-          "sourceId": 274,
+          "sourceRow": 277,
+          "sourceId": 277,
           "name": "CRYPTOSMART S.P.A.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12844,8 +12985,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 275,
-          "sourceId": 275,
+          "sourceRow": 278,
+          "sourceId": 278,
           "name": "YOUNG PLATFORM S.P.A.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12900,8 +13041,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 276,
-          "sourceId": 276,
+          "sourceRow": 279,
+          "sourceId": 279,
           "name": "HODLIE S.R.L.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12946,8 +13087,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 277,
-          "sourceId": 277,
+          "sourceRow": 280,
+          "sourceId": 280,
           "name": "HERCLE S.R.L.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -12997,8 +13138,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 278,
-          "sourceId": 278,
+          "sourceRow": 281,
+          "sourceId": 281,
           "name": "YOUHODLER ITALY S.R.L.",
           "country": "Italy",
           "authority": "CONSOB",
@@ -13046,8 +13187,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 279,
-          "sourceId": 279,
+          "sourceRow": 282,
+          "sourceId": 282,
           "name": "ZEUS Anstalt für Vermögensverwaltung",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13090,8 +13231,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 280,
-          "sourceId": 280,
+          "sourceRow": 283,
+          "sourceId": 283,
           "name": "LGT Bank AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13139,8 +13280,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 281,
-          "sourceId": 281,
+          "sourceRow": 284,
+          "sourceId": 284,
           "name": "Bank Frick AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13184,8 +13325,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 282,
-          "sourceId": 282,
+          "sourceRow": 285,
+          "sourceId": 285,
           "name": "Wyden Capital AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13228,8 +13369,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 283,
-          "sourceId": 283,
+          "sourceRow": 286,
+          "sourceId": 286,
           "name": "Celsion Bank AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13277,8 +13418,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 284,
-          "sourceId": 284,
+          "sourceRow": 287,
+          "sourceId": 287,
           "name": "RULEMATCH Europe AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13326,8 +13467,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 285,
-          "sourceId": 285,
+          "sourceRow": 288,
+          "sourceId": 288,
           "name": "Floin AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13380,8 +13521,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 286,
-          "sourceId": 286,
+          "sourceRow": 289,
+          "sourceId": 289,
           "name": "Bitcoin Suisse (Europe) AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13434,8 +13575,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 287,
-          "sourceId": 287,
+          "sourceRow": 290,
+          "sourceId": 290,
           "name": "Sygnum Europe AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13485,8 +13626,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 288,
-          "sourceId": 288,
+          "sourceRow": 291,
+          "sourceId": 291,
           "name": "SMART VALOR AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13537,8 +13678,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 289,
-          "sourceId": 289,
+          "sourceRow": 292,
+          "sourceId": 292,
           "name": "Kaiser Partner Privatbank AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13585,8 +13726,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 290,
-          "sourceId": 290,
+          "sourceRow": 293,
+          "sourceId": 293,
           "name": "Paymonade AG",
           "country": "Liechtenstein",
           "authority": "FMA",
@@ -13631,8 +13772,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 291,
-          "sourceId": 291,
+          "sourceRow": 294,
+          "sourceId": 294,
           "name": "Robinhood Europe UAB",
           "country": "Lithuania",
           "authority": "LSC",
@@ -13681,8 +13822,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 292,
-          "sourceId": 292,
+          "sourceRow": 295,
+          "sourceId": 295,
           "name": "UAB Decentralized",
           "country": "Lithuania",
           "authority": "LSC",
@@ -13731,8 +13872,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 293,
-          "sourceId": 293,
+          "sourceRow": 296,
+          "sourceId": 296,
           "name": "Nuvei Liquidity UAB",
           "country": "Lithuania",
           "authority": "LSC",
@@ -13783,8 +13924,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 294,
-          "sourceId": 294,
+          "sourceRow": 297,
+          "sourceId": 297,
           "name": "UAB Micar assets",
           "country": "Lithuania",
           "authority": "LSC",
@@ -13835,8 +13976,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 295,
-          "sourceId": 295,
+          "sourceRow": 298,
+          "sourceId": 298,
           "name": "Newrails, UAB",
           "country": "Lithuania",
           "authority": "LSC",
@@ -13878,8 +14019,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 296,
-          "sourceId": 296,
+          "sourceRow": 299,
+          "sourceId": 299,
           "name": "UAB BLUE EMI LT",
           "country": "Lithuania",
           "authority": "LSC",
@@ -13919,8 +14060,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 297,
-          "sourceId": 297,
+          "sourceRow": 300,
+          "sourceId": 300,
           "name": "Clearstream Banking S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -13966,8 +14107,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 298,
-          "sourceId": 298,
+          "sourceRow": 301,
+          "sourceId": 301,
           "name": "Bitstamp Europe S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14025,8 +14166,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 299,
-          "sourceId": 299,
+          "sourceRow": 302,
+          "sourceId": 302,
           "name": "Coinbase Luxembourg S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14079,8 +14220,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 300,
-          "sourceId": 300,
+          "sourceRow": 303,
+          "sourceId": 303,
           "name": "Zodia Custody (Europe) S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14124,8 +14265,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 301,
-          "sourceId": 301,
+          "sourceRow": 304,
+          "sourceId": 304,
           "name": "Banking Circle S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14171,8 +14312,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 302,
-          "sourceId": 302,
+          "sourceRow": 305,
+          "sourceId": 305,
           "name": "Swissquote Bank Europe SA",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14218,8 +14359,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 303,
-          "sourceId": 303,
+          "sourceRow": 306,
+          "sourceId": 306,
           "name": "B2C2 Europe Sarl",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14264,8 +14405,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 304,
-          "sourceId": 304,
+          "sourceRow": 307,
+          "sourceId": 307,
           "name": "STOKR S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14308,8 +14449,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 305,
-          "sourceId": 305,
+          "sourceRow": 308,
+          "sourceId": 308,
           "name": "Standard Chartered Luxembourg S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14355,8 +14496,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 306,
-          "sourceId": 306,
+          "sourceRow": 309,
+          "sourceId": 309,
           "name": "bitFlyer EUROPE S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14408,8 +14549,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 307,
-          "sourceId": 307,
+          "sourceRow": 310,
+          "sourceId": 310,
           "name": "Bridge Building S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14461,8 +14602,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 308,
-          "sourceId": 308,
+          "sourceRow": 311,
+          "sourceId": 311,
           "name": "CPS Europe S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14512,8 +14653,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 309,
-          "sourceId": 309,
+          "sourceRow": 312,
+          "sourceId": 312,
           "name": "Ripple Payments Europe S.A.",
           "country": "Luxembourg",
           "authority": "CSSF",
@@ -14561,8 +14702,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 310,
-          "sourceId": 310,
+          "sourceRow": 313,
+          "sourceId": 313,
           "name": "BlockBen SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14612,8 +14753,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 311,
-          "sourceId": 311,
+          "sourceRow": 314,
+          "sourceId": 314,
           "name": "Nexdesk SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14662,8 +14803,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 312,
-          "sourceId": 312,
+          "sourceRow": 315,
+          "sourceId": 315,
           "name": "SIA \"Paybis Europe\"",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14717,8 +14858,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 313,
-          "sourceId": 313,
+          "sourceRow": 316,
+          "sourceId": 316,
           "name": "Neverless SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14770,8 +14911,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 314,
-          "sourceId": 314,
+          "sourceRow": 317,
+          "sourceId": 317,
           "name": "\"Trek Technologies\" SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14822,8 +14963,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 315,
-          "sourceId": 315,
+          "sourceRow": 318,
+          "sourceId": 318,
           "name": "AS TWINO Investments",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14874,8 +15015,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 316,
-          "sourceId": 316,
+          "sourceRow": 319,
+          "sourceId": 319,
           "name": "SIA AlphaRoute",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14928,8 +15069,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 317,
-          "sourceId": 317,
+          "sourceRow": 320,
+          "sourceId": 320,
           "name": "Hodleris SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -14976,8 +15117,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 318,
-          "sourceId": 318,
+          "sourceRow": 321,
+          "sourceId": 321,
           "name": "Bleap SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -15020,8 +15161,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 319,
-          "sourceId": 319,
+          "sourceRow": 322,
+          "sourceId": 322,
           "name": "Nodu Digital, SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -15064,8 +15205,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 320,
-          "sourceId": 320,
+          "sourceRow": 323,
+          "sourceId": 323,
           "name": "Atrya Technologies SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -15110,8 +15251,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 321,
-          "sourceId": 321,
+          "sourceRow": 324,
+          "sourceId": 324,
           "name": "Noah LV SIA",
           "country": "Latvia",
           "authority": "Latvijas Banka",
@@ -15165,8 +15306,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 322,
-          "sourceId": 322,
+          "sourceRow": 325,
+          "sourceId": 325,
           "name": "OKX Europe Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15227,8 +15368,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 323,
-          "sourceId": 323,
+          "sourceRow": 326,
+          "sourceId": 326,
           "name": "BP23 CA Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15283,8 +15424,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 324,
-          "sourceId": 324,
+          "sourceRow": 327,
+          "sourceId": 327,
           "name": "Foris DAX MT Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15341,8 +15482,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 325,
-          "sourceId": 325,
+          "sourceRow": 328,
+          "sourceId": 328,
           "name": "Zillion Bits Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15397,8 +15538,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 326,
-          "sourceId": 326,
+          "sourceRow": 329,
+          "sourceId": 329,
           "name": "Altarius Asset Management Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15446,8 +15587,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 327,
-          "sourceId": 327,
+          "sourceRow": 330,
+          "sourceId": 330,
           "name": "Gemini Intergalactic EU Ltd",
           "country": "Malta",
           "authority": "MFSA",
@@ -15503,8 +15644,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 328,
-          "sourceId": 328,
+          "sourceRow": 331,
+          "sourceId": 331,
           "name": "Socios Europe Services Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15557,8 +15698,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 329,
-          "sourceId": 329,
+          "sourceRow": 332,
+          "sourceId": 332,
           "name": "Gate Technology Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15612,8 +15753,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 330,
-          "sourceId": 330,
+          "sourceRow": 333,
+          "sourceId": 333,
           "name": "Blockchain.com Operations (Malta) Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15665,8 +15806,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 331,
-          "sourceId": 331,
+          "sourceRow": 334,
+          "sourceId": 334,
           "name": "Payhound Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15718,8 +15859,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 332,
-          "sourceId": 332,
+          "sourceRow": 335,
+          "sourceId": 335,
           "name": "Damex Digital LTD",
           "country": "Malta",
           "authority": "MFSA",
@@ -15771,8 +15912,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 333,
-          "sourceId": 333,
+          "sourceRow": 336,
+          "sourceId": 336,
           "name": "System Pay Services (Malta) Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15821,8 +15962,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 334,
-          "sourceId": 334,
+          "sourceRow": 337,
+          "sourceId": 337,
           "name": "Calamatta Cuschieri Investment Services Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15868,8 +16009,8 @@
       ],
       "authorisations": [
         {
-          "sourceRow": 335,
-          "sourceId": 335,
+          "sourceRow": 338,
+          "sourceId": 338,
           "name": "Olmipay Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -15918,8 +16059,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 336,
-          "sourceId": 336,
+          "sourceRow": 339,
+          "sourceId": 339,
           "name": "Stable Mint Ltd.",
           "country": "Malta",
           "authority": "MFSA",
@@ -15965,8 +16106,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 337,
-          "sourceId": 337,
+          "sourceRow": 340,
+          "sourceId": 340,
           "name": "OP Digital Services Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -16017,8 +16158,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 338,
-          "sourceId": 338,
+          "sourceRow": 341,
+          "sourceId": 341,
           "name": "Zap (Strike) Europe Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -16067,8 +16208,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 339,
-          "sourceId": 339,
+          "sourceRow": 342,
+          "sourceId": 342,
           "name": "Legion Malta Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -16118,8 +16259,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 340,
-          "sourceId": 340,
+          "sourceRow": 343,
+          "sourceId": 343,
           "name": "FalconX Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -16170,8 +16311,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 341,
-          "sourceId": 341,
+          "sourceRow": 344,
+          "sourceId": 344,
           "name": "CF Technologies Ltd",
           "country": "Malta",
           "authority": "MFSA",
@@ -16221,8 +16362,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 342,
-          "sourceId": 342,
+          "sourceRow": 345,
+          "sourceId": 345,
           "name": "Everest Network Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -16273,8 +16414,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 343,
-          "sourceId": 343,
+          "sourceRow": 346,
+          "sourceId": 346,
           "name": "Bequant Pro Limited",
           "country": "Malta",
           "authority": "MFSA",
@@ -16324,8 +16465,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 344,
-          "sourceId": 344,
+          "sourceRow": 347,
+          "sourceId": 347,
           "name": "VS Digital Europe Ltd.",
           "country": "Malta",
           "authority": "MFSA",
@@ -16354,6 +16495,53 @@
       "firstSeen": "2026-10-02"
     },
     {
+      "entityKey": "21380099RT73NFBYS559",
+      "keySource": "lei",
+      "slug": "sparkasse-bank-malta-plc",
+      "lei": "21380099RT73NFBYS559",
+      "name": "Sparkasse Bank Malta Plc",
+      "alsoKnownAs": [],
+      "country": "Malta",
+      "authorities": [
+        "MFSA"
+      ],
+      "services": [
+        "custody",
+        "execution",
+        "RTO"
+      ],
+      "websites": [
+        "https://sbm.bank/"
+      ],
+      "websitesRaw": [],
+      "authorisations": [
+        {
+          "sourceRow": 348,
+          "sourceId": 348,
+          "name": "Sparkasse Bank Malta Plc",
+          "country": "Malta",
+          "authority": "MFSA",
+          "services": [
+            "custody",
+            "execution",
+            "RTO"
+          ],
+          "servicesRaw": [
+            "custody",
+            "execution",
+            "RTO"
+          ],
+          "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |e. execution of orders for crypto-assets on behalf of clients |g. reception and transmission of orders for crypto-assets on behalf of clients",
+          "websites": [
+            "https://sbm.bank/"
+          ],
+          "websitesRaw": [],
+          "websiteRepairs": []
+        }
+      ],
+      "firstSeen": "2026-11-10"
+    },
+    {
       "entityKey": "254900KXWAZ3B1340G26",
       "keySource": "lei",
       "slug": "moonpay-europe-b-v",
@@ -16375,8 +16563,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 345,
-          "sourceId": 345,
+          "sourceRow": 349,
+          "sourceId": 349,
           "name": "MoonPay Europe B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16421,8 +16609,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 346,
-          "sourceId": 346,
+          "sourceRow": 350,
+          "sourceId": 350,
           "name": "BitStaete B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16465,8 +16653,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 347,
-          "sourceId": 347,
+          "sourceRow": 351,
+          "sourceId": 351,
           "name": "Zebedee Europe B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16512,8 +16700,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 348,
-          "sourceId": 348,
+          "sourceRow": 352,
+          "sourceId": 352,
           "name": "Hidden Road Partners CIV NL B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16559,8 +16747,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 349,
-          "sourceId": 349,
+          "sourceRow": 353,
+          "sourceId": 353,
           "name": "AvianLabs Netherlands B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16605,8 +16793,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 350,
-          "sourceId": 350,
+          "sourceRow": 354,
+          "sourceId": 354,
           "name": "Vivid Money B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16649,8 +16837,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 351,
-          "sourceId": 351,
+          "sourceRow": 355,
+          "sourceId": 355,
           "name": "One Trading Exchange B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16696,8 +16884,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 352,
-          "sourceId": 352,
+          "sourceRow": 356,
+          "sourceId": 356,
           "name": "Acheron Europe B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16747,8 +16935,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 353,
-          "sourceId": 353,
+          "sourceRow": 357,
+          "sourceId": 357,
           "name": "BTC Direct Europe B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16794,8 +16982,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 354,
-          "sourceId": 354,
+          "sourceRow": 358,
+          "sourceId": 358,
           "name": "Bitvavo B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16843,8 +17031,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 355,
-          "sourceId": 355,
+          "sourceRow": 359,
+          "sourceId": 359,
           "name": "Amdax B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16894,8 +17082,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 356,
-          "sourceId": 356,
+          "sourceRow": 360,
+          "sourceId": 360,
           "name": "Finst B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16944,8 +17132,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 357,
-          "sourceId": 357,
+          "sourceRow": 361,
+          "sourceId": 361,
           "name": "Decubate B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -16991,8 +17179,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 358,
-          "sourceId": 358,
+          "sourceRow": 362,
+          "sourceId": 362,
           "name": "Fiat Republic Netherlands B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17036,8 +17224,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 359,
-          "sourceId": 359,
+          "sourceRow": 363,
+          "sourceId": 363,
           "name": "BLOX B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17083,8 +17271,8 @@
       ],
       "authorisations": [
         {
-          "sourceRow": 360,
-          "sourceId": 360,
+          "sourceRow": 364,
+          "sourceId": 364,
           "name": "EU Internet Ventures B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17132,8 +17320,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 361,
-          "sourceId": 361,
+          "sourceRow": 365,
+          "sourceId": 365,
           "name": "zerohash europe B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17184,8 +17372,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 362,
-          "sourceId": 362,
+          "sourceRow": 366,
+          "sourceId": 366,
           "name": "Coinmerce B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17234,8 +17422,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 363,
-          "sourceId": 363,
+          "sourceRow": 367,
+          "sourceId": 367,
           "name": "Bitmymoney B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17284,8 +17472,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 364,
-          "sourceId": 364,
+          "sourceRow": 368,
+          "sourceId": 368,
           "name": "Bitonic B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17334,8 +17522,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 365,
-          "sourceId": 365,
+          "sourceRow": 369,
+          "sourceId": 369,
           "name": "Blockrise Capital B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17383,8 +17571,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 366,
-          "sourceId": 366,
+          "sourceRow": 370,
+          "sourceId": 370,
           "name": "Monflo B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17431,8 +17619,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 367,
-          "sourceId": 367,
+          "sourceRow": 371,
+          "sourceId": 371,
           "name": "WEB3 Technology B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17478,8 +17666,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 368,
-          "sourceId": 368,
+          "sourceRow": 372,
+          "sourceId": 372,
           "name": "D2X Group N.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17521,8 +17709,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 369,
-          "sourceId": 369,
+          "sourceRow": 373,
+          "sourceId": 373,
           "name": "ClearBank Europe N.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17568,8 +17756,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 370,
-          "sourceId": 370,
+          "sourceRow": 374,
+          "sourceId": 374,
           "name": "Change Securities B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17615,8 +17803,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 371,
-          "sourceId": 371,
+          "sourceRow": 375,
+          "sourceId": 375,
           "name": "Digital Currency Services B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17661,8 +17849,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 372,
-          "sourceId": 372,
+          "sourceRow": 376,
+          "sourceId": 376,
           "name": "Webull Securities (Europe) B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17705,8 +17893,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 373,
-          "sourceId": 373,
+          "sourceRow": 377,
+          "sourceId": 377,
           "name": "BitPay B.V.",
           "country": "Netherlands",
           "authority": "AFM",
@@ -17749,8 +17937,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 374,
-          "sourceId": 374,
+          "sourceRow": 378,
+          "sourceId": 378,
           "name": "AK JENSEN NORWAY AS",
           "country": "Norway",
           "authority": "NFSA",
@@ -17795,8 +17983,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 375,
-          "sourceId": 375,
+          "sourceRow": 379,
+          "sourceId": 379,
           "name": "TÝR MARKETS AS",
           "country": "Norway",
           "authority": "NFSA",
@@ -17847,8 +18035,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 376,
-          "sourceId": 376,
+          "sourceRow": 380,
+          "sourceId": 380,
           "name": "FIRI AS",
           "country": "Norway",
           "authority": "NFSA",
@@ -17900,8 +18088,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 377,
-          "sourceId": 377,
+          "sourceRow": 381,
+          "sourceId": 381,
           "name": "K33 MARKETS as",
           "country": "Norway",
           "authority": "NFSA",
@@ -17947,8 +18135,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 378,
-          "sourceId": 378,
+          "sourceRow": 382,
+          "sourceId": 382,
           "name": "BARE BITCOIN AS",
           "country": "Norway",
           "authority": "NFSA",
@@ -17998,8 +18186,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 379,
-          "sourceId": 379,
+          "sourceRow": 383,
+          "sourceId": 383,
           "name": "NORWEGIAN BLOCK EXCHANGE AS",
           "country": "Norway",
           "authority": "NFSA",
@@ -18058,8 +18246,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 380,
-          "sourceId": 380,
+          "sourceRow": 384,
+          "sourceId": 384,
           "name": "Bison Bank, S.A.",
           "country": "Portugal",
           "authority": "Banco de Portugal",
@@ -18116,8 +18304,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 381,
-          "sourceId": 381,
+          "sourceRow": 385,
+          "sourceId": 385,
           "name": "ILIRIKA borzno posredniška hiša d.d.",
           "country": "Slovenia",
           "authority": "ATVP",
@@ -18165,8 +18353,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 382,
-          "sourceId": 382,
+          "sourceRow": 386,
+          "sourceId": 386,
           "name": "INCREMENTUM poslovne storitve d.o.o.",
           "country": "Slovenia",
           "authority": "ATVP",
@@ -18211,8 +18399,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 383,
-          "sourceId": 383,
+          "sourceRow": 387,
+          "sourceId": 387,
           "name": "Orcabay finančne storitve d.o.o.",
           "country": "Slovenia",
           "authority": "ATVP",
@@ -18257,8 +18445,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 384,
-          "sourceId": 384,
+          "sourceRow": 388,
+          "sourceId": 388,
           "name": "GateHub Exchange družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o.",
           "country": "Slovenia",
           "authority": "ATVP",
@@ -18308,8 +18496,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 385,
-          "sourceId": 385,
+          "sourceRow": 389,
+          "sourceId": 389,
           "name": "ICONOMI EUROPE, borznoposredniška družba, d.o.o.",
           "country": "Slovenia",
           "authority": "ATVP",
@@ -18362,8 +18550,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 386,
-          "sourceId": 386,
+          "sourceRow": 390,
+          "sourceId": 390,
           "name": "Safello AB",
           "country": "Sweden",
           "authority": "Finansinspektionen",
@@ -18416,8 +18604,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 387,
-          "sourceId": 387,
+          "sourceRow": 391,
+          "sourceId": 391,
           "name": "Fintegence, s.r.o.",
           "country": "Slovakia",
           "authority": "NBS",
@@ -18466,8 +18654,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 388,
-          "sourceId": 388,
+          "sourceRow": 392,
+          "sourceId": 392,
           "name": "FINTECH SK s. r. o.",
           "country": "Slovakia",
           "authority": "NBS",
@@ -18520,8 +18708,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 389,
-          "sourceId": 389,
+          "sourceRow": 393,
+          "sourceId": 393,
           "name": "FUMBI, s.r.o.",
           "country": "Slovakia",
           "authority": "NBS",
@@ -18577,8 +18765,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 390,
-          "sourceId": 390,
+          "sourceRow": 394,
+          "sourceId": 394,
           "name": "Madison Six j. s. a.",
           "country": "Slovakia",
           "authority": "NBS",
@@ -18614,7 +18802,7 @@
       "keySource": "lei",
       "slug": "firefish-europe-s-r-o",
       "lei": "9845004E55FCFA069549",
-      "name": "Firefish Europe s.r.o",
+      "name": "Firefish Europe s.r.o.",
       "alsoKnownAs": [],
       "country": "Slovakia",
       "authorities": [
@@ -18632,9 +18820,9 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 391,
-          "sourceId": 391,
-          "name": "Firefish Europe s.r.o",
+          "sourceRow": 395,
+          "sourceId": 395,
+          "name": "Firefish Europe s.r.o.",
           "country": "Slovakia",
           "authority": "NBS",
           "services": [
@@ -18683,8 +18871,8 @@
       "websitesRaw": [],
       "authorisations": [
         {
-          "sourceRow": 392,
-          "sourceId": 392,
+          "sourceRow": 396,
+          "sourceId": 396,
           "name": "Okazio s.r.o.",
           "country": "Slovakia",
           "authority": "NBS",
@@ -18711,6 +18899,47 @@
         }
       ],
       "firstSeen": "2026-07-05"
+    },
+    {
+      "entityKey": "3157002JBFAI478MD587",
+      "keySource": "lei",
+      "slug": "tatra-banka-a-s",
+      "lei": "3157002JBFAI478MD587",
+      "name": "Tatra banka, a.s.",
+      "alsoKnownAs": [],
+      "country": "Slovakia",
+      "authorities": [
+        "NBS"
+      ],
+      "services": [
+        "execution"
+      ],
+      "websites": [
+        "https://www.tatrabanka.sk/"
+      ],
+      "websitesRaw": [],
+      "authorisations": [
+        {
+          "sourceRow": 397,
+          "sourceId": 397,
+          "name": "Tatra banka, a.s.",
+          "country": "Slovakia",
+          "authority": "NBS",
+          "services": [
+            "execution"
+          ],
+          "servicesRaw": [
+            "execution"
+          ],
+          "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+          "websites": [
+            "https://www.tatrabanka.sk/"
+          ],
+          "websitesRaw": [],
+          "websiteRepairs": []
+        }
+      ],
+      "firstSeen": "2026-11-10"
     }
   ]
 }
