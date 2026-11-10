@@ -1,5 +1,30 @@
 [
   {
+    "date": "2026-11-10",
+    "timestamp": "2026-11-10T08:23:33.141Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "VR Bank Amberg-Sulzbach eG (Germany)",
+          "VR-Bank Ostalb eG (Germany)",
+          "Capricorn Capital GmbH & Co. KG (Germany)",
+          "Sparkasse Bank Malta Plc (Malta)",
+          "Firefish Europe s.r.o. (Slovakia)",
+          "Tatra banka, a.s. (Slovakia)"
+        ],
+        "removed": [
+          "Firefish Europe s.r.o (Slovakia)"
+        ]
+      },
+      "nonCompliant": {
+        "added": [
+          "Renditanzia (Italy)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-11-02",
     "timestamp": "2026-11-02T13:55:28.750Z",
     "changes": {

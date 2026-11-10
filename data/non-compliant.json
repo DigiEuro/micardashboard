@@ -1940,6 +1940,25 @@
   },
   {
     "id": 187,
+    "entity": "Renditanzia",
+    "country": "Italy",
+    "authority": "Commissione Nazionale per le Societa e la Borsa (CONSOB)",
+    "websites": [
+      "renditanziait.com",
+      "renditanzia-it.com",
+      "renditanziaai.com",
+      "renditanziaaibot.com",
+      "renditanziabot.com",
+      "renditanzia.xyz",
+      "renditanziaofficial.com",
+      "renditanzia.online",
+      "renditanzia.sbs",
+      "renditanzia.it"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 188,
     "entity": "MEXC",
     "country": "Netherlands",
     "authority": "Netherlands Authority for the Financial Markets (AFM)",
@@ -1949,7 +1968,7 @@
     "isNew": false
   },
   {
-    "id": 188,
+    "id": 189,
     "entity": "LWEX",
     "country": "Slovakia",
     "authority": "National Bank of Slovakia (NBS)",

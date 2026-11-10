@@ -1,0 +1,9 @@
+{
+  "observed": "2026-11-10",
+  "esmaSnapshotDate": "2026-11-05",
+  "counts": {
+    "casps": 397,
+    "emts": 25,
+    "non-compliant": 189
+  }
+}

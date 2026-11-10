@@ -4,7 +4,16 @@
     <title>DEA MiCAR Tracker - register updates</title>
     <link>https://micatracker.digital-euro-association.de/</link>
     <description>Additions and removals in the EMT, CASP, and non-compliant registers tracked by the DEA MiCAR Tracker.</description>
-    <lastBuildDate>Tue, 10 Nov 2026 07:56:03 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:23:33 GMT</lastBuildDate>
+    <item>
+      <title>MiCAR register update - 2026-11-10</title>
+      <link>https://micatracker.digital-euro-association.de/</link>
+      <guid isPermaLink="false">2026-11-10T08:23:33.141Z</guid>
+      <pubDate>Tue, 10 Nov 2026 08:23:33 GMT</pubDate>
+      <description>CASPs added: VR Bank Amberg-Sulzbach eG (Germany), VR-Bank Ostalb eG (Germany), Capricorn Capital GmbH &amp; Co. KG (Germany), Sparkasse Bank Malta Plc (Malta), Firefish Europe s.r.o. (Slovakia), Tatra banka, a.s. (Slovakia)
+CASPs removed: Firefish Europe s.r.o (Slovakia)
+Non-compliant entities added: Renditanzia (Italy)</description>
+    </item>
     <item>
       <title>MiCAR register update - 2026-11-02</title>
       <link>https://micatracker.digital-euro-association.de/</link>

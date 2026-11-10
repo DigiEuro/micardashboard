@@ -1,9 +1,9 @@
 {
-  "total": 20,
+  "total": 23,
   "byType": {
     "lei_checksum_failed": 7,
     "repeated_service_code": 3,
-    "malformed_url": 1,
+    "malformed_url": 4,
     "non_url_in_website_field": 6,
     "multi_authorisation": 3
   },
@@ -119,9 +119,42 @@
       ]
     },
     {
+      "type": "malformed_url",
+      "entityKey": "529900LZDW2COOVSK824",
+      "sourceRow": 158,
+      "name": "VR Bank Amberg-Sulzbach eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vr-as.de\" was repaired to \"https://www.vr-as.de\".",
+      "values": [
+        "www.vr-as.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "5299009EELDZG8AZOX61",
+      "sourceRow": 180,
+      "name": "VR-Bank Ostalb eG",
+      "country": "Germany",
+      "detail": "Website value \"www.vrbank-ostalb.de\" was repaired to \"https://www.vrbank-ostalb.de\".",
+      "values": [
+        "www.vrbank-ostalb.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "529900V2CC4NGZDBFK67",
+      "sourceRow": 181,
+      "name": "Capricorn Capital GmbH & Co. KG",
+      "country": "Germany",
+      "detail": "Website value \"www.capricorn-capital.de\" was repaired to \"https://www.capricorn-capital.de\".",
+      "values": [
+        "www.capricorn-capital.de"
+      ]
+    },
+    {
       "type": "lei_checksum_failed",
       "entityKey": "549300746K71T6YJCV41",
-      "sourceRow": 203,
+      "sourceRow": 206,
       "name": "FINTECH PAYMENTS PSC S.L.",
       "country": "Spain",
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -132,7 +165,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "213800QBQVHWRBHJTA89",
-      "sourceRow": 261,
+      "sourceRow": 264,
       "name": "Paysafe Payment Solutions Limited.",
       "country": "Ireland",
       "detail": "Website field contains \"https://www.skrill.com www.neteller.com\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -143,7 +176,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "969500OA6NVZB5BXAB29",
-      "sourceRow": 303,
+      "sourceRow": 306,
       "name": "B2C2 Europe Sarl",
       "country": "Luxembourg",
       "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -154,7 +187,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
-      "sourceRow": 309,
+      "sourceRow": 312,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -165,7 +198,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "984500F9M4XF7C5E5E25",
-      "sourceRow": 335,
+      "sourceRow": 338,
       "name": "Olmipay Limited",
       "country": "Malta",
       "detail": "Website field contains \"https://Olmipay.com (upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -176,7 +209,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
-      "sourceRow": 338,
+      "sourceRow": 341,
       "name": "Zap (Strike) Europe Limited",
       "country": "Malta",
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -187,7 +220,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "nc:6226ff0404ee",
-      "sourceRow": 360,
+      "sourceRow": 364,
       "name": "EU Internet Ventures B.V.",
       "country": "Netherlands",
       "detail": "Website field contains \"https://banxa.com https://www.osl-pay.com/\", which is not a URL. Kept as raw text; no link is rendered.",
