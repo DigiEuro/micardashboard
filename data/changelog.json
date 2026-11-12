@@ -1,5 +1,69 @@
 [
   {
+    "date": "2026-11-12",
+    "timestamp": "2026-11-12T15:15:42.577Z",
+    "changes": {
+      "emt": {
+        "added": [
+          "Qivalis B.V."
+        ],
+        "removed": []
+      },
+      "casps": {
+        "added": [
+          "Transak GmbH (Austria)",
+          "VSMARKETS LTD (Cyprus)",
+          "Raiffeisenbank Landshuter Land eG (Germany)",
+          "VR-Bank Passau eG (Germany)",
+          "Volksbank Erft eG (Germany)",
+          "Volksbank Ettlingen eG (Germany)",
+          "Raiffeisenbank Aresing-Gerolsbach eG (Germany)",
+          "ABANCA CORPORACION BANCARIA, S.A. (Spain)",
+          "Tiwala Solutions Korlátolt Felelősségű Társaság (Hungary)",
+          "Robinhood Europe, UAB (Lithuania)",
+          "UAB \"Decentralized\" (Lithuania)",
+          "UAB DriveWealth Europe (Lithuania)"
+        ],
+        "removed": [
+          "Robinhood Europe UAB (Lithuania)",
+          "UAB Decentralized (Lithuania)"
+        ]
+      },
+      "nonCompliant": {
+        "added": [
+          "Tonwex (Lithuania)",
+          "Bnfex (Lithuania)",
+          "Swift Horizon (Lithuania)",
+          "Flipchain (Lithuania)",
+          "E-gates (Lithuania)",
+          "Sends Plus (Lithuania)",
+          "Bit.Store (Lithuania)",
+          "Veetrblox (Lithuania)",
+          "MultiExchange (Lithuania)",
+          "Sapion (Lithuania)",
+          "Coincierge (Lithuania)",
+          "Rize (Lithuania)",
+          "BitReadyPay (Lithuania)",
+          "Cryptoorange (Lithuania)",
+          "Fundfy (Lithuania)",
+          "Unich (Lithuania)",
+          "Humb (Lithuania)",
+          "Cvetpay (Lithuania)",
+          "WCT Pay (Lithuania)",
+          "GoFinans (Lithuania)",
+          "Orizon Finanse (Lithuania)",
+          "Beaver Dealer (Lithuania)",
+          "BlackFort Pay (Lithuania)",
+          "POD Part Of Dream (Lithuania)",
+          "UAB Exchange (Lithuania)",
+          "Xpay Global (Lithuania)",
+          "Roqqu (Lithuania)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-11-10",
     "timestamp": "2026-11-10T08:23:33.141Z",
     "changes": {

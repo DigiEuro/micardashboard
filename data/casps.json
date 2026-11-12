@@ -206,6 +206,20 @@
   },
   {
     "id": 13,
+    "name": "Transak GmbH",
+    "lei": "529900EEGMA1G5Y2DT85",
+    "authority": "FMA",
+    "memberState": "Austria",
+    "services": [
+      "exchange funds"
+    ],
+    "serviceCodeRaw": "c. exchange of crypto-assets for funds",
+    "websites": [
+      "eu.transak.com"
+    ]
+  },
+  {
+    "id": 14,
     "name": "KBC Bank NV",
     "lei": "6B2PBRV1FCJDMR45RZ53",
     "authority": "NBB",
@@ -215,13 +229,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.kbc.com"
+      "www.kbc.com"
     ]
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "BNY SA/NV",
     "lei": "MMYX0N4ZEZ13Z4XCG897",
     "authority": "NBB",
@@ -230,13 +244,13 @@
       "custody",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.bny.com"
+      "www.bny.com"
     ]
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Alaric Securities OOD",
     "lei": "549300I48OJHSE9OZS95",
     "authority": "FSC",
@@ -252,13 +266,13 @@
       "portfolio mgmt",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets|  j. providing transfer services",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets| j. providing transfer services",
     "websites": [
       "https://alaricsecurities.com/"
     ]
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "Belayer ООD",
     "lei": "64882N0ABXS71817AI18",
     "authority": "FSC",
@@ -274,7 +288,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 18,
     "name": "Altcoins BG EООD",
     "lei": "984500FBAE2EDEF1C317",
     "authority": "FSC",
@@ -291,7 +305,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 19,
     "name": "Digital Assist OOD",
     "lei": "8755007GZKOS1VJ6BZ82",
     "authority": "FSC",
@@ -305,7 +319,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 20,
     "name": "FF Digital EOOD",
     "lei": "648851FOKWX4PG639059",
     "authority": "FSC",
@@ -320,13 +334,13 @@
       "portfolio mgmt",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |b.  operation of a trading platform for crypto-assets |c. exchange of crypto-assets for funds | d. exchange of crypto-assets |e. execution of orders for crypto¬assets on behalf of clients |g. reception and transmission of orders for crypto-assets on behalf of clients |i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets |c. exchange of crypto-assets for funds | d. exchange of crypto-assets |e. execution of orders for crypto¬assets on behalf of clients |g. reception and transmission of orders for crypto-assets on behalf of clients |i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.ffdigital.eu/"
     ]
   },
   {
-    "id": 20,
+    "id": 21,
     "name": "eToro (Europe) Ltd",
     "lei": "213800GIFQMSV7HROS23",
     "authority": "CySEC",
@@ -342,11 +356,11 @@
     ],
     "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds |execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients | providing advice on crypto-assets |providing portfolio management on crypto-assets | providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.etoro.com"
+      "www.etoro.com"
     ]
   },
   {
-    "id": 21,
+    "id": 22,
     "name": "COLLECT & EXCHANGE CY LTD",
     "lei": "2138005C815T9EZU4C75",
     "authority": "CySEC",
@@ -363,7 +377,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 23,
     "name": "Trading 212 Markets Ltd",
     "lei": "21380045KC28948FNE32",
     "authority": "CySEC",
@@ -376,11 +390,11 @@
     ],
     "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.trading212.com"
+      "www.trading212.com"
     ]
   },
   {
-    "id": 23,
+    "id": 24,
     "name": "Stratos Europe Ltd",
     "lei": "549300LZMQXXYV4JJ603",
     "authority": "CySEC",
@@ -396,7 +410,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 25,
     "name": "Revolut Digital Assets (Europe) Ltd",
     "lei": "549300ET4IUR6RCZOL84",
     "authority": "CySEC",
@@ -415,7 +429,7 @@
     ]
   },
   {
-    "id": 25,
+    "id": 26,
     "name": "TEROXX DIGITAL ASSET LTD",
     "lei": "636700PBO692C1R9V561",
     "authority": "CySEC",
@@ -432,11 +446,11 @@
     ],
     "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders on behalf of clients |placing of crypto-assets | providing advice on crypto assets | providing portfolio management on crypto-assets |providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.teroxx.com"
+      "www.teroxx.com"
     ]
   },
   {
-    "id": 26,
+    "id": 27,
     "name": "CAPITAL VAULT LTD",
     "lei": "984500C46B3B7B69Y904",
     "authority": "CySEC",
@@ -450,11 +464,11 @@
     ],
     "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients|exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets|execution of orders for crypto-assets on behalf of clients |providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.capital.com"
+      "www.capital.com"
     ]
   },
   {
-    "id": 27,
+    "id": 28,
     "name": "PELICAN EXCHANGE EUROPE (CY) LTD",
     "lei": "984500EBL33F46CBF732",
     "authority": "CySEC",
@@ -465,13 +479,13 @@
       "advice",
       "portfolio mgmt"
     ],
-    "serviceCodeRaw": "execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets  providing advice on crypto-assets on behalf of clients |providing portfolio management on crypto-assets",
+    "serviceCodeRaw": "execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets providing advice on crypto-assets on behalf of clients |providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.pelicaneu.com"
+      "www.pelicaneu.com"
     ]
   },
   {
-    "id": 28,
+    "id": 29,
     "name": "XTB Limited",
     "lei": "259400HM2TR4U3LF5D43",
     "authority": "CySEC",
@@ -481,13 +495,13 @@
       "execution",
       "RTO"
     ],
-    "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |  execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
       "https://www.xtb.com/cy"
     ]
   },
   {
-    "id": 29,
+    "id": 30,
     "name": "Noemon Finance Ltd",
     "lei": "25490004TC93R20KW073",
     "authority": "CySEC",
@@ -503,11 +517,11 @@
     ],
     "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients |exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets on behalf of clients |providing advice on crypto-assets|providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.noemon.finance"
+      "www.noemon.finance"
     ]
   },
   {
-    "id": 30,
+    "id": 31,
     "name": "Trading.com Markets EU Ltd",
     "lei": "213800QT8WZK738XGX35",
     "authority": "CySEC",
@@ -520,13 +534,13 @@
       "RTO",
       "portfolio mgmt"
     ],
-    "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets on behalf of clients |  providing portfolio management on crypto-assets",
+    "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients |reception and transmission of orders for crypto-assets on behalf of clients | providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.trading.com/eu"
+      "www.trading.com/eu"
     ]
   },
   {
-    "id": 31,
+    "id": 32,
     "name": "J2TX Ltd",
     "lei": "213800186TP6OZSHUV17",
     "authority": "CySEC",
@@ -541,11 +555,11 @@
     ],
     "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients |providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.j2tx.com"
+      "www.j2tx.com"
     ]
   },
   {
-    "id": 32,
+    "id": 33,
     "name": "S.K. DASK KRYPTO LTD",
     "lei": "254900K8AF5VMJFMZN69",
     "authority": "CySEC",
@@ -560,11 +574,11 @@
     ],
     "serviceCodeRaw": "providing custody and administration of crypto-assets on behalf of clients | exchange of crypto-assets for funds | exchange of crypto-assets for other crypto-assets | execution of orders for crypto-assets on behalf of clients | reception and transmission of orders for crypto-assets on behalf of clients | providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.daskkrypto.eu"
+      "www.daskkrypto.eu"
     ]
   },
   {
-    "id": 33,
+    "id": 34,
     "name": "NAGA X",
     "lei": "984500DCB2AF415E5Y71",
     "authority": "CySEC",
@@ -581,11 +595,11 @@
     ],
     "serviceCodeRaw": "Providing custody and administration of crypto-assets on behalf of clients | Exchange of crypto-assets for funds | Exchange of crypto-assets for other crypto-assets | Execution of orders on behalf of clients | Reception and transmission of orders for crypto-assets on behalf of clients | Providing advice on crypto-assets | Providing portfolio management on crypto-assets | Providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.nagax.com/eu/"
+      "www.nagax.com/eu/"
     ]
   },
   {
-    "id": 34,
+    "id": 35,
     "name": "Ronin EM Ltd",
     "lei": "213800V83W83UL8WR118",
     "authority": "CySEC",
@@ -604,7 +618,7 @@
     ]
   },
   {
-    "id": 35,
+    "id": 36,
     "name": "Krypto Knight Ltd",
     "lei": "984500I2EA955E934537",
     "authority": "CySEC",
@@ -619,11 +633,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.krypto-knight.com"
+      "www.krypto-knight.com"
     ]
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "TRIA BRIDGE LIMITED (ex Tokenomica Bridge Ltd)",
     "lei": "9845007E2C96JA7B8653",
     "authority": "CySEC",
@@ -640,11 +654,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets| i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://triabridge.com/"
+      "https://triabridge.com/ https://thevault.inc/"
     ]
   },
   {
-    "id": 37,
+    "id": 38,
     "name": "NOEMON TECH LTD",
     "lei": "254900JFRZG8P67ZHI74",
     "authority": "CySEC",
@@ -662,11 +676,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets| i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.noemon.tech"
+      "www.noemon.tech"
     ]
   },
   {
-    "id": 38,
+    "id": 39,
     "name": "Unlimit Crypto Ltd",
     "lei": "894500FFZOA2AVGYOA88",
     "authority": "CySEC",
@@ -682,11 +696,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.crypto.unlimit.com"
+      "www.crypto.unlimit.com"
     ]
   },
   {
-    "id": 39,
+    "id": 40,
     "name": "COMPLYCRYPTO DEPOSITORY EU LIMITED",
     "lei": "254900J8O1555O3B2T92",
     "authority": "CySEC",
@@ -701,11 +715,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.complycrypto.eu"
+      "www.complycrypto.eu"
     ]
   },
   {
-    "id": 40,
+    "id": 41,
     "name": "Brilliantscope Trading Limited",
     "lei": "9845009846V10FGD4840",
     "authority": "CySEC",
@@ -725,7 +739,7 @@
     ]
   },
   {
-    "id": 41,
+    "id": 42,
     "name": "SG Digital Assets Limited",
     "lei": "254900YI6BJ1QQQZIY62",
     "authority": "CySEC",
@@ -744,7 +758,7 @@
     ]
   },
   {
-    "id": 42,
+    "id": 43,
     "name": "PM MTF LTD",
     "lei": "2138005EFA978Y43G944",
     "authority": "CySEC",
@@ -763,7 +777,7 @@
     ]
   },
   {
-    "id": 43,
+    "id": 44,
     "name": "Aquilla Nummus Ltd",
     "lei": "549300ZCGZNVDA6R3Y84",
     "authority": "CySEC",
@@ -780,7 +794,7 @@
     ]
   },
   {
-    "id": 44,
+    "id": 45,
     "name": "Cloverum Finance (CY) Limited",
     "lei": "213800IWLH982X74LO71",
     "authority": "CySEC",
@@ -795,11 +809,30 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.cloverum.com"
+      "www.cloverum.com"
     ]
   },
   {
-    "id": 45,
+    "id": 46,
+    "name": "VSMARKETS LTD",
+    "lei": "213800HP6KZ9XS1D1U57",
+    "authority": "CySEC",
+    "memberState": "Cyprus",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "execution",
+      "RTO",
+      "transfer"
+    ],
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
+    "websites": [
+      "www.vsmarkets.com"
+    ]
+  },
+  {
+    "id": 47,
     "name": "Invity Finance s.r.o.",
     "lei": "64880741U1SN9TUWJ897",
     "authority": "CNB",
@@ -814,11 +847,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.invity.io"
+      "www.invity.io"
     ]
   },
   {
-    "id": 46,
+    "id": 48,
     "name": "MP Developers s.r.o.",
     "lei": "64889KAWPMO81X649843",
     "authority": "CNB",
@@ -833,12 +866,12 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets",
     "websites": [
-      "https://www.anycoin.cz",
+      "www.anycoin.cz",
       "www.dase.com"
     ]
   },
   {
-    "id": 47,
+    "id": 49,
     "name": "ILAVO GROUP a.s.",
     "lei": "315700DWN9FHXPPTHD55",
     "authority": "CNB",
@@ -857,7 +890,7 @@
     ]
   },
   {
-    "id": 48,
+    "id": 50,
     "name": "Pluso a.s.",
     "lei": "315700GXG7KIZFLV9R66",
     "authority": "CNB",
@@ -874,7 +907,7 @@
     ]
   },
   {
-    "id": 49,
+    "id": 51,
     "name": "COINMATE a.s.",
     "lei": "3157005QCM6Y91CUV844",
     "authority": "CNB",
@@ -892,7 +925,7 @@
     ]
   },
   {
-    "id": 50,
+    "id": 52,
     "name": "MipSoftware s.r.o.",
     "lei": "9845006074DB79BFA392",
     "authority": "CNB",
@@ -908,7 +941,7 @@
     ]
   },
   {
-    "id": 51,
+    "id": 53,
     "name": "GG Digital, a.s.",
     "lei": "984500C0OE94NDA81B62",
     "authority": "CNB",
@@ -926,7 +959,7 @@
     ]
   },
   {
-    "id": 52,
+    "id": 54,
     "name": "IP wBTCb solutions, s.r.o.",
     "lei": "315700I7V6W7BLAI9Z32",
     "authority": "CNB",
@@ -943,7 +976,7 @@
     ]
   },
   {
-    "id": 53,
+    "id": 55,
     "name": "Simple Coin s.r.o.",
     "lei": "3157008PWKP5LP7AR251",
     "authority": "CNB",
@@ -960,7 +993,7 @@
     ]
   },
   {
-    "id": 54,
+    "id": 56,
     "name": "wBTCb.cz, s.r.o.",
     "lei": "3157009R9J4OHLL5NY32",
     "authority": "CNB",
@@ -974,7 +1007,7 @@
     ]
   },
   {
-    "id": 55,
+    "id": 57,
     "name": "Altlift s.r.o.",
     "lei": "8945004PZEJSSPTTVB16",
     "authority": "CNB",
@@ -986,11 +1019,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets",
     "websites": [
-      "https://www.altlift.cz/"
+      "ttps://www.altlift.cz/"
     ]
   },
   {
-    "id": 56,
+    "id": 58,
     "name": "Partners Banka, a.s.",
     "lei": "315700J0QGFRKN11MF15",
     "authority": "CNB",
@@ -1004,7 +1037,7 @@
     ]
   },
   {
-    "id": 57,
+    "id": 59,
     "name": "Boerse Stuttgart Digital Custody GmbH",
     "lei": "529900RC04FR9EHUT228",
     "authority": "BaFin",
@@ -1015,11 +1048,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.bsdigital.com"
+      "www.bsdigital.com"
     ]
   },
   {
-    "id": 58,
+    "id": 60,
     "name": "Bitpanda Asset Management GmbH",
     "lei": "9845005X9B7N610K0093",
     "authority": "BaFin",
@@ -1032,11 +1065,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of client|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.bitpanda.com"
+      "www.bitpanda.com"
     ]
   },
   {
-    "id": 59,
+    "id": 61,
     "name": "Tradias GmbH",
     "lei": "529900FYBTAGIOS54M10",
     "authority": "BaFin",
@@ -1050,11 +1083,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.tradias.de"
+      "www.tradias.de"
     ]
   },
   {
-    "id": 60,
+    "id": 62,
     "name": "EUWAX AG",
     "lei": "529900032TYR45XIEW79",
     "authority": "BaFin",
@@ -1065,11 +1098,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets",
     "websites": [
-      "https://www.euwax-ag.de"
+      "www.euwax-ag.de"
     ]
   },
   {
-    "id": 61,
+    "id": 63,
     "name": "flatexDEGIRO Bank AG",
     "lei": "529900MKYC1FZ83V3121",
     "authority": "BaFin",
@@ -1079,11 +1112,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.flatexdegiro.com/de/flatexdegiro-bank/login"
+      "www.flatexdegiro.com/de/flatexdegiro-bank/login"
     ]
   },
   {
-    "id": 62,
+    "id": 64,
     "name": "360 Treasury Systems AG",
     "lei": "529900P0204W9HA8JP36",
     "authority": "BaFin",
@@ -1093,11 +1126,11 @@
     ],
     "serviceCodeRaw": "b. operation of a trading platform for crypto-assets",
     "websites": [
-      "https://www.360t.com"
+      "www.360t.com"
     ]
   },
   {
-    "id": 63,
+    "id": 65,
     "name": "Trade Republic Bank GmbH",
     "lei": "5299009IFX1XTKDY4568",
     "authority": "BaFin",
@@ -1114,7 +1147,7 @@
     ]
   },
   {
-    "id": 64,
+    "id": 66,
     "name": "BitGo Europe GmbH",
     "lei": "391200IJ3B1IP7993O16",
     "authority": "BaFin",
@@ -1133,7 +1166,7 @@
     ]
   },
   {
-    "id": 65,
+    "id": 67,
     "name": "N26 Bank SE",
     "lei": "529900JB9XYZ8E87N345",
     "authority": "BaFin",
@@ -1143,12 +1176,12 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://N26 – Die erste Onlinebank",
+      "N26 – Die erste Onlinebank",
       "die du lieben wirst"
     ]
   },
   {
-    "id": 66,
+    "id": 68,
     "name": "Baader Bank Aktiengesellschaft",
     "lei": "529900JFOPPEDUR61H13",
     "authority": "BaFin",
@@ -1162,7 +1195,7 @@
     ]
   },
   {
-    "id": 67,
+    "id": 69,
     "name": "Commerzbank Aktiengesellschaft",
     "lei": "851WYGNLUQLFZBSYGB56",
     "authority": "BaFin",
@@ -1173,11 +1206,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://Commerzbank AG – Investor Relations"
+      "Commerzbank AG – Investor Relations"
     ]
   },
   {
-    "id": 68,
+    "id": 70,
     "name": "Baden-Württembergische Wertpapierbörse GmbH",
     "lei": "529900A0WHA0NVXY0G45",
     "authority": "BaFin",
@@ -1191,7 +1224,7 @@
     ]
   },
   {
-    "id": 69,
+    "id": 71,
     "name": "Crypto Finance (Deutschland) GmbH",
     "lei": "3912009ZGE8258OMPE28",
     "authority": "BaFin",
@@ -1209,7 +1242,7 @@
     ]
   },
   {
-    "id": 70,
+    "id": 72,
     "name": "Traders Place GmbH & Co. KGaA",
     "lei": "5299005Y5T6LXFAXDQ78",
     "authority": "BaFin",
@@ -1223,7 +1256,7 @@
     ]
   },
   {
-    "id": 71,
+    "id": 73,
     "name": "Tangany GmbH",
     "lei": "529900WKXS5ZPJY9W498",
     "authority": "BaFin",
@@ -1234,11 +1267,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of client|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.tangany.com"
+      "www.tangany.com"
     ]
   },
   {
-    "id": 72,
+    "id": 74,
     "name": "Smartbroker AG",
     "lei": "391200N0BYCZF2F43264",
     "authority": "BaFin",
@@ -1252,7 +1285,7 @@
     ]
   },
   {
-    "id": 73,
+    "id": 75,
     "name": "Dietrich & Richter Private Asset Management AG",
     "lei": "98450068F88BDF3E8D32",
     "authority": "BaFin",
@@ -1267,7 +1300,7 @@
     ]
   },
   {
-    "id": 74,
+    "id": 76,
     "name": "Bullish Europe GmbH",
     "lei": "2549008CBASK5Q680X12",
     "authority": "BaFin",
@@ -1285,7 +1318,7 @@
     ]
   },
   {
-    "id": 75,
+    "id": 77,
     "name": "V-Bank AG",
     "lei": "529900FB29C36LKTAW50",
     "authority": "BaFin",
@@ -1301,7 +1334,7 @@
     ]
   },
   {
-    "id": 76,
+    "id": 78,
     "name": "Bankhaus Scheich Wertpapierspezialist AG",
     "lei": "54930079HJ1JTMKTW637",
     "authority": "BaFin",
@@ -1317,11 +1350,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds|c. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|e. placing of crypto-assets|f.reception and transmission of orders for crypto-assets on behalf of clients|g. providing advice on crypto-assets |h. providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.bankhaus-scheich.de"
+      "www.bankhaus-scheich.de"
     ]
   },
   {
-    "id": 77,
+    "id": 79,
     "name": "Lang & Schwarz TradeCenter AG & Co. KG",
     "lei": "5299000TZ4OSOOGU1120",
     "authority": "BaFin",
@@ -1336,7 +1369,7 @@
     ]
   },
   {
-    "id": 78,
+    "id": 80,
     "name": "DonauCapital Wertpapier GmbH",
     "lei": "894500C1QM5XBU31PT95",
     "authority": "BaFin",
@@ -1350,7 +1383,7 @@
     ]
   },
   {
-    "id": 79,
+    "id": 81,
     "name": "Volksbank Raiffeisenbank Bayern Mitte eG",
     "lei": "529900ZW3QH424NY3959",
     "authority": "BaFin",
@@ -1361,11 +1394,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients, g. reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-bayernmitte.de"
+      "www.vr-bayernmitte.de"
     ]
   },
   {
-    "id": 80,
+    "id": 82,
     "name": "Huddlestock GmbH",
     "lei": "549300Y6TSD1DUCXD871",
     "authority": "BaFin",
@@ -1375,11 +1408,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.huddlestock.com"
+      "www.huddlestock.com"
     ]
   },
   {
-    "id": 81,
+    "id": 83,
     "name": "sino Aktiengesellschaft",
     "lei": "5299008GFCQY16M45R85",
     "authority": "BaFin",
@@ -1393,7 +1426,7 @@
     ]
   },
   {
-    "id": 82,
+    "id": 84,
     "name": "Hyphe Markets GmbH",
     "lei": "3912000K5NAA00M4HH04",
     "authority": "BaFin",
@@ -1407,7 +1440,7 @@
     ]
   },
   {
-    "id": 83,
+    "id": 85,
     "name": "Deutsche WertpapierService Bank AG",
     "lei": "529900EXG2PM316ISO63",
     "authority": "BaFin",
@@ -1421,7 +1454,7 @@
     ]
   },
   {
-    "id": 84,
+    "id": 86,
     "name": "DekaBank Deutsche Girozentrale",
     "lei": "0W2PZJM8XOY22M4GG883",
     "authority": "BaFin",
@@ -1437,7 +1470,7 @@
     ]
   },
   {
-    "id": 85,
+    "id": 87,
     "name": "EUWAX AG",
     "lei": "529900032TYR45XIEW79",
     "authority": "BaFin",
@@ -1447,11 +1480,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.euwax-ag.de"
+      "www.euwax-ag.de"
     ]
   },
   {
-    "id": 86,
+    "id": 88,
     "name": "Hauck Aufhäuser Digital Custody GmbH",
     "lei": "391200LACJ601I2ONV49",
     "authority": "BaFin",
@@ -1466,7 +1499,7 @@
     ]
   },
   {
-    "id": 87,
+    "id": 89,
     "name": "Fels wealth GmbH",
     "lei": "391200LUYJY880GPSY38",
     "authority": "BaFin",
@@ -1483,7 +1516,7 @@
     ]
   },
   {
-    "id": 88,
+    "id": 90,
     "name": "Westerwald Bank eG Volks- und Raiffeisenbank",
     "lei": "52990071YX99SH321F74",
     "authority": "BaFin",
@@ -1493,11 +1526,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.westerwaldbank.de"
+      "www.westerwaldbank.de"
     ]
   },
   {
-    "id": 89,
+    "id": 91,
     "name": "Hannoversche Volksbank eG",
     "lei": "529900MQJIQGD8N3YV53",
     "authority": "BaFin",
@@ -1511,7 +1544,7 @@
     ]
   },
   {
-    "id": 90,
+    "id": 92,
     "name": "VR TeilhaberBank Metropolregion Nürnberg eG",
     "lei": "529900ZMDTSQYEYCKL45",
     "authority": "BaFin",
@@ -1521,11 +1554,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-teilhaberbank.de"
+      "www.vr-teilhaberbank.de"
     ]
   },
   {
-    "id": 91,
+    "id": 93,
     "name": "Volksbank Mittlerer Schwarzwald eG",
     "lei": "5299009A1SAL2URXG283",
     "authority": "BaFin",
@@ -1539,7 +1572,7 @@
     ]
   },
   {
-    "id": 92,
+    "id": 94,
     "name": "IG Europe GmbH",
     "lei": "213800HFC5G4V293BN91",
     "authority": "BaFin",
@@ -1556,7 +1589,7 @@
     ]
   },
   {
-    "id": 93,
+    "id": 95,
     "name": "Volksbank Raiffeisenbank Würzburg eG",
     "lei": "529900YT5VCRYQ5WI821",
     "authority": "BaFin",
@@ -1570,7 +1603,7 @@
     ]
   },
   {
-    "id": 94,
+    "id": 96,
     "name": "VR-Bank Rottal-Inn eG",
     "lei": "529900APX10RF2PBTB22",
     "authority": "BaFin",
@@ -1580,11 +1613,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vrbk.de"
+      "www.vrbk.de"
     ]
   },
   {
-    "id": 95,
+    "id": 97,
     "name": "VR Bank Südpfalz eG",
     "lei": "529900MBFU46N7U7MF46",
     "authority": "BaFin",
@@ -1594,11 +1627,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vrbank-suedpfalz.de"
+      "www.vrbank-suedpfalz.de"
     ]
   },
   {
-    "id": 96,
+    "id": 98,
     "name": "Sutor Bank GmbH",
     "lei": "529900BQBP4JMDPM6Q19",
     "authority": "BaFin",
@@ -1612,7 +1645,7 @@
     ]
   },
   {
-    "id": 97,
+    "id": 99,
     "name": "wSw PortfolioManagement AG",
     "lei": "3912005CEQV0XYGFEO78",
     "authority": "BaFin",
@@ -1622,11 +1655,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.wsw-pm.de"
+      "www.wsw-pm.de"
     ]
   },
   {
-    "id": 98,
+    "id": 100,
     "name": "FIDUS Finanz AG",
     "lei": "529900XCSUEUBT5TX310",
     "authority": "BaFin",
@@ -1643,7 +1676,7 @@
     ]
   },
   {
-    "id": 99,
+    "id": 101,
     "name": "DZ BANK AG Deutsche Zentral-Genossenschaftsbank",
     "lei": "529900HNOAA1KXQJUQ27",
     "authority": "BaFin",
@@ -1659,7 +1692,7 @@
     ]
   },
   {
-    "id": 100,
+    "id": 102,
     "name": "Tradevest Digital Assets GmbH",
     "lei": "529900SUZQE32VSCS310",
     "authority": "BaFin",
@@ -1670,11 +1703,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.tradevest.ai"
+      "www.tradevest.ai"
     ]
   },
   {
-    "id": 101,
+    "id": 103,
     "name": "ISF Institut Deutsch-Schweizer Finanzdienstleistungen GmbH",
     "lei": "529900N0VN8J4S4SCG77",
     "authority": "BaFin",
@@ -1684,11 +1717,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.isf-institut.de"
+      "www.isf-institut.de"
     ]
   },
   {
-    "id": 102,
+    "id": 104,
     "name": "Plutos Vermögensverwaltung AG",
     "lei": "391200PNJ2SKONA02N07",
     "authority": "BaFin",
@@ -1698,11 +1731,11 @@
     ],
     "serviceCodeRaw": "i. providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.plutos.de"
+      "www.plutos.de"
     ]
   },
   {
-    "id": 103,
+    "id": 105,
     "name": "Scalable Capital Bank GmbH",
     "lei": "391200Y3EUNL4LTXRP94",
     "authority": "BaFin",
@@ -1712,11 +1745,11 @@
     ],
     "serviceCodeRaw": "h. providing advice on crypto-assets",
     "websites": [
-      "https://www.scalable.capital"
+      "www.scalable.capital"
     ]
   },
   {
-    "id": 104,
+    "id": 106,
     "name": "AnCeKa Vermögensbetreuungs Aktiengesellschaft",
     "lei": "529900FNJE1H184JV164",
     "authority": "BaFin",
@@ -1728,11 +1761,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets|i. providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.anceka.de"
+      "www.anceka.de"
     ]
   },
   {
-    "id": 105,
+    "id": 107,
     "name": "Joh. Berenberg, Gossler & Co. KG",
     "lei": "529900UC2OD7II24Z667",
     "authority": "BaFin",
@@ -1747,11 +1780,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.berenberg.de"
+      "www.berenberg.de"
     ]
   },
   {
-    "id": 106,
+    "id": 108,
     "name": "MLP Banking AG",
     "lei": "529900YOBXEE8ZYM4V56",
     "authority": "BaFin",
@@ -1761,11 +1794,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.mlp.de"
+      "www.mlp.de"
     ]
   },
   {
-    "id": 107,
+    "id": 109,
     "name": "BV & P Vermögen AG",
     "lei": "529900R4Q9UCQ25IAA05",
     "authority": "BaFin",
@@ -1776,11 +1809,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients|i. providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.bvp-vermoegen.de"
+      "www.bvp-vermoegen.de"
     ]
   },
   {
-    "id": 108,
+    "id": 110,
     "name": "CONCEDUS GmbH",
     "lei": "529900114Q5XQ6KLYR24",
     "authority": "BaFin",
@@ -1795,7 +1828,7 @@
     ]
   },
   {
-    "id": 109,
+    "id": 111,
     "name": "DLT Securities GmbH",
     "lei": "391200EYHDBM1YQI7A32",
     "authority": "BaFin",
@@ -1811,11 +1844,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|f. placing of crypto-assets I g. reception and transmission of orders for crypto-assets on behalf of clients I h. providing advice on crypto-assets I i. providing portfolio management on crypto-assets",
     "websites": [
-      "https://www.dlt-finance.com"
+      "www.dlt-finance.com"
     ]
   },
   {
-    "id": 110,
+    "id": 112,
     "name": "Tradevest Markets AG",
     "lei": "391200KFWD74ZYNEEA30",
     "authority": "BaFin",
@@ -1834,7 +1867,7 @@
     ]
   },
   {
-    "id": 111,
+    "id": 113,
     "name": "Vermögensbutler GmbH",
     "lei": "529900ADW3Q5TWADIL41",
     "authority": "BaFin",
@@ -1845,11 +1878,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients|h. providing advice on crypto-assets",
     "websites": [
-      "https://www.vermoegensbutler.de"
+      "www.vermoegensbutler.de"
     ]
   },
   {
-    "id": 112,
+    "id": 114,
     "name": "Volksbank Heiden eG",
     "lei": "391200CC11KVFA4HGG45",
     "authority": "BaFin",
@@ -1859,11 +1892,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vbheiden.de"
+      "www.vbheiden.de"
     ]
   },
   {
-    "id": 113,
+    "id": 115,
     "name": "Raiffeisenbank Kreis Kelheim eG",
     "lei": "529900UYTAE51VW2TG15",
     "authority": "BaFin",
@@ -1873,11 +1906,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rbkk.de"
+      "www.rbkk.de"
     ]
   },
   {
-    "id": 114,
+    "id": 116,
     "name": "DekaBank Deutsche Girozentrale",
     "lei": "0W2PZJM8XOY22M4GG883",
     "authority": "BaFin",
@@ -1891,7 +1924,7 @@
     ]
   },
   {
-    "id": 115,
+    "id": 117,
     "name": "Donau-Iller-Bank eG",
     "lei": "529900P8OKWO25XE4251",
     "authority": "BaFin",
@@ -1901,11 +1934,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.donau-iller-bank.de"
+      "www.donau-iller-bank.de"
     ]
   },
   {
-    "id": 116,
+    "id": 118,
     "name": "Volksbank Schwarzwald-Donau-Neckar eG",
     "lei": "5299009ADJ9XFQVUKZ50",
     "authority": "BaFin",
@@ -1915,11 +1948,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vbsdn.de"
+      "www.vbsdn.de"
     ]
   },
   {
-    "id": 117,
+    "id": 119,
     "name": "Raiffeisebank Auerbach-Freihung eG",
     "lei": "529900R1A7TN1LM06875",
     "authority": "BaFin",
@@ -1929,11 +1962,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rb-af.de"
+      "www.rb-af.de"
     ]
   },
   {
-    "id": 118,
+    "id": 120,
     "name": "JT Technologies GmbH",
     "lei": "529900YERL5TV5YJCR45",
     "authority": "BaFin",
@@ -1948,7 +1981,7 @@
     ]
   },
   {
-    "id": 119,
+    "id": 121,
     "name": "Spar- und Kreditbank Rheinstetten eG",
     "lei": "529900793U3P5C6YYC70",
     "authority": "BaFin",
@@ -1958,11 +1991,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.skb-rheinstetten.de"
+      "www.skb-rheinstetten.de"
     ]
   },
   {
-    "id": 120,
+    "id": 122,
     "name": "VR-Bank Augsburg-Ostallgäu eG",
     "lei": "529900CG5HHEUT0AHK10",
     "authority": "BaFin",
@@ -1972,11 +2005,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vrbank-augsburg-ostallgaeu.de"
+      "www.vrbank-augsburg-ostallgaeu.de"
     ]
   },
   {
-    "id": 121,
+    "id": 123,
     "name": "Raiffeisenbank Falkenstein-Wörth",
     "lei": "391200236O6D9SGBE882",
     "authority": "BaFin",
@@ -1986,11 +2019,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rbfalkenstein-woerth.de"
+      "www.rbfalkenstein-woerth.de"
     ]
   },
   {
-    "id": 122,
+    "id": 124,
     "name": "Volksbank Raiffeisenbank Oberbayern Südost eG",
     "lei": "5299005O2LPWV9IP2Z21",
     "authority": "BaFin",
@@ -2000,11 +2033,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www-vrbank-obb-so.de"
+      "www-vrbank-obb-so.de"
     ]
   },
   {
-    "id": 123,
+    "id": 125,
     "name": "VR Bank Schleswig-Holstein Mitte eG",
     "lei": "52990017DZKEH3Q6PV63",
     "authority": "BaFin",
@@ -2018,7 +2051,7 @@
     ]
   },
   {
-    "id": 124,
+    "id": 126,
     "name": "VR-Bank Landau-Mengkofen eG",
     "lei": "529900E9AS5RG8YBF660",
     "authority": "BaFin",
@@ -2028,11 +2061,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vrbanklm.de"
+      "www.vrbanklm.de"
     ]
   },
   {
-    "id": 125,
+    "id": 127,
     "name": "Volksbank eG - Die Gestalterbank",
     "lei": "52990093INYLJNWHQ228",
     "authority": "BaFin",
@@ -2042,11 +2075,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.gestalterbank.de"
+      "www.gestalterbank.de"
     ]
   },
   {
-    "id": 126,
+    "id": 128,
     "name": "Deutsche WertpapierService Bank AG",
     "lei": "529900EXG2PM316ISO63",
     "authority": "BaFin",
@@ -2061,7 +2094,7 @@
     ]
   },
   {
-    "id": 127,
+    "id": 129,
     "name": "VBU Volksbank im Unterland eG",
     "lei": "52990053QE1M1V4P6U87",
     "authority": "BaFin",
@@ -2071,11 +2104,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vbu-volksbank.de"
+      "www.vbu-volksbank.de"
     ]
   },
   {
-    "id": 128,
+    "id": 130,
     "name": "VR-Bank Erding eG",
     "lei": "529900IAZ7K53LG7BT89",
     "authority": "BaFin",
@@ -2085,11 +2118,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-bank-erding.de"
+      "www.vr-bank-erding.de"
     ]
   },
   {
-    "id": 129,
+    "id": 131,
     "name": "Volksbank Beilstein-Ilsfeld-Abstatt eG",
     "lei": "5299002RCY3D5M211G35",
     "authority": "BaFin",
@@ -2099,11 +2132,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vb-bia.de"
+      "www.vb-bia.de"
     ]
   },
   {
-    "id": 130,
+    "id": 132,
     "name": "Raiffeisenbank Aidlingen eG",
     "lei": "529900JEKLBM7SSTQS98",
     "authority": "BaFin",
@@ -2113,11 +2146,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.IhrZiel.de"
+      "www.IhrZiel.de"
     ]
   },
   {
-    "id": 131,
+    "id": 133,
     "name": "Ihre Volksbank eG Neckar Odenwald Main Tauber",
     "lei": "529900XUBIXXFHP44185",
     "authority": "BaFin",
@@ -2127,11 +2160,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.ihre-vb.de"
+      "www.ihre-vb.de"
     ]
   },
   {
-    "id": 132,
+    "id": 134,
     "name": "VR-Bank Mittelfranken Mitte eG",
     "lei": "5299009RFJSJRM1FIW34",
     "authority": "BaFin",
@@ -2141,11 +2174,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-mfr.de"
+      "www.vr-mfr.de"
     ]
   },
   {
-    "id": 133,
+    "id": 135,
     "name": "Volksbank Euskirchen eG",
     "lei": "529900DLAJ534R7YPF91",
     "authority": "BaFin",
@@ -2155,11 +2188,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.eu-banking.de"
+      "www.eu-banking.de"
     ]
   },
   {
-    "id": 134,
+    "id": 136,
     "name": "VR Bank Ried-Überwald eG",
     "lei": "529900Z9LN7U0GBF2S53",
     "authority": "BaFin",
@@ -2169,11 +2202,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.raiba-ried.de"
+      "www.raiba-ried.de"
     ]
   },
   {
-    "id": 135,
+    "id": 137,
     "name": "Volksbank Backnang eG",
     "lei": "5299000CFIYPHBDCD952",
     "authority": "BaFin",
@@ -2183,11 +2216,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.volksbank-backnang.de"
+      "www.volksbank-backnang.de"
     ]
   },
   {
-    "id": 136,
+    "id": 138,
     "name": "Raiffeisenbank Schwaben Mitte eG",
     "lei": "529900K4NCP94LQNCG60",
     "authority": "BaFin",
@@ -2197,11 +2230,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rb-schwaben.de"
+      "www.rb-schwaben.de"
     ]
   },
   {
-    "id": 137,
+    "id": 139,
     "name": "VR Bank Ihre Heimatbank eG",
     "lei": "529900NGC1AZW7YPSR12",
     "authority": "BaFin",
@@ -2211,11 +2244,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-heimatbank.de"
+      "www.vr-heimatbank.de"
     ]
   },
   {
-    "id": 138,
+    "id": 140,
     "name": "Frankfurter Volksbank Rhein/Main eG",
     "lei": "529900967AJZ6T29Q111",
     "authority": "BaFin",
@@ -2225,11 +2258,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.frankfurter-volksbank.de"
+      "www.frankfurter-volksbank.de"
     ]
   },
   {
-    "id": 139,
+    "id": 141,
     "name": "Raiffeisenbank Isar-Loisachtal eG",
     "lei": "5299008VGCLH8JYR3K70",
     "authority": "BaFin",
@@ -2239,11 +2272,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rileg.de"
+      "www.rileg.de"
     ]
   },
   {
-    "id": 140,
+    "id": 142,
     "name": "Volksbank Alb eG",
     "lei": "529900OBUVM58249Q315",
     "authority": "BaFin",
@@ -2253,11 +2286,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.voba-alb.de"
+      "www.voba-alb.de"
     ]
   },
   {
-    "id": 141,
+    "id": 143,
     "name": "Volksbank Raiffeisenbank Dachau eG",
     "lei": "391200TWGO2RBL7WG010",
     "authority": "BaFin",
@@ -2267,11 +2300,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.voba-raiba-dachau.de"
+      "www.voba-raiba-dachau.de"
     ]
   },
   {
-    "id": 142,
+    "id": 144,
     "name": "Volksbank Sauerland eG",
     "lei": "5299001O5S0MLDXH7A21",
     "authority": "BaFin",
@@ -2281,11 +2314,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vb-sauerland.de"
+      "www.vb-sauerland.de"
     ]
   },
   {
-    "id": 143,
+    "id": 145,
     "name": "Volksbank Zollernalb eG",
     "lei": "529900NPL89WYDTGGZ78",
     "authority": "BaFin",
@@ -2295,11 +2328,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.volksbank-zollernalb.de"
+      "www.volksbank-zollernalb.de"
     ]
   },
   {
-    "id": 144,
+    "id": 146,
     "name": "VR Bank München Land eG",
     "lei": "5299008QOOWW0IUSDH15",
     "authority": "BaFin",
@@ -2309,11 +2342,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-bank-muenchen-land.de"
+      "www.vr-bank-muenchen-land.de"
     ]
   },
   {
-    "id": 145,
+    "id": 147,
     "name": "Volksbank Baumberge eG",
     "lei": "52990051OUSIGVLQ2082",
     "authority": "BaFin",
@@ -2323,11 +2356,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.volksbank-baumberge.de"
+      "www.volksbank-baumberge.de"
     ]
   },
   {
-    "id": 146,
+    "id": 148,
     "name": "Volksbank Olpe-Wenden-Drolshagen eG",
     "lei": "529900AOIGZIIUZHID69",
     "authority": "BaFin",
@@ -2341,7 +2374,7 @@
     ]
   },
   {
-    "id": 147,
+    "id": 149,
     "name": "Deutsche Bank Aktiengesellschaft",
     "lei": "7LTWFZYICNSX8D621K86",
     "authority": "BaFin",
@@ -2352,11 +2385,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of client | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.deutsche-bank.de"
+      "www.deutsche-bank.de"
     ]
   },
   {
-    "id": 148,
+    "id": 150,
     "name": "Raiffeisenbank Goldener Steig-Dreisessel eG",
     "lei": "529900N21YBLSSD9YT89",
     "authority": "BaFin",
@@ -2370,7 +2403,7 @@
     ]
   },
   {
-    "id": 149,
+    "id": 151,
     "name": "Vereinigte VR Bank eG",
     "lei": "529900C4BDI11BJKQ590",
     "authority": "BaFin",
@@ -2380,11 +2413,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vereinigte-vrbk.de"
+      "www.vereinigte-vrbk.de"
     ]
   },
   {
-    "id": 150,
+    "id": 152,
     "name": "Vereinigte Volksbank Raiffeisenbank eG, Reinheim",
     "lei": "529900TBT1Z4FKTX5T93",
     "authority": "BaFin",
@@ -2394,11 +2427,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vvrb.de"
+      "www.vvrb.de"
     ]
   },
   {
-    "id": 151,
+    "id": 153,
     "name": "Volksbank Göppingen eG",
     "lei": "529900K1110GFV3VUM61",
     "authority": "BaFin",
@@ -2408,11 +2441,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.volksbank-goeppingen.de"
+      "www.volksbank-goeppingen.de"
     ]
   },
   {
-    "id": 152,
+    "id": 154,
     "name": "Wiesbadener Volksbank eG",
     "lei": "5299002PZ7ROI71ZQW56",
     "authority": "BaFin",
@@ -2422,11 +2455,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.wvb.de"
+      "www.wvb.de"
     ]
   },
   {
-    "id": 153,
+    "id": 155,
     "name": "Raiffeisenbank im Oberland eG",
     "lei": "529900Q4W1LSVUCO8L66",
     "authority": "BaFin",
@@ -2436,11 +2469,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.oberlandbank.de"
+      "www.oberlandbank.de"
     ]
   },
   {
-    "id": 154,
+    "id": 156,
     "name": "Münchner Bank eG",
     "lei": "529900VHU3S8ZYAQYZ61",
     "authority": "BaFin",
@@ -2450,11 +2483,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.muenchner-bank.de"
+      "www.muenchner-bank.de"
     ]
   },
   {
-    "id": 155,
+    "id": 157,
     "name": "VR Bank zwischen den Meeren eG",
     "lei": "529900OPEDQJAXAQT146",
     "authority": "BaFin",
@@ -2464,11 +2497,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.meine-vrbank.de"
+      "www.meine-vrbank.de"
     ]
   },
   {
-    "id": 156,
+    "id": 158,
     "name": "Raiffeisenbank im Fuldaer Land eG",
     "lei": "529900C0H5OM7TYSQK47",
     "authority": "BaFin",
@@ -2478,11 +2511,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rb-fuldaerland.de"
+      "www.rb-fuldaerland.de"
     ]
   },
   {
-    "id": 157,
+    "id": 159,
     "name": "VR Bank Nord eG",
     "lei": "52990089LBIKLBM8YB23",
     "authority": "BaFin",
@@ -2492,11 +2525,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vrbanknord.de"
+      "www.vrbanknord.de"
     ]
   },
   {
-    "id": 158,
+    "id": 160,
     "name": "VR Bank Amberg-Sulzbach eG",
     "lei": "529900LZDW2COOVSK824",
     "authority": "BaFin",
@@ -2510,7 +2543,7 @@
     ]
   },
   {
-    "id": 159,
+    "id": 161,
     "name": "Raiffeisenbank Rehling eG",
     "lei": "529900JONLIJEZUYT574",
     "authority": "BaFin",
@@ -2520,11 +2553,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.raiba-rehling.de"
+      "www.raiba-rehling.de"
     ]
   },
   {
-    "id": 160,
+    "id": 162,
     "name": "VR GenoBank DonauWald eG",
     "lei": "529900CNL32BATSBXF59",
     "authority": "BaFin",
@@ -2534,11 +2567,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-genobank.de"
+      "www.vr-genobank.de"
     ]
   },
   {
-    "id": 161,
+    "id": 163,
     "name": "Openbank Deutschland AG",
     "lei": "5299002CRNX7K6KOL397",
     "authority": "BaFin",
@@ -2549,11 +2582,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of client",
     "websites": [
-      "https://www.openbank.de"
+      "www.openbank.de"
     ]
   },
   {
-    "id": 162,
+    "id": 164,
     "name": "KSW Vermögensverwaltung AG",
     "lei": "5299007QRBQF1SF24853",
     "authority": "BaFin",
@@ -2568,7 +2601,7 @@
     ]
   },
   {
-    "id": 163,
+    "id": 165,
     "name": "VR-Bank Alb-Blau-Donau eG",
     "lei": "529900S24NBYGGVAFY08",
     "authority": "BaFin",
@@ -2578,11 +2611,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vrbankabd.de"
+      "www.vrbankabd.de"
     ]
   },
   {
-    "id": 164,
+    "id": 166,
     "name": "Volksbank eG",
     "lei": "529900DCW7IO492RBC56",
     "authority": "BaFin",
@@ -2596,7 +2629,7 @@
     ]
   },
   {
-    "id": 165,
+    "id": 167,
     "name": "VR Bank im südlichen Franken eG",
     "lei": "529900PEKQWL9DDI8J02",
     "authority": "BaFin",
@@ -2606,11 +2639,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-sf.de"
+      "www.vr-sf.de"
     ]
   },
   {
-    "id": 166,
+    "id": 168,
     "name": "VR Bank Lahn-Dill eG",
     "lei": "529900R1I4GVDN3WN882",
     "authority": "BaFin",
@@ -2620,11 +2653,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vrbank-lahndill.de"
+      "www.vrbank-lahndill.de"
     ]
   },
   {
-    "id": 167,
+    "id": 169,
     "name": "Volksbank in der Region eG",
     "lei": "5299006E6UGNN6YEPU72",
     "authority": "BaFin",
@@ -2634,11 +2667,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vbidr.de"
+      "www.vbidr.de"
     ]
   },
   {
-    "id": 168,
+    "id": 170,
     "name": "Volksbank Mittlerer Neckar eG",
     "lei": "529900HHCMGEXXJAGA76",
     "authority": "BaFin",
@@ -2648,11 +2681,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.v-mn.de"
+      "www.v-mn.de"
     ]
   },
   {
-    "id": 169,
+    "id": 171,
     "name": "Sparda-Bank Baden-Württemberg eG",
     "lei": "5299004HBAECUACNWN98",
     "authority": "BaFin",
@@ -2662,11 +2695,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.sparda-bw.de"
+      "www.sparda-bw.de"
     ]
   },
   {
-    "id": 170,
+    "id": 172,
     "name": "Raiffeisenbank Eifel eG",
     "lei": "5299007Y7UJE5QV9QD03",
     "authority": "BaFin",
@@ -2676,11 +2709,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rb-eifel.de"
+      "www.rb-eifel.de"
     ]
   },
   {
-    "id": 171,
+    "id": 173,
     "name": "Volksbank Niederrhein eG",
     "lei": "529900SH7SAVJN3TFQ06",
     "authority": "BaFin",
@@ -2690,11 +2723,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.Volksbank-niederrhein.de"
+      "www.Volksbank-niederrhein.de"
     ]
   },
   {
-    "id": 172,
+    "id": 174,
     "name": "Volksbank in Ostwestfalen eG",
     "lei": "529900PUK9IU39VCWK54",
     "authority": "BaFin",
@@ -2704,11 +2737,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.volksbankinostwestfalen.de"
+      "www.volksbankinostwestfalen.de"
     ]
   },
   {
-    "id": 173,
+    "id": 175,
     "name": "Volksbank Oberberg eG",
     "lei": "529900OSV01JOCMF4Z23",
     "authority": "BaFin",
@@ -2718,11 +2751,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vb-oberberg.de"
+      "www.vb-oberberg.de"
     ]
   },
   {
-    "id": 174,
+    "id": 176,
     "name": "Volksbank in der Hohen Mark eG",
     "lei": "529900NK7TIIGQEJ6L07",
     "authority": "BaFin",
@@ -2732,11 +2765,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vb-hm.de"
+      "www.vb-hm.de"
     ]
   },
   {
-    "id": 175,
+    "id": 177,
     "name": "Raiffeisen-Volksbank Ebersberg eG",
     "lei": "529900V5E7HEA1LD8V54",
     "authority": "BaFin",
@@ -2746,11 +2779,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rv-ebe.de"
+      "www.rv-ebe.de"
     ]
   },
   {
-    "id": 176,
+    "id": 178,
     "name": "Volksbank Raiffeisenbank Regensburg-Schwandorf eG",
     "lei": "5299004D2UMCDTD9JG58",
     "authority": "BaFin",
@@ -2760,11 +2793,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-rs.de"
+      "www.vr-rs.de"
     ]
   },
   {
-    "id": 177,
+    "id": 179,
     "name": "Raiffeisenbank Wittelsbacher Land eG",
     "lei": "529900LF81A0TME61753",
     "authority": "BaFin",
@@ -2774,11 +2807,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rb-wila.de"
+      "www.rb-wila.de"
     ]
   },
   {
-    "id": 178,
+    "id": 180,
     "name": "Raiffeisenbank Kirchweihtal eG",
     "lei": "529900MNNP2L0BZKDM04",
     "authority": "BaFin",
@@ -2788,11 +2821,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.rb-kirchweihtal.de"
+      "www.rb-kirchweihtal.de"
     ]
   },
   {
-    "id": 179,
+    "id": 181,
     "name": "VR Bank Neuburg-Rain eG",
     "lei": "529900IWU96YBZ2JG374",
     "authority": "BaFin",
@@ -2802,11 +2835,11 @@
     ],
     "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.vr-neuburg-rain.de"
+      "www.vr-neuburg-rain.de"
     ]
   },
   {
-    "id": 180,
+    "id": 182,
     "name": "VR-Bank Ostalb eG",
     "lei": "5299009EELDZG8AZOX61",
     "authority": "BaFin",
@@ -2820,7 +2853,7 @@
     ]
   },
   {
-    "id": 181,
+    "id": 183,
     "name": "Capricorn Capital GmbH & Co. KG",
     "lei": "529900V2CC4NGZDBFK67",
     "authority": "BaFin",
@@ -2835,7 +2868,77 @@
     ]
   },
   {
-    "id": 182,
+    "id": 184,
+    "name": "Raiffeisenbank Landshuter Land eG",
+    "lei": "5299008B0QO7XEHUSF18",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+    "websites": [
+      "www.rb-lala.de"
+    ]
+  },
+  {
+    "id": 185,
+    "name": "VR-Bank Passau eG",
+    "lei": "529900C850VGJ80C6E84",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+    "websites": [
+      "www.vr-bank-passau.de"
+    ]
+  },
+  {
+    "id": 186,
+    "name": "Volksbank Erft eG",
+    "lei": "529900U7HFGPGXW9JB86",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+    "websites": [
+      "www.volksbank-erft.de"
+    ]
+  },
+  {
+    "id": 187,
+    "name": "Volksbank Ettlingen eG",
+    "lei": "529900AOT7DX392W5U75",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+    "websites": [
+      "www.volksbank-ettlingen.de"
+    ]
+  },
+  {
+    "id": 188,
+    "name": "Raiffeisenbank Aresing-Gerolsbach eG",
+    "lei": "529900S90ZQ3HED40876",
+    "authority": "BaFin",
+    "memberState": "Germany",
+    "services": [
+      "execution"
+    ],
+    "serviceCodeRaw": "e. execution of orders for crypto-assets on behalf of clients",
+    "websites": [
+      "www.rb-arge.de"
+    ]
+  },
+  {
+    "id": 189,
     "name": "Penning Financial Services ApS",
     "lei": "9845000E4A7414709361",
     "authority": "DFSA",
@@ -2851,11 +2954,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.penning.io"
+      "www.penning.io"
     ]
   },
   {
-    "id": 183,
+    "id": 190,
     "name": "Lunar Block A/S",
     "lei": "984500DD714F66B77454",
     "authority": "DFSA",
@@ -2870,7 +2973,7 @@
     ]
   },
   {
-    "id": 184,
+    "id": 191,
     "name": "GC Exchange A/S",
     "lei": "254900TM3KOYH0SY8V19",
     "authority": "DFSA",
@@ -2887,7 +2990,7 @@
     ]
   },
   {
-    "id": 185,
+    "id": 192,
     "name": "Northstake ApS",
     "lei": "98450010C0CB6A4E8A79",
     "authority": "DFSA",
@@ -2899,11 +3002,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.northstake.dk"
+      "www.northstake.dk"
     ]
   },
   {
-    "id": 186,
+    "id": 193,
     "name": "Coinify ApS",
     "lei": "9845009Q9DDAE03FDE38",
     "authority": "DFSA",
@@ -2920,7 +3023,7 @@
     ]
   },
   {
-    "id": 187,
+    "id": 194,
     "name": "Januar ApS",
     "lei": "984500A43E7FFC73CR76",
     "authority": "DFSA",
@@ -2936,7 +3039,7 @@
     ]
   },
   {
-    "id": 188,
+    "id": 195,
     "name": "SafeLynx Technologies ApS",
     "lei": "9845003F777K7DFF4E96",
     "authority": "DFSA",
@@ -2950,7 +3053,7 @@
     ]
   },
   {
-    "id": 189,
+    "id": 196,
     "name": "Lightyear Europe AS",
     "lei": "254900BBBJZF2IE8EN54",
     "authority": "EFSA",
@@ -2966,7 +3069,7 @@
     ]
   },
   {
-    "id": 190,
+    "id": 197,
     "name": "AS LHV Pank",
     "lei": "529900GJOSVHI055QR67",
     "authority": "EFSA",
@@ -2981,7 +3084,7 @@
     ]
   },
   {
-    "id": 191,
+    "id": 198,
     "name": "Lightspark Payments Europe AS",
     "lei": "6488O0OC79779MZX1E44",
     "authority": "EFSA",
@@ -2998,7 +3101,7 @@
     ]
   },
   {
-    "id": 192,
+    "id": 199,
     "name": "Banco Bilbao Vizcaya Argentaria S.A.",
     "lei": "K8MS7FD7N5Z2WQ51AZ71",
     "authority": "CNMV",
@@ -3010,11 +3113,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|e. execution of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.bbva.es"
+      "www.bbva.es"
     ]
   },
   {
-    "id": 193,
+    "id": 200,
     "name": "OPEN BANK S.A.",
     "lei": "5493000LM0MZ4JPMGM90",
     "authority": "CNMV",
@@ -3025,11 +3128,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|e. execution of orders for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.openbank.es"
+      "www.openbank.es"
     ]
   },
   {
-    "id": 194,
+    "id": 201,
     "name": "CECABANK S.A.",
     "lei": "549300CQ9NLEHMRCU505",
     "authority": "CNMV",
@@ -3041,11 +3144,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.cecabank.es"
+      "www.cecabank.es"
     ]
   },
   {
-    "id": 195,
+    "id": 202,
     "name": "Bitcoinforme S.L.",
     "lei": "9598007R5LSUJLGLS853",
     "authority": "CNMV",
@@ -3061,11 +3164,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients.|f. placing of crypto-assets|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://bit2me.com"
+      "bit2me.com"
     ]
   },
   {
-    "id": 196,
+    "id": 203,
     "name": "RENTA 4 BANCO S.A.",
     "lei": "213800IMKAUV5KW28586",
     "authority": "CNMV",
@@ -3077,11 +3180,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients.|j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.r4.com"
+      "www.r4.com"
     ]
   },
   {
-    "id": 197,
+    "id": 204,
     "name": "KUTXABANK S.A.",
     "lei": "549300U4LIZV0REEQQ46",
     "authority": "CNMV",
@@ -3097,7 +3200,7 @@
     ]
   },
   {
-    "id": 198,
+    "id": 205,
     "name": "CAIXABANK S.A.",
     "lei": "7CUNS533WID6K7DGFI87",
     "authority": "CNMV",
@@ -3114,7 +3217,7 @@
     ]
   },
   {
-    "id": 199,
+    "id": 206,
     "name": "DUE NETWORK S.L.",
     "lei": "89450026TTLUZJV1XM36",
     "authority": "CNMV",
@@ -3129,7 +3232,7 @@
     ]
   },
   {
-    "id": 200,
+    "id": 207,
     "name": "CROSSMINT EUROPE S.L.",
     "lei": "959800B6XCG14MKLTJ51",
     "authority": "CNMV",
@@ -3141,11 +3244,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.I c. exchange of crypto-assets for funds|j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.crossmint.com"
+      "www.crossmint.com"
     ]
   },
   {
-    "id": 201,
+    "id": 208,
     "name": "CRIPTAN TRADE S.L.",
     "lei": "959800AZN23P7F30C189",
     "authority": "CNMV",
@@ -3158,11 +3261,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.criptan.com"
+      "www.criptan.com"
     ]
   },
   {
-    "id": 202,
+    "id": 209,
     "name": "MINOS GLOBAL S.L.",
     "lei": "959800U0R44NN5DJC930",
     "authority": "CNMV",
@@ -3182,7 +3285,7 @@
     ]
   },
   {
-    "id": 203,
+    "id": 210,
     "name": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES S.L.U.",
     "lei": "",
     "authority": "CNMV",
@@ -3194,11 +3297,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients. |j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.prosegurcrypto.com"
+      "www.prosegurcrypto.com"
     ]
   },
   {
-    "id": 204,
+    "id": 211,
     "name": "IQANA TECHNOLOGIES S.L.",
     "lei": "959800AZT2DVBLZQY241",
     "authority": "CNMV",
@@ -3212,7 +3315,7 @@
     ]
   },
   {
-    "id": 205,
+    "id": 212,
     "name": "BASQUE PAY S.L.",
     "lei": "9598005WW6HZ4V82BZ26",
     "authority": "CNMV",
@@ -3226,7 +3329,7 @@
     ]
   },
   {
-    "id": 206,
+    "id": 213,
     "name": "FINTECH PAYMENTS PSC S.L.",
     "lei": "549300746K71T6YJCV41",
     "authority": "CNMV",
@@ -3240,7 +3343,7 @@
     ]
   },
   {
-    "id": 207,
+    "id": 214,
     "name": "PRAKMA MARKETS S.L.",
     "lei": "959800BLRZ4Z36U5HK79",
     "authority": "CNMV",
@@ -3256,7 +3359,23 @@
     ]
   },
   {
-    "id": 208,
+    "id": 215,
+    "name": "ABANCA CORPORACION BANCARIA, S.A.",
+    "lei": "54930056IRBXK0Q1FP96",
+    "authority": "CNMV",
+    "memberState": "Spain",
+    "services": [
+      "custody",
+      "RTO",
+      "transfer"
+    ],
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients.|g. reception and transmission of orders for crypto-assets on behalf of clients. |j. providing transfer services for crypto-assets on behalf of clients.",
+    "websites": [
+      "https://www.abanca.com/es/"
+    ]
+  },
+  {
+    "id": 216,
     "name": "Coinmotion Oy",
     "lei": "743700PZG5RRF7SA4Q58",
     "authority": "FIN-FSA",
@@ -3267,13 +3386,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients\nc. exchange of crypto-assets for funds\ne. execution of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients c. exchange of crypto-assets for funds e. execution of orders for crypto-assets on behalf of clients j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://coinmotion.com"
     ]
   },
   {
-    "id": 209,
+    "id": 217,
     "name": "Tesseract Investment Oy",
     "lei": "743700GULNWPBLJ7A022",
     "authority": "FIN-FSA",
@@ -3285,13 +3404,13 @@
       "portfolio mgmt",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nh. providing advice on crypto-assets\ni. providing portfolio management on crypto-assets\nj. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients g. reception and transmission of orders for crypto-assets on behalf of clients h. providing advice on crypto-assets i. providing portfolio management on crypto-assets j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://tesseract.fi"
     ]
   },
   {
-    "id": 210,
+    "id": 218,
     "name": "Bittimaatti Oy",
     "lei": "7437009FHK501IOCWZ66",
     "authority": "FIN-FSA",
@@ -3305,7 +3424,7 @@
     ]
   },
   {
-    "id": 211,
+    "id": 219,
     "name": "NorthCrypto Oy",
     "lei": "743700CHRVVP342JOA67",
     "authority": "FIN-FSA",
@@ -3316,13 +3435,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients \ne. execution of orders for crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients e. execution of orders for crypto-assets on behalf of clients g. reception and transmission of orders for crypto-assets on behalf of clients j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.northcrypto.com/"
     ]
   },
   {
-    "id": 212,
+    "id": 220,
     "name": "Kvarn Capital Oy",
     "lei": "9845009F15A5B9FD7F45",
     "authority": "FIN-FSA",
@@ -3333,13 +3452,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients \ne. execution of orders for crypto-assets on behalf of clients\ng. reception and transmission of orders for crypto-assets on behalf of clients\nj. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients e. execution of orders for crypto-assets on behalf of clients g. reception and transmission of orders for crypto-assets on behalf of clients j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.kvarnx.com/"
     ]
   },
   {
-    "id": 213,
+    "id": 221,
     "name": "DEBLOCK SAS",
     "lei": "254900XTUI35BGIBXP21",
     "authority": "AMF",
@@ -3355,7 +3474,7 @@
     ]
   },
   {
-    "id": 214,
+    "id": 222,
     "name": "GOin SAS",
     "lei": "894500LM6DICD790FQ34",
     "authority": "AMF",
@@ -3375,7 +3494,7 @@
     ]
   },
   {
-    "id": 215,
+    "id": 223,
     "name": "CACEIS BANK",
     "lei": "96950023SCR9X9F3L662",
     "authority": "AMF",
@@ -3391,7 +3510,7 @@
     ]
   },
   {
-    "id": 216,
+    "id": 224,
     "name": "BITSTACK DIGITAL ASSETS SAS",
     "lei": "894500RKZ3TVTPIF7V84",
     "authority": "AMF",
@@ -3409,7 +3528,7 @@
     ]
   },
   {
-    "id": 217,
+    "id": 225,
     "name": "METAL GEAR SAS",
     "lei": "969500PQYLQG3CSJ5041",
     "authority": "AMF",
@@ -3426,7 +3545,7 @@
     ]
   },
   {
-    "id": 218,
+    "id": 226,
     "name": "COINSHARES ASSET MANAGEMENT",
     "lei": "969500DBF3ZL9U0KUA51",
     "authority": "AMF",
@@ -3435,13 +3554,13 @@
       "advice",
       "portfolio mgmt"
     ],
-    "serviceCodeRaw": "h. providing advice on crypto-assets  | i. providing portfolio management on crypto-assets;",
+    "serviceCodeRaw": "h. providing advice on crypto-assets | i. providing portfolio management on crypto-assets;",
     "websites": [
       "https://coinshares.com/"
     ]
   },
   {
-    "id": 219,
+    "id": 227,
     "name": "FINCTEK UE SAS",
     "lei": "969500PTJJZTCE0I3B60",
     "authority": "AMF",
@@ -3460,7 +3579,7 @@
     ]
   },
   {
-    "id": 220,
+    "id": 228,
     "name": "RELAI EU SASU",
     "lei": "9695003EKRFOMYXJQL11",
     "authority": "AMF",
@@ -3474,7 +3593,7 @@
     ]
   },
   {
-    "id": 221,
+    "id": 229,
     "name": "SOCIETE GENERALE - FORGE",
     "lei": "969500FX8K40ZDW4F377",
     "authority": "AMF",
@@ -3484,13 +3603,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.sgforge.com/"
     ]
   },
   {
-    "id": 222,
+    "id": 230,
     "name": "BANQUE DELUBAC ET CIE",
     "lei": "969500A4IPKVUBH3CA90",
     "authority": "AMF",
@@ -3510,7 +3629,7 @@
     ]
   },
   {
-    "id": 223,
+    "id": 231,
     "name": "COMETH SAS",
     "lei": "894500R5KSX3ZKIHSA46",
     "authority": "AMF",
@@ -3526,7 +3645,7 @@
     ]
   },
   {
-    "id": 224,
+    "id": 232,
     "name": "FIPTO PI SAS",
     "lei": "969500A0DYUNF5NX9R84",
     "authority": "AMF",
@@ -3544,7 +3663,7 @@
     ]
   },
   {
-    "id": 225,
+    "id": 233,
     "name": "HEXARQ SAS",
     "lei": "969500TD4VXAOPXPVW02",
     "authority": "AMF",
@@ -3562,7 +3681,7 @@
     ]
   },
   {
-    "id": 226,
+    "id": 234,
     "name": "BLOCKNODES SAS",
     "lei": "969500PZJWT3TD1SUI59",
     "authority": "AMF",
@@ -3581,7 +3700,7 @@
     ]
   },
   {
-    "id": 227,
+    "id": 235,
     "name": "CIRCLE INTERNET FINANCIAL EUROPE SAS",
     "lei": "969500OYUDADGZKCR583",
     "authority": "AMF",
@@ -3596,7 +3715,7 @@
     ]
   },
   {
-    "id": 228,
+    "id": 236,
     "name": "DESKOIN SAS",
     "lei": "969500QH6WD4FO79B261",
     "authority": "AMF",
@@ -3615,7 +3734,7 @@
     ]
   },
   {
-    "id": 229,
+    "id": 237,
     "name": "COINHOUSE SAS",
     "lei": "969500E5GFHK2RKF8251",
     "authority": "AMF",
@@ -3635,7 +3754,7 @@
     ]
   },
   {
-    "id": 230,
+    "id": 238,
     "name": "QWARKS SAS",
     "lei": "969500CMLNBIVUUD9A09",
     "authority": "AMF",
@@ -3654,7 +3773,7 @@
     ]
   },
   {
-    "id": 231,
+    "id": 239,
     "name": "PAYTOP SAS",
     "lei": "969500VA4A8CRCS2N988",
     "authority": "AMF",
@@ -3670,7 +3789,7 @@
     ]
   },
   {
-    "id": 232,
+    "id": 240,
     "name": "RUFIJI CAPITAL SAS",
     "lei": "969500FUWSKQEO5J7H72",
     "authority": "AMF",
@@ -3688,7 +3807,7 @@
     ]
   },
   {
-    "id": 233,
+    "id": 241,
     "name": "KEYROCK FR SAS",
     "lei": "9845001BAFC53ODN8C90",
     "authority": "AMF",
@@ -3706,7 +3825,7 @@
     ]
   },
   {
-    "id": 234,
+    "id": 242,
     "name": "Bpifrance Investissement",
     "lei": "96950082Z6KUVA6TW686",
     "authority": "AMF",
@@ -3720,7 +3839,7 @@
     ]
   },
   {
-    "id": 235,
+    "id": 243,
     "name": "RCUBE ASSET MANAGEMENT",
     "lei": "529900X4PRL0DZNPT990",
     "authority": "AMF",
@@ -3735,7 +3854,7 @@
     ]
   },
   {
-    "id": 236,
+    "id": 244,
     "name": "PAYMIUM SAS",
     "lei": "969500D241WXU9J7MI33",
     "authority": "AMF",
@@ -3754,7 +3873,7 @@
     ]
   },
   {
-    "id": 237,
+    "id": 245,
     "name": "LEONOD SARL",
     "lei": "969500O878F3MGJCYV50",
     "authority": "AMF",
@@ -3768,7 +3887,7 @@
     ]
   },
   {
-    "id": 238,
+    "id": 246,
     "name": "MERIA SAS",
     "lei": "969500UJSWU20FEXQ504",
     "authority": "AMF",
@@ -3787,7 +3906,7 @@
     ]
   },
   {
-    "id": 239,
+    "id": 247,
     "name": "ALPHACAP DIGITAL ASSETS SAS",
     "lei": "969500ULPB59U51BG334",
     "authority": "AMF",
@@ -3804,7 +3923,7 @@
     ]
   },
   {
-    "id": 240,
+    "id": 248,
     "name": "FLOWDESK EUROPE SAS",
     "lei": "984500AB011S3AEF6706",
     "authority": "AMF",
@@ -3822,7 +3941,7 @@
     ]
   },
   {
-    "id": 241,
+    "id": 249,
     "name": "APLO SAS",
     "lei": "969500YKHZ31GZ7AAU02",
     "authority": "AMF",
@@ -3840,7 +3959,7 @@
     ]
   },
   {
-    "id": 242,
+    "id": 250,
     "name": "ICEBLOCK SAS",
     "lei": "9695005CVRZDK63ZST85",
     "authority": "AMF",
@@ -3856,7 +3975,7 @@
     ]
   },
   {
-    "id": 243,
+    "id": 251,
     "name": "MEREAU FINANCE SAS",
     "lei": "969500USEY22T9ZZRQ98",
     "authority": "AMF",
@@ -3871,7 +3990,7 @@
     ]
   },
   {
-    "id": 244,
+    "id": 252,
     "name": "FINARY SAS",
     "lei": "969500RQH18PU24DM081",
     "authority": "AMF",
@@ -3887,7 +4006,7 @@
     ]
   },
   {
-    "id": 245,
+    "id": 253,
     "name": "WOORTON SAS",
     "lei": "213800RF9FDNJ92AE175",
     "authority": "AMF",
@@ -3903,7 +4022,7 @@
     ]
   },
   {
-    "id": 246,
+    "id": 254,
     "name": "BLOCKCHAIN PROCESS SECURITY (B.P.S.) SAS",
     "lei": "9695000VFDEG5Z4JIY48",
     "authority": "AMF",
@@ -3922,7 +4041,7 @@
     ]
   },
   {
-    "id": 247,
+    "id": 255,
     "name": "SHARES FINANCIAL ASSETS SAS",
     "lei": "9695001LQMTTVPIIQI05",
     "authority": "AMF",
@@ -3938,7 +4057,7 @@
     ]
   },
   {
-    "id": 248,
+    "id": 256,
     "name": "REGULAR FINANCE SAS",
     "lei": "969500Y5SNO2WBYDB059",
     "authority": "AMF",
@@ -3956,7 +4075,7 @@
     ]
   },
   {
-    "id": 249,
+    "id": 257,
     "name": "BCASH SOCIETE ANONYME",
     "lei": "984500C5A9YK55041179",
     "authority": "HCMC",
@@ -3966,11 +4085,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds",
     "websites": [
-      "https://www.bcash.eu"
+      "www.bcash.eu"
     ]
   },
   {
-    "id": 250,
+    "id": 258,
     "name": "XENIOS BLOCKCHAIN GROUP S.A.",
     "lei": "2138009N1SHZPPM84705",
     "authority": "HCMC",
@@ -3980,11 +4099,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.xeniosblockchaingroup.com"
+      "www.xeniosblockchaingroup.com"
     ]
   },
   {
-    "id": 251,
+    "id": 259,
     "name": "CAPITAL WALLET GREECE S.A.",
     "lei": "213800VHQNZ72RU8CW51",
     "authority": "HCMC",
@@ -3999,11 +4118,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.capitalwallet.com/eu"
+      "www.capitalwallet.com/eu"
     ]
   },
   {
-    "id": 252,
+    "id": 260,
     "name": "PIRAEUS BANK Société Anonyme (S.A.)",
     "lei": "213800OYHR1MPQ5VJL60",
     "authority": "Bank of Greece",
@@ -4016,11 +4135,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.piraeusbank.gr/"
+      "www.piraeusbank.gr/"
     ]
   },
   {
-    "id": 253,
+    "id": 261,
     "name": "ELECTROCOIN Ltd for services",
     "lei": "747800R015JVW1T4WZ71",
     "authority": "HANFA",
@@ -4030,13 +4149,13 @@
       "exchange funds",
       "exchange crypto"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |",
     "websites": [
       "https://electrocoin.eu/hr"
     ]
   },
   {
-    "id": 254,
+    "id": 262,
     "name": "WHITE TECH Limited liability company for services",
     "lei": "254900S52YR70F0BK713",
     "authority": "HANFA",
@@ -4047,13 +4166,13 @@
       "exchange crypto",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://whitely.hr/hr"
     ]
   },
   {
-    "id": 255,
+    "id": 263,
     "name": "DIGITAL ASSETS Limited liability company for intermediation and services",
     "lei": "984500NB7D12BC5B4A79",
     "authority": "HANFA",
@@ -4066,13 +4185,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |  f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.bitstore.net/"
     ]
   },
   {
-    "id": 256,
+    "id": 264,
     "name": "Bitblock Ltd. for Services",
     "lei": "9845006A6CAABE4C0347",
     "authority": "HANFA",
@@ -4086,7 +4205,7 @@
     ]
   },
   {
-    "id": 257,
+    "id": 265,
     "name": "IN KAPITAL limited liability company for trade and services",
     "lei": "747800O0P6DFI8RSKT10",
     "authority": "HANFA",
@@ -4100,7 +4219,7 @@
     ]
   },
   {
-    "id": 258,
+    "id": 266,
     "name": "Hrvatska poštanska banka d.d.",
     "lei": "529900D5G4V6THXC5P79",
     "authority": "Croatian National Bank",
@@ -4114,7 +4233,26 @@
     ]
   },
   {
-    "id": 259,
+    "id": 267,
+    "name": "Tiwala Solutions Korlátolt Felelősségű Társaság",
+    "lei": "984500B702FE8F637752",
+    "authority": "MNB",
+    "memberState": "Hungary",
+    "services": [
+      "custody",
+      "exchange funds",
+      "exchange crypto",
+      "advice",
+      "portfolio mgmt",
+      "transfer"
+    ],
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | h. providing advice on crypto-assets| i. providing portfolio management on crypto-assets |j. providing transfer services for crypto-assets on behalf of clients",
+    "websites": [
+      "https://coincash.eu/"
+    ]
+  },
+  {
+    "id": 268,
     "name": "Payward Global Solutions Limited",
     "lei": "9845003D98SCC2851458",
     "authority": "CBI",
@@ -4128,7 +4266,7 @@
     ]
   },
   {
-    "id": 260,
+    "id": 269,
     "name": "Payward Europe Solutions Limited",
     "lei": "254900641D8KNHUZYX24",
     "authority": "CBI",
@@ -4149,7 +4287,7 @@
     ]
   },
   {
-    "id": 261,
+    "id": 270,
     "name": "Legend Financial Ireland Limited",
     "lei": "9845007FA1A8E1DE3989",
     "authority": "CBI",
@@ -4160,11 +4298,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-asset",
     "websites": [
-      "https://www.legendtrading.com"
+      "www.legendtrading.com"
     ]
   },
   {
-    "id": 262,
+    "id": 271,
     "name": "Push Virtual Assets Ireland Limited",
     "lei": "635400NEDOJDEJEQZQ77",
     "authority": "CBI",
@@ -4175,11 +4313,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds |d. exchange of crypto-assets for other crypto-asset",
     "websites": [
-      "https://push.co"
+      "push.co"
     ]
   },
   {
-    "id": 263,
+    "id": 272,
     "name": "Ramp Swaps (Ireland) Limited",
     "lei": "",
     "authority": "CBI",
@@ -4189,11 +4327,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds",
     "websites": [
-      "https://rampnetwork.com"
+      "rampnetwork.com"
     ]
   },
   {
-    "id": 264,
+    "id": 273,
     "name": "Paysafe Payment Solutions Limited.",
     "lei": "213800QBQVHWRBHJTA89",
     "authority": "CBI",
@@ -4206,11 +4344,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.skrill.com www.neteller.com"
+      "www.skrill.com www.neteller.com"
     ]
   },
   {
-    "id": 265,
+    "id": 274,
     "name": "CoinJar Europe Limited",
     "lei": "98450066Q3A1G1A4T786",
     "authority": "CBI",
@@ -4227,7 +4365,7 @@
     ]
   },
   {
-    "id": 266,
+    "id": 275,
     "name": "Confirmo Limited",
     "lei": "984500F75CJ82D8B7D76",
     "authority": "CBI",
@@ -4239,11 +4377,11 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://confirmo.eu"
+      "confirmo.eu"
     ]
   },
   {
-    "id": 267,
+    "id": 276,
     "name": "Pionew Ireland Limited",
     "lei": "984500FD0NZ8949F4363",
     "authority": "CBI",
@@ -4256,11 +4394,11 @@
     ],
     "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.webot.com/eu"
+      "www.webot.com/eu"
     ]
   },
   {
-    "id": 268,
+    "id": 277,
     "name": "StoneX Digital International Limited",
     "lei": "98450043FB90T6REA408",
     "authority": "CBI",
@@ -4273,13 +4411,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.stonex.com"
+      "www.stonex.com"
     ]
   },
   {
-    "id": 269,
+    "id": 278,
     "name": "Interactive Brokers Ireland Limited",
     "lei": "5493001B9LDFCQUY9273",
     "authority": "CBI",
@@ -4293,7 +4431,7 @@
     ]
   },
   {
-    "id": 270,
+    "id": 279,
     "name": "Virtu Financial Ireland Limited",
     "lei": "549300XG5LFGN1IGYC71",
     "authority": "CBI",
@@ -4308,7 +4446,7 @@
     ]
   },
   {
-    "id": 271,
+    "id": 280,
     "name": "Myntkaup ehf.",
     "lei": "636700BAJ82J2GWSP231",
     "authority": "Central Bank of Iceland",
@@ -4325,7 +4463,7 @@
     ]
   },
   {
-    "id": 272,
+    "id": 281,
     "name": "CHECKSIG S.R.L. SOCIETÀ BENEFIT",
     "lei": "8156006C715AAACC5D19",
     "authority": "CONSOB",
@@ -4337,13 +4475,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |  c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://WWW.CHECKSIG.COM"
+      "WWW.CHECKSIG.COM"
     ]
   },
   {
-    "id": 273,
+    "id": 282,
     "name": "OLLIV ITALIA S.R.L.",
     "lei": "81560042B094A85D8F89",
     "authority": "CONSOB",
@@ -4357,7 +4495,7 @@
     ]
   },
   {
-    "id": 274,
+    "id": 283,
     "name": "RIV-DIGITAL S.R.L.",
     "lei": "815600DCB0E8882D2314",
     "authority": "CONSOB",
@@ -4373,7 +4511,7 @@
     ]
   },
   {
-    "id": 275,
+    "id": 284,
     "name": "CONIO S.R.L.",
     "lei": "8945000EH59XYZHK0B92",
     "authority": "CONSOB",
@@ -4388,11 +4526,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.conio.com"
+      "www.conio.com"
     ]
   },
   {
-    "id": 276,
+    "id": 285,
     "name": "BANCA SELLA",
     "lei": "549300I7OIUB41P86L19",
     "authority": "CONSOB",
@@ -4403,11 +4541,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.sella.it"
+      "www.sella.it"
     ]
   },
   {
-    "id": 277,
+    "id": 286,
     "name": "CRYPTOSMART S.P.A.",
     "lei": "815600C7E86B02BBE483",
     "authority": "CONSOB",
@@ -4426,7 +4564,7 @@
     ]
   },
   {
-    "id": 278,
+    "id": 287,
     "name": "YOUNG PLATFORM S.P.A.",
     "lei": "815600F1E30AAB016171",
     "authority": "CONSOB",
@@ -4447,7 +4585,7 @@
     ]
   },
   {
-    "id": 279,
+    "id": 288,
     "name": "HODLIE S.R.L.",
     "lei": "9845006D4F5D2E5F8554",
     "authority": "CONSOB",
@@ -4462,7 +4600,7 @@
     ]
   },
   {
-    "id": 280,
+    "id": 289,
     "name": "HERCLE S.R.L.",
     "lei": "984500AEBA8A0HQ44988",
     "authority": "CONSOB",
@@ -4479,7 +4617,7 @@
     ]
   },
   {
-    "id": 281,
+    "id": 290,
     "name": "YOUHODLER ITALY S.R.L.",
     "lei": "894500I5LYET12OFII30",
     "authority": "CONSOB",
@@ -4493,11 +4631,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.youhodler.eu"
+      "www.youhodler.eu"
     ]
   },
   {
-    "id": 282,
+    "id": 291,
     "name": "ZEUS Anstalt für Vermögensverwaltung",
     "lei": "529900QH6TWSXWH0XM44",
     "authority": "FMA",
@@ -4511,7 +4649,7 @@
     ]
   },
   {
-    "id": 283,
+    "id": 292,
     "name": "LGT Bank AG",
     "lei": "7KDSOB6Z0X4S67TMX170",
     "authority": "FMA",
@@ -4528,7 +4666,7 @@
     ]
   },
   {
-    "id": 284,
+    "id": 293,
     "name": "Bank Frick AG",
     "lei": "529900RQOBT3ZJMDRK43",
     "authority": "FMA",
@@ -4544,7 +4682,7 @@
     ]
   },
   {
-    "id": 285,
+    "id": 294,
     "name": "Wyden Capital AG",
     "lei": "391200DN4V2D0IBP3S36",
     "authority": "FMA",
@@ -4558,7 +4696,7 @@
     ]
   },
   {
-    "id": 286,
+    "id": 295,
     "name": "Celsion Bank AG",
     "lei": "529900QHHMJYY9QSAC33",
     "authority": "FMA",
@@ -4571,11 +4709,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.celsion-finance.com"
+      "www.celsion-finance.com"
     ]
   },
   {
-    "id": 287,
+    "id": 296,
     "name": "RULEMATCH Europe AG",
     "lei": "529900PEBGKH34UTD845",
     "authority": "FMA",
@@ -4591,7 +4729,7 @@
     ]
   },
   {
-    "id": 288,
+    "id": 297,
     "name": "Floin AG",
     "lei": "391200Z1YA45VPMIGP98",
     "authority": "FMA",
@@ -4609,7 +4747,7 @@
     ]
   },
   {
-    "id": 289,
+    "id": 298,
     "name": "Bitcoin Suisse (Europe) AG",
     "lei": "5067009TZLDD94Q3W662",
     "authority": "FMA",
@@ -4628,7 +4766,7 @@
     ]
   },
   {
-    "id": 290,
+    "id": 299,
     "name": "Sygnum Europe AG",
     "lei": "506700NPCDRP5LN89R92",
     "authority": "FMA",
@@ -4645,7 +4783,7 @@
     ]
   },
   {
-    "id": 291,
+    "id": 300,
     "name": "SMART VALOR AG",
     "lei": "254900S56908SP1E8O53",
     "authority": "FMA",
@@ -4663,7 +4801,7 @@
     ]
   },
   {
-    "id": 292,
+    "id": 301,
     "name": "Kaiser Partner Privatbank AG",
     "lei": "529900DPOQPLDSF3R482",
     "authority": "FMA",
@@ -4680,7 +4818,7 @@
     ]
   },
   {
-    "id": 293,
+    "id": 302,
     "name": "Paymonade AG",
     "lei": "529900AAZRC5LYVR7134",
     "authority": "FMA",
@@ -4691,12 +4829,12 @@
     ],
     "serviceCodeRaw": "c. exchange of crypto-assets for funds | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.paymonade.tech"
+      "www.paymonade.tech"
     ]
   },
   {
-    "id": 294,
-    "name": "Robinhood Europe UAB",
+    "id": 303,
+    "name": "Robinhood Europe, UAB",
     "lei": "254900GTP4UXQO1UMI36",
     "authority": "LSC",
     "memberState": "Lithuania",
@@ -4706,14 +4844,14 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.robinhood.com"
     ]
   },
   {
-    "id": 295,
-    "name": "UAB Decentralized",
+    "id": 304,
+    "name": "UAB \"Decentralized\"",
     "lei": "6488907MV9XAA08E4E40",
     "authority": "LSC",
     "memberState": "Lithuania",
@@ -4723,13 +4861,13 @@
       "exchange crypto",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://coingate.com"
     ]
   },
   {
-    "id": 296,
+    "id": 305,
     "name": "Nuvei Liquidity UAB",
     "lei": "894500IY99QLL9M0SR28",
     "authority": "LSC",
@@ -4740,13 +4878,13 @@
       "exchange crypto",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://simplex.com"
     ]
   },
   {
-    "id": 297,
+    "id": 306,
     "name": "UAB Micar assets",
     "lei": "894500R6HJP62BZX4M89",
     "authority": "LSC",
@@ -4759,13 +4897,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients|c. exchange of crypto-assets for funds|d. exchange of crypto-assets for other crypto-assets|e. execution of orders for crypto-assets on behalf of clients|g. reception and transmission of orders for crypto-assets on behalf of clients|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://myriadcapital.lt"
+      "https://micarassets.com"
     ]
   },
   {
-    "id": 298,
+    "id": 307,
     "name": "Newrails, UAB",
     "lei": "875500ONK4E5XGIP7O24",
     "authority": "LSC",
@@ -4780,7 +4918,7 @@
     ]
   },
   {
-    "id": 299,
+    "id": 308,
     "name": "UAB BLUE EMI LT",
     "lei": "254900XFMACGD0L7AI73",
     "authority": "LSC",
@@ -4794,7 +4932,23 @@
     ]
   },
   {
-    "id": 300,
+    "id": 309,
+    "name": "UAB DriveWealth Europe",
+    "lei": "894500HTR904ROVYPH84",
+    "authority": "LSC",
+    "memberState": "Lithuania",
+    "services": [
+      "custody",
+      "execution",
+      "RTO"
+    ],
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients",
+    "websites": [
+      "https://www.drivewealth.com"
+    ]
+  },
+  {
+    "id": 310,
     "name": "Clearstream Banking S.A.",
     "lei": "549300OL514RA0SXJJ44",
     "authority": "CSSF",
@@ -4808,7 +4962,7 @@
     ]
   },
   {
-    "id": 301,
+    "id": 311,
     "name": "Bitstamp Europe S.A.",
     "lei": "549300XIBGTJ0PLIEO72",
     "authority": "CSSF",
@@ -4828,7 +4982,7 @@
     ]
   },
   {
-    "id": 302,
+    "id": 312,
     "name": "Coinbase Luxembourg S.A.",
     "lei": "984500F14CA4571AAC11",
     "authority": "CSSF",
@@ -4842,13 +4996,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://https.//coinbase.com"
+      "https.//coinbase.com"
     ]
   },
   {
-    "id": 303,
+    "id": 313,
     "name": "Zodia Custody (Europe) S.A.",
     "lei": "213800K35A9YPYDQKB81",
     "authority": "CSSF",
@@ -4863,7 +5017,7 @@
     ]
   },
   {
-    "id": 304,
+    "id": 314,
     "name": "Banking Circle S.A.",
     "lei": "213800W1NGBLERUS6M39",
     "authority": "CSSF",
@@ -4873,13 +5027,13 @@
       "exchange crypto",
       "transfer"
     ],
-    "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets  |  j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://bankingcircle.com/"
     ]
   },
   {
-    "id": 305,
+    "id": 315,
     "name": "Swissquote Bank Europe SA",
     "lei": "549300M2IHOB9P5WE714",
     "authority": "CSSF",
@@ -4895,7 +5049,7 @@
     ]
   },
   {
-    "id": 306,
+    "id": 316,
     "name": "B2C2 Europe Sarl",
     "lei": "969500OA6NVZB5BXAB29",
     "authority": "CSSF",
@@ -4911,7 +5065,7 @@
     ]
   },
   {
-    "id": 307,
+    "id": 317,
     "name": "STOKR S.A.",
     "lei": "984500BA521C5EMR1D63",
     "authority": "CSSF",
@@ -4926,7 +5080,7 @@
     ]
   },
   {
-    "id": 308,
+    "id": 318,
     "name": "Standard Chartered Luxembourg S.A.",
     "lei": "213800HAR45C9K18O294",
     "authority": "CSSF",
@@ -4941,7 +5095,7 @@
     ]
   },
   {
-    "id": 309,
+    "id": 319,
     "name": "bitFlyer EUROPE S.A.",
     "lei": "984500D4465EFA89EF38",
     "authority": "CSSF",
@@ -4959,7 +5113,7 @@
     ]
   },
   {
-    "id": 310,
+    "id": 320,
     "name": "Bridge Building S.A.",
     "lei": "254900MVWQXMF77YZP65",
     "authority": "CSSF",
@@ -4973,11 +5127,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. Exchange for crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.bridge.xyz"
+      "www.bridge.xyz"
     ]
   },
   {
-    "id": 311,
+    "id": 321,
     "name": "CPS Europe S.A.",
     "lei": "984500CFB88366E9B834",
     "authority": "CSSF",
@@ -4989,13 +5143,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.enum8.com/"
     ]
   },
   {
-    "id": 312,
+    "id": 322,
     "name": "Ripple Payments Europe S.A.",
     "lei": "2549000KEHDV2LWRRZ45",
     "authority": "CSSF",
@@ -5011,7 +5165,7 @@
     ]
   },
   {
-    "id": 313,
+    "id": 323,
     "name": "BlockBen SIA",
     "lei": "254900BBV7FA7LUG5913",
     "authority": "Latvijas Banka",
@@ -5029,7 +5183,7 @@
     ]
   },
   {
-    "id": 314,
+    "id": 324,
     "name": "Nexdesk SIA",
     "lei": "894500ISUYBQF9I7BE66",
     "authority": "Latvijas Banka",
@@ -5045,7 +5199,7 @@
     ]
   },
   {
-    "id": 315,
+    "id": 325,
     "name": "SIA \"Paybis Europe\"",
     "lei": "259400LUESNGU5XM2J49",
     "authority": "Latvijas Banka",
@@ -5064,7 +5218,7 @@
     ]
   },
   {
-    "id": 316,
+    "id": 326,
     "name": "Neverless SIA",
     "lei": "9845008O5EQ5A4B63R72",
     "authority": "Latvijas Banka",
@@ -5082,7 +5236,7 @@
     ]
   },
   {
-    "id": 317,
+    "id": 327,
     "name": "\"Trek Technologies\" SIA",
     "lei": "6488C2PNI17093U2YA18",
     "authority": "Latvijas Banka",
@@ -5100,7 +5254,7 @@
     ]
   },
   {
-    "id": 318,
+    "id": 328,
     "name": "AS TWINO Investments",
     "lei": "984500856AF4DF5FAT57",
     "authority": "Latvijas Banka",
@@ -5117,7 +5271,7 @@
     ]
   },
   {
-    "id": 319,
+    "id": 329,
     "name": "SIA AlphaRoute",
     "lei": "259400JCJJ78A4ZCXP93",
     "authority": "Latvijas Banka",
@@ -5136,7 +5290,7 @@
     ]
   },
   {
-    "id": 320,
+    "id": 330,
     "name": "Hodleris SIA",
     "lei": "648812ZREA1B126B8G06",
     "authority": "Latvijas Banka",
@@ -5153,7 +5307,7 @@
     ]
   },
   {
-    "id": 321,
+    "id": 331,
     "name": "Bleap SIA",
     "lei": "2549005P20R5UTQWNB80",
     "authority": "Latvijas Banka",
@@ -5168,7 +5322,7 @@
     ]
   },
   {
-    "id": 322,
+    "id": 332,
     "name": "Nodu Digital, SIA",
     "lei": "98450065E59FDCD93R40",
     "authority": "Latvijas Banka",
@@ -5183,7 +5337,7 @@
     ]
   },
   {
-    "id": 323,
+    "id": 333,
     "name": "Atrya Technologies SIA",
     "lei": "648800CZ0UN5M4WVZ402",
     "authority": "Latvijas Banka",
@@ -5194,11 +5348,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | d. exchange of crypto-assets for other crypto-assets",
     "websites": [
-      "https://www.hansepay.de"
+      "www.hansepay.de"
     ]
   },
   {
-    "id": 324,
+    "id": 334,
     "name": "Noah LV SIA",
     "lei": "984500F4C47H19274320",
     "authority": "Latvijas Banka",
@@ -5215,7 +5369,7 @@
     ]
   },
   {
-    "id": 325,
+    "id": 335,
     "name": "OKX Europe Limited",
     "lei": "54930069NLWEIGLHXU42",
     "authority": "MFSA",
@@ -5231,13 +5385,13 @@
       "portfolio mgmt",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients |f.\tplacing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | i.\tproviding portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients |f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.okx.com"
+      "www.okx.com"
     ]
   },
   {
-    "id": 326,
+    "id": 336,
     "name": "BP23 CA Limited",
     "lei": "984500DEID7B03J77118",
     "authority": "MFSA",
@@ -5250,13 +5404,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |  c.\texchange of crypto-assets for funds |d.\texchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds |d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.bitpanda.com"
+      "www.bitpanda.com"
     ]
   },
   {
-    "id": 327,
+    "id": 337,
     "name": "Foris DAX MT Limited",
     "lei": "2549005CVR5HH70FDO07",
     "authority": "MFSA",
@@ -5269,13 +5423,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.\texchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://crypto.com"
+      "crypto.com"
     ]
   },
   {
-    "id": 328,
+    "id": 338,
     "name": "Zillion Bits Limited",
     "lei": "254900FESD7AF56FOQ37",
     "authority": "MFSA",
@@ -5290,13 +5444,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | b.\toperation of a trading platform for crypto-assets | c.\texchange of crypto-assets for funds | d.\texchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g.\treception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.zbx.com"
+      "www.zbx.com"
     ]
   },
   {
-    "id": 329,
+    "id": 339,
     "name": "Altarius Asset Management Limited",
     "lei": "5299000X84JRI8MS7D35",
     "authority": "MFSA",
@@ -5307,11 +5461,11 @@
     ],
     "serviceCodeRaw": "g. reception and transmission of orders for crypto-assets on behalf of clients | i. providing portfolio management on crypto-assets;",
     "websites": [
-      "https://www.altariusgroup.com"
+      "www.altariusgroup.com"
     ]
   },
   {
-    "id": 330,
+    "id": 340,
     "name": "Gemini Intergalactic EU Ltd",
     "lei": "2138002QAMX8PPKSO715",
     "authority": "MFSA",
@@ -5325,13 +5479,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients |f.\tplacing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients |f. placing of crypto-assets |g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.gemini.com"
+      "www.gemini.com"
     ]
   },
   {
-    "id": 331,
+    "id": 341,
     "name": "Socios Europe Services Limited",
     "lei": "984500EBA2E9980CDD80",
     "authority": "MFSA",
@@ -5343,13 +5497,13 @@
       "placing",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |f.\tplacing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |f. placing of crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.socios.com"
+      "www.socios.com"
     ]
   },
   {
-    "id": 332,
+    "id": 342,
     "name": "Gate Technology Limited",
     "lei": "984500D6A0F945BB5A15",
     "authority": "MFSA",
@@ -5362,13 +5516,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |b. operation of a trading platform for crypto-assets | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.gate.com/en-eu"
+      "www.gate.com/en-eu"
     ]
   },
   {
-    "id": 333,
+    "id": 343,
     "name": "Blockchain.com Operations (Malta) Limited",
     "lei": "254900GDCT8070R2VV26",
     "authority": "MFSA",
@@ -5380,13 +5534,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.blockchain.com"
+      "www.blockchain.com"
     ]
   },
   {
-    "id": 334,
+    "id": 344,
     "name": "Payhound Limited",
     "lei": "9845001DD90AF543DC90",
     "authority": "MFSA",
@@ -5398,13 +5552,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.payhound.com"
+      "www.payhound.com"
     ]
   },
   {
-    "id": 335,
+    "id": 345,
     "name": "Damex Digital LTD",
     "lei": "9845008E8QA4CCFE5F68",
     "authority": "MFSA",
@@ -5416,13 +5570,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets |e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
-      "https://www.damex.io"
+      "www.damex.io"
     ]
   },
   {
-    "id": 336,
+    "id": 346,
     "name": "System Pay Services (Malta) Limited",
     "lei": "984500640Z8ADE893D04",
     "authority": "MFSA",
@@ -5434,13 +5588,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients |c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
       "https://bvnk.com/"
     ]
   },
   {
-    "id": 337,
+    "id": 347,
     "name": "Calamatta Cuschieri Investment Services Limited",
     "lei": "391200EKTIW0OR813R66",
     "authority": "MFSA",
@@ -5455,7 +5609,7 @@
     ]
   },
   {
-    "id": 338,
+    "id": 348,
     "name": "Olmipay Limited",
     "lei": "984500F9M4XF7C5E5E25",
     "authority": "MFSA",
@@ -5467,13 +5621,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a.providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://Olmipay.com (upcoming)"
+      "Olmipay.com (upcoming)"
     ]
   },
   {
-    "id": 339,
+    "id": 349,
     "name": "Stable Mint Ltd.",
     "lei": "984500A64C0EA64BC554",
     "authority": "MFSA",
@@ -5488,7 +5642,7 @@
     ]
   },
   {
-    "id": 340,
+    "id": 350,
     "name": "OP Digital Services Limited",
     "lei": "213800ZWEHNKOCS3AC78",
     "authority": "MFSA",
@@ -5506,7 +5660,7 @@
     ]
   },
   {
-    "id": 341,
+    "id": 351,
     "name": "Zap (Strike) Europe Limited",
     "lei": "984500457TABOA3BZ224",
     "authority": "MFSA",
@@ -5523,7 +5677,7 @@
     ]
   },
   {
-    "id": 342,
+    "id": 352,
     "name": "Legion Malta Limited",
     "lei": "254900OPT54E6SDS6P25",
     "authority": "MFSA",
@@ -5534,13 +5688,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
       "https://legion.cc/"
     ]
   },
   {
-    "id": 343,
+    "id": 353,
     "name": "FalconX Limited",
     "lei": "984500F6A0762F9LA923",
     "authority": "MFSA",
@@ -5552,13 +5706,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | e.\texecution of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
       "https://www.falconx.io/"
     ]
   },
   {
-    "id": 344,
+    "id": 354,
     "name": "CF Technologies Ltd",
     "lei": "98450091A6D61FB36406",
     "authority": "MFSA",
@@ -5569,13 +5723,13 @@
       "exchange crypto",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
       "https://xcoins.com/en"
     ]
   },
   {
-    "id": 345,
+    "id": 355,
     "name": "Everest Network Limited",
     "lei": "984500C3A855AC77FE74",
     "authority": "MFSA",
@@ -5587,13 +5741,13 @@
       "RTO",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | e.\t execution of orders for crypto-assets on behalf of clients | f.\tplacing of crypto-assets | g.  reception and transmission of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
       "https://www.everest.org/"
     ]
   },
   {
-    "id": 346,
+    "id": 356,
     "name": "Bequant Pro Limited",
     "lei": "213800Y834JOMU87Z285",
     "authority": "MFSA",
@@ -5604,13 +5758,13 @@
       "exchange crypto",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
       "https://bequant.pro/"
     ]
   },
   {
-    "id": 347,
+    "id": 357,
     "name": "VS Digital Europe Ltd.",
     "lei": "984500G55775959B9C37",
     "authority": "MFSA",
@@ -5622,13 +5776,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a.\tproviding custody and administration of crypto-assets on behalf of clients | c.\texchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j.\tproviding transfer services for crypto-assets on behalf of clients.",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d.exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients.",
     "websites": [
       "https://www.figma.com/design/mQlpK97GfMFNAlXToGX4oq/VSC-Landing?node-id=0-1&t=OZ977XpGYqyBbDWr-1"
     ]
   },
   {
-    "id": 348,
+    "id": 358,
     "name": "Sparkasse Bank Malta Plc",
     "lei": "21380099RT73NFBYS559",
     "authority": "MFSA",
@@ -5644,7 +5798,7 @@
     ]
   },
   {
-    "id": 349,
+    "id": 359,
     "name": "MoonPay Europe B.V.",
     "lei": "254900KXWAZ3B1340G26",
     "authority": "AFM",
@@ -5660,7 +5814,7 @@
     ]
   },
   {
-    "id": 350,
+    "id": 360,
     "name": "BitStaete B.V.",
     "lei": "7245009PN18D4I1TKJ50",
     "authority": "AFM",
@@ -5675,7 +5829,7 @@
     ]
   },
   {
-    "id": 351,
+    "id": 361,
     "name": "Zebedee Europe B.V.",
     "lei": "724500B2I1LR33CAWG54",
     "authority": "AFM",
@@ -5691,7 +5845,7 @@
     ]
   },
   {
-    "id": 352,
+    "id": 362,
     "name": "Hidden Road Partners CIV NL B.V.",
     "lei": "549300OOZDNZ3F2XJW21",
     "authority": "AFM",
@@ -5707,7 +5861,7 @@
     ]
   },
   {
-    "id": 353,
+    "id": 363,
     "name": "AvianLabs Netherlands B.V.",
     "lei": "894500KQLQQYOD1PPX55",
     "authority": "AFM",
@@ -5723,7 +5877,7 @@
     ]
   },
   {
-    "id": 354,
+    "id": 364,
     "name": "Vivid Money B.V.",
     "lei": "7245009PWS7YLG3JPF78",
     "authority": "AFM",
@@ -5738,7 +5892,7 @@
     ]
   },
   {
-    "id": 355,
+    "id": 365,
     "name": "One Trading Exchange B.V.",
     "lei": "984500AA963ED2BA8460",
     "authority": "AFM",
@@ -5753,7 +5907,7 @@
     ]
   },
   {
-    "id": 356,
+    "id": 366,
     "name": "Acheron Europe B.V.",
     "lei": "699400TPXCI7R4A0NG65",
     "authority": "AFM",
@@ -5771,7 +5925,7 @@
     ]
   },
   {
-    "id": 357,
+    "id": 367,
     "name": "BTC Direct Europe B.V.",
     "lei": "724500C4D3LQAKCEZ198",
     "authority": "AFM",
@@ -5787,7 +5941,7 @@
     ]
   },
   {
-    "id": 358,
+    "id": 368,
     "name": "Bitvavo B.V.",
     "lei": "724500MX2WBKDJP9HE56",
     "authority": "AFM",
@@ -5803,7 +5957,7 @@
     ]
   },
   {
-    "id": 359,
+    "id": 369,
     "name": "Amdax B.V.",
     "lei": "724500T7PFN30PF3ZQ87",
     "authority": "AFM",
@@ -5821,7 +5975,7 @@
     ]
   },
   {
-    "id": 360,
+    "id": 370,
     "name": "Finst B.V.",
     "lei": "724500UI8UD7HKGVJX65",
     "authority": "AFM",
@@ -5838,7 +5992,7 @@
     ]
   },
   {
-    "id": 361,
+    "id": 371,
     "name": "Decubate B.V.",
     "lei": "894500ZVOL3A9LO8LN34",
     "authority": "AFM",
@@ -5855,7 +6009,7 @@
     ]
   },
   {
-    "id": 362,
+    "id": 372,
     "name": "Fiat Republic Netherlands B.V.",
     "lei": "724500GVWT7QULV8CR59",
     "authority": "AFM",
@@ -5870,7 +6024,7 @@
     ]
   },
   {
-    "id": 363,
+    "id": 373,
     "name": "BLOX B.V.",
     "lei": "724500Z8JCXSX3351I94",
     "authority": "AFM",
@@ -5886,7 +6040,7 @@
     ]
   },
   {
-    "id": 364,
+    "id": 374,
     "name": "EU Internet Ventures B.V.",
     "lei": "",
     "authority": "AFM",
@@ -5902,7 +6056,7 @@
     ]
   },
   {
-    "id": 365,
+    "id": 375,
     "name": "zerohash europe B.V.",
     "lei": "724500G7QSOMFR1GQA47",
     "authority": "AFM",
@@ -5920,7 +6074,7 @@
     ]
   },
   {
-    "id": 366,
+    "id": 376,
     "name": "Coinmerce B.V.",
     "lei": "724500DMUDFJZNYNEF35",
     "authority": "AFM",
@@ -5937,7 +6091,7 @@
     ]
   },
   {
-    "id": 367,
+    "id": 377,
     "name": "Bitmymoney B.V.",
     "lei": "724500H1WRSMD7CAS549",
     "authority": "AFM",
@@ -5954,7 +6108,7 @@
     ]
   },
   {
-    "id": 368,
+    "id": 378,
     "name": "Bitonic B.V.",
     "lei": "7245001BEJ6U6AUU1S58",
     "authority": "AFM",
@@ -5971,7 +6125,7 @@
     ]
   },
   {
-    "id": 369,
+    "id": 379,
     "name": "Blockrise Capital B.V.",
     "lei": "724500J6RZI9SE1AAP41",
     "authority": "AFM",
@@ -5988,7 +6142,7 @@
     ]
   },
   {
-    "id": 370,
+    "id": 380,
     "name": "Monflo B.V.",
     "lei": "724500BUG93MDFGYQG03",
     "authority": "AFM",
@@ -5998,13 +6152,13 @@
       "execution",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients |  j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | e. execution of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.monflo.com"
     ]
   },
   {
-    "id": 371,
+    "id": 381,
     "name": "WEB3 Technology B.V.",
     "lei": "724500YJVIN0Q94ZZG58",
     "authority": "AFM",
@@ -6021,7 +6175,7 @@
     ]
   },
   {
-    "id": 372,
+    "id": 382,
     "name": "D2X Group N.V.",
     "lei": "7245002DD3GNFXPGPP93",
     "authority": "AFM",
@@ -6035,7 +6189,7 @@
     ]
   },
   {
-    "id": 373,
+    "id": 383,
     "name": "ClearBank Europe N.V.",
     "lei": "724500EAW1MTCM9M1X68",
     "authority": "AFM",
@@ -6051,7 +6205,7 @@
     ]
   },
   {
-    "id": 374,
+    "id": 384,
     "name": "Change Securities B.V.",
     "lei": "7245009PUAT6U71IXZ51",
     "authority": "AFM",
@@ -6067,7 +6221,7 @@
     ]
   },
   {
-    "id": 375,
+    "id": 385,
     "name": "Digital Currency Services B.V.",
     "lei": "724500QZRWKCU8D2L569",
     "authority": "AFM",
@@ -6083,7 +6237,7 @@
     ]
   },
   {
-    "id": 376,
+    "id": 386,
     "name": "Webull Securities (Europe) B.V.",
     "lei": "894500CUU8Y0ZBG8DX95",
     "authority": "AFM",
@@ -6098,7 +6252,7 @@
     ]
   },
   {
-    "id": 377,
+    "id": 387,
     "name": "BitPay B.V.",
     "lei": "724500F2THLY5MHEIM78",
     "authority": "AFM",
@@ -6107,13 +6261,13 @@
       "exchange funds",
       "transfer"
     ],
-    "serviceCodeRaw": "(c) exchange of crypto-assets for funds\n(j) providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "(c) exchange of crypto-assets for funds (j) providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://www.bitpay.com/"
     ]
   },
   {
-    "id": 378,
+    "id": 388,
     "name": "AK JENSEN NORWAY AS",
     "lei": "213800P6PW4AOVYZ8K05",
     "authority": "NFSA",
@@ -6128,7 +6282,7 @@
     ]
   },
   {
-    "id": 379,
+    "id": 389,
     "name": "TÝR MARKETS AS",
     "lei": "984500678DAPX7H3BC86",
     "authority": "NFSA",
@@ -6145,7 +6299,7 @@
     ]
   },
   {
-    "id": 380,
+    "id": 390,
     "name": "FIRI AS",
     "lei": "9845003B8462B18FHE35",
     "authority": "NFSA",
@@ -6164,7 +6318,7 @@
     ]
   },
   {
-    "id": 381,
+    "id": 391,
     "name": "K33 MARKETS as",
     "lei": "6367008S3JL8VVP6T689",
     "authority": "NFSA",
@@ -6180,7 +6334,7 @@
     ]
   },
   {
-    "id": 382,
+    "id": 392,
     "name": "BARE BITCOIN AS",
     "lei": "636700PFX3CY9R033H73",
     "authority": "NFSA",
@@ -6196,7 +6350,7 @@
     ]
   },
   {
-    "id": 383,
+    "id": 393,
     "name": "NORWEGIAN BLOCK EXCHANGE AS",
     "lei": "5493004WNVZP9EMYI834",
     "authority": "NFSA",
@@ -6216,7 +6370,7 @@
     ]
   },
   {
-    "id": 384,
+    "id": 394,
     "name": "Bison Bank, S.A.",
     "lei": "549300V4H4USWZUCE073",
     "authority": "Banco de Portugal",
@@ -6231,13 +6385,13 @@
       "advice",
       "transfer"
     ],
-    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients  | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
+    "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | f. placing of crypto-assets | g. reception and transmission of orders for crypto-assets on behalf of clients | h. providing advice on crypto-assets|j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
       "https://bisonbank.com/"
     ]
   },
   {
-    "id": 385,
+    "id": 395,
     "name": "ILIRIKA borzno posredniška hiša d.d.",
     "lei": "529900OSVFQK3XISEQ85",
     "authority": "ATVP",
@@ -6254,7 +6408,7 @@
     ]
   },
   {
-    "id": 386,
+    "id": 396,
     "name": "INCREMENTUM poslovne storitve d.o.o.",
     "lei": "485100UM87L7ILR4L484",
     "authority": "ATVP",
@@ -6270,7 +6424,7 @@
     ]
   },
   {
-    "id": 387,
+    "id": 397,
     "name": "Orcabay finančne storitve d.o.o.",
     "lei": "485100OLL2HA92JDWC71",
     "authority": "ATVP",
@@ -6285,7 +6439,7 @@
     ]
   },
   {
-    "id": 388,
+    "id": 398,
     "name": "GateHub Exchange družba za izvajanje storitev v zvezi s kriptosredstvi d.o.o.",
     "lei": "485100FKB79GMCXY4P55",
     "authority": "ATVP",
@@ -6302,7 +6456,7 @@
     ]
   },
   {
-    "id": 389,
+    "id": 399,
     "name": "ICONOMI EUROPE, borznoposredniška družba, d.o.o.",
     "lei": "485100CIMEOMSMFT8G48",
     "authority": "ATVP",
@@ -6320,7 +6474,7 @@
     ]
   },
   {
-    "id": 390,
+    "id": 400,
     "name": "Safello AB",
     "lei": "894500QKMN1PCG2V7U40",
     "authority": "Finansinspektionen",
@@ -6335,11 +6489,11 @@
     ],
     "serviceCodeRaw": "a. providing custody and administration of crypto-assets on behalf of clients | c. exchange of crypto-assets for funds | d. exchange of crypto-assets for other crypto-assets | e. execution of orders for crypto-assets on behalf of clients | g. reception and transmission of orders for crypto-assets on behalf of clients | j. providing transfer services for crypto-assets on behalf of clients",
     "websites": [
-      "https://www.safello.com"
+      "www.safello.com"
     ]
   },
   {
-    "id": 391,
+    "id": 401,
     "name": "Fintegence, s.r.o.",
     "lei": "097900CAKA0000272448",
     "authority": "NBS",
@@ -6356,7 +6510,7 @@
     ]
   },
   {
-    "id": 392,
+    "id": 402,
     "name": "FINTECH SK s. r. o.",
     "lei": "31570000GC0U68O6PA08",
     "authority": "NBS",
@@ -6374,7 +6528,7 @@
     ]
   },
   {
-    "id": 393,
+    "id": 403,
     "name": "FUMBI, s.r.o.",
     "lei": "097900CAKA0000269926",
     "authority": "NBS",
@@ -6393,7 +6547,7 @@
     ]
   },
   {
-    "id": 394,
+    "id": 404,
     "name": "Madison Six j. s. a.",
     "lei": "097900CAKA0000249459",
     "authority": "NBS",
@@ -6413,7 +6567,7 @@
     ]
   },
   {
-    "id": 395,
+    "id": 405,
     "name": "Firefish Europe s.r.o.",
     "lei": "9845004E55FCFA069549",
     "authority": "NBS",
@@ -6430,7 +6584,7 @@
     ]
   },
   {
-    "id": 396,
+    "id": 406,
     "name": "Okazio s.r.o.",
     "lei": "097900CAKA0000233454",
     "authority": "NBS",
@@ -6448,7 +6602,7 @@
     ]
   },
   {
-    "id": 397,
+    "id": 407,
     "name": "Tatra banka, a.s.",
     "lei": "3157002JBFAI478MD587",
     "authority": "NBS",
