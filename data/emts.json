@@ -398,5 +398,21 @@
     "pln": 0,
     "sek": 0,
     "ron": 0
+  },
+  {
+    "id": 26,
+    "issuer": "Qivalis B.V.",
+    "state": "Netherlands",
+    "authority": "Dutch National Bank",
+    "tokens": "EURqi",
+    "count": 1,
+    "eur": 1,
+    "usd": 0,
+    "czk": 0,
+    "gbp": 0,
+    "chf": 0,
+    "pln": 0,
+    "sek": 0,
+    "ron": 0
   }
 ]

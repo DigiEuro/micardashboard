@@ -1959,6 +1959,276 @@
   },
   {
     "id": 188,
+    "entity": "Tonwex",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "tonwex.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 189,
+    "entity": "Bnfex",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "bnfex.com/lt"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 190,
+    "entity": "Swift Horizon",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.swifthorizon.net"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 191,
+    "entity": "Flipchain",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "flipchain.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 192,
+    "entity": "E-gates",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "e-gates.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 193,
+    "entity": "Sends Plus",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "sends.plus"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 194,
+    "entity": "Bit.Store",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "bit.store/home"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 195,
+    "entity": "Veetrblox",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "veetrblox.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 196,
+    "entity": "MultiExchange",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.multiexc.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 197,
+    "entity": "Sapion",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "sapion.org"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 198,
+    "entity": "Coincierge",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.coincierge.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 199,
+    "entity": "Rize",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "rize.hk"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 200,
+    "entity": "BitReadyPay",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "bitreadypay.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 201,
+    "entity": "Cryptoorange",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "cryptoorange.lt"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 202,
+    "entity": "Fundfy",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "fundfy.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 203,
+    "entity": "Unich",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "token.unich.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 204,
+    "entity": "Humb",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "humb.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 205,
+    "entity": "Cvetpay",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.cvetpay.com/buy"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 206,
+    "entity": "WCT Pay",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.wctpay.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 207,
+    "entity": "GoFinans",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "gofinans.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 208,
+    "entity": "Orizon Finanse",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.orizon.finance/about"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 209,
+    "entity": "Beaver Dealer",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "beaverdealer.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 210,
+    "entity": "BlackFort Pay",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.blackfortpay.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 211,
+    "entity": "POD Part Of Dream",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "partofdream.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 212,
+    "entity": "UAB Exchange",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "uabexchange.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 213,
+    "entity": "Xpay Global",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "www.xpayglobal.io"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 214,
+    "entity": "Roqqu",
+    "country": "Lithuania",
+    "authority": "Bank of Lithuania (LSC)",
+    "websites": [
+      "internalwebsite.roqqu.com"
+    ],
+    "isNew": false
+  },
+  {
+    "id": 215,
     "entity": "MEXC",
     "country": "Netherlands",
     "authority": "Netherlands Authority for the Financial Markets (AFM)",
@@ -1968,7 +2238,7 @@
     "isNew": false
   },
   {
-    "id": 189,
+    "id": 216,
     "entity": "LWEX",
     "country": "Slovakia",
     "authority": "National Bank of Slovakia (NBS)",
