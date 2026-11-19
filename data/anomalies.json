@@ -1,12 +1,13 @@
 {
-  "total": 176,
+  "total": 179,
   "byType": {
     "lei_checksum_failed": 7,
-    "malformed_url": 155,
+    "malformed_url": 156,
     "repeated_service_code": 3,
     "encoding_artefact": 2,
     "non_url_in_website_field": 6,
-    "multi_authorisation": 3
+    "exact_duplicate": 1,
+    "multi_authorisation": 4
   },
   "anomalies": [
     {
@@ -1386,8 +1387,19 @@
     },
     {
       "type": "malformed_url",
-      "entityKey": "9845000E4A7414709361",
+      "entityKey": "529900U2YWMWH2WVJA75",
       "sourceRow": 189,
+      "name": "Volksbank Magdeburg eG",
+      "country": "Germany",
+      "detail": "Website value \"www.volksbank-magdeburg.de\" was repaired to \"https://www.volksbank-magdeburg.de\".",
+      "values": [
+        "www.volksbank-magdeburg.de"
+      ]
+    },
+    {
+      "type": "malformed_url",
+      "entityKey": "9845000E4A7414709361",
+      "sourceRow": 190,
       "name": "Penning Financial Services ApS",
       "country": "Denmark",
       "detail": "Website value \"www.penning.io\" was repaired to \"https://www.penning.io\".",
@@ -1398,7 +1410,7 @@
     {
       "type": "malformed_url",
       "entityKey": "98450010C0CB6A4E8A79",
-      "sourceRow": 192,
+      "sourceRow": 193,
       "name": "Northstake ApS",
       "country": "Denmark",
       "detail": "Website value \"www.northstake.dk\" was repaired to \"https://www.northstake.dk\".",
@@ -1409,7 +1421,7 @@
     {
       "type": "malformed_url",
       "entityKey": "K8MS7FD7N5Z2WQ51AZ71",
-      "sourceRow": 199,
+      "sourceRow": 200,
       "name": "Banco Bilbao Vizcaya Argentaria S.A.",
       "country": "Spain",
       "detail": "Website value \"www.bbva.es\" was repaired to \"https://www.bbva.es\".",
@@ -1420,7 +1432,7 @@
     {
       "type": "malformed_url",
       "entityKey": "5493000LM0MZ4JPMGM90",
-      "sourceRow": 200,
+      "sourceRow": 201,
       "name": "OPEN BANK S.A.",
       "country": "Spain",
       "detail": "Website value \"www.openbank.es\" was repaired to \"https://www.openbank.es\".",
@@ -1431,7 +1443,7 @@
     {
       "type": "malformed_url",
       "entityKey": "549300CQ9NLEHMRCU505",
-      "sourceRow": 201,
+      "sourceRow": 202,
       "name": "CECABANK S.A.",
       "country": "Spain",
       "detail": "Website value \"www.cecabank.es\" was repaired to \"https://www.cecabank.es\".",
@@ -1442,7 +1454,7 @@
     {
       "type": "malformed_url",
       "entityKey": "9598007R5LSUJLGLS853",
-      "sourceRow": 202,
+      "sourceRow": 203,
       "name": "Bitcoinforme S.L.",
       "country": "Spain",
       "detail": "Website value \"bit2me.com\" was repaired to \"https://bit2me.com\".",
@@ -1453,7 +1465,7 @@
     {
       "type": "malformed_url",
       "entityKey": "213800IMKAUV5KW28586",
-      "sourceRow": 203,
+      "sourceRow": 204,
       "name": "RENTA 4 BANCO S.A.",
       "country": "Spain",
       "detail": "Website value \"www.r4.com\" was repaired to \"https://www.r4.com\".",
@@ -1464,7 +1476,7 @@
     {
       "type": "malformed_url",
       "entityKey": "959800B6XCG14MKLTJ51",
-      "sourceRow": 207,
+      "sourceRow": 208,
       "name": "CROSSMINT EUROPE S.L.",
       "country": "Spain",
       "detail": "Website value \"www.crossmint.com\" was repaired to \"https://www.crossmint.com\".",
@@ -1475,7 +1487,7 @@
     {
       "type": "malformed_url",
       "entityKey": "959800AZN23P7F30C189",
-      "sourceRow": 208,
+      "sourceRow": 209,
       "name": "CRIPTAN TRADE S.L.",
       "country": "Spain",
       "detail": "Website value \"www.criptan.com\" was repaired to \"https://www.criptan.com\".",
@@ -1486,7 +1498,7 @@
     {
       "type": "malformed_url",
       "entityKey": "nc:4ae34990c9f1",
-      "sourceRow": 210,
+      "sourceRow": 211,
       "name": "PROSEGUR CUSTODIA DE ACTIVOS DIGITALES S.L.U.",
       "country": "Spain",
       "detail": "Website value \"www.prosegurcrypto.com\" was repaired to \"https://www.prosegurcrypto.com\".",
@@ -1497,7 +1509,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "549300746K71T6YJCV41",
-      "sourceRow": 213,
+      "sourceRow": 214,
       "name": "FINTECH PAYMENTS PSC S.L.",
       "country": "Spain",
       "detail": "LEI 549300746K71T6YJCV41 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -1508,7 +1520,7 @@
     {
       "type": "malformed_url",
       "entityKey": "984500C5A9YK55041179",
-      "sourceRow": 257,
+      "sourceRow": 258,
       "name": "BCASH SOCIETE ANONYME",
       "country": "Greece",
       "detail": "Website value \"www.bcash.eu\" was repaired to \"https://www.bcash.eu\".",
@@ -1519,7 +1531,7 @@
     {
       "type": "malformed_url",
       "entityKey": "2138009N1SHZPPM84705",
-      "sourceRow": 258,
+      "sourceRow": 259,
       "name": "XENIOS BLOCKCHAIN GROUP S.A.",
       "country": "Greece",
       "detail": "Website value \"www.xeniosblockchaingroup.com\" was repaired to \"https://www.xeniosblockchaingroup.com\".",
@@ -1530,7 +1542,7 @@
     {
       "type": "malformed_url",
       "entityKey": "213800VHQNZ72RU8CW51",
-      "sourceRow": 259,
+      "sourceRow": 260,
       "name": "CAPITAL WALLET GREECE S.A.",
       "country": "Greece",
       "detail": "Website value \"www.capitalwallet.com/eu\" was repaired to \"https://www.capitalwallet.com/eu\".",
@@ -1541,7 +1553,7 @@
     {
       "type": "malformed_url",
       "entityKey": "213800OYHR1MPQ5VJL60",
-      "sourceRow": 260,
+      "sourceRow": 261,
       "name": "PIRAEUS BANK Société Anonyme (S.A.)",
       "country": "Greece",
       "detail": "Website value \"www.piraeusbank.gr/\" was repaired to \"https://www.piraeusbank.gr/\".",
@@ -1552,7 +1564,7 @@
     {
       "type": "malformed_url",
       "entityKey": "9845007FA1A8E1DE3989",
-      "sourceRow": 270,
+      "sourceRow": 271,
       "name": "Legend Financial Ireland Limited",
       "country": "Ireland",
       "detail": "Website value \"www.legendtrading.com\" was repaired to \"https://www.legendtrading.com\".",
@@ -1563,7 +1575,7 @@
     {
       "type": "malformed_url",
       "entityKey": "635400NEDOJDEJEQZQ77",
-      "sourceRow": 271,
+      "sourceRow": 272,
       "name": "Push Virtual Assets Ireland Limited",
       "country": "Ireland",
       "detail": "Website value \"push.co\" was repaired to \"https://push.co\".",
@@ -1574,7 +1586,7 @@
     {
       "type": "malformed_url",
       "entityKey": "nc:086c5a3d0a9f",
-      "sourceRow": 272,
+      "sourceRow": 273,
       "name": "Ramp Swaps (Ireland) Limited",
       "country": "Ireland",
       "detail": "Website value \"rampnetwork.com\" was repaired to \"https://rampnetwork.com\".",
@@ -1585,7 +1597,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "213800QBQVHWRBHJTA89",
-      "sourceRow": 273,
+      "sourceRow": 274,
       "name": "Paysafe Payment Solutions Limited.",
       "country": "Ireland",
       "detail": "Website field contains \"www.skrill.com www.neteller.com\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -1596,7 +1608,7 @@
     {
       "type": "malformed_url",
       "entityKey": "984500F75CJ82D8B7D76",
-      "sourceRow": 275,
+      "sourceRow": 276,
       "name": "Confirmo Limited",
       "country": "Ireland",
       "detail": "Website value \"confirmo.eu\" was repaired to \"https://confirmo.eu\".",
@@ -1607,7 +1619,7 @@
     {
       "type": "malformed_url",
       "entityKey": "984500FD0NZ8949F4363",
-      "sourceRow": 276,
+      "sourceRow": 277,
       "name": "Pionew Ireland Limited",
       "country": "Ireland",
       "detail": "Website value \"www.webot.com/eu\" was repaired to \"https://www.webot.com/eu\".",
@@ -1618,7 +1630,7 @@
     {
       "type": "malformed_url",
       "entityKey": "98450043FB90T6REA408",
-      "sourceRow": 277,
+      "sourceRow": 278,
       "name": "StoneX Digital International Limited",
       "country": "Ireland",
       "detail": "Website value \"www.stonex.com\" was repaired to \"https://www.stonex.com\".",
@@ -1629,7 +1641,7 @@
     {
       "type": "malformed_url",
       "entityKey": "8156006C715AAACC5D19",
-      "sourceRow": 281,
+      "sourceRow": 282,
       "name": "CHECKSIG S.R.L. SOCIETÀ BENEFIT",
       "country": "Italy",
       "detail": "Website value \"WWW.CHECKSIG.COM\" was repaired to \"https://WWW.CHECKSIG.COM\".",
@@ -1640,7 +1652,7 @@
     {
       "type": "malformed_url",
       "entityKey": "8945000EH59XYZHK0B92",
-      "sourceRow": 284,
+      "sourceRow": 285,
       "name": "CONIO S.R.L.",
       "country": "Italy",
       "detail": "Website value \"www.conio.com\" was repaired to \"https://www.conio.com\".",
@@ -1651,7 +1663,7 @@
     {
       "type": "malformed_url",
       "entityKey": "549300I7OIUB41P86L19",
-      "sourceRow": 285,
+      "sourceRow": 286,
       "name": "BANCA SELLA",
       "country": "Italy",
       "detail": "Website value \"www.sella.it\" was repaired to \"https://www.sella.it\".",
@@ -1662,7 +1674,7 @@
     {
       "type": "malformed_url",
       "entityKey": "894500I5LYET12OFII30",
-      "sourceRow": 290,
+      "sourceRow": 291,
       "name": "YOUHODLER ITALY S.R.L.",
       "country": "Italy",
       "detail": "Website value \"www.youhodler.eu\" was repaired to \"https://www.youhodler.eu\".",
@@ -1673,7 +1685,7 @@
     {
       "type": "malformed_url",
       "entityKey": "529900QHHMJYY9QSAC33",
-      "sourceRow": 295,
+      "sourceRow": 296,
       "name": "Celsion Bank AG",
       "country": "Liechtenstein",
       "detail": "Website value \"www.celsion-finance.com\" was repaired to \"https://www.celsion-finance.com\".",
@@ -1684,7 +1696,7 @@
     {
       "type": "malformed_url",
       "entityKey": "529900AAZRC5LYVR7134",
-      "sourceRow": 302,
+      "sourceRow": 303,
       "name": "Paymonade AG",
       "country": "Liechtenstein",
       "detail": "Website value \"www.paymonade.tech\" was repaired to \"https://www.paymonade.tech\".",
@@ -1695,7 +1707,7 @@
     {
       "type": "encoding_artefact",
       "entityKey": "984500F14CA4571AAC11",
-      "sourceRow": 312,
+      "sourceRow": 313,
       "name": "Coinbase Luxembourg S.A.",
       "country": "Luxembourg",
       "detail": "Website value \"https.//coinbase.com\" was repaired to \"https://coinbase.com\".",
@@ -1706,7 +1718,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "969500OA6NVZB5BXAB29",
-      "sourceRow": 316,
+      "sourceRow": 317,
       "name": "B2C2 Europe Sarl",
       "country": "Luxembourg",
       "detail": "LEI 969500OA6NVZB5BXAB29 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -1717,7 +1729,7 @@
     {
       "type": "malformed_url",
       "entityKey": "254900MVWQXMF77YZP65",
-      "sourceRow": 320,
+      "sourceRow": 321,
       "name": "Bridge Building S.A.",
       "country": "Luxembourg",
       "detail": "Website value \"www.bridge.xyz\" was repaired to \"https://www.bridge.xyz\".",
@@ -1728,7 +1740,7 @@
     {
       "type": "repeated_service_code",
       "entityKey": "2549000KEHDV2LWRRZ45",
-      "sourceRow": 322,
+      "sourceRow": 323,
       "name": "Ripple Payments Europe S.A.",
       "country": "Luxembourg",
       "detail": "Service code(s) listed more than once in a single record: exchange crypto",
@@ -1739,7 +1751,7 @@
     {
       "type": "malformed_url",
       "entityKey": "648800CZ0UN5M4WVZ402",
-      "sourceRow": 333,
+      "sourceRow": 334,
       "name": "Atrya Technologies SIA",
       "country": "Latvia",
       "detail": "Website value \"www.hansepay.de\" was repaired to \"https://www.hansepay.de\".",
@@ -1750,7 +1762,7 @@
     {
       "type": "malformed_url",
       "entityKey": "54930069NLWEIGLHXU42",
-      "sourceRow": 335,
+      "sourceRow": 336,
       "name": "OKX Europe Limited",
       "country": "Malta",
       "detail": "Website value \"www.okx.com\" was repaired to \"https://www.okx.com\".",
@@ -1761,7 +1773,7 @@
     {
       "type": "malformed_url",
       "entityKey": "984500DEID7B03J77118",
-      "sourceRow": 336,
+      "sourceRow": 337,
       "name": "BP23 CA Limited",
       "country": "Malta",
       "detail": "Website value \"www.bitpanda.com\" was repaired to \"https://www.bitpanda.com\".",
@@ -1772,7 +1784,7 @@
     {
       "type": "malformed_url",
       "entityKey": "2549005CVR5HH70FDO07",
-      "sourceRow": 337,
+      "sourceRow": 338,
       "name": "Foris DAX MT Limited",
       "country": "Malta",
       "detail": "Website value \"crypto.com\" was repaired to \"https://crypto.com\".",
@@ -1783,7 +1795,7 @@
     {
       "type": "malformed_url",
       "entityKey": "254900FESD7AF56FOQ37",
-      "sourceRow": 338,
+      "sourceRow": 339,
       "name": "Zillion Bits Limited",
       "country": "Malta",
       "detail": "Website value \"www.zbx.com\" was repaired to \"https://www.zbx.com\".",
@@ -1794,7 +1806,7 @@
     {
       "type": "malformed_url",
       "entityKey": "5299000X84JRI8MS7D35",
-      "sourceRow": 339,
+      "sourceRow": 340,
       "name": "Altarius Asset Management Limited",
       "country": "Malta",
       "detail": "Website value \"www.altariusgroup.com\" was repaired to \"https://www.altariusgroup.com\".",
@@ -1805,7 +1817,7 @@
     {
       "type": "malformed_url",
       "entityKey": "2138002QAMX8PPKSO715",
-      "sourceRow": 340,
+      "sourceRow": 341,
       "name": "Gemini Intergalactic EU Ltd",
       "country": "Malta",
       "detail": "Website value \"www.gemini.com\" was repaired to \"https://www.gemini.com\".",
@@ -1816,7 +1828,7 @@
     {
       "type": "malformed_url",
       "entityKey": "984500EBA2E9980CDD80",
-      "sourceRow": 341,
+      "sourceRow": 342,
       "name": "Socios Europe Services Limited",
       "country": "Malta",
       "detail": "Website value \"www.socios.com\" was repaired to \"https://www.socios.com\".",
@@ -1827,7 +1839,7 @@
     {
       "type": "malformed_url",
       "entityKey": "984500D6A0F945BB5A15",
-      "sourceRow": 342,
+      "sourceRow": 343,
       "name": "Gate Technology Limited",
       "country": "Malta",
       "detail": "Website value \"www.gate.com/en-eu\" was repaired to \"https://www.gate.com/en-eu\".",
@@ -1838,7 +1850,7 @@
     {
       "type": "malformed_url",
       "entityKey": "254900GDCT8070R2VV26",
-      "sourceRow": 343,
+      "sourceRow": 344,
       "name": "Blockchain.com Operations (Malta) Limited",
       "country": "Malta",
       "detail": "Website value \"www.blockchain.com\" was repaired to \"https://www.blockchain.com\".",
@@ -1849,7 +1861,7 @@
     {
       "type": "malformed_url",
       "entityKey": "9845001DD90AF543DC90",
-      "sourceRow": 344,
+      "sourceRow": 345,
       "name": "Payhound Limited",
       "country": "Malta",
       "detail": "Website value \"www.payhound.com\" was repaired to \"https://www.payhound.com\".",
@@ -1860,7 +1872,7 @@
     {
       "type": "malformed_url",
       "entityKey": "9845008E8QA4CCFE5F68",
-      "sourceRow": 345,
+      "sourceRow": 346,
       "name": "Damex Digital LTD",
       "country": "Malta",
       "detail": "Website value \"www.damex.io\" was repaired to \"https://www.damex.io\".",
@@ -1871,7 +1883,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "984500F9M4XF7C5E5E25",
-      "sourceRow": 348,
+      "sourceRow": 349,
       "name": "Olmipay Limited",
       "country": "Malta",
       "detail": "Website field contains \"Olmipay.com (upcoming)\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -1882,7 +1894,7 @@
     {
       "type": "lei_checksum_failed",
       "entityKey": "984500457TABOA3BZ224",
-      "sourceRow": 351,
+      "sourceRow": 352,
       "name": "Zap (Strike) Europe Limited",
       "country": "Malta",
       "detail": "LEI 984500457TABOA3BZ224 has the right shape but fails the ISO 17442 check digits. It is still used as this entity's identifier; verify it against GLEIF.",
@@ -1893,7 +1905,7 @@
     {
       "type": "non_url_in_website_field",
       "entityKey": "nc:6226ff0404ee",
-      "sourceRow": 374,
+      "sourceRow": 375,
       "name": "EU Internet Ventures B.V.",
       "country": "Netherlands",
       "detail": "Website field contains \"https://banxa.com https://www.osl-pay.com/\", which is not a URL. Kept as raw text; no link is rendered.",
@@ -1902,9 +1914,21 @@
       ]
     },
     {
+      "type": "exact_duplicate",
+      "entityKey": "254900QWGNL1STBZDC19",
+      "sourceRow": 401,
+      "name": "Uphold Digital Assets Europe, Unipessoal Lda",
+      "country": "Portugal",
+      "detail": "Identical to source row #396. Both rows are retained.",
+      "values": [
+        "401",
+        "396"
+      ]
+    },
+    {
       "type": "malformed_url",
       "entityKey": "894500QKMN1PCG2V7U40",
-      "sourceRow": 400,
+      "sourceRow": 402,
       "name": "Safello AB",
       "country": "Sweden",
       "detail": "Website value \"www.safello.com\" was repaired to \"https://www.safello.com\".",
@@ -1955,6 +1979,21 @@
       "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
       "values": [
         "DekaBank Deutsche Girozentrale"
+      ]
+    },
+    {
+      "type": "multi_authorisation",
+      "entityKey": "254900QWGNL1STBZDC19",
+      "sourceRow": 396,
+      "sourceRows": [
+        396,
+        401
+      ],
+      "name": "Uphold Digital Assets Europe, Unipessoal Lda",
+      "country": "Portugal",
+      "detail": "2 authorisation records for one legal entity. A firm may hold more than one authorisation; this is not a duplicate.",
+      "values": [
+        "Uphold Digital Assets Europe, Unipessoal Lda"
       ]
     }
   ]

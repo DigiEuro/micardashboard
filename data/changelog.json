@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-11-19",
+    "timestamp": "2026-11-19T14:44:46.603Z",
+    "changes": {
+      "casps": {
+        "added": [
+          "Volksbank Magdeburg eG (Germany)",
+          "Uphold Digital Assets Europe, Unipessoal Lda (Portugal)"
+        ],
+        "removed": [
+          "ILIRIKA borzno posredniška hiša d.d. (Slovenia)"
+        ]
+      },
+      "nonCompliant": {
+        "added": [
+          "Swipelux OÜ (Estonia)"
+        ],
+        "removed": []
+      }
+    }
+  },
+  {
     "date": "2026-11-12",
     "timestamp": "2026-11-12T15:15:42.577Z",
     "changes": {
